@@ -1,0 +1,308 @@
+
+/* 
+ @名称: module.css
+ @功能: 模块样式，放置页面公共布局模块
+ */
+
+/* ==============================
+   按功能模块划分
+   ============================== */
+body {font:12px/22px Tahoma,Arial,\5b8b\4f53,sans-serif;color: #333;background: #fff;}
+.JS_tabsbox .tabcon,
+.JS_vtabsbox .tabcon{display:none;}
+.JS_tabsbox .selected,
+.JS_vtabsbox .selected{display:block;}
+img{vertical-align:middle;}
+/* 主搜索框 search-box */
+.search-box{ margin-top:15px;margin-bottom:15px; padding:0; position:relative; z-index:20;*zoom:1;}
+.search-box .form-search{ float:left; display:inline; margin-right:10px;}
+.search-box .hot-travel{height:30px; line-height:30px;}
+.form-search input{ display:inline-block;*display:inline;*zoom:1;width:330px; vertical-align: middle;color:#333;border:1px solid #dd3377;height:20px;padding:5px 5px;line-height:20px;font-size:14px; box-shadow:inset 1px 1px 2px 0 rgba(102,102,102,0.2);border-right:none}
+/* 出发城市 */
+.from-city{position:relative;_top:1px;}
+.city{ background:#fff;width:188px; padding-left:10px;border:1px solid #ddd;height:30px;line-height:30px;float:left;display:inline;margin-right:20px;position:relative;z-index:11;}
+.city:hover,.from-city-hover .city,.from-city-selected .city{border-color:#aabbcc; cursor:pointer;}
+.citylist{position:absolute;z-index:9;width:290px;top:31px;left:0;background:#fff;border:1px solid #abc;padding:1px 8px 2px 5px;display:none;*zoom:1;}
+.from-city:hover .citylist{}
+.citylist ul{overflow:hidden;*zoom:1;margin-right:-3px;padding:2px 0 6px;}
+.citylist li{width:36px;text-align:center;margin-bottom:1px;}
+.citylist li a{padding:1px 0;height:22px;line-height:22px;float:none;}
+.citylist a:hover{padding:0 0;border:1px solid #fccce7;background:#fef2f9;text-decoration: none;}
+.from-city-selected .city{border-bottom:none;height:31px;}
+.from-city-selected .citylist{display:block;}
+.city b{ font-size:14px; color:#ee3388; display:inline-block; padding-right:5px; line-height:30px;}
+.city span{ vertical-align:top;color:#888; display:inline-block;}
+.city .icon-local{margin-top:-1px; vertical-align:middle}
+.city .css-arrow{float:right; width:25px; height:20px; position:relative; top:4px; border-left:1px solid #ddd;}
+.city .css-arrow i{border-width:5px;width:0; line-height:0; font-size:0; overflow:hidden;*zoom:1;position:absolute; top:9px; right:9px;z-index:10; border-style:solid dashed dashed dashed; border-color:#333 transparent transparent transparent;}
+.from-city-selected .css-arrow i{border-style:dashed dashed solid dashed; border-color:transparent transparent #333 transparent; top:4px;}
+.citylist .icon-close{ position:absolute;right:10px;top:10px;}
+.citylist h5{color:#888;font-size:12px;font-weight:normal;margin-top:3px;padding-left:5px;}
+
+/* 搜索框 */
+.form-search{ display:inline-block;}
+input.input-search {
+    display: inline-block;
+    width: 330px;
+    vertical-align: middle;
+    color: #333;
+    border: 1px solid #dd3377;
+    height: 20px;
+    padding: 5px 5px;
+    line-height: 20px;
+    font-size: 14px;
+    box-shadow: inset 1px 1px 2px 0 rgba(102,102,102,0.2);
+}
+.btn-search {
+    display: inline-block;
+    background: #e08;
+    border: 1px solid #d9006a;
+    color: #fff;
+    vertical-align: middle;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left:-1px;
+    padding: 0;
+    height: 32px;
+    width: 90px;
+    border: none;
+    text-align: left;
+    text-indent: -9999px;
+    background: url(http://pic.lvmama.com/img/new_v/ob_search/combo.gif) -190px -112px no-repeat;
+}
+.btn-search:hover{
+   background-position:-190px -144px
+}
+.from-city{float:left;display:inline;}
+.hot-travel{display:inline-block; width:330px; line-height:30px;white-space: nowrap;overflow: hidden;}
+.hot-travel a{padding-right:7px;}
+
+
+a { color: #07c; color:#0183b0;}
+a:hover { color: #d17; }
+.wrap .pink{ color: #d17;}
+.wrap .gray{ color: gray;}
+.wrap .em{ color: #f60;}
+.ul li {line-height:22px;}
+.ellipsis,
+.ellipsis li {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/* icon 图标集 */
+.scoll_box .prev, .scoll_box .next, .icon-point, .crumbs-arrow, .notice, .btnbuy,
+.icon-ticket, .icon-around, .icon-destroute, .icon-abroad, .icon-tuan, .icon-camera,
+.icon-point, .icon-rarr, .icon-close, .icon-search, .icon-hot, .slide-prev, .slide-next, .sarrow,
+.icon-local,.icon-date,.xicon {
+    background: url(http://pic.lvmama.com/img/v3/combo.png) no-repeat;
+    _background: url(http://pic.lvmama.com/img/v3/combo8.png) no-repeat;
+	background: url(../img/combo.png) no-repeat;
+	_background: url(../img/combo8.png) no-repeat;
+    display:inline-block;
+    width: 16px;
+    height: 16px;
+}
+.icon-rarr { background-position: 0 0;height:10px;}
+.icon-point { background-position: 5px -16px; }
+.icon-close { background-position: 0px -121px; cursor: pointer;}
+.icon-search { background-position: 0px -97px; } 
+.icon-hot { background-position: 0 -192px; width:18px;}
+.icon-local { background-position: -120px 0; width: 20px; height: 20px;}
+body a.link-more { color: #0183b0;width: auto;}
+body a.link-more:hover { color:#d17;}
+/* 大ICON */
+.menu-itembox .xicon{ width:30px;height:30px;}
+.icon-ticket    { background-position: -240px 0 }
+.icon-around    { background-position: -240px -40px }
+.icon-destroute { background-position: -240px -80px }
+.icon-abroad    { background-position: -240px -120px }
+.icon-tuan      { background-position: -240px -160px }
+.icon-camera    { background-position: -240px -200px }
+.icon-hotcity   { background-position: -210px 0 }
+.icon-hotcity2  { background-position: -210px -40px }
+.icon-hotel     { background-position: -210px -80px }
+.icon-date{width:21px;height:20px;background-position:-180px 1px;}
+.wrap-quick{margin-top:15px;}
+
+.btnbuy{width:92px;height:33px;text-indent:-9999px;background-position:-270px -62px;float:left;display:inline;outline:none;overflow:hidden;}
+
+/* 快捷导航 */
+.quick-menu{ float:left; width:200px;height:293px;position:relative;z-index:6;line-height:16px;}
+/*
+.quick-menu:hover{box-shadow:0 0 10px 0px rgba(0, 0, 0, 0.5);}
+*/
+.quick-menu h3{ padding-left:10px; height:29px; line-height:29px; background:#000; font-size:14px; color:#fff;position:relative;z-index:20;}
+.quick-list{position:relative;z-index:10;margin:1px 0 0;background:#f8f6f8;*zoom:1;}
+.quickicon{background:url(../img/quickmenu.png) 9999px 9999px no-repeat;position:absolute;left:0;bottom:0;z-index:-1;width:200px;height:200px;}
+
+.ticket .quickicon {background-position:0 0;}
+.freetour .quickicon {background-position:-200px 0;}
+.destroute .quickicon {background-position:-400px 0;}
+.abroad .quickicon {background-position:-600px 0;}
+
+.hotel .quickicon {background-position:;}
+.custom .quickicon {background-position:;}
+
+.menu-itembox .xicon{float:left;margin-top:6px;}
+.quick-menu p.item a{padding-right:5px;color:#888}
+.menu-item h4 a{color:#0183b0;}
+.menu-item-hover h4 a,.quick-menu p.item a:hover{color:#d17;}
+.menu-item{height:53px;}
+.menu-item .menu-itembox{border:1px solid #e2e2e3;border-top:1px solid #fff;border-bottom:1px solid #e2e2e3;}
+.menu-item .menu-itembox{ padding:10px 6px 0 9px;height:41px;*zoom:1;}
+.menu-last .menu-itembox{}
+.quick-menu .active .menu-itemx,
+.menu-item-hover .menu-itembox{width:184px; padding:11px 8px 0 9px;margin-bottom:-1px;background:#fff;border:1px solid #ccc;border-right:none;position:relative;z-index:11;top:-1px;}
+
+.menu-item h4{height:16px;overflow: hidden;}
+.menu-item .icon-rarr{float: right;position:relative;top:7px;margin:3px -6px -10px 0;display:none;background:none;height:0;border-width:5px;width:0; line-height:0; font-size:0; overflow:hidden;*zoom:1;z-index:10; border-style:dashed dashed dashed solid; border-color:transparent transparent transparent #d17;}
+.menu-item-hover .icon-rarr{display:inline;}
+.quick-menu-drop{display:none;position:absolute;left:201px;top:-30px;border:1px solid #ccc; width:797px;min-height:293px;height:293px;background:#fff;overflow:hidden;z-index: 9;line-height:20px; }
+.quick-menu-drop h5{color:#d17;line-height:1;}
+.quick-menu-drop .item-ver i{float:left;display:inline;width:6px; height:15px;margin:4px 10px 0 0;*position:absolute;*left:0;*top:0;}
+.c1{background:#5c9a12}
+.c2{background:#5c9a12}
+.c3{background:#ff6600}
+.c4{background:#e31f1c}
+.c5{background:#888888}
+
+.active .quick-menu-drop{display:block;}
+.drop-item { width:420px;overflow:hidden; padding:15px 0 200px 0; float:left; display:inline;margin:0 15px -200px 20px;line-height:28px;}
+.drop-list{float:right;width:300px;padding:15px 15px 200px 15px;background:#f6f6f6; margin-bottom:-200px;}
+.item-ver a{display:block;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;width:95%;*position:relative;*padding-left:16px;}
+.drop-item .list{margin-top:5px;padding-top:5px;}
+.drop-list p{margin-bottom:15px;}
+.drop-list a.limit{max-height:44px;_height:44px;overflow:hidden;}
+.drop-item .item-hor,
+.drop-item .item-ver{ padding:12px 0 12px;line-height:24px;overflow:hidden}
+.menu-item p.item{width: 140px;overflow: hidden;height:16px;}
+.menu-item p.item a{display:inline-block;}
+.drop-item .item-hor{margin-right:-10px;}
+.item-hor a{ display:inline-block;padding-left:8px;border-left:1px solid #bfbfbf;margin:0 12px 3px -9px;height:12px;line-height:12px;*vertical-align:middle;*padding-top:1px;}
+.quick-menu a,.drop-list p a{color:#333}
+.quick-menu-drop a:hover{color:#d17;}
+
+/* menu下推荐 */
+.drop-recommend{padding:10px 0 0;overflow:hidden;}
+.drop-recommend ul{float:left;display:inline;*zoom:1;margin-right:-25px;}
+.drop-recommend li{float:left;width:200px;margin-right:20px;display:block;height:24px;line-height:24px;overflow:hidden;white-space: nowrap;text-overflow: ellipsis;}
+.drop-recommend li a{*float:left;*overflow:hidden;*text-overflow: ellipsis;*white-space: nowrap;*width:160px;}
+.drop-recommend-ticket li a{*width:90px;}
+.drop-recommend a{color:#0183b0;}
+.drop-recommend a:hover{color:#d17;}
+.drop-recommend li b{float:left;display:inline;margin-right:4px;font-weight:normal;}
+.drop-recommend li span{float:right;display:inline;margin-left:4px;color:#888;}
+
+/* 幻灯默认8帧 */
+.slide-box{float:right;width:780px;height:295px; overflow:hidden;position:relative;z-index:5;}
+.slide-box .slide-content {width:780px;height:260px; overflow:hidden;z-index:1;background:url(http://pic.lvmama.com/img/new_v/ui_scrollLoading/loadingGIF46px.gif) center center no-repeat;}
+.slide-box .slide-nav{margin:0 -2px;overflow: hidden;*zoom:1;width:784px;height:35px;overflow:hidden;background:#555;position:absolute;bottom:0;z-index:5;}
+.slide-nav li{float:left;display:inline;height:35px;line-height:35px;background:#000;color:#fff; width:97px;margin-left:1px; text-align:center;cursor:pointer;}
+.slide-nav li.active{
+    height:31px;
+    _line-height:27px;
+    _height:27px;
+    _padding-top:4px;
+    border-bottom:4px solid #d17;
+    background: -webkit-gradient(linear,left top,left bottom,from(#111111),to(#373737));
+    background: -moz-linear-gradient(top,#111111,#373737);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#111111',endColorstr='#373737');
+    background: -o-linear-gradient(top,#111111,#373737);
+    background: linear-gradient(top,#111111,#373737);
+}
+/* 焦点图8帧 */
+.pageframe8 .slide-nav,
+.slide-channel .slide-nav{margin:0 -2px;}
+.pageframe8 .slide-nav li,
+.slide-channel .slide-nav li{width:97px;}
+/* 焦点图6帧 */
+.pageframe6 .slide-nav,
+.slide-custom .slide-nav{margin:0;}
+.pageframe6 .slide-nav li,
+.slide-custom .slide-nav li{width:129px;}
+/* 特色酒店小6帧 */
+.pageframem6,
+.slide-hotel{ width:680px;}
+.pageframem6 .slide-nav li,
+.slide-hotel .slide-nav li{width:113px;}
+/* 焦点图10帧 */
+.pageframe10 .slide-nav,
+.slide-index .slide-nav{margin:0;}
+.pageframe10 .slide-nav li,
+.slide-index .slide-nav li{width:77px;}
+
+
+
+/* A/B测试幻灯片 */
+/*
+.quick-menu,.quick-menu-drop{height:278px;}
+.quick-menu-drop{min-height:278px;height:278px;}
+.drop-item .item-hor, .drop-item .item-ver{padding:8px 0;}
+.quick-menu .menu-item{padding: 9px 6px 0;height: 40px;}
+
+.slide-box{height:280px;}
+.slide-box .slide-nav{display:none;}
+.slide-nav2{position:absolute;bottom:0;left:0;z-index:5;}
+.slide-nav2 li{float:left;display:inline;}
+.slide-prev,.slide-next{width:28px;height:60px;position:absolute;top:110px;z-index:5;cursor:pointer;text-indent:-9999px;outline:none;}
+.slide-prev{left : 10px;background-position:-270px 0;_background-position:-330px 0;}
+.slide-next{right: 10px;background-position:-300px 0;_background-position:-360px 0;}
+.slide-prev:hover{background-position:-330px 0;}
+.slide-next:hover{background-position:-360px 0;}
+.slide-box .slide-content{height:280px;}
+.slide-nav2 li{text-indent:-9999px;}
+.slide-content li img{width:780px;height:280px;}
+.slide-nav2 li,.slide-nav2 li.active{
+    background: url(http://pic.lvmama.com/img/v3/combo.png) no-repeat;
+    _background: url(http://pic.lvmama.com/img/v3/combo8.png) no-repeat;
+	background: url(../img/combo.png) no-repeat;
+	_background: url(../img/combo8.png) no-repeat;
+    width: 13px;
+    height: 13px;
+	overflow:hidden;
+}
+.slide-nav2 li{background-position:-25px 0;margin:0 4px 0 3px;}
+.slide-nav2 li.active{background-position:-25px -25px;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='png24bge.png');}
+.slide-box .slide-nav2{bottom:13px;left:50%;margin-left:-60px;}
+.slide-nav2 a{display:block;width:100%;height:100%;outline:none;}
+*/
+
+/* 定制游quick-menu */
+.menu-custom .menu-item{height:66px;}
+.menu-custom .menu-itembox{padding-top:16px;padding-bottom:7px;}
+.menu-custom .menu-last .menu-itembox{padding-bottom:8px;}
+.menu-custom .menu-item-hover .menu-itembox{padding-top:17px;}
+.menu-custom p.item{margin-top: 4px;}
+.droplist-item{padding:12px 0 5px;margin:0 0 0 15px;overflow:hidden;width: 775px;}
+.droplist-item .item{float:left;display:inline;margin:0 15px 8px -12px;padding-left:12px;width:240px; border-left:1px dotted #ddd;height: 270px;}
+.droplist-item dl{margin-bottom:8px;}
+.droplist-item dt{float:left;width:42px;font-weight:bold;color:#d17;}
+.droplist-item dd{overflow:hidden;display:block;*zoom:1;position:relative;}
+.menu-custom .item-hor a{_display:inline;_padding-top:0;_padding-left:10px;_line-height:14px;_position:relative;_top:3px;}
+
+/* xh弹窗 */
+.xh_overlay,.xh_dialog{display:none}
+.xh_overlay{ background:#000;filter:alpha(opacity=20); opacity:.2; width:100%; height:100%; position:absolute; overflow:hidden; left:0;top:0; z-index:2000; }
+iframe.xh_overlay{ display:none;}
+.xh_dialog{ position:absolute;left:50%;top:100px; background:#fff;width:600px; overflow:hidden; margin-left:-300px;z-index:2005;border:1px solid #ddd;border-top: 2px solid #d37;}
+.xh_title{height:30px;font:bold 14px/2 "Microsoft YaHei";background:#eee;padding: 0 6px 0 10px;}
+.xh_btn-ok,.xh_btn-cancel{width:65px; height:27px; line-height:27px; text-align:center; font-weight:bold; padding:0; overflow:hidden; display:inline-block; zoom:1;*display:inline; margin-right:20px; cursor:pointer}
+.xh_btn-ok:hover,.xh_btn-cancel:hover{ text-decoration:none;}
+.xh_btn-ok{ background-position:0 -332px;color:#fff;}a.xh_btn-ok:hover{color:#fff}
+.xh_btn-cancel{ background-position:0 -359px;color:#444}a.xh_btn-cancel:hover{color:#444}
+.xh_dialog-box h4{ margin-bottom:10px;}
+.xh_dialog-box p{ margin:10px 0;color:#555}
+span.close-this{float: right; display: inline; width: 22px; height: 18px; font:16px/18px Tahoma; border: 1px solid #ccc; background: #fff;color:#999;margin-top:-13px; margin-right: -13px; cursor: pointer; text-align: center;}
+span.close-this:hover{color:#333;border-color:#999;}
+
+/* 频道AB测试,老导航条980px
+.city{width:178px;margin-right:10px;}
+.quick-menu{width: 190px;}
+.quick-menu .active .menu-itemx, .menu-item-hover .menu-itembox{width:174px;}
+.quick-menu-drop{left: 191px;width: 787px;}
+.drop-recommend li{width:195px;}
+.quickicon{width:190px;}
+ */
+
