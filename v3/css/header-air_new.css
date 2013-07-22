@@ -89,7 +89,7 @@ i.icon-barr{position:absolute;z-index:10; display:inline-block;width:0;height:0;
 .lv-adPro{position: absolute;z-index:9;display: block;left:460px;top:0;width:300px;height:60px;overflow:hidden;}
 .lv-adPro img{width:300px;height:60px;}
 .lv-hotline{width: 156px;background-position:50px -35px;position:relative;top:6px;float:right;display:block;padding-right:70px;overflow:hidden;padding-top:15px; font:500 20px/34px 'Microsoft YaHei';text-align:right;overflow:hidden; color:#d38;}
-.sarrow,i.icon-mobile,i.icon-weixin, i.icon-weibo, i.icon-new, .icon-caibei {
+.sarrow,i.icon-mobile,i.icon-weixin, i.icon-weibo, .icon-new, .icon-caibei {
     background: url(http://pic.lvmama.com/img/v3/combo.png) no-repeat;
     _background: url(http://pic.lvmama.com/img/v3/combo8.png) no-repeat;
     background: url(../img/combo.png) no-repeat;
@@ -105,12 +105,12 @@ i.icon-weibo{ background-position: 0 -168px;}
 .wechatcode{background-position:-180px -35px;display:inline-block;width:80px;height:80px;vertical-align: middle;}
 .sitemap{position:absolute !important;clip: rect(1px 1px 1px 1px);}
 .xhcopyinfo{margin:10px auto;clear:both;}
-i.icon-new{background-position:-25px 0; width:18px; height:18px; }
+.icon-new{background-position:-25px 0; width:18px; height:18px; }
 .pnav .icon-new{position:absolute; top:-8px;right:0;z-index:4;}
 
 #goTopBtn,#Feedback{width:32px;height:32px;position:fixed;z-index:100;left:50%;margin-left:520px;cursor:pointer;}
-#goTopBtn{background-position:-270px -35px;bottom:20px;}
-#Feedback{background-position:-302px -35px;bottom:60px;}
+#goTopBtn{background-position:-270px -35px;bottom:60px;}
+#Feedback{background-position:-302px -35px;bottom:20px;}
 #goTopBtn:hover{background-position:-270px -67px;}
 #Feedback:hover{background-position:-302px -67px;}
 /* 小提醒 */

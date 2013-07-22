@@ -80,7 +80,7 @@ input.input-search {
 
 
 a { color: #07c; color:#0183b0;}
-a:hover { color: #d17; }
+a:hover { color: #d17; cursor: pointer;  }
 .wrap .pink{ color: #d17;}
 .wrap .gray{ color: gray;}
 .wrap .em{ color: #f60;}
@@ -177,7 +177,7 @@ body a.link-more:hover { color:#d17;}
 .drop-list a.limit{max-height:44px;_height:44px;overflow:hidden;}
 .drop-item .item-hor,
 .drop-item .item-ver{ padding:12px 0 12px;line-height:24px;overflow:hidden}
-.menu-item p.item{width: 140px;overflow: hidden;height:16px;}
+.menu-item p.item{width: 150px;overflow: hidden;height:16px;}
 .menu-item p.item a{display:inline-block;}
 .drop-item .item-hor{margin-right:-10px;}
 .item-hor a{ display:inline-block;padding-left:8px;border-left:1px solid #bfbfbf;margin:0 12px 3px -9px;height:12px;line-height:12px;*vertical-align:middle;*padding-top:1px;}
