@@ -21,7 +21,7 @@ dfn.pc_score,dfn.pc_score i{color:#dd1177;}
 .score_total .pc_score {display:inline-block;height:40px; line-height:40px;}
 .score_total .pc_score i{font-weight:bold;font-size:40px;height: 40px;}
 .score_total .comment-num{display:block;}
-.pm_name{color:#888;}
+.pm_name{color:#888;margin-left:8px;}
 .pm_name em{color:#555;}
 .pm_name i{color:#d17;}
 .score_itembox{padding-top:5px;}
@@ -31,7 +31,7 @@ dfn.pc_score,dfn.pc_score i{color:#dd1177;}
 .comment_tips{line-height: 16px;}
 .comment_tips p{margin:8px 0;}
 
-.no-comment{padding-top:20px;width:200px;float:left; text-align:center;color:#555;}
+.no-comment{padding-top:40px;width:200px;float:left; text-align:center;color:#555;}
 .no-comment p{color:#888;}
 
 
