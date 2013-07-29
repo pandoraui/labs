@@ -193,6 +193,12 @@ label.inline {
   _height: 22px;
   _line-height: 22px;
 }
+
+label.inline .input-text,
+label.inline .input-password {
+  margin-bottom: 0;
+}
+
 label.vmiddle {
   vertical-align: middle;
 }

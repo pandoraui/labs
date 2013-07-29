@@ -5,7 +5,7 @@
  */
 img{vertical-align:middle;}
 .col-w{ width:790px;float:left;*zoom:1;}
-.aside{width:200px;float:right;*zoom:1;padding-top:15px;}
+.aside{width:200px;float:right;*zoom:1;}
 .adbox img{vertical-align:middle}
 .lv-crumbs{margin-top:5px;margin-bottom:5px;}
 .lv-crumbs p{color:#888;}
@@ -30,7 +30,7 @@ a { color: #0183b0; }
 .font_size_18 { font-size: 18px; }
 .font_size_14 { font-size: 14px; }
 .size14 { font-size: 14px; }
-.jd_desc1 { border: 1px solid #f5b7d6; margin-top: 10px; }
+.jd_desc1 { border: 1px solid #f5b7d6; margin-top: 10px; margin-bottom:15px;}
 .jd_desc2 { border: 2px solid #fcdaed; padding: 15px; overflow: hidden; zoom: 1; }
 .jd_route .color_grey { padding-left: 5px; padding-right: 5px; }
 .jd_h2 { font-size: 24px; font-weight: normal; font-family: "微软雅黑"; }
@@ -54,7 +54,7 @@ span.jd_star i { background-position: -241px -210px; float: left; }
 overflow: hidden; }
 .jd_map { background-position: -128px -250px; width: 16px; height: 16px; margin-left: 10px; margin-right: 5px; vertical-align: middle; }
 .grey_boder { border: 1px solid #ddd; padding: 3px 10px; margin-right: 10px; }
-.jd_desc_word { float: left; }
+.jd_desc_word { float: left; width:470px; }
 .jd_desc_pic { width: 480px; height: 270px; border: 1px solid #000; float: right; }
 #slide { overflow:hidden; position:relative; float:right; width:480px; height:270px; padding-bottom:0; }
 #js-slide-content { position:absolute; width:480px; height:270px; cursor:pointer }
@@ -74,7 +74,7 @@ overflow: hidden; }
 #js-slide-nav img { border:0; }
 #js-slide-nav li { cursor:pointer; float:left; width:54px; height:49px; list-style:none; margin:6px 0 0 0; text-align:center; }
 #js-slide-nav li.on { border:2px solid #71a3de; margin-top:4px; }
-.jd_notice { margin-top: 15px; margin-bottom: 15px; }
+.jd_notice { margin-bottom: 15px; }
 .jd_notice h3 { font-size: 16px; }
 .jd_notice i { background-position: -146px -253px; width: 16px; height: 13px; margin-right: 10px; }
 .jd_notice div.color_red { text-indent: 30px; }
@@ -93,7 +93,8 @@ overflow: hidden; }
 
 
 .jd_check_content { border: 1px solid #abc; border-top-width:2px; padding-top: 15px; margin-top: -2px;}
-.jd_tab { margin-left: 15px; margin-top: 15px; margin-right: 15px; }
+.jd_tabouter { margin:10px 15px 0; }
+
 .jd_tab tr th { font-size: 14px; }
 .jd_tab tr th, .jd_tab tr td { padding: 5px; vertical-align: middle; }
 .jd_tab .jd_ticket_type { background-color: #f6f6f6; color: #888; font-size: 12px; }
@@ -112,8 +113,9 @@ a:hover .tri_blue{
 .jd_info_content { margin-left: 15px; margin-right: 15px; }
 .jd_border_blue { border: 1px solid #abc; margin-top: 12px; }
 h2.td_head_blue { background-color: #f0f5fc; border-bottom: 1px solid #abc; padding-left: 15px; height:34px; line-height:34px; position: relative; }
-.free_trip_more { text-align: right; padding-right: 15px; }
-.jd_group_trip { float: right; margin-right: 30px;font-weight:normal; font-size:14px; border-left: 1px solid #abc;}
+h2.td_head_blue .font_size_18{float:left;}
+.free_trip_more { text-align: right; padding:5px 15px 10px 0; }
+.jd_group_trip {float: left; margin:0 30px;font-weight:normal; font-size:14px; border-left: 1px solid #abc;}
 .jd_group_trip li{cursor:pointer;}
 .jd_group_trip li a{height:34px; line-height:34px; border-right:1px solid #abc;padding:0 15px; text-decoration: none;}
 .jd_group_trip li a:hover{color:#0183b0}
@@ -121,7 +123,7 @@ h2.td_head_blue { background-color: #f0f5fc; border-bottom: 1px solid #abc; padd
 
 .jd_active { padding: 15px; position:relative; }
 .jd_active_banner { background-color: #f6f6f6; padding: 5px 10px; margin-top: 4px; }
-.jd_textarea { background-color: #eee; }
+.jd_textarea { }
 .jd_askAnswer { padding: 15px; }
 .jd_question_icon { background-position: -169px -251px; width: 14px; height: 14px; margin-right: 5px; }
 .jd_ask_content dd { border-bottom: 1px solid #eee; padding-bottom: 10px; margin-bottom: 10px; }
@@ -200,4 +202,5 @@ h2.td_head_blue { background-color: #f0f5fc; border-bottom: 1px solid #abc; padd
 .oldstyle a:hover{color:#e38;}
 .xmenu-sub a{display:inline-block;float:left; margin-right:10px;width:36px;height:24px;line-height:24px;overflow: hidden;*zoom: 1;text-overflow: ellipsis;}
 
-
+/* 去掉自动补全的默认聚焦提醒 */
+#address_hot { display: none !important;}

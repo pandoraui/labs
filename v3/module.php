@@ -87,7 +87,7 @@ h3 small{font-size: 12px;}
             
             <span class="tagsback" tip-title="提示标题" tip-content="提示内容"><em>返</em><i>5元</i></span>
             
-            <span class="tagsback" tip-title="提示标题" tip-content="提示内容"><em>折扣返现</em><i>20元</i></span>
+            <span class="tagsback" tip-title="提示标题" tip-content="提示内容。这个内容很多，宽度会自适应，但有个最大的宽的于是会自动折行"><em>折扣返现</em><i>20元</i></span>
             <pre>&lt;span class="tagsback" tip-title="提示标题" tip-content="提示内容"&gt;&lt;em&gt;折扣&lt;/em&gt;&lt;i&gt;7.9折&lt;/i&gt;&lt;/span&gt;</pre>
         </p>
         
@@ -95,6 +95,13 @@ h3 small{font-size: 12px;}
             <span class="tagsback tagblue" tip-title="提示标题" tip-content="提示内容"><em>送</em><i>积分100分</i></span>
             <pre>&lt;span class="tagsback tagblue" tip-title="提示标题" tip-content="提示内容"&gt;&lt;em&gt;送&lt;/em&gt;&lt;i&gt;积分100分&lt;/i&gt;&lt;/span&gt;</pre>
         </p>
+       <h4>激活tooltip提醒：</h4>
+       <p>tooltip依赖jquery和lvmamaUI：http://pic.lvmama.com/min/index.php?f=/js/new_v/jquery-1.7.2.min.js,/js/ui/lvmamaUI/lvmamaUI.js</p>
+<pre>
+$('span[class^="tags"]').ui('lvtip'); 
+</pre>
+       <p>默认提醒下方居中显示，详情参看，<a href="/pandora/docs/modules/tooltip.html">tooltip插件</a></p>
+
         
     </div>
     
@@ -114,7 +121,12 @@ h3 small{font-size: 12px;}
     </div>
     <div class="dvFullList"></div>
 </div>
-
+<script src="http://pic.lvmama.com/min/index.php?f=/js/new_v/jquery-1.7.2.min.js,/js/ui/lvmamaUI/lvmamaUI.js,/js/new_v/top/header-air_new.js"></script>
+<script>
+$(function(){
+    $('span[class^="tags"]').ui('lvtip');
+})
+</script>
 
 </body>
 </html>

@@ -175,9 +175,9 @@
 .cprobig-list .text-cover i{ width:240px; padding:0 6px;}
 .JS_sildename .text-cover span,
 .JS_sildename .text-cover i{ top:143px; text-indent:0;}
-.JS_sildename .slidehover span,
-.JS_sildename .slidehover i{top: 118px;height: 40px;padding: 5px 6px; line-height:20px; z-index:9;}
-.JS_sildename .slidehover span{filter: alpha(opacity=80);opacity: 0.8;}
+.JS_sildename .text-cover span,
+.JS_sildename .text-cover i{top: 118px;height: 40px;padding: 5px 6px; line-height:20px; z-index:5;}
+.JS_sildename .text-cover span{filter: alpha(opacity=80);opacity: 0.8;}
 
 
 /* 特色酒店 */
@@ -214,7 +214,7 @@
 .search-hotel .content{position:relative;height:240px;}
 .search-hotel .searchbtn{position:absolute;right:30px;bottom:15px;}
 .hotel-domestic{padding-top:20px;}
-.hotel-domestic form .input-text{width:230px;}
+.hotel-domestic .input-text{width:230px;}
 .hotel-domestic .checkbox-list{margin-top:-4px;}
 .hotel-domestic .checkbox-list label.inline{width:90px;}
 
@@ -239,7 +239,7 @@
 .hotel-buy .textbox dfn i{font-size:18px;font-weight:bold;}
 .hotel-buy .textbox .price{display:block;color:#888;}
 .hotel-buy .textbox p{padding:10px 0 5px;height:auto; text-align:center;}
-.hotel-buy p.info{height:24px;overflow:hidden;width:100%;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+.hotel-buy p.info{width:100%;line-height:20px;padding-bottom:5px;}
 
 .hotel-cbox1 .content,
 .hotel-cbox2 .content{padding-top:15px;overflow:hidden;height:525px;}

@@ -497,7 +497,7 @@
                 </ul>
                 <a class="link-more" href="#">更多目的地 &raquo;</a>
             </div>
-            <div class="content JS_tabsbox">
+            <div class="content JS_tabsbox JS_sildename">
                 <div class="tabcon selected">
                     <ul class="cprobig-list">
                         <li>

@@ -14,11 +14,12 @@
 .p_cominfo{background:#f4f4f4;padding:10px;height:100px;margin-bottom:10px;}
 .p_cominfo .score_total,
 .p_cominfo .score_itembox{float:left;display:inline;}
-.score_total{padding-top:15px;width:160px; text-align:center;}
+.score_total{padding-top:10px;width:160px; text-align:center;}
 
 dfn.pc_score,dfn.pc_score i{color:#dd1177;}
 .pc_score i{font-weight:bold;font-size:140%;}
-.score_total .pc_score i{font-weight:bold;font-size:40px;}
+.score_total .pc_score {display:inline-block;height:40px; line-height:40px;}
+.score_total .pc_score i{font-weight:bold;font-size:40px;height: 40px;}
 .score_total .comment-num{display:block;}
 .pm_name{color:#888;}
 .pm_name em{color:#555;}
@@ -29,6 +30,10 @@ dfn.pc_score,dfn.pc_score i{color:#dd1177;}
 
 .comment_tips{line-height: 16px;}
 .comment_tips p{margin:8px 0;}
+
+.no-comment{padding-top:20px;width:200px;float:left; text-align:center;color:#555;}
+.no-comment p{color:#888;}
+
 
 /* 点评切换 */
 .p_cnav{border-bottom:1px solid #e6e6e6;*zoom:1;}
