@@ -25,6 +25,9 @@
 <!-- pa-base.css -->
 <link rel="stylesheet" href="css/pa-base.css" >
 
+<!-- lv-common.css.css -->
+<link rel="stylesheet" href="css/lv-common.css" >
+
 <!-- pa-modules.css -->
 <link rel="stylesheet" href="css/pa-modules.css" >
 
