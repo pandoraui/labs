@@ -14,9 +14,7 @@
 
 
 
-
-
-<?php include("common/g-footer.php"); ?>
+<?php include("common/footer.html"); ?>
 
 </body>
 </html>

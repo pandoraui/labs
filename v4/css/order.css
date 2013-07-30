@@ -1,0 +1,55 @@
+
+/* 
+ @名称: order.css
+ @功能: 订单样式
+ */
+
+.wrap{ width:960px;}
+body{font:12px/22px Tahoma,Arial,\5b8b\4f53,sans-serif;}
+.border{border:1px solid #ccc;}
+/* 公共组件 */
+.dl-hor{}
+
+
+
+/* 公共头部 */
+.order-header{margin:10px auto;height:60px;position:relative;z-index:5;}
+.header-inner{padding:1px 0;}
+.order-header .logo{float:left;display:inline;width:380px;height:60px; background: url(http://pic.lvmama.com/img/v3/logo.png) no-repeat left center;_background: url(http://pic.lvmama.com/img/v3/logo8.png) no-repeat left center;text-indent:-9999px;outline:none}
+
+.order-header p{ text-align:right;color:#555;}
+.order-header p.welcome{ padding:10px 3px 0 0;}
+.order-header p.info strong{color:#d17;}
+
+
+/* footer */
+.lv-footer *{margin:0;padding:0;}
+.lv-footer {margin:0 auto;padding:10px 0;font-family: Arial,\5b8b\4f53;font-size:12px;clear:both;text-align:center;}
+.footer-link,.lv-copyright {line-height:22px;clear:both;color:#888;}
+.footer-link{color:#ccc;}
+.footer-link a,.lv-copyright a{text-decoration: none;font-weight: normal !important;color:#888;}
+.footer-link a{padding:0 10px;}
+.lv-safety{background:url(http://pic.lvmama.com/img/v3/imghf8.png) no-repeat;display:inline-block;}
+.lv-safety{display: block;margin: 5px auto 0;width:620px;height:35px;background-position:0 0;}
+.lv-safety a{display:inline-block;float:left;height:100%;width:52px;}
+.lv-safety a.safety4{width:75px;}
+.lv-safety a.safety7{width:90px;}
+.lv-safety a.safety8{width:90px;}
+
+
+/* 订单样式正文 */
+.order-content{overflow:hidden;}
+.order-content .sidebar,
+.order-content .main{padding-bottom:9999px;margin-bottom:-9999px;word-wrap:break-word; }
+.sidebar{float:right;width:240px;background:#f6f6f6;border-left:1px solid #ccc;}
+.order-content .main{padding:10px 20px;overflow:hidden;}
+.order-title{border-bottom:2px solid #ddd;height:26px;line-height:26px;}
+.order-title h3{float:left;border-bottom:2px solid #d17;}
+
+.sidebox{padding:10px 20px;}
+
+
+
+
+
+

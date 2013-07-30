@@ -1,0 +1,12 @@
+
+/* 
+ @名称: pa-modules.css
+ @功能: pandora 模块组件集合
+ */
+
+/* CSS modules */
+@import "modules/buttons.css";
+@import "modules/form.css";
+@import "modules/typo.css";
+@import "modules/step.css";
+@import "modules/ui-components.css";
