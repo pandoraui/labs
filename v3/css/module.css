@@ -208,9 +208,10 @@ body a.link-more:hover { color:#d17;}
     border-bottom:4px solid #d17;
     background: -webkit-gradient(linear,left top,left bottom,from(#111111),to(#373737));
     background: -moz-linear-gradient(top,#111111,#373737);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#111111',endColorstr='#373737');
+    background: -ms-linear-gradient(top,#111111,#373737);
     background: -o-linear-gradient(top,#111111,#373737);
-    background: linear-gradient(top,#111111,#373737);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#111111',endColorstr='#373737');
+    background: linear-gradient(#111111,#373737);
 }
 /* 焦点图8帧 */
 .pageframe8 .slide-nav,
