@@ -113,3 +113,13 @@ h6{font-size:12px;font-weight:400;}
 .f12,h5{font-size:12px;}
 .f14,h3,h4{font-size:14px;}
 .red{color:#f00;}
+
+/* 等高布局 */
+.equalheight-box {
+    overflow: hidden;
+}
+.equalheight-box .equalheight-item {
+    margin-bottom: -9999px !important;
+    padding-bottom: 9999px !important;
+}
+/*  */

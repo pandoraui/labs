@@ -28,7 +28,7 @@ textarea{overflow:auto;vertical-align:top;}
 table{border-collapse:collapse;border-spacing:0;}
 th{text-align:inherit;}
 abbr,acronym{border:0;font-variant:normal;}
-del{text-decoration:line-through;}
+del{text-decoration: none;}
 address,caption,cite,dfn,em,i,var{font-style:normal;font-weight:500;}
 caption,th{text-align:left;}
 
@@ -79,23 +79,25 @@ i.icon-barr{position:absolute;z-index:10; display:inline-block;width:0;height:0;
 
 .lv-login{display:inline-block;padding:5px 0 0;height:14px; line-height:15px;color:#555;font-family: \5b8b\4f53,Tahoma,Arial,sans-serif;}
 .lv-login a{color:#06c;height:100%; display:inline-block;*zoom:1; padding:0 6px;cursor:pointer;}
-.lv-login .link-register {border-left:1px solid #bfbfbf;}
-
+.lv-login .link-register,.lv-login .lv-logout {border-left:1px solid #bfbfbf;}
+.lv-login .icon-message{margin-right:3px;}
+.lv-message b{color:#d17;}
 /* header */
 .wechatcode,.lv-hotline,.lv-safety,#goTopBtn,#Feedback{background:url(http://pic.lvmama.com/img/v3/imghf8.png) no-repeat;display:inline-block;}
-.lv-header{margin:10px auto;height:60px;position:relative;}
+.lv-header{margin:10px auto;height:60px;position:relative;z-index:5;}
 .header-inner{padding:0 10px;*zoom:1;}
 .lv-logo{float:left;display:inline;width:380px;height:60px; background: url(http://pic.lvmama.com/img/v3/logo.png) no-repeat left center;_background: url(http://pic.lvmama.com/img/v3/logo8.png) no-repeat left center;text-indent:-9999px;outline:none}
-.lv-adPro{position: absolute;z-index:9;display: block;left:460px;top:0;width:300px;height:60px;overflow:hidden;}
+.lv-adPro{position: absolute;z-index:7;display: block;left:460px;top:0;width:300px;height:60px;overflow:hidden;}
 .lv-adPro img{width:300px;height:60px;}
-.lv-hotline{width: 156px;background-position:50px -35px;position:relative;top:6px;float:right;display:block;padding-right:70px;overflow:hidden;padding-top:15px; font:500 20px/34px 'Microsoft YaHei';text-align:right;overflow:hidden; color:#d38;}
-.sarrow,i.icon-mobile,i.icon-weixin, i.icon-weibo, .icon-new, .icon-caibei {
+.lv-hotline{position:relative;top:6px;float:right;display:block;z-index:7;width: 156px;background-position:50px -35px;padding-right:70px;overflow:hidden;padding-top:15px; font:500 20px/34px 'Microsoft YaHei';text-align:right;overflow:hidden; color:#d38;}
+.xicon,.sarrow,i.icon-mobile,i.icon-weixin, i.icon-weibo, .icon-new, .icon-caibei {
     background: url(http://pic.lvmama.com/img/v3/combo.png) no-repeat;
     _background: url(http://pic.lvmama.com/img/v3/combo8.png) no-repeat;
     background: url(../img/combo.png) no-repeat;
     background-position:-9999px -9999px;
     display:inline-block;
 }
+i.icon-message{width:16px;height:16px;background-position:-24px -72px;vertical-align: text-top;}
 i.icon-mobile{width:10px;height:14px;background-position:0 -217px;position: relative;top:2px;_top: 2px;_float: left;margin-right:3px;}
 i.icon-weixin,i.icon-weibo{width: 16px;height: 16px;position:relative;top:5px;*top:2px;_top:5px;_float:left;vertical-align:top;*vertical-align:middle;margin-right:3px;}
 i.icon-weixin{ background-position: 0 -144px;}
@@ -266,3 +268,5 @@ i.icon-weibo{ background-position: 0 -168px;}
 .shoujiQRlink{color:#333;text-decoration:none;font:12px/1.5 "宋体"; display:block; text-align:center;}
 .shoujiQRclose{width:18px;height:17px; position:absolute;top:140px;right:20px; display:block;}
 
+/* 修改部分页面底部的follow lvmama */
+hh_outside_link{display:none !important;}

@@ -39,8 +39,8 @@
     </ol> <!-- //操作步骤 -->
     
     
-    <div class="order-content border">
-        <div class="sidebar">
+    <div class="order-content border equalheight-box">
+        <div class="sidebar equalheight-item">
             <div class="sidebox">
                 <div class="side-title">
                     <h3>订单费用结算</h3>
@@ -72,7 +72,7 @@
             </div>
         </div> <!-- //.sidebar -->
         
-        <div class="main">
+        <div class="main equalheight-item">
             <p>测试数据，这是一段测试数据，用于测试页面的一些布局特性，不属于页面展现的一部分，开发请忽略。测试数据，这是一段测试数据，用于测试页面的一些布局特性，不属于页面展现的一部分，开发请忽略。</p>
             <!-- 预订信息 -->
             <div class="order-title">

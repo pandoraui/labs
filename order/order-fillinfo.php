@@ -40,7 +40,7 @@
     </ol> <!-- //操作步骤 -->
     
     
-    <div class="order-content">
+    <div class="order-content border">
         <div class="sidebar">
             <div class="sidebox">
                 <div class="side-title">
@@ -74,6 +74,7 @@
         </div> <!-- //.sidebar -->
         
         <div class="main">
+            <p>测试数据，这是一段测试数据，用于测试页面的一些布局特性，不属于页面展现的一部分，开发请忽略。测试数据，这是一段测试数据，用于测试页面的一些布局特性，不属于页面展现的一部分，开发请忽略。</p>
             <!-- 预订信息 -->
             <div class="order-title">
                 <h3>预订信息</h3>

@@ -6,6 +6,11 @@
 
 .wrap{ width:960px;}
 body{font:12px/22px Tahoma,Arial,\5b8b\4f53,sans-serif;}
+.border{border:1px solid #ccc;}
+/* 公共组件 */
+.dl-hor{}
+
+
 
 /* 公共头部 */
 .order-header{margin:10px auto;height:60px;position:relative;z-index:5;}
@@ -33,8 +38,15 @@ body{font:12px/22px Tahoma,Arial,\5b8b\4f53,sans-serif;}
 
 
 /* 订单样式正文 */
+.order-content{overflow:hidden;}
+.order-content .sidebar,
+.order-content .main{padding-bottom:9999px;margin-bottom:-9999px;word-wrap:break-word; }
+.sidebar{float:right;width:240px;background:#f6f6f6;border-left:1px solid #ccc;}
+.order-content .main{padding:10px 20px;overflow:hidden;}
+.order-title{border-bottom:2px solid #ddd;height:26px;line-height:26px;}
+.order-title h3{float:left;border-bottom:2px solid #d17;}
 
-
+.sidebox{padding:10px 20px;}
 
 
 

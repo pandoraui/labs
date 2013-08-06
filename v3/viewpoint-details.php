@@ -833,7 +833,7 @@
                                             <div class="discuss-inner j-discuss-inner">
                                                 <span class="arrow-up"></span>
                                                 <span class="arrow-up arrow-up-in"></span>
-                                                <div class="feeds-reply-box">
+                                                <div class="feeds-reply-box hide">
                                                     <form action="" class="form-hor form-small form-comment">
                                                         <p>回复 yizhigu</p>
                                                         <p><textarea class="textarea" name="" id="" ></textarea>
