@@ -25,19 +25,19 @@
                     <form class="form-hor">
                         <p>您可通过景区或酒店名称进行搜索</p>
                         <div class="control-group">
-                            <label class="control-label" for="">酒店名称：</label>
+                            <label class="control-label">酒店名称：</label>
                             <div class="controls">
                                 <input class="input-text" type="text" placeholder="中文/拼音" />
                             </div>
                         </div>
                         <div class="control-group">
-                            <label class="control-label" for="">景区名称：</label>
+                            <label class="control-label">景区名称：</label>
                             <div class="controls">
                                 <input class="input-text" type="text" placeholder="中文/拼音" />
                             </div>
                         </div>
                         <div class="control-group">
-                            <label class="control-label" for=""> </label>
+                            <label class="control-label"> </label>
                             <div class="controls">
                                 <label class="checkbox inline"><input class="input-checkbox" name="hotelType" type="checkbox">度假酒店</label>
                                 <label class="checkbox inline"><input class="input-checkbox" name="hotelType" type="checkbox">精品酒店</label>
@@ -52,13 +52,13 @@
                 <div class="hotel-global tabcon">
                     <form class="form-hor">
                         <div class="control-group">
-                            <label class="control-label" for="">入住城市：</label>
+                            <label class="control-label">入住城市：</label>
                             <div class="controls">
                                 <input class="input-text" type="text" placeholder="中文/拼音" />
                             </div>
                         </div>
                         <div class="control-group">
-                            <label class="control-label" for="">入住日期：</label>
+                            <label class="control-label">入住日期：</label>
                             <div class="controls">
                                 <div class="dinput dinput-date">
                                     <input class="input-date" type="text" maxlength="10" placeholder="2013-6-10">
@@ -70,7 +70,7 @@
                             </div>
                         </div>
                         <div class="control-group">
-                            <label class="control-label" for="">离店日期：</label>
+                            <label class="control-label">离店日期：</label>
                             <div class="controls">
                                 <div class="dinput dinput-date">
                                     <input class="input-date" type="text" maxlength="10" placeholder="2013-6-10">
@@ -82,7 +82,7 @@
                             </div>
                         </div>
                         <div class="control-group">
-                            <label class="control-label" for="">人数：</label>
+                            <label class="control-label">人数：</label>
                             <div class="controls">
                                 <select class="select input-small" id="" name="">
                                     <option>1 成人</option>
@@ -100,7 +100,7 @@
                             </div>
                         </div>
                         <div class="control-group">
-                            <label class="control-label" for="">入住：</label>
+                            <label class="control-label">入住：</label>
                             <div class="controls">
                                 <select class="select input-small" id="" name="">
                                     <option>1 间</option>
