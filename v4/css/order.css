@@ -7,12 +7,50 @@
 .wrap{ width:960px;}
 body{font:12px/22px Tahoma,Arial,\5b8b\4f53,sans-serif;}
 .border{border:1px solid #ccc;}
+a{color:#08b;text-decoration: none;}
+a:hover{color:#e38;text-decoration: underline;}
+
 /* 公共组件 */
-.dl-hor{}
+
+/* 虚线 */
+.dot_line,.solid_line{display:block;margin:10px 0;clear:both;height:0;overflow:hidden;text-indent:-9999px;}
+.dot_line{border-bottom:1px dashed #ddd; }
+a.dot_line{margin:0 3px;height:auto;line-height:1.5;display:inline-block;text-indent:0;border-bottom:1px dashed #08b;cursor:pointer;}
+/* 横向两列经典排版 */
+.xdl-hor {
+    line-height: 26px;
+}
+.xdl-hor dt {
+    float: left;
+    display: inline;
+    width: 100px;
+    text-align: right;
+    margin-bottom: 0;
+}
+.xdl-hor dd {
+    margin-left: 100px;
+}
+
+.xlist-hor .xdl-hor {
+    margin-bottom: 10px;
+}
+.xlist-hor input {
+    margin-bottom: 0;
+}
+.xdl-hor label.inline {
+    padding-top: 0;
+}
 
 
 
-/* 公共头部 */
+
+
+
+
+
+
+
+/* 订单公共头部 */
 .order-header{margin:10px auto;height:60px;position:relative;z-index:5;}
 .header-inner{padding:1px 0;}
 .order-header .logo{float:left;display:inline;width:380px;height:60px; background: url(http://pic.lvmama.com/img/v3/logo.png) no-repeat left center;_background: url(http://pic.lvmama.com/img/v3/logo8.png) no-repeat left center;text-indent:-9999px;outline:none}
@@ -40,16 +78,25 @@ body{font:12px/22px Tahoma,Arial,\5b8b\4f53,sans-serif;}
 /* 订单样式正文 */
 .order-content{overflow:hidden;}
 .order-content .sidebar,
-.order-content .main{padding-bottom:9999px;margin-bottom:-9999px;word-wrap:break-word; }
-.sidebar{float:right;width:240px;background:#f6f6f6;border-left:1px solid #ccc;}
+.order-content .main{word-wrap:break-word; word-break:break-all; }
+.sidebar{float:right;width:240px;background:#f6f6f6;border-left:1px solid #ccc;box-shadow:2px 0 3px #ddd inset;}
 .order-content .main{padding:10px 20px;overflow:hidden;}
-.order-title{border-bottom:2px solid #ddd;height:26px;line-height:26px;}
-.order-title h3{float:left;border-bottom:2px solid #d17;}
+.order-title{border-bottom:2px solid #ddd;height:30px;line-height:30px;}
 
+.order-title h3{float:left;font-size:16px;color:#e38;}
+.order-title h3 span{display:inline-block;border-bottom:2px solid #d17;}
+
+/* 订单侧边栏 */
 .sidebox{padding:10px 20px;}
+.side-setbox .content{overflow:hidden;}
+.pro-setbox{padding-top:8px;margin-top:-1px;margin-bottom:10px;border-top:1px dashed #ddd;}
+.pro-setbox dt{font-weight:bold;}
+.pro-setbox dd{margin-top:5px;line-height:20px;color:#666;}
+.pro-setbox .num,.total-price .price-num{float:right;width:80px;text-align:right;}
+.total-price strong{font-size:14px;}
+.total-price .price-num{width:auto;}
+.total-price dfn{font-size:20px;}
 
-
-
-
+.save-price,.save-price dfn{color:#0b0;}
 
 
