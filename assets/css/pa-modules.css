@@ -6,7 +6,7 @@
 
 /* CSS modules */
 @import "modules/buttons.css";
-@import "modules/form.css";
+@import "modules/forms.css";
 @import "modules/typo.css";
 @import "modules/step.css";
 @import "modules/ui-components.css";
