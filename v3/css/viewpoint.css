@@ -177,6 +177,7 @@ h2.td_head_blue .font_size_18{float:left;}
 
 
 /* 面包屑 */
+/*
 .p-crumbs{background:#f0f0f0; height:28px;line-height:28px;padding:1px 0;position:relative;z-index:40;clear:both;}
 .crumbs-nav{ float:left;display:inline;}
 .crumbs-nav span.position{ float:left;display:inline; padding-left:15px;}

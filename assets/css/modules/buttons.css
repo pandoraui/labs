@@ -154,7 +154,7 @@ input {
   margin-top: 4px;
 }
 .btn-small {
-  padding: 2px 10px;
+  padding: 2px 12px;
   font-size: 12px;
 }
 .btn-small [class^="icon-"],
@@ -166,8 +166,42 @@ input {
   margin-top: -1px;
 }
 .btn-mini {
-  padding: 0 6px;
+  padding: 0 8px;
   font-size: 12px;
+}
+
+.btn {
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
+}
+.btn-big {
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
+}
+.btn-large {
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
+}
+.btn-small {
+    -webkit-border-radius: 2px;
+       -moz-border-radius: 2px;
+            border-radius: 2px;
+}
+.btn-mini {
+    -webkit-border-radius: 2px;
+       -moz-border-radius: 2px;
+            border-radius: 2px;
+}
+
+.cnbtn,.cnbtn .btn {
+    padding-left: 20px;
+    padding-right: 20px;
+    -webkit-border-radius: 2px;
+       -moz-border-radius: 2px;
+            border-radius: 2px;
 }
 .btn-block {
   display: block;
@@ -604,31 +638,7 @@ input[type="submit"].btn.btn-mini {
 }
 
 
-.btn {
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-}
-.btn-big {
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-}
-.btn-large {
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-}
-.btn-small {
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-}
-.btn-mini {
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-}
+
 
 /* 按钮文字阴影 */
 /* 暂时不使用

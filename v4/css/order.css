@@ -15,33 +15,36 @@ a:hover{color:#e38;text-decoration: underline;}
 /* 虚线 */
 .dot_line,.solid_line{display:block;margin:10px 0;clear:both;height:0;overflow:hidden;text-indent:-9999px;}
 .dot_line{border-bottom:1px dashed #ddd; }
+.solid_line{border-bottom:1px solid #ddd; }
 a.dot_line{margin:0 3px;height:auto;line-height:1.5;display:inline-block;text-indent:0;border-bottom:1px dashed #08b;cursor:pointer;}
 /* 横向两列经典排版 */
-.xdl-hor {
+.xdl {
     line-height: 26px;
 }
-.xdl-hor dt {
+.xdl dt {
     float: left;
     display: inline;
     width: 100px;
     text-align: right;
     margin-bottom: 0;
 }
-.xdl-hor dd {
+.xdl dd {
     margin-left: 100px;
 }
 
-.xlist-hor .xdl-hor {
+.xdl-hor .xdl {
     margin-bottom: 10px;
 }
-.xlist-hor input {
+.xdl-hor input {
     margin-bottom: 0;
 }
 .xdl-hor label.inline {
     padding-top: 0;
 }
 
-
+.xdl .tl {
+    text-align: left;
+}
 
 
 
@@ -58,7 +61,6 @@ a.dot_line{margin:0 3px;height:auto;line-height:1.5;display:inline-block;text-in
 .order-header p{ text-align:right;color:#555;}
 .order-header p.welcome{ padding:10px 3px 0 0;}
 .order-header p.info strong{color:#d17;}
-
 
 /* footer */
 .lv-footer *{margin:0;padding:0;}
@@ -78,7 +80,9 @@ a.dot_line{margin:0 3px;height:auto;line-height:1.5;display:inline-block;text-in
 /* 订单样式正文 */
 .order-content{overflow:hidden;}
 .order-content .sidebar,
-.order-content .main{word-wrap:break-word; word-break:break-all; }
+.order-content .main{word-wrap:break-word; word-break:break-all;}
+
+
 .sidebar{float:right;width:240px;background:#f6f6f6;border-left:1px solid #ccc;box-shadow:2px 0 3px #ddd inset;}
 .order-content .main{padding:10px 20px;overflow:hidden;}
 .order-title{border-bottom:2px solid #ddd;height:30px;line-height:30px;}
@@ -98,5 +102,52 @@ a.dot_line{margin:0 3px;height:auto;line-height:1.5;display:inline-block;text-in
 .total-price dfn{font-size:20px;}
 
 .save-price,.save-price dfn{color:#0b0;}
+
+/* 订单可编辑区域 */
+.edit-box{padding-bottom:10px;margin-bottom:10px;}
+.edit-box,.choose-info{background:#f0f6fc}
+.edit-box .edit-title{
+    padding:0 10px;
+    height:34px;
+    line-height:34px;
+    background:#cde;
+}
+.edit-title h4{font-size:12px;}
+.choose-info{
+    margin-bottom:10px;
+    padding:5px 0 6px;
+}
+.edit-box .choose-info{
+    border-bottom:1px solid #cde;
+}
+.choose-info .xdl{margin-bottom:0;}
+
+
+
+
+
+
+
+
+/* 驴妈妈预订条款 */
+.lvclause {
+    padding:10px 10px 2px;
+    height:127px;
+    overflow-y:scroll;
+    margin-top:20px;
+}
+
+.lvclause h3 {
+    font-size: 14px;
+    margin-bottom:5px;
+}
+.lvclause h4 {
+    font-size: 12px;
+    margin-bottom:5px;
+}
+.lvclause p {
+    margin-bottom: 10px;
+}
+
 
 

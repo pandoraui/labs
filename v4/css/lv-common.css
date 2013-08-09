@@ -96,7 +96,8 @@ i.icon-weibo{ background-position: 0 -168px;}
 .caibei-close{position:absolute;right:10px;top:0;width:20px;height:20px;overflow:hidden;color:#FF7A17;font-weight:bold;line-height:20px;text-align:center;font-style:normal;cursor:pointer;}
 
 /* footer */
-.footer-inner{padding-bottom:20px;}
+#order-footer{margin-top:10px;}
+.footer-inner{padding:10px 0 20px;}
 .footer-inner a:hover{color:#d17;}
 .lv-footer *{margin:0;padding:0;}
 .lv-footer {margin:0 auto;padding:10px 0;border-top:2px solid #dd1177;font-family: Arial,\5b8b\4f53;font-size:12px;clear:both;text-align:center;}

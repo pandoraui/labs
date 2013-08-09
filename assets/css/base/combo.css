@@ -119,7 +119,10 @@ h6{font-size:12px;font-weight:400;}
     overflow: hidden;
 }
 .equalheight-box .equalheight-item {
-    margin-bottom: -9999px !important;
+    margin-bottom: -9979px !important;
     padding-bottom: 9999px !important;
 }
 /*  */
+.vmiddle {
+    vertical-align: middle;
+}

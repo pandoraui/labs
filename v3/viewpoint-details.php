@@ -8,6 +8,7 @@
 <?php include("common/meta.php"); ?>
 <link rel="stylesheet" href="css/xincomment.css" >
 <link rel="stylesheet" href="/pandoraui/typo/typo.css" >
+<link rel="stylesheet" href="css/page-common.css" >
 <link rel="stylesheet" href="css/viewpoint.css" >
 
 <style>
