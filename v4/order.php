@@ -6,7 +6,7 @@
 <style>
 
 </style>
-
+<meta http-equiv="refresh" content="0;url=./order/">
 </head>
 <body class="order cnbtn">
 <?php include("common/order-header.html"); ?>

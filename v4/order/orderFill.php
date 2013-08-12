@@ -1,12 +1,6 @@
 <?php $page = "start" ?>
-<?php $title="开始使用"?>
+<?php $title="订单信息填写"?>
 <?php include("../common/order-meta.php"); ?>
-
-<!-- 临时使用的内嵌样式style，不要上线此style -->
-<style>
-
-</style>
-
 </head>
 <body class="order cnbtn">
 <?php include("../common/order-header.html"); ?>
@@ -510,7 +504,7 @@
                     <dd><button class="btn btn-big btn-orange">同意以下预订协议并提交订单</button>
                     </dd>
                 </dl>
-                <div class="lvclause border">
+                <div class="lv-agree">
                     <h3>驴妈妈旅游网预订条款</h3>
                     <h5>1.驴妈妈预订条款的确认</h5>
                     <p>驴妈妈旅游网（以下简称“驴妈妈”）各项服务的所有权与运作权归景域旅游运营集团所有。本服务条款具有法律约束力。一旦您点选“确认下单"成功提交订单后，即表示您自愿接受本协议之所有条款，并同意通过驴妈妈订购旅游产品。</p>

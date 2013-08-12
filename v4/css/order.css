@@ -9,8 +9,15 @@ body{font:12px/22px Tahoma,Arial,\5b8b\4f53,sans-serif;}
 .border{border:1px solid #ccc;}
 a{color:#08b;text-decoration: none;}
 a:hover{color:#e38;text-decoration: underline;}
+a[href="###"]{color:#888;cursor:default;}
+
 
 /* 公共组件 */
+small{font-size:12px;color:#888;}
+.order h3{font-size:16px;}
+.order h4{font-size:14px;}
+.order h5{font-size:12px;}
+
 
 /* 虚线 */
 .dot_line,.solid_line{display:block;margin:10px 0;clear:both;height:0;overflow:hidden;text-indent:-9999px;}
@@ -90,6 +97,12 @@ a.dot_line{margin:0 3px;height:auto;line-height:1.5;display:inline-block;text-in
 .order-title h3{float:left;font-size:16px;color:#e38;}
 .order-title h3 span{display:inline-block;border-bottom:2px solid #d17;}
 
+/* 支付方式 */
+.c-title {overflow:hidden;}
+.c-title h3,.c-title h4{float:left;font-size:14px;}
+.c-title h4{line-height:2;}
+.c-title .total-price{float:right;}
+
 /* 订单侧边栏 */
 .sidebox{padding:10px 20px;}
 .side-setbox .content{overflow:hidden;}
@@ -103,7 +116,7 @@ a.dot_line{margin:0 3px;height:auto;line-height:1.5;display:inline-block;text-in
 
 .save-price,.save-price dfn{color:#0b0;}
 
-/* 订单可编辑区域 */
+/* 订单可编辑区域 暂未使用 */
 .edit-box{padding-bottom:10px;margin-bottom:10px;}
 .edit-box,.choose-info{background:#f0f6fc}
 .edit-box .edit-title{
@@ -122,32 +135,106 @@ a.dot_line{margin:0 3px;height:auto;line-height:1.5;display:inline-block;text-in
 }
 .choose-info .xdl{margin-bottom:0;}
 
-
-
-
-
-
-
-
-/* 驴妈妈预订条款 */
-.lvclause {
+/* 驴妈妈预订条款/合同等 */
+.lv-agree {
     padding:10px 10px 2px;
-    height:127px;
     overflow-y:scroll;
     margin-top:20px;
+    height:127px;
+    border:1px solid #ccc;
 }
 
-.lvclause h3 {
+.lv-agree h3 {
     font-size: 14px;
     margin-bottom:5px;
 }
-.lvclause h4 {
+.lv-agree h4 {
     font-size: 12px;
     margin-bottom:5px;
 }
-.lvclause p {
+.lv-agree p {
     margin-bottom: 10px;
 }
 
+/* 合同contract */
+.lightbox{background:#f6f6f6;padding:20px 30px;position:relative;z-index:3;}
+.contract{}
+.contract-title{font-family: Microsoft YaHei,”\5FAE\8F6F\96C5\9ED1″;font-weight:500;font-size:24px;text-align:center;height:40px;line-height:40px;}
+.order-btn{text-align:center;margin:30px 0 10px;}
+.contract .lv-agree{height:400px;border:1px solid #abc;background:#fff;}
+.order-content .contract{ border-top:1px solid #ccc;}
 
 
+
+/* 支付方式 */
+.paybox{border-top:3px solid #abc;}
+.paybox .timebox{float:right;display:inline-block;margin-top:20px;padding:0 10px;height:28px;line-height:28px;border:1px solid #ccc;background:#fff;}
+.paybox h3{margin-bottom:5px;}
+.paybox .view-details{
+    position:absolute;
+    top:-3px;
+    right:30px;
+    display:inline-block;
+    background:#abc;
+    padding:0 10px;
+    height:28px;
+    line-height:28px;
+    color:#fff;
+}
+.paytips{color:#666;}
+
+
+/* 支付方式列表 */
+.payment-list{padding:20px;background:#fff;border:1px solid #abc;border-top-width:3px;}
+.bank-list li{float:left;display:inline;*zoom:1;margin:0px 8px 8px;}
+.bank-list .icon-bank{display:inline-block;width:130px;height:36px;border:1px solid #ddd;vertical-align:middle;background:#fff;}
+.bank-list .icon-bank:hover{border-color:#ff9600;}
+.pay-title h4{float:left;line-height:38px;color:#666;font-size:12px;}
+.payment{position:relative;margin-top:30px;}
+.ui-tab-trigger{height:40px;}
+.ui-tab-trigger ul {
+position: absolute;
+top: -2px;
+width: 750px;
+left:180px;
+}
+.ui-tab-trigger li{
+position:relative;
+border: #cde solid 2px;
+border-bottom: 0 none;
+float: left;
+font-size: 14px;
+font-weight: bold;
+height: 40px;
+line-height: 38px;
+margin-left: 3px;
+text-align: center;
+width: 115px;
+}
+.ui-tab-trigger .selected {
+border-color: #e6e6e6;
+overflow: visible;
+}
+.ui-tab-trigger li a {
+background-color: #fff;
+border: #fff solid 2px;
+border-bottom: 0 none;
+display: block;
+height: 38px;
+text-decoration: none;
+width: 111px;
+position: absolute;
+top: 0;
+left: 0;
+}
+.ui-tab-trigger .selected a {
+background-color: #fff;
+border-color: #abc;
+color: #000;
+height: 41px;
+outline: medium none;
+text-decoration: none;
+}
+.ui-tab-trigger li a:hover {
+text-decoration: none;
+}

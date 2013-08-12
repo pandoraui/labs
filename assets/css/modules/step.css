@@ -64,12 +64,11 @@
     font-size:40px;
 }
 .ui-step .ui-step-arrow .arrow_r2 {
-    right: 3px;
+    right: 4px;
     border-color: transparent transparent transparent #eee;
     border-style: dashed dashed dashed solid;
 }
 .ui-step .ui-step-active .ui-step-arrow .arrow_r2 {
-    right: 3px;
     border-color: transparent transparent transparent #d17;
     border-style: dashed dashed dashed solid;
 }
