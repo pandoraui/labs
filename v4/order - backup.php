@@ -8,11 +8,9 @@
 </style>
 
 </head>
-<body class="order cnbtn">
+<body class="order">
 <?php include("common/order-header.html"); ?>
-<div class="message" style="position:fixed;z-index:1000;top:0;left:0;width:100%;height:100%;background:#fff; text-align:center;font-size:30px; padding-top:300px;">
-    效果预览已转移，请访问<a href="http://10.3.1.41/labs/v4/order/">http://10.3.1.41/labs/v4/order/</a>
-</div>
+
 
 <div class="wrap">
     <!-- 操作步骤 -->
@@ -114,7 +112,7 @@
                             <div class="dinput dinput-date">
                                 <input class="input-date" type="text" maxlength="10" placeholder="2013-6-10">
                                 <div class="date-info">
-                                    <i class="xicon icon-date"></i>
+                                    <i class="icon-date"></i>
                                     <span class="text-info">星期五</span>
                                 </div>
                             </div>
@@ -154,9 +152,9 @@
             <div class="order-title">
                 <h3><span>附加产品</span></h3>
             </div>
-            <div class="content xdl-hor">
+            <div class="content">
                 <div class="hr_a"></div>
-                <div class="">
+                <div class="xdl-hor">
                     <dl class="xdl">
                         <dt class="B">保险：</dt>
                         <dd>
@@ -166,8 +164,9 @@
                     </dl>
                     
                     
-                    
-                    <!-- 默认可编辑状态 -->
+                    <!----------------------
+                    ------- 默认状态 -------
+                    ------------------------>
                     <div class="choose-info">
                         <dl class="xdl">
                             <dt>常用联系人：</dt>
@@ -194,42 +193,85 @@
                     <dl class="xdl">
                         <dt></dt>
                         <dd>
-                            <button class="btn btn-small btn-orange">保存</button>
-                        </dd>
-                    </dl>
-                    <!-- //默认可编辑状态 -->
-                    
-                    
-                    
-                    <!-- 保存后状态 -->
-                    <dl class="xdl">
-                        <dt><i class="req">*</i>投保人1：</dt>
-                        <dd>
-                            <span class="input-info">胡小小</span>
-                        </dd>
-                    </dl>
-                    <dl class="xdl">
-                        <dt><i class="req">*</i>投保人2：</dt>
-                        <dd>
-                            <span class="input-info">小明</span>
-                        </dd>
-                    </dl>
-                    <dl class="xdl">
-                        <dt></dt>
-                        <dd>
                             <button class="btn btn-small btn-white">修改</button>
                         </dd>
                     </dl>
-                    <!-- //保存后状态 -->
-                    
-                    
-                    
                     <dl class="xdl">
                         <dt></dt>
                         <dd>
                             <label class="radio inline"><input class="input-radio" name="safety" type="radio">不需要保险</label>
                         </dd>
                     </dl>
+                    
+                    
+                    <!----------------------
+                    ------ 可编辑状态 ------
+                    ------------------------>
+                    <!-- 可编辑盒子 -->
+                    <div class="edit-box hide">
+                        <div class="edit-title">
+                            <h4>请正确填写以下投保人信息</h4>
+                        </div>
+                        <div class="choose-info">
+                            <dl class="xdl">
+                                <dt>常用联系人：</dt>
+                                <dd class="form-inline">
+                                    <label class="checkbox inline"><input type="checkbox" class="input-checkbox" />胡小小</label>
+                                    <label class="checkbox inline"><input type="checkbox" class="input-checkbox" />郑明明</label>
+                                    <label class="checkbox inline"><input type="checkbox" class="input-checkbox" />黄丽丽</label>
+                                    <label class="checkbox inline"><input type="checkbox" class="input-checkbox" />王山山</label>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="edit-info">
+                             <dl class="xdl">
+                                <dt><i class="req">*</i>投保人1：</dt>
+                                <dd>
+                                    <input type="text" class="input-text" />
+                                </dd>
+                            </dl>
+                            <dl class="xdl">
+                                <dt><i class="req">*</i>投保人2：</dt>
+                                <dd>
+                                    <input type="text" class="input-text" />
+                                </dd>
+                            </dl>
+                            <dl class="xdl">
+                                <dt></dt>
+                                <dd>
+                                    <button class="btn btn-small btn-orange">保存</button>
+                                </dd>
+                            </dl>
+                        </div>
+                        
+                    </div> <!-- //可编辑盒子 -->
+                    
+                    
+                    <!----------------------
+                    ------ 保存后状态 ------
+                    ------------------------>
+                    <!-- 展示信息盒子 -->
+                    <div class="ready-box">
+                        <dl class="xdl">
+                            <dt><i class="req">*</i>投保人1：</dt>
+                            <dd>
+                                <span class="input-info">胡小小</span>
+                            </dd>
+                        </dl>
+                        <dl class="xdl">
+                            <dt><i class="req">*</i>投保人2：</dt>
+                            <dd>
+                                <span class="input-info">小明</span>
+                            </dd>
+                        </dl>
+                        <dl class="xdl">
+                            <dt></dt>
+                            <dd>
+                                <button class="btn btn-small btn-orange">保存</button>
+                            </dd>
+                        </dl>
+                    </div> <!-- //展示信息盒子 -->
+                    
                     
                     <div class="dot_line">间隔线</div>
                     
@@ -253,9 +295,6 @@
                         </dd>
                     </dl>
                     
-                    
-                    
-                    <!-- 默认可编辑状态 -->
                     <dl class="xdl">
                         <dt><i class="req">*</i>收件人姓名：</dt>
                         <dd>
@@ -271,10 +310,10 @@
                     <dl class="xdl">
                         <dt><i class="req">*</i>省份：</dt>
                         <dd>
-                            <select class="" name="" id="">
+                            <select name="" id="">
                                 <option value="">上海市</option>
                             </select>
-                            <select class="" name="" id="">
+                            <select name="" id="">
                                 <option value="">上海市</option>
                             </select>
                         </dd>
@@ -282,55 +321,13 @@
                     <dl class="xdl">
                         <dt><i class="req">*</i>收件地址：</dt>
                         <dd>
-                            <input type="text" class="input-text input-big" value="金沙江路1759号圣诺亚大厦B座10楼" />
+                            <input type="text" class="input-text" value="金沙江路1759号圣诺亚大厦B座10楼" />
                         </dd>
                     </dl>
                     <dl class="xdl">
                         <dt>邮编：</dt>
                         <dd>
-                            <input type="text" class="input-text input-mini" value="200333" />
-                        </dd>
-                    </dl>
-                    <dl class="xdl">
-                        <dt></dt>
-                        <dd>
-                            <button class="btn btn-small btn-orange">保存</button>
-                        </dd>
-                    </dl>
-                    <!-- //默认可编辑状态 -->
-                    
-                    
-                    
-                    <!-- 保存后状态 -->
-                    <dl class="xdl">
-                        <dt><i class="req">*</i>收件人姓名：</dt>
-                        <dd>
-                            <span class="input-info">胡小小</span>
-                        </dd>
-                    </dl>
-                    <dl class="xdl">
-                        <dt><i class="req">*</i>手机号码：</dt>
-                        <dd>
-                            <span class="input-info">13817131714</span>
-                        </dd>
-                    </dl>
-                    <dl class="xdl">
-                        <dt><i class="req">*</i>省份：</dt>
-                        <dd>
-                            <span class="input-info input-mini">上海市</span>
-                            <span class="input-info input-mini">长宁区</span>
-                        </dd>
-                    </dl>
-                    <dl class="xdl">
-                        <dt><i class="req">*</i>收件地址：</dt>
-                        <dd>
-                            <span class="input-info input-big">金沙江路1759号圣诺亚大厦B座10楼</span>
-                        </dd>
-                    </dl>
-                    <dl class="xdl">
-                        <dt>邮编：</dt>
-                        <dd>
-                            <span class="input-info">200333</span>
+                            <input type="text" class="input-text" value="200333" />
                         </dd>
                     </dl>
                     <dl class="xdl">
@@ -339,9 +336,6 @@
                             <button class="btn btn-small btn-white">修改</button>
                         </dd>
                     </dl>
-                    <!-- //保存后状态 -->
-                    
-                    
                 </div>
                 
             </div> <!-- //附加产品 -->
@@ -351,8 +345,8 @@
             <div class="order-title">
                 <h3><span>订单联系人信息</span></h3>
             </div>
-            <div class="content xdl-hor">    
-                <div class=""> 
+            <div class="content">    
+                <div class="xdl-hor"> 
                     <div class="choose-info">
                         <dl class="xdl">
                             <dt>常用联系人：</dt>
@@ -409,8 +403,8 @@
             <div class="order-title">
                 <h3><span>游玩人信息</span></h3>
             </div>
-            <div class="content xdl-hor">    
-                <div class="">    
+            <div class="content">    
+                <div class="xdl-hor">    
                     <div class="choose-info">
                         <dl class="xdl">
                             <dt>常用联系人：</dt>
@@ -451,41 +445,43 @@
             <div class="order-title">
                 <h3><span>紧急联系人信息</span></h3>
             </div>
-            <div class="content xdl-hor">       
-                <div class="choose-info">
+            <div class="content">    
+                <div class="xdl-hor">    
+                    <div class="choose-info">
+                        <dl class="xdl">
+                            <dt>常用联系人：</dt>
+                            <dd class="form-inline">
+                                <label class="checkbox inline"><input type="checkbox" class="input-checkbox" />胡小小</label>
+                                <label class="checkbox inline"><input type="checkbox" class="input-checkbox" />郑明明</label>
+                                <label class="checkbox inline"><input type="checkbox" class="input-checkbox" />黄丽丽</label>
+                                <label class="checkbox inline"><input type="checkbox" class="input-checkbox" />王山山</label>
+                            </dd>
+                        </dl>
+                    </div>
                     <dl class="xdl">
-                        <dt>常用联系人：</dt>
-                        <dd class="form-inline">
-                            <label class="checkbox inline"><input type="checkbox" class="input-checkbox" />胡小小</label>
-                            <label class="checkbox inline"><input type="checkbox" class="input-checkbox" />郑明明</label>
-                            <label class="checkbox inline"><input type="checkbox" class="input-checkbox" />黄丽丽</label>
-                            <label class="checkbox inline"><input type="checkbox" class="input-checkbox" />王山山</label>
+                        <dt><i class="req">*</i>联系人姓名：</dt>
+                        <dd>
+                            <input type="text" class="input-text" />
                         </dd>
                     </dl>
-                </div>
-                <dl class="xdl">
-                    <dt><i class="req">*</i>联系人姓名：</dt>
-                    <dd>
-                        <input type="text" class="input-text" />
-                    </dd>
-                </dl>
-                <dl class="xdl">
-                    <dt><i class="req">*</i>手机号码：</dt>
-                    <dd>
-                        <input type="text" class="input-text" />
-                        <span class="help-inline">免费接受订单确认短信，请务必填写正确</span>
-                    </dd>
-                </dl>
+                    <dl class="xdl">
+                        <dt><i class="req">*</i>手机号码：</dt>
+                        <dd>
+                            <input type="text" class="input-text" />
+                            <span class="help-inline">免费接受订单确认短信，请务必填写正确</span>
+                        </dd>
+                    </dl>
                     
+                </div>
                 
             </div> <!-- //紧急联系人信息 -->
             <!-- 预订须知 -->
             <div class="order-title">
                 <h3><span>预订须知</span></h3>
             </div>
-            <div class="content xdl-hor">
+            <div class="content">
                 <div class="hr_a"></div>
-                <div class="booking-policy">
+                <div class="xdl-hor booking-policy">
                     <dl class="xdl">
                     	<dt class="B">入园方式：</dt>
                     	<dd>入园地址：上海市松江佘山上海欢乐谷检票处驴妈妈电子门票专用通道；<br>
@@ -502,11 +498,6 @@
                     </dl>
                 </div>
                 <div class="hr_d"></div>
-                <dl class="xdl">
-                    <dt class="tl"><a href="#" class="vmiddle">&lt; 返回上一步</a></dt>
-                    <dd><button class="btn btn-big btn-orange">提交订单</button>
-                    </dd>
-                </dl>
                 <dl class="xdl">
                     <dt class="tl"><a href="#" class="vmiddle">&lt; 返回上一步</a></dt>
                     <dd><button class="btn btn-big btn-orange">同意以下预订协议并提交订单</button>

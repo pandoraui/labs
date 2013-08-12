@@ -1,6 +1,6 @@
 <?php $page = "start" ?>
 <?php $title="开始使用"?>
-<?php include("common/order-meta.php"); ?>
+<?php include("../common/order-meta.php"); ?>
 
 <!-- 临时使用的内嵌样式style，不要上线此style -->
 <style>
@@ -9,10 +9,8 @@
 
 </head>
 <body class="order cnbtn">
-<?php include("common/order-header.html"); ?>
-<div class="message" style="position:fixed;z-index:1000;top:0;left:0;width:100%;height:100%;background:#fff; text-align:center;font-size:30px; padding-top:300px;">
-    效果预览已转移，请访问<a href="http://10.3.1.41/labs/v4/order/">http://10.3.1.41/labs/v4/order/</a>
-</div>
+<?php include("../common/order-header.html"); ?>
+
 
 <div class="wrap">
     <!-- 操作步骤 -->
@@ -531,7 +529,7 @@
     
 </div>
 
-<?php include("common/order-footer.php"); ?>
+<?php include("../common/order-footer.php"); ?>
 
 </body>
 </html>

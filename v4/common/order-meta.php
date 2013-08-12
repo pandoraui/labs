@@ -23,13 +23,13 @@
 -->
 
 <!-- pa-base.css -->
-<link rel="stylesheet" href="../assets/css/pa-base.css" >
+<link rel="stylesheet" href="/labs/assets/css/pa-base.css" >
 
 <!-- lv-common.css.css -->
-<link rel="stylesheet" href="css/lv-common.css" >
+<link rel="stylesheet" href="/labs/v4/css/lv-common.css" >
 
 <!-- pa-modules.css -->
-<link rel="stylesheet" href="../assets/css/pa-modules.css" >
+<link rel="stylesheet" href="/labs/assets/css/pa-modules.css" >
 
 <!-- propage.css 项目页面样式 -->
-<link rel="stylesheet" href="css/order.css" >
+<link rel="stylesheet" href="/labs/v4/css/order.css" >
