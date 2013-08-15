@@ -38,7 +38,7 @@
     </ol> <!-- //操作步骤 -->
     
     
-    <div class="order-content border equalheight-box">
+    <div class="order-main border equalheight-box">
         <div class="sidebar equalheight-item">
             <div class="sidebox side-setbox">
                 sidebox

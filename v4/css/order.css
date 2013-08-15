@@ -10,7 +10,7 @@ body{font:12px/22px Tahoma,Arial,\5b8b\4f53,sans-serif;}
 a{color:#08b;text-decoration: none;}
 a:hover{color:#e38;text-decoration: underline;}
 a[href="###"]{color:#888;cursor:default;}
-
+.text-gray{color:#888;}
 
 /* 公共组件 */
 small{font-size:12px;color:#888;}
@@ -85,21 +85,27 @@ a.dot_line{margin:0 3px;height:auto;line-height:1.5;display:inline-block;text-in
 
 
 /* 订单样式正文 */
-.order-content{overflow:hidden;}
-.order-content .sidebar,
-.order-content .main{word-wrap:break-word; word-break:break-all;}
+.order-main{overflow:hidden;}
+.order-main .sidebar,
+.order-main .main{word-wrap:break-word; word-break:break-all;}
 
 
 .sidebar{float:right;width:240px;background:#f6f6f6;border-left:1px solid #ccc;box-shadow:2px 0 3px #ddd inset;}
-.order-content .main{padding:10px 20px;overflow:hidden;}
-.o-title,
+.order-main .main{padding:10px 20px;overflow:hidden;}
+.order-title,
 .contract-title{font-family: Microsoft YaHei,”\5FAE\8F6F\96C5\9ED1″;font-weight:500;}
-.order-content .o-title{margin:10px 0 20px;}
-.o-title h3{font-size:22px;font-weight:500;color:#e38;}
-
+.order-main .order-title{margin:10px 0 15px;}
+.order-title h3{font-size:22px;font-weight:500;color:#e38;}
+.order-content{margin-bottom:15px;}
+/*
 .order-title{border-bottom:2px solid #ddd;height:30px;line-height:30px;}
 .order-title h3{float:left;font-size:16px;color:#e38;}
 .order-title h3 span{display:inline-block;border-bottom:2px solid #d17;}
+*/
+.check-radio-box .radio,
+.check-radio-box .checkbox {margin-right:0;}
+.check-radio-item{display: inline-block;color:#08b;padding-right:30px;position:relative;cursor:pointer;}
+.check-radio-item .ui-arrow-bottom{top:12px;right:12px;}
 
 /* 支付方式 */
 .c-title {overflow:hidden;}
@@ -166,7 +172,7 @@ a.dot_line{margin:0 3px;height:auto;line-height:1.5;display:inline-block;text-in
 .contract-title{font-size:24px;text-align:center;height:40px;line-height:40px;}
 .order-btn{text-align:center;margin:30px 0 10px;}
 .contract .lv-agree{height:400px;border:1px solid #abc;background:#fff;}
-.order-content .contract{ border-top:1px solid #ccc;}
+.order-main .contract{ border-top:1px solid #ccc;}
 
 
 

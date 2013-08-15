@@ -33,7 +33,7 @@
     </ol> <!-- //操作步骤 -->
     
     
-    <div class="order-content border">
+    <div class="order-main border">
         <div class="main">
             <div class="hr_a"></div>
             <div class="c-title">
@@ -120,7 +120,7 @@
 
             </div> <!-- //合同内容 -->
             
-            <p class="order-btn"><button class="btn btn-big btn-inverse disabled" style="width:240px;">同意签署旅游合同并付款(9)</button></p>
+            <p class="order-btn"><button class="btn btn-big btn-inverse disabled">同意签署旅游合同并付款(9)</button></p>
             <p class="order-btn"><button class="btn btn-big btn-orange">同意签署旅游合同并付款</button></p>
         </div> <!-- //旅游合同 -->
         

@@ -33,7 +33,7 @@
     </ol> <!-- //操作步骤 -->
     
     
-    <div class="order-content border equalheight-box">
+    <div class="order-main border equalheight-box">
         <div class="sidebar equalheight-item">
             <div class="sidebox side-setbox">
                 <div class="side-title">
@@ -88,10 +88,10 @@
         <div class="main equalheight-item">
             
             <!-- 预订信息 -->
-            <div class="o-title">
+            <div class="order-title">
                 <h3>预订信息</h3>
             </div>
-            <div class="content">
+            <div class="order-content">
                 <div class="xdl-hor">
                     <dl class="xdl">
                         <dt class="B">您预订：</dt>
@@ -121,25 +121,24 @@
                     
                     <dl class="xdl">
                         <dd class="dot_line">间隔线</dd>
-                        <dt class="B">税金：</dt>
+                        <dt class="B">集合地点：</dt>
                         <dd>
-                            <div class="check-text"><label class="radio inline"><input class="input-radio" name="taxes" type="radio">苏梅岛机票税金（香港往返）</label><dfn>&yen;270</dfn>/人</div>
-                            <div class="check-text"><label class="radio inline"><input class="input-radio" name="taxes" type="radio">马尔代夫新航机票税金（香港往返）</label><dfn>&yen;270</dfn>/人</div>
-                            <div class="check-text"><label class="radio inline"><input class="input-radio" name="taxes" type="radio">马尔代夫机票税金（香港往返）</label><dfn>&yen;270</dfn>/人</div>
+                            <div class="check-text"><label class="radio inline"><input class="input-radio" name="taxes" type="radio">始发站　7:30上海汇川路凯旋路路口（近龙之梦购物中心）</label></div>
+                            <div class="check-text"><label class="radio inline"><input class="input-radio" name="taxes" type="radio">途经站点　8:00南方商城沪闵路万源路路口（非集合首发站，实际时间如有误差敬请见谅）</label></div>
+                            <div class="check-text"><label class="radio inline"><input class="input-radio" name="taxes" type="radio">途经站点　8:20松江老城区高速收费口（非集合首发站，实际时间如有误差敬请见谅）</label></div>
                             <div class="tiptext tip-warning">集合地点为必选项</div>
                         </dd>
                     </dl>
                     
                     <dl class="xdl">
-                        <dd class="dot_line">间隔线</dd>
                         <dt class="B">税金：</dt>
-                        <dd>
-                            <div class="check-text"><label class="radio inline"><input class="input-radio" name="taxes" type="radio">苏梅岛机票税金（香港往返）</label><dfn>&yen;270</dfn>/人</div>
-                            <div class="check-text"><label class="radio inline"><input class="input-radio" name="taxes" type="radio">马尔代夫新航机票税金（香港往返）</label><dfn>&yen;270</dfn>/人</div>
-                            <div class="check-text"><label class="radio inline"><input class="input-radio" name="taxes" type="radio">马尔代夫机票税金（香港往返）</label><dfn>&yen;270</dfn>/人</div>
+                        <dd class="dot_line">间隔线</dd>
+                        <dd class="check-radio-box">
+                            <div class="check-text"><label class="radio inline"><input class="input-radio" name="taxes" type="radio"></label><span class="check-radio-item"><i class="ui-arrow-bottom blue-ui-arrow-bottom"></i>苏梅岛机票税金（香港往返）</span><dfn>&yen;270</dfn>/人</div>
+                            <div class="check-text"><label class="radio inline"><input class="input-radio" name="taxes" type="radio"></label><span class="check-radio-item"><i class="ui-arrow-bottom blue-ui-arrow-bottom"></i>马尔代夫新航机票税金（香港往返）</span><dfn>&yen;270</dfn>/人</div>
+                            <div class="check-text"><label class="radio inline"><input class="input-radio" name="taxes" type="radio"></label><span class="check-radio-item"><i class="ui-arrow-bottom blue-ui-arrow-bottom"></i>马尔代夫机票税金（香港往返）</span><dfn>&yen;270</dfn>/人</div>
                         </dd>
                     </dl>
-                    
                     <dl class="xdl">
                         <dd class="dot_line">间隔线</dd>
                         <dt> </dt>
@@ -153,31 +152,24 @@
                         </dd>
                     </dl>
                     
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
                 </div>
             </div> <!-- //预订信息 -->
             
             
+            
+            <div class="hr_a"></div>
             <!-- 附加产品 -->
-            <div class="o-title">
+            <div class="order-title">
                 <h3>附加产品</h3>
             </div>
-            <div class="content xdl-hor">
+            <div class="order-content xdl-hor">
                 <div class="">
                     <dl class="xdl">
                         <dt class="B">保险：</dt>
-                        <dd>
-                            <div class="check-text"><label class="radio inline"><input class="input-radio" name="safety" type="radio">平安国内长途10日游意外险（尊贵型）(国内)</label><dfn>&yen;270</dfn>/人</div>
-                            <div class="check-text"><label class="radio inline"><input class="input-radio" name="safety" type="radio">平安国内长途10日游意外险（特惠型）(国内)</label><dfn>&yen;35</dfn>/人</div>
-                            <div class="check-text"><label class="radio inline"><input class="input-radio" name="safety" type="radio">不需要保险</label></div>
+                        <dd class="check-radio-box">
+                            <div class="check-text"><label class="radio inline"><input class="input-radio" name="safety" type="radio"></label><span class="check-radio-item"><i class="ui-arrow-bottom blue-ui-arrow-bottom"></i>平安国内长途10日游意外险（尊贵型）(国内)</span><dfn>&yen;270</dfn>/人</div>
+                            <div class="check-text"><label class="radio inline"><input class="input-radio" name="safety" type="radio"></label><span class="check-radio-item"><i class="ui-arrow-bottom blue-ui-arrow-bottom"></i>平安国内长途10日游意外险（特惠型）(国内)</span><dfn>&yen;35</dfn>/人</div>
+                            <div class="check-text"><label class="radio inline"><input class="input-radio" name="safety" type="radio"></label><span class="check-radio-item"><i class="ui-arrow-bottom blue-ui-arrow-bottom"></i>不需要保险</span></div>
                             <div class="tiptext tip-warning">旅游保险能够给您的出行安全带来更多保障，所以驴妈妈建议您务必购买旅游保险。如您放弃购买，则行程中的风险和损失将由您自行承担。
                             </div>
                         </dd>
@@ -249,30 +241,35 @@
                         </dd>
                     </dl>
                     
-                    <div class="dot_line">间隔线</div>
-                    
                     <dl class="xdl">
+                        <dd class="dot_line">间隔线</dd>
                         <dt class="B">自费产品：</dt>
-                        <dd>
-                            <div class="check-text"><label class="checkbox inline"><input class="input-checkbox" name="ownpro" type="checkbox">升级总统套房</label><dfn>&yen;100</dfn>/间</div>
-                            <div class="check-text"><label class="checkbox inline"><input class="input-checkbox" name="ownpro" type="checkbox">升级海景观景房</label><dfn>&yen;180</dfn>/间</div>
-                            <div class="check-text"><label class="checkbox inline"><input class="input-checkbox" name="ownpro" type="checkbox">升级豪华型套房</label><dfn>&yen;200</dfn>/间</div>
+                        <dd class="check-radio-box">
+                            <div class="check-text"><label class="checkbox inline"><input class="input-checkbox" name="ownpro" type="checkbox"></label><span class="check-radio-item"><i class="ui-arrow-bottom blue-ui-arrow-bottom"></i>升级总统套房</span><dfn>&yen;100</dfn>/间</div>
+                            <div class="check-text"><label class="checkbox inline"><input class="input-checkbox" name="ownpro" type="checkbox"></label><span class="check-radio-item"><i class="ui-arrow-bottom blue-ui-arrow-bottom"></i>升级海景观景房</span><dfn>&yen;180</dfn>/间</div>
+                            <div class="check-text"><label class="checkbox inline"><input class="input-checkbox" name="ownpro" type="checkbox"></label><span class="check-radio-item"><i class="ui-arrow-bottom blue-ui-arrow-bottom"></i>升级豪华型套房</span><dfn>&yen;200</dfn>/间</div>
                         </dd>
                     </dl>
-                    
-                    <div class="dot_line">间隔线</div>
                     
                     <dl class="xdl">
+                        <dd class="dot_line">间隔线</dd>
                         <dt class="B">快递：</dt>
-                        <dd>
-                            <div class="check-text"><label class="radio inline"><input class="input-radio" name="taxes" type="radio">平邮</label><dfn>&yen;10</dfn>/人</div>
-                            <div class="check-text"><label class="radio inline"><input class="input-radio" name="taxes" type="radio">申通快递</label><dfn>&yen;18</dfn>/人</div>
-                            <div class="check-text"><label class="radio inline"><input class="input-radio" name="taxes" type="radio">顺丰</label><dfn>&yen;20</dfn>/人</div>
+                        <dd class="check-radio-box">
+                            <div class="check-text"><label class="radio inline"><input class="input-radio" name="taxes" type="radio"></label><span class="check-radio-item"><i class="ui-arrow-bottom blue-ui-arrow-bottom"></i>平邮</span><dfn>&yen;10</dfn>/人</div>
+                            <div class="check-text"><label class="radio inline"><input class="input-radio" name="taxes" type="radio"></label><span class="check-radio-item"><i class="ui-arrow-bottom blue-ui-arrow-bottom"></i>申通快递</span><dfn>&yen;18</dfn>/人</div>
+                            <div class="check-text"><label class="radio inline"><input class="input-radio" name="taxes" type="radio"></label><span class="check-radio-item"><i class="ui-arrow-bottom blue-ui-arrow-bottom"></i>顺丰</span><dfn>&yen;20</dfn>/人</div>
                         </dd>
                     </dl>
                     
+                    <dl class="xdl">
+                        <dd class="dot_line">间隔线</dd>
+                        <dt class="B">其他：</dt>
+                        <dd class="check-radio-box">
+                            <div class="check-text"><label class="checkbox inline"><input class="input-checkbox" name="ownpro" type="checkbox"></label><span class="check-radio-item"><i class="ui-arrow-bottom blue-ui-arrow-bottom"></i>美国签证</span><dfn>&yen;100</dfn>/份</div>
+                        </dd>
+                    </dl>
                     
-                    
+                    <div class="hide">
                     <!-- 默认可编辑状态 -->
                     <dl class="xdl">
                         <dt><i class="req">*</i>收件人姓名：</dt>
@@ -358,23 +355,24 @@
                         </dd>
                     </dl>
                     <!-- //保存后状态 -->
-                    
+                    </div>
                     
                 </div>
                 
             </div> <!-- //附加产品 -->
             
             
+            <div class="hr_a"></div>
             <!-- 优惠信息 -->
-            <div class="o-title">
+            <div class="order-title">
                 <h3>优惠信息</h3>
             </div>
-            <div class="content xdl-hor"> 
+            <div class="order-content xdl-hor form-small"> 
                 <dl class="xdl">
                     <dt class="B">可享优惠：</dt>
-                    <dd>不使用任何优惠</dd>
+                    <dd><input type="text" class="input-text" /></dd>
                     <dd>
-                        <p >1.可参加优惠活动或使用优惠券；<br>
+                        <p class="text-gray">1.可参加优惠活动或使用优惠券；<br>
                         2.付款时可使用奖金抵扣；<br>
                         3.选择浦发银行在线付款立减10元。</p>
                     </dd>
@@ -384,11 +382,11 @@
             
             
             <!-- 联系人信息 -->
-            <div class="o-title">
+            <div class="order-title">
                 <h3>订单联系人信息</h3>
             </div>
-            <div class="content xdl-hor">    
-                <div class=""> 
+            <div class="order-content xdl-hor">    
+                <div class="form-small"> 
                     <div class="choose-info">
                         <dl class="xdl">
                             <dt>常用联系人：</dt>
@@ -431,12 +429,14 @@
             </div> <!-- //联系人信息 -->
             
             
+            
+            <div class="hr_a"></div>
             <!-- 游玩人信息 -->
-            <div class="o-title">
+            <div class="order-title">
                 <h3>游玩人信息</h3>
             </div>
-            <div class="content xdl-hor">    
-                <div class="">    
+            <div class="order-content xdl-hor">    
+                <div class="form-small">    
                     <div class="choose-info">
                         <dl class="xdl">
                             <dt>常用联系人：</dt>
@@ -473,43 +473,50 @@
             </div> <!-- //游玩人信息 -->
             
             
+            
+            <div class="hr_a"></div>
             <!-- 紧急联系人信息 -->
-            <div class="o-title">
+            <div class="order-title">
                 <h3>紧急联系人信息</h3>
             </div>
-            <div class="content xdl-hor">       
-                <div class="choose-info">
+            <div class="order-content xdl-hor">  
+                <div class="form-small">
+                    <div class="choose-info">
+                        <dl class="xdl">
+                            <dt>常用联系人：</dt>
+                            <dd class="form-inline">
+                                <label class="checkbox inline"><input type="checkbox" class="input-checkbox" />胡小小</label>
+                                <label class="checkbox inline"><input type="checkbox" class="input-checkbox" />郑明明</label>
+                                <label class="checkbox inline"><input type="checkbox" class="input-checkbox" />黄丽丽</label>
+                                <label class="checkbox inline"><input type="checkbox" class="input-checkbox" />王山山</label>
+                            </dd>
+                        </dl>
+                    </div>
                     <dl class="xdl">
-                        <dt>常用联系人：</dt>
-                        <dd class="form-inline">
-                            <label class="checkbox inline"><input type="checkbox" class="input-checkbox" />胡小小</label>
-                            <label class="checkbox inline"><input type="checkbox" class="input-checkbox" />郑明明</label>
-                            <label class="checkbox inline"><input type="checkbox" class="input-checkbox" />黄丽丽</label>
-                            <label class="checkbox inline"><input type="checkbox" class="input-checkbox" />王山山</label>
+                        <dt><i class="req">*</i>联系人姓名：</dt>
+                        <dd>
+                            <input type="text" class="input-text" />
+                        </dd>
+                    </dl>
+                    <dl class="xdl">
+                        <dt><i class="req">*</i>手机号码：</dt>
+                        <dd>
+                            <input type="text" class="input-text" />
+                            <span class="help-inline">免费接受订单确认短信，请务必填写正确</span>
                         </dd>
                     </dl>
                 </div>
-                <dl class="xdl">
-                    <dt><i class="req">*</i>联系人姓名：</dt>
-                    <dd>
-                        <input type="text" class="input-text" />
-                    </dd>
-                </dl>
-                <dl class="xdl">
-                    <dt><i class="req">*</i>手机号码：</dt>
-                    <dd>
-                        <input type="text" class="input-text" />
-                        <span class="help-inline">免费接受订单确认短信，请务必填写正确</span>
-                    </dd>
-                </dl>
-                    
                 
             </div> <!-- //紧急联系人信息 -->
+            
+            
+            
+            <div class="hr_a"></div>
             <!-- 预订须知 -->
-            <div class="o-title">
+            <div class="order-title">
                 <h3>预订须知</h3>
             </div>
-            <div class="content xdl-hor">
+            <div class="order-content xdl-hor">
                 <div class="hr_a"></div>
                 <div class="booking-policy">
                     <dl class="xdl">
