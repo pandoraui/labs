@@ -420,6 +420,13 @@
                                 <span class="help-inline">用于接收邮件订单详情、邮件出行通知、行程确认等服务</span></label>
                             </dd>
                         </dl>
+                        <dl class="xdl">
+                        <dt></dt>
+                        <dd>
+                            <button class="btn btn-small btn-orange">保存</button>
+                            <p class="help-block">友情提示：准确填写订单联系人信息，便于我们跟你联系。</p>
+                        </dd>
+                    </dl>
                     </div>
                     
                     
@@ -503,6 +510,13 @@
                         <dd>
                             <input type="text" class="input-text" />
                             <span class="help-inline">免费接受订单确认短信，请务必填写正确</span>
+                        </dd>
+                    </dl>
+                    <dl class="xdl">
+                        <dt></dt>
+                        <dd>
+                            <button class="btn btn-small btn-orange">保存</button>
+                            <p class="help-block">友情提示：紧急联系人信息不能与游玩人相同。</p>
                         </dd>
                     </dl>
                 </div>
