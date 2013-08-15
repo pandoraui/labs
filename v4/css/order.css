@@ -31,12 +31,12 @@ a.dot_line{margin:0 3px;height:auto;line-height:1.5;display:inline-block;text-in
 .xdl dt {
     float: left;
     display: inline;
-    width: 100px;
+    width: 110px;
     text-align: right;
     margin-bottom: 0;
 }
 .xdl dd {
-    margin-left: 100px;
+    margin-left: 115px;
 }
 
 .xdl-hor .xdl {
@@ -92,8 +92,12 @@ a.dot_line{margin:0 3px;height:auto;line-height:1.5;display:inline-block;text-in
 
 .sidebar{float:right;width:240px;background:#f6f6f6;border-left:1px solid #ccc;box-shadow:2px 0 3px #ddd inset;}
 .order-content .main{padding:10px 20px;overflow:hidden;}
-.order-title{border-bottom:2px solid #ddd;height:30px;line-height:30px;}
+.o-title,
+.contract-title{font-family: Microsoft YaHei,”\5FAE\8F6F\96C5\9ED1″;font-weight:500;}
+.order-content .o-title{margin:10px 0 20px;}
+.o-title h3{font-size:22px;font-weight:500;color:#e38;}
 
+.order-title{border-bottom:2px solid #ddd;height:30px;line-height:30px;}
 .order-title h3{float:left;font-size:16px;color:#e38;}
 .order-title h3 span{display:inline-block;border-bottom:2px solid #d17;}
 
@@ -159,7 +163,7 @@ a.dot_line{margin:0 3px;height:auto;line-height:1.5;display:inline-block;text-in
 /* 合同contract */
 .lightbox{background:#f6f6f6;padding:20px 30px;position:relative;z-index:3;}
 .contract{}
-.contract-title{font-family: Microsoft YaHei,”\5FAE\8F6F\96C5\9ED1″;font-weight:500;font-size:24px;text-align:center;height:40px;line-height:40px;}
+.contract-title{font-size:24px;text-align:center;height:40px;line-height:40px;}
 .order-btn{text-align:center;margin:30px 0 10px;}
 .contract .lv-agree{height:400px;border:1px solid #abc;background:#fff;}
 .order-content .contract{ border-top:1px solid #ccc;}
@@ -191,6 +195,8 @@ a.dot_line{margin:0 3px;height:auto;line-height:1.5;display:inline-block;text-in
 .bank-list .icon-bank:hover{border-color:#ff9600;}
 .pay-title h4{float:left;line-height:38px;color:#666;font-size:12px;}
 .payment{position:relative;margin-top:30px;}
+.payment input{outline:none;}
+
 .ui-tab-trigger{height:40px;}
 .ui-tab-trigger ul {
 position: absolute;
@@ -237,4 +243,12 @@ text-decoration: none;
 }
 .ui-tab-trigger li a:hover {
 text-decoration: none;
+}
+
+
+/* 组件个性化 */
+.order .tiptext{color:#666;}
+.order .tip-warning{
+    border: 1px solid #fc6;
+    background: #fff9d9;
 }

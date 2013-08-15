@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="/pandoraui/typo/typo.css" >
 <link rel="stylesheet" href="css/page-common.css" >
 <link rel="stylesheet" href="css/viewpoint.css" >
+<link rel="stylesheet" href="http://pic.lvmama.com/styles/v3/typo.css" >
 
 <style>
 
@@ -653,6 +654,12 @@
 
 <p>
 作为龙城旅游控股集团继中华恐龙园之后投资的重大休闲养生旅游项目，恐龙谷温泉是中国首家史前主题温泉度假中心，也是中国第五代主题温泉的代表作品。占地280亩，一期开发70亩，投资近2亿。位于常州新北区河海东路58号，环球恐龙城核心地段，距中华恐龙园东800米，沪宁高速公路“常州/江阴/S340”出口仅3公里，国宾路（香港九龙仓）、东经120主题景观大道、恐龙城大剧场、“三河三园亲水之旅”游船码头等环绕四周，是华东地区、特别是温泉爱好者养生休闲的最热点区域之一。恐龙谷温泉秉承“生态、健康、时尚、浪漫”经营原则，以国际视野遴选日本、加拿大、德国及中国台湾等国际一流专业机构联手策划打造，不懈追求正本清源的 “温泉秘汤”极致泉境，包括温泉主题公园、VIP别院、汤屋中心、会议中心、顶级餐饮会所、温泉定食餐厅、SPA芳疗美体康娱、WII电玩空间等项目。园区泉石亭榭、花树果草，将私密性围合温泉区与敞开式情景区相融组团，“金玉环壁、“龙池生烟”、“灵雀暖巢”、“三叠漱玉”、“苔壁水镜”、“雀林清音”、“洞天日归”、“幽潭积雾”，温泉八景移步换景，是国内一流的温泉旅游和养生度假胜地。</p>
+
+<blockquote>
+    <p>这是一个缩进段落</p>
+    <blockquote>二级缩进的段落</blockquote>
+</blockquote>
+
 
 <p class="pimg"><img src="http://s1.lvjs.com.cn/recommand/wenquan8888888.jpg" alt="" /></p>
 

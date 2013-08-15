@@ -88,11 +88,10 @@
         <div class="main equalheight-item">
             
             <!-- 预订信息 -->
-            <div class="order-title">
-                <h3><span>预订信息</span></h3>
+            <div class="o-title">
+                <h3>预订信息</h3>
             </div>
             <div class="content">
-                <div class="hr_a"></div>
                 <div class="xdl-hor">
                     <dl class="xdl">
                         <dt class="B">您预订：</dt>
@@ -115,10 +114,24 @@
                     <dl class="xdl">
                         <dt class="B"><i class="req">*</i>订单数量：</dt>
                         <dd>
-                            <a href="#">亲子套餐</a> <dfn>&yen;<i>270</i></dfn>
+                            <div class="check-text"><a href="#">亲子套餐</a> <dfn>&yen;<i>270</i></dfn></div>
+                            <div class="check-text"><a href="#">家庭套餐</a> <dfn>&yen;<i>270</i></dfn></div>
                         </dd>
                     </dl>
+                    
                     <dl class="xdl">
+                        <dd class="dot_line">间隔线</dd>
+                        <dt class="B">税金：</dt>
+                        <dd>
+                            <div class="check-text"><label class="radio inline"><input class="input-radio" name="taxes" type="radio">苏梅岛机票税金（香港往返）</label><dfn>&yen;270</dfn>/人</div>
+                            <div class="check-text"><label class="radio inline"><input class="input-radio" name="taxes" type="radio">马尔代夫新航机票税金（香港往返）</label><dfn>&yen;270</dfn>/人</div>
+                            <div class="check-text"><label class="radio inline"><input class="input-radio" name="taxes" type="radio">马尔代夫机票税金（香港往返）</label><dfn>&yen;270</dfn>/人</div>
+                            <div class="tiptext tip-warning">集合地点为必选项</div>
+                        </dd>
+                    </dl>
+                    
+                    <dl class="xdl">
+                        <dd class="dot_line">间隔线</dd>
                         <dt class="B">税金：</dt>
                         <dd>
                             <div class="check-text"><label class="radio inline"><input class="input-radio" name="taxes" type="radio">苏梅岛机票税金（香港往返）</label><dfn>&yen;270</dfn>/人</div>
@@ -127,33 +140,46 @@
                         </dd>
                     </dl>
                     
-                    <div class="dot_line">间隔线</div>
-                    
                     <dl class="xdl">
-                    	<dt class="B">可享优惠：</dt>
-                    	<dd>
-                            <p>1.可参加优惠活动或使用优惠券；<br>
-                            2.付款时可使用奖金抵扣；<br>
-                            3.选择浦发银行在线付款立减10元。</p>
-                            <p><a class="B" href="#">+参加优惠活动或使用优惠券</a>　<span class="save-price"><dfn>- &yen;<b>50</b></dfn></span></p>
+                        <dd class="dot_line">间隔线</dd>
+                        <dt> </dt>
+                        <dd>
+                            <h5>以下信息存在请勾选，方便我们更好地为您服务</h5>
+                            <div class="check-text"><label class="checkbox inline"><input class="input-checkbox" name="otherinfo" type="checkbox">出游人中存在16岁以下未成年人</label></div>
+                            <div class="check-text"><label class="checkbox inline"><input class="input-checkbox" name="otherinfo" type="checkbox">出游人中存在70岁以上老人</label></div>
+                            <div class="check-text"><label class="checkbox inline"><input class="input-checkbox" name="otherinfo" type="checkbox">出游人中有外籍友人（包含港澳台同胞）</label></div>
+                            <div class="check-text"><label class="checkbox inline"><input class="input-checkbox" name="otherinfo" type="checkbox">出游人中有身体不健康者</label></div>
+                            
                         </dd>
                     </dl>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
                 </div>
             </div> <!-- //预订信息 -->
             
             
             <!-- 附加产品 -->
-            <div class="order-title">
-                <h3><span>附加产品</span></h3>
+            <div class="o-title">
+                <h3>附加产品</h3>
             </div>
             <div class="content xdl-hor">
-                <div class="hr_a"></div>
                 <div class="">
                     <dl class="xdl">
                         <dt class="B">保险：</dt>
                         <dd>
                             <div class="check-text"><label class="radio inline"><input class="input-radio" name="safety" type="radio">平安国内长途10日游意外险（尊贵型）(国内)</label><dfn>&yen;270</dfn>/人</div>
                             <div class="check-text"><label class="radio inline"><input class="input-radio" name="safety" type="radio">平安国内长途10日游意外险（特惠型）(国内)</label><dfn>&yen;35</dfn>/人</div>
+                            <div class="check-text"><label class="radio inline"><input class="input-radio" name="safety" type="radio">不需要保险</label></div>
+                            <div class="tiptext tip-warning">旅游保险能够给您的出行安全带来更多保障，所以驴妈妈建议您务必购买旅游保险。如您放弃购买，则行程中的风险和损失将由您自行承担。
+                            </div>
                         </dd>
                     </dl>
                     
@@ -219,7 +245,7 @@
                     <dl class="xdl">
                         <dt></dt>
                         <dd>
-                            <label class="radio inline"><input class="input-radio" name="safety" type="radio">不需要保险</label>
+                            
                         </dd>
                     </dl>
                     
@@ -339,9 +365,27 @@
             </div> <!-- //附加产品 -->
             
             
+            <!-- 优惠信息 -->
+            <div class="o-title">
+                <h3>优惠信息</h3>
+            </div>
+            <div class="content xdl-hor"> 
+                <dl class="xdl">
+                    <dt class="B">可享优惠：</dt>
+                    <dd>不使用任何优惠</dd>
+                    <dd>
+                        <p >1.可参加优惠活动或使用优惠券；<br>
+                        2.付款时可使用奖金抵扣；<br>
+                        3.选择浦发银行在线付款立减10元。</p>
+                    </dd>
+                </dl>
+            </div> <!-- //优惠信息 -->
+            
+            
+            
             <!-- 联系人信息 -->
-            <div class="order-title">
-                <h3><span>订单联系人信息</span></h3>
+            <div class="o-title">
+                <h3>订单联系人信息</h3>
             </div>
             <div class="content xdl-hor">    
                 <div class=""> 
@@ -379,17 +423,7 @@
                             </dd>
                         </dl>
                     </div>
-                    <dl class="xdl">
-                        <dt></dt>
-                        <dd>
-                            <h5>以下信息存在请勾选，方便我们更好地为您服务</h5>
-                            <div class="check-text"><label class="checkbox inline"><input class="input-checkbox" name="otherinfo" type="checkbox">出游人中存在16岁以下未成年人</label></div>
-                            <div class="check-text"><label class="checkbox inline"><input class="input-checkbox" name="otherinfo" type="checkbox">出游人中存在70岁以上老人</label></div>
-                            <div class="check-text"><label class="checkbox inline"><input class="input-checkbox" name="otherinfo" type="checkbox">出游人中有外籍友人（包含港澳台同胞）</label></div>
-                            <div class="check-text"><label class="checkbox inline"><input class="input-checkbox" name="otherinfo" type="checkbox">出游人中有身体不健康者</label></div>
-                            
-                        </dd>
-                    </dl>
+                    
                     
                     
                 </div>
@@ -398,8 +432,8 @@
             
             
             <!-- 游玩人信息 -->
-            <div class="order-title">
-                <h3><span>游玩人信息</span></h3>
+            <div class="o-title">
+                <h3>游玩人信息</h3>
             </div>
             <div class="content xdl-hor">    
                 <div class="">    
@@ -440,8 +474,8 @@
             
             
             <!-- 紧急联系人信息 -->
-            <div class="order-title">
-                <h3><span>紧急联系人信息</span></h3>
+            <div class="o-title">
+                <h3>紧急联系人信息</h3>
             </div>
             <div class="content xdl-hor">       
                 <div class="choose-info">
@@ -472,8 +506,8 @@
                 
             </div> <!-- //紧急联系人信息 -->
             <!-- 预订须知 -->
-            <div class="order-title">
-                <h3><span>预订须知</span></h3>
+            <div class="o-title">
+                <h3>预订须知</h3>
             </div>
             <div class="content xdl-hor">
                 <div class="hr_a"></div>

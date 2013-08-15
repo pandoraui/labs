@@ -246,6 +246,22 @@ i.icon-weibo{ background-position: 0 -168px;}
 #pnav #around,
 #pnav #tuangou{display:none;}
 
+/* 度假酒店 */
+.holiday .pnav {
+    background:#664596;
+}
+.holiday .pnav a {
+    color:#e0daec;
+}
+.holiday .pnav a:hover  {
+    background:#5d3893;
+    color:#fff;
+}
+.holiday #holiday a{
+    background: #4c2c7b;
+    color:#fff;
+}
+
 /* version 2 2012-07-02 by pp*/
 .buttom{width:960px; padding:0 0 10px 10px ;margin: 10px auto 0;overflow:hidden;zoom:1;clear:both;}
 .buttom_list{margin:0 20px 0 20px;_margin:0 15px 0 15px;display:inline;line-height:22px;width:200px;float:left; overflow:hidden;}

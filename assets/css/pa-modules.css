@@ -10,4 +10,5 @@
 @import "modules/typo.css";
 @import "modules/step.css";
 @import "modules/tables.css";
-@import "modules/ui-components.css";
+@import "modules/tags.css";
+@import "/pandora/docs/assets/less/tip.css";
