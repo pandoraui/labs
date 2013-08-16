@@ -113,9 +113,18 @@
                     </dl>
                     <dl class="xdl">
                         <dt class="B"><i class="req">*</i>订单数量：</dt>
-                        <dd>
-                            <div class="check-text"><a href="#">亲子套餐</a> <dfn>&yen;<i>270</i></dfn></div>
-                            <div class="check-text"><a href="#">家庭套餐</a> <dfn>&yen;<i>270</i></dfn></div>
+                        <dd class="check-radio-box">
+                            <div class="check-text"><span class="check-radio-item"><i class="ui-arrow-bottom blue-ui-arrow-bottom"></i><a href="#">亲子套餐</a></span>
+                            <span class="tb-stock" id="J_Stock"><a href="#" class="tb-reduce J_Reduce">-</a><input id="J_IptAmount" type="text" class="tb-text" value="1" maxlength="8" title="请输入购买量"><a href="#" class="tb-increase J_Increase">﹢</a>件</span>
+                            
+                            (单价<dfn>&yen;<i>270</i></dfn>)</div>
+                            <div class="check-text"><span class="check-radio-item"><i class="ui-arrow-bottom blue-ui-arrow-bottom"></i><a href="#">家庭套餐</a></span> (单价<dfn>&yen;<i>270</i></dfn>)</div>
+                            <!-- 说明：如果要实现带换行的格式化文本，请添加.pre-wrap样式 -->
+                            <div class="tiptext tip-info">
+                                <span class="tip-close">&times;</span>
+                                <p class="pre-wrap">1.游客可以在17点后进水世界游玩一次；
+2.夜场开放时间为16:00-22:30；
+3.仅限游玩当天入园。</p>    </div>
                         </dd>
                     </dl>
                     
@@ -163,7 +172,7 @@
                 <h3>附加产品</h3>
             </div>
             <div class="order-content xdl-hor">
-                <div class="">
+                <div class="form-small">
                     <dl class="xdl">
                         <dt class="B">保险：</dt>
                         <dd class="check-radio-box">

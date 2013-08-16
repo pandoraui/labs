@@ -101,7 +101,7 @@
                 <div class="pay-title ui-tab-trigger">
                     <h4 class="pay-price">您还需继续付款 <dfn><i>4100</i></dfn> 元</h4>
                     <ul class="tabnav clearfix">
-                    	<li class="selected"><a href="javascript:;">支付平台</a></li>
+                    	<li class="selected"><a href="javascript:;">支付平台/银行卡</a></li>
                     	<li><a href="javascript:;">其他方式</a></li>
                     </ul>
                 </div>
