@@ -6,7 +6,7 @@
 
 .wrap{ width:960px;}
 body{font:12px/22px Tahoma,Arial,\5b8b\4f53,sans-serif;}
-.border{border:1px solid #ccc;}
+.border{border:1px solid #ccc;*zoom:1;}
 a{color:#08b;text-decoration: none;}
 a:hover{color:#e38;text-decoration: underline;}
 a[href="###"]{color:#888;cursor:default;}
@@ -37,6 +37,7 @@ a.dot_line{margin:0 3px;height:auto;line-height:1.5;display:inline-block;text-in
 }
 .xdl dd {
     margin-left: 115px;
+    *zoom:1;
 }
 
 .xdl-hor .xdl {
@@ -90,8 +91,8 @@ a.dot_line{margin:0 3px;height:auto;line-height:1.5;display:inline-block;text-in
 .order-main .main{word-wrap:break-word; word-break:break-all;}
 
 
-.sidebar{float:right;width:240px;background:#f6f6f6;border-left:1px solid #ccc;box-shadow:2px 0 3px #ddd inset;}
-.order-main .main{padding:10px 20px;overflow:hidden;}
+.sidebar{float:right;width:240px;*zoom:1;background:#f6f6f6;border-left:1px solid #ccc;box-shadow:2px 0 3px #ddd inset;}
+.order-main .main{padding:10px 20px;overflow:hidden;*zoom:1;}
 .order-title,
 .contract-title{font-family: Microsoft YaHei,”\5FAE\8F6F\96C5\9ED1″;font-weight:500;}
 .order-main .order-title{margin:10px 0 15px;}
@@ -104,7 +105,7 @@ a.dot_line{margin:0 3px;height:auto;line-height:1.5;display:inline-block;text-in
 */
 .check-radio-box .radio,
 .check-radio-box .checkbox {margin-right:0;}
-.check-radio-item{display: inline-block;color:#08b;padding-right:30px;position:relative;cursor:pointer;}
+.check-radio-item{display: inline-block;*zoom:1;color:#08b;padding-right:30px;position:relative;cursor:pointer;}
 .check-radio-item .ui-arrow-bottom{top:12px;right:12px;}
 
 /* 支付方式 */
@@ -267,6 +268,28 @@ text-decoration: none;
 .JS_check .check-content{display:none;}
 .JS_check .active .check-content{display:block;}
 
+/* 数字加减操作 */
+.oper-numbox{display:inline-block;vertical-align:middle;border: 1px solid #ccc;height:22px;line-height:22px;overflow:hidden;*zoom:1;/* 禁止选中文字 */
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+         -o-user-select: none;
+            user-select: none;}
+.op-reduce,.op-increase{display:inline-block;border:none;margin:0;padding:0;font-style:normal;width:20px;height:22px;line-height:22px;overflow:hidden;color:#666; text-indent:-9999px;*text-indent:0;font-size:0;*line-height:200px;vertical-align: top;*zoom:1; cursor:pointer;background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAABFCAMAAAAPSlTbAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjhCMzA4MTgxMDhBMTExRTM4MjIzQUE4NEU2OTFDOTVFIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjhCMzA4MTgyMDhBMTExRTM4MjIzQUE4NEU2OTFDOTVFIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6OEIzMDgxN0YwOEExMTFFMzgyMjNBQTg0RTY5MUM5NUUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6OEIzMDgxODAwOEExMTFFMzgyMjNBQTg0RTY5MUM5NUUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5tGr1HAAAADFBMVEXMzMz/iABmZmb///+2yoDcAAAABHRSTlP///8AQCqp9AAAAEtJREFUeNrs0jEKADAIQ9Go979zC3a2LkWl+eD2loCwRLoPhVC9QHmYMMaSERI+hlIMxQuUN2IM34ywCUQxPAXqKvqM4Zt9A5cAAwAfnx/VGj0+kgAAAABJRU5ErkJggg==") no-repeat;
+*background:url(http://pic.lvmama.com/img/common/opernum.png) no-repeat;
+background-color:#f8f8f8;}
+.op-reduce  { border-right: 1px solid #ededed; background-position:   7px 7px;}
+.op-increase{ border-left : 1px solid #ededed; background-position: -26px 7px;}
+.op-reduce:hover  { background-color: #fff; background-position:  7px -17px;}
+.op-increase:hover{ background-color: #fff; background-position:-26px -17px;}
+.op-disable-reduce,.op-disable-reduce:hover    { cursor:default; background-color:#f8f8f8; background-position:   7px -41px;}
+.op-disable-increase,.op-disable-increase:hover{ cursor:default; background-color:#f8f8f8; background-position: -26px -41px;}
+.oper-numbox input.op-number{background-color:#fff;position:relative;margin:0;padding:0;border:none;outline:none;display:inline-block;width:40px;height:22px;line-height:22px;vertical-align:top;*height:20px;*line-height:20px;*vertical-align: middle;text-align:center;}
+.oper-numbox input.op-number:focus{-webkit-box-shadow:none;box-shadow:none;}
 
+
+
+/* 日期选择框 */
+.dinput .input-date{ width: 154px;}
 
 

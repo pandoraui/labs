@@ -8,7 +8,6 @@ $(function(){
     // 单选项
     function JS_check(_box,check_radio_box,check_radio_item,active){
 		$(_box).delegate(check_radio_item,'click',function(){
-            console.log(this)
             $(this).parents(check_radio_box).toggleClass(active).siblings(check_radio_box).removeClass(active);
             //return false;
         });

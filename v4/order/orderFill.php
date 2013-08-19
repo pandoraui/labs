@@ -96,18 +96,14 @@
                     <dl class="xdl">
                         <dt class="B">您预订：</dt>
                         <dd>
-                            <a class="B" href="#">东方明珠广播电视塔二球、上海历史发展陈列馆【亲子/家庭 套票】</a>
+                            <a class="B" target="_blank" href="#">东方明珠广播电视塔二球、上海历史发展陈列馆【亲子/家庭 套票】</a>
                         </dd>
                     </dl>
                     <dl class="xdl">
                         <dt class="B"><i class="req">*</i>游玩日期：</dt>
                         <dd>
-                            <div class="dinput dinput-date">
-                                <input class="input-date" type="text" maxlength="10" placeholder="2013-6-10">
-                                <div class="date-info">
-                                    <i class="xicon icon-date"></i>
-                                    <span class="text-info">星期五</span>
-                                </div>
+                            <div class="dinput dinput-date"><input class="input-date" type="text" maxlength="10" placeholder="2013-6-10">
+                                <span class="date-info"><i class="xicon icon-date"></i><span class="text-info">星期五</span></span>
                             </div>
                         </dd>
                     </dl>
@@ -116,18 +112,20 @@
                         <dd class="check-radio-box">
                             <div class="check-text">
                                 <span class="check-radio-item"><i class="ui-arrow-bottom blue-ui-arrow-bottom"></i>亲子套餐</span>
-                                <span class="tb-stock" id="J_Stock"><a href="#" class="tb-reduce J_Reduce">-</a><input id="J_IptAmount" type="text" class="tb-text" value="1" maxlength="8" title="请输入购买量"><a href="#" class="tb-increase J_Increase">﹢</a>件</span>
-                                (单价<dfn>&yen;<i>270</i></dfn>)
+                                <span class="oper-numbox"><a class="op-reduce op-disable-reduce J_reduce">-</a><input type="text" class="op-number" value="0" maxlength="4"><a class="op-increase J_increase">+</a></span>
+                                （单价<dfn>&yen;<i>270</i></dfn>）
                             </div>
                             <div class="tiptext tip-info check-content">
                                 <span class="tip-close">&times;</span>
                                 <div class="pre-wrap">3.游客可以在17点后进水世界游玩一次；
 2.夜场开放时间为16:00-22:30；
-1.仅限游玩当天入园。</div>    </div>
+1.仅限游玩当天入园。</div>  </div>
                         </dd>
                         <dd class="check-radio-box">
                             <div class="check-text">
-                                <span class="check-radio-item"><i class="ui-arrow-bottom blue-ui-arrow-bottom"></i>家庭套餐</span> (单价<dfn>&yen;<i>270</i></dfn>)
+                                <span class="check-radio-item"><i class="ui-arrow-bottom blue-ui-arrow-bottom"></i>家庭套餐</span>
+                                <span class="oper-numbox"><a class="op-reduce J_reduce">-</a><input type="text" class="op-number" value="2" maxlength="4" title="请输入量"><a class="op-increase J_increase">+</a></span>
+                                （单价<dfn>&yen;<i>270</i></dfn>）
                             </div>
                             <!-- 说明：如果要实现带换行的格式化文本，请添加.pre-wrap样式 -->
                             <div class="tiptext tip-info check-content">
@@ -281,13 +279,13 @@
                     <dl class="xdl">
                         <dt><i class="req">*</i>投保人1：</dt>
                         <dd>
-                            <input type="text" class="input-text" />
+                            <label><input type="text" class="input-text" /></label>
                         </dd>
                     </dl>
                     <dl class="xdl">
                         <dt><i class="req">*</i>投保人2：</dt>
                         <dd>
-                            <input type="text" class="input-text" />
+                            <label><input type="text" class="input-text" /></label>
                         </dd>
                     </dl>
                     <dl class="xdl">
@@ -321,14 +319,6 @@
                     </dl>
                     <!-- //保存后状态 -->
                     
-                    
-                    
-                    <dl class="xdl">
-                        <dt></dt>
-                        <dd>
-                            
-                        </dd>
-                    </dl>
                     
                     <dl class="xdl JS_check">
                         <dd class="dot_line">间隔线</dd>
@@ -495,7 +485,11 @@
             <div class="order-content xdl-hor form-small"> 
                 <dl class="xdl">
                     <dt class="B">可享优惠：</dt>
-                    <dd><input type="text" class="input-text" /></dd>
+                    <dd><select name="" id="">
+                        <option value="">sadfasdf</option>
+                        <option value="">sadfasdf</option>
+                        <option value="">sadfasdf</option>
+                    </select></dd>
                     <dd>
                         <p class="text-gray">1.可参加优惠活动或使用优惠券；<br>
                         2.付款时可使用奖金抵扣；<br>
@@ -583,13 +577,13 @@
                     <dl class="xdl">
                         <dt><i class="req">*</i>游玩人1：</dt>
                         <dd>
-                            <input type="text" class="input-text" />
+                            <label><input type="text" class="input-text" /></label>
                         </dd>
                     </dl>
                     <dl class="xdl">
                         <dt><i class="req">*</i>游玩人2：</dt>
                         <dd>
-                            <input type="text" class="input-text" />
+                            <label><input type="text" class="input-text" /></label>
                         </dd>
                     </dl>
                     <dl class="xdl">
@@ -627,13 +621,13 @@
                     <dl class="xdl">
                         <dt><i class="req">*</i>联系人姓名：</dt>
                         <dd>
-                            <input type="text" class="input-text" />
+                            <label><input type="text" class="input-text" /></label>
                         </dd>
                     </dl>
                     <dl class="xdl">
                         <dt><i class="req">*</i>手机号码：</dt>
                         <dd>
-                            <input type="text" class="input-text" />
+                            <label><input type="text" class="input-text" /></label>
                             <span class="help-inline">免费接受订单确认短信，请务必填写正确</span>
                         </dd>
                     </dl>

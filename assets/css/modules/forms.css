@@ -365,15 +365,18 @@ label.vmiddle {
     display:inline-block;
     *display:inline;
     *zoom:1;
-    *width:66px;
+    *width:62px;
     top:5px;
     right:5px;
+    _right:10px;
     padding:0 0 0 3px;
     height:20px;
     line-height:20px;
     font-size:12px;
     text-align: right;
     cursor: pointer;
+    white-space: nowrap;
+    background:#eee;
 }
 .xicon {
     background:url(http://pic.lvmama.com/img/v3/combo.png) no-repeat;
@@ -392,6 +395,8 @@ label.vmiddle {
 .dinput .text-info{
     padding:0 3px 0 0;
     color:#888;
+    float:left;
+    white-space: nowrap;
 }
 
 
