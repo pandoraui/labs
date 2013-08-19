@@ -253,7 +253,7 @@ text-decoration: none;
 
 
 /* 组件个性化 */
-.order .tiptext{color:#666;}
+.order .tiptext{color:#666;margin:5px 0;}
 .order .tip-warning{
     border: 1px solid #fc6;
     background: #fff9d9;
@@ -262,9 +262,10 @@ text-decoration: none;
     border: 1px solid #cde;
     background: #f3f9ff;
 }
+.check-radio-box label.inline{line-height:26px;}
 
-
-
+.JS_check .check-content{display:none;}
+.JS_check .active .check-content{display:block;}
 
 
 

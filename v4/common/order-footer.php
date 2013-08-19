@@ -25,8 +25,9 @@
 <script src="http://pic.lvmama.com/js/common/footer.js"></script>
 <script src="http://pic.lvmama.com/js/v4/pa-modules.js"></script>
 
-<!-- 页面项目js及插件 -->
-<script src="http://pic.lvmama.com/js/v4/propage.js"></script>
+<!-- 页面项目js及插件
+<script src="http://pic.lvmama.com/js/v4/order-page.js"></script> -->
+<script src="/labs/v4/js/order-page.js"></script>
 
 <!-- 统计代码 开发测试-暂时隐藏
 <script src="http://pic.lvmama.com/js/common/losc.js"></script>

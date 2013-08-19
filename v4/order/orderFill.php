@@ -111,26 +111,36 @@
                             </div>
                         </dd>
                     </dl>
-                    <dl class="xdl">
+                    <dl class="xdl JS_check">
                         <dt class="B"><i class="req">*</i>订单数量：</dt>
                         <dd class="check-radio-box">
-                            <div class="check-text"><span class="check-radio-item"><i class="ui-arrow-bottom blue-ui-arrow-bottom"></i><a href="#">亲子套餐</a></span>
-                            <span class="tb-stock" id="J_Stock"><a href="#" class="tb-reduce J_Reduce">-</a><input id="J_IptAmount" type="text" class="tb-text" value="1" maxlength="8" title="请输入购买量"><a href="#" class="tb-increase J_Increase">﹢</a>件</span>
-                            
-                            (单价<dfn>&yen;<i>270</i></dfn>)</div>
-                            <div class="check-text"><span class="check-radio-item"><i class="ui-arrow-bottom blue-ui-arrow-bottom"></i><a href="#">家庭套餐</a></span> (单价<dfn>&yen;<i>270</i></dfn>)</div>
-                            <!-- 说明：如果要实现带换行的格式化文本，请添加.pre-wrap样式 -->
-                            <div class="tiptext tip-info">
+                            <div class="check-text">
+                                <span class="check-radio-item"><i class="ui-arrow-bottom blue-ui-arrow-bottom"></i>亲子套餐</span>
+                                <span class="tb-stock" id="J_Stock"><a href="#" class="tb-reduce J_Reduce">-</a><input id="J_IptAmount" type="text" class="tb-text" value="1" maxlength="8" title="请输入购买量"><a href="#" class="tb-increase J_Increase">﹢</a>件</span>
+                                (单价<dfn>&yen;<i>270</i></dfn>)
+                            </div>
+                            <div class="tiptext tip-info check-content">
                                 <span class="tip-close">&times;</span>
-                                <p class="pre-wrap">1.游客可以在17点后进水世界游玩一次；
+                                <div class="pre-wrap">3.游客可以在17点后进水世界游玩一次；
 2.夜场开放时间为16:00-22:30；
-3.仅限游玩当天入园。</p>    </div>
+1.仅限游玩当天入园。</div>    </div>
+                        </dd>
+                        <dd class="check-radio-box">
+                            <div class="check-text">
+                                <span class="check-radio-item"><i class="ui-arrow-bottom blue-ui-arrow-bottom"></i>家庭套餐</span> (单价<dfn>&yen;<i>270</i></dfn>)
+                            </div>
+                            <!-- 说明：如果要实现带换行的格式化文本，请添加.pre-wrap样式 -->
+                            <div class="tiptext tip-info check-content">
+                                <span class="tip-close">&times;</span>
+                                <div class="pre-wrap">1.游客可以在17点后进水世界游玩一次；
+2.夜场开放时间为16:00-22:30；
+3.仅限游玩当天入园。</div>  </div>
                         </dd>
                     </dl>
                     
                     <dl class="xdl">
                         <dd class="dot_line">间隔线</dd>
-                        <dt class="B">集合地点：</dt>
+                        <dt class="B"><i class="req">*</i>集合地点：</dt>
                         <dd>
                             <div class="check-text"><label class="radio inline"><input class="input-radio" name="taxes" type="radio">始发站　7:30上海汇川路凯旋路路口（近龙之梦购物中心）</label></div>
                             <div class="check-text"><label class="radio inline"><input class="input-radio" name="taxes" type="radio">途经站点　8:00南方商城沪闵路万源路路口（非集合首发站，实际时间如有误差敬请见谅）</label></div>
@@ -139,13 +149,44 @@
                         </dd>
                     </dl>
                     
-                    <dl class="xdl">
+                    <dl class="xdl JS_check">
                         <dt class="B">税金：</dt>
                         <dd class="dot_line">间隔线</dd>
                         <dd class="check-radio-box">
-                            <div class="check-text"><label class="radio inline"><input class="input-radio" name="taxes" type="radio"></label><span class="check-radio-item"><i class="ui-arrow-bottom blue-ui-arrow-bottom"></i>苏梅岛机票税金（香港往返）</span><dfn>&yen;270</dfn>/人</div>
-                            <div class="check-text"><label class="radio inline"><input class="input-radio" name="taxes" type="radio"></label><span class="check-radio-item"><i class="ui-arrow-bottom blue-ui-arrow-bottom"></i>马尔代夫新航机票税金（香港往返）</span><dfn>&yen;270</dfn>/人</div>
-                            <div class="check-text"><label class="radio inline"><input class="input-radio" name="taxes" type="radio"></label><span class="check-radio-item"><i class="ui-arrow-bottom blue-ui-arrow-bottom"></i>马尔代夫机票税金（香港往返）</span><dfn>&yen;270</dfn>/人</div>
+                            <div class="check-text">
+                                <label class="radio inline">
+                                    <input class="input-radio" name="taxes" type="radio"><span class="check-radio-item"><i class="ui-arrow-bottom blue-ui-arrow-bottom"></i>苏梅岛机票税金（香港往返）</span>
+                                </label>
+                                <dfn>&yen;270</dfn>/人
+                            </div>
+                            <div class="tiptext tip-info check-content">
+                                <span class="tip-close">&times;</span>
+                                <div class="pre-wrap">税金说明</div>
+                            </div>
+                        </dd>
+                        <dd class="check-radio-box">
+                            <div class="check-text">
+                                <label class="radio inline">
+                                    <input class="input-radio" name="taxes" type="radio"><span class="check-radio-item"><i class="ui-arrow-bottom blue-ui-arrow-bottom"></i>马尔代夫新航机票税金（香港往返）</span>
+                                </label>
+                                <dfn>&yen;270</dfn>/人
+                            </div>
+                            <div class="tiptext tip-info check-content">
+                                <span class="tip-close">&times;</span>
+                                <div class="pre-wrap">税金说明</div>
+                            </div>
+                        </dd>
+                        <dd class="check-radio-box">
+                            <div class="check-text">
+                                <label class="radio inline">
+                                    <input class="input-radio" name="taxes" type="radio"><span class="check-radio-item"><i class="ui-arrow-bottom blue-ui-arrow-bottom"></i>马尔代夫机票税金（香港往返）</span>
+                                </label>
+                                <dfn>&yen;270</dfn>/人
+                            </div>
+                            <div class="tiptext tip-info check-content">
+                                <span class="tip-close">&times;</span>
+                                <div class="pre-wrap">税金说明</div>
+                            </div>
                         </dd>
                     </dl>
                     <dl class="xdl">
@@ -173,13 +214,52 @@
             </div>
             <div class="order-content xdl-hor">
                 <div class="form-small">
-                    <dl class="xdl">
+                    <dl class="xdl JS_check">
                         <dt class="B">保险：</dt>
                         <dd class="check-radio-box">
-                            <div class="check-text"><label class="radio inline"><input class="input-radio" name="safety" type="radio"></label><span class="check-radio-item"><i class="ui-arrow-bottom blue-ui-arrow-bottom"></i>平安国内长途10日游意外险（尊贵型）(国内)</span><dfn>&yen;270</dfn>/人</div>
-                            <div class="check-text"><label class="radio inline"><input class="input-radio" name="safety" type="radio"></label><span class="check-radio-item"><i class="ui-arrow-bottom blue-ui-arrow-bottom"></i>平安国内长途10日游意外险（特惠型）(国内)</span><dfn>&yen;35</dfn>/人</div>
-                            <div class="check-text"><label class="radio inline"><input class="input-radio" name="safety" type="radio"></label><span class="check-radio-item"><i class="ui-arrow-bottom blue-ui-arrow-bottom"></i>不需要保险</span></div>
-                            <div class="tiptext tip-warning">旅游保险能够给您的出行安全带来更多保障，所以驴妈妈建议您务必购买旅游保险。如您放弃购买，则行程中的风险和损失将由您自行承担。
+                            <div class="check-text">
+                                <label class="radio inline ">
+                                    <input class="input-radio" name="safety" type="radio"><span class="check-radio-item"><i class="ui-arrow-bottom blue-ui-arrow-bottom"></i>平安国内长途10日游意外险（尊贵型）(国内)</span>
+                                </label>
+                                <dfn>&yen;270</dfn>/人
+                            </div>
+                            <div class="tiptext tip-info check-content">
+                                <span class="tip-close">&times;</span>
+                                <div class="pre-wrap">1.详细信息请见“<a target="_blank" href="#">平安境内长线保险</a>”说明，请仔细阅读“<a target="_blank" href="#">保险条款</a>”；
+2.航班延误超过4小时请第一时间联系保险公司进行报案，并确认相应理赔材料；
+3.包含健康咨询服务，提供电话健康和医疗咨询，包括病情咨询和建议、推荐适合的医疗机构及专家。有效期为自保险起期开始的一年内，不限咨询次数。
+2012-01-01至2013-12-31 :投保人为被保险人投保须征得被保险人同意，被保险人为未成年人的，须征得其监护人同意。
+2012-01-01至2013-12-31 :90周岁以上不承保。
+2012-01-01至2013-12-31 :为确保投保无误，请准确填写个人信息。
+2012-01-01至2013-12-31 :18周岁以下的被保险人，意外死亡的赔偿限额不得超过中国保监会所规定的最高限额10万元人民币。
+2012-01-01至2013-12-31 :71至80周岁的被保险人，“其意外身故、烧伤及残疾保障”和“双倍给付意外伤害”的保险金额为保单所载金额的一半，81至90周岁的被保险人，其“意外身故、烧伤及残疾保障”和“双倍给付意外伤害”的保险金额为保单所载金额的四分之一。每人每次限购1份。</div>                           </div>
+                        </dd>
+                        <dd class="check-radio-box">
+                            <div class="check-text">
+                                <label class="radio inline">
+                                    <input class="input-radio" name="safety" type="radio"><span class="check-radio-item"><i class="ui-arrow-bottom blue-ui-arrow-bottom"></i>平安国内长途10日游意外险（特惠型）(国内)</span>
+                                </label>
+                                <dfn>&yen;35</dfn>/人
+                            </div>
+                            <div class="tiptext tip-info check-content">
+                                <span class="tip-close">&times;</span>
+                                <div class="pre-wrap">1.详细信息请见“<a target="_blank" href="#">平安境内长线保险</a>”说明，请仔细阅读“<a target="_blank" href="#">保险条款</a>”；
+2.航班延误超过4小时请第一时间联系保险公司进行报案，并确认相应理赔材料；
+3.包含健康咨询服务，提供电话健康和医疗咨询，包括病情咨询和建议、推荐适合的医疗机构及专家。有效期为自保险起期开始的一年内，不限咨询次数。
+2012-01-01至2013-12-31 :投保人为被保险人投保须征得被保险人同意，被保险人为未成年人的，须征得其监护人同意。
+2012-01-01至2013-12-31 :90周岁以上不承保。
+2012-01-01至2013-12-31 :为确保投保无误，请准确填写个人信息。
+2012-01-01至2013-12-31 :18周岁以下的被保险人，意外死亡的赔偿限额不得超过中国保监会所规定的最高限额10万元人民币。
+2012-01-01至2013-12-31 :71至80周岁的被保险人，“其意外身故、烧伤及残疾保障”和“双倍给付意外伤害”的保险金额为保单所载金额的一半，81至90周岁的被保险人，其“意外身故、烧伤及残疾保障”和“双倍给付意外伤害”的保险金额为保单所载金额的四分之一。每人每次限购1份。</div>                           </div>
+                        </dd>
+                        <dd class="check-radio-box">
+                            <div class="check-text">
+                                <label class="radio inline">
+                                    <input class="input-radio" name="safety" type="radio"><span class="check-radio-item"><i class="ui-arrow-bottom blue-ui-arrow-bottom"></i>不需要保险</span>
+                                </label>
+                            </div>
+                            <div class="tiptext tip-warning check-content">
+                                <div class="pre-wrap">旅游保险能够给您的出行安全带来更多保障，所以驴妈妈建议您务必购买旅游保险。如您放弃购买，则行程中的风险和损失将由您自行承担。</div>
                             </div>
                         </dd>
                     </dl>
@@ -250,31 +330,67 @@
                         </dd>
                     </dl>
                     
-                    <dl class="xdl">
+                    <dl class="xdl JS_check">
                         <dd class="dot_line">间隔线</dd>
                         <dt class="B">自费产品：</dt>
                         <dd class="check-radio-box">
-                            <div class="check-text"><label class="checkbox inline"><input class="input-checkbox" name="ownpro" type="checkbox"></label><span class="check-radio-item"><i class="ui-arrow-bottom blue-ui-arrow-bottom"></i>升级总统套房</span><dfn>&yen;100</dfn>/间</div>
-                            <div class="check-text"><label class="checkbox inline"><input class="input-checkbox" name="ownpro" type="checkbox"></label><span class="check-radio-item"><i class="ui-arrow-bottom blue-ui-arrow-bottom"></i>升级海景观景房</span><dfn>&yen;180</dfn>/间</div>
-                            <div class="check-text"><label class="checkbox inline"><input class="input-checkbox" name="ownpro" type="checkbox"></label><span class="check-radio-item"><i class="ui-arrow-bottom blue-ui-arrow-bottom"></i>升级豪华型套房</span><dfn>&yen;200</dfn>/间</div>
+                            <div class="check-text"><label class="checkbox inline"><input class="input-checkbox" name="ownpro" type="checkbox"><span class="check-radio-item"><i class="ui-arrow-bottom blue-ui-arrow-bottom"></i>升级总统套房</span></label><dfn>&yen;100</dfn>/间</div>
+                            <div class="tiptext tip-info check-content">
+                                <span class="tip-close">&times;</span>
+                                <div class="pre-wrap">详细说明</div>
+                            </div>
+                        </dd>
+                        <dd class="check-radio-box">
+                            <div class="check-text"><label class="checkbox inline"><input class="input-checkbox" name="ownpro" type="checkbox"><span class="check-radio-item"><i class="ui-arrow-bottom blue-ui-arrow-bottom"></i>升级海景观景房</span></label><dfn>&yen;180</dfn>/间</div>
+                            <div class="tiptext tip-info check-content">
+                                <span class="tip-close">&times;</span>
+                                <div class="pre-wrap">详细说明</div>
+                            </div>
+                        </dd>
+                        <dd class="check-radio-box">
+                            <div class="check-text"><label class="checkbox inline"><input class="input-checkbox" name="ownpro" type="checkbox"><span class="check-radio-item"><i class="ui-arrow-bottom blue-ui-arrow-bottom"></i>升级豪华型套房</span></label><dfn>&yen;200</dfn>/间</div>
+                            <div class="tiptext tip-info check-content">
+                                <span class="tip-close">&times;</span>
+                                <div class="pre-wrap">详细说明</div>
+                            </div>
                         </dd>
                     </dl>
                     
-                    <dl class="xdl">
+                    <dl class="xdl JS_check">
                         <dd class="dot_line">间隔线</dd>
                         <dt class="B">快递：</dt>
                         <dd class="check-radio-box">
-                            <div class="check-text"><label class="radio inline"><input class="input-radio" name="taxes" type="radio"></label><span class="check-radio-item"><i class="ui-arrow-bottom blue-ui-arrow-bottom"></i>平邮</span><dfn>&yen;10</dfn>/人</div>
-                            <div class="check-text"><label class="radio inline"><input class="input-radio" name="taxes" type="radio"></label><span class="check-radio-item"><i class="ui-arrow-bottom blue-ui-arrow-bottom"></i>申通快递</span><dfn>&yen;18</dfn>/人</div>
-                            <div class="check-text"><label class="radio inline"><input class="input-radio" name="taxes" type="radio"></label><span class="check-radio-item"><i class="ui-arrow-bottom blue-ui-arrow-bottom"></i>顺丰</span><dfn>&yen;20</dfn>/人</div>
+                            <div class="check-text"><label class="radio inline"><input class="input-radio" name="taxes" type="radio"><span class="check-radio-item"><i class="ui-arrow-bottom blue-ui-arrow-bottom"></i>平邮</span></label><dfn>&yen;10</dfn>/人</div>
+                            <div class="tiptext tip-info check-content">
+                                <span class="tip-close">&times;</span>
+                                <div class="pre-wrap">详细说明</div>
+                            </div>
+                        </dd>
+                        <dd class="check-radio-box">
+                            <div class="check-text"><label class="radio inline"><input class="input-radio" name="taxes" type="radio"><span class="check-radio-item"><i class="ui-arrow-bottom blue-ui-arrow-bottom"></i>申通快递</span></label><dfn>&yen;18</dfn>/人</div>
+                            <div class="tiptext tip-info check-content">
+                                <span class="tip-close">&times;</span>
+                                <div class="pre-wrap">详细说明</div>
+                            </div>
+                        </dd>
+                        <dd class="check-radio-box">
+                            <div class="check-text"><label class="radio inline"><input class="input-radio" name="taxes" type="radio"><span class="check-radio-item"><i class="ui-arrow-bottom blue-ui-arrow-bottom"></i>顺丰</span></label><dfn>&yen;20</dfn>/人</div>
+                            <div class="tiptext tip-info check-content">
+                                <span class="tip-close">&times;</span>
+                                <div class="pre-wrap">详细说明</div>
+                            </div>
                         </dd>
                     </dl>
                     
-                    <dl class="xdl">
+                    <dl class="xdl JS_check">
                         <dd class="dot_line">间隔线</dd>
                         <dt class="B">其他：</dt>
                         <dd class="check-radio-box">
-                            <div class="check-text"><label class="checkbox inline"><input class="input-checkbox" name="ownpro" type="checkbox"></label><span class="check-radio-item"><i class="ui-arrow-bottom blue-ui-arrow-bottom"></i>美国签证</span><dfn>&yen;100</dfn>/份</div>
+                            <div class="check-text"><label class="checkbox inline"><input class="input-checkbox" name="ownpro" type="checkbox"><span class="check-radio-item"><i class="ui-arrow-bottom blue-ui-arrow-bottom"></i>美国签证</span></label><dfn>&yen;100</dfn>/份</div>
+                            <div class="tiptext tip-info check-content">
+                                <span class="tip-close">&times;</span>
+                                <div class="pre-wrap">详细说明</div>
+                            </div>
                         </dd>
                     </dl>
                     
@@ -400,10 +516,10 @@
                         <dl class="xdl">
                             <dt>常用联系人：</dt>
                             <dd class="form-inline">
-                                <label class="checkbox inline"><input type="checkbox" class="input-checkbox" />胡小小</label>
-                                <label class="checkbox inline"><input type="checkbox" class="input-checkbox" />郑明明</label>
-                                <label class="checkbox inline"><input type="checkbox" class="input-checkbox" />黄丽丽</label>
-                                <label class="checkbox inline"><input type="checkbox" class="input-checkbox" />王山山</label>
+                                <label class="radio inline"><input name="order-person" type="radio" class="input-radio" />胡小小</label>
+                                <label class="radio inline"><input name="order-person" type="radio" class="input-radio" />郑明明</label>
+                                <label class="radio inline"><input name="order-person" type="radio" class="input-radio" />黄丽丽</label>
+                                <label class="radio inline"><input name="order-person" type="radio" class="input-radio" />王山山</label>
                             </dd>
                         </dl>
                     </div>
@@ -501,10 +617,10 @@
                         <dl class="xdl">
                             <dt>常用联系人：</dt>
                             <dd class="form-inline">
-                                <label class="checkbox inline"><input type="checkbox" class="input-checkbox" />胡小小</label>
-                                <label class="checkbox inline"><input type="checkbox" class="input-checkbox" />郑明明</label>
-                                <label class="checkbox inline"><input type="checkbox" class="input-checkbox" />黄丽丽</label>
-                                <label class="checkbox inline"><input type="checkbox" class="input-checkbox" />王山山</label>
+                                <label class="radio inline"><input name="em-person" type="radio" class="input-radio" />胡小小</label>
+                                <label class="radio inline"><input name="em-person" type="radio" class="input-radio" />郑明明</label>
+                                <label class="radio inline"><input name="em-person" type="radio" class="input-radio" />黄丽丽</label>
+                                <label class="radio inline"><input name="em-person" type="radio" class="input-radio" />王山山</label>
                             </dd>
                         </dl>
                     </div>
