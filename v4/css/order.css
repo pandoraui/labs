@@ -172,31 +172,34 @@ a.dot_line{margin:0 3px;height:auto;line-height:1.5;display:inline-block;text-in
 .contract{}
 .contract-title{font-size:24px;text-align:center;height:40px;line-height:40px;}
 .order-btn{text-align:center;margin:30px 0 10px;}
-.contract .lv-agree{height:400px;border:1px solid #abc;background:#fff;}
+.contract .lv-agree{height:400px;border:1px solid #9bd;background:#fff;}
 .order-main .contract{ border-top:1px solid #ccc;}
 
 
 
 /* 支付方式 */
-.paybox{border-top:3px solid #abc;}
+.paybox{border-top:3px solid #9bd;margin-top:-40px;}
 .paybox .timebox{float:right;display:inline-block;margin-top:20px;padding:0 10px;height:28px;line-height:28px;border:1px solid #ccc;background:#fff;}
 .paybox h3{margin-bottom:5px;}
-.paybox .view-details{
-    position:absolute;
-    top:-3px;
-    right:30px;
+
+.slidedown-orderlist{
+    float:right;
+    position:relative;
+    z-index:50;
     display:inline-block;
-    background:#abc;
-    padding:0 10px;
+    background:#9bd;
+    padding:0 22px 0 10px;
     height:28px;
     line-height:28px;
     color:#fff;
+    
 }
+.slidedown-orderlist .ui-arrow-bottom{top:12px;right:8px;}
 .paytips{color:#666;}
 
 
 /* 支付方式列表 */
-.payment-list{padding:20px;background:#fff;border:1px solid #abc;border-top-width:3px;}
+.payment-list{padding:20px;background:#fff;border:1px solid #9bd;border-top-width:3px;}
 .bank-list li{float:left;display:inline;*zoom:1;margin:0px 8px 8px;}
 .bank-list .icon-bank{display:inline-block;width:130px;height:36px;border:1px solid #ddd;vertical-align:middle;background:#fff;}
 .bank-list .icon-bank:hover{border-color:#ff9600;}
@@ -204,53 +207,42 @@ a.dot_line{margin:0 3px;height:auto;line-height:1.5;display:inline-block;text-in
 .payment{position:relative;margin-top:30px;}
 .payment input{outline:none;}
 
-.ui-tab-trigger{height:40px;}
-.ui-tab-trigger ul {
-position: absolute;
-top: -2px;
-width: 750px;
-left:180px;
-}
-.ui-tab-trigger li{
-position:relative;
-border: #cde solid 2px;
-border-bottom: 0 none;
-float: left;
-font-size: 14px;
-font-weight: bold;
-height: 40px;
-line-height: 38px;
-margin-left: 3px;
-text-align: center;
-width: 115px;
-}
-.ui-tab-trigger .selected {
-border-color: #e6e6e6;
-overflow: visible;
-}
-.ui-tab-trigger li a {
+.pay-title{height:40px;}
+
+.order-tabnav{position: absolute;top: -2px;width: 750px;left:180px;}
+.order-tabnav li{position:relative;border:2px solid #cde;border-bottom: 0 none;float: left;font-size: 14px;font-weight: bold;height: 40px;line-height: 38px;margin-left: 3px;text-align: center;}
+.order-tabnav .selected{border-color: #e6e6e6;overflow: visible;}
+.order-tabnav li a {
+float:left;
+padding:0 20px;
 background-color: #fff;
 border: #fff solid 2px;
 border-bottom: 0 none;
 display: block;
 height: 38px;
 text-decoration: none;
-width: 111px;
-position: absolute;
 top: 0;
 left: 0;
 }
-.ui-tab-trigger .selected a {
+.order-tabnav .selected a {
 background-color: #fff;
-border-color: #abc;
+border-color: #9bd;
 color: #000;
 height: 41px;
 outline: medium none;
 text-decoration: none;
 }
-.ui-tab-trigger li a:hover {
+.order-tabnav li a:hover {
 text-decoration: none;
 }
+
+
+.order-tabnav li.paylink a{position:relative;padding-right:30px;}
+.paylink .ui-arrow-right{top:15px;right:18px;}
+.paylink a:hover .ui-arrow-right{border-left-color:#e38;}
+
+
+
 
 
 /* 组件个性化 */
@@ -275,15 +267,24 @@ text-decoration: none;
         -ms-user-select: none;
          -o-user-select: none;
             user-select: none;}
-.op-reduce,.op-increase{display:inline-block;border:none;margin:0;padding:0;font-style:normal;width:20px;height:22px;line-height:22px;overflow:hidden;color:#666; text-indent:-9999px;*text-indent:0;font-size:0;*line-height:200px;vertical-align: top;*zoom:1; cursor:pointer;background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAABFCAMAAAAPSlTbAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjhCMzA4MTgxMDhBMTExRTM4MjIzQUE4NEU2OTFDOTVFIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjhCMzA4MTgyMDhBMTExRTM4MjIzQUE4NEU2OTFDOTVFIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6OEIzMDgxN0YwOEExMTFFMzgyMjNBQTg0RTY5MUM5NUUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6OEIzMDgxODAwOEExMTFFMzgyMjNBQTg0RTY5MUM5NUUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5tGr1HAAAADFBMVEXMzMz/iABmZmb///+2yoDcAAAABHRSTlP///8AQCqp9AAAAEtJREFUeNrs0jEKADAIQ9Go979zC3a2LkWl+eD2loCwRLoPhVC9QHmYMMaSERI+hlIMxQuUN2IM34ywCUQxPAXqKvqM4Zt9A5cAAwAfnx/VGj0+kgAAAABJRU5ErkJggg==") no-repeat;
-*background:url(http://pic.lvmama.com/img/common/opernum.png) no-repeat;
+.op-reduce,.op-increase,
+.op-disable-reduce,.op-disable-increase{display:inline-block;border:none;margin:0;padding:0;font-style:normal;width:20px;height:22px;line-height:22px;overflow:hidden;color:#666;cursor:pointer;font-family: \5b8b\4f53,sans-serif;font-size: 16px;text-align:center;vertical-align: top;/* text-indent:-9999px;font-size:0;*text-indent:0;*line-height:200px;*zoom:1; /*background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAABFCAMAAAAPSlTbAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjhCMzA4MTgxMDhBMTExRTM4MjIzQUE4NEU2OTFDOTVFIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjhCMzA4MTgyMDhBMTExRTM4MjIzQUE4NEU2OTFDOTVFIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6OEIzMDgxN0YwOEExMTFFMzgyMjNBQTg0RTY5MUM5NUUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6OEIzMDgxODAwOEExMTFFMzgyMjNBQTg0RTY5MUM5NUUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5tGr1HAAAADFBMVEXMzMz/iABmZmb///+2yoDcAAAABHRSTlP///8AQCqp9AAAAEtJREFUeNrs0jEKADAIQ9Go979zC3a2LkWl+eD2loCwRLoPhVC9QHmYMMaSERI+hlIMxQuUN2IM34ywCUQxPAXqKvqM4Zt9A5cAAwAfnx/VGj0+kgAAAABJRU5ErkJggg==") no-repeat;
+*background:url(http://pic.lvmama.com/img/common/opernum.png) no-repeat;*/
 background-color:#f8f8f8;}
+
 .op-reduce  { border-right: 1px solid #ededed; background-position:   7px 7px;}
 .op-increase{ border-left : 1px solid #ededed; background-position: -26px 7px;}
-.op-reduce:hover  { background-color: #fff; background-position:  7px -17px;}
-.op-increase:hover{ background-color: #fff; background-position:-26px -17px;}
-.op-disable-reduce,.op-disable-reduce:hover    { cursor:default; background-color:#f8f8f8; background-position:   7px -41px;}
-.op-disable-increase,.op-disable-increase:hover{ cursor:default; background-color:#f8f8f8; background-position: -26px -41px;}
+
+.op-reduce:hover,
+.op-increase:hover{background-color: #fff;text-decoration: none; color:#f80;}
+.op-reduce:hover  { background-position:  7px -17px; }
+.op-increase:hover{ background-position:-26px -17px;}
+
+.op-disable-reduce,.op-disable-reduce:hover    { background-position:   7px -41px;}
+.op-disable-increase,.op-disable-increase:hover{ background-position: -26px -41px;}
+.op-disable-reduce,.op-disable-reduce:hover,
+.op-disable-increase,.op-disable-increase:hover{cursor:default; background-color:#f8f8f8;color:#ccc;}
+
 .oper-numbox input.op-number{background-color:#fff;position:relative;margin:0;padding:0;border:none;outline:none;display:inline-block;width:40px;height:22px;line-height:22px;vertical-align:top;*height:20px;*line-height:20px;*vertical-align: middle;text-align:center;}
 .oper-numbox input.op-number:focus{-webkit-box-shadow:none;box-shadow:none;}
 
@@ -292,4 +293,55 @@ background-color:#f8f8f8;}
 /* 日期选择框 */
 .dinput .input-date{ width: 154px;}
 
+/* 下面列表供参考使用
+现提供以下标识对应关系：
+如不存在标识，则取其官网域名为标识，若是银行则用大写字母
 
+如：支付宝官网为alipay.com取alipay
+    中国工商银行 取 ICBC
+若为快捷支付，添加 -quick 后缀，如：.ABC-quick
+若为信用卡，添加 -credit 后缀，如：.CMB-credit
+
+
+.alipay     支付宝    
+.shengpay   盛付通 
+.tenpay     财付通
+.cmpay      手机支付
+.unionpay   银联支付
+.lakala     拉卡拉
+
+.ABC        中国农业银行
+.BJBANK     北京银行
+.BJRCB      北京农村商业银行
+.BOC        中国银行
+.BOSH       
+.CCB        中国建设银行
+.CEB        中国广大银行
+.CGB        广发银行
+.CIB        兴业银行 
+.CITIC      
+.CMB        招商银行
+.CMBC       中国民生银行
+.COMM       交通银行
+.DBSCN    
+.ECITIC     中信银行  
+.FUDIAN     富滇银行
+.GDB        
+.HSBC       
+.HXBANK         
+.ICBC       中国工商银行
+.JSBANK
+.KLB
+.NBCB       宁波银行
+.HZBANK     杭州银行
+.NJCB       南京银行 
+.PSBC       中国邮政储蓄银行
+.PINGAN     平安银行
+.SDB        
+.SHBANK     上海银行
+.SJBANK     
+.SPABANK    
+.SPDB       浦发银行
+.WZCB       温州银行
+
+*/

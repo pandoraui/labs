@@ -49,6 +49,58 @@ body{font:12px/22px Tahoma,Arial,\5b8b\4f53,sans-serif;}
 .sidebox{padding:10px 20px;}
 
 
+/* 下面列表供参考使用
+现提供以下标识对应关系：
+如不存在标识，则取其官网域名为标识，若是银行则用大写字母
+
+如：支付宝官网为alipay.com取alipay
+    中国工商银行 取 ICBC
+若为快捷支付，添加 -quick 后缀，如：.ABC-quick
+若为信用卡，添加 -credit 后缀，如：.CMB-credit
+
+
+.alipay     支付宝    
+.shengpay   盛付通 
+.tenpay     财付通
+.cmpay      手机支付
+.unionpay   银联支付
+.lakala     拉卡拉
+
+.ABC        中国农业银行
+.BJBANK     北京银行
+.BJRCB      北京农村商业银行
+.BOC        中国银行
+.BOSH       
+.CCB        中国建设银行
+.CEB        中国广大银行
+.CGB        广发银行
+.CIB        兴业银行 
+.CITIC      
+.CMB        招商银行
+.CMBC       中国民生银行
+.COMM       交通银行
+.DBSCN    
+.ECITIC     中信银行  
+.FUDIAN     富滇银行
+.GDB        
+.HSBC       
+.HXBANK         
+.ICBC       中国工商银行
+.JSBANK
+.KLB
+.NBCB       宁波银行
+.HZBANK     杭州银行
+.NJCB       南京银行 
+.PSBC       中国邮政储蓄银行
+.PINGAN     平安银行
+.SDB        
+.SHBANK     上海银行
+.SJBANK     
+.SPABANK    
+.SPDB       浦发银行
+.WZCB       温州银行
+
+*/
 
 
 

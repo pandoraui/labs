@@ -17,5 +17,16 @@ $(function(){
         $(this).parents(".check-radio-box").find(".check-radio-item").click();
     });
     
+    
+    $(".slidedown-orderlist").click(function(){
+        $(this).toggleClass("active").parent().find(".order-list").toggleClass("hide");
+        
+    })
+    
+    $("b.countdown").ui("countdown",{
+        format: "mm:ss",
+        overtips : "此订单已过期"
+    });
+    
 })
 

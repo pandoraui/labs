@@ -22,7 +22,7 @@
 <!-- 本地页面浏览 js -->
 <script src="/labs/assets/js/jquery-1.7.2.min.js"></script>
 <script src="/labs/assets/common/footer.js"></script>
-
+<script src="http://pic.lvmama.com/js/ui/lvmamaUI/lvmamaUI.js"></script>
 <!-- 页面项目js及插件
 <script src="http://pic.lvmama.com/js/v4/order-page.js"></script> -->
 <script src="/labs/v4/js/order-page.js"></script>
