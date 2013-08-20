@@ -33,7 +33,7 @@
     </ol> <!-- //操作步骤 -->
     
     
-    <div class="order-main border equalheight-box pbtn-wbox">
+    <div class="order-main border equalheight-box">
         <div class="sidebar equalheight-item">
             <div class="sidebox side-setbox">
                 <div class="side-title">
@@ -413,7 +413,7 @@
                     <dl class="xdl">
                         <dt></dt>
                         <dd>
-                            <button class="pbtn pbtn-small pbtn-blue">保存</button>
+                            <button class="pbtn pbtn-mini pbtn-blue">保存</button>
                         </dd>
                     </dl>
                     <!-- //默认可编辑状态 -->
@@ -509,7 +509,7 @@
                         <dl class="xdl">
                         <dt></dt>
                         <dd>
-                            <button class="pbtn pbtn-small pbtn-blue">保存</button>
+                            <button class="pbtn pbtn-mini pbtn-blue">保存</button>
                             <p class="help-block">友情提示：准确填写订单联系人信息，便于我们跟你联系。</p>
                         </dd>
                     </dl>
@@ -590,7 +590,7 @@
                     <dl class="xdl">
                         <dt></dt>
                         <dd>
-                            <button class="pbtn pbtn-small pbtn-blue">保存</button>
+                            <button class="pbtn pbtn-mini pbtn-blue">保存</button>
                             <p class="help-block">友情提示：游玩人信息可以到我的订单中补全。</p>
                         </dd>
                     </dl>
@@ -635,7 +635,7 @@
                     <dl class="xdl">
                         <dt></dt>
                         <dd>
-                            <button class="pbtn pbtn-small pbtn-blue">保存</button>
+                            <button class="pbtn pbtn-mini pbtn-blue">保存</button>
                             <p class="help-block">友情提示：紧急联系人信息不能与游玩人相同。</p>
                         </dd>
                     </dl>
@@ -681,16 +681,16 @@
                 <dl class="xdl">
                     <dt class="B">可享优惠：</dt>
                     <dd class="mb10">
-                        <div class="selectbox">
+                        <div class="selectbox selectbox-big">
                             <p class="select-info like-input">
                                 <span class="select-arrow"><i class="ui-arrow-bottom dark-ui-arrow-bottom"></i></span>
-                                <span class="select-value">请选择</span>
+                                <span class="select-value">不使用任何优惠</span>
                             </p>
                             <div class="selectbox-drop">
                                 <ul class="select-results">
-                                    <li data-value="选择项1">选择项1</li>
-                                    <li data-value="选择项2">选择项2</li>
-                                    <li data-value="选择项3">选择项3</li>
+                                    <li data-value="选择项1">优惠活动名称 满200减50</li>
+                                    <li data-value="选择项1">优惠活动名称 满1000减300</li>
+                                    <li data-value="选择项2">使用优惠券</li>
                                 </ul>
                             </div>
                         </div>

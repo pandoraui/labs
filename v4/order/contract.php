@@ -33,7 +33,7 @@
     </ol> <!-- //操作步骤 -->
     
     
-    <div class="order-main border pbtn-wbox">
+    <div class="order-main border">
         <div class="main">
             <div class="hr_a"></div>
             <div class="c-title">
