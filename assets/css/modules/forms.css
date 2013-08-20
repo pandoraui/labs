@@ -3,7 +3,7 @@
   form.css v1.0
   Adapted from  Bootstrap forms.css
   对于不支持 input[type="text"] 属性选择符的IE6，由样式input-text控制
-  使用 IE7.js 修复效果很不好
+  注：使用 IE7.js 修复效果很不好
 ------------------------------------------------------------ */
 
 /* reset中已包含 
@@ -48,6 +48,9 @@ form label {
     margin-bottom: 5px;
 }
 
+/* 模拟输入框 like-input */
+
+.like-input,
 select,
 textarea,
 .input-text,
@@ -71,6 +74,7 @@ textarea,
             border-radius: 4px; 
 }
 
+.like-input,
 input,
 textarea,
 .uneditable-input {
@@ -78,11 +82,15 @@ textarea,
     width: 148px;
     margin-right: 6px;
 }
-
+.like-input {
+    display: block;
+    width: auto;
+}
 textarea {
     height: auto;
 }
 
+.like-input,
 textarea,
 .input-text,
 .input-password,
@@ -90,7 +98,7 @@ textarea,
 .input-number,
 .uneditable-input {
     background-color: #ffffff;
-    border: 1px solid #aabbcc;
+    border: 1px solid #ccc;
     -webkit-box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.075);
        -moz-box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.075);
             box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.075);
@@ -376,7 +384,6 @@ label.vmiddle {
     text-align: right;
     cursor: pointer;
     white-space: nowrap;
-    background:#eee;
 }
 .xicon {
     background:url(http://pic.lvmama.com/img/v3/combo.png) no-repeat;
@@ -401,11 +408,11 @@ label.vmiddle {
 
 
 /* 较小格式的表单 */
+.form-small .like-input,
 .form-small .input-text { 
     height:16px;
     line-height:16px;
 }
-
 
 
 

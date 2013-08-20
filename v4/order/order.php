@@ -39,7 +39,7 @@
     </ol> <!-- //操作步骤 -->
     
     
-    <div class="order-content border equalheight-box">
+    <div class="order-content border equalheight-box pbtn-wbox">
         <div class="sidebar equalheight-item">
             <div class="sidebox side-setbox">
                 <div class="side-title">

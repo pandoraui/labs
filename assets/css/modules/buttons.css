@@ -196,7 +196,8 @@ input {
             border-radius: 2px;
 }
 
-.cnbtn,.cnbtn .btn {
+.btn-w,
+.btn-wbox .btn {
     padding-left: 20px;
     padding-right: 20px;
     -webkit-border-radius: 2px;

@@ -54,8 +54,8 @@ a.dot_line{margin:0 3px;height:auto;line-height:1.5;display:inline-block;text-in
     text-align: left;
 }
 
-
-
+.input-text{ width:110px;}
+.input-middle{ width:150px;}
 
 
 
@@ -212,30 +212,10 @@ a.dot_line{margin:0 3px;height:auto;line-height:1.5;display:inline-block;text-in
 .order-tabnav{position: absolute;top: -2px;width: 750px;left:180px;}
 .order-tabnav li{position:relative;border:2px solid #cde;border-bottom: 0 none;float: left;font-size: 14px;font-weight: bold;height: 40px;line-height: 38px;margin-left: 3px;text-align: center;}
 .order-tabnav .selected{border-color: #e6e6e6;overflow: visible;}
-.order-tabnav li a {
-float:left;
-padding:0 20px;
-background-color: #fff;
-border: #fff solid 2px;
-border-bottom: 0 none;
-display: block;
-height: 38px;
-text-decoration: none;
-top: 0;
-left: 0;
-}
-.order-tabnav .selected a {
-background-color: #fff;
-border-color: #9bd;
-color: #000;
-height: 41px;
-outline: medium none;
-text-decoration: none;
-}
-.order-tabnav li a:hover {
-text-decoration: none;
-}
-
+.order-tabnav li a {float:left;padding:0 20px;background-color: #fff;border: #fff solid 2px;border-bottom: 0 none;display: block;height: 38px;text-decoration: none;}
+.order-tabnav .selected a {background-color: #fff;border-color: #9bd;color: #000;height: 41px;outline:none;}
+.order-tabnav li a:hover {text-decoration: none;}
+.order-tabnav .selected a:hover{cursor:default;}
 
 .order-tabnav li.paylink a{position:relative;padding-right:30px;}
 .paylink .ui-arrow-right{top:15px;right:18px;}
@@ -258,7 +238,7 @@ text-decoration: none;
 .check-radio-box label.inline{line-height:26px;}
 
 .JS_check .check-content{display:none;}
-.JS_check .active .check-content{display:block;}
+.JS_check .selected .check-content{display:block;}
 
 /* 数字加减操作 */
 .oper-numbox{display:inline-block;vertical-align:middle;border: 1px solid #ccc;height:22px;line-height:22px;overflow:hidden;*zoom:1;/* 禁止选中文字 */
@@ -268,9 +248,12 @@ text-decoration: none;
          -o-user-select: none;
             user-select: none;}
 .op-reduce,.op-increase,
-.op-disable-reduce,.op-disable-increase{display:inline-block;border:none;margin:0;padding:0;font-style:normal;width:20px;height:22px;line-height:22px;overflow:hidden;color:#666;cursor:pointer;font-family: \5b8b\4f53,sans-serif;font-size: 16px;text-align:center;vertical-align: top;/* text-indent:-9999px;font-size:0;*text-indent:0;*line-height:200px;*zoom:1; /*background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAABFCAMAAAAPSlTbAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjhCMzA4MTgxMDhBMTExRTM4MjIzQUE4NEU2OTFDOTVFIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjhCMzA4MTgyMDhBMTExRTM4MjIzQUE4NEU2OTFDOTVFIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6OEIzMDgxN0YwOEExMTFFMzgyMjNBQTg0RTY5MUM5NUUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6OEIzMDgxODAwOEExMTFFMzgyMjNBQTg0RTY5MUM5NUUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5tGr1HAAAADFBMVEXMzMz/iABmZmb///+2yoDcAAAABHRSTlP///8AQCqp9AAAAEtJREFUeNrs0jEKADAIQ9Go979zC3a2LkWl+eD2loCwRLoPhVC9QHmYMMaSERI+hlIMxQuUN2IM34ywCUQxPAXqKvqM4Zt9A5cAAwAfnx/VGj0+kgAAAABJRU5ErkJggg==") no-repeat;
-*background:url(http://pic.lvmama.com/img/common/opernum.png) no-repeat;*/
-background-color:#f8f8f8;}
+.op-disable-reduce,.op-disable-increase{display:inline-block;border:none;margin:0;padding:0;font-style:normal;width:20px;height:22px;line-height:22px;overflow:hidden;color:#666;cursor:pointer;font-family: \5b8b\4f53,sans-serif;font-size: 16px;text-align:center;vertical-align: top;background-color:#f8f8f8;}
+
+
+/* text-indent:-9999px;font-size:0;*text-indent:0;*line-height:200px;*zoom:1; /*background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAABFCAMAAAAPSlTbAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjhCMzA4MTgxMDhBMTExRTM4MjIzQUE4NEU2OTFDOTVFIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjhCMzA4MTgyMDhBMTExRTM4MjIzQUE4NEU2OTFDOTVFIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6OEIzMDgxN0YwOEExMTFFMzgyMjNBQTg0RTY5MUM5NUUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6OEIzMDgxODAwOEExMTFFMzgyMjNBQTg0RTY5MUM5NUUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5tGr1HAAAADFBMVEXMzMz/iABmZmb///+2yoDcAAAABHRSTlP///8AQCqp9AAAAEtJREFUeNrs0jEKADAIQ9Go979zC3a2LkWl+eD2loCwRLoPhVC9QHmYMMaSERI+hlIMxQuUN2IM34ywCUQxPAXqKvqM4Zt9A5cAAwAfnx/VGj0+kgAAAABJRU5ErkJggg==") no-repeat;
+*background:url(http://pic.lvmama.com/img/common/opernum.png) no-repeat;
+
 
 .op-reduce  { border-right: 1px solid #ededed; background-position:   7px 7px;}
 .op-increase{ border-left : 1px solid #ededed; background-position: -26px 7px;}
@@ -282,6 +265,12 @@ background-color:#f8f8f8;}
 
 .op-disable-reduce,.op-disable-reduce:hover    { background-position:   7px -41px;}
 .op-disable-increase,.op-disable-increase:hover{ background-position: -26px -41px;}
+*/
+.op-reduce  { border-right: 1px solid #ededed;}
+.op-increase{ border-left : 1px solid #ededed;}
+.op-reduce:hover,
+.op-increase:hover{background-color: #fff;text-decoration: none; color:#f80;}
+
 .op-disable-reduce,.op-disable-reduce:hover,
 .op-disable-increase,.op-disable-increase:hover{cursor:default; background-color:#f8f8f8;color:#ccc;}
 

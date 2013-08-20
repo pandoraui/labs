@@ -2,7 +2,7 @@
 <?php $title="订单信息填写"?>
 <?php include("../common/order-meta.php"); ?>
 </head>
-<body class="order cnbtn">
+<body class="order">
 <?php include("../common/order-header.html"); ?>
 
 
@@ -33,7 +33,7 @@
     </ol> <!-- //操作步骤 -->
     
     
-    <div class="order-main border equalheight-box">
+    <div class="order-main border equalheight-box pbtn-wbox">
         <div class="sidebar equalheight-item">
             <div class="sidebox side-setbox">
                 <div class="side-title">
@@ -264,81 +264,70 @@
                     
                     
                     
-                    <!-- 默认可编辑状态 -->
-                    <div class="choose-info">
-                        <dl class="xdl">
-                            <dt>常用联系人：</dt>
-                            <dd class="form-inline">
-                                <label class="checkbox inline"><input type="checkbox" class="input-checkbox" />胡小小</label>
-                                <label class="checkbox inline"><input type="checkbox" class="input-checkbox" />郑明明</label>
-                                <label class="checkbox inline"><input type="checkbox" class="input-checkbox" />黄丽丽</label>
-                                <label class="checkbox inline"><input type="checkbox" class="input-checkbox" />王山山</label>
-                            </dd>
-                        </dl>
-                    </div>
-                    <dl class="xdl">
-                        <dt><i class="req">*</i>投保人1：</dt>
-                        <dd>
-                            <label><input type="text" class="input-text" /></label>
-                        </dd>
-                    </dl>
-                    <dl class="xdl">
-                        <dt><i class="req">*</i>投保人2：</dt>
-                        <dd>
-                            <label><input type="text" class="input-text" /></label>
-                        </dd>
-                    </dl>
-                    <dl class="xdl">
-                        <dt></dt>
-                        <dd>
-                            <button class="btn btn-small btn-orange">保存</button>
-                        </dd>
-                    </dl>
-                    <!-- //默认可编辑状态 -->
-                    
-                    
-                    
-                    <!-- 保存后状态 -->
-                    <dl class="xdl">
-                        <dt><i class="req">*</i>投保人1：</dt>
-                        <dd>
-                            <span class="input-info">胡小小</span>
-                        </dd>
-                    </dl>
-                    <dl class="xdl">
-                        <dt><i class="req">*</i>投保人2：</dt>
-                        <dd>
-                            <span class="input-info">小明</span>
-                        </dd>
-                    </dl>
-                    <dl class="xdl">
-                        <dt></dt>
-                        <dd>
-                            <button class="btn btn-small btn-white">修改</button>
-                        </dd>
-                    </dl>
-                    <!-- //保存后状态 -->
-                    
-                    
-                    <dl class="xdl JS_check">
+                    <dl class="xdl JS_check form-inline">
                         <dd class="dot_line">间隔线</dd>
                         <dt class="B">自费产品：</dt>
                         <dd class="check-radio-box">
-                            <div class="check-text"><label class="checkbox inline"><input class="input-checkbox" name="ownpro" type="checkbox"><span class="check-radio-item"><i class="ui-arrow-bottom blue-ui-arrow-bottom"></i>升级总统套房</span></label><dfn>&yen;100</dfn>/间</div>
+                            <div class="check-text"><label class="checkbox inline"><input class="input-checkbox" name="ownpro" type="checkbox"><span class="check-radio-item"><i class="ui-arrow-bottom blue-ui-arrow-bottom"></i>升级总统套房</span></label>
+                                <dfn>&yen;100</dfn>/间
+                                <div class="selectbox selectbox-mini hide">
+                                    <p class="select-info like-input">
+                                        <span class="select-arrow"><i class="ui-arrow-bottom dark-ui-arrow-bottom"></i></span>
+                                        <span class="select-value">1 份</span>
+                                    </p>
+                                    <div class="selectbox-drop">
+                                        <ul class="select-results">
+                                            <li data-value="选择项1">1 份</li>
+                                            <li data-value="选择项2">2 份</li>
+                                            <li data-value="选择项3">3 份</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="tiptext tip-info check-content">
                                 <span class="tip-close">&times;</span>
                                 <div class="pre-wrap">详细说明</div>
                             </div>
                         </dd>
                         <dd class="check-radio-box">
-                            <div class="check-text"><label class="checkbox inline"><input class="input-checkbox" name="ownpro" type="checkbox"><span class="check-radio-item"><i class="ui-arrow-bottom blue-ui-arrow-bottom"></i>升级海景观景房</span></label><dfn>&yen;180</dfn>/间</div>
+                            <div class="check-text"><label class="checkbox inline"><input class="input-checkbox" name="ownpro" type="checkbox"><span class="check-radio-item"><i class="ui-arrow-bottom blue-ui-arrow-bottom"></i>升级海景观景房</span></label>
+                                <dfn>&yen;180</dfn>/间
+                                <div class="selectbox selectbox-mini">
+                                    <p class="select-info like-input">
+                                        <span class="select-arrow"><i class="ui-arrow-bottom dark-ui-arrow-bottom"></i></span>
+                                        <span class="select-value">1 份</span>
+                                    </p>
+                                    <div class="selectbox-drop">
+                                        <ul class="select-results">
+                                            <li data-value="选择项1">1 份</li>
+                                            <li data-value="选择项2">2 份</li>
+                                            <li data-value="选择项3">3 份</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="tiptext tip-info check-content">
                                 <span class="tip-close">&times;</span>
                                 <div class="pre-wrap">详细说明</div>
                             </div>
                         </dd>
                         <dd class="check-radio-box">
-                            <div class="check-text"><label class="checkbox inline"><input class="input-checkbox" name="ownpro" type="checkbox"><span class="check-radio-item"><i class="ui-arrow-bottom blue-ui-arrow-bottom"></i>升级豪华型套房</span></label><dfn>&yen;200</dfn>/间</div>
+                            <div class="check-text"><label class="checkbox inline"><input class="input-checkbox" name="ownpro" type="checkbox"><span class="check-radio-item"><i class="ui-arrow-bottom blue-ui-arrow-bottom"></i>升级豪华型套房</span></label>
+                                <dfn>&yen;200</dfn>/间
+                                <div class="selectbox selectbox-mini hide">
+                                    <p class="select-info like-input">
+                                        <span class="select-arrow"><i class="ui-arrow-bottom dark-ui-arrow-bottom"></i></span>
+                                        <span class="select-value">1 份</span>
+                                    </p>
+                                    <div class="selectbox-drop">
+                                        <ul class="select-results">
+                                            <li data-value="选择项1">1 份</li>
+                                            <li data-value="选择项2">2 份</li>
+                                            <li data-value="选择项3">3 份</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="tiptext tip-info check-content">
                                 <span class="tip-close">&times;</span>
                                 <div class="pre-wrap">详细说明</div>
@@ -424,7 +413,7 @@
                     <dl class="xdl">
                         <dt></dt>
                         <dd>
-                            <button class="btn btn-small btn-orange">保存</button>
+                            <button class="pbtn pbtn-small pbtn-blue">保存</button>
                         </dd>
                     </dl>
                     <!-- //默认可编辑状态 -->
@@ -466,7 +455,7 @@
                     <dl class="xdl">
                         <dt></dt>
                         <dd>
-                            <button class="btn btn-small btn-white">修改</button>
+                            <button class="btn btn-smallhite">修改</button>
                         </dd>
                     </dl>
                     <!-- //保存后状态 -->
@@ -475,28 +464,6 @@
                 </div>
                 
             </div> <!-- //附加产品 -->
-            
-            
-            <div class="hr_a"></div>
-            <!-- 优惠信息 -->
-            <div class="order-title">
-                <h3>优惠信息</h3>
-            </div>
-            <div class="order-content xdl-hor form-small"> 
-                <dl class="xdl">
-                    <dt class="B">可享优惠：</dt>
-                    <dd><select name="" id="">
-                        <option value="">sadfasdf</option>
-                        <option value="">sadfasdf</option>
-                        <option value="">sadfasdf</option>
-                    </select></dd>
-                    <dd>
-                        <p class="text-gray">1.可参加优惠活动或使用优惠券；<br>
-                        2.付款时可使用奖金抵扣；<br>
-                        3.选择浦发银行在线付款立减10元。</p>
-                    </dd>
-                </dl>
-            </div> <!-- //优惠信息 -->
             
             
             
@@ -542,7 +509,7 @@
                         <dl class="xdl">
                         <dt></dt>
                         <dd>
-                            <button class="btn btn-small btn-orange">保存</button>
+                            <button class="pbtn pbtn-small pbtn-blue">保存</button>
                             <p class="help-block">友情提示：准确填写订单联系人信息，便于我们跟你联系。</p>
                         </dd>
                     </dl>
@@ -562,7 +529,7 @@
                 <h3>游玩人信息</h3>
             </div>
             <div class="order-content xdl-hor">    
-                <div class="form-small">    
+                <div class="form-small form-inline">    
                     <div class="choose-info">
                         <dl class="xdl">
                             <dt>常用联系人：</dt>
@@ -578,18 +545,52 @@
                         <dt><i class="req">*</i>游玩人1：</dt>
                         <dd>
                             <label><input type="text" class="input-text" /></label>
+                            <div class="select-group">
+                                <div class="selectbox selectbox-small">
+                                    <p class="select-info like-input">
+                                        <span class="select-arrow"><i class="ui-arrow-bottom dark-ui-arrow-bottom"></i></span>
+                                        <span class="select-value">身份证</span>
+                                    </p>
+                                    <div class="selectbox-drop">
+                                        <ul class="select-results">
+                                            <li data-value="选择项1">身份证</li>
+                                            <li data-value="选择项2">护照</li>
+                                            <li data-value="选择项3">港澳通行证</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <input type="text" class="input-text input-middle" value="412725198603193850" />
+                                <input type="text" class="input-text" value="13817131714" />
+                            </div>
                         </dd>
                     </dl>
                     <dl class="xdl">
                         <dt><i class="req">*</i>游玩人2：</dt>
                         <dd>
                             <label><input type="text" class="input-text" /></label>
+                            <div class="select-group">
+                                <div class="selectbox selectbox-small">
+                                    <p class="select-info like-input">
+                                        <span class="select-arrow"><i class="ui-arrow-bottom dark-ui-arrow-bottom"></i></span>
+                                        <span class="select-value">身份证</span>
+                                    </p>
+                                    <div class="selectbox-drop">
+                                        <ul class="select-results">
+                                            <li data-value="选择项1">身份证</li>
+                                            <li data-value="选择项2">护照</li>
+                                            <li data-value="选择项3">港澳通行证</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <input type="text" class="input-text input-middle" value="" />
+                                <input type="text" class="input-text" value="" />
+                            </div>
                         </dd>
                     </dl>
                     <dl class="xdl">
                         <dt></dt>
                         <dd>
-                            <button class="btn btn-small btn-orange">保存</button>
+                            <button class="pbtn pbtn-small pbtn-blue">保存</button>
                             <p class="help-block">友情提示：游玩人信息可以到我的订单中补全。</p>
                         </dd>
                     </dl>
@@ -634,7 +635,7 @@
                     <dl class="xdl">
                         <dt></dt>
                         <dd>
-                            <button class="btn btn-small btn-orange">保存</button>
+                            <button class="pbtn pbtn-small pbtn-blue">保存</button>
                             <p class="help-block">友情提示：紧急联系人信息不能与游玩人相同。</p>
                         </dd>
                     </dl>
@@ -667,15 +668,53 @@
                         </dd>
                     </dl>
                 </div>
+            </div> <!-- //预订须知 -->
+            
+            
+            
+            <div class="hr_a"></div>
+            <!-- 优惠信息 -->
+            <div class="order-title">
+                <h3>优惠信息</h3>
+            </div>
+            <div class="order-content xdl-hor form-small"> 
+                <dl class="xdl">
+                    <dt class="B">可享优惠：</dt>
+                    <dd class="mb10">
+                        <div class="selectbox">
+                            <p class="select-info like-input">
+                                <span class="select-arrow"><i class="ui-arrow-bottom dark-ui-arrow-bottom"></i></span>
+                                <span class="select-value">请选择</span>
+                            </p>
+                            <div class="selectbox-drop">
+                                <ul class="select-results">
+                                    <li data-value="选择项1">选择项1</li>
+                                    <li data-value="选择项2">选择项2</li>
+                                    <li data-value="选择项3">选择项3</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </dd>
+                    <dd>
+                        <p class="text-gray">1.可参加优惠活动或使用优惠券；<br>
+                        2.付款时可使用奖金抵扣；<br>
+                        3.选择浦发银行在线付款立减10元。</p>
+                    </dd>
+                </dl>
+            </div> <!-- //优惠信息 -->
+            
+            
+            <!-- 同意协议/提交订单 -->
+            <div class="order-content xdl-hor">
                 <div class="hr_d"></div>
                 <dl class="xdl">
                     <dt class="tl"><a href="#" class="vmiddle">&lt; 返回上一步</a></dt>
-                    <dd><button class="btn btn-big btn-orange">提交订单</button>
+                    <dd><button class="pbtn pbtn-big pbtn-orange">提交订单</button>
                     </dd>
                 </dl>
                 <dl class="xdl">
                     <dt class="tl"><a href="#" class="vmiddle">&lt; 返回上一步</a></dt>
-                    <dd><button class="btn btn-big btn-orange">同意以下预订协议并提交订单</button>
+                    <dd><button class="pbtn pbtn-big pbtn-orange">同意以下预订协议并提交订单</button>
                     </dd>
                 </dl>
                 <div class="lv-agree">
@@ -686,8 +725,8 @@
                     <p>2.1 　驴妈妈服务的具体内容由景域旅游运营集团根据实际情况提供，驴妈妈对其所提供之服务拥有最终解释权。</p>
                     <p>2.2 　景域旅游运营集团在驴妈妈上向其会员提供相关网络服务。其它与相关网络服务有关的设备（如个人电脑、手机、及其他与接入互联网或移动网有关的装置）及所需的费用（如为接入互联网而支付的电话费及上网费、为使用移动网而支付的手机费等）均由会员自行负担。</p>
                 </div>
-                
-            </div> <!-- //预订须知 -->
+            </div> <!-- 同意协议/提交订单 -->
+            
             
             
         </div> <!-- //.main -->

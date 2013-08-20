@@ -33,7 +33,7 @@
     </ol> <!-- //操作步骤 -->
     
     
-    <div class="order-main border">
+    <div class="order-main border pbtn-wbox">
         <div class="main">
             <div class="hr_a"></div>
             <div class="c-title">
@@ -132,7 +132,7 @@
                         
                     </div>
                 </div>
-                <div class="order-btn"><button class="btn btn-big btn-orange">&nbsp;&nbsp;&nbsp;&nbsp;下一步&nbsp;&nbsp;&nbsp;&nbsp;</button></div>
+                <div class="order-btn"><button class="pbtn pbtn-big pbtn-orange">&nbsp;&nbsp;&nbsp;&nbsp;下一步&nbsp;&nbsp;&nbsp;&nbsp;</button></div>
             </div> <!-- //选择支付方式 -->
             
         </div> <!-- //支付方式 -->
