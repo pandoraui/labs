@@ -271,7 +271,7 @@
                                 <label class="radio inline"><input class="input-radio no-check" name="safety" type="radio"><span class="no-check">不需要保险</span></label>
                                 
                             </div>
-                            <div class="tiptext tip-warning check-content">
+                            <div class="tiptext tip-warning no-check-content hide">
                                 <div class="pre-wrap">旅游保险能够给您的出行安全带来更多保障，所以驴妈妈建议您务必购买旅游保险。如您放弃购买，则行程中的风险和损失将由您自行承担。</div>
                             </div>
                         </dd>

@@ -9,7 +9,7 @@
 <div class="wrap">
     <!-- 操作步骤 -->
     <ol class="ui-step ui-step-3">
-        <li class="ui-step1 ui-step-start">
+        <li class="ui-step1 ui-step-start ui-step-done">
             <div class="ui-step-arrow">
                 <i class="arrow_r1"></i>
                 <i class="arrow_r2"></i>

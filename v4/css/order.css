@@ -17,7 +17,7 @@ small{font-size:12px;color:#888;}
 .order h3{font-size:16px;}
 .order h4{font-size:14px;}
 .order h5{font-size:12px;}
-
+.fixed { position: fixed; _position:absolute;}
 
 /* 虚线 */
 .dot_line,.solid_line{display:block;margin:10px 0;clear:both;height:0;overflow:hidden;text-indent:-9999px;}
@@ -58,9 +58,6 @@ a.dot_line{margin:0 3px;height:auto;line-height:1.5;display:inline-block;text-in
 .input-middle{ width:150px;}
 
 
-
-
-
 /* 订单公共头部 */
 .order-header{margin:10px auto;height:60px;position:relative;z-index:5;}
 .header-inner{padding:1px 0;}
@@ -69,6 +66,7 @@ a.dot_line{margin:0 3px;height:auto;line-height:1.5;display:inline-block;text-in
 .order-header p{ text-align:right;color:#555;}
 .order-header p.welcome{ padding:10px 3px 0 0;}
 .order-header p.info strong{color:#d17;}
+.order-header p b,.order-header p strong{font-family:arial;}
 
 /* footer */
 .lv-footer *{margin:0;padding:0;}
@@ -119,6 +117,7 @@ a.dot_line{margin:0 3px;height:auto;line-height:1.5;display:inline-block;text-in
 
 /* 订单侧边栏 */
 .sidebox{padding:10px 20px;}
+.side-setbox{ width: 200px;}
 .side-setbox .content{overflow:hidden;}
 .pro-setbox{padding-top:8px;margin-top:-1px;margin-bottom:10px;border-top:1px dashed #ddd;}
 .pro-setbox dt{font-weight:bold;}

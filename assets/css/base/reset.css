@@ -33,7 +33,7 @@ textarea{overflow:auto;vertical-align:top;}
 table{border-collapse:collapse;border-spacing:0;}
 th{text-align:inherit;}
 abbr,acronym{border:0;font-variant:normal;}
-del{text-decoration:line-through;}
+del{text-decoration:line-through;text-decoration:none;}
 address,caption,cite,dfn,em,i,var{font-style:normal;font-weight:500;}
 caption,th{text-align:left;}
 .clearfix:after,.wrap:after{clear:both;content:' ';display:block;font-size:0;line-height:0;visibility:hidden;width:0;height:0;}
