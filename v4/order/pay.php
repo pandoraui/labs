@@ -83,12 +83,9 @@
             
         <!-- 支付方式 -->
         <div class="lightbox paybox clearfix">
-            <span class="timebox">
-                剩余付款时间：<b class="countdown red">2800000</b>
-            </span>
+            
             <div class="paytips">
-                <h3>友情提示</h3>
-                <p>您的预订信息已提交，请在 <b class="red">2012-07-30 12:00</b> 前完成付款，否则系统将自动取消您的订单。</p>
+                <p>友情提示：您的预订信息已提交，请在 <b class="red">2012-07-30 12:00</b> 前完成付款，<span class="timebox">剩余付款时间：<b class="countdown red">2800000</b></span></p>
             </div>
             <div class="dot_line"></div>
             
@@ -121,7 +118,7 @@
                             <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="icon-bank shengpay"></i></label></li>
                             <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="icon-bank shengpay"></i></label></li>
                             <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="icon-bank shengpay"></i></label></li>
-                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="icon-bank shengpay"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="icon-bank shengpay"></i></label><span class="poptip-mini poptip-mini-warning"><div class="tip-sharp tip-sharp-bottom"></div>立减10元</span></li>
                             <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="icon-bank shengpay"></i></label></li>
                             <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="icon-bank shengpay"></i></label></li>
                             <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="icon-bank shengpay"></i></label></li>
@@ -132,7 +129,7 @@
                         
                     </div>
                 </div>
-                <div class="order-btn"><button class="pbtn pbtn-big pbtn-orange">&nbsp;&nbsp;&nbsp;&nbsp;下一步&nbsp;&nbsp;&nbsp;&nbsp;</button></div>
+                <div class="order-btn"><button class="pbtn pbtn-big pbtn-orange">&nbsp;&nbsp;下一步&nbsp;&nbsp;</button></div>
             </div> <!-- //选择支付方式 -->
             
         </div> <!-- //支付方式 -->
