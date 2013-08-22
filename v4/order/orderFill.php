@@ -7,83 +7,12 @@
 
 
 <div class="wrap">
-    <!-- 操作步骤 -->
-    <ol class="ui-step ui-step-3">
-        <li class="ui-step1 ui-step-start ui-step-active">
-            <div class="ui-step-arrow">
-                <i class="arrow_r1"></i>
-                <i class="arrow_r2"></i>
-            </div>
-            <span class="ui-step-text">1.填写订单信息</span>
-        </li>
-        <li class="ui-step2">
-            <div class="ui-step-arrow">
-                <i class="arrow_r1"></i>
-                <i class="arrow_r2"></i>
-            </div>
-            <span class="ui-step-text">2.选择付款方式付款</span>
-        </li>
-        <li class="ui-step3 ui-step-end">
-            <div class="ui-step-arrow">
-                <i class="arrow_r1"></i>
-                <i class="arrow_r2"></i>
-            </div>
-            <span class="ui-step-text">3.预订成功</span>
-        </li>
-    </ol> <!-- //操作步骤 -->
     
+    <?php include("s-step31.html"); ?>
     
     <div class="order-main border equalheight-box">
-        <div class="sidebar equalheight-item">
-            <div class="sidebox side-setbox">
-                <div class="side-title">
-                    <h3>订单费用结算</h3>
-                </div>
-                <div class="content">
-                    <dl class="pro-setbox">
-                    	<dt>产品费用</dt>
-                    	<dd>
-                            <span class="num"><dfn>&yen;562702</dfn>&times;<i class="price">220</i></span>
-                            <p>万盛黑山谷生态旅游区门票成人票</p>
-                        </dd>
-                        <dd>
-                            <span class="num"><dfn>&yen;130</dfn>&times;<i class="price">1</i></span>
-                            <p>万盛黑山谷生态旅游区门票儿童票</p>
-                        </dd>
-                    </dl>
-                    <dl class="pro-setbox">
-                    	<dt>附加产品费用</dt>
-                    	<dd>
-                            <span class="num"><dfn>&yen;35</dfn>&times;<i class="price">1</i></span>
-                            <p>平安国内长途10日游意外险（特惠型）(国内)</p>
-                        </dd>
-                        <dd>
-                            <span class="num"><dfn>&yen;90</dfn>&times;<i class="price">1</i></span>
-                            <p>天目湖农家菜套餐</p>
-                        </dd>
-                    </dl>
-                    <dl class="pro-setbox">
-                    	<dt>优惠</dt>
-                    	<dd>
-                            <span class="num save-price"><dfn>- &yen;<b>10</b></dfn></span>
-                            <p>早订早惠</p>
-                        </dd>
-                        <dd>
-                            <span class="num save-price"><dfn>- &yen;<b>10</b></dfn></span>
-                            <p>多订多惠</p>
-                        </dd>
-                        <dd>
-                            <span class="num save-price"><dfn>- &yen;<b>50</b></dfn></span>
-                            <p>使用优惠券</p>
-                        </dd>
-                    </dl>
-                    <div class="total-price">
-                        <span class="price-num"><dfn>459080</dfn> 元</span>
-                        <strong>订单金额：</strong>
-                    </div>
-                </div>
-            </div>
-        </div> <!-- //.sidebar -->
+    
+        <?php include("s1-sidebar.html"); ?>
         
         <div class="main equalheight-item">
             
@@ -543,277 +472,29 @@
             
             
             <!-- 联系人信息 -->
-            <div class="order-title">
-                <h3>订单联系人信息</h3>
-            </div>
-            <div class="order-content xdl-hor">    
-                <div class="form-small"> 
-                    <div class="choose-info">
-                        <dl class="xdl">
-                            <dt>常用联系人：</dt>
-                            <dd class="form-inline">
-                                <label class="radio inline"><input name="order-person" type="radio" class="input-radio" />胡小小</label>
-                                <label class="radio inline"><input name="order-person" type="radio" class="input-radio" />郑明明</label>
-                                <label class="radio inline"><input name="order-person" type="radio" class="input-radio" />黄丽丽</label>
-                                <label class="radio inline"><input name="order-person" type="radio" class="input-radio" />王山山</label>
-                            </dd>
-                        </dl>
-                    </div>
-                    <div class="person">
-                        <dl class="xdl">
-                            <dt>常用联系人：</dt>
-                            <dd class="form-inline">
-                                <label class="inline"><input type="text" class="input-text" /></label>
-                            </dd>
-                        </dl>
-                        <dl class="xdl">
-                            <dt><i class="req">*</i>手机号码：</dt>
-                            <dd class="form-inline">
-                                <label class="inline">
-                                <input type="text" class="input-text" />
-                                <span class="help-inline">免费接受订单确认短信，请务必填写正确</span></label>
-                            </dd>
-                        </dl>
-                        <dl class="xdl">
-                            <dt>电子邮箱：</dt>
-                            <dd>
-                                <label class="inline"><input type="text" class="input-text" />
-                                <span class="help-inline">用于接收邮件订单详情、邮件出行通知、行程确认等服务</span></label>
-                            </dd>
-                        </dl>
-                        <dl class="xdl">
-                        <dt></dt>
-                        <dd>
-                            <button class="pbtn pbtn-mini pbtn-blue">保存</button>
-                            <p class="help-block">友情提示：准确填写订单联系人信息，便于我们跟你联系。</p>
-                        </dd>
-                    </dl>
-                    </div>
-                    
-                    
-                    
-                </div>
-                
-            </div> <!-- //联系人信息 -->
+            <?php include("s1-contact.html"); ?>
             
             
-            
-            <div class="hr_a"></div>
             <!-- 游玩人信息 -->
-            <div class="order-title">
-                <h3>游玩人信息</h3>
-            </div>
-            <div class="order-content xdl-hor">    
-                <div class="form-small form-inline">    
-                    <div class="choose-info">
-                        <dl class="xdl">
-                            <dt>常用联系人：</dt>
-                            <dd class="form-inline">
-                                <label class="checkbox inline"><input type="checkbox" class="input-checkbox" />胡小小</label>
-                                <label class="checkbox inline"><input type="checkbox" class="input-checkbox" />郑明明</label>
-                                <label class="checkbox inline"><input type="checkbox" class="input-checkbox" />黄丽丽</label>
-                                <label class="checkbox inline"><input type="checkbox" class="input-checkbox" />王山山</label>
-                            </dd>
-                        </dl>
-                    </div>
-                    <dl class="xdl">
-                        <dt><i class="req">*</i>游玩人1：</dt>
-                        <dd>
-                            <label><input type="text" class="input-text" placeholder="姓名" /></label>
-                            <div class="select-group">
-                                <div class="selectbox selectbox-small">
-                                    <p class="select-info like-input">
-                                        <span class="select-arrow"><i class="ui-arrow-bottom dark-ui-arrow-bottom"></i></span>
-                                        <span class="select-value">身份证</span>
-                                    </p>
-                                    <div class="selectbox-drop">
-                                        <ul class="select-results">
-                                            <li data-value="选择项1">身份证</li>
-                                            <li data-value="选择项2">护照</li>
-                                            <li data-value="选择项3">港澳通行证</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <input type="text" class="input-text input-middle" placeholder="证件号码" />
-                                <input type="text" class="input-text" placeholder="手机号" />
-                            </div>
-                        </dd>
-                    </dl>
-                    <dl class="xdl">
-                        <dt><i class="req">*</i>游玩人2：</dt>
-                        <dd>
-                            <label><input type="text" class="input-text" placeholder="姓名" /></label>
-                            <div class="select-group">
-                                <div class="selectbox selectbox-small">
-                                    <p class="select-info like-input">
-                                        <span class="select-arrow"><i class="ui-arrow-bottom dark-ui-arrow-bottom"></i></span>
-                                        <span class="select-value">身份证</span>
-                                    </p>
-                                    <div class="selectbox-drop">
-                                        <ul class="select-results">
-                                            <li data-value="选择项1">身份证</li>
-                                            <li data-value="选择项2">护照</li>
-                                            <li data-value="选择项3">港澳通行证</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <input type="text" class="input-text input-middle" placeholder="证件号码" />
-                                <input type="text" class="input-text" placeholder="手机号" />
-                            </div>
-                        </dd>
-                    </dl>
-                    <dl class="xdl">
-                        <dt></dt>
-                        <dd>
-                            <button class="pbtn pbtn-mini pbtn-blue">保存</button>
-                            <p class="help-block">友情提示：游玩人信息可以到我的订单中补全。</p>
-                        </dd>
-                    </dl>
-                    
-                </div>
-                
-            </div> <!-- //游玩人信息 -->
+            <?php include("s1-contact-play.html"); ?>
             
             
-            
-            <div class="hr_a"></div>
             <!-- 紧急联系人信息 -->
-            <div class="order-title">
-                <h3>紧急联系人信息</h3>
-            </div>
-            <div class="order-content xdl-hor">  
-                <div class="form-small">
-                    <div class="choose-info">
-                        <dl class="xdl">
-                            <dt>常用联系人：</dt>
-                            <dd class="form-inline">
-                                <label class="radio inline"><input name="em-person" type="radio" class="input-radio" />胡小小</label>
-                                <label class="radio inline"><input name="em-person" type="radio" class="input-radio" />郑明明</label>
-                                <label class="radio inline"><input name="em-person" type="radio" class="input-radio" />黄丽丽</label>
-                                <label class="radio inline"><input name="em-person" type="radio" class="input-radio" />王山山</label>
-                            </dd>
-                        </dl>
-                    </div>
-                    <dl class="xdl">
-                        <dt><i class="req">*</i>联系人姓名：</dt>
-                        <dd>
-                            <label><input type="text" class="input-text" /></label>
-                        </dd>
-                    </dl>
-                    <dl class="xdl">
-                        <dt><i class="req">*</i>手机号码：</dt>
-                        <dd>
-                            <label><input type="text" class="input-text" /></label>
-                            <span class="help-inline">免费接受订单确认短信，请务必填写正确</span>
-                        </dd>
-                    </dl>
-                    <dl class="xdl">
-                        <dt></dt>
-                        <dd>
-                            <button class="pbtn pbtn-mini pbtn-blue">保存</button>
-                            <p class="help-block">友情提示：紧急联系人信息不能与游玩人相同。</p>
-                        </dd>
-                    </dl>
-                </div>
-                
-            </div> <!-- //紧急联系人信息 -->
+            <?php include("s1-contact-em.html"); ?>
             
             
-            
-            <div class="hr_a"></div>
             <!-- 预订须知 -->
-            <div class="order-title">
-                <h3>预订须知</h3>
-            </div>
-            <div class="order-content xdl-hor">
-                <div class="hr_a"></div>
-                <div class="booking-policy">
-                    <dl class="xdl">
-                    	<dt class="B">入园方式：</dt>
-                    	<dd>入园地址：上海市松江佘山上海欢乐谷检票处驴妈妈电子门票专用通道；<br>
-                        开园时间：9:00-18:00；<br>
-                        通关方式：刷二维码短信入园（二维码短信仅限游玩当天有效，请勿删除、转发无效）。
-                        </dd>
-                    </dl>
-                    <div class="dot_line"></div>
-                    <dl class="xdl">
-                    	<dt class="B">退款说明：</dt>
-                    	<dd>1.预订成功后如要修改或取消订单，请在游玩当天11:00前致电驴妈妈客服中心（1010 6060）；<br>
-                        2.超过游玩当天11:00后的订单，一律不退不改，敬请谅解！
-                        </dd>
-                    </dl>
-                </div>
-            </div> <!-- //预订须知 -->
+            <?php include("s1-booking-policy.html"); ?>
             
             
-            
-            <div class="hr_a"></div>
             <!-- 优惠信息 -->
-            <div class="order-title">
-                <h3>优惠信息</h3>
-            </div>
-            <div class="order-content xdl-hor form-small"> 
-                <dl class="xdl">
-                    <dt class="B">可享优惠：</dt>
-                    <dd class="mb10">
-                        <div class="selectbox selectbox-big">
-                            <p class="select-info like-input">
-                                <span class="select-arrow"><i class="ui-arrow-bottom dark-ui-arrow-bottom"></i></span>
-                                <span class="select-value">不使用任何优惠</span>
-                            </p>
-                            <div class="selectbox-drop">
-                                <ul class="select-results">
-                                    <li data-value="选择项1">优惠活动名称 满200减50</li>
-                                    <li data-value="选择项1">优惠活动名称 满1000减300</li>
-                                    <li data-value="选择项2">使用优惠券</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </dd>
-                    <dd>
-                        <p class="text-gray">1.可参加优惠活动或使用优惠券；<br>
-                        2.付款时可使用奖金抵扣；<br>
-                        3.选择浦发银行在线付款立减10元。</p>
-                    </dd>
-                    <dd>
-                        <div class="tiptext tip-default">
-                            <h5>我的可用优惠券：</h5>
-                            <div class="check-text"><label class="radio inline"><input class="input-radio" name="coupon" type="radio">B195955071997536　长途自由行/长途跟团游一次性优惠80元</label></div>
-                            <div class="check-text"><label class="radio inline"><input class="input-radio" name="coupon" type="radio">B195951575692046　长途自由行/长途跟团游一次性优惠50元</label></div>
-                            <div class="check-text"><label class="radio inline"><input class="input-radio" name="coupon" type="radio">B195951575692056　长途自由行/长途跟团游一次性优惠50元</label></div>
-                            <div class="dot_line"></div>
-                            <div class="check-text"><label class="radio inline"><input class="input-radio" name="coupon" type="radio">请输入优惠券代码：</label><input type="text" class="input-text" /></div>
-                            <div class="hr_a"></div>
-                            <button class="pbtn pbtn-mini pbtn-blue">确定</button>
-                            <div class="hr_a"></div>
-                        </div>
-                    </dd>
-                </dl>
-            </div> <!-- //优惠信息 -->
+            <?php include("s1-coupon.html"); ?>
+            
             
             
             <!-- 同意协议/提交订单 -->
-            <div class="order-content xdl-hor">
-                <div class="hr_d"></div>
-                <dl class="xdl">
-                    <dt class="tl"><a href="#" class="vmiddle">&lt; 返回上一步</a></dt>
-                    <dd><button class="pbtn pbtn-big pbtn-orange">提交订单</button>
-                    </dd>
-                </dl>
-                <dl class="xdl">
-                    <dt class="tl"><a href="#" class="vmiddle">&lt; 返回上一步</a></dt>
-                    <dd><button class="pbtn pbtn-big pbtn-orange">同意以下预订协议并提交订单</button>
-                    </dd>
-                </dl>
-                <div class="lv-agree">
-                    <h3>驴妈妈旅游网预订条款</h3>
-                    <h5>1.驴妈妈预订条款的确认</h5>
-                    <p>驴妈妈旅游网（以下简称“驴妈妈”）各项服务的所有权与运作权归景域旅游运营集团所有。本服务条款具有法律约束力。一旦您点选“确认下单"成功提交订单后，即表示您自愿接受本协议之所有条款，并同意通过驴妈妈订购旅游产品。</p>
-                    <h5>2.服务内容</h5>
-                    <p>2.1 　驴妈妈服务的具体内容由景域旅游运营集团根据实际情况提供，驴妈妈对其所提供之服务拥有最终解释权。</p>
-                    <p>2.2 　景域旅游运营集团在驴妈妈上向其会员提供相关网络服务。其它与相关网络服务有关的设备（如个人电脑、手机、及其他与接入互联网或移动网有关的装置）及所需的费用（如为接入互联网而支付的电话费及上网费、为使用移动网而支付的手机费等）均由会员自行负担。</p>
-                </div>
-            </div> <!-- 同意协议/提交订单 -->
+            <?php include("s1-submit-order.html"); ?>
+            
             
             
             
