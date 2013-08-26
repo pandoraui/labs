@@ -2,7 +2,6 @@
 <html>
 <head>
 <meta charset="utf-8">
-<link rel="dns-prefetch" href="//pic.lvmama.com">
 <link rel="dns-prefetch" href="//s1.lvjs.com.cn">
 <link rel="dns-prefetch" href="//s2.lvjs.com.cn">
 <link rel="dns-prefetch" href="//s3.lvjs.com.cn">
@@ -15,21 +14,20 @@
 <!-- 生产线使用样式
 
 // 通用样式
-<link rel="stylesheet" href="http://pic.lvmama.com/min/index.php?f=/styles/v3/pa-base.css,/styles/v3/pa-common.css,/styles/v3/pa-modules.css" >
+<link rel="stylesheet" href="http://pic.lvmama.com/min/index.php?f=/styles/v4/pa-base.css,/styles/v4/pa-modules.css" >
 
-// 页面样式
-<link rel="stylesheet" href="propage.css">
+<link rel="stylesheet" href="http://pic.lvmama.com/min/index.php?f=/styles/v4/order-common.css,/labs/v4/css/order.css" >
 
 -->
 
-<!-- pa-base.css -->
+<!-- 基础样式 pa-base.css -->
 <link rel="stylesheet" href="/labs/assets/css/pa-base.css" >
 
-<!-- lv-common.css.css -->
-<link rel="stylesheet" href="/labs/v4/css/lv-common.css" >
+<!-- 订单公共样式 order-common.css -->
+<link rel="stylesheet" href="/labs/v4/css/order-common.css" >
 
-<!-- pa-modules.css -->
+<!-- 模块样式 pa-modules.css  线上引用使用minify链接调用 -->
 <link rel="stylesheet" href="/labs/assets/css/pa-modules.css" >
 
-<!-- propage.css 项目页面样式 -->
+<!-- 订单页面具体烟火食 order.css -->
 <link rel="stylesheet" href="/labs/v4/css/order.css" >

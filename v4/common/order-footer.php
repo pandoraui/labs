@@ -6,7 +6,14 @@
 <!-- 上线JS 引用规划
 
 // jQuery以及通用js
-<script src="http://pic.lvmama.com/min/index.php?f=/js/new_v/jquery-1.7.2.min.js,/js/v4/pa-common.js,/js/common/lv-common.js,/js/common/footer.js"></script>
+<script src="http://pic.lvmama.com/min/index.php?f=/js/new_v/jquery-1.7.2.min.js,/js/ui/lvmamaUI/lvmamaUI.js"></script>
+
+<script src="http://pic.lvmama.com/min/index.php?f=/js/common/footer.js,/labs/v4/js/order-page.js"></script>
+
+
+
+
+// 其他规划，暂不使用
 
 // 组件模块加载器
 <script src="http://pic.lvmama.com/js/v4/initload.js"></script>
@@ -29,4 +36,4 @@
 
 <!-- 统计代码 开发测试-暂时隐藏
 <script src="http://pic.lvmama.com/js/common/losc.js"></script>
- -->
+-->
