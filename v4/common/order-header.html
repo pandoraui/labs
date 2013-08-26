@@ -1,24 +1,21 @@
 <!-- 测试临时使用导航》》 如果定位元素后紧跟position:relative;则IE6、7 下 margin-top:值失效   -->
 <div class="main_nav" style="width:150px;position:fixed;_position: absolute; z-index:50; top:70px;left:50%;margin-left:520px;white-space:nowrap;border: 1px solid #ccc;padding: 10px;border-radius: 10px;background: #eee;box-shadow:inset 3px 3px 5px rgba(255, 255, 255, 0.8), 3px 3px 5px rgba(160, 160, 160, 0.2);">
     <ul>
-        <li><a class="B" href="./">订单预览引导</a>
+        <li><span class="B">订单预览引导</span></li>
+        <li style="padding-left:10px;"><a href="./orderFill.php">订单信息填写 总框</a>
             <ul style="margin-left:20px;">
-                <li><a href="./orderFill.php">订单信息填写</a>
-                    <ul style="margin-left:20px;">
-                    	<li><a href="###">门票下单</a></li>
-                    	<li><a href="###">周边下单</a></li>
-                    	<li><a href="###">国内下单</a></li>
-                    	<li><a href="###">出境下单</a></li>
-                    </ul>
-                </li>
-                <li><a href="./contract.php">旅游合同</a></li>
-                <li><a href="./pay.php">支付页</a></li>
-                <li class="hide"><a href="./userFill.php">用户信息填写</a></li>
-                <li class="hide"><a href="./verify.php">资源待审核</a></li>
-                <li class="hide"><a href="./paysuccess.php">支付成功页</a></li>
-                <li class="hide"><a href="./other.php">其他支付方式</a></li>
+                <li><a href="orderFill-ticket.php">门票下单</a></li>
+                <li><a href="orderFill-travel-freeshort.php">周边下单</a></li>
+                <li><a href="orderFill-travel-freeLong.php">国内下单</a></li>
+                <li><a href="orderFill-travel-freeAround.php">出境下单</a></li>
             </ul>
         </li>
+        <li style="padding-left:10px;"><a href="./contract.php">旅游合同</a></li>
+        <li style="padding-left:10px;"><a href="./pay.php">支付页</a></li>
+        <li class="hide"><a href="./userFill.php">用户信息填写</a></li>
+        <li class="hide"><a href="./verify.php">资源待审核</a></li>
+        <li class="hide"><a href="./paysuccess.php">支付成功页</a></li>
+        <li class="hide"><a href="./other.php">其他支付方式</a></li>
         <li>测试使用PIC-10.3.1.43</li>
     </ul>
     <div class="hr_a"></div>

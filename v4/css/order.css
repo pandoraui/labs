@@ -4,7 +4,7 @@
  @功能: 订单样式
  */
 
-.wrap{ width:960px;}
+.wrap{ width:960px !important;}
 body{font:12px/22px Tahoma,Arial,\5b8b\4f53,sans-serif;}
 .border{border:1px solid #ccc;*zoom:1;}
 a{color:#08c;text-decoration: none;}
@@ -200,7 +200,7 @@ a.dot_line{margin:0 3px;height:auto;line-height:1.5;display:inline-block;text-in
 
 /* 支付方式列表 */
 .payment-list{padding:20px;background:#fff;border:1px solid #9bd;border-top-width:3px;}
-.bank-list li{float:left;display:inline;*zoom:1;margin:0px 8px 12px;position:relative;}
+.bank-list li{float:left;display:inline;*zoom:1;margin:0px 4px 12px;position:relative;}
 .bank-list .icon-bank{display:inline-block;width:130px;height:36px;border:1px solid #ddd;vertical-align:middle;background:#fff;}
 .bank-list .icon-bank:hover{border-color:#ff9600;}
 .pay-title h4{float:left;line-height:38px;font-size:14px;}

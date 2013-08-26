@@ -44,10 +44,8 @@
             <?php include("s1-coupon.html"); ?>
             
             
-            
             <!-- 同意协议/提交订单 -->
             <?php include("s1-submit-order.html"); ?>
-            
             
             
             
