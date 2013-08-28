@@ -1,6 +1,6 @@
 
 <!-- 订单底部 -->
-<div id="order-footer"></div>
+<div id="order-footer" class="lv-footer"></div>
 
 
 <!-- 上线JS 引用规划

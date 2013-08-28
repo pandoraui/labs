@@ -2,7 +2,7 @@
 <?php $title="支付页"?>
 <?php include("../common/order-meta.php"); ?>
 </head>
-<body class="order cnbtn">
+<body class="order">
 <?php include("../common/order-header.html"); ?>
 
 
@@ -117,11 +117,82 @@
     
 </div>
 
+
+<div id="test1" class="hide">
+    <p>您的驴妈妈存款账户可用余额 <b>200.00</b> 元，本次支付将使用 <b class="dfn">200.00</b> 元。</p>
+    <div class="dot_line"></div>
+    <p>您的账户已绑定手机 <b>138****1714</b>，为了您的账户安全需要进行验证。</p>
+    <div class="hr_a"></div>
+    <div class="form-hor form-inline form-w">
+        <div class="control-group">
+            <label class="control-label">短信校验码：</label>
+            <div class="controls">
+                <input type="text" class="input-text" /> <a href="javascript:;" >免费获取</a>
+            </div>
+        </div>
+        <div class="control-group">
+            <div class="controls">
+                <button class="pbtn pbtn-orange">确定</button>
+            </div>
+        </div>
+        <div class="control-group">
+            <div class="controls">
+                <p><a href="#">选择其他方式付款</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="test2" class="hide">
+    <p>您的驴妈妈存款账户可用余额 <b>200.00</b> 元，本次支付将使用 <b class="dfn">200.00</b> 元。</p>
+    <div class="dot_line"></div>
+    <p>您的账户已绑定手机 <b>138****1714</b>，为了您的账户安全需要进行验证。</p>
+    <div class="hr_a"></div>
+    <div class="form form-hor form-inline form-w">
+        <div class="control-group">
+            <label class="control-label">邮箱校验码：</label>
+            <div class="controls">
+                <input type="text" class="input-text" /> <a href="javascript:;" >免费获取</a>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label">第一笔订单联系人手机号：</label>
+            <div class="controls">
+                <input type="text" class="input-text" /> <a href="javascript:;" >免费获取</a>
+            </div>
+        </div>
+        <div class="control-group">
+            <div class="controls">
+                <button class="pbtn pbtn-orange">确定</button>
+            </div>
+        </div>
+        <div class="control-group">
+            <div class="controls">
+                <p><a href="#">选择其他方式付款</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
 <?php include("../common/order-footer.php"); ?>
 <script>
 $(function(){
-    $.alert("hello");
+    var content1 = $("#test1").html();
+    // 使用驴妈妈存款账户余额
+    $.dialog({
+        content: content1,
+        wrapClass: "dialog-middle"
+    })
     
+    var content2 = $("#test2").html();
+    // 使用驴妈妈存款账户余额
+    $.dialog({
+        content: content2,
+        wrapClass: "dialog-middle"
+    })
 })
 
 </script>
