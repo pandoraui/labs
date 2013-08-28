@@ -199,7 +199,7 @@ body .none {
 .hr_c { height:20px; }
 .hr_d { height:15px; }
 
-/* 无背景a元素定位链接 */
+/* 无背景a元素定位链接
 .disa a {
     display: block;
     width: 100%;
@@ -207,7 +207,7 @@ body .none {
     background: url(about:blank);
     text-indent: -9999px;
 }
-
+*/
 
 /* 横向列表 */
 .hor li {
@@ -297,7 +297,7 @@ ol.num li {
     list-style: decimal outside;
     text-indent: 0px;
     line-height: 20px;
-    margin: 5px 0；
+    margin: 5px 0;
 }
 
 /* 全站统一价格标签 */

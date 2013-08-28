@@ -5,7 +5,7 @@
  */
 
 .wrap{ width:960px !important;}
-body{font:12px/22px Tahoma,Arial,\5b8b\4f53,sans-serif;}
+body{font:12px/22px Tahoma,Arial,\5b8b\4f53,sans-serif;color:#000;}
 .border{border:1px solid #ccc;*zoom:1;}
 a{color:#08c;text-decoration: none;}
 a:hover{color:#e38;text-decoration: underline;}

@@ -118,6 +118,12 @@
 </div>
 
 <?php include("../common/order-footer.php"); ?>
+<script>
+$(function(){
+    $.alert("hello");
+    
+})
 
+</script>
 </body>
 </html>
