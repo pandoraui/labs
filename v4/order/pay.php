@@ -174,6 +174,43 @@
     </div>
 </div>
 
+<div id="test3" class="hide">
+    <p>友情提示：驴妈妈储卡相关说明。</p>
+    <div class="dot_line"></div>
+    <div class="hr_a"></div>
+    <div class="form form-hor form-inline form-w">
+        <div class="control-group">
+            <label class="control-label">储值卡卡号：</label>
+            <div class="controls">
+                <input type="text" class="input-text" />
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label">验证码：</label>
+            <div class="controls">
+                <input type="text" class="input-text" /> <img class="vmiddle" src="http://placehold.it/70x30" width="70" height="30" alt="" /> <a href="javascript:;"> 看不清？换一个</a>
+            </div>
+        </div>
+        <div class="control-group">
+            <div class="controls">
+                <button class="pbtn pbtn-orange">确定</button>
+            </div>
+        </div>
+        <div class="control-group">
+            <div class="controls">
+                <p><a href="#">选择其他方式付款</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="test4" class="hide">
+    <h4>请根据您的情况点击以下按钮：</h4>
+    <p><a class="pbtn pbtn-big pbtn-pink" href="#">&nbsp;&nbsp;已完成付款&nbsp;&nbsp;</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <a class="pbtn pbtn-big pbtn-pink" href="#">&nbsp;&nbsp;付款遇到问题&nbsp;&nbsp;</a></p>
+    <p><a href="#">选择其他方式付款</a></p>
+</div>
 
 
 
@@ -183,6 +220,7 @@ $(function(){
     var content1 = $("#test1").html();
     // 使用驴妈妈存款账户余额
     $.dialog({
+        title: "使用驴妈妈存款账户余额",
         content: content1,
         wrapClass: "dialog-middle"
     })
@@ -190,9 +228,37 @@ $(function(){
     var content2 = $("#test2").html();
     // 使用驴妈妈存款账户余额
     $.dialog({
+        title: "使用驴妈妈存款账户余额",
         content: content2,
         wrapClass: "dialog-middle"
     })
+    
+    var content3 = $("#test3").html();
+    // 使用驴妈妈储值卡
+    $.dialog({
+        title: "使用驴妈妈储值卡",
+        content: content3,
+        wrapClass: "dialog-middle"
+    })
+    
+    // 提示
+    $.dialog({
+        title: "提示",
+        content: '<h4>放弃使用驴妈妈存款账户余额付款！</h4><p>您可以选择其他方式继续付款。</p>',
+        button: [{
+            value: "确定",
+            className: "pbtn-orange"
+        }],
+        cancel: true
+    })
+    
+    var content4 = $("#test4").html();
+    // 付款状态
+    $.dialog({
+        title: "付款状态",
+        content: content4
+    })
+    
 })
 
 </script>
