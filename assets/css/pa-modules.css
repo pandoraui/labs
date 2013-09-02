@@ -5,17 +5,16 @@
  */
 
 /* CSS modules */
-@import "modules/buttons.css";
 @import "modules/forms.css";
-@import "modules/typo.css";
-@import "modules/tables.css";
-@import "modules/tags.css";
-@import "/pandora/docs/assets/less/step.css";
-@import "/pandora/docs/assets/less/tip.css";
 @import "/pandora/docs/assets/less/arrow.css";
 @import "/pandora/docs/assets/less/button.css";
 @import "/pandora/docs/assets/less/selectbox.css";
-
+@import "/pandora/docs/assets/less/step.css";
+@import "/pandora/docs/assets/less/tags.css";
+@import "/pandora/docs/assets/less/tip.css";
+@import "/pandora/docs/assets/less/dialog.css";
+@import "modules/tables.css";
 /*
 @import "/pandora/docs/assets/less/misc.css";
+
 */

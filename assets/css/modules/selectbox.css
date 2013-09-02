@@ -30,6 +30,10 @@
     /* 修复此值为空时垂直对齐问题 */
     padding-right: 5px;
 }
+.selectbox .select-info {
+    margin: 0;
+}
+
 .select-info .select-arrow {
     position: absolute;
     top: 0;

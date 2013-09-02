@@ -11,6 +11,7 @@ a{color:#08c;text-decoration: none;}
 a:hover{color:#e38;text-decoration: underline;}
 a[href="###"]{color:#888;cursor:default;}
 .text-gray{color:#888;}
+.dfn{color:#f60;}
 
 /* 公共组件 */
 small{font-size:12px;color:#888;}
@@ -69,7 +70,6 @@ a.dot_line{margin:0 3px;height:auto;line-height:1.5;display:inline-block;text-in
 .order-header p b,.order-header p strong{font-family:arial;}
 
 /* footer */
-.lv-footer *{margin:0;padding:0;}
 .lv-footer {margin:0 auto;padding:10px 0;font-family: Arial,\5b8b\4f53;font-size:12px;clear:both;text-align:center;}
 .footer-link,.lv-copyright {line-height:22px;clear:both;color:#888;}
 .footer-link{color:#ccc;}
@@ -92,7 +92,7 @@ a.dot_line{margin:0 3px;height:auto;line-height:1.5;display:inline-block;text-in
 .sidebar{float:right;width:240px;*zoom:1;background:#f6f6f6;border-left:1px solid #ccc;box-shadow:2px 0 3px #ddd inset;}
 .order-main .main{padding:10px 20px;overflow:hidden;*zoom:1;}
 .order-title,
-.contract-title{font-family: Microsoft YaHei,”\5FAE\8F6F\96C5\9ED1″;font-weight:500;}
+.contract-title{font-family: Microsoft YaHei,\5FAE\8F6F\96C5\9ED1;font-weight:500;}
 .order-main .order-title{margin:10px 0 15px;}
 .order-title h3{font-size:22px;font-weight:500;color:#e38;}
 .order-content{margin-bottom:15px;}

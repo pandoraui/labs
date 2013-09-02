@@ -255,8 +255,11 @@ select[size],
     color: #999;
 }
 
-.help-block {
+.help-block,
+.help-mblock {
     display: block;
+}
+.help-mblock {
     margin:0 0 10px;
 }
 
@@ -355,7 +358,14 @@ label.vmiddle {
     margin-bottom: 0;
 }
 
+.form-w .control-label {
+    width: 180px;
+}
 
+.form-w .controls {
+    margin-left: 180px;
+    *margin-left: 0;
+}
 
 /* div模拟 input文本框 */
 .dinput{
