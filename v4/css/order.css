@@ -56,8 +56,23 @@ a.dot_line{margin:0 3px;height:auto;line-height:1.5;display:inline-block;text-in
 }
 
 .input-text{ width:110px;}
-.input-middle{ width:150px;}
+.input-mini{ width:66px;}
+.input-small{ width:90px;}
+.input-middle{ width:140px;}
+/*
+.order-train .xdl {
+    line-height: 28px;
+    padding-left: 100px;
+}
+.order-train .xdl dt {
+    width: 95px;
+    margin-left: -100px;
+}
+.order-train .input-text{margin-right:1px;}
+*/
 
+
+.like-input, input,.selectbox{margin-right:5px;}
 
 /* 订单公共头部 */
 .order-header{margin:10px auto;height:60px;position:relative;z-index:5;}
