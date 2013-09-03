@@ -2,7 +2,7 @@
 <?php $title="订单信息填写"?>
 <?php include("../common/order-meta.php"); ?>
 </head>
-<body class="order">
+<body class="order order-train">
 <?php include("../common/order-header.html"); ?>
 
 
@@ -16,9 +16,7 @@
         
         <div class="main equalheight-item">
             <div class="tiptext tip-warning check-content">
-                <div class="pre-wrap">温馨提示：
-1.驴妈妈火车票代购非100%有票。若无票我们会第一时间短信通知。不代购儿童票、学生票、军人票等，敬请  谅解。如有变动，请以请以火车站当日售票信息为准。
-2.发车前1天的改签或退票，保险会自动改签，或退还到原支付账户。</div>
+                <div class="pre-wrap">温馨提示：1.驴妈妈火车票代购非100%有票。若无票我们会第一时间短信通知。不代购儿童票、学生票、军人票等，敬请  谅解。如有变动，请以请以火车站当日售票信息为准。2.发车前1天的改签或退票，保险会自动改签，或退还到原支付账户。</div>
             </div>
             
             
@@ -31,7 +29,7 @@
                     <dl class="xdl">
                         <dt> </dt>
                         <dd>
-                            G101 北京（12：33）- 上海虹桥（22：23） <a href="#">修改车次</a>
+                            <span class="train-number number">G101</span> <span class="train-city"><b>北京</b>（12：33） -  <b>上海虹桥</b>（22：23）</span> <a href="#">修改车次</a>
                         </dd>
                     </dl>
                     <dl class="xdl">
@@ -39,7 +37,7 @@
                         <dd>
                             <div class="dinput dinput-date ib"><input class="input-date" type="text" maxlength="10" placeholder="2013-6-10"><span class="date-info"><i class="xicon icon-date"></i><span class="text-info">星期五</span></span>
                             </div>
-                            &nbsp;&nbsp;<a href="#" class="pbtn pbtn-white">订返程</a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="pbtn pbtn-white return-btn">订返程</a>
                         </dd>
                     </dl>
                     <dl class="xdl">
@@ -65,6 +63,10 @@
             
             <!-- 填写乘客信息 -->
             <?php include("s1-contact-passenger.html"); ?>
+            
+            
+            <!-- 填写联系人信息 -->
+            <?php include("s1-contact.html"); ?>
             
             
             <!-- 预订须知 -->

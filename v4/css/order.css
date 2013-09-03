@@ -344,6 +344,16 @@ a.dot_line{margin:0 3px;height:auto;line-height:1.5;display:inline-block;text-in
 /* 日期选择框 */
 .dinput .input-date{ width: 154px;}
 
+/* 火车票 .order-train */
+.return-btn,
+.return-btn:hover{color:#0088cc;}
+
+.sp1,.sp2,.sp3,.sp4 { display:inline-block;padding:0 6px;color:#666;}
+.train-number{font-size:24px;font-weight:bold;}
+.train-city{font-size:14px;padding:0 15px;color:#666;}
+.train-city b{font-weight:bold;color:#000;}
+
+
 /* 下面列表供参考使用
 现提供以下标识对应关系：
 如不存在标识，则取其官网域名为标识，若是银行则用大写字母
