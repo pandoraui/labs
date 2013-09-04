@@ -13,6 +13,9 @@ a[href="###"]{color:#888;cursor:default;}
 .text-gray{color:#888;}
 .dfn{color:#f60;}
 
+.oicon{display:inline-block;background:url(../img/oicon.png) no-repeat;}
+.oicon-plus{width:16px;height:16px;margin-right:5px;background-position:0 0;vertical-align:text-top;}
+
 /* 公共组件 */
 small{font-size:12px;color:#888;}
 .order h3{font-size:16px;}
@@ -81,7 +84,7 @@ a.dot_line{margin:0 3px;height:auto;line-height:1.5;display:inline-block;text-in
 
 .order-header p{ text-align:right;color:#555;}
 .order-header p.welcome{ padding:10px 3px 0 0;}
-.order-header p.info strong{color:#d17;}
+.order-header p.info strong{color:#e38;}
 .order-header p b,.order-header p strong{font-family:arial;}
 
 /* footer */
@@ -352,6 +355,17 @@ a.dot_line{margin:0 3px;height:auto;line-height:1.5;display:inline-block;text-in
 .train-number{font-size:24px;font-weight:bold;}
 .train-city{font-size:14px;padding:0 15px;color:#666;}
 .train-city b{font-weight:bold;color:#000;}
+
+/* 支付成功页面 */
+.pay-feedback{ padding:0 20px;}
+
+
+
+
+
+
+
+
 
 
 /* 下面列表供参考使用

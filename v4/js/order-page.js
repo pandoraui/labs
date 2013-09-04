@@ -49,9 +49,17 @@ $(function(){
         
     
     
+    $("body").ui("calendar",{
+       input : ".date-birthday",
+       parm:{dateFmt:'yyyy-MM-dd'}
+    })
+    
+
+    
     
     /* select模拟 */
-    $("div.selectbox").click(function(e){
+    //$("body").delegate(".selectbox","click",(function(e){
+    $(".selectbox").live("click",function(e){
 		var obj = e.target || e.srcElement;
 		if(obj.className!="selectbox-drop"){
 			$(this).toggleClass("selectbox-active active");
@@ -66,12 +74,25 @@ $(function(){
 	})
     
     $("div.selectbox-drop").delegate("[data-value]","click",function(){
-        var _selectbox = $(this).parents("div.selectbox");
+        var _selectbox = $(this).parents(".selectbox");
         _selectbox.find("[data-value]").removeClass("selected");
         $(this).addClass("selected")
         _selectbox.find(".select-value").text($(this).text())
         
-    })
+        if($(this).parents(".selectbox").hasClass("certtype")){
+            if($(this).text() == "台湾通行证" ){
+                $(this).parents(".xdl").find(".form-more").removeClass("hide");
+            }else{
+                $(this).parents(".xdl").find(".form-more").addClass("hide");
+            }
+        }
+        
+        
+        
+    });
+    
+    
+    //$("div.selectbox-drop").live()
     
     
     /* 复选中后显示数量操作 */
@@ -147,3 +168,47 @@ $(function(){
     
 })
 
+
+
+
+$(function(){
+    /* 添加/删除 乘客 */
+    var additembox = $(".passenger-box");
+    var currentItem;
+	additembox.delegate(".xdl","mouseenter",function(){
+		currentItem = this;
+	});
+    
+    additembox.delegate(".remove-this","click",function(){
+		if($(currentItem).siblings(".xdl").length==0){
+			return;
+		}
+		$(currentItem).fadeOut(300,function(){
+			$(this).remove();
+			$("i.passenger-num").each(function(i,n){
+				$(this).html(i+1);
+			});
+		});
+	});
+	$("a.add-item").click(function(){
+		var obj = $("#itemTemplete").find(".xdl").clone(true);
+        if(additembox.find(".xdl").length>4){
+            $.msg("每个人预订票数不能超过5张！");
+			return;
+		}
+        additembox.append(obj);
+		obj.hide().fadeIn(300);
+		$("i.passenger-num").each(function(i,n){
+			$(this).html(i+1);
+		});
+        
+        $("body").ui("calendar",{
+           input : ".date-birthday",
+           parm:{dateFmt:'yyyy-MM-dd'}
+        })
+        
+		return false;
+	});
+    
+    
+})
