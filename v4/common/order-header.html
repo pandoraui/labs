@@ -1,8 +1,8 @@
 <!-- 测试临时使用导航》》 如果定位元素后紧跟position:relative;则IE6、7 下 margin-top:值失效   -->
-<div class="main_nav" style="width:150px;position:fixed;_position: absolute; z-index:50; top:70px;left:50%;margin-left:520px;white-space:nowrap;border: 1px solid #ccc;padding: 10px;border-radius: 10px;background: #eee;box-shadow:inset 3px 3px 5px rgba(255, 255, 255, 0.8), 3px 3px 5px rgba(160, 160, 160, 0.2);">
+<div class="main_nav" style="width:150px;position:fixed;_position: absolute; z-index:50; top:50px;left:50%;margin-left:520px;white-space:nowrap;border: 1px solid #ccc;padding: 10px;border-radius: 10px;background: #eee;box-shadow:inset 3px 3px 5px rgba(255, 255, 255, 0.8), 3px 3px 5px rgba(160, 160, 160, 0.2);">
     <ul>
         <li><span class="B">订单预览引导</span></li>
-        <li style="padding-left:10px;"><a href="./orderFill.php">订单信息填写 总框</a>
+        <li style="padding-left:10px;"><a href="./orderFill.php">订单信息填写 模板页</a>
             <ul style="margin-left:20px;">
                 <li><a href="orderFill-ticket.php">门票下单</a></li>
                 <li><a href="orderFill-travel-freeshort.php">周边下单</a></li>
@@ -16,8 +16,17 @@
         <li style="padding-left:10px;"><a href="./pay.php">支付页</a></li>
         <li class="hide" style="padding-left:10px;"><a href="./userFill.php">用户信息填写</a></li>
         <li class="hide" style="padding-left:10px;"><a href="./verify.php">资源待审核</a></li>
-        <li style="padding-left:10px;"><a href="./paysuccess.php">支付成功页</a></li>
-        <li class="hide" style="padding-left:10px;"><a href="./other.php">其他支付方式</a></li>
+        <li style="padding-left:10px;"><a href="./paysuccess.php">支付成功页 模板页</a>
+            <ul style="margin-left:20px;">
+                <li><a href="paysuccess-ticket.php">门票支付成功</a></li>
+                <li><a href="paysuccess-free.php">自由行支付成功</a></li>
+                <li><a href="paysuccess-needinfo.php">支付成功需要补填信息</a></li>
+                <li><a href="paysuccess-train.php">火车票支付成功</a></li>
+                <li><a href="###">酒店支付成功</a></li>
+            </ul>
+        </li>
+        <li style="padding-left:10px;"><a href="./other.php">其他支付方式</a></li>
+        <li style="padding-left:10px;"><a target="_blank" href="/lvmama/myspace/Fillinback.php">补填信息</a></li>
         <li style="padding-left:10px;">测试使用PIC-10.3.1.43</li>
     </ul>
     <div class="hr_a"></div>

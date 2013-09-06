@@ -8,7 +8,7 @@
 
 <div class="wrap">
     
-    <?php include("s-step33.html"); ?>
+    <?php include("s-step32.html"); ?>
     
     
     <div class="order-main border">
@@ -23,12 +23,10 @@
                     
                     <div class="tip-other tip-align pay-backinfo">
                         <div class="backinfo-item">
-                            <p class="f14">回显的订单状态等信息</p>
+                            
                         </div>
                         
                         <div class="backinfo-item">
-                            <!-- 手机客户端二维码 -->
-                            <p><img src="http://pic.lvmama.com/img/v4/phoneapp.png" alt="扫描下载客户端" width="158" height="158" /></p>
                         </div>
                     </div>
                     

@@ -20,25 +20,28 @@
                         <h3 class="tip-color-title">您的订单已经支付成功。</h3>
                     </div>
                     
-                    
                     <div class="tip-other tip-align pay-backinfo">
                         <div class="backinfo-item">
-                            <p class="f14">回显的订单状态等信息</p>
+                            <p class="f14">您的游玩日期是 <b class="pink">2013-8-22—2013-8-24</b>，游玩人数为 <b class="pink">2</b> 人。</p>
+                            <p>系统已向 1388XXXX333 发送了预订成功短信以及其它相关短信，请您妥善保存短信，出游中如有需要，可根据短信中订单号拨打1010-6060 由驴妈妈专属客服为您解决，您也可通过 <a href="#">我的驴妈妈</a> &gt; <a href="#">我的订单</a> 重发凭证短信。</p>
+                            
+                            <div class="dot_line"></div>
+                            
+                            <p>游玩归来后发表点评可获得 <b class="red">10</b> 元点评返现，以及 <b class="red">100</b> 驴妈妈积分。  <a href="#">什么是积分？什么是奖金？</a></p>
+                            <p>游玩归来后您可在 <a href="#">我的驴妈妈</a> &gt; <a href="#">我的订单</a> 中索取发票。</p>
                         </div>
                         
                         <div class="backinfo-item">
                             <!-- 手机客户端二维码 -->
                             <p><img src="http://pic.lvmama.com/img/v4/phoneapp.png" alt="扫描下载客户端" width="158" height="158" /></p>
                         </div>
-                    </div>
-                    
                     
                 </div>
+                
             </div>
         </div> <!-- //.main -->
         
     </div>
-    
     
 </div>
 
