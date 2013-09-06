@@ -368,7 +368,11 @@ a.dot_line{margin:0 3px;height:auto;line-height:1.5;display:inline-block;text-in
 .pay-backinfo h5{margin:10px 0 5px;}
 
 
-
+/* 其他支付方式 */
+.pay-other{padding:0 120px;}
+.pay-other-item{margin-bottom:20px;}
+.pay-other h4{margin-bottom:5px;}
+.pay-other p{margin-bottom:10px;line-height:24px;}
 
 
 
