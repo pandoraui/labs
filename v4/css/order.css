@@ -374,7 +374,8 @@ a.dot_line{margin:0 3px;height:auto;line-height:1.5;display:inline-block;text-in
 .pay-other h4{margin-bottom:5px;}
 .pay-other p{margin-bottom:10px;line-height:24px;}
 
-
+/* 驴妈妈后台补填信息 */
+.lv-order-box{padding:10px 0;}
 
 /* 下面列表供参考使用
 现提供以下标识对应关系：

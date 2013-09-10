@@ -29,7 +29,7 @@
                     <dl class="xdl">
                         <dt> </dt>
                         <dd>
-                            <span class="train-number number">G101</span> <span class="train-city"><b>北京</b>（12：33） -  <b>上海虹桥</b>（22：23）</span> <a href="#">修改车次</a>
+                            <span class="train-number number">G101</span> <span class="train-city"><b>北京</b>（12：33） -  <b>上海虹桥</b>（22：23）</span> <a id="edit_train_ticket" href="javascript:;">修改车次</a>
                         </dd>
                     </dl>
                     <dl class="xdl">
@@ -90,6 +90,17 @@
 </div>
 
 <?php include("../common/order-footer.php"); ?>
+<script>
+$(function(){
+    $("#edit_train_ticket").click(function(){
+        $.dialog({
+            title: "提示",
+            content: "/labs/v4/order/ajax-train-ticket.html",
+            width: "516px"
+        });
+    })
+})
 
+</script>
 </body>
 </html>
