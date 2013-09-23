@@ -85,22 +85,47 @@
                     <div class="tabcon">
 
                         <ul class="bank-list clearfix">
-                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="icon-bank alipay"></i></label></li>
-                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="icon-bank shengpay"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank alipay      " title="支付宝"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank tenpay      " title="财付通"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank shengpay    " title="盛付通"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank unionpay    " title="银联支付"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank lakala      " title="拉卡拉"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank cmpay       " title="中国移动手机支付"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank alipay-quick" title="支付宝快捷支付"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank tenpay-quick" title="财付通快捷支付"></i></label></li>
                         </ul>
                         <div class="dot_line"></div>
                         <ul class="bank-list clearfix">
-                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="icon-bank alipay"></i></label></li>
-                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="icon-bank shengpay"></i></label></li>
-                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="icon-bank shengpay"></i></label></li>
-                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="icon-bank shengpay"></i></label></li>
-                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="icon-bank shengpay"></i></label></li>
-                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="icon-bank shengpay"></i></label></li>
-                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="icon-bank shengpay"></i></label><span class="poptip-mini poptip-mini-warning"><div class="tip-sharp tip-sharp-bottom"></div>立减10元</span></li>
-                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="icon-bank shengpay"></i></label></li>
-                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="icon-bank shengpay"></i></label></li>
-                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="icon-bank shengpay"></i></label></li>
-                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="icon-bank shengpay"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank abc   " title="中国农业银行"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank boc   " title="中国银行"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank ccb   " title="中国建设银行"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank icbc  " title="中国工商银行"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank psbc  " title="中国邮政储蓄银行"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank ceb   " title="中国光大银行"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank cmbc  " title="中国民生银行"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank cmb   " title="招商银行"></i></label><span class="poptip-mini poptip-mini-warning"><div class="tip-sharp tip-sharp-bottom"></div>立减10元</span></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank comm  " title="交通银行"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank bjbank" title="北京银行"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank shbank" title="上海银行"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank jsbank" title="江苏银行"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank hzbank" title="杭州银行"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank nbcb  " title="宁波银行"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank njcb  " title="南京银行"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank wzcb  " title="温州银行"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank gzcb  " title="广州银行"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank bjrcb " title="北京农村商业银行"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank srcb  " title="上海农村商业银行"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank sdb   " title="深圳发展银行"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank spdb  " title="浦发银行"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank cib   " title="兴业银行"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank cgb   " title="广发银行"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank hxb   " title="华夏银行"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank hkbea " title="东亚银行"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank cbhb  " title="渤海银行"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank ecitic" title="中信银行"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank pingan" title="平安银行"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank fudian" title="富滇银行"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank "></i></label></li>
                         </ul>
                     </div>
                     <div class="tabcon">
@@ -217,7 +242,8 @@
 <?php include("../common/order-footer.php"); ?>
 <script>
 $(function(){
-    var content1 = $("#test1").html();
+$(".tanchuang").click(){
+        var content1 = $("#test1").html();
     // 使用驴妈妈存款账户余额
     $.dialog({
         title: "使用驴妈妈存款账户余额",
@@ -258,6 +284,8 @@ $(function(){
         title: "付款状态",
         content: content4
     })
+}
+
     
 })
 

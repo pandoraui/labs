@@ -75,14 +75,7 @@
                         
                         <div class="backinfo-item">
                             <!-- 手机客户端二维码 -->
-                            <p><img src="http://pic.lvmama.com/img/v4/phoneapp.png" alt="扫描下载客户端" width="158" height="158" /></p>
-                        </div>
-                        
-                        <div class="backinfo-item hide">
-                            <span class="tiptext tip-default">
-                                <p>下载驴妈妈手机客户端，随时掌握订单详情：</p>
-                                <p></p>
-                            </span>
+                            <?php include("./s3-codeapp.html"); ?>
                         </div>
                         
                     </div>
