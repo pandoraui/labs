@@ -11,54 +11,11 @@
 <?php include("common/header.html"); ?>
 <!-- 搜索框区域\\ -->
 <div class="search-box wrap">
-    <div class="from-city">
-	    <p class="city"><span class="css-arrow"><i></i></span><i class="icon-local"></i><b>上海</b><span>出发</span></p>
-		<div class="citylist">
-			<h5>热门城市</h5>
-			<ul class="hor">
-				<li><a href="">上海</a></li>
-				<li><a href="">北京</a></li>
-				<li><a href="">成都</a></li>
-				<li><a href="">广州</a></li>
-				<li><a href="">杭州</a></li>
-				<li><a href="">南京</a></li>
-				<li><a href="">深圳</a></li>
-				<li><a href="">三亚</a></li>
-			</ul>
-			<h5>其他城市</h5>
-			<ul class="hor">
-				<li><a href="">澳门</a></li>
-				<li><a href="">北海</a></li>
-				<li><a href="">重庆</a></li>
-				<li><a href="">东莞</a></li>
-				<li><a href="">佛山</a></li>
-				<li><a href="">桂林</a></li>
-				<li><a href="">贵阳</a></li>
-				<li><a href="">海口</a></li>
-				<li><a href="">济南</a></li>
-				<li><a href="">拉萨</a></li>
-				<li><a href="">南宁</a></li>
-				<li><a href="">青岛</a></li>
-				<li><a href="">香港</a></li>
-				<li><a href="">厦门</a></li>
-				<li><a href="">阳朔</a></li>
-				<li><a href="">珠海</a></li>
-			</ul>
-		</div>
-	</div>
-    <form class="form-search" action="">
-        <input class="input-search" type="text" placeholder="目的地/景点/酒店/主题"><button class="btn-search" type="button">搜索</button>
-    </form>
-    <span class="hot-travel">
-	    <a href="">三亚</a>
-		<a href="">美加旅</a>
-	    <a href="">三亚</a>
-		<a href="">畅游港澳</a>
-	    <a href="">三亚</a>
-	    <a href="">杭州</a>
-	    <a href="">大峡谷</a>
-	    <a href="">拉萨</a>
-	</span>
+    
+    <?php include("fromcity.html"); ?>
+    
+    <?php include("searchbox.html"); ?>
+    
 </div> <!-- //搜索框区域 -->
 
 <!-- wrap\\ 1 -->
