@@ -38,6 +38,11 @@
 .themes li,.more_themes{border-top:1px solid #e6e6e6;height:30px;line-height:30px;*zoom:1;}
 .themes li{overflow:hidden;}
 
+.cside4 li a img{width:180px;height:120px;margin-bottom:5px;}
+.cside4 li{ position:relative; width:180px; border:none 0;}
+.cside4 li .cside4-percent{ position:absolute;right:0;top:107px;width:62px;height:21px;background:#ee3388; text-align:center;line-height:21px; color:#fff;}
+.cside4 li p{color:#666;line-height:18px;margin-top:3px;}
+
 .more_themes{position:relative;z-index:7;}
 .more_themes .view_more{display:block;text-align:center;background:#f6f6f6;cursor:pointer;_height:24px;_padding-top:7px;*zoom:1;outline:none;}
 .themes_list{position:absolute;z-index:8;left:-1px;top:25px;width:178px;border:1px solid #e6e6e6;border-top:none;padding:5px 10px 5px;background:#f6f6f6;display:none;}
@@ -312,6 +317,19 @@ p.local .icon-local{float:left;position:relative;top:4px;}
 
 .change-city{position:absolute;z-index:8;display:inline-block;width:25px;height:39px;background-position:-365px -61px;text-indent:-9999px;top:55px;left:283px;overflow:hidden;}
 .change-city:hover{background-position:-365px -101px;}
+
+/* 补全样式 */
+.cityAll2{position:absolute;top:0;left:0;display:none;z-index:99999; margin-top:-8px;}
+.cityAllCont{overflow: visible; position: absolute; top:0; left:0; width:320px; background:#fff;}
+.cityAllContTit{background-color:#D48;color:#fff;height:30px;line-height:30px;padding-left:10px}
+.cityDetail{margin:0;padding:8px;border:1px solid #ccc;border-top:none;overflow:hidden;zoom:1}
+.cityDetail li.cityDetailBlock{display:block}
+.CountryName11{border-bottom:1px dashed #ddd;padding:0 0 3px;margin-bottom:5px}
+.CountryName11 a { color: #CD0067; cursor: pointer; display: inline-block; font: 12px "宋体"; margin: 0 13px 0 0; padding: 3px 5px;}
+.countryBlock{display:block}
+.cityAll2 .c2{ background:none;}
+.CountryNameDetail a{color:#000;display:inline-block;width:73px;text-indent:0.5em;height:23px;line-height:23px;text-decoration:none;border:1px solid #fff;white-space:nowrap;text-overflow:ellipsis;margin:0;padding:0;float:left}
+.CountryNameDetail a:hover{ background:#fff5fa; border:1px solid #fccce7;color:#e08}
 
 
 /* 频道下的menu搜索 

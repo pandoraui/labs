@@ -22,12 +22,17 @@ img{vertical-align:middle;}
 .from-city{position:relative;_top:1px;}
 .city{ background:#fff;width:188px; padding-left:10px;border:1px solid #ddd;height:30px;line-height:30px;float:left;display:inline;margin-right:20px;position:relative;z-index:11;}
 .city:hover,.from-city-hover .city,.from-city-selected .city{border-color:#aabbcc; cursor:pointer;}
-.citylist{position:absolute;z-index:9;width:290px;top:31px;left:0;background:#fff;border:1px solid #abc;padding:1px 8px 2px 5px;display:none;*zoom:1;}
-.from-city:hover .citylist{}
+.citylist{display:none;position:absolute;z-index:9;width:270px;top:31px;left:0;background:#fff;border:1px solid #abc;border-bottom-width:3px;padding:1px 14px 10px;*zoom:1;}
 .citylist ul{overflow:hidden;*zoom:1;margin-right:-3px;padding:2px 0 6px;}
-.citylist li{width:36px;text-align:center;margin-bottom:1px;}
-.citylist li a{padding:1px 0;height:22px;line-height:22px;float:none;}
-.citylist a:hover{padding:0 0;border:1px solid #fccce7;background:#fef2f9;text-decoration: none;}
+.citylist li{float: left;display: inline;zoom: 1;margin-bottom:1px;}
+.citylist dt{float:left;display:inline;*zoom:1;width:30px;height:20px;line-height:20px;margin-top:2px;margin-right:10px;color:#fff;background:#e38;text-align:center;}
+.citylist dd{overflow:hidden;}
+.citylist dl{margin:0 -3px 5px;padding-top:1px;}
+.pa_line{display: block;margin: 10px 0;clear: both;height: 0;overflow: hidden;text-indent: -9999px;}
+.citylist .pa_line{border-bottom:1px solid #eee;}
+.citylist a{display:inline-block;height:22px;padding-right:5px;line-height:22px;margin-bottom:2px;float:none;}
+.citylist li a{width:33px;padding-right:0;}
+.citylist a:hover{text-decoration: underline;}
 .from-city-selected .city{border-bottom:none;height:31px;}
 .from-city-selected .citylist{display:block;}
 .city b{ font-size:14px; color:#ee3388; display:inline-block; padding-right:5px; line-height:30px;}
@@ -37,8 +42,9 @@ img{vertical-align:middle;}
 .city .css-arrow i{border-width:5px;width:0; line-height:0; font-size:0; overflow:hidden;*zoom:1;position:absolute; top:9px; right:9px;z-index:10; border-style:solid dashed dashed dashed; border-color:#333 transparent transparent transparent;}
 .from-city-selected .css-arrow i{border-style:dashed dashed solid dashed; border-color:transparent transparent #333 transparent; top:4px;}
 .citylist .icon-close{ position:absolute;right:10px;top:10px;}
-.citylist h5{color:#888;font-size:12px;font-weight:normal;margin-top:3px;padding-left:5px;}
+.citylist h5{color:#888;font-size:12px;font-weight:normal;margin:3px 0 0;}
 
+.ticket-info{float:left;display:inline;width:200px;*zoom:1;margin-right:20px;}
 /* 搜索框 */
 .form-search{ display:inline-block;}
 input.input-search {
@@ -79,9 +85,9 @@ input.input-search {
 .hot-travel a{padding-right:7px;}
 
 
-a { color: #07c; color:#0183b0;}
-a:hover { color: #d17; cursor: pointer;  }
-.wrap .pink{ color: #d17;}
+a { color: #07c; }
+a:hover { color: #e38; cursor: pointer; }
+.wrap .pink{ color: #e38;}
 .wrap .gray{ color: gray;}
 .wrap .em{ color: #f60;}
 .ul li {line-height:22px;}
@@ -98,8 +104,8 @@ a:hover { color: #d17; cursor: pointer;  }
 .icon-local,.icon-date,.xicon {
     background: url(http://pic.lvmama.com/img/v3/combo.png) no-repeat;
     _background: url(http://pic.lvmama.com/img/v3/combo8.png) no-repeat;
-	background: url(../img/combo.png) no-repeat;
-	_background: url(../img/combo8.png) no-repeat;
+    background: url(../img/combo.png) no-repeat;
+    _background: url(../img/combo8.png) no-repeat;
     display:inline-block;
     width: 16px;
     height: 16px;
@@ -110,8 +116,8 @@ a:hover { color: #d17; cursor: pointer;  }
 .icon-search { background-position: 0px -97px; } 
 .icon-hot { background-position: 0 -192px; width:18px;}
 .icon-local { background-position: -120px 0; width: 20px; height: 20px;}
-body a.link-more { color: #0183b0;width: auto;}
-body a.link-more:hover { color:#d17;}
+body a.link-more { color: #07c;width: auto;}
+body a.link-more:hover { color:#e38;}
 /* 大ICON */
 .menu-itembox .xicon{ width:30px;height:30px;}
 .icon-ticket    { background-position: -240px 0 }
@@ -148,7 +154,7 @@ body a.link-more:hover { color:#d17;}
 .menu-itembox .xicon{float:left;margin-top:6px;}
 .quick-menu p.item a{padding-right:5px;color:#888}
 .menu-item h4 a{color:#0183b0;}
-.menu-item-hover h4 a,.quick-menu p.item a:hover{color:#d17;}
+.menu-item-hover h4 a,.quick-menu p.item a:hover{color:#e38;}
 .menu-item{height:53px;}
 .menu-item .menu-itembox{border:1px solid #e2e2e3;border-top:1px solid #fff;border-bottom:1px solid #e2e2e3;}
 .menu-item .menu-itembox{ padding:10px 6px 0 9px;height:41px;*zoom:1;}
@@ -258,11 +264,11 @@ body a.link-more:hover { color:#d17;}
 .slide-nav2 li,.slide-nav2 li.active{
     background: url(http://pic.lvmama.com/img/v3/combo.png) no-repeat;
     _background: url(http://pic.lvmama.com/img/v3/combo8.png) no-repeat;
-	background: url(../img/combo.png) no-repeat;
-	_background: url(../img/combo8.png) no-repeat;
+    background: url(../img/combo.png) no-repeat;
+    _background: url(../img/combo8.png) no-repeat;
     width: 13px;
     height: 13px;
-	overflow:hidden;
+    overflow:hidden;
 }
 .slide-nav2 li{background-position:-25px 0;margin:0 4px 0 3px;}
 .slide-nav2 li.active{background-position:-25px -25px;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='png24bge.png');}
@@ -279,7 +285,7 @@ body a.link-more:hover { color:#d17;}
 .droplist-item{padding:12px 0 5px;margin:0 0 0 15px;overflow:hidden;width: 775px;}
 .droplist-item .item{float:left;display:inline;margin:0 15px 8px -12px;padding-left:12px;width:240px; border-left:1px dotted #ddd;height: 270px;}
 .droplist-item dl{margin-bottom:8px;}
-.droplist-item dt{float:left;width:42px;font-weight:bold;color:#d17;}
+.droplist-item dt{float:left;width:42px;font-weight:bold;color:#e38;}
 .droplist-item dd{overflow:hidden;display:block;*zoom:1;position:relative;}
 .menu-custom .item-hor a{_display:inline;_padding-top:0;_padding-left:10px;_line-height:14px;_position:relative;_top:3px;}
 
