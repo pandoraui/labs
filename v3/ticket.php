@@ -12,7 +12,9 @@
 <!-- 搜索框区域\\ -->
 <div class="search-box wrap">
     
-    <?php include("fromcity.html"); ?>
+    <div class="ticket-info" style="">
+        <img src="http://pic.lvmama.com/img/v3/ticket-info.png" width="200" height="32" alt="万家景区、价格更低、品质更高" />
+    </div>
     
     <?php include("searchbox.html"); ?>
     
