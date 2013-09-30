@@ -48,6 +48,11 @@ form label {
     margin-bottom: 5px;
 }
 
+.form-inline label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
 /* 模拟输入框 like-input */
 
 .like-input,
