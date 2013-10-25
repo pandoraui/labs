@@ -12,11 +12,21 @@
 <!-- 搜索框区域\\ -->
 <div class="search-box wrap">
     
-    <div class="ticket-info" style="">
-        <img src="http://pic.lvmama.com/img/v3/ticket-info.png" width="200" height="32" alt="万家景区、价格更低、品质更高" />
-    </div>
+    <?php include("incity.html"); ?>
     
-    <?php include("searchbox.html"); ?>
+    <form class="form-search" action="">
+    <input class="input-search search-wbig" type="text" x-webkit-speech placeholder="目的地/景点/酒店/主题"><button class="btn-search xicon" type="button">搜索</button>
+</form>
+    <span class="hot-travel">
+        <a href="#">三亚</a>
+        <a href="#">美加旅</a>
+        <a href="#">三亚</a>
+        <a href="#">畅游港澳</a>
+        <a href="#">三亚</a>
+        <a href="#">杭州</a>
+        <a href="#">大峡谷</a>
+        <a href="#">拉萨</a>
+    </span>
     
 </div> <!-- //搜索框区域 -->
 

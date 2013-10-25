@@ -12,9 +12,9 @@
 <!-- 搜索框区域\\ -->
 <div class="search-box wrap">
     
-    <?php include("fromcity.html"); ?>
+    <?php include("incity.html"); ?>
     
-    <?php include("searchbox.html"); ?>
+    <?php include("searchboxnew.html"); ?>
     
 </div> <!-- //搜索框区域 -->
 
