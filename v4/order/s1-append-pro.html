@@ -182,6 +182,11 @@
                     <div class="pre-wrap">详细说明</div>
                 </div>
             </dd>
+            <dd class="check-radio-box">
+                <div class="check-text">
+                    <label class="radio inline"><input class="input-radio no-check" name="taxes" type="radio"><span class="no-check">不需要快递</span></label>
+                </div>
+            </dd>
         </dl>
         
         <dl class="xdl JS_check">
@@ -211,93 +216,98 @@
             </dd>
         </dl>
         
-        <div class="hide">
+        
         <!-- 默认可编辑状态 -->
-        <dl class="xdl">
-            <dt><i class="req">*</i>收件人姓名：</dt>
-            <dd>
-                <input type="text" class="input-text" value="胡小小" />
-            </dd>
-        </dl>
-        <dl class="xdl">
-            <dt><i class="req">*</i>手机号码：</dt>
-            <dd>
-                <input type="text" class="input-text" value="13817131714" />
-            </dd>
-        </dl>
-        <dl class="xdl">
-            <dt><i class="req">*</i>省份：</dt>
-            <dd>
-                <select class="" name="" id="">
-                    <option value="">上海市</option>
-                </select>
-                <select class="" name="" id="">
-                    <option value="">上海市</option>
-                </select>
-            </dd>
-        </dl>
-        <dl class="xdl">
-            <dt><i class="req">*</i>收件地址：</dt>
-            <dd>
-                <input type="text" class="input-text input-big" value="金沙江路1759号圣诺亚大厦B座10楼" />
-            </dd>
-        </dl>
-        <dl class="xdl">
-            <dt>邮编：</dt>
-            <dd>
-                <input type="text" class="input-text input-mini" value="200333" />
-            </dd>
-        </dl>
-        <dl class="xdl">
-            <dt></dt>
-            <dd>
-                <button class="pbtn pbtn-mini pbtn-blue">保存</button>
-            </dd>
-        </dl>
+        <div class="form-edit">
+            <dl class="xdl">
+                <dt><i class="req">*</i>收件人姓名：</dt>
+                <dd>
+                    <input type="text" class="input-text" value="胡小小" />
+                </dd>
+            </dl>
+            <dl class="xdl">
+                <dt><i class="req">*</i>手机号码：</dt>
+                <dd>
+                    <input type="text" class="input-text" value="13817131714" />
+                </dd>
+            </dl>
+            <dl class="xdl">
+                <dt><i class="req">*</i>省份：</dt>
+                <dd>
+                    <select data-class="selectbox-small" name="" id="">
+                        <option value="">上海市</option>
+                        <option value="">北京市</option>
+                    </select>
+                    <select data-class="selectbox-small" name="" id="">
+                        <option value="">普陀区</option>
+                        <option value="">海淀区</option>
+                    </select>
+                </dd>
+            </dl>
+            <dl class="xdl">
+                <dt><i class="req">*</i>收件地址：</dt>
+                <dd>
+                    <input type="text" class="input-text input-big" value="金沙江路1759号圣诺亚大厦B座10楼" />
+                </dd>
+            </dl>
+            <dl class="xdl">
+                <dt>邮编：</dt>
+                <dd>
+                    <input type="text" class="input-text input-mini" value="200333" />
+                </dd>
+            </dl>
+            <dl class="xdl">
+                <dt></dt>
+                <dd>
+                    <button class="pbtn pbtn-mini pbtn-blue">保存</button>
+                </dd>
+            </dl>
+        </div>
         <!-- //默认可编辑状态 -->
         
         
         
         <!-- 保存后状态 -->
-        <dl class="xdl">
-            <dt><i class="req">*</i>收件人姓名：</dt>
-            <dd>
-                <span class="input-info">胡小小</span>
-            </dd>
-        </dl>
-        <dl class="xdl">
-            <dt><i class="req">*</i>手机号码：</dt>
-            <dd>
-                <span class="input-info">13817131714</span>
-            </dd>
-        </dl>
-        <dl class="xdl">
-            <dt><i class="req">*</i>省份：</dt>
-            <dd>
-                <span class="input-info input-mini">上海市</span>
-                <span class="input-info input-mini">长宁区</span>
-            </dd>
-        </dl>
-        <dl class="xdl">
-            <dt><i class="req">*</i>收件地址：</dt>
-            <dd>
-                <span class="input-info input-big">金沙江路1759号圣诺亚大厦B座10楼</span>
-            </dd>
-        </dl>
-        <dl class="xdl">
-            <dt>邮编：</dt>
-            <dd>
-                <span class="input-info">200333</span>
-            </dd>
-        </dl>
-        <dl class="xdl">
-            <dt></dt>
-            <dd>
-                <button class="btn btn-smallhite">修改</button>
-            </dd>
-        </dl>
-        <!-- //保存后状态 -->
+        <div class="form-info">
+            <dl class="xdl">
+                <dt><i class="req">*</i>收件人姓名：</dt>
+                <dd>
+                    胡小小
+                </dd>
+            </dl>
+            <dl class="xdl">
+                <dt><i class="req">*</i>手机号码：</dt>
+                <dd>
+                    13817131714
+                </dd>
+            </dl>
+            <dl class="xdl">
+                <dt><i class="req">*</i>省份：</dt>
+                <dd>
+                    上海市 长宁区
+                </dd>
+            </dl>
+            <dl class="xdl">
+                <dt><i class="req">*</i>收件地址：</dt>
+                <dd>
+                    金沙江路1759号圣诺亚大厦B座10楼
+                </dd>
+            </dl>
+            <dl class="xdl">
+                <dt>邮编：</dt>
+                <dd>
+                    200333
+                </dd>
+            </dl>
+            <dl class="xdl">
+                <dt></dt>
+                <dd>
+                    <button class="pbtn pbtn-mini pbtn-light">修改</button>
+                </dd>
+            </dl>
         </div>
+        <!-- //保存后状态 -->
+        
         
     </div>
     

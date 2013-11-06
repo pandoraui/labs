@@ -4,7 +4,7 @@
 ***/
 
 $(function(){
-    
+    $("select[data-class]").selectModel();
     
     
     $(".JS_check").delegate(".check-radio-item",'click',function(){
@@ -60,18 +60,18 @@ $(function(){
     /* select模拟 */
     //$("body").delegate(".selectbox","click",(function(e){
     $(".selectbox").live("click",function(e){
-		var obj = e.target || e.srcElement;
-		if(obj.className!="selectbox-drop"){
-			$(this).toggleClass("selectbox-active active");
-		}
-	}).mouseleave(function(){
-		var e = this;
-		e.timeId = setTimeout(function(){
-			$(e).removeClass("selectbox-active active");
-		},200)
-	}).mouseenter(function(){
-		clearTimeout(this.timeId)
-	})
+        var obj = e.target || e.srcElement;
+        if(obj.className!="selectbox-drop"){
+            $(this).toggleClass("selectbox-active active");
+        }
+    }).mouseleave(function(){
+        var e = this;
+        e.timeId = setTimeout(function(){
+            $(e).removeClass("selectbox-active active");
+        },200)
+    }).mouseenter(function(){
+        clearTimeout(this.timeId)
+    })
     
     $("div.selectbox-drop").delegate("[data-value]","click",function(){
         var _selectbox = $(this).parents(".selectbox");
@@ -175,40 +175,40 @@ $(function(){
     /* 添加/删除 乘客 */
     var additembox = $(".passenger-box");
     var currentItem;
-	additembox.delegate(".xdl","mouseenter",function(){
-		currentItem = this;
-	});
+    additembox.delegate(".xdl","mouseenter",function(){
+        currentItem = this;
+    });
     
     additembox.delegate(".remove-this","click",function(){
-		if($(currentItem).siblings(".xdl").length==0){
-			return;
-		}
-		$(currentItem).fadeOut(300,function(){
-			$(this).remove();
-			$("i.passenger-num").each(function(i,n){
-				$(this).html(i+1);
-			});
-		});
-	});
-	$("a.add-item").click(function(){
-		var obj = $("#itemTemplete").find(".xdl").clone(true);
+        if($(currentItem).siblings(".xdl").length==0){
+            return;
+        }
+        $(currentItem).fadeOut(300,function(){
+            $(this).remove();
+            $("i.passenger-num").each(function(i,n){
+                $(this).html(i+1);
+            });
+        });
+    });
+    $("a.add-item").click(function(){
+        var obj = $("#itemTemplete").find(".xdl").clone(true);
         if(additembox.find(".xdl").length>4){
             $.msg("每个人预订票数不能超过5张！");
-			return;
-		}
+            return;
+        }
         additembox.append(obj);
-		obj.hide().fadeIn(300);
-		$("i.passenger-num").each(function(i,n){
-			$(this).html(i+1);
-		});
+        obj.hide().fadeIn(300);
+        $("i.passenger-num").each(function(i,n){
+            $(this).html(i+1);
+        });
         
         $("body").ui("calendar",{
            input : ".date-birthday",
            parm:{dateFmt:'yyyy-MM-dd'}
         })
         
-		return false;
-	});
+        return false;
+    });
     
     
 })

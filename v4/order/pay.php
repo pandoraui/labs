@@ -77,8 +77,8 @@
                 <div class="pay-title ui-tab-trigger">
                     <h4 class="pay-price">您还需继续付款 <dfn><i>4100</i></dfn> 元</h4>
                     <ul class="tabnav order-tabnav clearfix">
-                    	<li class="selected"><a href="javascript:;">支付平台/银行卡</a></li>
-                    	<li class="paylink"><a href="javascript:;">其他方式<i class="ui-arrow-right blue-ui-arrow-right"></i></a></li>
+                        <li class="selected"><a href="javascript:;">支付平台/银行卡</a></li>
+                        <li class="paylink"><a href="other.php">其他方式<i class="ui-arrow-right blue-ui-arrow-right"></i></a></li>
                     </ul>
                 </div>
                 <div class="tab-switch payment-list">
@@ -133,6 +133,15 @@
                     </div>
                 </div>
                 <div class="order-btn"><button class="pbtn pbtn-big pbtn-orange">&nbsp;&nbsp;下一步&nbsp;&nbsp;</button></div>
+                
+                <div class="order-btn ">
+                    <button class="pbtn pbtn-orange btn11">&nbsp;&nbsp;存款账户-验证码&nbsp;&nbsp;</button>
+                    <button class="pbtn pbtn-orange btn12">&nbsp;&nbsp;存款账户-手机号&nbsp;&nbsp;</button>
+                    <button class="pbtn pbtn-orange btn13">&nbsp;&nbsp;存款账户-手机验证&nbsp;&nbsp;</button><br>
+                    <button class="pbtn pbtn-orange btn21">&nbsp;&nbsp;驴妈妈储值卡&nbsp;&nbsp;</button>
+                    <button class="pbtn pbtn-orange btn31">&nbsp;&nbsp;奖金账户&nbsp;&nbsp;</button>
+                    <button class="pbtn pbtn-orange btn41">&nbsp;&nbsp;付款状态&nbsp;&nbsp;</button>
+                </div>
             </div> <!-- //选择支付方式 -->
             
         </div> <!-- //支付方式 -->
@@ -142,9 +151,8 @@
     
 </div>
 
-
-<div id="test1" class="hide">
-    <p>您的驴妈妈存款账户可用余额 <b>200.00</b> 元，本次支付将使用 <b class="dfn">200.00</b> 元。</p>
+<div id="test13" class="hide">
+    <p>您的存款账户可支付余额 <span class="dfn">9</span> 元，用存款账户余额付款  本次支付将使用 <span class="dfn">9</span> 元，剩余金额 <span class="dfn">100</span> 元可选择“在线支付”付款。</p>
     <div class="dot_line"></div>
     <p>您的账户已绑定手机 <b>138****1714</b>，为了您的账户安全需要进行验证。</p>
     <div class="hr_a"></div>
@@ -152,7 +160,16 @@
         <div class="control-group">
             <label class="control-label">短信校验码：</label>
             <div class="controls">
-                <input type="text" class="input-text" /> <a href="javascript:;" >免费获取</a>
+                <p><input type="text" class="input-text" /></p>
+                <p><a href="javascript:;" class="pbtn pbtn-small">免费获取校验码</a></p>
+                <p>
+                    <span class="tiptext tip-success tip-line">
+                        <span class="tip-icon tip-icon-success"></span>校验码已发送成功，请查看手机</span>
+                        <span class="tiptext tip-default tip-line">60秒内没有收到短信? <a href="javascript:;" class="pbtn pbtn-small disabled">(<span class="J_num">60</span>)秒后再次发送</a>
+                    </span>
+                </p>
+                <p><span class="tiptext tip-error tip-line"><span class="tip-icon tip-icon-error"></span>已超过每日发送上限，请于次日再试</span></p>
+                <p><span class="tiptext tip-warning tip-line"><span class="tip-icon tip-icon-warning"></span>当前IP发送频率过快，请稍候重试</span></p>
             </div>
         </div>
         <div class="control-group">
@@ -160,6 +177,64 @@
                 <button class="pbtn pbtn-orange">确定</button>
             </div>
         </div>
+    </div>
+    <div class="form-hor form-inline form-w">
+        <div class="control-group">
+            <div class="controls">
+                <p><a href="#">选择其他方式付款</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="test1" class="hide"> 
+    <p>您的存款账户可支付余额 <span class="dfn">9</span> 元，用存款账户余额付款  本次支付将使用 <span class="dfn">9</span> 元，剩余金额 <span class="dfn">100</span> 元可选择“在线支付”付款。</p>
+    <div class="dot_line"></div>
+    <div class="hr_a"></div>
+    <div class="form-hor form-inline form-w">
+        <div class="control-group">
+            <label class="control-label">邮箱地址：</label>
+            <div class="controls">
+                <p>1382****@139.com <a href="#" >该邮箱地址已不再使用</a></p>
+                <p>
+                    <a href="javascript:;" class="pbtn pbtn-mini pbtn-white">获取邮箱验证码</a>
+                    &nbsp;&nbsp;没收到邮件?&nbsp;&nbsp;
+                    <a href="#">再次发送</a>
+                </p>
+            </div>
+        </div>
+        
+        <div class="control-group">
+            <label class="control-label">验证码：</label>
+            <div class="controls">
+                <p><input type="text" class="input-text input-mini" /></p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="dot_line"></div>
+    
+    <h4>订单信息验证</h4>
+    <p class="gray-info">您在驴妈妈的第一笔订单：<a href="#">1111</a>，上海欢乐谷成人门票2两，联系人为：向** 方** </p>
+    <p>请输入任一联系人手机号码，以便验证。</p>
+    <div class="form-hor form-inline form-w">
+        <div class="control-group">
+            <label class="control-label">手机号码：</label>
+            <div class="controls">
+                <input type="text" class="input-text" />
+            </div>
+        </div>
+        
+        <div class="control-group">
+            <div class="controls">
+                <button class="pbtn pbtn-orange">确认支付</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="form-hor form-inline form-w">
         <div class="control-group">
             <div class="controls">
                 <p><a href="#">选择其他方式付款</a></p>
@@ -169,28 +244,27 @@
 </div>
 
 <div id="test2" class="hide">
-    <p>您的驴妈妈存款账户可用余额 <b>200.00</b> 元，本次支付将使用 <b class="dfn">200.00</b> 元。</p>
+    <p>您的存款账户可支付余额 <span class="dfn">9</span> 元，用存款账户余额付款  本次支付将使用 <span class="dfn">9</span> 元，剩余金额 <span class="dfn">100</span> 元可选择“在线支付”付款。</p>
     <div class="dot_line"></div>
-    <p>您的账户已绑定手机 <b>138****1714</b>，为了您的账户安全需要进行验证。</p>
-    <div class="hr_a"></div>
-    <div class="form form-hor form-inline form-w">
+    <h4>订单信息验证</h4>
+    <p class="gray-info">您在驴妈妈的第一笔订单：<a href="#">1111</a>，上海欢乐谷成人门票2两，联系人为：向** 方** </p>
+    <p>请输入任一联系人手机号码，以便验证。</p>
+    <div class="form-hor form-inline form-w">
         <div class="control-group">
-            <label class="control-label">邮箱校验码：</label>
+            <label class="control-label">手机号码：</label>
             <div class="controls">
-                <input type="text" class="input-text" /> <a href="javascript:;" >免费获取</a>
+                <input type="text" class="input-text" />
             </div>
         </div>
-        <div class="control-group">
-            <label class="control-label">第一笔订单联系人手机号：</label>
-            <div class="controls">
-                <input type="text" class="input-text" /> <a href="javascript:;" >免费获取</a>
-            </div>
-        </div>
+        
         <div class="control-group">
             <div class="controls">
-                <button class="pbtn pbtn-orange">确定</button>
+                <button class="pbtn pbtn-orange">确认支付</button>
             </div>
         </div>
+    </div>
+    
+    <div class="form-hor form-inline form-w">
         <div class="control-group">
             <div class="controls">
                 <p><a href="#">选择其他方式付款</a></p>
@@ -242,33 +316,43 @@
 <?php include("../common/order-footer.php"); ?>
 <script>
 $(function(){
-$(".tanchuang").click(){
-        var content1 = $("#test1").html();
+$(".btn11").click(function(){
+
     // 使用驴妈妈存款账户余额
-    $.dialog({
+    pandora.dialog({
         title: "使用驴妈妈存款账户余额",
-        content: content1,
+        content: $("#test1"),
         wrapClass: "dialog-middle"
     })
-    
-    var content2 = $("#test2").html();
+})
+$(".btn12").click(function(){
     // 使用驴妈妈存款账户余额
-    $.dialog({
+    pandora.dialog({
         title: "使用驴妈妈存款账户余额",
-        content: content2,
+        content: $("#test2"),
         wrapClass: "dialog-middle"
     })
-    
-    var content3 = $("#test3").html();
+})
+$(".btn13").click(function(){
+    // 使用驴妈妈存款账户余额
+    pandora.dialog({
+        title: "使用驴妈妈存款账户余额",
+        content: $("#test13"),
+        width: "760px"
+    })
+})
+$(".btn21").click(function(){
     // 使用驴妈妈储值卡
-    $.dialog({
+    pandora.dialog({
         title: "使用驴妈妈储值卡",
-        content: content3,
+        content: $("#test3"),
         wrapClass: "dialog-middle"
     })
-    
+})
+
+$(".btn31").click(function(){
     // 提示
-    $.dialog({
+    pandora.dialog({
         title: "提示",
         content: '<h4>放弃使用驴妈妈存款账户余额付款！</h4><p>您可以选择其他方式继续付款。</p>',
         button: [{
@@ -277,16 +361,18 @@ $(".tanchuang").click(){
         }],
         cancel: true
     })
-    
-    var content4 = $("#test4").html();
-    // 付款状态
-    $.dialog({
-        title: "付款状态",
-        content: content4
-    })
-}
+})
 
-    
+$(".btn41").click(function(){
+    // 付款状态
+    pandora.dialog({
+        title: "付款状态",
+        content: $("#test4")
+    })
+
+})
+
+
 })
 
 </script>

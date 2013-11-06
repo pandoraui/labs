@@ -16,6 +16,7 @@ a:hover{color:#e38;text-decoration: underline;}
 
 .oicon{display:inline-block;background:url(../img/oicon.png) no-repeat;}
 .oicon-plus{width:16px;height:16px;margin-right:5px;background-position:0 0;vertical-align:text-top;}
+.gray-info{background:#f8f8f8;padding: 3px 10px;margin: 10px 0;}
 
 /* 公共组件 */
 small{font-size:12px;color:#888;}
@@ -44,11 +45,13 @@ a.dot_line{margin:0 3px;height:auto;line-height:1.5;display:inline-block;text-in
     text-align: right;
 }
 .xdl dd {
+    position:relative;
 }
 .xdl-hor .xdl {
     margin-bottom: 10px;
 }
-.xdl-hor input {
+.xdl-hor input,
+.xdl-hor select {
     margin-bottom: 0;
 }
 .xdl-hor label.inline {
@@ -63,6 +66,7 @@ a.dot_line{margin:0 3px;height:auto;line-height:1.5;display:inline-block;text-in
 .input-mini{ width:66px;}
 .input-small{ width:90px;}
 .input-middle{ width:140px;}
+.input-big{ width:270px;}
 /*
 .order-train .xdl {
     line-height: 28px;
@@ -115,6 +119,8 @@ a.dot_line{margin:0 3px;height:auto;line-height:1.5;display:inline-block;text-in
 .order-main .order-title{margin:10px 0 15px;}
 .order-title h3{font-size:22px;font-weight:500;color:#e38;}
 .order-content{margin-bottom:15px;}
+.order-error{border-color:#ff9999}
+.order-ei{width:16px; height:16px; background-position:0 -18px; position:absolute; top:8px; margin-left: -26px; }
 /*
 .order-title{border-bottom:2px solid #ddd;height:30px;line-height:30px;}
 .order-title h3{float:left;font-size:16px;color:#e38;}
@@ -245,12 +251,14 @@ a.dot_line{margin:0 3px;height:auto;line-height:1.5;display:inline-block;text-in
 
 
 /* 组件个性化 */
-.order .tiptext{color:#666;margin:5px 0;}
-.order .tip-warning{
+.order-content .tiptext{color:#666;margin:5px 0;}
+.tip-line .pbtn {position: relative;top: -1px;}
+
+.order-content .tip-warning{
     border: 1px solid #fc6;
     background: #fff9d9;
 }
-.order .tip-info{
+.order-content .tip-info{
     border: 1px solid #cde;
     background: #f3f9ff;
 }
@@ -367,7 +375,8 @@ a.dot_line{margin:0 3px;height:auto;line-height:1.5;display:inline-block;text-in
 .backinfo-item{margin:10px 0 20px;}
 .pay-backinfo h5{margin:10px 0 5px;}
 
-.codeapp{background:url(http://pic.lvmama.com/img/v3/codeapp_bg.png) no-repeat; height:145px;width:700px;}
+.codeapp-box{background:url(http://pic.lvmama.com/img/v3/codeapp_newbg.png) no-repeat;background:url(http://10.3.1.43/img/v3/codeapp_newbg.png) no-repeat; height:145px;overflow:hiden;margin-top:100px;}
+.codeapp-box .codeapp{display:inline-block;overflow:hidden;width:130px;height:130px;margin:6px;background:#fafafa;}
 
 /* 其他支付方式 */
 .pay-other{padding:0 120px;}
@@ -378,4 +387,10 @@ a.dot_line{margin:0 3px;height:auto;line-height:1.5;display:inline-block;text-in
 /* 驴妈妈后台补填信息 */
 .lv-order-box{padding:10px 0;}
 
+/*修复老版支付样式*/
+.onlinepay-detail{width:auto;} 
+.pay_tagcontent3 .add_order_list{width:auto;} 
+.pay_tagcontent3 .add_order,.pay_tagcontent3 .add_order1{width:730px;} 
+.price{position:static;font-weight:normal;} 
+.btn-submit, .func-btn input, .fenqi_list li .next{*text-indent:0;*line-height:300px;width: 130px; height: 36px; overflow:hidden;}
 

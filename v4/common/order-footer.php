@@ -34,6 +34,7 @@
 <script src="http://pic.lvmama.com/js/ui/lvmamaUI/lvmamaUI.js"></script>
 <!-- 页面项目js及插件 -->
 <script src="/pandora/docs/assets/js/modules/pandora-dialog.js"></script>
+<script src="/labs/v4/js/jquery.selectModel.js"></script>
 <script src="/labs/v4/js/order-page.js"></script>
 
 <!-- 统计代码 开发测试-暂时隐藏
