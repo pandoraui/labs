@@ -63,7 +63,7 @@
         <div class="lightbox paybox clearfix">
             
             <div class="paytips">
-                <p>友情提示：您的预订信息已提交，请在 <b class="red">2012-07-30 12:00</b> 前完成付款，<span class="timebox">剩余付款时间：<b class="countdown red">2800000</b></span></p>
+                <p>友情提示：您的预订信息已提交，请在 <b class="red">2012-07-30 12:00</b> 前完成付款，<span class="timebox">剩余付款时间：<b class="countdown red">2700000</b></span></p>
             </div>
             <div class="dot_line"></div>
             
