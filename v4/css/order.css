@@ -49,6 +49,7 @@ a.dot_line{margin:0 3px;height:auto;line-height:1.5;display:inline-block;text-in
 }
 .xdl-hor .xdl {
     margin-bottom: 10px;
+    clear: both;
 }
 .xdl-hor input,
 .xdl-hor select {

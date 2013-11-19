@@ -4,7 +4,7 @@ audio,canvas,video{display:inline;zoom:1;}
 command,datalist,keygen,mark,meter,progress,rp,rt,ruby,time,wbr{display:inline;}
 [hidden]{display:none;}
 html{color:#333;background:#fff;font-family:Tahoma,Arial,\5b8b\4f53;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
-body,div,dl,dt,dd,ol,ul,li,h1,h2,h3,h4,h5,h6,p,blockquote,pre,code,tr,th,td,hr,menu{margin:0;padding:0;}
+body,div,dl,dt,dd,ol,ul,li,h1,h2,h3,h4,h5,h6,p,form,blockquote,pre,code,tr,th,td,hr,menu{margin:0;padding:0;}
 ol,ul{list-style-type:none;}
 h1,h2,h3,h4,h5,h6{font-size:100%;}
 b,strong{font-weight:700;}
@@ -38,7 +38,7 @@ legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
 
 
 /* 全站的一些公共样式 */
-body{margin:0;background:#fff;}
+body{margin:0;background:#fff;min-width:1000px;}
 
 .wrap{width:1000px !important;}
 .padbox{text-align:center;margin:10px 0;}
@@ -83,7 +83,7 @@ i.icon-barr{position:absolute;z-index:10; display:inline-block;width:0;height:0;
 .lv-login .icon-message{margin-right:3px;}
 .lv-message b{color:#d17;}
 /* header */
-.wechatcode,.lv-hotline,.lv-safety,#goTopBtn,#Feedback{background:url(http://pic.lvmama.com/img/v3/imghf8.png) no-repeat;display:inline-block;}
+.lv-hotline,.lv-safety,#goTopBtn,#Feedback{background:url(http://pic.lvmama.com/img/v3/imghf8.png) no-repeat;display:inline-block;}
 .lv-header{margin:10px auto;height:60px;position:relative;z-index:5;}
 .header-inner{padding:0 10px;*zoom:1;}
 .lv-logo{float:left;display:inline;width:380px;height:60px; background: url(http://pic.lvmama.com/img/v3/logo.png) no-repeat left center;_background: url(http://pic.lvmama.com/img/v3/logo8.png) no-repeat left center;text-indent:-9999px;outline:none}
@@ -103,12 +103,13 @@ i.icon-weixin,i.icon-weibo{width: 16px;height: 16px;position:relative;top:5px;*t
 i.icon-weixin{ background-position: 0 -144px;}
 i.icon-weibo{ background-position: 0 -168px;}
 .join-weixin a{ padding-right:10px !important;}
-.join-weixin .top-sub{text-align:center;}
-.wechatcode{background-position:-180px -35px;display:inline-block;width:80px;height:80px;vertical-align: middle;}
+.join-weixin .top-sub{text-align:center;width:230px;}
+.wechatcode{background:url(http://pic.lvmama.com/img/v3/wechatcode.jpg) 5px 0 no-repeat;}
+.wechatcode{display:inline-block;width:230px;height:90px;vertical-align: middle;}
 .sitemap{position:absolute !important;clip: rect(1px 1px 1px 1px);}
 .xhcopyinfo{margin:10px auto;clear:both;}
 .icon-new{background-position:-25px 0; width:18px; height:18px; }
-.pnav .icon-new{position:absolute; top:-8px;right:0;z-index:4;}
+.pnav .icon-new{position:absolute; top:-8px;right:0;z-index:4; }
 
 #goTopBtn,#Feedback{width:32px;height:32px;position:fixed;z-index:100;left:50%;margin-left:520px;cursor:pointer;}
 #goTopBtn{background-position:-270px -35px;bottom:60px;}
@@ -116,7 +117,7 @@ i.icon-weibo{ background-position: 0 -168px;}
 #goTopBtn:hover{background-position:-270px -67px;}
 #Feedback:hover{background-position:-302px -67px;}
 /* 小提醒 */
-.stips{position:absolute;z-index:1000;display:inline-block;padding:3px 30px 3px 10px;border:1px solid #fc6;color:#e60;font-size:12px;background:#fffae4;left:50%;margin-left:-386px;top:18px;line-height:20px;display:none;}
+.stips{position:absolute;z-index:1000;display:inline-block;padding:3px 30px 3px 10px;border:1px solid #fc6;color:#e60;font-size:12px;background:#fffae4;left:50%;margin-left:-386px;top:22px;line-height:20px;display:none;}
 .stips .sclose{font-family:Tahoma;color:#e60;font-size:14px;width:20px;text-align:center;height:20px;line-height:20px;font-weight:bold;position:absolute;right:3px;top:3px;cursor:pointer;}
 .stips .sarrow{display:inline-block;width:12px;height:12px;background-position: -60px 0; position:absolute;left:-12px;top:-1px;}
 
@@ -222,8 +223,6 @@ i.icon-weibo{ background-position: 0 -168px;}
 .pnav-main a{padding: 0 8px;}
 .pnav-small a{padding: 0 7px;}
 
-#train{display:none;}
-
 /* 主频道当前栏目标识 */
 .pnav a.selected,
 .home #home a,
@@ -237,25 +236,29 @@ i.icon-weibo{ background-position: 0 -168px;}
 .hotel #hotel a,
 .custom #custom a,
 .flight #flight a,
-.train #train a{
+.train #train a,
+.lvcomment #lvcomment a,
+.lvguide #lvguide a,
+.lvplace #lvplace a,
+.lvinfo #lvinfo a{
     background: #fff;
     color: #000;
 }
 
-#train{ display:none;}
 #pnav #around,
 #pnav #tuangou{display:none;}
+
 
 /* 度假酒店 */
 .holiday .pnav {
     background:#664596;
+    border-bottom:2px solid #4C2C7B;
 }
 .holiday .pnav a {
     color:#e0daec;
 }
 .holiday .pnav a:hover  {
     background:#5d3893;
-    color:#fff;
 }
 .holiday #holiday a{
     background: #4c2c7b;
@@ -278,11 +281,108 @@ i.icon-weibo{ background-position: 0 -168px;}
 
 
 /* 右侧浮动 */
-.sj_pop{position:fixed; z-index:999; bottom: 100px; left:50%;margin-left:520px;width: 118px; height:306px;padding: 0 20px 0 0;text-align: center; line-height:16px; background:url(http://pic.lvmama.com/img/v3/shoujiQRbg.png) no-repeat 0 0;_position:absolute;_top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight)-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0));
+.sj_pop{position:fixed; z-index:999; bottom: 105px; left:50%;margin-left:520px;width: 140px; height:350px;padding: 0;text-align: center;overflow:hidden; line-height:16px; _position:absolute;_top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight)-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)-100+"px");
 }
-.shoujiQRimg{margin:160px 0 0;}
+.shoujiQRlink{display:block;width:100%;height:100%;text-indent:-9999px;}
 .shoujiQRlink{color:#333;text-decoration:none;font:12px/1.5 "宋体"; display:block; text-align:center;}
-.shoujiQRclose{width:18px;height:17px; position:absolute;top:140px;right:20px; display:block;}
+.shoujiQRclose{width:26px;height:22px; position:absolute;z-index:10;top:0;right:0; display:block;}
 
 /* 修改部分页面底部的follow lvmama */
-hh_outside_link{display:none !important;}
+.hh_outside_link{display:none !important;}
+
+
+/* css3特效 依赖pc.js */
+.cssanimations a{
+    -webkit-transition: color .3s ease;
+       -moz-transition: color .3s ease;
+        -ms-transition: color .3s ease;
+            transition: color .3s ease;
+}
+.cssanimations .pnav a{
+    -webkit-transition: background .3s ease;
+       -moz-transition: background .3s ease;
+        -ms-transition: background .3s ease;
+            transition: background .3s ease;
+}
+
+.cssanimations .menu-item .xicon{
+    width:26px;
+    margin-right:4px;
+}
+
+.cssanimations .menu-item-hover .xicon,
+.cssanimations .themes a:hover .xicon{
+    -webkit-transform-origin: center top;
+       -moz-transform-origin: center top;
+        -ms-transform-origin: center top;
+            transform-origin: center top;
+    -webkit-animation-name: swing;
+       -moz-animation-name: swing;
+        -ms-animation-name: swing;
+            animation-name: swing;
+}
+.cssanimations .menu-item .xicon,
+.cssanimations .themes a .xicon{
+    -webkit-animation-duration: 1s;
+       -moz-animation-duration: 1s;
+        -ms-animation-duration: 1s;
+            animation-duration: 1s;
+}
+@-webkit-keyframes swing{
+    /*20%,40%,60%,80%,100%{ -webkit-transform-origin:top center}*/
+     20% { -webkit-transform: rotate( 15deg)}
+     40% { -webkit-transform: rotate(-10deg)}
+     60% { -webkit-transform: rotate(  5deg)}
+     80% { -webkit-transform: rotate( -5deg)}
+    100% { -webkit-transform: rotate(  0deg)}
+}
+@-moz-keyframes swing{
+     20% { -moz-transform: rotate( 15deg)}
+     40% { -moz-transform: rotate(-10deg)}
+     60% { -moz-transform: rotate(  5deg)}
+     80% { -moz-transform: rotate( -5deg)}
+    100% { -moz-transform: rotate(  0deg)}
+}
+@-ms-keyframes swing{
+     20% { -ms-transform: rotate( 15deg)}
+     40% { -ms-transform: rotate(-10deg)}
+     60% { -ms-transform: rotate(  5deg)}
+     80% { -ms-transform: rotate( -5deg)}
+    100% { -ms-transform: rotate(  0deg)}
+}
+@keyframes swing{
+     20% { transform: rotate( 15deg)}
+     40% { transform: rotate(-10deg)}
+     60% { transform: rotate(  5deg)}
+     80% { transform: rotate( -5deg)}
+    100% { transform: rotate(  0deg)}
+}
+
+/*光影动画*/
+.cssanimations li .text-cover::before {
+    content: '';
+    position: absolute;
+    left: -100%;
+    top: 0;
+    z-index:5;
+    width: 40%;
+    height: 100%;
+    background-image: -webkit-linear-gradient(0deg,rgba(255, 255, 255, 0),rgba(255, 255, 255, 0.3),rgba(255, 255, 255, 0));
+    background-image: -moz-linear-gradient(0deg,rgba(255,255,255,0),rgba(255,255,255,0.3),rgba(255,255,255,0));
+    -webkit-transform: skewx(-25deg);
+    -moz-transform: skewx(-25deg);
+    -o-transform: skewx(-25deg);
+    transform: skewx(-25deg);
+    -webkit-transition: 0s;
+    -moz-transition: 0s;
+    -o-transition: 0s;
+    transition: 0s;
+}
+
+.cssanimations li:hover .text-cover::before{
+    left: 100%;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}

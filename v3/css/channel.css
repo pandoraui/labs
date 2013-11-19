@@ -20,6 +20,8 @@
 .head h4{float:left;}
 .head .link-more{float:right;}
 .side-box .content{clear:both}
+.JS_tabsbox{display: none;}
+.cbox .tabsBoxSelected{display: block;}
 
 .cside1{}
 .cside1 .xicon{float:left;margin:8px 2px 0 0;}
@@ -108,11 +110,19 @@
 .hotel-cbox3 .tabnav{width: 490px;height: 32px;overflow: hidden;}
 .tabnav li{display:inline;float:left;margin-right:1px;cursor:pointer;}
 .tabnav li a{display:block;float:left;padding:0 10px;position:relative;height:30px;line-height:30px;text-decoration: none;*zoom:1;cursor:pointer;}
-.tabnav li a:hover,.tabnav li.selected a{color:#e38;border-bottom:2px solid #e38;}
-.tabnav a .css_arrow{display:none;position:absolute;top:21px;left:50%;margin-left:-5px;border-width: 5px;height:0;width:0;line-height:0;overflow:hidden;border-style: dashed dashed solid dashed;border-color: transparent transparent #e38 transparent;}
+.train-tabnav{margin-left:0;font-weight:400;}
+.train-tabnav li{font-size: 18px; font-family:"Microsoft YaHei",\5FAE\8F6F\96C5\9ED1;}
+.train-tabnav li a{padding:0 13px;color: #000; _overflow:hidden; _zoom: 1;}
+.tabnav li a:hover,.tabnav li.selected a{color:#e38;border-bottom:2px solid #e38; text-decoration: none;}
+.tabnav a .css_arrow{display:none;position:absolute;top:21px;left:50%;margin-left:-5px;border-width: 5px;height:0;width:0;line-height:0;overflow:hidden;border-style:solid;_border-style: dashed dashed solid dashed;border-color: transparent transparent #e38 transparent; _zoom: 1;}
 
 .tabnav a:hover .css_arrow {display:block;_display:none;}
 .tabnav li.selected .css_arrow{display:block;}
+
+.cCitys{margin: 12px 0 0 0;}
+.cCitys a{display: inline-block; padding: 0 9px; margin: 0 5px 0 0;}
+.cCitys a.selected{background-color: #ff76ba; border-radius: 2px; color: #fff;}
+.cCitys a:hover{background-color: #ff76ba; border-radius: 2px; color: #fff; text-decoration: none;}
 
 .cbox {}
 .cbox p.link-more{font-size:14px;text-align:center;margin:1px 0 10px;clear:both;}
@@ -125,7 +135,7 @@
 .cpro-list li,
 .cpro-buy li,
 .cprobig-list li {
-    float:left;display:inline;margin-bottom:10px;
+    float:left;display:inline;margin-bottom:10px;overflow: hidden;
 }
 
 .cbox2 {margin-bottom:4px;}
@@ -171,7 +181,7 @@
 .textlist li a{float:left;height:28px;line-height:28px;width:310px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
 .textlist li dfn{float:right;padding-top:2px;}
 
-.pro-textlist{overflow:hidden;margin-right:-20px;}
+.pro-textlist{overflow:hidden;margin-right:-40px;*zoom:1;}
 .pro-textlist .cbox4{width:380px;float:left;display:inline;margin-right:20px;}
 
 

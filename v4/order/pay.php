@@ -63,7 +63,7 @@
         <div class="lightbox paybox clearfix">
             
             <div class="paytips">
-                <p>友情提示：您的预订信息已提交，请在 <b class="red">2012-07-30 12:00</b> 前完成付款，<span class="timebox">剩余付款时间：<b class="countdown red">2700000</b></span></p>
+                <p>友情提示：您的预订信息已提交，请在 <b class="red">2012-07-30 12:00</b> 前完成付款，<span class="timebox">剩余付款时间：<b class="countdown red">3605000</b></span></p>
             </div>
             <div class="dot_line"></div>
             
@@ -161,11 +161,14 @@
             <label class="control-label">短信校验码：</label>
             <div class="controls">
                 <p><input type="text" class="input-text" /></p>
-                <p><a href="javascript:;" class="pbtn pbtn-small">免费获取校验码</a></p>
-                <p>
-                    <span class="tiptext tip-success tip-line">
-                        <span class="tip-icon tip-icon-success"></span>校验码已发送成功，请查看手机</span>
+                <p style="height:30px;">
+                    <a id="send-verifycode" class="pbtn pbtn-small">免费获取校验码</a>
+                    <span id="JS_countdown" class="hide">
+                        <span class="tiptext tip-success tip-line">
+                            <span class="tip-icon tip-icon-success"></span>校验码已发送成功，请查看手机
+                        </span>
                         <span class="tiptext tip-default tip-line">60秒内没有收到短信? <a href="javascript:;" class="pbtn pbtn-small disabled">(<span class="J_num">60</span>)秒后再次发送</a>
+                        </span>
                     </span>
                 </p>
                 <p><span class="tiptext tip-error tip-line"><span class="tip-icon tip-icon-error"></span>已超过每日发送上限，请于次日再试</span></p>
@@ -173,6 +176,7 @@
             </div>
         </div>
         <div class="control-group">
+            <label class="control-label">&nbsp;</label>
             <div class="controls">
                 <button class="pbtn pbtn-orange">确定</button>
             </div>
@@ -186,7 +190,6 @@
         </div>
     </div>
 </div>
-
 
 
 <div id="test1" class="hide"> 
@@ -236,6 +239,7 @@
     
     <div class="form-hor form-inline form-w">
         <div class="control-group">
+            <label class="control-label">&nbsp;</label>
             <div class="controls">
                 <p><a href="#">选择其他方式付款</a></p>
             </div>
@@ -258,6 +262,7 @@
         </div>
         
         <div class="control-group">
+            <label class="control-label">&nbsp;</label>
             <div class="controls">
                 <button class="pbtn pbtn-orange">确认支付</button>
             </div>
@@ -266,6 +271,7 @@
     
     <div class="form-hor form-inline form-w">
         <div class="control-group">
+            <label class="control-label">&nbsp;</label>
             <div class="controls">
                 <p><a href="#">选择其他方式付款</a></p>
             </div>
@@ -291,11 +297,13 @@
             </div>
         </div>
         <div class="control-group">
+            <label class="control-label">&nbsp;</label>
             <div class="controls">
                 <button class="pbtn pbtn-orange">确定</button>
             </div>
         </div>
         <div class="control-group">
+            <label class="control-label">&nbsp;</label>
             <div class="controls">
                 <p><a href="#">选择其他方式付款</a></p>
             </div>
@@ -315,6 +323,46 @@
 
 <?php include("../common/order-footer.php"); ?>
 <script>
+$(function(){
+    function JS_countdown(_cdbox){
+        var _InterValObj;   //timer变量，控制时间
+        var _count = 6;    //间隔函数，1秒执行
+        var _curCount;      //当前剩余秒数
+        
+        sendMessage(_count);
+        
+        function sendMessage(_count){
+            _curCount = _count;
+            $(_cdbox).html(_curCount);
+            _InterValObj = window.setInterval(SetRemainTime, 1000); //启动计时器，1秒执行一次
+        }
+        
+        //timer处理函数
+        function SetRemainTime() {
+            if (_curCount == 0) {
+                window.clearInterval(_InterValObj);     //停止计时器
+                var expr = _cdbox.indexOf("-old")>0?"-old":"";
+                $("#JS_countdown"+expr).children(".tip-success").html('<span class="tip-icon tip-icon-success"></span>校验码已发送成功，以最近发送的验证码为准').end().hide();
+                $("#send-verifycode"+expr).html("重新发送验证码").show();
+                $(".sendcodeinfo").hide();
+                $(".sendcode").html("重新发送验证码").show();
+            } else {
+                _curCount--;
+                $(_cdbox).html(_curCount);
+                //alert("aaa");
+            }
+        }
+    }
+    
+    $("#send-verifycode").click(function(){
+        $(this).hide();
+        $("#JS_countdown").show();
+        JS_countdown("#JS_countdown span.J_num");
+        //return false;
+    })
+});
+
+
 $(function(){
 $(".btn11").click(function(){
 
@@ -338,7 +386,7 @@ $(".btn13").click(function(){
     pandora.dialog({
         title: "使用驴妈妈存款账户余额",
         content: $("#test13"),
-        width: "760px"
+        width: "780px"
     })
 })
 $(".btn21").click(function(){
@@ -371,6 +419,9 @@ $(".btn41").click(function(){
     })
 
 })
+
+
+
 
 
 })
