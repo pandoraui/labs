@@ -167,7 +167,7 @@
                         <span class="tiptext tip-success tip-line">
                             <span class="tip-icon tip-icon-success"></span>校验码已发送成功，请查看手机
                         </span>
-                        <span class="tiptext tip-default tip-line">60秒内没有收到短信? <a href="javascript:;" class="pbtn pbtn-small disabled">(<span class="J_num">60</span>)秒后再次发送</a>
+                        <span class="tiptext tip-default tip-line">60秒内没有收到短信? <a href="javascript:;" class="pbtn pbtn-small pbtn-gray">(<span class="J_num">60</span>)秒后再次发送</a>
                         </span>
                     </span>
                 </p>
@@ -333,22 +333,20 @@ $(function(){
         
         function sendMessage(_count){
             _curCount = _count;
-            $(_cdbox).html(_curCount);
-            _InterValObj = window.setInterval(SetRemainTime, 1000); //启动计时器，1秒执行一次
+            $(_cdbox).text(_curCount);
+            _InterValObj = setInterval(SetRemainTime, 1000); //启动计时器，1秒执行一次
         }
         
         //timer处理函数
         function SetRemainTime() {
             if (_curCount == 0) {
-                window.clearInterval(_InterValObj);     //停止计时器
+                clearInterval(_InterValObj);     //停止计时器
                 var expr = _cdbox.indexOf("-old")>0?"-old":"";
-                $("#JS_countdown"+expr).children(".tip-success").html('<span class="tip-icon tip-icon-success"></span>校验码已发送成功，以最近发送的验证码为准').end().hide();
+                $("#JS_countdown"+expr).find(".tip-success").html('<span class="tip-icon tip-icon-success"></span>校验码已发送成功，以最近发送的验证码为准').end().hide();
                 $("#send-verifycode"+expr).html("重新发送验证码").show();
-                $(".sendcodeinfo").hide();
-                $(".sendcode").html("重新发送验证码").show();
             } else {
                 _curCount--;
-                $(_cdbox).html(_curCount);
+                $(_cdbox).text(_curCount);
                 //alert("aaa");
             }
         }

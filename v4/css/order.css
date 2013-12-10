@@ -249,11 +249,11 @@ a.dot_line{margin:0 3px;height:auto;line-height:1.5;display:inline-block;text-in
 
 
 
-
+.J_num{*zoom:1;}
 
 /* 组件个性化 */
 .order-content .tiptext{color:#666;margin:5px 0;}
-.tip-line .pbtn {position: relative;top: -1px;}
+.tip-line .pbtn {position: relative;top: -1px;*top:1px;_top:2px;}
 
 .order-content .tip-warning{
     border: 1px solid #fc6;
@@ -395,3 +395,5 @@ a.dot_line{margin:0 3px;height:auto;line-height:1.5;display:inline-block;text-in
 .price{position:static;font-weight:normal;} 
 .btn-submit, .func-btn input, .fenqi_list li .next{*text-indent:0;*line-height:300px;width: 130px; height: 36px; overflow:hidden;}
 
+/**/
+.booking-policy dd{max-height:140px;_height:140px;overflow-y:auto;}
