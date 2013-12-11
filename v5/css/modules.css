@@ -8,10 +8,8 @@
 @import "modules/button.css";
 @import "modules/form.css";
 @import "modules/dialog.css";
-@import "modules/step.css";
-@import "modules/forms.css";
-@import "modules/selectbox.css";
-@import "modules/tables.css";
+@import "modules/form.css";
+@import "modules/table.css";
 @import "modules/tip.css";
-@import "modules/tags.css";
+@import "modules/tag.css";
 @import "modules/arrow.css";
