@@ -53,17 +53,13 @@ input {
     
     margin-right: 6px;
     border: 1px solid transparent;
-    -webkit-border-radius: 2px;
-       -moz-border-radius: 2px;
-        -ms-border-radius: 2px;
-            border-radius: 2px;
     text-decoration: none;
     vertical-align: middle;
     
     /* 使用如下字体，文本垂直居中表现很好 */
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #333;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 20px;
     font-weight: bold;
     text-align: center;
@@ -181,47 +177,69 @@ a.btn:hover {
 
 
 /* 按钮尺寸 */
-.btn        { /*padding: 4px 10px;*/ height: 28px; line-height: 28px; font-size: 12px; font-weight: bold;}
+.btn        { /*padding: 4px 10px;*/ height: 28px; line-height: 28px; font-size: 14px; }
 .btn-mini   { /*padding:   0  6px;*/ height: 20px; line-height: 20px; font-weight: normal;}
 .btn-small  { /*padding: 2px 10px;*/ height: 24px; line-height: 24px; font-weight: normal;}
 .btn-middle { /*padding: 4px 12px;*/ height: 28px; line-height: 28px; font-weight: bold;}
 .btn-big    { /*padding: 7px 15px;*/ height: 34px; line-height: 34px; font-weight: bold;}
 .btn-large  { /*padding: 2px 20px;*/ height: 42px; line-height: 42px; font-weight: bold;}
+.btn-mini,
+.btn-small { font-size: 12px;}
 
+/* 实现紧凑 */
+.btn        { padding: 0 10px; }
+.btn-mini   { padding: 0  6px; }
+.btn-small  { padding: 0 10px; }
+.btn-middle { padding: 0 12px; font-size: 14px; }
+.btn-big    { padding: 0 15px; font-size: 16px; }
+.btn-large  { padding: 0 20px; font-size: 18px; }
+.btn-w { padding: 0 20px; }
 
-/* 有待完善的规范 */
-.btn        { padding: 0 20px; font-size: 12px; }
+/* 修复ie7 */
+button.btn,input.btn               { *height: 30px; *padding: 1px 11px; }
+button.btn-mini,input.btn-mini     { *height: 22px; *padding: 1px  7px; }
+button.btn-small,input.btn-small   { *height: 26px; *padding: 1px 11px; }
+button.btn-middle,input.btn-middle { *height: 30px; *padding: 1px 13px; }
+button.btn-big,input.btn-big       { *height: 36px; *padding: 1px 16px; }
+button.btn-large,input.btn-large   { *height: 44px; *padding: 1px 21px; }
+button.btn-w,input.btn-w { padding: 1px 21px; }
+
+/* 有待完善的规范
+.btn        { padding: 0 20px; }
 .btn-mini   { padding: 0 10px; }
 .btn-small  { padding: 0 15px; }
 .btn-middle { padding: 0 20px; font-size: 14px; }
 .btn-big    { padding: 0 20px; font-size: 16px; }
 .btn-large  { padding: 0 30px; font-size: 18px; }
-
-/* 修复ie7 */
-button.btn,input.btn               { *height: 30px; *padding: 1px 21px; }
-button.btn-mini,input.btn-mini     { *height: 22px; *padding: 1px 11px; }
-button.btn-small,input.btn-small   { *height: 26px; *padding: 1px 16px; }
-button.btn-middle,input.btn-middle { *height: 30px; *padding: 1px 21px; }
-button.btn-big,input.btn-big       { *height: 36px; *padding: 1px 21px; }
-button.btn-large,input.btn-large   { *height: 44px; *padding: 1px 31px; }
-
+ */
 
 /* 扁平化样式 */
 .btn                { color: #333333; background-color: #ffffff; border-color: #cccccc; }
 .btn:hover          { color: #333333; background-color: #ebebeb; }
 /* 因为渐变色border较复杂，所以取消默认btn:hover时变化减少复杂度 */
+.btn-orange { color: #ffffff; background-color: #ff8300; border-color: #ff6600; }
+.btn-pink   { color: #ffffff; background-color: #fa3f94; border-color: #ee3388; }
+.btn-blue   { color: #ffffff; background-color: #4d90fe; border-color: #3f87fe; }
 
+.btn-orange:hover,.btn-orange:focus { color: #ffffff; background-color: #f86600; border-color: #ee6600; }
+.btn-pink:hover  ,.btn-pink:focus   { color: #ffffff; background-color: #e73381; border-color: #d61260; }
+.btn-blue:hover  ,.btn-blue:focus   { color: #ffffff; background-color: #2979fe; border-color: #166dfe; }
 
 /* 经典渐变样式 */
 .btn {
-    *zoom: 1;
     -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
        -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
             box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
 }
+*[class*="cbtn"] {
+    -webkit-border-radius: 2px;
+       -moz-border-radius: 2px;
+        -ms-border-radius: 2px;
+            border-radius: 2px;
+}
 
 
-.btn-default {
+.cbtn-default {
     color: #333333;
     
     /* 渐变色 */
@@ -244,23 +262,23 @@ button.btn-large,input.btn-large   { *height: 44px; *padding: 1px 31px; }
     filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 
-.btn-default:hover,
-.btn-default:focus,
-.btn-default:active,
-.btn-default.active,
-.btn-default.disabled,
-.btn-default[disabled] {
+.cbtn-default:hover,
+.cbtn-default:focus,
+.cbtn-default:active,
+.cbtn-default.active,
+.cbtn-default.disabled,
+.cbtn-default[disabled] {
     color: #333333;
     background-color: #e6e6e6;
     *background-color: #d9d9d9;
 }
 
-.btn-default:active,
-.btn-default.active {
+.cbtn-default:active,
+.cbtn-default.active {
     background-color: #cccccc \9;
 }
 
-.btn-pink {
+.cbtn-pink {
     color: #ffffff;
     
     /* 渐变色 */
@@ -281,24 +299,24 @@ button.btn-large,input.btn-large   { *height: 44px; *padding: 1px 31px; }
     filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 
-.btn-pink:hover,
-.btn-pink:focus,
-.btn-pink:active,
-.btn-pink.hover,
-.btn-pink.active,
-.btn-pink.disabled,
-.btn-pink[disabled] {
+.cbtn-pink:hover,
+.cbtn-pink:focus,
+.cbtn-pink:active,
+.cbtn-pink.hover,
+.cbtn-pink.active,
+.cbtn-pink.disabled,
+.cbtn-pink[disabled] {
     color: #ffffff;
     background-color: #ef3489;
     *background-color: #d50865;
     /* 注意，a标签无 href IE6中 hover效果失效 */
 }
-.btn-pink:active,
-.btn-pink.active {
+.cbtn-pink:active,
+.cbtn-pink.active {
     background-color: #ef3489 \9;
 }
 
-.btn-orange  {
+.cbtn-orange  {
     color: #ffffff;
     
     /* 渐变色 */
@@ -318,21 +336,21 @@ button.btn-large,input.btn-large   { *height: 44px; *padding: 1px 31px; }
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff8700', endColorstr='#ffff6800', GradientType=0); 
     filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
-.btn-orange:hover,
-.btn-orange:focus,
-.btn-orange:active,
-.btn-orange.active,
-.btn-orange.disabled,
-.btn-orange[disabled] {
+.cbtn-orange:hover,
+.cbtn-orange:focus,
+.cbtn-orange:active,
+.cbtn-orange.active,
+.cbtn-orange.disabled,
+.cbtn-orange[disabled] {
   color: #ffffff;
   background-color: #ff6800;
   *background-color: #ff6600;
 }
-.btn-orange:active,
-.btn-orange.active {
+.cbtn-orange:active,
+.cbtn-orange.active {
   background-color: #ff6800 \9;
 }
-.btn-blue  {
+.cbtn-blue  {
     color: #ffffff;
     
     /* 渐变色 */
@@ -352,19 +370,19 @@ button.btn-large,input.btn-large   { *height: 44px; *padding: 1px 31px; }
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff54aaee', endColorstr='#ff359ade', GradientType=0); 
     filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
-.btn-blue:hover,
-.btn-blue:focus,
-.btn-blue:active,
-.btn-blue.hover,
-.btn-blue.active,
-.btn-blue.disabled,
-.btn-blue[disabled] {
+.cbtn-blue:hover,
+.cbtn-blue:focus,
+.cbtn-blue:active,
+.cbtn-blue.hover,
+.cbtn-blue.active,
+.cbtn-blue.disabled,
+.cbtn-blue[disabled] {
   color: #ffffff;
   background-color: #359ade;
   *background-color: #1F90DD;
 }
-.btn-blue:active,
-.btn-blue.active {
+.cbtn-blue:active,
+.cbtn-blue.active {
   background-color: #359ade \9;
 }
 /*
@@ -378,9 +396,12 @@ button.btn-large,input.btn-large   { *height: 44px; *padding: 1px 31px; }
 .btn-pink:hover   { *background-color: #e73381; *border-color: #d61260; }
 .btn-blue:hover   { *background-color: #2293d7; *border-color: #0088cc; }
 */
-.btn-gray            { color: #999999; background-color: #efefef; border-color: #cccccc; }
-.btn-gray:hover      { color: #999999; background-color: #efefef; border-color: #cccccc; }
-.btn-disabled        { color: #ffffff; background-color: #999999; border-color: #666666; }
+
+.btn-gray { color: #333333; background-color: #f3f3f3; border-color: #cccccc; font-weight: normal; }
+.btn-gray:focus,
+.btn-gray:hover { color: #333333; background-color: #e3e3e3; border-color: #bbbbbb; }
+.btn-disabled,
+.btn-disabled:focus,
 .btn-disabled:hover  { color: #ffffff; background-color: #999999; border-color: #666666; }
 
 
