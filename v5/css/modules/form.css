@@ -17,7 +17,8 @@ input {
 */
  
  
-i.req {
+.req {
+    display: inline-block;
     padding-right: 3px;
     font-style: normal;
     font-weight: normal;
