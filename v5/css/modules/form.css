@@ -81,7 +81,6 @@ textarea,
 .uneditable-input {
     width: 156px;
     width: 148px;
-    margin-right: 6px;
 }
 .like-input {
     display: block;
@@ -472,15 +471,13 @@ legend + .control-group {
 }
 
 .form-inline input,
-.form-inline select {
+.form-inline select,
+.form-inline textarea {
     display: inline-block;
     margin-bottom: 0;
     vertical-align: middle;
 }
 
-.form-table {
-    width: 100%;
-}
 .form-table td {
     padding-bottom: 10px;
 }
