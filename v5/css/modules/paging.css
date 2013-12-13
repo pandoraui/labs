@@ -37,6 +37,7 @@
 .gopage .input-text,
 .gopage .btn {
     vertical-align: top;
+    margin-right: 0;
 }
 /* 页码部分 */
 .pagebox .num {

@@ -68,7 +68,9 @@ textarea,
     color: #555555;
     vertical-align: middle;
 }
-
+.input-password {
+    font-size: 16px;
+}
 .input-radius {
     -webkit-border-radius: 4px;
        -moz-border-radius: 4px;
