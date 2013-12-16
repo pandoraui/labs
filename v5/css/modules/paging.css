@@ -28,17 +28,22 @@
     float: right;
     display: inline;
     padding-left: 6px;
+    line-height: 26px;
 }
+
 .paging .input-text{
     width: 22px;
     margin: 0 3px;
     padding: 2px 3px;
+    *padding: 1px 3px;
 }
 .gopage .input-text,
 .gopage .btn {
     vertical-align: top;
+    *vertical-align: middle;
     margin-right: 0;
 }
+
 /* 页码部分 */
 .pagebox .num {
     color: #f90;
@@ -55,6 +60,7 @@
     line-height: 24px;
     border: 1px solid #ddd;
     font-size: 12px;
+    vertical-align: top;
 }
 .pagebox a:hover {
     text-decoration: none;
