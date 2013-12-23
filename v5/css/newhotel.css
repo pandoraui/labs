@@ -1,0 +1,147 @@
+/* newhotel */
+.wrap{width:1200px;}
+
+body{font:12px/22px \5b8b\4f53,Tahoma,Arial,sans-serif}
+a{color:#07c;}
+a:hover{color:#e38;}
+
+.icon,
+.hicon{background:url(../img/dhotel.png) 9999px 9999px no-repeat;_background:url(../img/dhotel8.png) 9999px 9999px no-repeat;display:inline-block;}
+.JS_tabsbox .tabcon,
+.JS_vtabsbox .tabcon{display:none;}
+.JS_tabsbox .selected,
+.JS_vtabsbox .selected{display:block;}
+img{vertical-align:middle;}
+.orange{color:#f60;}
+
+.auto .icon-xlocal{background-position:-5px -187px;}
+.auto .icon-xhotel{background-position:-5px -214px;}
+
+
+/*搜索切换*/
+.search-dhotel{border:1px solid #ccc;width:398px;height:318px;float:left;}
+.search-dhotel .htitle a{display:block;height:100%;padding:0 10px 0 44px;position:relative;}
+.search-dhotel .htitle .hicon{width:30px;height:24px;position:absolute;top:10px;left:14px;}
+.icon-dhotel{background-position:0 2px;}
+.icon-ghotel{background-position:0 -40px;}
+.search-dhotel-btn{display:block;width:260px;height:45px;text-indent:-9999px;background-position:0 -80px;}
+.search-dhotel-btn:hover{background-position:0 -130px;}
+.search-dhotel .htitle li{float:left;display:inline;margin-left:-1px;height:45px;line-height:45px;font-size:14px;font-weight:bold;}
+.search-dhotel .htitle ul{margin-right:-5px;*zoom:1;}
+.search-dhotel .htitle a{color:#333;}
+.search-dhotel .htitle a:hover{ text-decoration: none;}
+.search-dhotel .desthotel{border-top:3px solid #ff9900;margin-top:-2px;width:275px;}
+.search-dhotel .content{overflow:hidden;padding:20px 10px;}
+.globalhotel{width:124px;background:#f2f2f2;border-left:1px solid #ccc;border-bottom:1px solid #ccc;}
+.search-dhotel .globalhotel a:hover{text-decoration: underline;}
+
+.search-dhotel .input-text{width:235px;}
+.search-dhotel td{padding-bottom: 20px;}
+.search-dhotel td.label{text-align:right;font-size:14px;padding-left: 1em;}
+
+.hslide-box{width:780px;height:320px;float:right;position:relative;z-index:1;overflow: hidden;}
+.hslideimg{width:780px;height:320px;overflow: hidden;position:relative;z-index:1;}
+.hslideimg li{float:left;display:inline;position:absolute;}
+.hslidenav{position:absolute;z-index:10;width:150px;left:50%;bottom:20px;margin-left:-75px;}
+.hslidenav li{float:left;display:inline;text-indent:-9999px;width:15px;height:15px;margin:0 5px;background:url(../img/dhotel.png) -260px -136px no-repeat;cursor:pointer;}
+.hslidenav li:hover,
+.hslidenav li.active{background-position:-289px -135px;}
+.hprev,.hnext{display:none;position:absolute;z-index:10;top:50%;margin-top:-25px;width:50px;height:50px;filter:alpha(opacity=50);opacity:.5;cursor:pointer;}
+.hprev{left:0;background-position:-261px -80px;}
+.hnext{right:0;background-position:-320px -80px;}
+.hprev:hover,.hnext:hover{filter:alpha(opacity=100);opacity:1;}
+.hslide-box:hover .hprev,
+.hslide-box:hover .hnext{display:block;}
+/*列表*/
+.hbox{margin:20px 0 10px;clear:both;}
+.hbox h3{display:inline;float:left;width:230px;font-size:22px;font-family:Microsoft YaHei;font-weight:400;}
+.hbox .htitle{clear:both;margin:10px 0;height:30px;}
+.hbox .htitle .hlistnav{float:right;}
+.hbox .htitle li{float:left;display:inline;margin-right:10px;}
+.hbox .htitle li a{display:block;float:left;padding:0 15px;border-radius:3px;color:#666;position:relative;}
+.hbox .htitle li a:hover,
+.hbox .htitle li.selected a{color:#fff;background:#FF9900; text-decoration: none;}
+.hbox .darr{display:none;position: absolute;width: 0;height: 0;line-height: 0;font-size: 0;overflow: hidden;border-width: 6px;border-style: solid;_border-style: dashed;border-color: transparent;_border-top-style: solid;border-bottom-width: 0;border-top-color: #F90;bottom:-5px;left:50%;margin-left:-6px;}
+.hbox a:hover .darr,
+.hbox .selected .darr{display:block;}
+
+.dhotel-list .content {height:370px;width:100%;overflow:hidden;margin-right:-10px;*zoom:1;}
+.ghotel-listbox,
+.dhotel-listbox{width:1210px;overflow:hidden;margin-right:-10px;*zoom:1;}
+.dhotel-list li{float:left;display:inline;}
+.hbox-left{float:left;display:inline;width:400px;}
+.hbox-right{float:left;display:inline;width:810px;}
+.hitem img{vertical-align:top;}
+.hitem .img{overflow:hidden;display: block;}
+.dhotel-list .hitem{float:left;display:inline;width:190px;height:173px;padding-bottom:1px;margin-right:10px;background:#fff;border-bottom:1px solid #ccc;margin-bottom:10px;overflow:hidden;}
+.dhotel-list .hitem .img{width:190px;height:126px;}
+.dhotel-list .hitem-big{width:400px;height:358px;}
+.dhotel-list .hitem-big .img{width:400px;height:310px;}
+.dhotel-list dfn{float:right;font-size:14px;}
+.dhotel-list dfn i{font-size:20px;}
+.dhotel-list .hitem p{padding:5px 5px 0;line-height:20px;}
+.dhotel-list .hitem p a{overflow:hidden;}
+.dhotel-list .hitem:hover{padding-bottom:0;border-bottom:2px solid #f90; box-shadow:0 0 8px 2px #ccc;}
+.hitem a.text{color:#333;}
+.hitem a.text:hover{color:#e38; text-decoration: none;}
+
+
+a.text-cover{position:relative;display:block;overflow:hidden;}
+a.text-cover:hover{text-decoration: none;}
+a.text-cover .ctext{position:absolute;bottom:-100px;left:0;right:0;width:100%;overflow: hidden;}
+a.text-cover .ctext{background:rgba(0,0,0,.5);filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr=#7F000000, endColorstr=#7F000000);color:#fff;padding:5px 0;line-height:18px}
+a.text-cover .ctext i,
+a.text-cover .ctext em{color:#fff;text-indent: 5px;display:block;}
+.hitem .ctext i,
+.hitem .ctext em{_width:100%;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+
+
+.ghotel-list .content{position:relative;height:300px;overflow: hidden;}
+.ghotel-listbox li{position:absolute;z-index:2;left:0;top:0;}
+.ghotel-listbox .g1{width:400px;height:300px;}
+.ghotel-listbox .g2,
+.ghotel-listbox .g5,
+.ghotel-listbox .g6{width:190px;height:190px;}
+.ghotel-listbox .g3,
+.ghotel-listbox .g4,
+.ghotel-listbox .g7{width:190px;height:100px;}
+.ghotel-listbox .g8{width:190px;height:300px;}
+.ghotel-listbox .g2{top: 0;     left: 410px;}
+.ghotel-listbox .g3{top: 200px; left: 410px;}
+.ghotel-listbox .g4{top: 0;     left: 610px;}
+.ghotel-listbox .g5{top: 110px; left: 610px;}
+.ghotel-listbox .g6{top: 0;     left: 810px;}
+.ghotel-listbox .g7{top: 200px; left: 810px;}
+.ghotel-listbox .g8{top: 0;     left: 1010px;}
+.ghotel-listbox .ginfo{position:absolute;top:10px;left:0;display:inline-block;padding:5px 20px 5px 10px;background:rgba(0,0,0,.5);filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr=#7F000000, endColorstr=#7F000000);color:#fff;}
+.ghotel-listbox .ginfo strong,
+.ghotel-listbox .ginfo span{display:block;line-height:1.2;}
+
+.ghotel-listbox .ginfo strong{font-size:14px;}
+.ghotel-listbox a:hover{text-decoration: none;}
+.ghotel-listbox a:hover .ginfo{color:#fff;}
+
+.dinput-date{position:relative;z-index:2;}
+.dinput-date .date-info{position:absolute;z-index:5;right:0;height:30px;line-height:30px;color:#bbb;}
+.icon-inputdate{width:24px;height:30px;background-position:right 5px;}
+.dinput-date .icon-inputdate{float:right;}
+
+/**
+  max 480 767 979
+      768-979
+  min 980 1200 
+  @media (min-width: 768px) and (max-width: 979px) {}
+  @media (min-width: 1200px) {}
+  @media (min-width: 980px) {}
+  @media (max-width: 480px) {}
+  @media (max-width: 767px) {}
+  @media (max-width: 979px) {}
+*/
+
+@media (min-width: 1200px) {
+    
+}
+@media (max-width: 1199px) {
+    .wrap{ width:1000px;}
+    .hslide-box{width:580px;}
+}
