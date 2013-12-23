@@ -409,14 +409,7 @@
     <a href="#"><img src="images/big.jpg" width="980" height="80"></a>
 </div> <!-- //.adbox -->
 
-<?php include("common/footer.html"); ?>
-
-<script src="http://pic.lvmama.com/min/index.php?f=/js/new_v/jquery-1.7.2.min.js,/js/ui/lvmamaUI/lvmamaUI.js"></script>
-<!--
-<script src="http://pic.lvmama.com/js/new_v/top/header-air_new.js"></script>
-
-<script src="js/header-air_new.js"></script>-->
-<script src="http://pic.lvmama.com/min/index.php?f=/js/v3/plugins.js,/js/v3/app.js"></script>
+<?php include("common/footer-channel.php"); ?>
 
 <script>
 
@@ -425,7 +418,7 @@
 
 $(function(){
     if (($.browser.msie) && ($.browser.version == "6.0")){
-        alert('IE6 Detected');
+        //alert('IE6 Detected');
     }
 
     function xh_hover(box_hover,hover_class){
