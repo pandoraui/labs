@@ -76,14 +76,14 @@
             <div class="payment form-inline">
                 <div class="pay-title ui-tab-trigger">
                     <h4 class="pay-price">您还需继续付款 <dfn><i>4100</i></dfn> 元</h4>
-                    <ul class="tabnav order-tabnav clearfix">
+                    <ul class="tabnav order-tabnav clearfix J-tabs">
                         <li class="selected"><a href="javascript:;">支付平台/银行卡</a></li>
+                        <li><a href="javascript:;">电话支付</a></li>
                         <li class="paylink"><a href="other.php">其他方式<i class="ui-arrow-right blue-ui-arrow-right"></i></a></li>
                     </ul>
                 </div>
-                <div class="tab-switch payment-list">
+                <div class="tab-switch payment-list J-switch">
                     <div class="tabcon">
-
                         <ul class="bank-list clearfix">
                             <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank alipay      " title="支付宝"></i></label></li>
                             <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank tenpay      " title="财付通"></i></label></li>
@@ -129,7 +129,10 @@
                         </ul>
                     </div>
                     <div class="tabcon">
-                        
+                        <ul class="bank-list clearfix">
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank alipay      " title="支付宝"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank tenpay      " title="财付通"></i></label></li>
+                        </ul>
                     </div>
                 </div>
                 <div class="order-btn"><button class="pbtn pbtn-big pbtn-orange">&nbsp;&nbsp;下一步&nbsp;&nbsp;</button></div>
@@ -362,6 +365,18 @@ $(function(){
 
 
 $(function(){
+    // tabs
+    function JS_tab_nav(tab_nav,tab_con,selected,tri_type){
+        $tab_obj=$(tab_nav);
+        $tab_obj.bind(tri_type,function(){
+            var tab_li_index = $(tab_nav).index(this);
+            $(this).addClass(selected).siblings().removeClass(selected);
+            $(tab_con).eq(tab_li_index).show().siblings(tab_con).hide();
+            // return false;
+        });
+    };
+    JS_tab_nav(".J-tabs li:not('.paylink')",".J-switch>.tabcon","selected","click");
+
 $(".btn11").click(function(){
 
     // 使用驴妈妈存款账户余额

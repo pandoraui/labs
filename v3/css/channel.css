@@ -20,11 +20,12 @@
 .head h4{float:left;}
 .head .link-more{float:right;}
 .side-box .content{clear:both}
+/*
 .JS_tabsbox{display: none;}
 .cbox .tabsBoxSelected{display: block;}
-
+*/
 .cside1{}
-.cside1 .xicon{float:left;margin:8px 2px 0 0;}
+.cside1 .xicon{display:none;float:left;margin:8px 2px 0 0;}
 .theme_icon1{background-position:-85px 0;}
 .theme_icon2{background-position:-85px -16px;}
 .theme_icon3{background-position:-85px -32px;}
@@ -149,6 +150,7 @@
 .cpro-list .text-cover i{text-align:left;text-indent:8px;}
 .cpro-list .text-cover i em{color:#888;}
 .cpro-list p{color:#555;white-space: nowrap;*overflow:hidden;}
+.cpro-list .text-cover:hover i{color:#fda900;}
 
 .cpro-buy{}
 .cpro-buy li{width:380px;height:120px;background:#f6f6f6;margin-right:20px;}
@@ -170,10 +172,12 @@
 
 .cprobig-list .text-cover i{text-align:left;text-indent:10px;}
 .cprobig-list .link-other{display:inline-block;position:absolute;right:0;top:143px;background:#0183b0;height:25px;line-height:25px;z-index:11;color:#fff;padding:0 7px;font-weight:normal}
+.cprobig-list .link-other:hover{background:#0076cd;text-decoration: none;}
 .cprobig-list .text-cover dfn{display:inline-block;position:absolute;z-index:5;right:0;bottom:0;background:#f60;height:25px;line-height:25px;color:#fff;padding:0 10px;font-weight:normal}
-.cprobig-list .text-cover dfn i{color:#fff;position:static;width:auto;text-indent:0;display:inline;}
+.cprobig-list .text-cover dfn i,.cprobig-list .text-cover:hover dfn i{color:#fff;position:static;width:auto;text-indent:0;display:inline;}
 .cprobig-list p{color:#555;padding:5px 0 0;line-height:1.5;height:56px;overflow:hidden;}
 .cprobig-list p b{color:#d17;}
+.cprobig-list .text-cover:hover i{color:#fda900;}
 
 .cbox4 .content{margin-right:-30px;overflow:hidden;*zoom:1;}
 .textlist{float:left;display:inline;width:380px;margin:5px 20px 0 0;}
@@ -192,7 +196,7 @@
 .JS_sildename .text-cover i{ top:143px; text-indent:0;}
 .JS_sildename .text-cover span,
 .JS_sildename .text-cover i{top: 118px;height: 40px;padding: 5px 6px; line-height:20px; z-index:5;}
-.JS_sildename .text-cover span{filter: alpha(opacity=80);opacity: 0.8;}
+.JS_sildename .text-cover span{}
 
 
 /* 特色酒店 */

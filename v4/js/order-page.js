@@ -44,6 +44,8 @@ $(function(){
     $("select[data-class]").selectModel();
     
     
+    
+    
     $(".JS_check").delegate(".check-radio-item",'click',function(){
         var _thisbox = $(this).parents(".check-radio-box");
         _thisbox.toggleClass("selected").siblings(".check-radio-box").removeClass("selected").find(".check-radio-item").removeClass("active");

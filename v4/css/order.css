@@ -4,7 +4,7 @@
  @功能: 订单样式
  */
 
-.wrap{ width:960px !important;}
+.wrap{ width:1000px !important;}
 body{font:12px/22px Tahoma,Arial,\5b8b\4f53,sans-serif;color:#000;}
 .border{border:1px solid #ccc;*zoom:1;}
 a{color:#08c;text-decoration: none;}
@@ -44,9 +44,7 @@ a.dot_line{margin:0 3px;height:auto;line-height:1.5;display:inline-block;text-in
     margin-bottom: 0;
     text-align: right;
 }
-.xdl dd {
-    position:relative;
-}
+
 .xdl-hor .xdl {
     margin-bottom: 10px;
     clear: both;
@@ -113,7 +111,7 @@ a.dot_line{margin:0 3px;height:auto;line-height:1.5;display:inline-block;text-in
 .order-main .main{word-wrap:break-word; word-break:break-all;}
 .order-main label.inline{*vertical-align:bottom;*margin:4px 0;}
 
-.sidebar{float:right;width:240px;*zoom:1;background:#f6f6f6;border-left:1px solid #ccc;box-shadow:2px 0 3px #ddd inset;}
+.sidebar{float:right;width:260px;*zoom:1;background:#f6f6f6;border-left:1px solid #ccc;box-shadow:2px 0 3px #ddd inset;}
 .order-main .main{padding:10px 20px;overflow:hidden;*zoom:1;}
 .order-title,
 .contract-title{font-family: Microsoft YaHei,\5FAE\8F6F\96C5\9ED1;font-weight:500;}
@@ -143,12 +141,12 @@ a.dot_line{margin:0 3px;height:auto;line-height:1.5;display:inline-block;text-in
 
 /* 订单侧边栏 */
 .sidebox{padding:10px 20px;}
-.side-setbox{ width: 200px;}
+.side-setbox{ width: 220px;}
 .side-setbox .content{overflow:hidden;}
 .pro-setbox{padding-top:8px;margin-top:-1px;margin-bottom:10px;border-top:1px dashed #ddd;}
 .pro-setbox dt{font-weight:bold;}
 .pro-setbox dd{margin-top:5px;line-height:20px;color:#666;}
-.pro-setbox .num,.total-price .price-num{float:right;width:80px;text-align:right;}
+.pro-setbox .num,.total-price .price-num{float:right;width:85px;text-align:right;}
 .total-price strong{font-size:14px;}
 .total-price .price-num{width:auto;}
 .total-price dfn{font-size:20px;}
@@ -246,8 +244,6 @@ a.dot_line{margin:0 3px;height:auto;line-height:1.5;display:inline-block;text-in
 .order-tabnav li.paylink a{position:relative;padding-right:30px;}
 .paylink .ui-arrow-right{top:15px;right:18px;}
 .paylink a:hover .ui-arrow-right{border-left-color:#e38;}
-
-
 
 .J_num{*zoom:1;}
 

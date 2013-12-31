@@ -30,7 +30,7 @@
                     <h3><span class="num">1</span>我和春天有个<span class="cc1">约定</span></h3>
                     <div class="text">
                         <p class="gray">我和春天有个约会，写微游记，得闪存卡我和春天有个约会，写微游记，得闪存卡</p>
-                        <p>活动时间：<b>2013年1月2日—2013年5月1日</b></p>
+                        <p><b>2013年1月2日—2013年5月1日</b></p>
                     </div>
                     <p class="tc"><button class="btn btn-orange">&nbsp;立即参与&nbsp;</button></p>
                 </dd>
@@ -41,7 +41,7 @@
                     <h3><span class="num">2</span>我和春天有个<span class="cc1">约定</span></h3>
                     <div class="text">
                         <p class="gray">我和春天有个约会，写微游记，得闪存卡我和春天有个约会，写微游记，得闪存卡</p>
-                        <p>活动时间：<b>2013年1月2日—2013年5月1日</b></p>
+                        <p><b>2013年1月2日—2013年5月1日</b></p>
                     </div>
                     <p class="tc"><button class="btn btn-orange">&nbsp;立即参与&nbsp;</button></p>
                 </dd>
@@ -52,7 +52,7 @@
                     <h3><span class="num">3</span>我和春天有个<span class="cc1">约定</span></h3>
                     <div class="text">
                         <p class="gray">我和春天有个约会，写微游记，得闪存卡我和春天有个约会，写微游记，得闪存卡</p>
-                        <p>活动时间：<b>2013年1月2日—2013年5月1日</b></p>
+                        <p><b>2013年1月2日—2013年5月1日</b></p>
                     </div>
                     <p class="tc"><button class="btn btn-orange">&nbsp;立即参与&nbsp;</button></p>
                 </dd>
@@ -63,7 +63,7 @@
                     <h3><span class="num">4</span>我和春天有个<span class="cc1">约定</span></h3>
                     <div class="text">
                         <p class="gray">我和春天有个约会，写微游记，得闪存卡我和春天有个约会，写微游记，得闪存卡</p>
-                        <p>活动时间：<b>2013年1月2日—2013年5月1日</b></p>
+                        <p><b>2013年1月2日—2013年5月1日</b></p>
                     </div>
                     <p class="tc"><button class="btn btn-orange">&nbsp;立即参与&nbsp;</button></p>
                 </dd>
@@ -74,7 +74,7 @@
                     <h3><span class="num">5</span>我和春天有个<span class="cc1">约定</span></h3>
                     <div class="text">
                         <p class="gray">我和春天有个约会，写微游记，得闪存卡我和春天有个约会，写微游记，得闪存卡</p>
-                        <p>活动时间：<b>2013年1月2日—2013年5月1日</b></p>
+                        <p><b>2013年1月2日—2013年5月1日</b></p>
                     </div>
                     <p class="tc"><button class="btn btn-orange">&nbsp;立即参与&nbsp;</button></p>
                 </dd>
@@ -85,7 +85,7 @@
                     <h3><span class="num">6</span>我和春天有个<span class="cc1">约定</span></h3>
                     <div class="text">
                         <p class="gray">我和春天有个约会，写微游记，得闪存卡我和春天有个约会，写微游记，得闪存卡</p>
-                        <p>活动时间：<b>2013年1月2日—2013年5月1日</b></p>
+                        <p><b>2013年1月2日—2013年5月1日</b></p>
                     </div>
                     <p class="tc"><button class="btn btn-orange">&nbsp;立即参与&nbsp;</button></p>
                 </dd>
@@ -96,7 +96,7 @@
                     <h3><span class="num">7</span>我和春天有个<span class="cc1">约定</span></h3>
                     <div class="text">
                         <p class="gray">我和春天有个约会，写微游记，得闪存卡我和春天有个约会，写微游记，得闪存卡</p>
-                        <p>活动时间：<b>2013年1月2日—2013年5月1日</b></p>
+                        <p><b>2013年1月2日—2013年5月1日</b></p>
                     </div>
                     <p class="tc"><button class="btn btn-orange">&nbsp;立即参与&nbsp;</button></p>
                 </dd>
@@ -107,7 +107,7 @@
                     <h3><span class="num">8</span>我和春天有个<span class="cc1">约定</span></h3>
                     <div class="text">
                         <p class="gray">我和春天有个约会，写微游记，得闪存卡我和春天有个约会，写微游记，得闪存卡</p>
-                        <p>活动时间：<b>2013年1月2日—2013年5月1日</b></p>
+                        <p><b>2013年1月2日—2013年5月1日</b></p>
                     </div>
                     <p class="tc"><button class="btn btn-orange">&nbsp;立即参与&nbsp;</button></p>
                 </dd>

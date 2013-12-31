@@ -298,30 +298,30 @@
             </div>
         </div>
     </div> <!-- //.quick-menu -->
-	
     
-	<div id="slides" class="slide-box pageframe8">
-	    <ul class="slide-content">
-		    <li><a href="#"><img src="images/banner1.jpg"></a></li>
-		    <li><a href="#"><img src="images/banner2.jpg"></a></li>
-		    <li><a href="#"><img src="images/banner3.jpg"></a></li>
-		    <li><a href="#"><img src="images/banner1.jpg"></a></li>
-		    <li><a href="#"><img src="images/banner2.jpg"></a></li>
-		    <li><a href="#"><img src="images/banner3.jpg"></a></li>
-		    <li><a href="#"><img src="images/banner1.jpg"></a></li>
-		    <li><a href="#"><img src="images/banner2.jpg"></a></li>
-		</ul> 
-	    <ul class="slide-nav">
-		    <li class="active">pageframe8</li>
-		    <li>中国好温泉</li>
-		    <li>欢乐谷半价</li>
-		    <li>摄影之旅</li>
-		    <li>浪漫度蜜月</li>
-		    <li>国内抄底游</li>
-		    <li>星期8小镇</li>
-			<li>浪漫植物园</li>
-		</ul>
-	</div> <!-- //.slide-box -->
+    
+    <div id="slides" class="slide-box pageframe8">
+        <ul class="slide-content">
+            <li><a href="#"><img src="images/banner1.jpg"></a></li>
+            <li><a href="#"><img src="images/banner2.jpg"></a></li>
+            <li><a href="#"><img src="images/banner3.jpg"></a></li>
+            <li><a href="#"><img src="images/banner1.jpg"></a></li>
+            <li><a href="#"><img src="images/banner2.jpg"></a></li>
+            <li><a href="#"><img src="images/banner3.jpg"></a></li>
+            <li><a href="#"><img src="images/banner1.jpg"></a></li>
+            <li><a href="#"><img src="images/banner2.jpg"></a></li>
+        </ul> 
+        <ul class="slide-nav">
+            <li class="active">pageframe8</li>
+            <li>中国好温泉</li>
+            <li>欢乐谷半价</li>
+            <li>摄影之旅</li>
+            <li>浪漫度蜜月</li>
+            <li>国内抄底游</li>
+            <li>星期8小镇</li>
+            <li>浪漫植物园</li>
+        </ul>
+    </div> <!-- //.slide-box -->
     
     <div class="hr_d"></div>
 </div> <!-- //.wrap 1 -->
@@ -340,70 +340,70 @@
             </div>
             <div class="content">
                 <ul class="cpro-list">
-                	<li>
-                		<a class="text-cover" href="#">
+                    <li>
+                        <a class="text-cover" href="#">
                             <img src="images/cpic1.jpg"  width="180" height="120" alt="" />
                             <span></span>
                             <i><b>上海</b> <em>|</em> 东方明珠广播电视塔</i>
                         </a>
-                		<p>活动时间：2013.5.1-2013.6.30</p>
-                	</li>
+                        <p>2013.5.1-2013.6.30</p>
+                    </li>
                     <li>
-                		<a class="text-cover" href="#">
+                        <a class="text-cover" href="#">
                             <img src="images/cpic2.jpg"  width="180" height="120" alt="" />
                             <span></span>
                             <i><b>上海</b> <em>|</em> 东方明珠广播电视塔</i>
                         </a>
-                		<p>活动时间：2013.5.1-2013.6.30</p>
-                	</li>
+                        <p>2013.5.1-2013.6.30</p>
+                    </li>
                     <li>
-                		<a class="text-cover" href="#">
+                        <a class="text-cover" href="#">
                             <img src="images/cpic3.jpg"  width="180" height="120" alt="" />
                             <span></span>
                             <i><b>上海</b> <em>|</em> 东方明珠广播电视塔</i>
                         </a>
-                		<p>活动时间：2013.5.1-2013.6.30</p>
-                	</li>
+                        <p>2013.5.1-2013.6.30</p>
+                    </li>
                     <li>
-                		<a class="text-cover" href="#">
+                        <a class="text-cover" href="#">
                             <img src="images/cpic4.jpg"  width="180" height="120" alt="" />
                             <span></span>
                             <i><b>上海</b> <em>|</em> 东方明珠广播电视塔</i>
                         </a>
-                		<p>活动时间：2013.5.1-2013.6.30</p>
-                	</li>
+                        <p>2013.5.1-2013.6.30</p>
+                    </li>
                     <li>
-                		<a class="text-cover" href="#">
+                        <a class="text-cover" href="#">
                             <img src="images/cpic5.jpg"  width="180" height="120" alt="" />
                             <span></span>
                             <i><b>上海</b> <em>|</em> 东方明珠广播电视塔</i>
                         </a>
-                		<p>活动时间：2013.5.1-2013.6.30</p>
-                	</li>
+                        <p>2013.5.1-2013.6.30</p>
+                    </li>
                     <li>
-                		<a class="text-cover" href="#">
+                        <a class="text-cover" href="#">
                             <img src="images/cpic6.jpg"  width="180" height="120" alt="" />
                             <span></span>
                             <i><b>上海</b> <em>|</em> 东方明珠广播电视塔</i>
                         </a>
-                		<p>活动时间：2013.5.1-2013.6.30</p>
-                	</li>
+                        <p>2013.5.1-2013.6.30</p>
+                    </li>
                     <li>
-                		<a class="text-cover" href="#">
+                        <a class="text-cover" href="#">
                             <img src="images/cpic7.jpg"  width="180" height="120" alt="" />
                             <span></span>
                             <i><b>上海</b> <em>|</em> 东方明珠广播电视塔</i>
                         </a>
-                		<p>活动时间：2013.5.1-2013.6.30</p>
-                	</li>
+                        <p>2013.5.1-2013.6.30</p>
+                    </li>
                     <li>
-                		<a class="text-cover" href="#">
+                        <a class="text-cover" href="#">
                             <img src="images/cpic8.jpg"  width="180" height="120" alt="" />
                             <span></span>
                             <i><b>上海</b> <em>|</em> 东方明珠广播电视塔</i>
                         </a>
-                		<p>活动时间：2013.5.1-2013.6.30</p>
-                	</li>
+                        <p>2013.5.1-2013.6.30</p>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -449,8 +449,8 @@
             <div class="ctitle">
                 <h3>推荐目的地</h3>
                 <ul class="tabnav JS_tabnav">
-                	<li class="selected"><a href="javascript:;">上海<i class="css_arrow"></i></a></li>
-                	<li><a href="javascript:;">哈尔滨<i class="css_arrow"></i></a></li>
+                    <li class="selected"><a href="javascript:;">上海<i class="css_arrow"></i></a></li>
+                    <li><a href="javascript:;">哈尔滨<i class="css_arrow"></i></a></li>
                 </ul>
                 <a class="link-more" href="#">更多目的地 &raquo;</a>
             </div>
@@ -632,7 +632,7 @@
 
 
 <div class="padbox wrap">
-	<a href="#"><img src="images/big.jpg" width="980" height="80"></a>
+    <a href="#"><img src="images/big.jpg" width="980" height="80"></a>
 </div> <!-- //.adbox -->
 
 <?php include("common/footer-channel.php"); ?>
