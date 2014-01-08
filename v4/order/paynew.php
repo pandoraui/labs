@@ -93,140 +93,150 @@
             <div class="tab-switch payment-list J-switch">
                 <!--支付平台/银行卡\\-->
                 <div class="tabcon selected">
-                    <ul class="bank-list clearfix">
-                        <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank alipay      " title="支付宝"></i></label></li>
-                        <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank tenpay      " title="财付通"></i></label></li>
-                        <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank shengpay    " title="盛付通"></i></label></li>
-                        <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank unionpay    " title="银联支付"></i></label></li>
-                        <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank lakala      " title="拉卡拉"></i></label></li>
-                        <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank cmpay       " title="中国移动手机支付"></i></label></li>
-                        <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank alipay-quick" title="支付宝快捷支付"></i></label></li>
-                        <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank tenpay-quick" title="财付通快捷支付"></i></label></li>
-                    </ul>
-                    <div class="dot_line"></div>
-                    <ul class="bank-list clearfix">
-                        <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank abc   " title="中国农业银行"></i></label></li>
-                        <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank boc   " title="中国银行"></i></label></li>
-                        <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank ccb   " title="中国建设银行"></i></label></li>
-                        <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank icbc  " title="中国工商银行"></i></label></li>
-                        <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank psbc  " title="中国邮政储蓄银行"></i></label></li>
-                        <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank ceb   " title="中国光大银行"></i></label></li>
-                        <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank cmbc  " title="中国民生银行"></i></label></li>
-                        <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank cmb   " title="招商银行"></i></label><span class="poptip-mini poptip-mini-warning"><div class="tip-sharp tip-sharp-bottom"></div>立减10元</span></li>
-                        <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank comm  " title="交通银行"></i></label></li>
-                        <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank bjbank" title="北京银行"></i></label></li>
-                        <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank shbank" title="上海银行"></i></label></li>
-                        <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank jsbank" title="江苏银行"></i></label></li>
-                        <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank hzbank" title="杭州银行"></i></label></li>
-                        <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank nbcb  " title="宁波银行"></i></label></li>
-                        <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank njcb  " title="南京银行"></i></label></li>
-                        <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank wzcb  " title="温州银行"></i></label></li>
-                        <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank gzcb  " title="广州银行"></i></label></li>
-                        <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank bjrcb " title="北京农村商业银行"></i></label></li>
-                        <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank srcb  " title="上海农村商业银行"></i></label></li>
-                        <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank sdb   " title="深圳发展银行"></i></label></li>
-                        <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank spdb  " title="浦发银行"></i></label></li>
-                        <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank cib   " title="兴业银行"></i></label></li>
-                        <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank cgb   " title="广发银行"></i></label></li>
-                        <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank hxb   " title="华夏银行"></i></label></li>
-                        <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank hkbea " title="东亚银行"></i></label></li>
-                        <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank cbhb  " title="渤海银行"></i></label></li>
-                        <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank ecitic" title="中信银行"></i></label></li>
-                        <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank pingan" title="平安银行"></i></label></li>
-                        <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank fudian" title="富滇银行"></i></label></li>
-                        <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank "></i></label></li>
-                    </ul>
+                    <div class="xhcontent">
+                        <ul class="bank-list clearfix">
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank alipay      " title="支付宝"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank tenpay      " title="财付通"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank shengpay    " title="盛付通"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank unionpay    " title="银联支付"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank lakala      " title="拉卡拉"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank cmpay       " title="中国移动手机支付"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank alipay-quick" title="支付宝快捷支付"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank tenpay-quick" title="财付通快捷支付"></i></label></li>
+                        </ul>
+                        <div class="dot_line"></div>
+                        <ul class="bank-list clearfix">
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank abc   " title="中国农业银行"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank boc   " title="中国银行"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank ccb   " title="中国建设银行"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank icbc  " title="中国工商银行"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank psbc  " title="中国邮政储蓄银行"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank ceb   " title="中国光大银行"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank cmbc  " title="中国民生银行"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank cmb   " title="招商银行"></i></label><span class="poptip-mini poptip-mini-warning"><div class="tip-sharp tip-sharp-bottom"></div>立减10元</span></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank comm  " title="交通银行"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank bjbank" title="北京银行"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank shbank" title="上海银行"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank jsbank" title="江苏银行"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank hzbank" title="杭州银行"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank nbcb  " title="宁波银行"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank njcb  " title="南京银行"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank wzcb  " title="温州银行"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank gzcb  " title="广州银行"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank bjrcb " title="北京农村商业银行"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank srcb  " title="上海农村商业银行"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank sdb   " title="深圳发展银行"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank spdb  " title="浦发银行"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank cib   " title="兴业银行"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank cgb   " title="广发银行"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank hxb   " title="华夏银行"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank hkbea " title="东亚银行"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank cbhb  " title="渤海银行"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank ecitic" title="中信银行"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank pingan" title="平安银行"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank fudian" title="富滇银行"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank "></i></label></li>
+                        </ul>
+                    </div>
+                    <div class="order-btn"><button class="pbtn pbtn-big pbtn-orange">&nbsp;&nbsp;下一步&nbsp;&nbsp;</button></div>
                 </div>
                 <!--分期付款\\-->
                 <div class="tabcon">
-                    <p><img src="../img/paytype1.png" alt="分期付款" /></p>
-                    <!--<p><img src="http://pic.lvmama.com/img/v4/order/paytype1.png" alt="分期付款" /></p>-->
-                    <p class="typetit">选择以下银行信用卡分期付款</p>
-                    <ul class="bank-list clearfix">
-                        <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank cmb   " title="招商银行"></i></label></li>
-                        <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank ccb   " title="中国建设银行"></i></label></li>
-                        <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank boc   " title="中国银行"></i></label></li>
-                    </ul>
-                    <div class="dot_line"></div>
-                    <p><b>分期方式</b></p>
-                    <p>在线分期（立即得知审核结果）</p>
-                    <div class="hr_a"></div>
-                    <p><b>期数及规则</b><span class="gray">（注：当金额不能被分期的期数整除时，具体每期还款金额以银行计算为准）</span></p>
-                    <table class="xtable-data table-full table-center">
-                        <tr>
-                            <th>期数</th>
-                            <th>手续费</th>
-                            <th>第一期</th>
-                            <th>以后每期</th>
-                            <th>总计</th>
-                        </tr>
-                        <tr>
-                            <td class="phase"><label class="radio inline"><input class="input-radio" name="bankpay" type="radio">3期<span class="orange">(推荐)</span></td>
-                            <td>3.6%</td>
-                            <td>1250元</td>
-                            <td>1200元</td>
-                            <td>3650元</td>
-                        </tr>
-                        <tr>
-                            <td class="phase"><label class="radio inline"><input class="input-radio" name="bankpay" type="radio">6期</td>
-                            <td>3.6%</td>
-                            <td>1250元</td>
-                            <td>1200元</td>
-                            <td>3650元</td>
-                        </tr>
-                        <tr>
-                            <td class="phase"><label class="radio inline"><input class="input-radio" name="bankpay" type="radio">12期</td>
-                            <td>3.6%</td>
-                            <td>1250元</td>
-                            <td>1200元</td>
-                            <td>3650元</td>
-                        </tr>
-                    </table>
-                    
+                    <div class="xhcontent">
+                        <p><img src="../img/paytype1.png" alt="分期付款" /></p>
+                        <!--<p><img src="http://pic.lvmama.com/img/v4/order/paytype1.png" alt="分期付款" /></p>-->
+                        <p class="typetit">选择以下银行信用卡分期付款</p>
+                        <ul class="bank-list clearfix">
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank cmb   " title="招商银行"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank ccb   " title="中国建设银行"></i></label></li>
+                            <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank boc   " title="中国银行"></i></label></li>
+                        </ul>
+                        <div class="dot_line"></div>
+                        <p><b>分期方式</b></p>
+                        <p>在线分期（立即得知审核结果）</p>
+                        <div class="hr_a"></div>
+                        <p><b>期数及规则</b><span class="gray">（注：当金额不能被分期的期数整除时，具体每期还款金额以银行计算为准）</span></p>
+                        <table class="xtable-data table-full table-center">
+                            <tr>
+                                <th>期数</th>
+                                <th>手续费</th>
+                                <th>第一期</th>
+                                <th>以后每期</th>
+                                <th>总计</th>
+                            </tr>
+                            <tr>
+                                <td class="phase"><label class="radio inline"><input class="input-radio" name="bankpay" type="radio">3期<span class="orange">(推荐)</span></label></td>
+                                <td>3.6%</td>
+                                <td>1250元</td>
+                                <td>1200元</td>
+                                <td>3650元</td>
+                            </tr>
+                            <tr>
+                                <td class="phase"><label class="radio inline"><input class="input-radio" name="bankpay" type="radio">6期</label></td>
+                                <td>3.6%</td>
+                                <td>1250元</td>
+                                <td>1200元</td>
+                                <td>3650元</td>
+                            </tr>
+                            <tr>
+                                <td class="phase"><label class="radio inline"><input class="input-radio" name="bankpay" type="radio">12期</label></td>
+                                <td>3.6%</td>
+                                <td>1250元</td>
+                                <td>1200元</td>
+                                <td>3650元</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="order-btn"><button class="pbtn pbtn-big pbtn-orange">&nbsp;&nbsp;下一步&nbsp;&nbsp;</button></div>
                 </div>
                 <!--电话支付\\-->
                 <div class="tabcon">
-                    <p><img src="../img/paytype2.png" alt="电话支付" /></p>
-                    <!--<p><img src="http://pic.lvmama.com/img/v4/order/paytype2.png" alt="电话支付" /></p>-->
-                    <p class="typetit">以下银行的<span class="orange">借记卡</span>，支持电话支付，无需开通网银也能支付：<span class="orange">（单笔及日累计额度均为4万）</span></p>
-                    <ul class="bank-list clearfix">
-                        <li><label class="radio inline"><i class="bank cmb   " title="招商银行"></i></label></li>
-                        <li><label class="radio inline"><i class="bank ccb   " title="中国建设银行"></i></label></li>
-                        <li><label class="radio inline"><i class="bank boc   " title="中国银行"></i></label></li>
-                        <li><label class="radio inline"><i class="bank cmb   " title="招商银行"></i></label></li>
-                        <li><label class="radio inline"><i class="bank ccb   " title="中国建设银行"></i></label></li>
-                        <li><label class="radio inline"><i class="bank boc   " title="中国银行"></i></label></li>
-                    </ul>
-                    <p class="typetit">以下银行的<span class="orange">信用卡</span>，支持电话支付，无需开通网银也能支付：<span class="orange">（单笔及日累计额度均为4万）</span></p>
-                    <ul class="bank-list clearfix">
-                        <li><label class="radio inline"><i class="bank cmb   " title="招商银行"></i></label></li>
-                        <li><label class="radio inline"><i class="bank ccb   " title="中国建设银行"></i></label></li>
-                        <li><label class="radio inline"><i class="bank boc   " title="中国银行"></i></label></li>
-                        <li><label class="radio inline"><i class="bank cmb   " title="招商银行"></i></label></li>
-                        <li><label class="radio inline"><i class="bank ccb   " title="中国建设银行"></i></label></li>
-                        <li><label class="radio inline"><i class="bank boc   " title="中国银行"></i></label></li>
-                    </ul>
+                    <div class="xhcontent">
+                        <p><img src="../img/paytype2.png" alt="电话支付" /></p>
+                        <!--<p><img src="http://pic.lvmama.com/img/v4/order/paytype2.png" alt="电话支付" /></p>-->
+                        <p class="typetit">以下银行的<span class="orange">借记卡</span>，支持电话支付，无需开通网银也能支付：<span class="orange">（单笔及日累计额度均为4万）</span></p>
+                        <ul class="bank-list clearfix">
+                            <li><label class="radio inline"><i class="bank cmb   " title="招商银行"></i></label></li>
+                            <li><label class="radio inline"><i class="bank ccb   " title="中国建设银行"></i></label></li>
+                            <li><label class="radio inline"><i class="bank boc   " title="中国银行"></i></label></li>
+                            <li><label class="radio inline"><i class="bank cmb   " title="招商银行"></i></label></li>
+                            <li><label class="radio inline"><i class="bank ccb   " title="中国建设银行"></i></label></li>
+                            <li><label class="radio inline"><i class="bank boc   " title="中国银行"></i></label></li>
+                        </ul>
+                        <p class="typetit">以下银行的<span class="orange">信用卡</span>，支持电话支付，无需开通网银也能支付：<span class="orange">（单笔及日累计额度均为4万）</span></p>
+                        <ul class="bank-list clearfix">
+                            <li><label class="radio inline"><i class="bank cmb   " title="招商银行"></i></label></li>
+                            <li><label class="radio inline"><i class="bank ccb   " title="中国建设银行"></i></label></li>
+                            <li><label class="radio inline"><i class="bank boc   " title="中国银行"></i></label></li>
+                            <li><label class="radio inline"><i class="bank cmb   " title="招商银行"></i></label></li>
+                            <li><label class="radio inline"><i class="bank ccb   " title="中国建设银行"></i></label></li>
+                            <li><label class="radio inline"><i class="bank boc   " title="中国银行"></i></label></li>
+                        </ul>
+                    </div>
                 </div>
                 <!--线下支付\\-->
                 <div class="tabcon">
-                    <div class="tiptext tip-warning">温馨提示：由于订单有效期为 <b class="orange">1440</b> 分钟，请谨慎选择线下拉卡拉刷卡机支付和店面支付。</div>
-                    <p class="typetit">1.拉卡拉支付<span class="gray">（不用网银也能支付！支持所有银行卡刷卡支付！）</span></p>
-                    <ul class="bank-list list-block clearfix">
-                        <li><label class="radio inline"><i class="bank lakala      " title="支付宝"></i></label>
-                            <span><a href="#">获取拉卡拉账单号</a>　如何使用拉卡拉？　哪里有拉卡拉？</span>
-                        </li>
-                    </ul>
-                    <p class="typetit">2.驴妈妈店面支付<span class="gray">（在驴妈妈指定的店面地址进行付款）</span></p>
-                    <p class="text">
-                        店面地址：<br>
-                        上海：上海市普陀区金沙江路1759号圣诺亚大厦B座7F<br>
-                        上海：上海市普陀区金沙江路1759号圣诺亚大厦B座7F<br>
-                        杭州：上海市普陀区金沙江路1759号圣诺亚大厦B座7F<br>
-                    </p>
+                    <div class="xhcontent">
+                        <div class="tiptext tip-warning">温馨提示：由于订单有效期为 <b class="orange">1440</b> 分钟，请谨慎选择线下拉卡拉刷卡机支付和店面支付。</div>
+                        <p class="typetit">1.拉卡拉支付<span class="gray">（不用网银也能支付！支持所有银行卡刷卡支付！）</span></p>
+                        <ul class="bank-list list-block clearfix">
+                            <li><label class="radio inline"><i class="bank lakala      " title="支付宝"></i></label>
+                                <span><a href="#">获取拉卡拉账单号</a>　<a href="#" class="graylink">如何使用拉卡拉？</a>　<a href="#" class="graylink">哪里有拉卡拉？</a></span>
+                            </li>
+                        </ul>
+                        <p class="typetit">2.驴妈妈店面支付<span class="gray">（在驴妈妈指定的店面地址进行付款）</span></p>
+                        <p class="text">
+                            店面地址：<br>
+                            上海：上海市普陀区金沙江路1759号圣诺亚大厦B座7F<br>
+                            上海：上海市普陀区金沙江路1759号圣诺亚大厦B座7F<br>
+                            杭州：上海市普陀区金沙江路1759号圣诺亚大厦B座7F<br>
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="order-btn"><button class="pbtn pbtn-big pbtn-orange">&nbsp;&nbsp;下一步&nbsp;&nbsp;</button></div>
             
+            
+            <p>下面这是一些交互的demo</p>
             <div class="order-btn ">
                 <button class="pbtn pbtn-orange btn11">&nbsp;&nbsp;存款账户-验证码&nbsp;&nbsp;</button>
                 <button class="pbtn pbtn-orange btn12">&nbsp;&nbsp;存款账户-手机号&nbsp;&nbsp;</button>

@@ -82,7 +82,7 @@
                     </ul>
                 </div>
                 <div class="tab-switch payment-list J-switch">
-                    <div class="tabcon">
+                    <div class="tabcon selected">
                         <ul class="bank-list clearfix">
                             <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank alipay      " title="支付宝"></i></label></li>
                             <li><label class="radio inline"><input class="input-radio" name="bankpay" type="radio"><i class="bank tenpay      " title="财付通"></i></label></li>

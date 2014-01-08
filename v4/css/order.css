@@ -14,6 +14,8 @@ a:hover{color:#e38;text-decoration: underline;}
 .pink{color:#e38;}
 .dfn{color:#f60;}
 .orange{color:#f60;}
+a.graylink{color:#666;}
+a.graylink:hover{color:#e38;}
 
 .oicon{display:inline-block;background:url(../img/oicon.png) no-repeat;}
 .oicon-plus{width:16px;height:16px;margin-right:5px;background-position:0 0;vertical-align:text-top;}
@@ -248,7 +250,6 @@ a.dot_line{margin:0 3px;height:auto;line-height:1.5;display:inline-block;text-in
 
 .J_num{*zoom:1;}
 
-
 /* 组件个性化 */
 .order-content .tiptext{color:#666;margin:5px 0;}
 .tip-line .pbtn {position: relative;top: -1px;*top:1px;_top:2px;}
@@ -403,12 +404,14 @@ a.dot_line{margin:0 3px;height:auto;line-height:1.5;display:inline-block;text-in
 .paynew,
 .paynew .main{overflow:visible;}
 .paynew .main{position:relative;z-index:20;background:#F0F5FC;border-bottom:3px solid #BCCCEE;}
+.paynew .order-btn{margin:0; text-align:left;padding:20px 30px;border-top:1px solid #BCCCEE;background:#F0F5FC;}
 .paynewbox{padding:0 20px;margin: 20px 0;}
 .pay-price dfn i{font-weight:bold;}
 .pay-title .pay-type{color:#666;padding:0 20px;}
 .paynew .order-tabnav{left:100px;}
 .paynew .order-buy th,.paynew .order-buy td{padding: 2px 8px;}
-.paynew .payment-list{border-width:3px;padding:20px 27px;}
+.paynew .payment-list{border-width:3px;padding:0;}
+.payment-list .xhcontent{padding:20px 27px;}
 .list-block li{display:block;float:none;}
 .paynew .bank-list{*zoom:1;margin-right:-20px;}
 .paynew .bank-list li{margin:0px 20px 12px 4px;min-width: 150px;}
