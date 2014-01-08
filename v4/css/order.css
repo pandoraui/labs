@@ -5,7 +5,7 @@
  */
 
 .wrap{ width:1000px !important;}
-body{font:12px/22px Tahoma,Arial,\5b8b\4f53,sans-serif;color:#000;}
+body{font:12px/22px Tahoma,Arial,\5b8b\4f53,sans-serif;color:#333;}
 .border{border:1px solid #ccc;*zoom:1;}
 a{color:#08c;text-decoration: none;}
 a:hover{color:#e38;text-decoration: underline;}
@@ -13,6 +13,7 @@ a:hover{color:#e38;text-decoration: underline;}
 .text-gray{color:#888;}
 .pink{color:#e38;}
 .dfn{color:#f60;}
+.orange{color:#f60;}
 
 .oicon{display:inline-block;background:url(../img/oicon.png) no-repeat;}
 .oicon-plus{width:16px;height:16px;margin-right:5px;background-position:0 0;vertical-align:text-top;}
@@ -236,7 +237,7 @@ a.dot_line{margin:0 3px;height:auto;line-height:1.5;display:inline-block;text-in
 .order-tabnav{position: absolute;top: -2px;width: 750px;left:180px;}
 .order-tabnav li{position:relative;border:2px solid #cde;border-bottom: 0 none;float: left;font-size: 14px;font-weight: bold;height: 40px;line-height: 38px;margin-left: 3px;text-align: center;}
 .order-tabnav .selected{border-color: #e6e6e6;overflow: visible;}
-.order-tabnav li a {float:left;padding:0 20px;background-color: #fff;border: #fff solid 2px;border-bottom: 0 none;display: block;height: 38px;text-decoration: none;}
+.order-tabnav li a {float:left;padding:0 28px;background-color: #fff;border: #fff solid 2px;border-bottom: 0 none;display: block;height: 38px;text-decoration: none;}
 .order-tabnav .selected a {background-color: #fff;border-color: #9bd;color: #000;height: 41px;outline:none;}
 .order-tabnav li a:hover {text-decoration: none;}
 .order-tabnav .selected a:hover{cursor:default;}
@@ -246,6 +247,7 @@ a.dot_line{margin:0 3px;height:auto;line-height:1.5;display:inline-block;text-in
 .paylink a:hover .ui-arrow-right{border-left-color:#e38;}
 
 .J_num{*zoom:1;}
+
 
 /* 组件个性化 */
 .order-content .tiptext{color:#666;margin:5px 0;}
@@ -393,3 +395,39 @@ a.dot_line{margin:0 3px;height:auto;line-height:1.5;display:inline-block;text-in
 
 /**/
 .booking-policy dd{max-height:140px;_height:140px;overflow-y:auto;}
+
+
+/*支付方式页面改版 2014-01-08 by xiaohan */
+.tab-switch .tabcon{display:none;}
+.tab-switch .selected{display:block;}
+.paynew,
+.paynew .main{overflow:visible;}
+.paynew .main{position:relative;z-index:20;background:#F0F5FC;border-bottom:3px solid #BCCCEE;}
+.paynewbox{padding:0 20px;margin: 20px 0;}
+.pay-price dfn i{font-weight:bold;}
+.pay-title .pay-type{color:#666;padding:0 20px;}
+.paynew .order-tabnav{left:100px;}
+.paynew .order-buy th,.paynew .order-buy td{padding: 2px 8px;}
+.paynew .payment-list{border-width:3px;padding:20px 27px;}
+.list-block li{display:block;float:none;}
+.paynew .bank-list{*zoom:1;margin-right:-20px;}
+.paynew .bank-list li{margin:0px 20px 12px 4px;min-width: 150px;}
+.paynew .slidedown-orderlist{position:absolute;right:20px;bottom:-30px;}
+.paynew .order-details{position:absolute;width:100%;border-bottom:3px solid #BCCCEE; left:0;top:45px;background:#F0F5FC;}
+.paynew .order-list{padding:0 20px 20px;}
+
+.gray{color:#999;}
+.paynew .payment{color:#666;margin-top:20px;}
+.paynew .payment p{margin:5px 0;}
+.paynew .payment p.typetit{padding:5px 10px;background:#F6F6F6;margin:20px 0;}
+.paynew .payment p.text{padding:5px 10px;color:#666;}
+.xtable-data{margin-bottom:10px;}
+.xtable-data tr,.xtable-data td{border:1px solid #ddd;}
+.xtable-data th{border:none;background:#f6f6f6;}
+.xtable-data td.phase{padding-left:30px;text-align:left;width:150px;}
+
+/*在线预授权*/
+.link-verify {position:relative;display:inline-block;padding-right:20px;}
+.link-verify .ui-arrow-bottom{position:absolute;right:4px;top:10px;}
+
+

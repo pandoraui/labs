@@ -60,11 +60,20 @@ $(function(){
         $(this).parents(".check-radio-box").find(".check-radio-item").click();
     });
     
-    
-    $(".slidedown-orderlist").click(function(){
-        $(this).toggleClass("active").parent().find(".order-list").toggleClass("hide");
-        
+    $(".main .J-detail").click(function(){
+        $(this).hide();
+        $(this).siblings(".J-detailbox").toggleClass("hide").css("top",$(this).parent().outerHeight(true)-12);
     })
+    $(".J-detailbox .J-detail").click(function(){
+        $(this).parent().toggleClass("hide");
+        $(this).parent().parent().find(".J-detail").show();
+    })
+    
+    $(".link-verify").click(function(){
+        $(this).toggleClass("active");
+        $(".pay-verify").toggleClass("hide");
+    })
+    
     
     $("b.countdown").ui("countdown",{
         timeauto: true,

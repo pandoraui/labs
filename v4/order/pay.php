@@ -23,9 +23,8 @@
             </div>
             
             <!-- 订单列表 -->
-            <div class="order-list hide">
+            <div class="order-list hide J-detailbox">
                 <div class="dot_line"></div>
-                
                 <!-- 订单信息 -->
                 <div class="c-title"><h4>订单信息</h4></div>
                 <table class="table-full order-buy">
@@ -54,7 +53,7 @@
                 
             </div> <!-- //订单列表 -->
             <div class="hr_c"></div>
-            <span class="view-details slidedown-orderlist">
+            <span class="view-details slidedown-orderlist J-detail">
                 订单详情<i class="ui-arrow-bottom white-ui-arrow-bottom"></i>
             </span>
         </div> <!-- //.main -->
