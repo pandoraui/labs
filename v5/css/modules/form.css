@@ -78,7 +78,7 @@ textarea,
 }
 
 .like-input,
-input,
+.input-text,
 textarea,
 .uneditable-input {
     width: 156px;
@@ -104,7 +104,7 @@ textarea,
     -webkit-box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.075);
        -moz-box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.075);
             box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.075);
-            /* 载入页面刷新时出现黑框
+    /* 载入页面刷新时出现黑框
     -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
        -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
          -o-transition: border linear 0.2s, box-shadow linear 0.2s;
@@ -224,7 +224,6 @@ select[size],
  * 更号框xlarge input-316px select-330px
  * 超大号框xxlarge input-530px select-544px
  */
-
 
 .input-min {
     width: 42px;

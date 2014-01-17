@@ -190,6 +190,17 @@
     color: #f00;
     opacity: 0.8;
     filter: alpha(opacity=80);
+    /* 旋转
+    -webkit-transform-style: preserve-3d;
+       -moz-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+     -webkit-transform: rotateZ(360deg);
+        -moz-transform: rotateZ(360deg);
+             transform: rotateZ(360deg);
+    -webkit-transition: -webkit-transform .8s;
+       -moz-transition:    -moz-transform .8s;
+            transition:         transform .8s;
+    */
 }
 
 /* 功能主题

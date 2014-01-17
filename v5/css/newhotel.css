@@ -1,5 +1,5 @@
 /* newhotel */
-.wrap{width:1200px;}
+.wrap{width:1000px;}
 
 body{font:12px/22px \5b8b\4f53,Tahoma,Arial,sans-serif}
 a{color:#07c;}
@@ -39,10 +39,10 @@ img{vertical-align:middle;}
 .search-dhotel td{padding-bottom: 20px;}
 .search-dhotel td.label{text-align:right;font-size:14px;padding-left: 1em;}
 
-.hslide-box{width:780px;height:320px;float:right;position:relative;z-index:1;overflow: hidden;}
+.hslide-box{width:580px;height:320px;float:right;position:relative;z-index:1;overflow: hidden;}
 .hslideimg{width:780px;height:320px;overflow: hidden;position:relative;z-index:1;}
 .hslideimg li{float:left;display:inline;position:absolute;}
-.hslidenav{position:absolute;z-index:10;width:150px;left:50%;bottom:20px;margin-left:-75px;}
+.hslidenav{position:absolute;z-index:10;width:210px;left:50%;bottom:20px;margin-left:-105px;}
 .hslidenav li{float:left;display:inline;text-indent:-9999px;width:15px;height:15px;margin:0 5px;background:url(../img/dhotel.png) -260px -136px no-repeat;cursor:pointer;}
 .hslidenav li:hover,
 .hslidenav li.active{background-position:-289px -135px;}
@@ -97,7 +97,7 @@ a.text-cover .ctext em{color:#fff;text-indent: 5px;display:block;}
 
 
 .ghotel-list .content{position:relative;height:300px;overflow: hidden;}
-.ghotel-listbox li{position:absolute;z-index:2;left:0;top:0;}
+.ghotel-listbox li{position:absolute;z-index:2;left:0;top:0;overflow:hidden;}
 .ghotel-listbox .g1{width:400px;height:300px;}
 .ghotel-listbox .g2,
 .ghotel-listbox .g5,
@@ -126,6 +126,24 @@ a.text-cover .ctext em{color:#fff;text-indent: 5px;display:block;}
 .icon-inputdate{width:24px;height:30px;background-position:right 5px;}
 .dinput-date .icon-inputdate{float:right;}
 
+
+/*css3动画*/
+.dhotel-listbox img,
+.ghotel-listbox img{
+    vertical-align: top;
+    -webkit-transition: all .3s ease-in-out;
+       -moz-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
+}
+.dhotel-listbox a:hover img,
+.ghotel-listbox a:hover img{
+    -webkit-transform: scale(1.05);
+       -moz-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
+}
+
 /**
   max 480 767 979
       768-979
@@ -141,7 +159,9 @@ a.text-cover .ctext em{color:#fff;text-indent: 5px;display:block;}
 @media (min-width: 1200px) {
     
 }
-@media (max-width: 1199px) {
-    .wrap{ width:1000px;}
-    .hslide-box{width:580px;}
+@media (min-width: 1240px) {
+   .responsive .wrap{ width:1200px;}
+   .responsive .hslide-box{width:780px;}
 }
+
+
