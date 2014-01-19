@@ -1,0 +1,89 @@
+/* dest.css 景点门票详情页
+ * 2014-01-16 by xiaohan
+**/
+.wrap{width:1000px;}
+
+body{font:12px/22px \5b8b\4f53,Tahoma,Arial,sans-serif;color:#333;}
+img{vertical-align:middle;}
+a{color:#07c;}
+a:hover{color:#e38;}
+
+.JS_tabsbox .tabcon,
+.JS_vtabsbox .tabcon{display:none;}
+.JS_tabsbox .selected,
+.JS_vtabsbox .selected{display:block;}
+
+/*颜色*/
+.gray{color:gray;}
+
+.icon{background:url(../img/dest.png) 9999px 9999px no-repeat;_background:url(../img/dest8.png) 9999px 9999px no-repeat;display:inline-block;}
+.dicon-rarr{background-position: 0 0;}
+
+
+
+/*间隔线*/
+.dot-line,.solid-line,hr{display:block;margin:10px 0;clear:both;height:0;overflow:hidden;text-indent:-9999px;}
+.dot-line{border-bottom:1px dashed #ddd; }
+.solid-line{border-bottom:1px solid #ddd; }
+a.dot-line{margin:0 3px;height:auto;line-height:1.5;display:inline-block;text-indent:0;border-bottom:1px dashed #08b;cursor:pointer;}
+hr{margin: 15px 0;border:1px solid #ddd;border-width:0 0 1px;}
+
+a.text-cover{position:relative;display:block;overflow:hidden;}
+a.text-cover:hover{text-decoration: none;}
+a.text-cover .ctext{position:absolute;bottom:-100px;left:0;right:0;width:100%;overflow: hidden;}
+a.text-cover .ctext{background:rgba(0,0,0,.5);filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr=#7F000000, endColorstr=#7F000000);color:#fff;padding:5px 0;line-height:18px}
+a.text-cover .ctext i,
+a.text-cover .ctext em{color:#fff;text-indent: 5px;display:block;}
+.hitem .ctext i,
+.hitem .ctext em{_width:100%;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+
+/*面包屑导航*/
+.crumbs{position:relative;border-bottom:1px solid #ddd;padding-bottom:10px;margin-top:10px;margin-bottom: 10px;font-family:\5b8b\4f53,sans-serif; clear:both;}
+.crumbs-link {float:left;display:inline;color:#999;}
+.crumbs-link a{color:#666;}
+.crumbs-link a:hover{color:#e38;}
+.crumbs-link a.current{color:#999;text-decoration: none;}
+.crumbs-link .icon-ihome{vertical-align: text-top;position:relative;top:-1px;margin-right:2px;}
+.crumbs .other-info{float:right;display:inline;color:#bbb;}
+
+.overview .dtitle{margin:20px 0;}
+.overview .dimg,
+.overview .dimg img{float:left;display:inline;}
+.overview .dinfo{position:relative;float:right;display:inline;width:366px;height:266px;border:2px solid #f6f6f6;}
+.overview .dimg{width:620px;}
+.overview .dimg img{float:left;margin:0 5px 5px 0;}
+.comment-info{position:absolute;width:96%;padding:0 2%;height:100px;bottom:0;left:0;background:#fafafa}
+
+.overview .xorder{float:right;}
+.overview .titbox{overflow:hidden;}
+.overview .dtit{display:inline-block;*display:inline;*zoom:1;vertical-align:middle;margin-right:10px;font-family:"Microsoft YaHei",\5FAE\8F6F\96C5\9ED1;font-weight:400;height:40px;line-height:40px;font-size:30px;color:#666;}
+
+.xorder .btn-large{height:38px;line-height:38px;padding:0 15px;}
+.xorder .btn-text{font-family:"Microsoft YaHei",\5FAE\8F6F\96C5\9ED1;font-weight:400;}
+.xorder .btn .icon-r{margin-top:3px;}
+.xorder .price{display:inline-block;vertical-align: middle;padding:10px 10px 0 0;color:#666;}
+.xorder dfn{font-size:20px;}
+.xorder dfn i{font-size:36px;font-weight:bold;}
+
+
+/**
+  max 480 767 979
+      768-979
+  min 980 1200 
+  @media (min-width: 768px) and (max-width: 979px) {}
+  @media (min-width: 1200px) {}
+  @media (min-width: 980px) {}
+  @media (max-width: 480px) {}
+  @media (max-width: 767px) {}
+  @media (max-width: 979px) {}
+*/
+
+@media (min-width: 1200px) {
+    
+}
+@media (min-width: 1240px) {
+   .responsive .wrap{ width:1200px;}
+   .responsive .hslide-box{width:780px;}
+}
+
+
