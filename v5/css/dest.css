@@ -5,8 +5,10 @@
 
 body{font:12px/22px \5b8b\4f53,Tahoma,Arial,sans-serif;color:#333;}
 img{vertical-align:middle;}
-a{color:#07c;}
+a{color:#666;}
 a:hover{color:#f60;}
+.plink{color:#07c;}
+.plink:hover{color:#f60;}
 
 .JS_tabsbox .tabcon,
 .JS_vtabsbox .tabcon{display:none;}
@@ -18,6 +20,15 @@ a:hover{color:#f60;}
 .orange{color:#f60;}
 .icon{background:url(../img/dest.png) 9999px 9999px no-repeat;_background:url(../img/dest8.png) 9999px 9999px no-repeat;display:inline-block;}
 .dicon-rarr{background-position: 0 0;}
+.dicon-local{width:16px;height:16px;background-position: 0 -30px;}
+.dicon-time{width:20px;height:20px;background-position: 0 -60px;}
+.dicon-search{width:20px;height:20px;background-position: 0 -128px;}
+
+.dicon-policy       {background-position: -40px 0;}
+.dicon-activity     {background-position: -40px -30px;}
+.dicon-introduction {background-position: -40px -60px;}
+.dicon-traffic      {background-position: -40px -90px;}
+.dicon-comments     {background-position: -40px -120px;}
 
 /*工具类*/
 .num{font-family: arial,sans-serif;color:#f60;}
@@ -34,6 +45,8 @@ dfn i{font-weight:bold;padding:0 2px;}
 .dl-hor dt{float:left;display:inline;*zoom:1;margin-right:10px;}
 .dl-hor dd{overflow:hidden;overflow:hidden;}
 .dl-ver dt,.dl-ver dd{display:block;}
+ul.ul{margin-bottom:20px;}
+ul.ul li{padding-left:18px;line-height:24px;background:url(../img/dest.png) -185px 7px no-repeat;}
 
 /*间隔线*/
 .dot-line,.solid-line,hr{display:block;margin:10px 0;clear:both;height:0;overflow:hidden;text-indent:-9999px;}
@@ -72,6 +85,15 @@ a.text-cover .ctext em{color:#fff;text-indent: 5px;display:block;}
 .overview .titbox{overflow:hidden;}
 .overview .dtit{display:inline-block;*display:inline;*zoom:1;vertical-align:middle;margin-right:10px;font-family:"Microsoft YaHei",\5FAE\8F6F\96C5\9ED1;font-weight:400;height:40px;line-height:40px;font-size:30px;color:#666;}
 
+.dinfo{color:#666;}
+.sec-info{padding:10px;}
+.sec-info .xlink{float:right;}
+.xlink .dicon-local{float: left;position: relative;top: 4px;}
+.sec-info .dl-hor{margin-bottom:5px;}
+.sec-info dt{min-width:66px;_width:66px;}
+.tags-active{display:inline-block;height:18px;line-height:18px;border:1px solid #FFE0CC;padding:0 3px;background:#FFF8F3;color:#f60;}
+.link-active a{text-decoration:underline;display:block;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+
 .xorder .btn-large{height:38px;line-height:38px;padding:0 15px;}
 .xorder .btn-text{font-family:"Microsoft YaHei",\5FAE\8F6F\96C5\9ED1;font-weight:400;}
 .xorder .btn .icon-r{margin-top:3px;}
@@ -86,6 +108,7 @@ a.text-cover .ctext em{color:#fff;text-indent: 5px;display:block;}
 .stitle .stit{float:left;padding-left:15px;color:#666;font-size:14px;}
 .sidebox .scontent{padding:1px 15px;}
 
+.dside{margin-top: 40px;}
 .dside a{color:#666;}
 .dside a:hover{color:#f60;}
 .dside a.btn-orange,.dside a.btn-orange:hover{color:#fff;}
@@ -101,12 +124,13 @@ a.text-cover .ctext em{color:#fff;text-indent: 5px;display:block;}
 .dside-tuan .btn{float:right;}
 .dside-tuan dfn {position:relative;top:4px;}
 .dside-tuan dfn i{font-size:30px;font-weight:bold;}
+.dside-tuan .dicon-time{float: left;position: relative;top: 1px;margin-right:4px;}
 
 .dside-search{}
-.dsearch{}
+.dsearch .dicon-search{position:absolute;left:7px;top:5px;}
 .dside-search .scontent{padding-top:15px;padding-bottom:10px;}
 .dsearch .input-text{width:180px;border-right:none;}
-.dsearch .dsearch-btn{display:inline-block;vertical-align: middle;width:30px;height:28px;border:1px solid #FF7700;background:#FF8800;}
+.dsearch .dsearch-btn{position:relative;display:inline-block;vertical-align: middle;width:30px;height:28px;border:1px solid #FF7700;background:#FF8800;}
 .dsearch .dsearch-btn:hover{background:#FF7700;}
 .dside hr{border-color:#eee;margin:16px 0 10px;}
 .dside-search dt{color:#999;}
@@ -129,11 +153,28 @@ p.distance{color:#999;}
 .dside-guide .scontent{padding-top:10px;padding-bottom:15px;}
 
 
+/*景点介绍等主内容区域*/
+.dmain{color:#666;}
+.dmain .dtitle{border-bottom:2px solid #ddd;height:38px;line-height:38px;position:relative;margin-top:40px;}
+.dtit{float:left;padding-left:30px;font-family:"Microsoft YaHei",\5FAE\8F6F\96C5\9ED1;font-weight:400;font-size:22px;color:#666;}
+.dtit .icon{position:absolute;left:0;bottom:-2px;border-bottom:2px solid #f80;width:24px;height:29px;}
 
+.dmain h6{margin:20px 0 5px;font-size:12px;font-weight:bold;}
+.dmain h5{margin:20px 0 10px;font-size:14px;}
+.dmain h4{margin:20px 0 15px;font-size:16px;}
 
+.policy p{color:#999;margin:10px 0 20px;}
+.introduction .ul,
+.introduction p{color:#999;margin:10px 0 20px;}
+.introduction .ul li{margin:7px 0;}
+.imgbox{margin-right:-10px;*zoom:1;overflow:hidden;}
+.imgbox img{float:left;display:inline;margin-right:10px;}
+.ul-imgtext{overflow:hidden;margin-right:-35px;*zoom:1;}
+.ul-imgtext li{float:left;display:inline;width:220px;margin:0 30px 20px 0;}
+.ul-imgtext h6{margin:15px 0 5px;}
+.ul-imgtext p{margin:5px 0 10px;}
 
-
-
+.traffic-map{height:400px;margin:20px 0;}
 
 
 
