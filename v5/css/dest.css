@@ -7,8 +7,8 @@ body{font:12px/22px \5b8b\4f53,Tahoma,Arial,sans-serif;color:#333;}
 img{vertical-align:middle;}
 a{color:#666;}
 a:hover{color:#f60;}
-.plink{color:#07c;}
-.plink:hover{color:#f60;}
+.plink,.view-details{color:#09c;}
+.plink:hover,.view-details:hover{color:#f60;}
 
 .JS_tabsbox .tabcon,
 .JS_vtabsbox .tabcon{display:none;}
@@ -31,10 +31,13 @@ a:hover{color:#f60;}
 .dicon-comments     {background-position: -40px -120px;}
 
 /*工具类*/
-.num{font-family: arial,sans-serif;color:#f60;}
+.num,del{font-family: arial,sans-serif;}
+.num{color:#f60;}
 dfn em{color:#999;font-size:12px;}
 dfn i{font-weight:bold;padding:0 2px;}
-.btn{border-radius:2px;}
+del{color:#bababa;}
+.btn{border-radius:2px;margin-right:0;}
+
 .ul-hor:after,
 .ul-ver:after,
 .dl-hor:after,
@@ -83,7 +86,7 @@ a.text-cover .ctext em{color:#fff;text-indent: 5px;display:block;}
 
 .overview .xorder{float:right;}
 .overview .titbox{overflow:hidden;}
-.overview .dtit{display:inline-block;*display:inline;*zoom:1;vertical-align:middle;margin-right:10px;font-family:"Microsoft YaHei",\5FAE\8F6F\96C5\9ED1;font-weight:400;height:40px;line-height:40px;font-size:30px;color:#666;}
+.overview .tit{display:inline-block;*display:inline;*zoom:1;vertical-align:middle;float:none;padding-left:0;margin-right:10px;font-family:"Microsoft YaHei",\5FAE\8F6F\96C5\9ED1;font-weight:400;height:40px;line-height:40px;font-size:30px;color:#666;}
 
 .dinfo{color:#666;}
 .sec-info{padding:10px;}
@@ -101,6 +104,54 @@ a.text-cover .ctext em{color:#fff;text-indent: 5px;display:block;}
 .xorder dfn{font-size:20px;}
 .xorder dfn i{font-size:36px;font-weight:bold;}
 
+.dest-main .tiptext .tip-icon{float:left;}
+.dest-main .tiptext p{overflow:hidden;}
+
+/* dest产品列表 */
+.ptable{}
+.ptable td{padding: 0;vertical-align: top;}
+.ptdname{width:5%;padding:0;background:#fbfbfb;color:#666;}
+.ptdname .ptname{width:80px;padding:20px 8px;}
+.ptdname h5{font-size:14px;}
+.ptdname p{font-size:12px;color:#999;}
+
+thead.pttit,
+tbody.ptbox{border-bottom:1px solid #eee;}
+.ptdlist{padding:10px 0;background:#fff;}
+.ptditem{clear:both;padding:10px 0;overflow:hidden;color:#999;}
+.ptdlist .link-more{color:#09c;display:inline-block;margin-left:10px;padding:5px 0;}
+.ptdlist .link-more:hover{color:#f60;}
+
+.pttit .pdpaytype{padding:0 0 0 10px;}
+.pdpaytype,
+.pdlvprice,
+.pdprice{float:right;display:inline;}
+.pdpaytype { width:135px;padding-right:10px;}
+.pdlvprice { width:135px;}
+.pdprice   { width:70px;}
+.pdname    { overflow:hidden; padding-left:10px;}
+.ptditem .pdetails { display:none;}
+
+.ipay{display:inline-block;border-radius:2px;}
+.ipay-online{background:#FFF9E1;}
+.ipay-local{background:#FBFBFB;}
+.itype{display:inline-block;vertical-align:middle;height:26px;line-height:26px;padding:0 8px;}
+
+.pdlvprice dfn{display:inline-block;vertical-align:middle;font-size:14px;}
+.pdlvprice dfn i{font-size:20px;}
+.pdprice del{display:inline-block;vertical-align:middle;}
+.ptlink {display:inline-block;vertical-align:middle;max-width:490px;font-size:14px;color:#09c;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+.ptlink:hover {color:#f60;}
+.ptditem-hover,
+.ptditem-selected{background:#fbfbfb;}
+.ptditem-selected{padding-bottom:0;}
+.ptditem-selected .pdetails{display:block;}
+.pdetails .tiptext{background:#fff;margin:10px 0 0;color:#999;}
+.pdetails .dl-hor{margin-bottom:5px;}
+.pdetails dt{font-weight:bold;margin-right:20px;}
+.pdetails .view-details{float:right;clear:both;}
+
+/*侧边栏及主内容 */
 .dside{float:right;display:inline;width:260px;margin-left:20px;}
 .dmain{overflow:hidden;}
 .sidebox{border:1px solid #eee;margin-bottom:20px;}
@@ -164,6 +215,7 @@ p.distance{color:#999;}
 .dmain h4{margin:20px 0 15px;font-size:16px;}
 
 .policy p{color:#999;margin:10px 0 20px;}
+.introduction h4{font-family:"Microsoft YaHei",\5FAE\8F6F\96C5\9ED1;}
 .introduction .ul,
 .introduction p{color:#999;margin:10px 0 20px;}
 .introduction .ul li{margin:7px 0;}
@@ -174,8 +226,8 @@ p.distance{color:#999;}
 .ul-imgtext h6{margin:15px 0 5px;}
 .ul-imgtext p{margin:5px 0 10px;}
 
+.traffic p{color:#999;}
 .traffic-map{height:400px;margin:20px 0;}
-
 
 
 

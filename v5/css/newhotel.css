@@ -54,7 +54,7 @@ img{vertical-align:middle;}
 .hslide-box:hover .hnext{display:block;}
 /*列表*/
 .hbox{margin:20px 0 10px;clear:both;}
-.hbox h3{display:inline;float:left;width:230px;font-size:22px;font-family:Microsoft YaHei;font-weight:400;}
+.hbox h3{display:inline;float:left;width:230px;font-size:22px;"Microsoft YaHei",\5FAE\8F6F\96C5\9ED1;font-weight:400;}
 .hbox .htitle{clear:both;margin:10px 0;height:30px;}
 .hbox .htitle .hlistnav{float:right;}
 .hbox .htitle li{float:left;display:inline;margin-right:10px;}
