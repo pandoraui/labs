@@ -1,7 +1,7 @@
 
 <dl class="ptditem">
     <dd class="pdpaytype">
-        <span class="ipay ipay-online"><i class="itype">在线支付</i><a href="#" class="btn btn-w btn-small btn-gray">查看</a></span>
+        <span class="ipay ipay-online"><i class="itype">在线预付</i><a href="#" class="btn btn-w btn-small btn-link">查看</a></span>
     </dd>
     <dd class="pdlvprice">
         <dfn>&yen;<i>175</i></dfn>
@@ -10,7 +10,7 @@
     <dd class="pdprice"><del>&yen;288</del></dd>
     <dt class="pdname">
         <a href="#" class="ptlink">恐龙园 - 成人票（12.1-12.31）</a>
-        <span class="tags tags-lightblue">折扣</span>
+        <p>园内四大过山车，感受神奇加速度！</p>
     </dt>
     <dd class="pdetails">
         <div class="tiptext tip-light">
@@ -41,7 +41,7 @@
 </dl>
 <dl class="ptditem">
     <dd class="pdpaytype">
-        <span class="ipay ipay-local"><i class="itype">景区支付</i><a href="#" class="btn btn-w btn-small btn-gray">查看</a></span>
+        <span class="ipay ipay-local"><i class="itype">景区支付</i><a href="#" class="btn btn-w btn-small btn-link">查看</a></span>
     </dd>
     <dd class="pdlvprice">
         <dfn>&yen;<i>234</i></dfn>
@@ -49,6 +49,7 @@
     <dd class="pdprice"><del>&yen;308</del></dd>
     <dt class="pdname">
         <a href="javascript:;" class="ptlink">恐龙园圣诞夜 - 大学生票 (浙江、江苏大学生特惠)</a>
+        <p>园内四大过山车，感受神奇加速度！</p>
     </dt>
     <dd class="pdetails">
         <div class="tiptext tip-light">
@@ -79,7 +80,7 @@
 </dl>
 <dl class="ptditem">
     <dd class="pdpaytype">
-        <span class="ipay ipay-local"><i class="itype">景区支付</i><a href="#" class="btn btn-w btn-small btn-gray">查看</a></span>
+        <span class="ipay ipay-local"><i class="itype">景区支付</i><a href="#" class="btn btn-w btn-small btn-link">查看</a></span>
     </dd>
     <dd class="pdlvprice">
         <dfn>&yen;<i>234</i></dfn>
@@ -87,7 +88,7 @@
     <dd class="pdprice"><del>&yen;308</del></dd>
     <dt class="pdname">
         <a href="#" class="ptlink">恐龙园圣诞夜 - 大学生票 (浙江、江苏大学生特惠)如果标题很长很长很长很长很长很长怎么办</a>
-        <span class="tags tags-lightblue">折扣</span>
+        <p>园内四大过山车，感受神奇加速度！</p>
     </dt>
     <dd class="pdetails">
         <div class="tiptext tip-light">

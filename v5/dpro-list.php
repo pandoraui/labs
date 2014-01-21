@@ -14,7 +14,7 @@
                 </td>
             </tr>
         </thead>
-        <tbody id="destorder" class="ptbox">
+        <tbody class="ptbox">
             <tr>
                 <td class="ptdname">
                     <div class="ptname"><h5>单门票</h5></div>
@@ -62,10 +62,10 @@
                 </td>
             </tr>
         </tbody><!--//#destorder-->
-        <tbody id="freetour" class="ptbox">
+        <tbody class="ptbox">
             <tr>
                 <td class="ptdname">
-                    <div class="ptname"><h5>自由行</h5><p>景点+酒店</p></div>
+                    <div id="dfreetour" class="ptname"><h5>自由行</h5><p>景点+酒店</p></div>
                 </td>
                 <td>
                     <div class="ptdlist">
@@ -75,10 +75,10 @@
                 </td>
             </tr>
         </tbody><!--//#freetour-->
-        <tbody id="tuangou" class="ptbox">
+        <tbody class="ptbox">
             <tr>
                 <td class="ptdname">
-                    <div class="ptname"><h5>跟团游</h5><p>上海出发</p>
+                    <div id="dtuangou" class="ptname"><h5>跟团游</h5><p>上海出发</p>
                     </div>
                 </td>
                 <td>

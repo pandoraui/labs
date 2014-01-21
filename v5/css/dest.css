@@ -37,6 +37,8 @@ dfn em{color:#999;font-size:12px;}
 dfn i{font-weight:bold;padding:0 2px;}
 del{color:#bababa;}
 .btn{border-radius:2px;margin-right:0;}
+.btn-link{background:#fbfbfb;}
+.btn-link:hover{background:#fbfbfb;color:#f60;}
 
 .ul-hor:after,
 .ul-ver:after,
@@ -108,6 +110,16 @@ a.text-cover .ctext em{color:#fff;text-indent: 5px;display:block;}
 .dest-main .tiptext p{overflow:hidden;}
 
 /* dest产品列表 */
+.tab-outer{margin:20px 0 15px;height:40px;}
+.tab-dest{position:relative;height:40px;border-bottom:1px solid #ccc;}
+.tab-dest .ul-hor{}
+.tab-dest li{margin-right:1px;}
+.tab-dest li a{padding:0 20px;float:left;height:38px;line-height:38px;background:#f1f1f1;color:#333;font-size:14px;border:1px solid #f1f1f1;border-bottom:none;}
+.tab-dest li a:hover,
+.tab-dest li a span{color:#f60;}
+.tab-dest li.selected{font-weight:bold;}
+.tab-dest li.selected a{padding-bottom:2px;background:#fff;color:#000;border-color:#ccc;}
+
 .ptable{}
 .ptable td{padding: 0;vertical-align: top;}
 .ptdname{width:5%;padding:0;background:#fbfbfb;color:#666;}
@@ -122,7 +134,8 @@ tbody.ptbox{border-bottom:1px solid #eee;}
 .ptdlist .link-more{color:#09c;display:inline-block;margin-left:10px;padding:5px 0;}
 .ptdlist .link-more:hover{color:#f60;}
 
-.pttit .pdpaytype{padding:0 0 0 10px;}
+.pttit .pdpaytype{padding:0 2px 0 8px;}
+.pttit .ptditem{padding: 5px 0;}
 .pdpaytype,
 .pdlvprice,
 .pdprice{float:right;display:inline;}
@@ -136,6 +149,7 @@ tbody.ptbox{border-bottom:1px solid #eee;}
 .ipay-online{background:#FFF9E1;}
 .ipay-local{background:#FBFBFB;}
 .itype{display:inline-block;vertical-align:middle;height:26px;line-height:26px;padding:0 8px;}
+.pdname p{color:#b9b9b9;}
 
 .pdlvprice dfn{display:inline-block;vertical-align:middle;font-size:14px;}
 .pdlvprice dfn i{font-size:20px;}

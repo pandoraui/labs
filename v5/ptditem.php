@@ -1,7 +1,7 @@
 
 <dl class="ptditem">
     <dd class="pdpaytype">
-        <span class="ipay ipay-online"><i class="itype">在线支付</i><a href="#" class="btn btn-w btn-small btn-orange">预订</a></span>
+        <span class="ipay ipay-online"><i class="itype">在线预付</i><a href="#" class="btn btn-w btn-small btn-orange">预订</a></span>
     </dd>
     <dd class="pdlvprice">
         <dfn>&yen;<i>175</i></dfn>
