@@ -7,8 +7,8 @@ body{font:12px/22px \5b8b\4f53,Tahoma,Arial,sans-serif;color:#333;}
 img{vertical-align:middle;}
 a{color:#666;}
 a:hover{color:#f60;}
-.plink,.view-details{color:#09c;}
-.plink:hover,.view-details:hover{color:#f60;}
+.dlink,.view-details{color:#09c;}
+.dlink:hover,.view-details:hover{color:#f60;}
 
 .JS_tabsbox .tabcon,
 .JS_vtabsbox .tabcon{display:none;}
@@ -18,7 +18,8 @@ a:hover{color:#f60;}
 /*颜色*/
 .gray{color:gray;}
 .orange{color:#f60;}
-.icon{background:url(../img/dest.png) 9999px 9999px no-repeat;_background:url(../img/dest8.png) 9999px 9999px no-repeat;display:inline-block;}
+.icon,ul.ul li,.score-level,.score-level i{background:url(../img/dest.png) 9999px 9999px no-repeat;_background:url(../img/dest8.png) 9999px 9999px no-repeat;}
+.icon{display:inline-block;}
 .dicon-rarr{background-position: 0 0;}
 .dicon-local{width:16px;height:16px;background-position: 0 -30px;}
 .dicon-time{width:20px;height:20px;background-position: 0 -60px;}
@@ -51,7 +52,7 @@ del{color:#bababa;}
 .dl-hor dd{overflow:hidden;overflow:hidden;}
 .dl-ver dt,.dl-ver dd{display:block;}
 ul.ul{margin-bottom:20px;}
-ul.ul li{padding-left:18px;line-height:24px;background:url(../img/dest.png) -185px 7px no-repeat;}
+ul.ul li{padding-left:18px;line-height:24px;background-position:-185px 7px;}
 
 /*间隔线*/
 .dot-line,.solid-line,hr{display:block;margin:10px 0;clear:both;height:0;overflow:hidden;text-indent:-9999px;}
@@ -244,9 +245,30 @@ p.distance{color:#999;}
 .traffic-map{height:400px;margin:20px 0;}
 
 
+/*点评详情列表*/
+.cominfo{margin:20px 0;overflow:hidden;background:#fbfbfb;}
+.cominfo .dscore{float:left;width:320px;padding:10px;overflow:hidden;}
+.cominfo .dtext{float:left;padding:30px 20px 10px 10px;}
+.cominfo .comlevel,
+.cominfo .scorebox{display:inline-block;vertical-align:middle;}
+.comlevel dfn{font-size:16px;}
+.comlevel dfn i{font-size:36px;}
+.comlevel dfn em{padding-right:5px;position:relative;top:-6px;}
+.cominfo .scorebox{padding-left:20px;}
+.score-level,
+.score-level i{display:inline-block;vertical-align:middle;width:70px;height:22px;}
+.score-level{background-position:-79px 4px;}
+.score-level i{float:left;background-position:-79px -16px;}
+.cominfo .dtext p{margin:5px 0;}
 
-
-
+.tab-dcom{border-bottom:1px solid #ddd;}
+.tab-dcom li{margin-right:30px;}
+.tab-dcom li a{float:left;border-bottom:1px solid #fff;color:#333;height:24px;line-height:24px;font-size:14px;}
+.tab-dcom li a span{font-size:12px;color:#999;}
+.tab-dcom li a:hover{color:#f60;text-decoration:none;}
+.tab-dcom li a:hover span{color:#f60;text-decoration:none;}
+.tab-dcom li.selected a{font-weight:bold;border-bottom:1px solid #ccc;}
+.tab-dcom li.selected a span{font-weight:normal;}
 
 /**
   max 480 767 979
@@ -265,7 +287,6 @@ p.distance{color:#999;}
 }
 @media (min-width: 1240px) {
    .responsive .wrap{ width:1200px;}
-   .responsive .hslide-box{width:780px;}
 }
 
 
