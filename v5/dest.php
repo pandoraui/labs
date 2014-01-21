@@ -228,7 +228,7 @@
                             <p>殷切贴心的景区服务，特别为您安排了米老鼠早晨传呼、睡前电视播放精彩迪士尼故事等等，让您享受与众不同的假期。</p>
                         </li>
                         <li>
-                            <img src="//placehold.it/220x128" width="220" height="128" alt="某景点图片" />
+                            <img src="http://localhost/pandoraui/placehold/source/600x400/000/fff" width="220" height="128" alt="某景点图片" />
                             <h6>迪士尼贴心服务</h6>
                             <p>殷切贴心的景区服务，特别为您安排了米老鼠早晨传呼、睡前电视播放精彩迪士尼故事等等，让您享受与众不同的假期。</p>
                         </li>
@@ -277,6 +277,7 @@
 
 
 <!--公共底部-->
+<script src="http://pic.lvmama.com/js/v4/copyright.js"></script>
 
 <!-- 频道公用js
 <script src="http://pic.lvmama.com/min/index.php?f=/js/new_v/jquery-1.7.2.min.js,/js/ui/lvmamaUI/lvmamaUI.js,/js/new_v/top/header-air_new.js"></script>
