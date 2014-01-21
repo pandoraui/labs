@@ -118,7 +118,7 @@
         <div class="hr_a"></div>
         <div class="dside">
             <?php include("dside.php"); ?>
-        </div>
+        </div><!--//.dside-->
         <div class="dmain">
             <div id="policy" class="dbox policy">
                 <div class="dtitle">
@@ -266,11 +266,7 @@
                     <h3 class="dtit"><i class="icon dicon-comments"></i>用户点评</h3>
                 </div>
                 <div class="dcontent">
-                    <div class="cominfo">
-                        
-                    </div>
-                    
-                    
+                    <?php include("dcomment.php"); ?>
                 </div>
             </div><!--//.dbox-->
             
