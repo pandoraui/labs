@@ -24,6 +24,11 @@ a:hover{color:#f60;}
 .dicon-local{width:16px;height:16px;background-position: 0 -30px;}
 .dicon-time{width:20px;height:20px;background-position: 0 -60px;}
 .dicon-search{width:20px;height:20px;background-position: 0 -128px;}
+.dicon-plus,.dicon-dcom{width:16px;height:16px;float: left;position: relative;top: 2px;margin-right:4px;}
+.dicon-plus{background-position: 0 -90px;}
+.dicon-dcom{background-position: 0 -107px;}
+a:hover .dicon-plus{background-position: -20px -90px;}
+a:hover .dicon-dcom{background-position: -20px -107px;}
 
 .dicon-policy       {background-position: -40px 0;}
 .dicon-activity     {background-position: -40px -30px;}
@@ -269,6 +274,32 @@ p.distance{color:#999;}
 .tab-dcom li a:hover span{color:#f60;text-decoration:none;}
 .tab-dcom li.selected a{font-weight:bold;border-bottom:1px solid #ccc;}
 .tab-dcom li.selected a span{font-weight:normal;}
+
+.dcom-item{margin-bottom:20px;}
+.feed-info{margin:20px 0 10px 0;height:26px;line-height:26px;background:#f6f6f6;}
+.feed-info .feed-date,
+.feed-info .feed-user{float:right;display:inline;padding:0 10px 0 20px;color:#ccc;}
+.feed-score{color:#999;}
+.feed-score .feed-item{padding:0 0 0 10px;}
+
+.dbackinfo{float:right;display:inline;width:180px;text-align:right;padding-right:10px;}
+.dcomplus,.dcomuser{display:inline-block;}
+.dcom-info{padding-left:10px;}
+.dcom-text{overflow:hidden;color:#333;}
+.dfeeduser{clear:both;text-align:right;padding:0 10px;}
+.dfeeduser a:hover{color:#333;}
+.s-feed{color:#ddd;}
+.feed-discuss{padding:0 10px}
+.feed-discuss .tip-arrow-1{right:8px;}
+.feeds-reply-box .textarea{height:16px;line-height:16px;width: 86%;}
+.feeds-reply-box .btn{vertical-align:top;}
+.feeds-reply-box .dform{margin:5px 0 10px;}
+.feed-discuss .tip-default{background:#fbfbfb;border-color:#f3f3f3;}
+.feed-discuss .tip-arrow em{color:#f3f3f3;}
+.feed-discuss .tip-arrow i{color:#fbfbfb;}
+.feed-comments{color:#999;}
+.lv-recomment span{color:#f60;}
+
 
 /**
   max 480 767 979

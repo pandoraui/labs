@@ -8,7 +8,7 @@
 
 <!--生产线引用-->
 <link rel="stylesheet" href="http://pic.lvmama.com/min/index.php?f=/styles/v5/base.css,/styles/v5/common.css,/styles/new_v/header-air.css" >
-<link rel="stylesheet" href="http://pic.lvmama.com/min/index.php?f=/styles/v5/modules/form.css,/styles/v5/modules/button.css,/styles/v5/modules/table.css,/styles/v5/modules/tags.css,/styles/v5/modules/tip.css" />
+<link rel="stylesheet" href="http://pic.lvmama.com/min/index.php?f=/styles/v5/modules/form.css,/styles/v5/modules/button.css,/styles/v5/modules/table.css,/styles/v5/modules/tags.css,/styles/v5/modules/tip.css,/styles/v5/modules/paging.css" />
 <link rel="stylesheet" href="http://pic.lvmama.com/min/index.php?f=/styles/v5/dest.css" />
 
 <!--本地样式-->
@@ -278,14 +278,14 @@
 
 <!--公共底部-->
 
-<!-- 频道公用js-->
+<!-- 频道公用js
 <script src="http://pic.lvmama.com/min/index.php?f=/js/new_v/jquery-1.7.2.min.js,/js/ui/lvmamaUI/lvmamaUI.js,/js/new_v/top/header-air_new.js"></script>
 <script src="http://pic.lvmama.com/min/index.php?f=/js/v5/modules/placeholder.js"></script>
-<!--线上引用
+--><!--线上引用
 <script src="http://pic.lvmama.com/min/index.php?f=/js/v5/newhotel.js"></script>
 -->
-<!--本地引用-->
+<!--本地引用
 <script src="js/dest.js"></script>
-
+-->
 </body>
 </html>
