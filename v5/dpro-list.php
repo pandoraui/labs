@@ -21,7 +21,9 @@
                 </td>
                 <td>
                     <div class="ptdlist">
-                        <?php include("ptditem.php"); ?>
+                        <div class="pdlist-inner">
+                            <?php include("ptditem.php"); ?>
+                        </div>
                     </div>
                 </td>
             </tr>
@@ -33,7 +35,9 @@
                 </td>
                 <td>
                     <div class="ptdlist">
-                        <?php include("ptditem.php"); ?>
+                        <div class="ptdlist-inner">
+                            <?php include("ptditem.php"); ?>
+                        </div>
                     </div>
                 </td>
             </tr>
@@ -45,7 +49,9 @@
                 </td>
                 <td>
                     <div class="ptdlist">
-                        <?php include("ptditem.php"); ?>
+                        <div class="ptdlist-inner">
+                            <?php include("ptditem.php"); ?>
+                        </div>
                     </div>
                 </td>
             </tr>
@@ -57,7 +63,9 @@
                 </td>
                 <td>
                     <div class="ptdlist">
-                        <?php include("ptditem.php"); ?>
+                        <div class="ptdlist-inner">
+                            <?php include("ptditem.php"); ?>
+                        </div>
                     </div>
                 </td>
             </tr>
@@ -65,12 +73,14 @@
         <tbody class="ptbox">
             <tr>
                 <td class="ptdname">
-                    <div id="dfreetour" class="ptname"><h5>自由行</h5><p>景点+酒店</p></div>
+                    <div class="ptname"><h5>自由行</h5><p>景点+酒店</p></div>
                 </td>
                 <td>
                     <div class="ptdlist">
-                        <?php include("ptditem2.php"); ?>
-                        <a href="#" class="link-more">查看 24 条自由行&gt;&gt;</a>
+                        <div id="dfreetour" class="ptdlist-inner">
+                            <?php include("ptditem2.php"); ?>
+                            <a href="#" class="link-more">查看 24 条自由行&gt;&gt;</a>
+                        </div>
                     </div>
                 </td>
             </tr>
@@ -78,12 +88,14 @@
         <tbody class="ptbox">
             <tr>
                 <td class="ptdname">
-                    <div id="dtuangou" class="ptname"><h5>跟团游</h5><p>上海出发</p>
+                    <div class="ptname"><h5>跟团游</h5><p>上海出发</p>
                     </div>
                 </td>
                 <td>
                     <div class="ptdlist">
-                        <?php include("ptditem2.php"); ?>
+                        <div id="dtuangou" class="ptdlist-inner">
+                            <?php include("ptditem2.php"); ?>
+                        </div>
                     </div>
                 </td>
             </tr>

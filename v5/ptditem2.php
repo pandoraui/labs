@@ -9,7 +9,7 @@
     </dd>
     <dd class="pdprice"><del>&yen;288</del></dd>
     <dt class="pdname">
-        <a href="#" class="ptlink">恐龙园 - 成人票（12.1-12.31）</a>
+        <a href="javascript:;" class="ptlink">恐龙园 - 成人票（12.1-12.31）</a>
         <p>园内四大过山车，感受神奇加速度！</p>
     </dt>
     <dd class="pdetails">
@@ -34,8 +34,8 @@
                     <dt>退改规则</dt>
                     <dd>若需退改请提前一天晚上21：00前办理，逾期收取全额费用作为违约金。</dd>
                 </dl>
-                <a href="javascript:;" class="view-details">收起</a>
             </div>
+            <a href="javascript:;" class="view-details">收起</a>
         </div><!--//.tiptext-->
     </dd><!--//.pdetails-->
 </dl>
@@ -73,8 +73,8 @@
                     <dt>退改规则</dt>
                     <dd>若需退改请提前一天晚上21：00前办理，逾期收取全额费用作为违约金。</dd>
                 </dl>
-                <a href="javascript:;" class="view-details">收起</a>
             </div>
+            <a href="javascript:;" class="view-details">收起</a>
         </div><!--//.tiptext-->
     </dd><!--//.pdetails-->
 </dl>
@@ -112,8 +112,8 @@
                     <dt>退改规则</dt>
                     <dd>若需退改请提前一天晚上21：00前办理，逾期收取全额费用作为违约金。</dd>
                 </dl>
-                <a href="javascript:;" class="view-details">收起</a>
             </div>
+            <a href="javascript:;" class="view-details">收起</a>
         </div><!--//.tiptext-->
     </dd><!--//.pdetails-->
 </dl>

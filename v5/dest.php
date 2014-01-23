@@ -9,13 +9,12 @@
 <!--生产线引用-->
 <link rel="stylesheet" href="http://pic.lvmama.com/min/index.php?f=/styles/v5/base.css,/styles/v5/common.css,/styles/new_v/header-air.css" >
 <link rel="stylesheet" href="http://pic.lvmama.com/min/index.php?f=/styles/v5/modules/form.css,/styles/v5/modules/button.css,/styles/v5/modules/table.css,/styles/v5/modules/tags.css,/styles/v5/modules/tip.css,/styles/v5/modules/paging.css" />
-<link rel="stylesheet" href="http://pic.lvmama.com/min/index.php?f=/styles/v5/dest.css" />
+<!--<link rel="stylesheet" href="http://pic.lvmama.com/min/index.php?f=/styles/v5/dest.css" />-->
 
 <!--本地样式-->
-<link rel="stylesheet" href="/pandora/docs/assets/less/auto.css" />
 <link rel="stylesheet" href="css/dest.css" />
 </head>
-<body class="dest">
+<body class="dest" data-spy="scroll" data-target=".J_scrollnav">
 
 <!-- 公共头部开始  -->
 <!-- 
@@ -51,45 +50,53 @@
             </div>
         </div>
         <div class="dcontent clearfix">
-            <div class="dimg">
-                <img src="//placehold.it/405x270" width="405" height="270" alt="某某景点">
-                <img src="//placehold.it/198x132" width="198" height="132" alt="某某景点">
-                <img src="//placehold.it/198x132" width="198" height="132" alt="某某景点">
-            </div>
+            <ul class="dimg ul-hor J_photo">
+                <li class="big-img">
+                    <img src="//placehold.it/405x270" data-big-img="//placehold.it/600x400" width="405" height="270" alt="某某景点">
+                </li>
+                <li><img src="//placehold.it/198x132" data-big-img="//placehold.it/600x400" width="198" height="132" alt="某某景点"></li>
+                <li><img src="//placehold.it/198x132" data-big-img="//placehold.it/600x400" data-big-img="" width="198" height="132" alt="某某景点"></li>
+            </ul>
             <div class="dinfo">
                 <div class="sec-info">
-                    <a href="#" class="xlink"><i class="icon dicon-local"></i>地图</a>
-                    <dl class="dl-hor">
-                        <dt>景点地址</dt>
-                        <dd>上海市普陀区大渡河路451号</dd>
-                    </dl>
-                    <dl class="dl-hor">
-                        <dt>入园时间</dt>
-                        <dd>
-                            10:00-18:00（周一至周五）<br>
-                            09:00-20:00（周六周日）
-                        </dd>
-                    </dl>
-                    <dl class="dl-hor link-active">
-                        <dt><span class="tags-active">景点活动</span></dt>
-                        <dd>
-                            <a href="#activity">上海长风公园海洋馆3D灯光秀</a>
-                            <a href="#activity">上海长风公园海洋馆太空舱全新改版啦！</a>
-                        </dd>
-                    </dl>
+                    <div class="sec-inner">
+                        <a href="#" class="xlink"><i class="icon dicon-local"></i>地图</a>
+                        <dl class="dl-hor">
+                            <dt>景点地址</dt>
+                            <dd><p class="linetext">上海市普陀区大渡河路451号，文本过长会隐藏</p></dd>
+                        </dl>
+                        <dl class="dl-hor">
+                            <dt>入园时间</dt>
+                            <dd>
+                                <p>10:00-18:00（周一至周五）</p>
+                                <p>10:00-18:00（周一至周五）</p>
+                                <div class="J-more hide">
+                                    <p>10:00-18:00（周一至周五）</p>
+                                    <p>09:00-20:00（周六周日）</p>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="dl-hor link-active">
+                            <dt><span class="tags-active">景点活动</span></dt>
+                            <dd>
+                                <a href="#activity">上海长风公园海洋馆3D灯光秀</a>
+                                <a href="#activity">上海长风公园海洋馆太空舱全新改版啦！</a>
+                            </dd>
+                        </dl>
+                    </div>
                 </div>
                 <div class="comment-info">
                     <dl class="dl-hor">
                         <dt>好 评 率</dt>
-                        <dd><span class="num"><i class="orange">23244</i> 人真实评价</span><dfn><i>96.7</i>%</dfn></dd>
+                        <dd><span class="dnum"><i class="orange">23244</i> 人真实评价</span><dfn><i>96.7</i>%</dfn></dd>
                     </dl>
                     <div class="dot-line"></div>
-                    <div class="quote">
+                    <a class="quote" href="#comments" title="查看详细">
                         <i class="icon dicon-comment"></i>
                         <i class="qstart">“</i>
                         <i class="qend">”</i>
                         <p>很好的地方，对孩子来说，能开眼界，学会很多知识，值得一来，收获不少！</p>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -97,9 +104,9 @@
     
     <div class="dest-main">
         <div id="destorder" class="tab-outer">
-            <div class="tab-dest tab-fixed">
+            <div class="tab-dest tab-fixed J_scrollnav">
                 <ul class="ul-hor">
-                    <li class="selected"><a href="#destorder">订票</a></li>
+                    <li class="active"><a href="#destorder">订票</a></li>
                     <li><a href="#dfreetour">自由行</a></li>
                     <li><a href="#dtuangou">跟团游</a></li>
                     <li><a href="#policy">预订须知</a></li>
@@ -228,7 +235,7 @@
                             <p>殷切贴心的景区服务，特别为您安排了米老鼠早晨传呼、睡前电视播放精彩迪士尼故事等等，让您享受与众不同的假期。</p>
                         </li>
                         <li>
-                            <img src="http://localhost/pandoraui/placehold/source/600x400/000/fff" width="220" height="128" alt="某景点图片" />
+                            <img src="//placehold.it/220x128" width="220" height="128" alt="某景点图片" />
                             <h6>迪士尼贴心服务</h6>
                             <p>殷切贴心的景区服务，特别为您安排了米老鼠早晨传呼、睡前电视播放精彩迪士尼故事等等，让您享受与众不同的假期。</p>
                         </li>
@@ -275,18 +282,22 @@
     </div>
 </div> <!-- //.wrap 1 -->
 
+<!--鼠标room 大图 -->
+<div class="J_img_wrap img-wrap"></div>
 
 <!--公共底部-->
 <script src="http://pic.lvmama.com/js/v4/copyright.js"></script>
 
-<!-- 频道公用js
+<!-- 频道公用js-->
 <script src="http://pic.lvmama.com/min/index.php?f=/js/new_v/jquery-1.7.2.min.js,/js/ui/lvmamaUI/lvmamaUI.js,/js/new_v/top/header-air_new.js"></script>
 <script src="http://pic.lvmama.com/min/index.php?f=/js/v5/modules/placeholder.js"></script>
---><!--线上引用
+<!--线上引用
 <script src="http://pic.lvmama.com/min/index.php?f=/js/v5/newhotel.js"></script>
 -->
-<!--本地引用
+<!--本地引用-->
+<script src="js/bt-affix.js"></script>
+<script src="js/bt-scrollspy.js"></script>
 <script src="js/dest.js"></script>
--->
+
 </body>
 </html>

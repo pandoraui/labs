@@ -6,23 +6,23 @@
         <span class="scorebox">
             <p class="score-item">
                 <em>娱乐</em>
-                <span class="score-level"><i style="width:100%"></i></span>
+                <span class="score-level"><i style="width:0%"></i></span>
                 <em>5.0</em>
             </p>
             <p class="score-item">
                 <em>安全</em>
-                <span class="score-level"><i style="width:90%"></i></span>
+                <span class="score-level"><i style="width:0%"></i></span>
                 <em>4.5</em>
             </p>
             <p class="score-item">
                 <em>规模</em>
-                <span class="score-level"><i style="width:70%"></i></span>
+                <span class="score-level"><i style="width:0%"></i></span>
                 <em>3.6</em>
             </p>
             <p class="score-item">
                 <em>人气</em>
-                <span class="score-level"><i style="width:60%"></i></span>
-                <em>6.2</em>
+                <span class="score-level"><i style="width:0%"></i></span>
+                <em>4.3</em>
             </p>
         </span>
     </div>
@@ -35,7 +35,7 @@
 <!-- 点评详情 -->
 <div class="dcomment">
     <div class="tab-dcom">
-        <ul class="ul-hor">
+        <ul class="ul-hor JS_tabnav">
             <li class="selected"><a href="javascript:;">体验点评<span>（15893）</span></a></li>
             <li><a href="javascript:;">精华点评<span>（88）</span></a></li>
             <li><a href="javascript:;">普通点评<span>（688）</span></a></li>
@@ -68,36 +68,26 @@
                         <span class="s-feed">|</span>
                         <a href="javascript:;" class="dcomuser"><i class="icon dicon-dcom"></i><em>24</em></a>
                     </p>
-                </div><!---//.feedbox-->
-                <div class="feed-discuss hide">
-                    <div class="tiptext tip-default">
-                        <div class="tip-arrow tip-arrow-1">
-                            <em>◆</em>
-                            <i>◆</i>
-                        </div>
-                        <div class="tip-other">
-                            <div class="feeds-reply-box">
-                                <p>回复 lv138*******</p>
-                                <p class="dform form-inline">
-                                    <textarea maxlength="100" class="textarea"></textarea>
-                                    <button class="btn btn-small btn-w btn-orange">回复</button>
-                                </p>
+                    
+                    <div class="feed-discuss hide">
+                        <div class="tiptext tip-default">
+                            <div class="tip-arrow tip-arrow-1">
+                                <em>◆</em>
+                                <i>◆</i>
                             </div>
-                            <ul class="feed-comments j-feed-comments">
-                                <li class="comment-item">
-                                    <p class="lv-recomment">
-                                        <span>驴妈妈回复：</span>你好，请咨询客服处理，感谢您的关注！
+                            <div class="tip-other">
+                                <div class="feeds-reply-box">
+                                    <p>回复 lv138*******</p>
+                                    <p class="dform form-inline">
+                                        <textarea maxlength="100" class="textarea"></textarea>
+                                        <button class="btn btn-small btn-w btn-orange">回复</button>
                                     </p>
-                                </li>
-                                <li class="comment-item">
-                                    <p>
-                                        <span>lv133********回复：</span>是啊，我也超级喜欢古木游龙项目，体验超刺激，玩了还想玩。
-                                    </p>
-                                </li>
-                            </ul>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div><!--//.feed-discuss-->
+                    </div><!--//.feed-discuss-->
+                </div><!---//.feedbox-->
+                
             </div><!--//.dcom-item-->
             
             <div class="dcom-item">
@@ -122,36 +112,38 @@
                         <span class="s-feed">|</span>
                         <a href="javascript:;" class="dcomuser"><i class="icon dicon-dcom"></i><em>24</em></a>
                     </p>
-                </div><!---//.feedbox-->
-                <div class="feed-discuss">
-                    <div class="tiptext tip-default">
-                        <div class="tip-arrow tip-arrow-1">
-                            <em>◆</em>
-                            <i>◆</i>
-                        </div>
-                        <div class="tip-other">
-                            <div class="feeds-reply-box hide">
-                                <p>回复 lv138*******</p>
-                                <p class="dform form-inline">
-                                    <textarea maxlength="100" class="textarea"></textarea>
-                                    <button class="btn btn-small btn-w btn-orange">回复</button>
-                                </p>
+                    
+                    <div class="feed-discuss">
+                        <div class="tiptext tip-default">
+                            <div class="tip-arrow tip-arrow-1">
+                                <em>◆</em>
+                                <i>◆</i>
                             </div>
-                            <ul class="feed-comments j-feed-comments">
-                                <li class="comment-item">
-                                    <p class="lv-recomment">
-                                        <span>驴妈妈回复：</span>你好，请咨询客服处理，感谢您的关注！
+                            <div class="tip-other">
+                                <div class="feeds-reply-box hide">
+                                    <p>回复 lv138*******</p>
+                                    <p class="dform form-inline">
+                                        <textarea maxlength="100" class="textarea"></textarea>
+                                        <button class="btn btn-small btn-w btn-orange">回复</button>
                                     </p>
-                                </li>
-                                <li class="comment-item">
-                                    <p>
-                                        <span>lv133********回复：</span>是啊，我也超级喜欢古木游龙项目，体验超刺激，玩了还想玩。
-                                    </p>
-                                </li>
-                            </ul>
+                                </div>
+                                <ul class="feed-comments j-feed-comments">
+                                    <li class="comment-item">
+                                        <p class="lv-recomment">
+                                            <span>驴妈妈回复：</span>你好，请咨询客服处理，感谢您的关注！
+                                        </p>
+                                    </li>
+                                    <li class="comment-item">
+                                        <p>
+                                            <span>lv133********回复：</span>是啊，我也超级喜欢古木游龙项目，体验超刺激，玩了还想玩。
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                </div><!--//.feed-discuss-->
+                    </div><!--//.feed-discuss-->
+                </div><!---//.feedbox-->
+                
             </div><!--//.dcom-item-->
             
             <div class="dcom-item">
@@ -178,36 +170,37 @@
                         <span class="s-feed">|</span>
                         <a href="javascript:;" class="dcomuser"><i class="icon dicon-dcom"></i><em>24</em></a>
                     </p>
-                </div><!---//.feedbox-->
-                <div class="feed-discuss">
-                    <div class="tiptext tip-default">
-                        <div class="tip-arrow tip-arrow-1">
-                            <em>◆</em>
-                            <i>◆</i>
-                        </div>
-                        <div class="tip-other">
-                            <div class="feeds-reply-box">
-                                <p>回复 lv138*******</p>
-                                <p class="dform form-inline">
-                                    <textarea maxlength="100" class="textarea"></textarea>
-                                    <button class="btn btn-small btn-w btn-orange">回复</button>
-                                </p>
+                    
+                    <div class="feed-discuss">
+                        <div class="tiptext tip-default">
+                            <div class="tip-arrow tip-arrow-1">
+                                <em>◆</em>
+                                <i>◆</i>
                             </div>
-                            <ul class="feed-comments j-feed-comments">
-                                <li class="comment-item">
-                                    <p class="lv-recomment">
-                                        <span>驴妈妈回复：</span>你好，请咨询客服处理，感谢您的关注！
+                            <div class="tip-other">
+                                <div class="feeds-reply-box">
+                                    <p>回复 lv138*******</p>
+                                    <p class="dform form-inline">
+                                        <textarea maxlength="100" class="textarea"></textarea>
+                                        <button class="btn btn-small btn-w btn-orange">回复</button>
                                     </p>
-                                </li>
-                                <li class="comment-item">
-                                    <p>
-                                        <span>lv133********回复：</span>是啊，我也超级喜欢古木游龙项目，体验超刺激，玩了还想玩。
-                                    </p>
-                                </li>
-                            </ul>
+                                </div>
+                                <ul class="feed-comments j-feed-comments">
+                                    <li class="comment-item">
+                                        <p class="lv-recomment">
+                                            <span>驴妈妈回复：</span>你好，请咨询客服处理，感谢您的关注！
+                                        </p>
+                                    </li>
+                                    <li class="comment-item">
+                                        <p>
+                                            <span>lv133********回复：</span>是啊，我也超级喜欢古木游龙项目，体验超刺激，玩了还想玩。
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                </div><!--//.feed-discuss-->
+                    </div><!--//.feed-discuss-->
+                </div><!---//.feedbox-->
             </div><!--//.dcom-item-->
             
             <hr>
@@ -219,14 +212,20 @@
         </div><!--//.tabcon-->
         
         <div class="tabcon">
-            <div class="dcom-item">
-                
+            tab2
+            <div class="paging orangestyle">
+                <div class="pagebox">
+                    <span class="prevpage"><i class="larr"></i></span><span class="pagesel">1</span><a href="#">2</a><a href="#">3</a><a href="#">4</a><a href="#">5</a><span class="pagemore">...</span><a href="#">20</a><a class="nextpage" href="#"><i class="rarr"></i></a>
+                </div>
             </div>
         </div><!--//.tabcon-->
         
         <div class="tabcon">
-            <div class="dcom-item">
-                
+            tab3
+            <div class="paging orangestyle">
+                <div class="pagebox">
+                    <span class="prevpage"><i class="larr"></i></span><span class="pagesel">1</span><a href="#">2</a><a href="#">3</a><a href="#">4</a><a href="#">5</a><span class="pagemore">...</span><a href="#">20</a><a class="nextpage" href="#"><i class="rarr"></i></a>
+                </div>
             </div>
         </div><!--//.tabcon-->
         
