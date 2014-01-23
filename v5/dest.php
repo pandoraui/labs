@@ -281,6 +281,22 @@
     </div>
 </div> <!-- //.wrap 1 -->
 
+<div class="xfloatbar">
+    <ul class="xfloatitem">
+        <li class="xbuynow"><a rel="nofollow" class="icon" href="javascript:;"></a></li>
+        <li class="xcollect"><a rel="nofollow" class="icon" href="javascript:;"></a></li>
+        <li class="xsharebox"><a rel="nofollow" class="icon xshare" href="javascript:;"></a>
+            <div class="xsharelink">
+                <a rel="nofollow" class="icon xsharesina" href="javascript:;"></a>
+                <a rel="nofollow" class="icon xshareweibo" href="javascript:;"></a>
+                <a rel="nofollow" class="icon xshareqzone" href="javascript:;"></a>
+            </div>
+        </li>
+        <li class="xfeed"><a rel="nofollow" class="icon" href="javascript:;"></a></li>
+        <li class="xgotop"><a rel="nofollow" class="icon" href="javascript:;"></a></li>
+    </ul>
+</div>
+
 <!--公共底部-->
 <script src="http://pic.lvmama.com/js/v4/copyright.js"></script>
 

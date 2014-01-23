@@ -2,7 +2,7 @@
 <!-- 点评信息概况 -->
 <div class="cominfo">
     <div class="dscore">
-        <span class="comlevel"><dfn><em>好评率</em><i data-mark="dynamicNum" data-level="91.5">00.0</i>%</dfn></span>
+        <span class="comlevel"><dfn><em>好评率</em><i data-mark="dynamicNum" data-level="21.5">00.0</i>%</dfn></span>
         <span class="scorebox">
             <p class="score-item">
                 <em>娱乐</em>
