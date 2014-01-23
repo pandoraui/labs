@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>景点门票详情页</title>
+<title>景点门票无产品页</title>
 <meta name="keywords" content=""/>
 <meta name="description" content="">
 
@@ -106,11 +106,7 @@
         <div id="destorder" class="tab-outer">
             <div class="tab-dest tab-fixed J_scrollnav">
                 <ul class="ul-hor">
-                    <li class="active"><a href="#destorder">订票</a></li>
-                    <li><a href="#dfreetour">自由行</a></li>
-                    <li><a href="#dtuangou">跟团游</a></li>
-                    <li><a href="#policy">预订须知</a></li>
-                    <li><a href="#activity">景点活动</a></li>
+                    <li class="active"><a href="#destorder">关联推荐</a></li>
                     <li><a href="#introduction">景点介绍</a></li>
                     <li><a href="#traffic">交通指南</a></li>
                     <li><a href="#comments">用户点评<span>(2615)</span></a></li>
@@ -118,69 +114,79 @@
             </div>
         </div>
         <div class="dcontent">
-            <div class="tiptext tip-warning"><span class="tip-icon tip-icon-warning"></span><p>园区通知：很抱歉，该园因娱乐设施维修，故从2014-1-10起至2014-1-12停止营业3天。如果字段很长，可以自适应换行，这里排版不会有什么问题。如果字段很长，可以自适应换行，这里排版不会有什么问题。</p></div>
+            <div class="graybox">
+                景点门票：成人5元一张门票，学生凭学生证是4元一张门票，团体20人以上也是4元一人。
+            </div>
+            <div class="nolist clearfix">
+                <h4>上海长风海洋世界 - 附近景点</h4>
+                <ul class="ul-hor">
+                    <li><?php include("ptditem3.php"); ?></li>
+                    <li><?php include("ptditem3.php"); ?></li>
+                </ul>
+                <h4>上海长风海洋世界 - 同类型景点</h4>
+                <ul class="ul-hor">
+                    <li><?php include("ptditem3.php"); ?></li>
+                    <li><?php include("ptditem3.php"); ?></li>
+                </ul>
+            </div>
             
-            <?php include("dpro-list.php"); ?>
         </div>
         <div class="dside">
-            <?php include("dside.php"); ?>
+            <div class="sidebox dside-search">
+                <div class="stitle">
+                    <h4 class="stit">景点门票搜索</h4>
+                </div>
+                <div class="scontent">
+                    <div class="dsearch form-inline">
+                        <input type="text" class="input-text" placeholder="请输入目的地/景点/主题/城市" /><a href="javascript:;" class="dsearch-btn"><i class="icon dicon-search"></i></a>
+                    </div>
+                    <hr>
+                    <dl class="dl-ver">
+                        <dt>精选主题推荐</dt>
+                        <dd>
+                            <a href="#">山水景观</a>
+                            <a href="#">漂流</a>
+                            <a href="#">溶洞</a>
+                            <a href="#">主题乐园</a>
+                            <a href="#">演艺</a>
+                            <a href="#">古迹遗址</a>
+                        </dd>
+                    </dl>
+                    <dl class="dl-ver">
+                        <dt>热门目的地推荐</dt>
+                        <dd>
+                            <a href="#">上海</a>
+                            <a href="#">杭州</a>
+                            <a href="#">乌镇</a>
+                            <a href="#">江西</a>
+                            <a href="#">鼓浪屿</a>
+                            <a href="#">香港</a>
+                            <a href="#">北京</a>
+                            <a href="#">成都</a>
+                        </dd>
+                    </dl>
+                </div>
+            </div><!--//.sidebox-->
+            
+            <div class="sidebox dside-guide">
+                <div class="stitle">
+                    <h4 class="stit">攻略随身带</h4>
+                </div>
+                <div class="scontent">
+                    <dl class="dl-hor">
+                        <dt><a href="#"><img src="//placehold.it/90x127" width="90" height="127" alt="某某攻略" /></a></dt>
+                        <dd>
+                            <h5><a href="#">上海长风海洋世界</a></h5>
+                            <p>官方攻略2014版</p>
+                            <p class="gray">2639人下载</p>
+                            <a href="#" class="btn btn-mini btn-orange">下载攻略</a>
+                        </dd>
+                    </dl>
+                </div>
+            </div><!--//.sidebox-->
+            
         </div><!--//.dside-->
         <div class="dmain">
-            <div id="policy" class="dbox policy">
-                <div class="dtitle">
-                    <h3 class="dtit"><i class="icon dicon-policy"></i>预订须知</h3>
-                </div>
-                <div class="dcontent">
-                    <div class="dactive">
-                        <h5>预订限制</h5>
-                        <p>
-                            1. 该景区网络（包括其他商家平台在内）预订，每个手机号每天至多限订限取5张门票，请勿超限预订。<br>
-                            2. 本产品须提前至少1天预订并完成支付。<br>
-                            3. 由于预订本产品2小时后才能取票，所以需至少提前两小时预订。
-                        </p>
-                        <h5>优惠人群</h5>
-                        <p>
-                            1. 身高低于1.2米(不含1.2米)的儿童免票。<br>
-                            2. 身高1.2米至1.5米(不含1.5米)的儿童购半价票入园。<br>
-                            3. 身高1.5米以上(含1.5米)的儿童购全价票入园。<br>
-                            4. 年龄在65周岁至69周岁（含65周岁)的老人凭有效证件或上海市老年优待证购半价票入园。<br>
-                            5. 年龄在70周岁以上(含70周岁)的老人凭有效证件或上海市老年优待证免费入园。
-                        </p>
-                        <h5>温馨提示</h5>
-                        <p>
-                            1. 本产品是“上海欢乐谷”与“驴妈妈旅游网”面向散客推出的上海欢乐谷优惠电子门票。<br>
-                            2. 在本平台预订并完成支付后，我们将以短信的形式把“二维码”电子门票发送到您指定的手机。<br>
-                            3. 凭电子门票至上海欢乐谷游玩时，请到电子票专用通道直接刷码通关，无须排队换票，更无须组团。<br>
-                            4. 上海欢乐谷共有多个入园通道，右侧第3个为电子门票专用通道。<br>
-                            5. 用户如需发票可致电驴妈妈客服1010 6060索要。<br>
-                            6. 为防止恶意倒票，现我司规定二维码短信持有人必须先刷码，并与其他人一同入园方可，否则无效。<br>
-                            7. 门票仅限当日使用有效。<br>
-                            8. 本产品为夜场门票，1.2米以下儿童免票，需17:30以后方可入园，园区内大型游乐项目夜场关闭不能游玩。
-                        </p>
-                    </div>
-                </div>
-            </div><!--//.dbox-->
-            
-            <div id="activity" class="dbox activity">
-                <div class="dtitle">
-                    <h3 class="dtit"><i class="icon dicon-activity"></i>景点活动</h3>
-                </div>
-                <div class="dcontent">
-                    <h5>50岁以上免费畅玩欢乐谷</h5>
-                    <ul class="ul">
-                        <li>活动时间：2013年11月25日 - 12月31日</li>
-                        <li>活动详情：11月15日至12月31日，上海市50周岁以上市民凭本人身份证原件可免费畅玩欢乐谷。</li>
-                    </ul>
-                    <hr>
-                    <h5>上海欢乐谷冰雪圣诞嘉年华</h5>
-                    <ul class="ul">
-                        <li>活动时间：2013年11月25日 - 12月31日</li>
-                        <li>活动详情：12月07日- 01月05日，欢乐谷进行冰雪圣诞季，届时每周末将举办大型主题表演。</li>
-                    </ul>
-                    <img src="//placehold.it/720x240" width="720" height="240" alt="某景点图片" />
-                </div>
-            </div><!--//.dbox-->
-            
             <div id="introduction" class="dbox introduction">
                 <div class="dtitle">
                     <h3 class="dtit"><i class="icon dicon-introduction"></i>景点介绍</h3>
@@ -280,6 +286,9 @@
         
     </div>
 </div> <!-- //.wrap 1 -->
+
+
+
 
 <!--公共底部-->
 <script src="http://pic.lvmama.com/js/v4/copyright.js"></script>

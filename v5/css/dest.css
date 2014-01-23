@@ -25,7 +25,7 @@ a:hover{color:#f60;}
 a:hover .dicon-local{background-position: -20px -30px;}
 .dicon-time{width:20px;height:20px;background-position: 0 -60px;}
 .dicon-search{width:20px;height:20px;background-position: 0 -128px;}
-.dicon-comment{width:36px;height:36px;background-position: 0 -150px;}
+.dicon-comment{width:36px;height:30px;background-position: 0 -150px;}
 
 .dicon-plus,.dicon-dcom{width:16px;height:16px;float: left;position: relative;top: 2px;margin-right:4px;}
 .dicon-plus{background-position: 0 -90px;}
@@ -64,7 +64,7 @@ del{color:#bababa;}
 .dl-ver dt,.dl-ver dd{display:block;}
 ul.ul{margin-bottom:20px;}
 ul.ul li{padding-left:18px;line-height:24px;background-position:-185px 7px;}
-
+.graybox{margin:20px 0 10px;padding:5px 10px;line-height:22px;background:#fbfbfb;color:#666;}
 /*间隔线*/
 .dot-line,.solid-line,hr{display:block;margin:10px 0;clear:both;height:0;overflow:hidden;text-indent:-9999px;}
 .dot-line{border-bottom:1px dashed #ddd; }
@@ -132,6 +132,7 @@ a.text-cover .ctext em{color:#fff;text-indent: 5px;display:block;}
 .xorder dfn{font-size:20px;}
 .xorder dfn i{font-size:36px;line-height:36px;font-weight:bold;}
 
+.dest-main{clear:both;}
 .dest-main .tiptext .tip-icon{float:left;}
 .dest-main .tiptext p{overflow:hidden;}
 
@@ -262,7 +263,7 @@ p.distance{color:#999;}
 .imgbox{margin-right:-10px;*zoom:1;overflow:hidden;}
 .imgbox img{float:left;display:inline;margin-right:10px;}
 .ul-imgtext{overflow:hidden;margin-right:-35px;*zoom:1;}
-.ul-imgtext li{float:left;display:inline;width:220px;margin:0 30px 20px 0;}
+.ul-imgtext li{float:left;display:inline;width:220px;height:254px;overflow:hidden;margin:0 30px 20px 0;}
 .ul-imgtext h6{margin:15px 0 5px;}
 .ul-imgtext p{margin:5px 0 10px;}
 
@@ -319,6 +320,14 @@ p.distance{color:#999;}
 .feed-discuss .tip-arrow i{color:#fbfbfb;}
 .feed-comments{color:#999;}
 .lv-recomment span{color:#f60;}
+
+/*无产品列表*/
+.nolist h4{font-size:14px;color:#666;margin:20px 0;clear:both;padding:0 10px;}
+.nolist ul{margin-right:-60px;*zoom:1;overflow:hidden;}
+.nolist li{width:480px;height:260px;padding:0 40px 0 20px;margin-left:-20px;border-left:1px solid #eee;}
+.nolist .pdpaytype{width:75px;text-align:right;}
+.nolist .pdlvprice{text-align:right;}
+
 
 /* 大图 */
 .img-wrap{
