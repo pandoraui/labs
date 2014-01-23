@@ -122,7 +122,6 @@
             
             <?php include("dpro-list.php"); ?>
         </div>
-        <div class="hr_a"></div>
         <div class="dside">
             <?php include("dside.php"); ?>
         </div><!--//.dside-->

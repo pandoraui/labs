@@ -2,26 +2,26 @@
 <!-- 点评信息概况 -->
 <div class="cominfo">
     <div class="dscore">
-        <span class="comlevel"><dfn><em>好评率</em><i>96.7</i>%</dfn></span>
+        <span class="comlevel"><dfn><em>好评率</em><i data-mark="dynamicNum" data-level="91.5">00.0</i>%</dfn></span>
         <span class="scorebox">
             <p class="score-item">
                 <em>娱乐</em>
-                <span class="score-level"><i style="width:0%"></i></span>
+                <span class="score-level"><i data-mark="dynamicNum" data-level="5.0"></i></span>
                 <em>5.0</em>
             </p>
             <p class="score-item">
                 <em>安全</em>
-                <span class="score-level"><i style="width:0%"></i></span>
+                <span class="score-level"><i data-mark="dynamicNum" data-level="4.5"></i></span>
                 <em>4.5</em>
             </p>
             <p class="score-item">
                 <em>规模</em>
-                <span class="score-level"><i style="width:0%"></i></span>
+                <span class="score-level"><i data-mark="dynamicNum" data-level="3.6"></i></span>
                 <em>3.6</em>
             </p>
             <p class="score-item">
                 <em>人气</em>
-                <span class="score-level"><i style="width:0%"></i></span>
+                <span class="score-level"><i data-mark="dynamicNum" data-level="4.3"></i></span>
                 <em>4.3</em>
             </p>
         </span>
@@ -49,7 +49,7 @@
                         <span class="feed-date">2014-01-21</span>
                         <span class="feed-user">user20140220</span>
                         <p class="feed-score">
-                            <span class="feed-fav">好评</span>
+                            <span class="icon dicon-good"></span>
                             <span class="feed-item">娱乐 5(很好)</span>
                             <span class="feed-item">安全 5(好)</span>
                             <span class="feed-item">规模 5(很好)</span>
@@ -96,7 +96,7 @@
                         <span class="feed-date">2014-01-21</span>
                         <span class="feed-user">user20140220</span>
                         <p class="feed-score">
-                            <span class="feed-fav">好评</span>
+                            <span class="icon dicon-good"></span>
                             <span class="feed-item">娱乐 5(很好)</span>
                             <span class="feed-item">安全 5(好)</span>
                             <span class="feed-item">规模 5(很好)</span>
@@ -152,7 +152,6 @@
                         <span class="feed-date">2014-01-21</span>
                         <span class="feed-user">user20140220</span>
                         <p class="feed-score">
-                            <span class="feed-fav">好评</span>
                             <span class="feed-item">娱乐 5(很好)</span>
                             <span class="feed-item">安全 5(好)</span>
                             <span class="feed-item">规模 5(很好)</span>

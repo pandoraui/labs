@@ -32,6 +32,7 @@ a:hover .dicon-local{background-position: -20px -30px;}
 .dicon-dcom{background-position: 0 -107px;}
 a:hover .dicon-plus{background-position: -20px -90px;}
 a:hover .dicon-dcom{background-position: -20px -107px;}
+.dicon-good{width:30px;height:20px;vertical-align:middle;background-position:0 -180px;}
 
 .dicon-policy       {background-position: -40px 0;}
 .dicon-activity     {background-position: -40px -30px;}
@@ -276,13 +277,13 @@ p.distance{color:#999;}
 .cominfo .comlevel,
 .cominfo .scorebox{display:inline-block;vertical-align:middle;}
 .comlevel dfn{font-size:16px;}
-.comlevel dfn i{font-size:36px;line-height:36px;}
+.comlevel dfn i{display: inline-block;width: 72px;text-align:right;font-size:36px;line-height:36px;}
 .comlevel dfn em{padding-right:5px;position:relative;top:-6px;}
 .cominfo .scorebox{padding-left:20px;}
 .score-level,
 .score-level i{display:inline-block;vertical-align:middle;width:70px;height:22px;}
 .score-level{background-position:-79px 4px;}
-.score-level i{float:left;background-position:-79px -16px;}
+.score-level i{float:left;width:0;background-position:-79px -16px;}
 .cominfo .dtext p{margin:5px 0;}
 
 .tab-dcom{border-bottom:1px solid #ddd;}
@@ -298,7 +299,7 @@ p.distance{color:#999;}
 .feed-info{margin:20px 0 10px 0;height:26px;line-height:26px;background:#f6f6f6;}
 .feed-info .feed-date,
 .feed-info .feed-user{float:right;display:inline;padding:0 10px 0 20px;color:#ccc;}
-.feed-score{color:#999;}
+.feed-score{color:#999;padding-left:10px;}
 .feed-score .feed-item{padding:0 0 0 10px;}
 
 .dbackinfo{float:right;display:inline;width:180px;text-align:right;padding-right:10px;}
