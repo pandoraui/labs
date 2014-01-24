@@ -153,6 +153,30 @@ $(function () {
         }
         
     })
+    
+    
+    function xscroll(){
+        var scrollTop = $(window).scrollTop();
+        var windowheight = $(window).height();
+        var buynowPos = elt_position($(".dorder-list"),"bottom");
+        if(scrollTop>windowheight){
+            $(".xgotop").slideDown();
+        }else{
+            $(".xgotop").slideUp();
+        }
+        if(scrollTop>buynowPos){
+            $(".xbuynow").slideDown();
+        }else{
+            $(".xbuynow").slideUp();
+        }
+        
+    }
+    $(window).scroll(function(){ 
+        xscroll();
+    })
+    
+    
+    
 })
 $(function(){
     dynamicNum($(".scorebox"));

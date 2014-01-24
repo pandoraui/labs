@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,14 +9,13 @@
 
 <!--生产线引用-->
 <link rel="stylesheet" href="http://pic.lvmama.com/min/index.php?f=/styles/v5/base.css,/styles/v5/common.css,/styles/new_v/header-air.css" >
-<link rel="stylesheet" href="http://pic.lvmama.com/min/index.php?f=/styles/v5/modules/form.css,/styles/v5/modules/button.css,/styles/v5/modules/table.css,/styles/v5/modules/tags.css,/styles/v5/modules/tip.css" />
+<link rel="stylesheet" href="http://pic.lvmama.com/min/index.php?f=/styles/v5/modules/form.css,/styles/v5/modules/button.css,/styles/v5/modules/table.css,/styles/v5/modules/tags.css,/styles/v5/modules/tip.css,/styles/v5/modules/paging.css" />
 <link rel="stylesheet" href="http://pic.lvmama.com/min/index.php?f=/styles/v5/dest.css" />
 
-<!--本地样式-->
-<link rel="stylesheet" href="/pandora/docs/assets/less/auto.css" />
-<link rel="stylesheet" href="css/dest.css" />
+<!--本地样式
+<link rel="stylesheet" href="css/dest.css" />-->
 </head>
-<body class="dest">
+<body class="dest" data-spy="scroll" data-target=".J_scrollnav">
 
 <!-- 公共头部开始  -->
 <!-- 
@@ -51,57 +51,65 @@
             </div>
         </div>
         <div class="dcontent clearfix">
-            <div class="dimg">
-                <img src="//placehold.it/405x270" width="405" height="270" alt="某某景点">
-                <img src="//placehold.it/198x132" width="198" height="132" alt="某某景点">
-                <img src="//placehold.it/198x132" width="198" height="132" alt="某某景点">
-            </div>
+            <ul class="dimg ul-hor J_photo">
+                <li class="big-img">
+                    <img src="//placehold.it/405x270" data-big-img="//placehold.it/600x400" width="405" height="270" alt="某某景点">
+                </li>
+                <li><img src="//placehold.it/198x132" data-big-img="//placehold.it/600x400" width="198" height="132" alt="某某景点"></li>
+                <li><img src="//placehold.it/198x132" data-big-img="//placehold.it/600x400" data-big-img="" width="198" height="132" alt="某某景点"></li>
+            </ul>
             <div class="dinfo">
                 <div class="sec-info">
-                    <a href="#" class="xlink"><i class="icon dicon-local"></i>地图</a>
-                    <dl class="dl-hor">
-                        <dt>景点地址</dt>
-                        <dd>上海市普陀区大渡河路451号</dd>
-                    </dl>
-                    <dl class="dl-hor">
-                        <dt>入园时间</dt>
-                        <dd>
-                            10:00-18:00（周一至周五）<br>
-                            09:00-20:00（周六周日）
-                        </dd>
-                    </dl>
-                    <dl class="dl-hor link-active">
-                        <dt><span class="tags-active">景点活动</span></dt>
-                        <dd>
-                            <a href="#activity">上海长风公园海洋馆3D灯光秀</a>
-                            <a href="#activity">上海长风公园海洋馆太空舱全新改版啦！</a>
-                        </dd>
-                    </dl>
+                    <div class="sec-inner">
+                        <a href="#" class="xlink"><i class="icon dicon-local"></i>地图</a>
+                        <dl class="dl-hor">
+                            <dt>景点地址</dt>
+                            <dd><p class="linetext">上海市普陀区大渡河路451号，文本过长会隐藏</p></dd>
+                        </dl>
+                        <dl class="dl-hor">
+                            <dt>入园时间</dt>
+                            <dd>
+                                <p>10:00-18:00（周一至周五）</p>
+                                <p>10:00-18:00（周一至周五）</p>
+                                <div class="J-more hide">
+                                    <p>10:00-18:00（周一至周五）</p>
+                                    <p>09:00-20:00（周六周日）</p>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="dl-hor link-active">
+                            <dt><span class="tags-active">景点活动</span></dt>
+                            <dd>
+                                <a href="#activity">上海长风公园海洋馆3D灯光秀</a>
+                                <a href="#activity">上海长风公园海洋馆太空舱全新改版啦！</a>
+                            </dd>
+                        </dl>
+                    </div>
                 </div>
                 <div class="comment-info">
                     <dl class="dl-hor">
                         <dt>好 评 率</dt>
-                        <dd><span class="num"><i class="orange">23244</i> 人真实评价</span><dfn><i>96.7</i>%</dfn></dd>
+                        <dd><span class="dnum"><i class="orange">23244</i> 人真实评价</span><dfn><i>96.7</i>%</dfn></dd>
                     </dl>
                     <div class="dot-line"></div>
-                    <div class="quote">
+                    <a class="quote" href="#comments" title="查看详细">
                         <i class="icon dicon-comment"></i>
                         <i class="qstart">“</i>
                         <i class="qend">”</i>
                         <p>很好的地方，对孩子来说，能开眼界，学会很多知识，值得一来，收获不少！</p>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
     
     <div class="dest-main">
-        <div class="tab-outer">
-            <div class="tab-dest tab-fixed">
+        <div id="destorder" class="tab-outer">
+            <div class="tab-dest tab-fixed J_scrollnav">
                 <ul class="ul-hor">
-                    <li><a href="#destorder">订票</a></li>
-                    <li><a href="#freetour">自由行</a></li>
-                    <li><a href="#tuangou">跟团游</a></li>
+                    <li class="active"><a href="#destorder">订票</a></li>
+                    <li><a href="#dfreetour">自由行</a></li>
+                    <li><a href="#dtuangou">跟团游</a></li>
                     <li><a href="#policy">预订须知</a></li>
                     <li><a href="#activity">景点活动</a></li>
                     <li><a href="#introduction">景点介绍</a></li>
@@ -110,228 +118,812 @@
                 </ul>
             </div>
         </div>
-        <div class="dcontent">
+        <div class="dcontent dorder-list">
             <div class="tiptext tip-warning"><span class="tip-icon tip-icon-warning"></span><p>园区通知：很抱歉，该园因娱乐设施维修，故从2014-1-10起至2014-1-12停止营业3天。如果字段很长，可以自适应换行，这里排版不会有什么问题。如果字段很长，可以自适应换行，这里排版不会有什么问题。</p></div>
-            <div class="dpro-list">
-                <table class="ptable table-full">
-                    <thead class="pttit">
-                        <tr>
-                            <td></td>
-                            <td>
-                                <dl class="ptditem">
-                                    <dd class="pdpaytype">支付方式</dd>
-                                    <dd class="pdlvprice">驴妈妈价</dd>
-                                    <dd class="pdprice">市场价</dd>
-                                    <dt class="pdname">产品名称</dt>
-                                </dl>
-                            </td>
-                        </tr>
-                    </thead>
-                    <tbody id="destorder" class="ptbox">
-                        <tr>
-                            <td class="ptdname">
-                                <div class="ptname"><h5>单门票</h5></div>
-                            </td>
-                            <td>
-                                <div class="ptdlist">
-                                    <dl class="ptditem">
-                                        <dd class="pdpaytype">
-                                            <span class="ipay ipay-online"><i class="itype">在线支付</i><a href="#" class="btn btn-w btn-small btn-orange">预订</a></span>
-                                        </dd>
-                                        <dd class="pdlvprice">
-                                            <dfn>&yen;<i>175</i></dfn>
-                                            <span class="tagsback"><em>返</em><i>¥20</i></span>
-                                        </dd>
-                                        <dd class="pdprice"><del>&yen;288</del></dd>
-                                        <dt class="pdname">
-                                            <a href="#" class="ptlink">恐龙园 - 成人票（12.1-12.31）</a>
-                                            <span class="tags tags-lightblue">折扣</span>
-                                        </dt>
-                                        <dd class="pdetails">
-                                            <div class="tiptext tip-light">
-                                                <div class="tip-arrow tip-arrow-11">
-                                                    <em>◆</em>
-                                                    <i>◆</i>
-                                                </div>
-                                                <div class="tip-other">
-<dl class="dl-hor"><dt>入园须知</dt>
-<dd>1.营业时间：8:00—17:00（16:00停止换票）
-  取票时间：8：30—17：00<br>
-2.景区地址：上海市浦东新区南六公路178号取票地点：上海市松江佘山上海欢乐谷检票处电子门票专用通道。<br>
-3.入园凭证：刷二维码短信入园。短信游玩当日有效，不能删除、不能转发。如您在出行前一天17：00尚未收到短信，请速来电咨询。</dd></dl>
-<dl class="dl-hor"><dt>适用范围</dt>
-<dd>全日制大专至全日制研究生（不分国籍，凭借有效学生证件刷码入园）</dd></dl>
-<dl class="dl-hor"><dt>退改规则</dt>
-<dd>若需退改请提前一天晚上21：00前办理，逾期收取全额费用作为违约金。</dd></dl>
-<a href="javascript:;" class="view-details">收起</a>
-                                                </div>
-                                            </div><!--//.tiptext-->
-                                        </dd><!--//.pdetails-->
-                                    </dl>
-                                    <dl class="ptditem ptditem-selected">
-                                        <dd class="pdpaytype">
-                                            <span class="ipay ipay-local"><i class="itype">在线支付</i><a href="#" class="btn btn-w btn-small btn-orange">预订</a></span>
-                                        </dd>
-                                        <dd class="pdlvprice">
-                                            <dfn>&yen;<i>234</i></dfn>
-                                        </dd>
-                                        <dd class="pdprice"><del>&yen;308</del></dd>
-                                        <dt class="pdname">
-                                            <a href="javascript:;" class="ptlink">恐龙园圣诞夜 - 大学生票 (浙江、江苏大学生特惠)</a>
-                                        </dt>
-                                        <dd class="pdetails">
-                                            <div class="tiptext tip-light">
-                                                <div class="tip-arrow tip-arrow-11">
-                                                    <em>◆</em>
-                                                    <i>◆</i>
-                                                </div>
-                                                <div class="tip-other">
-<dl class="dl-hor"><dt>入园须知</dt>
-<dd>1.营业时间：8:00—17:00（16:00停止换票）
-  取票时间：8：30—17：00<br>
-2.景区地址：上海市浦东新区南六公路178号取票地点：上海市松江佘山上海欢乐谷检票处电子门票专用通道。<br>
-3.入园凭证：刷二维码短信入园。短信游玩当日有效，不能删除、不能转发。如您在出行前一天17：00尚未收到短信，请速来电咨询。</dd></dl>
-<dl class="dl-hor"><dt>适用范围</dt>
-<dd>全日制大专至全日制研究生（不分国籍，凭借有效学生证件刷码入园）</dd></dl>
-<dl class="dl-hor"><dt>退改规则</dt>
-<dd>若需退改请提前一天晚上21：00前办理，逾期收取全额费用作为违约金。</dd></dl>
-<a href="javascript:;" class="view-details">收起</a>
-                                                </div>
-                                            </div><!--//.tiptext-->
-                                        </dd><!--//.pdetails-->
-                                    </dl>
-                                    <dl class="ptditem">
-                                        <dd class="pdpaytype">
-                                            <span class="ipay ipay-local"><i class="itype">在线支付</i><a href="#" class="btn btn-w btn-small btn-orange">预订</a></span>
-                                        </dd>
-                                        <dd class="pdlvprice">
-                                            <dfn>&yen;<i>234</i></dfn>
-                                        </dd>
-                                        <dd class="pdprice"><del>&yen;308</del></dd>
-                                        <dt class="pdname">
-                                            <a href="#" class="ptlink">恐龙园圣诞夜 - 大学生票 (浙江、江苏大学生特惠)如果标题很长很长很长很长很长很长怎么办</a>
-                                            <span class="tags tags-lightblue">折扣</span>
-                                        </dt>
-                                        <dd class="pdetails">
-                                            <div class="tiptext tip-light">
-                                                <div class="tip-arrow tip-arrow-11">
-                                                    <em>◆</em>
-                                                    <i>◆</i>
-                                                </div>
-                                                <div class="tip-other">
-<dl class="dl-hor"><dt>入园须知</dt>
-<dd>1.营业时间：8:00—17:00（16:00停止换票）
-  取票时间：8：30—17：00<br>
-2.景区地址：上海市浦东新区南六公路178号取票地点：上海市松江佘山上海欢乐谷检票处电子门票专用通道。<br>
-3.入园凭证：刷二维码短信入园。短信游玩当日有效，不能删除、不能转发。如您在出行前一天17：00尚未收到短信，请速来电咨询。</dd></dl>
-<dl class="dl-hor"><dt>适用范围</dt>
-<dd>全日制大专至全日制研究生（不分国籍，凭借有效学生证件刷码入园）</dd></dl>
-<dl class="dl-hor"><dt>退改规则</dt>
-<dd>若需退改请提前一天晚上21：00前办理，逾期收取全额费用作为违约金。</dd></dl>
-<a href="javascript:;" class="view-details">收起</a>
-                                                </div>
-                                            </div><!--//.tiptext-->
-                                        </dd><!--//.pdetails-->
-                                    </dl>
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                    <tbody class="ptbox">
-                        <tr>
-                            <td class="ptdname">
-                                <div class="ptname"><h5>多人套餐</h5></div>
-                            </td>
-                            <td>
-                                <div class="ptdlist">
-                                    <dl class="plist">
-                                        <dd class="pdpaytype">支付方式</dd>
-                                        <dd class="pdlvprice">驴妈妈价</dd>
-                                        <dd class="pdprice">市场价</dd>
-                                        <dt class="pdname">产品名称</dt>
-                                        <dd class="pdetails"></dd>
-                                    </dl>
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                    <tbody class="ptbox">
-                        <tr>
-                            <td class="ptdname">
-                                <div class="ptname"><h5>组合套餐</h5></div>
-                            </td>
-                            <td>
-                                <div class="ptdlist">
-                                    <dl class="plist">
-                                        <dd class="pdpaytype">支付方式</dd>
-                                        <dd class="pdlvprice">驴妈妈价</dd>
-                                        <dd class="pdprice">市场价</dd>
-                                        <dt class="pdname">产品名称</dt>
-                                        <dd class="pdetails"></dd>
-                                    </dl>
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                    <tbody class="ptbox">
-                        <tr>
-                            <td class="ptdname">
-                                <div class="ptname"><h5>娱乐<br>餐饮<br>交通接驳</h5></div>
-                            </td>
-                            <td>
-                                <div class="ptdlist">
-                                    <dl class="plist">
-                                        <dd class="pdpaytype">支付方式</dd>
-                                        <dd class="pdlvprice">驴妈妈价</dd>
-                                        <dd class="pdprice">市场价</dd>
-                                        <dt class="pdname">产品名称</dt>
-                                        <dd class="pdetails"></dd>
-                                    </dl>
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody><!--//#destorder-->
-                    <tbody id="freetour" class="ptbox">
-                        <tr>
-                            <td class="ptdname">
-                                <div class="ptname"><h5>自由行</h5><p>景点+酒店</p></div>
-                            </td>
-                            <td>
-                                <div class="ptdlist">
-                                    <dl class="plist">
-                                        <dd class="pdpaytype">支付方式</dd>
-                                        <dd class="pdlvprice">驴妈妈价</dd>
-                                        <dd class="pdprice">市场价</dd>
-                                        <dt class="pdname">产品名称</dt>
-                                        <dd class="pdetails"></dd>
-                                    </dl>
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody><!--//#freetour-->
-                    <tbody id="tuangou" class="ptbox">
-                        <tr>
-                            <td class="ptdname">
-                                <div class="ptname"><h5>跟团游</h5><p>上海出发</p>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="ptdlist">
-                                    <dl class="plist">
-                                        <dd class="pdpaytype">支付方式</dd>
-                                        <dd class="pdlvprice">驴妈妈价</dd>
-                                        <dd class="pdprice">市场价</dd>
-                                        <dt class="pdname">产品名称</dt>
-                                        <dd class="pdetails"></dd>
-                                    </dl>
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody><!--//#tuangou-->
-                </table>
-            </div><!--//.dpro-list-->
+            
+            
+<div class="dpro-list">
+    <table class="ptable table-full">
+        <thead class="pttit">
+            <tr>
+                <td></td>
+                <td>
+                    <dl class="ptditem">
+                        <dd class="pdpaytype">支付方式</dd>
+                        <dd class="pdlvprice">驴妈妈价</dd>
+                        <dd class="pdprice">市场价</dd>
+                        <dt class="pdname">产品名称</dt>
+                    </dl>
+                </td>
+            </tr>
+        </thead>
+        <tbody class="ptbox">
+            <tr>
+                <td class="ptdname">
+                    <div class="ptname"><h5>单门票</h5></div>
+                </td>
+                <td>
+                    <div class="ptdlist">
+                        <div class="pdlist-inner">
+                            
+<dl class="ptditem">
+    <dd class="pdpaytype">
+        <span class="ipay ipay-online"><i class="itype">在线预付</i><a href="#" class="btn btn-w btn-small btn-orange">预订</a></span>
+    </dd>
+    <dd class="pdlvprice">
+        <dfn>&yen;<i>175</i></dfn>
+        <span class="tagsback"><em>返</em><i>¥20</i></span>
+    </dd>
+    <dd class="pdprice"><del>&yen;288</del></dd>
+    <dt class="pdname">
+        <a href="javascript:;" class="ptlink">恐龙园 - 成人票（12.1-12.31）</a>
+        <span class="tags tags-lightblue">折扣</span>
+    </dt>
+    <dd class="pdetails">
+        <div class="tiptext tip-light">
+            <div class="tip-arrow tip-arrow-11">
+                <em>◆</em>
+                <i>◆</i>
+            </div>
+            <div class="tip-other">
+                <dl class="dl-hor">
+                    <dt>入园须知</dt>
+                    <dd>1.营业时间：8:00—17:00（16:00停止换票）
+                    取票时间：8：30—17：00<br>
+                    2.景区地址：上海市浦东新区南六公路178号取票地点：上海市松江佘山上海欢乐谷检票处电子门票专用通道。<br>
+                    3.入园凭证：刷二维码短信入园。短信游玩当日有效，不能删除、不能转发。如您在出行前一天17：00尚未收到短信，请速来电咨询。</dd>
+                </dl>
+                <dl class="dl-hor">
+                    <dt>适用范围</dt>
+                    <dd>全日制大专至全日制研究生（不分国籍，凭借有效学生证件刷码入园）</dd>
+                </dl>
+                <dl class="dl-hor">
+                    <dt>退改规则</dt>
+                    <dd>若需退改请提前一天晚上21：00前办理，逾期收取全额费用作为违约金。</dd>
+                </dl>
+            </div>
+            <a href="javascript:;" class="view-details">收起</a>
+        </div><!--//.tiptext-->
+    </dd><!--//.pdetails-->
+</dl>
+<dl class="ptditem">
+    <dd class="pdpaytype">
+        <span class="ipay ipay-local"><i class="itype">景区支付</i><a href="#" class="btn btn-w btn-small btn-orange">预订</a></span>
+    </dd>
+    <dd class="pdlvprice">
+        <dfn>&yen;<i>234</i></dfn>
+    </dd>
+    <dd class="pdprice"><del>&yen;308</del></dd>
+    <dt class="pdname">
+        <a href="javascript:;" class="ptlink">恐龙园圣诞夜 - 大学生票 (浙江、江苏大学生特惠)</a>
+    </dt>
+    <dd class="pdetails">
+        <div class="tiptext tip-light">
+            <div class="tip-arrow tip-arrow-11">
+                <em>◆</em>
+                <i>◆</i>
+            </div>
+            <div class="tip-other">
+                <dl class="dl-hor">
+                    <dt>入园须知</dt>
+                    <dd>1.营业时间：8:00—17:00（16:00停止换票）
+                    取票时间：8：30—17：00<br>
+                    2.景区地址：上海市浦东新区南六公路178号取票地点：上海市松江佘山上海欢乐谷检票处电子门票专用通道。<br>
+                    3.入园凭证：刷二维码短信入园。短信游玩当日有效，不能删除、不能转发。如您在出行前一天17：00尚未收到短信，请速来电咨询。</dd>
+                </dl>
+                <dl class="dl-hor">
+                    <dt>适用范围</dt>
+                    <dd>全日制大专至全日制研究生（不分国籍，凭借有效学生证件刷码入园）</dd>
+                </dl>
+                <dl class="dl-hor">
+                    <dt>退改规则</dt>
+                    <dd>若需退改请提前一天晚上21：00前办理，逾期收取全额费用作为违约金。</dd>
+                </dl>
+            </div>
+            <a href="javascript:;" class="view-details">收起</a>
+        </div><!--//.tiptext-->
+    </dd><!--//.pdetails-->
+</dl>
+<dl class="ptditem">
+    <dd class="pdpaytype">
+        <span class="ipay ipay-local"><i class="itype">景区支付</i><a href="#" class="btn btn-w btn-small btn-orange">预订</a></span>
+    </dd>
+    <dd class="pdlvprice">
+        <dfn>&yen;<i>234</i></dfn>
+    </dd>
+    <dd class="pdprice"><del>&yen;308</del></dd>
+    <dt class="pdname">
+        <a href="#" class="ptlink">恐龙园圣诞夜 - 大学生票 (浙江、江苏大学生特惠)如果标题很长很长很长很长很长很长怎么办</a>
+        <span class="tags tags-lightblue">折扣</span>
+    </dt>
+    <dd class="pdetails">
+        <div class="tiptext tip-light">
+            <div class="tip-arrow tip-arrow-11">
+                <em>◆</em>
+                <i>◆</i>
+            </div>
+            <div class="tip-other">
+                <dl class="dl-hor">
+                    <dt>入园须知</dt>
+                    <dd>1.营业时间：8:00—17:00（16:00停止换票）
+                    取票时间：8：30—17：00<br>
+                    2.景区地址：上海市浦东新区南六公路178号取票地点：上海市松江佘山上海欢乐谷检票处电子门票专用通道。<br>
+                    3.入园凭证：刷二维码短信入园。短信游玩当日有效，不能删除、不能转发。如您在出行前一天17：00尚未收到短信，请速来电咨询。</dd>
+                </dl>
+                <dl class="dl-hor">
+                    <dt>适用范围</dt>
+                    <dd>全日制大专至全日制研究生（不分国籍，凭借有效学生证件刷码入园）</dd>
+                </dl>
+                <dl class="dl-hor">
+                    <dt>退改规则</dt>
+                    <dd>若需退改请提前一天晚上21：00前办理，逾期收取全额费用作为违约金。</dd>
+                </dl>
+            </div>
+            <a href="javascript:;" class="view-details">收起</a>
+        </div><!--//.tiptext-->
+    </dd><!--//.pdetails-->
+</dl>                        </div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+        <tbody class="ptbox">
+            <tr>
+                <td class="ptdname">
+                    <div class="ptname"><h5>多人套餐</h5></div>
+                </td>
+                <td>
+                    <div class="ptdlist">
+                        <div class="ptdlist-inner">
+                            
+<dl class="ptditem">
+    <dd class="pdpaytype">
+        <span class="ipay ipay-online"><i class="itype">在线预付</i><a href="#" class="btn btn-w btn-small btn-orange">预订</a></span>
+    </dd>
+    <dd class="pdlvprice">
+        <dfn>&yen;<i>175</i></dfn>
+        <span class="tagsback"><em>返</em><i>¥20</i></span>
+    </dd>
+    <dd class="pdprice"><del>&yen;288</del></dd>
+    <dt class="pdname">
+        <a href="javascript:;" class="ptlink">恐龙园 - 成人票（12.1-12.31）</a>
+        <span class="tags tags-lightblue">折扣</span>
+    </dt>
+    <dd class="pdetails">
+        <div class="tiptext tip-light">
+            <div class="tip-arrow tip-arrow-11">
+                <em>◆</em>
+                <i>◆</i>
+            </div>
+            <div class="tip-other">
+                <dl class="dl-hor">
+                    <dt>入园须知</dt>
+                    <dd>1.营业时间：8:00—17:00（16:00停止换票）
+                    取票时间：8：30—17：00<br>
+                    2.景区地址：上海市浦东新区南六公路178号取票地点：上海市松江佘山上海欢乐谷检票处电子门票专用通道。<br>
+                    3.入园凭证：刷二维码短信入园。短信游玩当日有效，不能删除、不能转发。如您在出行前一天17：00尚未收到短信，请速来电咨询。</dd>
+                </dl>
+                <dl class="dl-hor">
+                    <dt>适用范围</dt>
+                    <dd>全日制大专至全日制研究生（不分国籍，凭借有效学生证件刷码入园）</dd>
+                </dl>
+                <dl class="dl-hor">
+                    <dt>退改规则</dt>
+                    <dd>若需退改请提前一天晚上21：00前办理，逾期收取全额费用作为违约金。</dd>
+                </dl>
+            </div>
+            <a href="javascript:;" class="view-details">收起</a>
+        </div><!--//.tiptext-->
+    </dd><!--//.pdetails-->
+</dl>
+<dl class="ptditem">
+    <dd class="pdpaytype">
+        <span class="ipay ipay-local"><i class="itype">景区支付</i><a href="#" class="btn btn-w btn-small btn-orange">预订</a></span>
+    </dd>
+    <dd class="pdlvprice">
+        <dfn>&yen;<i>234</i></dfn>
+    </dd>
+    <dd class="pdprice"><del>&yen;308</del></dd>
+    <dt class="pdname">
+        <a href="javascript:;" class="ptlink">恐龙园圣诞夜 - 大学生票 (浙江、江苏大学生特惠)</a>
+    </dt>
+    <dd class="pdetails">
+        <div class="tiptext tip-light">
+            <div class="tip-arrow tip-arrow-11">
+                <em>◆</em>
+                <i>◆</i>
+            </div>
+            <div class="tip-other">
+                <dl class="dl-hor">
+                    <dt>入园须知</dt>
+                    <dd>1.营业时间：8:00—17:00（16:00停止换票）
+                    取票时间：8：30—17：00<br>
+                    2.景区地址：上海市浦东新区南六公路178号取票地点：上海市松江佘山上海欢乐谷检票处电子门票专用通道。<br>
+                    3.入园凭证：刷二维码短信入园。短信游玩当日有效，不能删除、不能转发。如您在出行前一天17：00尚未收到短信，请速来电咨询。</dd>
+                </dl>
+                <dl class="dl-hor">
+                    <dt>适用范围</dt>
+                    <dd>全日制大专至全日制研究生（不分国籍，凭借有效学生证件刷码入园）</dd>
+                </dl>
+                <dl class="dl-hor">
+                    <dt>退改规则</dt>
+                    <dd>若需退改请提前一天晚上21：00前办理，逾期收取全额费用作为违约金。</dd>
+                </dl>
+            </div>
+            <a href="javascript:;" class="view-details">收起</a>
+        </div><!--//.tiptext-->
+    </dd><!--//.pdetails-->
+</dl>
+<dl class="ptditem">
+    <dd class="pdpaytype">
+        <span class="ipay ipay-local"><i class="itype">景区支付</i><a href="#" class="btn btn-w btn-small btn-orange">预订</a></span>
+    </dd>
+    <dd class="pdlvprice">
+        <dfn>&yen;<i>234</i></dfn>
+    </dd>
+    <dd class="pdprice"><del>&yen;308</del></dd>
+    <dt class="pdname">
+        <a href="#" class="ptlink">恐龙园圣诞夜 - 大学生票 (浙江、江苏大学生特惠)如果标题很长很长很长很长很长很长怎么办</a>
+        <span class="tags tags-lightblue">折扣</span>
+    </dt>
+    <dd class="pdetails">
+        <div class="tiptext tip-light">
+            <div class="tip-arrow tip-arrow-11">
+                <em>◆</em>
+                <i>◆</i>
+            </div>
+            <div class="tip-other">
+                <dl class="dl-hor">
+                    <dt>入园须知</dt>
+                    <dd>1.营业时间：8:00—17:00（16:00停止换票）
+                    取票时间：8：30—17：00<br>
+                    2.景区地址：上海市浦东新区南六公路178号取票地点：上海市松江佘山上海欢乐谷检票处电子门票专用通道。<br>
+                    3.入园凭证：刷二维码短信入园。短信游玩当日有效，不能删除、不能转发。如您在出行前一天17：00尚未收到短信，请速来电咨询。</dd>
+                </dl>
+                <dl class="dl-hor">
+                    <dt>适用范围</dt>
+                    <dd>全日制大专至全日制研究生（不分国籍，凭借有效学生证件刷码入园）</dd>
+                </dl>
+                <dl class="dl-hor">
+                    <dt>退改规则</dt>
+                    <dd>若需退改请提前一天晚上21：00前办理，逾期收取全额费用作为违约金。</dd>
+                </dl>
+            </div>
+            <a href="javascript:;" class="view-details">收起</a>
+        </div><!--//.tiptext-->
+    </dd><!--//.pdetails-->
+</dl>                        </div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+        <tbody class="ptbox">
+            <tr>
+                <td class="ptdname">
+                    <div class="ptname"><h5>组合套餐</h5></div>
+                </td>
+                <td>
+                    <div class="ptdlist">
+                        <div class="ptdlist-inner">
+                            
+<dl class="ptditem">
+    <dd class="pdpaytype">
+        <span class="ipay ipay-online"><i class="itype">在线预付</i><a href="#" class="btn btn-w btn-small btn-orange">预订</a></span>
+    </dd>
+    <dd class="pdlvprice">
+        <dfn>&yen;<i>175</i></dfn>
+        <span class="tagsback"><em>返</em><i>¥20</i></span>
+    </dd>
+    <dd class="pdprice"><del>&yen;288</del></dd>
+    <dt class="pdname">
+        <a href="javascript:;" class="ptlink">恐龙园 - 成人票（12.1-12.31）</a>
+        <span class="tags tags-lightblue">折扣</span>
+    </dt>
+    <dd class="pdetails">
+        <div class="tiptext tip-light">
+            <div class="tip-arrow tip-arrow-11">
+                <em>◆</em>
+                <i>◆</i>
+            </div>
+            <div class="tip-other">
+                <dl class="dl-hor">
+                    <dt>入园须知</dt>
+                    <dd>1.营业时间：8:00—17:00（16:00停止换票）
+                    取票时间：8：30—17：00<br>
+                    2.景区地址：上海市浦东新区南六公路178号取票地点：上海市松江佘山上海欢乐谷检票处电子门票专用通道。<br>
+                    3.入园凭证：刷二维码短信入园。短信游玩当日有效，不能删除、不能转发。如您在出行前一天17：00尚未收到短信，请速来电咨询。</dd>
+                </dl>
+                <dl class="dl-hor">
+                    <dt>适用范围</dt>
+                    <dd>全日制大专至全日制研究生（不分国籍，凭借有效学生证件刷码入园）</dd>
+                </dl>
+                <dl class="dl-hor">
+                    <dt>退改规则</dt>
+                    <dd>若需退改请提前一天晚上21：00前办理，逾期收取全额费用作为违约金。</dd>
+                </dl>
+            </div>
+            <a href="javascript:;" class="view-details">收起</a>
+        </div><!--//.tiptext-->
+    </dd><!--//.pdetails-->
+</dl>
+<dl class="ptditem">
+    <dd class="pdpaytype">
+        <span class="ipay ipay-local"><i class="itype">景区支付</i><a href="#" class="btn btn-w btn-small btn-orange">预订</a></span>
+    </dd>
+    <dd class="pdlvprice">
+        <dfn>&yen;<i>234</i></dfn>
+    </dd>
+    <dd class="pdprice"><del>&yen;308</del></dd>
+    <dt class="pdname">
+        <a href="javascript:;" class="ptlink">恐龙园圣诞夜 - 大学生票 (浙江、江苏大学生特惠)</a>
+    </dt>
+    <dd class="pdetails">
+        <div class="tiptext tip-light">
+            <div class="tip-arrow tip-arrow-11">
+                <em>◆</em>
+                <i>◆</i>
+            </div>
+            <div class="tip-other">
+                <dl class="dl-hor">
+                    <dt>入园须知</dt>
+                    <dd>1.营业时间：8:00—17:00（16:00停止换票）
+                    取票时间：8：30—17：00<br>
+                    2.景区地址：上海市浦东新区南六公路178号取票地点：上海市松江佘山上海欢乐谷检票处电子门票专用通道。<br>
+                    3.入园凭证：刷二维码短信入园。短信游玩当日有效，不能删除、不能转发。如您在出行前一天17：00尚未收到短信，请速来电咨询。</dd>
+                </dl>
+                <dl class="dl-hor">
+                    <dt>适用范围</dt>
+                    <dd>全日制大专至全日制研究生（不分国籍，凭借有效学生证件刷码入园）</dd>
+                </dl>
+                <dl class="dl-hor">
+                    <dt>退改规则</dt>
+                    <dd>若需退改请提前一天晚上21：00前办理，逾期收取全额费用作为违约金。</dd>
+                </dl>
+            </div>
+            <a href="javascript:;" class="view-details">收起</a>
+        </div><!--//.tiptext-->
+    </dd><!--//.pdetails-->
+</dl>
+<dl class="ptditem">
+    <dd class="pdpaytype">
+        <span class="ipay ipay-local"><i class="itype">景区支付</i><a href="#" class="btn btn-w btn-small btn-orange">预订</a></span>
+    </dd>
+    <dd class="pdlvprice">
+        <dfn>&yen;<i>234</i></dfn>
+    </dd>
+    <dd class="pdprice"><del>&yen;308</del></dd>
+    <dt class="pdname">
+        <a href="#" class="ptlink">恐龙园圣诞夜 - 大学生票 (浙江、江苏大学生特惠)如果标题很长很长很长很长很长很长怎么办</a>
+        <span class="tags tags-lightblue">折扣</span>
+    </dt>
+    <dd class="pdetails">
+        <div class="tiptext tip-light">
+            <div class="tip-arrow tip-arrow-11">
+                <em>◆</em>
+                <i>◆</i>
+            </div>
+            <div class="tip-other">
+                <dl class="dl-hor">
+                    <dt>入园须知</dt>
+                    <dd>1.营业时间：8:00—17:00（16:00停止换票）
+                    取票时间：8：30—17：00<br>
+                    2.景区地址：上海市浦东新区南六公路178号取票地点：上海市松江佘山上海欢乐谷检票处电子门票专用通道。<br>
+                    3.入园凭证：刷二维码短信入园。短信游玩当日有效，不能删除、不能转发。如您在出行前一天17：00尚未收到短信，请速来电咨询。</dd>
+                </dl>
+                <dl class="dl-hor">
+                    <dt>适用范围</dt>
+                    <dd>全日制大专至全日制研究生（不分国籍，凭借有效学生证件刷码入园）</dd>
+                </dl>
+                <dl class="dl-hor">
+                    <dt>退改规则</dt>
+                    <dd>若需退改请提前一天晚上21：00前办理，逾期收取全额费用作为违约金。</dd>
+                </dl>
+            </div>
+            <a href="javascript:;" class="view-details">收起</a>
+        </div><!--//.tiptext-->
+    </dd><!--//.pdetails-->
+</dl>                        </div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+        <tbody class="ptbox">
+            <tr>
+                <td class="ptdname">
+                    <div class="ptname"><h5>娱乐<br>餐饮<br>交通接驳</h5></div>
+                </td>
+                <td>
+                    <div class="ptdlist">
+                        <div class="ptdlist-inner">
+                            
+<dl class="ptditem">
+    <dd class="pdpaytype">
+        <span class="ipay ipay-online"><i class="itype">在线预付</i><a href="#" class="btn btn-w btn-small btn-orange">预订</a></span>
+    </dd>
+    <dd class="pdlvprice">
+        <dfn>&yen;<i>175</i></dfn>
+        <span class="tagsback"><em>返</em><i>¥20</i></span>
+    </dd>
+    <dd class="pdprice"><del>&yen;288</del></dd>
+    <dt class="pdname">
+        <a href="javascript:;" class="ptlink">恐龙园 - 成人票（12.1-12.31）</a>
+        <span class="tags tags-lightblue">折扣</span>
+    </dt>
+    <dd class="pdetails">
+        <div class="tiptext tip-light">
+            <div class="tip-arrow tip-arrow-11">
+                <em>◆</em>
+                <i>◆</i>
+            </div>
+            <div class="tip-other">
+                <dl class="dl-hor">
+                    <dt>入园须知</dt>
+                    <dd>1.营业时间：8:00—17:00（16:00停止换票）
+                    取票时间：8：30—17：00<br>
+                    2.景区地址：上海市浦东新区南六公路178号取票地点：上海市松江佘山上海欢乐谷检票处电子门票专用通道。<br>
+                    3.入园凭证：刷二维码短信入园。短信游玩当日有效，不能删除、不能转发。如您在出行前一天17：00尚未收到短信，请速来电咨询。</dd>
+                </dl>
+                <dl class="dl-hor">
+                    <dt>适用范围</dt>
+                    <dd>全日制大专至全日制研究生（不分国籍，凭借有效学生证件刷码入园）</dd>
+                </dl>
+                <dl class="dl-hor">
+                    <dt>退改规则</dt>
+                    <dd>若需退改请提前一天晚上21：00前办理，逾期收取全额费用作为违约金。</dd>
+                </dl>
+            </div>
+            <a href="javascript:;" class="view-details">收起</a>
+        </div><!--//.tiptext-->
+    </dd><!--//.pdetails-->
+</dl>
+<dl class="ptditem">
+    <dd class="pdpaytype">
+        <span class="ipay ipay-local"><i class="itype">景区支付</i><a href="#" class="btn btn-w btn-small btn-orange">预订</a></span>
+    </dd>
+    <dd class="pdlvprice">
+        <dfn>&yen;<i>234</i></dfn>
+    </dd>
+    <dd class="pdprice"><del>&yen;308</del></dd>
+    <dt class="pdname">
+        <a href="javascript:;" class="ptlink">恐龙园圣诞夜 - 大学生票 (浙江、江苏大学生特惠)</a>
+    </dt>
+    <dd class="pdetails">
+        <div class="tiptext tip-light">
+            <div class="tip-arrow tip-arrow-11">
+                <em>◆</em>
+                <i>◆</i>
+            </div>
+            <div class="tip-other">
+                <dl class="dl-hor">
+                    <dt>入园须知</dt>
+                    <dd>1.营业时间：8:00—17:00（16:00停止换票）
+                    取票时间：8：30—17：00<br>
+                    2.景区地址：上海市浦东新区南六公路178号取票地点：上海市松江佘山上海欢乐谷检票处电子门票专用通道。<br>
+                    3.入园凭证：刷二维码短信入园。短信游玩当日有效，不能删除、不能转发。如您在出行前一天17：00尚未收到短信，请速来电咨询。</dd>
+                </dl>
+                <dl class="dl-hor">
+                    <dt>适用范围</dt>
+                    <dd>全日制大专至全日制研究生（不分国籍，凭借有效学生证件刷码入园）</dd>
+                </dl>
+                <dl class="dl-hor">
+                    <dt>退改规则</dt>
+                    <dd>若需退改请提前一天晚上21：00前办理，逾期收取全额费用作为违约金。</dd>
+                </dl>
+            </div>
+            <a href="javascript:;" class="view-details">收起</a>
+        </div><!--//.tiptext-->
+    </dd><!--//.pdetails-->
+</dl>
+<dl class="ptditem">
+    <dd class="pdpaytype">
+        <span class="ipay ipay-local"><i class="itype">景区支付</i><a href="#" class="btn btn-w btn-small btn-orange">预订</a></span>
+    </dd>
+    <dd class="pdlvprice">
+        <dfn>&yen;<i>234</i></dfn>
+    </dd>
+    <dd class="pdprice"><del>&yen;308</del></dd>
+    <dt class="pdname">
+        <a href="#" class="ptlink">恐龙园圣诞夜 - 大学生票 (浙江、江苏大学生特惠)如果标题很长很长很长很长很长很长怎么办</a>
+        <span class="tags tags-lightblue">折扣</span>
+    </dt>
+    <dd class="pdetails">
+        <div class="tiptext tip-light">
+            <div class="tip-arrow tip-arrow-11">
+                <em>◆</em>
+                <i>◆</i>
+            </div>
+            <div class="tip-other">
+                <dl class="dl-hor">
+                    <dt>入园须知</dt>
+                    <dd>1.营业时间：8:00—17:00（16:00停止换票）
+                    取票时间：8：30—17：00<br>
+                    2.景区地址：上海市浦东新区南六公路178号取票地点：上海市松江佘山上海欢乐谷检票处电子门票专用通道。<br>
+                    3.入园凭证：刷二维码短信入园。短信游玩当日有效，不能删除、不能转发。如您在出行前一天17：00尚未收到短信，请速来电咨询。</dd>
+                </dl>
+                <dl class="dl-hor">
+                    <dt>适用范围</dt>
+                    <dd>全日制大专至全日制研究生（不分国籍，凭借有效学生证件刷码入园）</dd>
+                </dl>
+                <dl class="dl-hor">
+                    <dt>退改规则</dt>
+                    <dd>若需退改请提前一天晚上21：00前办理，逾期收取全额费用作为违约金。</dd>
+                </dl>
+            </div>
+            <a href="javascript:;" class="view-details">收起</a>
+        </div><!--//.tiptext-->
+    </dd><!--//.pdetails-->
+</dl>                        </div>
+                    </div>
+                </td>
+            </tr>
+        </tbody><!--//#destorder-->
+        <tbody class="ptbox">
+            <tr>
+                <td class="ptdname">
+                    <div class="ptname"><h5>自由行</h5><p>景点+酒店</p></div>
+                </td>
+                <td>
+                    <div class="ptdlist">
+                        <div id="dfreetour" class="ptdlist-inner">
+                            
+<dl class="ptditem">
+    <dd class="pdpaytype">
+        <span class="ipay ipay-online"><i class="itype">在线预付</i><a href="#" class="btn btn-w btn-small btn-link">查看</a></span>
+    </dd>
+    <dd class="pdlvprice">
+        <dfn>&yen;<i>175</i></dfn>
+        <span class="tagsback"><em>返</em><i>¥20</i></span>
+    </dd>
+    <dd class="pdprice"><del>&yen;288</del></dd>
+    <dt class="pdname">
+        <a href="javascript:;" class="ptlink">恐龙园 - 成人票（12.1-12.31）</a>
+        <p>园内四大过山车，感受神奇加速度！</p>
+    </dt>
+    <dd class="pdetails">
+        <div class="tiptext tip-light">
+            <div class="tip-arrow tip-arrow-11">
+                <em>◆</em>
+                <i>◆</i>
+            </div>
+            <div class="tip-other">
+                <dl class="dl-hor">
+                    <dt>入园须知</dt>
+                    <dd>1.营业时间：8:00—17:00（16:00停止换票）
+                    取票时间：8：30—17：00<br>
+                    2.景区地址：上海市浦东新区南六公路178号取票地点：上海市松江佘山上海欢乐谷检票处电子门票专用通道。<br>
+                    3.入园凭证：刷二维码短信入园。短信游玩当日有效，不能删除、不能转发。如您在出行前一天17：00尚未收到短信，请速来电咨询。</dd>
+                </dl>
+                <dl class="dl-hor">
+                    <dt>适用范围</dt>
+                    <dd>全日制大专至全日制研究生（不分国籍，凭借有效学生证件刷码入园）</dd>
+                </dl>
+                <dl class="dl-hor">
+                    <dt>退改规则</dt>
+                    <dd>若需退改请提前一天晚上21：00前办理，逾期收取全额费用作为违约金。</dd>
+                </dl>
+            </div>
+            <a href="javascript:;" class="view-details">收起</a>
+        </div><!--//.tiptext-->
+    </dd><!--//.pdetails-->
+</dl>
+<dl class="ptditem">
+    <dd class="pdpaytype">
+        <span class="ipay ipay-local"><i class="itype">景区支付</i><a href="#" class="btn btn-w btn-small btn-link">查看</a></span>
+    </dd>
+    <dd class="pdlvprice">
+        <dfn>&yen;<i>234</i></dfn>
+    </dd>
+    <dd class="pdprice"><del>&yen;308</del></dd>
+    <dt class="pdname">
+        <a href="javascript:;" class="ptlink">恐龙园圣诞夜 - 大学生票 (浙江、江苏大学生特惠)</a>
+        <p>园内四大过山车，感受神奇加速度！</p>
+    </dt>
+    <dd class="pdetails">
+        <div class="tiptext tip-light">
+            <div class="tip-arrow tip-arrow-11">
+                <em>◆</em>
+                <i>◆</i>
+            </div>
+            <div class="tip-other">
+                <dl class="dl-hor">
+                    <dt>入园须知</dt>
+                    <dd>1.营业时间：8:00—17:00（16:00停止换票）
+                    取票时间：8：30—17：00<br>
+                    2.景区地址：上海市浦东新区南六公路178号取票地点：上海市松江佘山上海欢乐谷检票处电子门票专用通道。<br>
+                    3.入园凭证：刷二维码短信入园。短信游玩当日有效，不能删除、不能转发。如您在出行前一天17：00尚未收到短信，请速来电咨询。</dd>
+                </dl>
+                <dl class="dl-hor">
+                    <dt>适用范围</dt>
+                    <dd>全日制大专至全日制研究生（不分国籍，凭借有效学生证件刷码入园）</dd>
+                </dl>
+                <dl class="dl-hor">
+                    <dt>退改规则</dt>
+                    <dd>若需退改请提前一天晚上21：00前办理，逾期收取全额费用作为违约金。</dd>
+                </dl>
+            </div>
+            <a href="javascript:;" class="view-details">收起</a>
+        </div><!--//.tiptext-->
+    </dd><!--//.pdetails-->
+</dl>
+<dl class="ptditem">
+    <dd class="pdpaytype">
+        <span class="ipay ipay-local"><i class="itype">景区支付</i><a href="#" class="btn btn-w btn-small btn-link">查看</a></span>
+    </dd>
+    <dd class="pdlvprice">
+        <dfn>&yen;<i>234</i></dfn>
+    </dd>
+    <dd class="pdprice"><del>&yen;308</del></dd>
+    <dt class="pdname">
+        <a href="#" class="ptlink">恐龙园圣诞夜 - 大学生票 (浙江、江苏大学生特惠)如果标题很长很长很长很长很长很长怎么办</a>
+        <p>园内四大过山车，感受神奇加速度！</p>
+    </dt>
+    <dd class="pdetails">
+        <div class="tiptext tip-light">
+            <div class="tip-arrow tip-arrow-11">
+                <em>◆</em>
+                <i>◆</i>
+            </div>
+            <div class="tip-other">
+                <dl class="dl-hor">
+                    <dt>入园须知</dt>
+                    <dd>1.营业时间：8:00—17:00（16:00停止换票）
+                    取票时间：8：30—17：00<br>
+                    2.景区地址：上海市浦东新区南六公路178号取票地点：上海市松江佘山上海欢乐谷检票处电子门票专用通道。<br>
+                    3.入园凭证：刷二维码短信入园。短信游玩当日有效，不能删除、不能转发。如您在出行前一天17：00尚未收到短信，请速来电咨询。</dd>
+                </dl>
+                <dl class="dl-hor">
+                    <dt>适用范围</dt>
+                    <dd>全日制大专至全日制研究生（不分国籍，凭借有效学生证件刷码入园）</dd>
+                </dl>
+                <dl class="dl-hor">
+                    <dt>退改规则</dt>
+                    <dd>若需退改请提前一天晚上21：00前办理，逾期收取全额费用作为违约金。</dd>
+                </dl>
+            </div>
+            <a href="javascript:;" class="view-details">收起</a>
+        </div><!--//.tiptext-->
+    </dd><!--//.pdetails-->
+</dl>                            <a href="#" class="link-more">查看 24 条自由行&gt;&gt;</a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </tbody><!--//#freetour-->
+        <tbody class="ptbox">
+            <tr>
+                <td class="ptdname">
+                    <div class="ptname"><h5>跟团游</h5><p>上海出发</p>
+                    </div>
+                </td>
+                <td>
+                    <div class="ptdlist">
+                        <div id="dtuangou" class="ptdlist-inner">
+                            
+<dl class="ptditem">
+    <dd class="pdpaytype">
+        <span class="ipay ipay-online"><i class="itype">在线预付</i><a href="#" class="btn btn-w btn-small btn-link">查看</a></span>
+    </dd>
+    <dd class="pdlvprice">
+        <dfn>&yen;<i>175</i></dfn>
+        <span class="tagsback"><em>返</em><i>¥20</i></span>
+    </dd>
+    <dd class="pdprice"><del>&yen;288</del></dd>
+    <dt class="pdname">
+        <a href="javascript:;" class="ptlink">恐龙园 - 成人票（12.1-12.31）</a>
+        <p>园内四大过山车，感受神奇加速度！</p>
+    </dt>
+    <dd class="pdetails">
+        <div class="tiptext tip-light">
+            <div class="tip-arrow tip-arrow-11">
+                <em>◆</em>
+                <i>◆</i>
+            </div>
+            <div class="tip-other">
+                <dl class="dl-hor">
+                    <dt>入园须知</dt>
+                    <dd>1.营业时间：8:00—17:00（16:00停止换票）
+                    取票时间：8：30—17：00<br>
+                    2.景区地址：上海市浦东新区南六公路178号取票地点：上海市松江佘山上海欢乐谷检票处电子门票专用通道。<br>
+                    3.入园凭证：刷二维码短信入园。短信游玩当日有效，不能删除、不能转发。如您在出行前一天17：00尚未收到短信，请速来电咨询。</dd>
+                </dl>
+                <dl class="dl-hor">
+                    <dt>适用范围</dt>
+                    <dd>全日制大专至全日制研究生（不分国籍，凭借有效学生证件刷码入园）</dd>
+                </dl>
+                <dl class="dl-hor">
+                    <dt>退改规则</dt>
+                    <dd>若需退改请提前一天晚上21：00前办理，逾期收取全额费用作为违约金。</dd>
+                </dl>
+            </div>
+            <a href="javascript:;" class="view-details">收起</a>
+        </div><!--//.tiptext-->
+    </dd><!--//.pdetails-->
+</dl>
+<dl class="ptditem">
+    <dd class="pdpaytype">
+        <span class="ipay ipay-local"><i class="itype">景区支付</i><a href="#" class="btn btn-w btn-small btn-link">查看</a></span>
+    </dd>
+    <dd class="pdlvprice">
+        <dfn>&yen;<i>234</i></dfn>
+    </dd>
+    <dd class="pdprice"><del>&yen;308</del></dd>
+    <dt class="pdname">
+        <a href="javascript:;" class="ptlink">恐龙园圣诞夜 - 大学生票 (浙江、江苏大学生特惠)</a>
+        <p>园内四大过山车，感受神奇加速度！</p>
+    </dt>
+    <dd class="pdetails">
+        <div class="tiptext tip-light">
+            <div class="tip-arrow tip-arrow-11">
+                <em>◆</em>
+                <i>◆</i>
+            </div>
+            <div class="tip-other">
+                <dl class="dl-hor">
+                    <dt>入园须知</dt>
+                    <dd>1.营业时间：8:00—17:00（16:00停止换票）
+                    取票时间：8：30—17：00<br>
+                    2.景区地址：上海市浦东新区南六公路178号取票地点：上海市松江佘山上海欢乐谷检票处电子门票专用通道。<br>
+                    3.入园凭证：刷二维码短信入园。短信游玩当日有效，不能删除、不能转发。如您在出行前一天17：00尚未收到短信，请速来电咨询。</dd>
+                </dl>
+                <dl class="dl-hor">
+                    <dt>适用范围</dt>
+                    <dd>全日制大专至全日制研究生（不分国籍，凭借有效学生证件刷码入园）</dd>
+                </dl>
+                <dl class="dl-hor">
+                    <dt>退改规则</dt>
+                    <dd>若需退改请提前一天晚上21：00前办理，逾期收取全额费用作为违约金。</dd>
+                </dl>
+            </div>
+            <a href="javascript:;" class="view-details">收起</a>
+        </div><!--//.tiptext-->
+    </dd><!--//.pdetails-->
+</dl>
+<dl class="ptditem">
+    <dd class="pdpaytype">
+        <span class="ipay ipay-local"><i class="itype">景区支付</i><a href="#" class="btn btn-w btn-small btn-link">查看</a></span>
+    </dd>
+    <dd class="pdlvprice">
+        <dfn>&yen;<i>234</i></dfn>
+    </dd>
+    <dd class="pdprice"><del>&yen;308</del></dd>
+    <dt class="pdname">
+        <a href="#" class="ptlink">恐龙园圣诞夜 - 大学生票 (浙江、江苏大学生特惠)如果标题很长很长很长很长很长很长怎么办</a>
+        <p>园内四大过山车，感受神奇加速度！</p>
+    </dt>
+    <dd class="pdetails">
+        <div class="tiptext tip-light">
+            <div class="tip-arrow tip-arrow-11">
+                <em>◆</em>
+                <i>◆</i>
+            </div>
+            <div class="tip-other">
+                <dl class="dl-hor">
+                    <dt>入园须知</dt>
+                    <dd>1.营业时间：8:00—17:00（16:00停止换票）
+                    取票时间：8：30—17：00<br>
+                    2.景区地址：上海市浦东新区南六公路178号取票地点：上海市松江佘山上海欢乐谷检票处电子门票专用通道。<br>
+                    3.入园凭证：刷二维码短信入园。短信游玩当日有效，不能删除、不能转发。如您在出行前一天17：00尚未收到短信，请速来电咨询。</dd>
+                </dl>
+                <dl class="dl-hor">
+                    <dt>适用范围</dt>
+                    <dd>全日制大专至全日制研究生（不分国籍，凭借有效学生证件刷码入园）</dd>
+                </dl>
+                <dl class="dl-hor">
+                    <dt>退改规则</dt>
+                    <dd>若需退改请提前一天晚上21：00前办理，逾期收取全额费用作为违约金。</dd>
+                </dl>
+            </div>
+            <a href="javascript:;" class="view-details">收起</a>
+        </div><!--//.tiptext-->
+    </dd><!--//.pdetails-->
+</dl>                        </div>
+                    </div>
+                </td>
+            </tr>
+        </tbody><!--//#tuangou-->
+    </table>
+</div><!--//.dpro-list-->
         </div>
-        <div class="hr_a"></div>
         <div class="dside">
             <div class="sidebox dside-tuan">
                 <p class="tuan-tit"><i class="icon dicon-time"></i>团购剩余时间 <span class="countdown"><i>03</i>天<i>16</i>时<i>30</i>分<i>10</i>秒</span></p>
@@ -348,7 +940,7 @@
                     <p><span class="buy"><i>1922</i>人购买</span><del>&yen;1500</del> | <span class="discount">7.5折</span></p>
                 </div>
             </div><!--//.sidebox-->
-            
+
             <div class="sidebox dside-search">
                 <div class="stitle">
                     <h4 class="stit">景点门票搜索</h4>
@@ -384,7 +976,7 @@
                     </dl>
                 </div>
             </div><!--//.sidebox-->
-            
+
             <div class="sidebox dside-near">
                 <div class="stitle">
                     <h4 class="stit">附近酒店</h4>
@@ -422,7 +1014,7 @@
                     </ul>
                 </div>
             </div><!--//.sidebox-->
-            
+
             <div class="sidebox dside-near">
                 <div class="stitle">
                     <h4 class="stit">附近景点</h4>
@@ -460,7 +1052,7 @@
                     </ul>
                 </div>
             </div><!--//.sidebox-->
-            
+
             <div class="sidebox dside-theme">
                 <div class="stitle">
                     <h4 class="stit">“主题乐园”景点</h4>
@@ -503,7 +1095,7 @@
                     </dl>
                 </div>
             </div><!--//.sidebox-->
-            
+
             <div class="sidebox dside-guide">
                 <div class="stitle">
                     <h4 class="stit">攻略随身带</h4>
@@ -520,7 +1112,7 @@
                     </dl>
                 </div>
             </div><!--//.sidebox-->
-        </div>
+        </div><!--//.dside-->
         <div class="dmain">
             <div id="policy" class="dbox policy">
                 <div class="dtitle">
@@ -668,11 +1260,239 @@
                     <h3 class="dtit"><i class="icon dicon-comments"></i>用户点评</h3>
                 </div>
                 <div class="dcontent">
+                                        
+                    <!-- 点评信息概况 -->
                     <div class="cominfo">
-                        
-                    </div>
-                    
-                    
+                        <div class="dscore">
+                            <span class="comlevel"><dfn><em>好评率</em><i data-mark="dynamicNum" data-level="91.5">00.0</i>%</dfn></span>
+                            <span class="scorebox">
+                                <p class="score-item">
+                                    <em>娱乐</em>
+                                    <span class="score-level"><i data-mark="dynamicNum" data-level="5.0"></i></span>
+                                    <em>5.0</em>
+                                </p>
+                                <p class="score-item">
+                                    <em>安全</em>
+                                    <span class="score-level"><i data-mark="dynamicNum" data-level="4.5"></i></span>
+                                    <em>4.5</em>
+                                </p>
+                                <p class="score-item">
+                                    <em>规模</em>
+                                    <span class="score-level"><i data-mark="dynamicNum" data-level="3.6"></i></span>
+                                    <em>3.6</em>
+                                </p>
+                                <p class="score-item">
+                                    <em>人气</em>
+                                    <span class="score-level"><i data-mark="dynamicNum" data-level="4.3"></i></span>
+                                    <em>4.3</em>
+                                </p>
+                            </span>
+                        </div>
+                        <div class="dtext">
+                            <a href="#" class="btn btn-mini btn-w btn-orange">&nbsp;&nbsp;有订单，写点评，返现金&nbsp;&nbsp;</a>
+                            <p>没订单？<a href="#" class="dlink">发表普通点评</a> 赠50积分，精华追加150积分！</p>
+                        </div>
+                    </div><!--//.cominfo-->
+
+                    <!-- 点评详情 -->
+                    <div class="dcomment">
+                        <div class="tab-dcom">
+                            <ul class="ul-hor JS_tabnav">
+                                <li class="selected"><a href="javascript:;">体验点评<span>（15893）</span></a></li>
+                                <li><a href="javascript:;">精华点评<span>（88）</span></a></li>
+                                <li><a href="javascript:;">普通点评<span>（688）</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="dcombox JS_tabsbox">
+                            <div class="tabcon selected">
+                                <div class="dcom-item">
+                                    <div class="feedbox">
+                                        <div class="feed-info">
+                                            <span class="feed-date">2014-01-21</span>
+                                            <span class="feed-user">user20140220</span>
+                                            <p class="feed-score">
+                                                <span class="icon dicon-good"></span>
+                                                <span class="feed-item">娱乐 5(很好)</span>
+                                                <span class="feed-item">安全 5(好)</span>
+                                                <span class="feed-item">规模 5(很好)</span>
+                                                <span class="feed-item">人气 5(好)</span>
+                                            </p>
+                                        </div>
+                                        <div class="dbackinfo">
+                                            <span class="tagsback tagsback-blue"><em>退</em><i>&yen;20</i></span>
+                                            <span class="tagsback tagsback-green"><em>送</em><i>150分</i></span>
+                                        </div>
+                                        <div class="dcom-info">
+                                            <p class="dcom-text">不错，行程安排很好。给老妈和她的朋友订的。。。挺满意。只是订的时候没有看见行程中的优惠信息。客服和我联系的时候也没提。。。。错过了省钱的机会。。。。。唯一的遗憾。建议下回客服在联系的时候应该主动和客人说一下。这么好的优惠活动，万一说了之后又能吸引更多的游客呢。</p>
+                                        </div>
+                                        <p class="dfeeduser">
+                                            <a href="javascript:;" class="dcomplus"><i class="icon dicon-plus"></i><em>5</em></a>
+                                            <span class="s-feed">|</span>
+                                            <a href="javascript:;" class="dcomuser"><i class="icon dicon-dcom"></i><em>24</em></a>
+                                        </p>
+                                        
+                                        <div class="feed-discuss hide">
+                                            <div class="tiptext tip-default">
+                                                <div class="tip-arrow tip-arrow-1">
+                                                    <em>◆</em>
+                                                    <i>◆</i>
+                                                </div>
+                                                <div class="tip-other">
+                                                    <div class="feeds-reply-box">
+                                                        <p>回复 lv138*******</p>
+                                                        <p class="dform form-inline">
+                                                            <textarea maxlength="100" class="textarea"></textarea>
+                                                            <button class="btn btn-small btn-w btn-orange">回复</button>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><!--//.feed-discuss-->
+                                    </div><!---//.feedbox-->
+                                    
+                                </div><!--//.dcom-item-->
+                                
+                                <div class="dcom-item">
+                                    <div class="feedbox">
+                                        <div class="feed-info">
+                                            <span class="feed-date">2014-01-21</span>
+                                            <span class="feed-user">user20140220</span>
+                                            <p class="feed-score">
+                                                <span class="icon dicon-good"></span>
+                                                <span class="feed-item">娱乐 5(很好)</span>
+                                                <span class="feed-item">安全 5(好)</span>
+                                                <span class="feed-item">规模 5(很好)</span>
+                                                <span class="feed-item">人气 5(好)</span>
+                                            </p>
+                                        </div>
+                                        <div class="dbackinfo"></div>
+                                        <div class="dcom-info">
+                                            <p class="dcom-text">不错，行程安排很好。给老妈和她的朋友订的。。。挺满意。只是订的时候没有看见行程中的优惠信息。客服和我联系的时候也没提。。。。错过了省钱的机会。。。。。唯一的遗憾。建议下回客服在联系的时候应该主动和客人说一下。这么好的优惠活动，万一说了之后又能吸引更多的游客呢。</p>
+                                        </div>
+                                        <p class="dfeeduser">
+                                            <a href="javascript:;" class="dcomplus"><i class="icon dicon-plus"></i><em>5</em></a>
+                                            <span class="s-feed">|</span>
+                                            <a href="javascript:;" class="dcomuser"><i class="icon dicon-dcom"></i><em>24</em></a>
+                                        </p>
+                                        
+                                        <div class="feed-discuss">
+                                            <div class="tiptext tip-default">
+                                                <div class="tip-arrow tip-arrow-1">
+                                                    <em>◆</em>
+                                                    <i>◆</i>
+                                                </div>
+                                                <div class="tip-other">
+                                                    <div class="feeds-reply-box hide">
+                                                        <p>回复 lv138*******</p>
+                                                        <p class="dform form-inline">
+                                                            <textarea maxlength="100" class="textarea"></textarea>
+                                                            <button class="btn btn-small btn-w btn-orange">回复</button>
+                                                        </p>
+                                                    </div>
+                                                    <ul class="feed-comments j-feed-comments">
+                                                        <li class="comment-item">
+                                                            <p class="lv-recomment">
+                                                                <span>驴妈妈回复：</span>你好，请咨询客服处理，感谢您的关注！
+                                                            </p>
+                                                        </li>
+                                                        <li class="comment-item">
+                                                            <p>
+                                                                <span>lv133********回复：</span>是啊，我也超级喜欢古木游龙项目，体验超刺激，玩了还想玩。
+                                                            </p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div><!--//.feed-discuss-->
+                                    </div><!---//.feedbox-->
+                                    
+                                </div><!--//.dcom-item-->
+                                
+                                <div class="dcom-item">
+                                    <div class="feedbox">
+                                        <div class="feed-info">
+                                            <span class="feed-date">2014-01-21</span>
+                                            <span class="feed-user">user20140220</span>
+                                            <p class="feed-score">
+                                                <span class="feed-item">娱乐 5(很好)</span>
+                                                <span class="feed-item">安全 5(好)</span>
+                                                <span class="feed-item">规模 5(很好)</span>
+                                                <span class="feed-item">人气 5(好)</span>
+                                            </p>
+                                        </div>
+                                        <div class="dbackinfo">
+                                            <span class="tagsback tagsback-blue"><em>退</em><i>&yen;20</i></span>
+                                        </div>
+                                        <div class="dcom-info">
+                                            <p class="dcom-text">不错，行程安排很好。给老妈和她的朋友订的。。。挺满意。只是订的时候没有看见行程中的优惠信息。客服和我联系的时候也没提。。。。错过了省钱的机会。。。。。唯一的遗憾。建议下回客服在联系的时候应该主动和客人说一下。这么好的优惠活动，万一说了之后又能吸引更多的游客呢。</p>
+                                        </div>
+                                        <p class="dfeeduser">
+                                            <a href="javascript:;" class="dcomplus"><i class="icon dicon-plus"></i><em>5</em></a>
+                                            <span class="s-feed">|</span>
+                                            <a href="javascript:;" class="dcomuser"><i class="icon dicon-dcom"></i><em>24</em></a>
+                                        </p>
+                                        
+                                        <div class="feed-discuss">
+                                            <div class="tiptext tip-default">
+                                                <div class="tip-arrow tip-arrow-1">
+                                                    <em>◆</em>
+                                                    <i>◆</i>
+                                                </div>
+                                                <div class="tip-other">
+                                                    <div class="feeds-reply-box">
+                                                        <p>回复 lv138*******</p>
+                                                        <p class="dform form-inline">
+                                                            <textarea maxlength="100" class="textarea"></textarea>
+                                                            <button class="btn btn-small btn-w btn-orange">回复</button>
+                                                        </p>
+                                                    </div>
+                                                    <ul class="feed-comments j-feed-comments">
+                                                        <li class="comment-item">
+                                                            <p class="lv-recomment">
+                                                                <span>驴妈妈回复：</span>你好，请咨询客服处理，感谢您的关注！
+                                                            </p>
+                                                        </li>
+                                                        <li class="comment-item">
+                                                            <p>
+                                                                <span>lv133********回复：</span>是啊，我也超级喜欢古木游龙项目，体验超刺激，玩了还想玩。
+                                                            </p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div><!--//.feed-discuss-->
+                                    </div><!---//.feedbox-->
+                                </div><!--//.dcom-item-->
+                                
+                                <hr>
+                                <div class="paging orangestyle">
+                                    <div class="pagebox">
+                                        <span class="prevpage"><i class="larr"></i></span><span class="pagesel">1</span><a href="#">2</a><a href="#">3</a><a href="#">4</a><a href="#">5</a><span class="pagemore">...</span><a href="#">20</a><a class="nextpage" href="#"><i class="rarr"></i></a>
+                                    </div>
+                                </div>
+                            </div><!--//.tabcon-->
+                            
+                            <div class="tabcon">
+                                tab2
+                                <div class="paging orangestyle">
+                                    <div class="pagebox">
+                                        <span class="prevpage"><i class="larr"></i></span><span class="pagesel">1</span><a href="#">2</a><a href="#">3</a><a href="#">4</a><a href="#">5</a><span class="pagemore">...</span><a href="#">20</a><a class="nextpage" href="#"><i class="rarr"></i></a>
+                                    </div>
+                                </div>
+                            </div><!--//.tabcon-->
+                            
+                            <div class="tabcon">
+                                tab3
+                                <div class="paging orangestyle">
+                                    <div class="pagebox">
+                                        <span class="prevpage"><i class="larr"></i></span><span class="pagesel">1</span><a href="#">2</a><a href="#">3</a><a href="#">4</a><a href="#">5</a><span class="pagemore">...</span><a href="#">20</a><a class="nextpage" href="#"><i class="rarr"></i></a>
+                                    </div>
+                                </div>
+                            </div><!--//.tabcon-->
+                            
+                        </div><!--//.dcombox-->
+                    </div><!--//.dcomment-->
+
                 </div>
             </div><!--//.dbox-->
             
@@ -681,8 +1501,24 @@
     </div>
 </div> <!-- //.wrap 1 -->
 
+<div class="xfloatbar">
+    <ul class="xfloatitem">
+        <li class="xbuynow"><a rel="nofollow" class="icon" href="javascript:;"></a></li>
+        <li class="xcollect"><a rel="nofollow" class="icon" href="javascript:;"></a></li>
+        <li class="xsharebox"><a rel="nofollow" class="icon xshare" href="javascript:;"></a>
+            <div class="xsharelink">
+                <a rel="nofollow" class="icon xsharesina" href="javascript:;" title=""></a>
+                <a rel="nofollow" class="icon xshareweibo" href="javascript:;" title=""></a>
+                <a rel="nofollow" class="icon xshareqzone" href="javascript:;" title=""></a>
+            </div>
+        </li>
+        <li class="xfeed"><a rel="nofollow" class="icon" href="javascript:;" title="意见反馈"></a></li>
+        <li class="xgotop"><a rel="nofollow" class="icon" href="javascript:;" title="返回顶部"></a></li>
+    </ul>
+</div>
 
 <!--公共底部-->
+<script src="http://pic.lvmama.com/js/v4/copyright.js"></script>
 
 <!-- 频道公用js-->
 <script src="http://pic.lvmama.com/min/index.php?f=/js/new_v/jquery-1.7.2.min.js,/js/ui/lvmamaUI/lvmamaUI.js,/js/new_v/top/header-air_new.js"></script>
@@ -691,6 +1527,8 @@
 <script src="http://pic.lvmama.com/min/index.php?f=/js/v5/newhotel.js"></script>
 -->
 <!--本地引用-->
+<script src="js/bt-affix.js"></script>
+<script src="js/bt-scrollspy.js"></script>
 <script src="js/dest.js"></script>
 
 </body>
