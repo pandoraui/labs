@@ -287,13 +287,13 @@
         <li class="xcollect"><a rel="nofollow" class="icon" href="javascript:;"></a></li>
         <li class="xsharebox"><a rel="nofollow" class="icon xshare" href="javascript:;"></a>
             <div class="xsharelink">
-                <a rel="nofollow" class="icon xsharesina" href="javascript:;"></a>
-                <a rel="nofollow" class="icon xshareweibo" href="javascript:;"></a>
-                <a rel="nofollow" class="icon xshareqzone" href="javascript:;"></a>
+                <a rel="nofollow" class="icon xsharesina" href="javascript:;" title=""></a>
+                <a rel="nofollow" class="icon xshareweibo" href="javascript:;" title=""></a>
+                <a rel="nofollow" class="icon xshareqzone" href="javascript:;" title=""></a>
             </div>
         </li>
-        <li class="xfeed"><a rel="nofollow" class="icon" href="javascript:;"></a></li>
-        <li class="xgotop"><a rel="nofollow" class="icon" href="javascript:;"></a></li>
+        <li class="xfeed"><a rel="nofollow" class="icon" href="javascript:;" title="意见反馈"></a></li>
+        <li class="xgotop"><a rel="nofollow" class="icon" href="javascript:;" title="返回顶部"></a></li>
     </ul>
 </div>
 

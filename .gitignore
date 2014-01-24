@@ -10,10 +10,10 @@
 *.vi
 *~
 *.sass-cache
-*.psd
-*.jpg
-*.png
-*.gif
+#*.psd
+#*.jpg
+#*.png
+#*.gif
 
 # OS or Editor folders
 .DS_Store
