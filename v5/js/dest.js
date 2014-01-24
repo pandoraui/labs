@@ -175,14 +175,11 @@ $(function () {
         xscroll();
     })
     
-    
-    
 })
 $(function(){
     dynamicNum($(".scorebox"));
     dynamicNum($(".comlevel"),true);
     function dynamicNum(dynamicBox,format){
-        //var dynamicBox = $(".dscore");
         var dynamicItem = dynamicBox.find('[data-mark="dynamicNum"]'),
             arrT = [],
             j = 0;

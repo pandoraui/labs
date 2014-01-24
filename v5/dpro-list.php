@@ -21,7 +21,7 @@
                 </td>
                 <td>
                     <div class="ptdlist">
-                        <div class="pdlist-inner">
+                        <div class="ptdlist-inner">
                             <?php include("ptditem.php"); ?>
                         </div>
                     </div>

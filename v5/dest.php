@@ -286,13 +286,13 @@
         <li class="xbuynow"><a rel="nofollow" class="icon" href="#destorder"></a></li>
         <li class="xcollect"><a rel="nofollow" class="icon" href="javascript:;"></a></li>
         <li class="xsharebox"><a rel="nofollow" class="icon xshare" href="javascript:;"></a>
-            <div class="xsharelink">
-                <a rel="nofollow" class="icon xsharesina" href="javascript:;" title=""></a>
-                <a rel="nofollow" class="icon xshareweibo" href="javascript:;" title=""></a>
-                <a rel="nofollow" class="icon xshareqzone" href="javascript:;" title=""></a>
+            <div class="xsharelink bdsharebuttonbox">
+                <a href="#" class="icon xsharesina bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+                <a href="#" class="icon xshareweibo bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+                <a href="#" class="icon xshareqzone bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
             </div>
         </li>
-        <li class="xfeed"><a rel="nofollow" class="icon" href="javascript:;" title="意见反馈"></a></li>
+        <li class="xfeed"><a target="_blank" rel="nofollow" class="icon" href="http://www.lvmama.com/userCenter/user/transItfeedBack.do" title="意见反馈"></a></li>
         <li class="xgotop"><a rel="nofollow" class="icon" href="javascript:;" title="返回顶部"></a></li>
     </ul>
 </div>
@@ -302,12 +302,13 @@
 
 <!-- 频道公用js-->
 <script src="http://pic.lvmama.com/min/index.php?f=/js/new_v/jquery-1.7.2.min.js,/js/ui/lvmamaUI/lvmamaUI.js,/js/new_v/top/header-air_new.js"></script>
-<script src="http://pic.lvmama.com/min/index.php?f=/js/v5/modules/placeholder.js"></script>
-<!--线上引用
-<script src="http://pic.lvmama.com/min/index.php?f=/js/v5/newhotel.js"></script>
+<script src="http://pic.lvmama.com/min/index.php?f=/js/v5/modules/placeholder.js"></script><!--线上引用
+<script src="http://pic.lvmama.com/min/index.php?f=/js/v5/modules/bt-scrollspy.js,/js/v5/dest"></script>
 -->
+
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
 <!--本地引用-->
-<script src="js/bt-affix.js"></script>
 <script src="js/bt-scrollspy.js"></script>
 <script src="js/dest.js"></script>
 
