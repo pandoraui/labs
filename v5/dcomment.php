@@ -61,7 +61,7 @@
                         <span class="tagsback tagsback-green"><em>送</em><i>150分</i></span>
                     </div>
                     <div class="dcom-info">
-                        <p class="dcom-text">不错，行程安排很好。给老妈和她的朋友订的。。。挺满意。只是订的时候没有看见行程中的优惠信息。客服和我联系的时候也没提。。。。错过了省钱的机会。。。。。唯一的遗憾。建议下回客服在联系的时候应该主动和客人说一下。这么好的优惠活动，万一说了之后又能吸引更多的游客呢。</p>
+                        <p class="dcom-text"><span class="tags-active">精华点评</span>不错，行程安排很好。给老妈和她的朋友订的。。。挺满意。只是订的时候没有看见行程中的优惠信息。客服和我联系的时候也没提。。。。错过了省钱的机会。。。。。唯一的遗憾。建议下回客服在联系的时候应该主动和客人说一下。这么好的优惠活动，万一说了之后又能吸引更多的游客呢。</p>
                     </div>
                     <p class="dfeeduser">
                         <a href="javascript:;" class="dcomplus"><i class="icon dicon-plus"></i><em>5</em></a>

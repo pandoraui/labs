@@ -60,7 +60,7 @@ del{color:#bababa;}
 .ul-hor li{float:left;display:inline;*zoom:1;}
 .ul-ver li{float:left;width:100%;}
 .dl-hor dt{float:left;display:inline;*zoom:1;margin-right:10px;}
-.dl-hor dd{overflow:hidden;overflow:hidden;}
+.dl-hor dd{overflow:hidden;*zoom:1;}
 .dl-ver dt,.dl-ver dd{display:block;}
 ul.ul{margin-bottom:20px;}
 ul.ul li{padding-left:18px;line-height:24px;background-position:-185px 7px;}
@@ -96,7 +96,7 @@ a.text-cover .ctext em{color:#fff;text-indent: 5px;display:block;}
 .overview .dimg{width:620px;}
 .overview .dimg li{float:left;margin:0 5px 5px 0;width:198px;height:132px;}
 .overview .dimg li.big-img{width:405px;height:270px;}
-.comment-info{position:absolute;z-index:8;width:96%;padding:0 2%;height:100px;bottom:0;left:0;background:#fafafa}
+.comment-info{position:absolute;z-index:8;width:96%;padding:0 2%;height:100px;bottom:0;left:0;background:#fafafa;*zoom:1;}
 
 .overview .xorder{float:right;}
 .overview .titbox{overflow:hidden;}
@@ -110,7 +110,7 @@ a.text-cover .ctext em{color:#fff;text-indent: 5px;display:block;}
 .xlink .dicon-local{float: left;position: relative;top: 4px;}
 .sec-info .dl-hor{margin-bottom:5px;}
 .overview .dl-hor dt{min-width:60px;_width:60px;}
-.tags-active{display:inline-block;height:18px;line-height:18px;border:1px solid #FFE0CC;padding:0 3px;background:#FFF8F3;color:#f60;}
+.tags-active{display:inline-block;margin-right:4px;height:18px;line-height:18px;border:1px solid #FFE0CC;padding:0 3px;background:#FFF8F3;color:#f60;}
 .link-active a{text-decoration:underline;display:block;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
 .comment-info{padding-top:10px;}
 .comment-info .dnum{float:right;}
@@ -118,7 +118,7 @@ a.text-cover .ctext em{color:#fff;text-indent: 5px;display:block;}
 .comment-info .dot-line{margin:5px 0;}
 .quote,
 .quote:hover{color:#666;text-decoration:none;}
-.quote{display:block;height:44px;padding:5px 10px;overflow:hidden;position:relative;}
+.quote{display:block;height:44px;padding:5px 10px;overflow:hidden;position:relative;*zoom:1;}
 .quote .dicon-comment{float:left;margin-right:26px;margin-top: 6px;}
 .quote p{overflow:hidden;}
 .qstart,.qend{position:absolute;display:inline-block;width:30px;height:30px;color:#ddd;font-size:30px;font-weight:bold;font-family:Arial,sans-serif;}
@@ -141,7 +141,7 @@ a.text-cover .ctext em{color:#fff;text-indent: 5px;display:block;}
 .tab-dest{position:relative;height:40px;border-bottom:1px solid #ccc;background:#fff;}
 .tab-dest .ul-hor{}
 .tab-dest li{margin-right:1px;}
-.tab-dest li a{padding:0 20px;float:left;height:38px;line-height:38px;background:#f1f1f1;color:#333;font-size:14px;border:1px solid #f1f1f1;border-bottom:none;}
+.tab-dest li a{*zoom:1;padding:0 20px;float:left;height:38px;line-height:38px;background:#f1f1f1;color:#333;font-size:14px;border:1px solid #f1f1f1;border-bottom:none;}
 .tab-dest li a:hover,
 .tab-dest li a span{color:#f60;}
 .tab-dest li.active{font-weight:bold;}
@@ -159,7 +159,7 @@ tbody.ptbox{border-bottom:1px solid #eee;*zoom:1;}
 .ptdlist{padding:10px 0 10px 0;background:#fff;overflow:hidden;}
 .ptdlist-inner{position:relative;top:-50px;padding-top:50px;margin-bottom:-50px;*zoom:1;}
 .ptditem{clear:both;padding:10px 0;overflow:hidden;color:#999;}
-.ptdlist .link-more{color:#09c;display:inline-block;margin-left:10px;padding:5px 0;}
+.ptdlist .link-more{color:#09c;clear:both;display:inline-block;margin-left:10px;padding:5px 0;}
 .ptdlist .link-more:hover{color:#f60;}
 
 .pttit .pdpaytype{padding:0 2px 0 8px;}
