@@ -187,7 +187,8 @@ tbody.ptbox{border-bottom:1px solid #eee;*zoom:1;}
 .ptditem-hover,
 .ptditem-selected{background:#fbfbfb;}
 .ptditem-selected{padding-bottom:0;}
-.pdetails .tiptext{background:#fff;margin:10px 0 0;color:#999;}
+.pdetails .tip-light{margin:10px 0 0;color:#999; border: 1px solid #f3f3f3;}
+.pdetails .tip-light .tip-arrow em{color: #f3f3f3;}
 .pdetails .dl-hor{margin-bottom:5px;}
 .pdetails dt{font-weight:bold;margin-right:20px;}
 .pdetails .view-details{float:right;clear:both;}
