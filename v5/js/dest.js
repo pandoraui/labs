@@ -169,12 +169,13 @@ $(function () {
         }else{
             $(".xbuynow").slideUp();
         }
-        
     }
     $(window).scroll(function(){ 
         xscroll();
     })
-    
+    $(".xgotop").click(function(){
+        $(document).scrollTop(0);
+    })
 })
 $(function(){
     dynamicNum($(".scorebox"));

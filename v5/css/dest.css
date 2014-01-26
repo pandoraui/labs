@@ -65,6 +65,9 @@ del{color:#bababa;}
 ul.ul{margin-bottom:20px;}
 ul.ul li{padding-left:18px;line-height:24px;background-position:-185px 7px;}
 .graybox{margin:20px 0 10px;padding:5px 10px;line-height:22px;background:#fbfbfb;color:#666;}
+.list2row{margin-right:-20px;*zoom:1;}
+.list2row a{float:left;display:inline-blcok;width:45%;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+
 /*间隔线*/
 .dot-line,.solid-line,hr{display:block;margin:10px 0;clear:both;height:0;overflow:hidden;text-indent:-9999px;}
 .dot-line{border-bottom:1px dashed #ddd; }
@@ -372,6 +375,14 @@ filter: alpha(opacity=100);}
 
 .xbuynow,
 .xgotop{display:none;}
+
+/*css3*/
+.cssanimations .xfloatitem a{
+    -webkit-transition: background .3s ease;
+       -moz-transition: background .3s ease;
+        -ms-transition: background .3s ease;
+            transition: background .3s ease;
+}
 
 /**
   max 480 767 979

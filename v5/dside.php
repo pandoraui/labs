@@ -25,7 +25,7 @@
         </div>
         <hr>
         <dl class="dl-ver">
-            <dt>精选主题推荐</dt>
+            <dt>相关主题推荐</dt>
             <dd>
                 <a href="#">山水景观</a>
                 <a href="#">漂流</a>
@@ -36,16 +36,14 @@
             </dd>
         </dl>
         <dl class="dl-ver">
-            <dt>热门目的地推荐</dt>
-            <dd>
-                <a href="#">上海</a>
-                <a href="#">杭州</a>
-                <a href="#">乌镇</a>
-                <a href="#">江西</a>
-                <a href="#">鼓浪屿</a>
-                <a href="#">香港</a>
-                <a href="#">北京</a>
-                <a href="#">成都</a>
+            <dt>热门景点推荐</dt>
+            <dd class="list2row">
+                <a href="#">上海月湖雕塑公园</a>
+                <a href="#">上海浦江温泉公园</a>
+                <a href="#">上海锦江乐园</a>
+                <a href="#">上海长风海洋公园</a>
+                <a href="#">上海飞行家主题园</a>
+                <a href="#">上海星期8小镇</a>
             </dd>
         </dl>
     </div>
