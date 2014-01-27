@@ -5,12 +5,13 @@
     </dd>
     <dd class="pdlvprice">
         <dfn>&yen;<i>175</i></dfn>
-        <span class="tagsback"><em>返</em><i>¥20</i></span>
+        <span class="tagsback" 
+        tip-content='预订此产品，游玩后发表体验点评，内容通过审核，即可获得<span class="orange">5</span>元点评奖金返现。'><em>返</em><i>¥20</i></span>
     </dd>
     <dd class="pdprice"><del>&yen;288</del></dd>
     <dt class="pdname">
         <a href="javascript:;" class="ptlink">恐龙园 - 成人票（12.1-12.31）</a>
-        <span class="tags tags-lightblue">折扣</span>
+        <span class="tags tags-lightblue" tip-content='<span>奖金抵扣</span><br/>1.<b>该产品支持奖金抵扣</b><br> 在线支付用户可使用奖金抵扣，订单支付步骤可见奖金抵用金额。<br>2.<b>如何获得奖金</b><br> 游玩后发表体验点评，即可获得返奖金。'>折扣</span>
     </dt>
     <dd class="pdetails">
         <div class="tiptext tip-light">
@@ -87,7 +88,7 @@
     <dd class="pdprice"><del>&yen;308</del></dd>
     <dt class="pdname">
         <a href="#" class="ptlink">恐龙园圣诞夜 - 大学生票 (浙江、江苏大学生特惠)如果标题很长很长很长很长很长很长怎么办</a>
-        <span class="tags tags-lightblue">折扣</span>
+        <span class="tags tags-lightblue" tip-content='<span>奖金抵扣</span><br/>1.<b>该产品支持奖金抵扣</b><br> 在线支付用户可使用奖金抵扣，订单支付步骤可见奖金抵用金额。<br>2.<b>如何获得奖金</b><br> 游玩后发表体验点评，即可获得返奖金。'>折扣</span>
     </dt>
     <dd class="pdetails">
         <div class="tiptext tip-light">

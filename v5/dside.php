@@ -60,7 +60,8 @@
         </a>
         
         <p class="gray">距离约<span class="num">1.556km</span></p>
-        <p><dfn>&yen;<i>800</i><em>起</em></dfn> <span class="tagsback"><em>退</em><i>&yen;20</i></span></p>
+        <p><dfn>&yen;<i>800</i><em>起</em></dfn> <span class="tagsback" 
+        tip-content='预订此产品，游玩后发表体验点评，内容通过审核，即可获得<span class="orange">5</span>元点评奖金返现。'><em>退</em><i>&yen;20</i></span></p>
         <hr>
         <ul class="textlist">
             <li>

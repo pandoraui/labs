@@ -378,10 +378,10 @@ filter: alpha(opacity=100);}
 
 /*css3*/
 .cssanimations .xfloatitem a{
-    -webkit-transition: background .3s ease;
-       -moz-transition: background .3s ease;
-        -ms-transition: background .3s ease;
-            transition: background .3s ease;
+    -webkit-transition: background-color .3s ease;
+       -moz-transition: background-color .3s ease;
+        -ms-transition: background-color .3s ease;
+            transition: background-color .3s ease;
 }
 
 /**

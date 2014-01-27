@@ -104,6 +104,11 @@ $(function(){
     });
     
     
+    //冒泡提醒
+    $(".tags,.tagsback").poptip({
+        place: 6
+    });
+    
     // 大图
     var $PHOTO = $(".J_photo"),
         $IMG_WRAP = $(".J_img_wrap");

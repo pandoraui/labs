@@ -5,7 +5,8 @@
     </dd>
     <dd class="pdlvprice">
         <dfn>&yen;<i>175</i></dfn>
-        <span class="tagsback"><em>返</em><i>¥20</i></span>
+        <span class="tagsback" 
+        tip-content='预订此产品，游玩后发表体验点评，内容通过审核，即可获得<span class="orange">5</span>元点评奖金返现。'><em>返</em><i>¥20</i></span>
     </dd>
     <dd class="pdprice"><del>&yen;288</del></dd>
     <dt class="pdname">
