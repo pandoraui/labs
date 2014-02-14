@@ -2,7 +2,7 @@
  * 2014-01-16 by xiaohan
 **/
 .wrap{width:1000px;}
-
+iframe{border:none;}
 body{font:12px/22px \5b8b\4f53,Tahoma,Arial,sans-serif;color:#333;}
 img{vertical-align:middle;}
 a{color:#666;}
