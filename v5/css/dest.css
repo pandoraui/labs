@@ -328,7 +328,7 @@ p.distance{color:#999;}
 /*无产品列表*/
 .nolist h4{font-size:14px;color:#666;margin:20px 0;clear:both;padding:0 10px;}
 .nolist ul{margin-right:-60px;*zoom:1;overflow:hidden;}
-.nolist li{width:480px;height:260px;padding:0 40px 0 20px;margin-left:-20px;border-left:1px solid #eee;}
+.nolist li{width:480px;padding:0 40px 0 20px;margin-left:-20px;border-left:1px solid #eee;}
 .nolist .pdpaytype{width:75px;text-align:right;}
 .nolist .pdlvprice{text-align:right;}
 
