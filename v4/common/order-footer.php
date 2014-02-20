@@ -24,5 +24,9 @@
 <script src="/labs/assets/common/footer.js"></script>
 <script src="http://pic.lvmama.com/js/ui/lvmamaUI/lvmamaUI.js"></script>
 <script src="/pandora/docs/assets/js/modules/pandora-dialog.js"></script>
-<script src="/labs/v4/js/jquery.selectModel.js"></script>
-<script src="/labs/v4/js/order-page.js"></script>
+<script src="http://pic.lvmama.com/min/index.php?f=/js/v4/modules/pandora-calendar.js"></script>
+<!--<script src="/labs/v4/js/jquery.selectModel.js"></script>
+<script src="/labs/v4/js/order-page.js"></script>-->
+<script type="text/javascript">
+    pandora.calendar();
+</script>
