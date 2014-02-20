@@ -293,12 +293,14 @@
 
 <!-- 频道公用js-->
 <script src="http://pic.lvmama.com/min/index.php?f=/js/new_v/jquery-1.7.2.min.js,/js/ui/lvmamaUI/lvmamaUI.js,/js/new_v/top/header-air_new.js"></script>
-<script src="http://pic.lvmama.com/min/index.php?f=/js/v5/modules/placeholder.js"></script>
+<script src="http://pic.lvmama.com/min/index.php?f=/js/v5/modules/placeholder.js,/js/v5/modules/pandora-poptip.js"></script>
 <!--线上引用
-<script src="http://pic.lvmama.com/min/index.php?f=/js/v5/newhotel.js"></script>
+<script src="http://pic.lvmama.com/min/index.php?f=/js/v5/modules/bt-scrollspy.js,/js/v5/dest.js"></script>
 -->
+
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
 <!--本地引用-->
-<script src="js/bt-affix.js"></script>
 <script src="js/bt-scrollspy.js"></script>
 <script src="js/dest.js"></script>
 

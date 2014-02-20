@@ -24,7 +24,7 @@ function elt_position(elt,position,fixed){
         return -1; //不存在该元素
     }
 }
-    
+
 // 门票dest目的地页面
 $(function(){
     //鼠标room 大图
