@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>电子相册</title>
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/color_pink.css" />
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="js/album.js"></script>
+</head>
+<body>
+<div id="wrap">
+    
+    <!--标题栏-->
+    <div id="logo">
+        <h1>我的相册</h1>
+        <h2 id="links">联系主人<a href="#">Email</a> 访问主人<a href="#">Blog</a></h2>
+    </div>
+    
+    <!--导航栏-->
+    <div id="nav">
+        <ul>
+            <li><a href="#" class="selected">相册</a></li>
+            <li><a href="#">简介</a></li>
+            <li><a href="#">留言</a></li>
+        </ul>
+        
+        <!--皮肤控制按钮-->
+        <div id="colors">
+            <a href="#"><img src="img/pink.png" alt="粉红色皮肤" /></a>
+            <a href="#"><img src="img/blue.png" alt="蓝色皮肤" /></a>
+            <a href="#"><img src="img/green.png" alt="绿色皮肤" /></a>
+            <a href="#"><img src="img/purple.png" alt="紫色皮肤" /></a>
+            <a href="#"><img src="img/orange.png" alt="橙色皮肤" /></a>
+        </div>
+        
+    </div>
+    
+    
+    <!--图片包含框-->
+    <div id="main">
+        
+        <!--左侧分类栏-->
+        <div id="side_menu">
+            
+        </div>
+        
+        <!--右侧浏览框-->
+        <div id="content">
+            <h3><span class="title">相册1</span><span class="sub">[鼠标移过缩略图可以放大浏览]</span></h3>
+            
+            <!--大图显示区域-->
+            <div id="gallery">
+                <span class="big_pic" title="单击灯箱可以放大浏览"><img src="pics/1/6.jpg" alt="默认图片" /></span>
+                <span class="bit_title">pics/1/6.jpg</span>
+                
+                
+                <!--右侧缩微图包含框-->
+                <span id="thumbs"></span>
+            </div>
+            
+            <!--灯箱-->
+            <div id="lightbox">
+                <div><img src="pics/1/6.jpg" alt="" /></div>
+                <div><input type="button" value="关闭" id="idBoxCancel" /></div>
+            </div>
+        </div>
+        
+        
+    </div>
+    
+    
+</div>
+</body>
+</html>
