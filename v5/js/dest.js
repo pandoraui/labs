@@ -63,6 +63,10 @@ $(function(){
         $(this).find(".xalltime").stop().hide().end().find(".xlesstime").stop().show();
     })
     
+    $("body").delegate(".tiptext>.ui-close","click",function(){
+        $(this).parent().fadeOut(300);
+    })
+    
     $(".dpro-list").delegate("a.ptlink","click",function(){
         var currentItem = $(this).parent().parent();
         //var otherItem = $(".dpro-list").find(".ptditem");

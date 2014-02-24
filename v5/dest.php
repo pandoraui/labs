@@ -124,7 +124,7 @@
             </div>
         </div>
         <div class="dcontent dorder-list">
-            <div class="tiptext tip-warning"><span class="tip-icon tip-icon-warning"></span><p>园区通知：很抱歉，该园因娱乐设施维修，故从2014-1-10起至2014-1-12停止营业3天。如果字段很长，可以自适应换行，这里排版不会有什么问题。如果字段很长，可以自适应换行，这里排版不会有什么问题。</p></div>
+            <div class="tiptext tip-warning"><span class="ui-close">&times;</span><span class="tip-icon tip-icon-warning"></span><p>园区通知：很抱歉，该园因娱乐设施维修，故从2014-1-10起至2014-1-12停止营业3天。如果字段很长，可以自适应换行，这里排版不会有什么问题。如果字段很长，可以自适应换行，这里排版不会有什么问题。</p></div>
             
             <?php include("dpro-list.php"); ?>
         </div>
