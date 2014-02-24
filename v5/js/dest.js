@@ -52,10 +52,15 @@ $(function(){
     //x_hover("div.sec-info","sec-info-hover");
     
     $("div.sec-info").hover(
+    //function(){
+    //    $(this).find(".J-more").stop().slideDown(150)
+    //},function(){
+    //    $(this).find(".J-more").stop().slideUp(300)
+    //})
     function(){
-        $(this).find(".J-more").stop().slideDown(150)
+        $(this).find(".xlesstime").stop().hide().end().find(".xalltime").stop().show();
     },function(){
-        $(this).find(".J-more").stop().slideUp(300)
+        $(this).find(".xalltime").stop().hide().end().find(".xlesstime").stop().show();
     })
     
     $(".dpro-list").delegate("a.ptlink","click",function(){
@@ -94,10 +99,6 @@ $(function(){
     
     xscrollspy($(".J_scrollnav"))
     
-    $(window).scroll(function() {
-        xscrollspy($(".J_scrollnav"))
-    });
-    
     
     $('[data-spy="scroll"]').each(function () {
         var $spy = $(this).scrollspy('refresh')
@@ -134,9 +135,6 @@ $(function(){
         $IMG_WRAP.hide();
     });
 
-});
-
-$(function () {
     // 点击回复显示回复框
     $(".comments").delegate('a.dcomuser','click',function(){
         var _thisbox = $(this).parent().next();
@@ -175,11 +173,18 @@ $(function () {
             $(".xbuynow").slideUp();
         }
     }
-    $(window).scroll(function(){ 
+    
+    $(window).scroll(function() {
         xscroll();
-    })
+        xscrollspy($(".J_scrollnav"));
+    });
+    
     $(".xgotop").click(function(){
         $(document).scrollTop(0);
+        
+        if($(window).scrollTop()==0){
+            $(".J_scrollnav").find("li").eq(0).addClass("active").siblings("li").removeClass("active");
+        };
     })
 })
 $(function(){

@@ -107,6 +107,8 @@ a.text-cover .ctext em{color:#fff;text-indent: 5px;display:block;}
 
 .dinfo{color:#666;}
 .sec-info{position:absolute;z-index:10;width:100%;background:#fff;}
+.sec-info dd.xlesstime{max-height:44px;_height:44px;}
+.sec-info dd.xalltime{display:none;max-height:300px;height:auto;}
 .sec-info-hover .hide{display:block;}
 .sec-inner{padding:10px;}
 .sec-info .xlink{float:right;}
@@ -195,6 +197,11 @@ tbody.ptbox{border-bottom:1px solid #eee;*zoom:1;}
 .pdetails .dl-hor{margin-bottom:5px;}
 .pdetails dt{font-weight:bold;margin-right:20px;}
 .pdetails .view-details{float:right;clear:both;}
+
+.pdetails .tip-other p{clear:both;margin-bottom:5px;padding-left:70px;}
+.pdetails .tip-other p strong{width:70px;float: left;display: inline;margin-left:-70px;font-weight:bold;}
+
+
 
 /*侧边栏及主内容 */
 .dside{float:right;display:inline;width:260px;margin-left:20px;}
