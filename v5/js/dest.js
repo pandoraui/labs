@@ -67,6 +67,7 @@ $(function(){
         $(this).parent().fadeOut(300);
     })
     
+    
     $(".dpro-list").delegate("a.ptlink","click",function(){
         var currentItem = $(this).parent().parent();
         //var otherItem = $(".dpro-list").find(".ptditem");

@@ -198,8 +198,8 @@ tbody.ptbox{border-bottom:1px solid #eee;*zoom:1;}
 .pdetails dt{font-weight:bold;margin-right:20px;}
 .pdetails .view-details{float:right;clear:both;}
 
-.pdetails .tip-other p{clear:both;margin-bottom:5px;padding-left:70px;}
-.pdetails .tip-other p strong{width:70px;float: left;display: inline;margin-left:-70px;font-weight:bold;}
+.pdetails .xtext{clear:both;margin-bottom:5px;padding-left:70px;}
+.pdetails .xtext h4{width:70px;float: left;display: inline;margin-left:-70px;font-weight:bold;}
 
 
 
@@ -390,6 +390,18 @@ filter: alpha(opacity=100);}
         -ms-transition: background-color .3s ease;
             transition: background-color .3s ease;
 }
+
+
+/*二维码扫购*/
+.xh_float{_display:none;position:fixed;z-index:100;bottom:310px;left:50%;margin-left:519px;width:86px;border:1px solid #e7e7e7;text-align:center;padding:1px 0;background:#fff;}
+.xh_float img{ display:inline-block;margin:8px 8px 4px;}
+.xh_float p{ font-size:12px;line-height:16px;margin:0 0 4px;}
+.xh_float p span{ display:block; color:#f60;}
+
+.zhiyin{ display:none; width:420px; height:200px; position:absolute; top:-1px;right:86px; background:url(http://pic.lvmama.com/img/v5/zhiyin.gif) no-repeat;}
+.xh_float:hover .zhiyin{display:block;}
+
+.sj_pop{ display:none !important;}
 
 /**
   max 480 767 979

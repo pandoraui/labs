@@ -287,6 +287,12 @@
     </div>
 </div> <!-- //.wrap 1 -->
 
+<div class="xh_float">
+   <img src="http://www.lvmama.com/dest/placeQr/120044.png" width="70" height="70" alt="手机订购二维码">
+   <p>扫描此二维码 <span>手机订更优惠</span></p>
+   <span class="zhiyin"></span>
+</div>
+
 <div class="xfloatbar">
     <ul class="xfloatitem">
         <li class="xbuynow"><a rel="nofollow" class="icon" href="#destorder"></a></li>
