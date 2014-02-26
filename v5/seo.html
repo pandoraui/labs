@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>酒店静态聚合页</title>
+<meta name="keywords" content=""/>
+<meta name="description" content="">
+
+<!--生产线引用-->
+<link rel="stylesheet" href="http://pic.lvmama.com/min/index.php?f=/styles/v5/base.css,/styles/v5/common.css,/styles/new_v/header-air.css" >
+<link rel="stylesheet" href="http://pic.lvmama.com/min/index.php?f=/styles/v4/hotel.css" />
+
+
+<!--本地样式,上线不要引用 只要引用hotel.css即可-->
+<style>
+a{color:#07c;}
+a:hover{color:#e38;}
+
+body{font-size:12px;}
+
+.orange{color:#f60;}
+.graybox{color:#999;}
+
+/*面包屑导航*/
+.crumbs {
+    position: relative;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    font-family: \5b8b\4f53,sans-serif;
+    clear: both;
+}
+.crumbs-link {
+    float: left;
+    display: inline;
+    margin: 0;
+    color: #999;
+}
+.crumbs-link b {
+    font-weight: normal;
+    color: #333;
+}
+.crumbs-link a {
+    color: #07c;
+}
+.crumbs-link a:hover {
+    color:#e38;
+}
+.crumbs-link a.current{
+    color: #999;
+    text-decoration: none;
+}
+.crumbs-link .icon-ihome{
+    position: relative;
+    top: -1px;
+    margin-right: 2px;
+    vertical-align: text-top;
+}
+.crumbs .other-info{
+    float: right;
+    display: inline;
+    color: #888;
+}
+
+.dl-ver dt,
+.dl-ver dd{display:block;clear:both;}
+.seo-list .dl-ver{clear:both;margin:10px 0;}
+.seo-list dt{height:36px;line-height:36px;font-size:14px;font-weight:bold;border-bottom:1px solid #ccc;}
+.seo-list dd{overflow:hidden;padding:10px 0 1px;}
+.seo-list ul.hor{overflow:hidden;}
+.seo-list ul.hor li{float: left;display:inline;width:16.5%;line-height: 22px;overflow:hidden;text-overflow: ellipsis;white-space: nowrap;}
+
+.xhotel-info{clear:both;color:#999;border:1px solid #dfdfdf;padding:10px 20px;line-height:22px;}
+.xhotel-info .xtitle{height:36px;line-height:36px;cursor:pointer;}
+.xhotel-info .xtit span{display:inline-block;height:36px;line-height:36px;}
+.xhotel-info .xtit{font-weight:normal;font-size:14px;}
+.xhotel-info a{color:#999;}
+.xhotel-info a:hover{color:#e38;}
+.xhotel-info .xcontent h4{font-size:14px;margin:5px 0;font-weight:normal;}
+.xhotel-info .xcontent a{padding:0 4px;}
+.xhotel-info .xcontent{display:none;padding-bottom:10px;border-top:1px solid #dfdfdf;}
+.xhotel-info .icon-plus{margin-left:4px;position:relative;_top:4px;vertical-align:middle;}
+.icon-plus{width:11px;height:11px;background-position:-110px -30px;}
+.active .icon-plus{background-position:-130px -30px;}
+
+/*间隔线*/
+.dot-line,.solid-line,hr{display:block;margin:10px 0;clear:both;height:0;overflow:hidden;text-indent:-9999px;}
+.dot-line{border-bottom:1px dashed #ddd; }
+.solid-line{border-bottom:1px solid #ddd; }
+a.dot-line{margin:0 3px;height:auto;line-height:1.5;display:inline-block;text-indent:0;border-bottom:1px dashed #08b;cursor:pointer;}
+hr{margin: 15px 0;border:1px solid #ddd;border-width:0 0 1px;}
+
+</style>
+</head>
+<body>
+    <script src="http://pic.lvmama.com/min/index.php?f=/js/v4/responsive.js"></script>
+
+<!-- 公共头部开始  -->
+<!-- 
+ * 此示例展示，暂时使用了js来展现，
+ * 但开发上线，务必请引用头部的那个公共模块，参考其他项目
+-->
+<script src="http://www.lvmama.com/zt/web/common/header.js"></script>
+<!-- 公共头部结束  -->
+
+
+<!-- wrap\\ 1 -->
+<div class="wrap">
+    
+    <!--面包屑导航-->
+    <div class="crumbs crumbs-default clearfix">
+        <p class="crumbs-link">
+            <a href="#">首页</a> &gt; 
+            <a href="#">酒店</a> &gt; 
+            <a class="current">酒店查询</a>
+        </p>
+        <span class="other-info"><b><span class="orange">中国</span>酒店</b></span>
+    </div>
+    <p class="graybox">
+        中国北京，上海，天津，重庆 4 个直辖市及全国 28 个省市自治区的酒店目录和酒店查询，覆盖广州，深圳，杭州，成都，海南等1182个城市的17000多家酒店，包括如家，7天，格林豪泰，锦江之星等 6588 个酒店品牌。
+    </p>
+    
+    <div class="xhbox seo-list">
+        <dl class="dl-ver">
+            <dt>北京酒店</dt>
+            <dd>
+                <ul class="hor">
+                    <li><a href="#">如家</a></li>
+                    <li><a href="#">速8</a></li>
+                    <li><a href="#">便捷</a></li>
+                    <li><a href="#">禧龙</a></li>
+                    <li><a href="#">锦江之星</a></li>
+                    <li><a href="#">豪泰</a></li>
+                    <li><a href="#">7天</a></li>
+                    <li><a href="#">城市</a></li>
+                    <li><a href="#">布丁</a></li>
+                    <li><a href="#">汉庭</a></li>
+                    <li><a href="#">格林</a></li>
+                    <li><a href="#">莫泰</a></li>
+                </ul>
+            </dd>
+        </dl>
+        <dl class="dl-ver">
+            <dt>江苏酒店</dt>
+            <dd>
+                <ul class="hor">
+                    <li><a href="#">宝应（扬州）</a></li>
+                    <li><a href="#">高邮（扬州）</a></li>
+                    <li><a href="#">金湖（淮安）</a></li>
+                    <li><a href="#">如皋（南通）</a></li>
+                    <li><a href="#">吴江（苏州） </a></li>
+                    <li><a href="#">泰州同里（吴江）</a></li>
+                    <li><a href="#">滨海县（盐城）</a></li>
+                    <li><a href="#">宝应（扬州）</a></li>
+                    <li><a href="#">高邮（扬州）</a></li>
+                    <li><a href="#">金湖（淮安）</a></li>
+                    <li><a href="#">如皋（南通）</a></li>
+                    <li><a href="#">吴江（苏州） </a></li>
+                    <li><a href="#">泰州同里（吴江）</a></li>
+                    <li><a href="#">滨海县（盐城）</a></li>
+                    <li><a href="#">宝应（扬州）</a></li>
+                    <li><a href="#">高邮（扬州）</a></li>
+                    <li><a href="#">金湖（淮安）</a></li>
+                    <li><a href="#">如皋（南通）</a></li>
+                    <li><a href="#">吴江（苏州） </a></li>
+                    <li><a href="#">泰州同里（吴江）</a></li>
+                    <li><a href="#">滨海县（盐城）</a></li>
+                    <li><a href="#">宝应（扬州）</a></li>
+                    <li><a href="#">高邮（扬州）</a></li>
+                    <li><a href="#">金湖（淮安）</a></li>
+                    <li><a href="#">如皋（南通）</a></li>
+                    <li><a href="#">吴江（苏州） </a></li>
+                    <li><a href="#">泰州同里（吴江）</a></li>
+                    <li><a href="#">滨海县（盐城）</a></li>
+                </ul>
+            </dd>
+        </dl>
+    </div>
+    
+    
+    <h2>以下结构放置到酒店列表页即可</h2>
+    
+    <div class="xhotel-info">
+        <div class="xtitle"><h4 class="xtit"><span>北京酒店信息</span><i class="icon icon-plus"></i></h4></div>
+        <div class="xcontent">
+            <h4>酒店简介信息</h4>
+            <p>北京饭店位于北京市中心长安街黄金地段，是座历史悠久的大型豪华饭店，紧邻市中心王府井商业街。饭店交融了东西方文化，曾接待过多个国家和地区的首脑。饭店房间高大宽敞，豪华典雅。饭店拥有各类中西餐厅及风味独特的谭家菜。饭店周边完善的地面及地铁交通设施为宾客的商务出行节省了宝贵的时间，同时现代化的酒店会议设施及服务可为宾客商务会谈和宴请提供更加广泛的空间。</p>
+            <p>北京饭店是2008北京奥运大家庭总部饭店，连续多年荣获了由美国优质服务科学学会颁发的“五星钻石奖”。</p>
+            <p>饭店开业时间1900年，新近装修时间2008年，主楼19层，客房总数733间（套）。 【温馨提示】 1、您预订了N间房，请您提供不少于N位的入住客人姓名； 2、按照酒店规定：12点前入住需等房，有房可入住情况下，入住时间在07：00前需要加收一天房费，入住时间在10：00前需要加收半天房费，请您配合； 3、预订此酒店务必留入住客人真实姓名否则酒店不予确认请提示客人。</p>
+            
+            <hr />
+            
+            <h4>北京机场周边酒店</h4>
+            <p><a href="#">南苑机场</a> | <a href="#">首都国际机场3号航站楼</a> | <a href="#">首都国际机场</a> | <a href="#">首都机场</a></p>
+            
+            <hr />
+            
+            <h4>北京火车站周边酒店</h4>
+            <p><a href="#">北京南站（火车站）</a> | <a href="#">北京北站</a> | <a href="#">北京西站（火车站）</a> | <a href="#">北京站（火车站）</a></p>
+            
+            <hr />
+            
+            <h4>北京星级/经济型酒店</h4>
+            <p><a href="#">北京经济型酒店</a> | <a href="#">北京三星级酒店</a> | <a href="#">北京四星级酒店</a> | <a href="#">北京五星级酒店</a></p>
+            
+            <hr />
+            
+            <h4>北京各行政区内的酒店</h4>
+            <p><a href="#">西城区</a> | <a href="#">东城区</a> | <a href="#">朝阳区</a> | <a href="#">宣武区</a> | <a href="#">崇文区</a> | <a href="#">丰台区</a> | <a href="#">石景山区</a> | <a href="#">海淀区</a> | <a href="#">密云县</a> | <a href="#">顺义区</a> | <a href="#">延庆县</a> | <a href="#">通州区</a> | <a href="#">昌平区</a> | <a href="#">怀柔区</a> | <a href="#">平谷区</a> | <a href="#">门头沟区</a> | <a href="#">房山区</a> | <a href="#">大兴区</a>
+            </p>
+        </div>
+    </div>
+    
+</div> <!-- //.wrap 1 -->
+
+
+<!--公共底部-->
+<script src="http://pic.lvmama.com/js/v4/copyright.js"></script>
+
+<!-- 频道公用js-->
+<script src="http://pic.lvmama.com/min/index.php?f=/js/new_v/jquery-1.7.2.min.js,/js/ui/lvmamaUI/lvmamaUI.js,/js/new_v/top/header-air_new.js"></script>
+<script>
+$(function(){
+    $(".xhotel-info").find(".xtitle").click(function(){
+        if($(this).hasClass("active")){
+            $(this).removeClass("active").next().hide();
+        }else{
+            $(this).addClass("active").next().show();
+        }
+    })
+})
+</script>
+
+</body>
+</html>

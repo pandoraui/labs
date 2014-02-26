@@ -60,7 +60,7 @@
             <div class="dinfo">
                 <div class="sec-info">
                     <div class="sec-inner">
-                        <a href="#" class="xlink"><i class="icon dicon-local"></i>地图</a>
+                        <a href="#traffic" class="xlink"><i class="icon dicon-local"></i>地图</a>
                         <dl class="dl-hor">
                             <dt>景点地址</dt>
                             <dd><p class="linetext">上海市普陀区大渡河路451号，文本过长会隐藏</p></dd>
