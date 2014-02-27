@@ -1,0 +1,148 @@
+
+/* 
+ * tuangou.css 团购页面样式
+**/
+
+.wrap{width:1000px;}
+iframe{border:none;}
+body{font:12px/22px \5b8b\4f53,Tahoma,Arial,sans-serif;color:#333;}
+img{vertical-align:middle;}
+a{color:#666;}
+a:hover{color:#f90;}
+del{font-family:Arial,sans-serif;text-decoration:line-through;color:#999;}
+.btn{margin-right:0;}
+
+.JS_tabsbox .tabcon,
+.JS_vtabsbox .tabcon{display:none;}
+.JS_tabsbox .selected,
+.JS_vtabsbox .selected{display:block;}
+
+/*颜色*/
+.gray{color:#999;}
+.orange{color:#f90;}
+
+/*间隔线*/
+.dot-line,.solid-line,hr{display:block;margin:10px 0;clear:both;height:0;overflow:hidden;text-indent:-9999px;}
+.dot-line{border-bottom:1px dashed #ddd; }
+.solid-line{border-bottom:1px solid #ddd; }
+a.dot-line{margin:0 3px;height:auto;line-height:1.5;display:inline-block;text-indent:0;border-bottom:1px dashed #08b;cursor:pointer;}
+hr{margin: 15px 0;border:1px solid #ddd;border-width:0 0 1px;}
+
+/*图标集*/
+.icon,.tstar,.tstar i{background:url(../img/tuangou.png) -9999px -9999px no-repeat;display:inline-block;}
+.tstar,.tstar i{display:inline-block;width:60px;height:10px;background-position:-120px -30px;}
+.tstar i{float:left;width:100%;background-position:-120px -45px;}
+.icon-time{width:20px;height:20px;background-position:-120px 0;vertical-align: text-top;position: relative;top: -4px;margin-right:4px;}
+.icon-tgx{width:43px;height:38px;background-position:-60px 0;}
+.wrapbox2 .icon-tgx{width:43px;height:38px;background-position:-60px -40px;}
+.wrapbox3 .icon-tgx{width:43px;height:38px;background-position:-60px -80px;}
+.wrapbox4 .icon-tgx{width:43px;height:38px;background-position:-60px -120px;}
+
+/*工具类*/
+.ul-hor:after,
+.ul-ver:after,
+.dl-hor:after,
+.dl-ver:after{clear:both;content:' ';display:block;font-size:0;line-height:0;visibility:hidden;width:0;height:0}
+.ul-hor,.ul-ver,.dl-hor,.dl-ver{zoom:1}
+.ul-hor li{float:left;display:inline;*zoom:1;}
+.ul-ver li{float:left;width:100%;}
+.dl-hor dt{float:left;display:inline;*zoom:1;margin-right:10px;}
+.dl-hor dd{overflow:hidden;*zoom:1;}
+.dl-ver dt,.dl-ver dd{display:block;}
+
+a.text-cover{position:relative;display:block;overflow:hidden;}
+a.text-cover:hover{text-decoration: none;}
+a.text-cover .ctext{position:absolute;bottom:-100px;left:0;right:0;width:100%;overflow: hidden;}
+a.text-cover .ctext{background:rgba(0,0,0,.5);filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr=#7F000000, endColorstr=#7F000000);color:#fff;padding:5px 0;line-height:18px;}
+a.text-cover .ctext em{color:#fff;}
+
+/*主体*/
+.tmain{float:left;width:675px;margin-right:-10px;*zoom:1;margin-left:-35px;}
+.tside{float:right;width:326px;}
+.wrapbox5 .tmain{width:1012px;}
+/*团购列表*/
+.xianshi{}
+.titem{margin:0 0 20px 35px;position:relative;height:360px;float:left;display:inline;width:300px;border:1px solid #dbdbdb;border-top:none; }
+.titem dt{height:200px;}
+.titem dt .icon-tgx{position:absolute;left:8px;top:-3px;}
+.titem dd{position:relative;height:50px;}
+.titem dd.tother{padding:0 10px 1px;}
+.titem .tintro{display:none;padding-top: 5px;}
+.titem .tintro p{max-height:88px;color:#666;line-height:18px;overflow:hidden;margin-bottom:5px;}
+.titem dd .info{padding:5px 10px 1px;width:280px;position:absolute;bottom:0;background:#fff;}
+.titem h4{font-family:"Microsoft YaHei",\5FAE\8F6F\96C5\9ED1;font-size:14px;font-weight:bold;}
+.titem h4 a{color:#333;}
+.titem h4 a:hover{color:#f90;}
+.titem .tdate,
+.titem .btn-orange,
+.titem .ttime{float:right;}
+.titem .ttime{color:#999;}
+.titem .dot-line{margin:6px 0;}
+.titem dfn{font-size:16px;line-height: 30px;height: 30px;}
+.titem dfn i{font-size:30px;}
+.titem .tags{position:relative;top:-4px;}
+.tother .text{color:#999;}
+.tother .text em{color:#666;}
+.titem a.tcom{color:#999;}
+.titem a.tcom:hover{color:#f90;}
+.titem-hover{border-bottom:2px solid #f90;height:359px;box-shadow:0 0 10px 2px rgba(0,0,0,0.1);}
+
+
+/*团购右侧*/
+.sidebox{border:1px solid #dbdbdb;border-top:2px solid #f90;margin-bottom:20px;}
+.sidebox .tit{float:left;display:inline;margin-right:20px;font-family:"Microsoft YaHei",\5FAE\8F6F\96C5\9ED1;fong-weight:bold;}
+
+/*抽奖*/
+.lottery dt{width:150px;height:100px;}
+.lottery .ttitle{height:30px;line-height:30px;padding:0 10px;}
+.lottery .tit{font-size:14px;}
+.lottery .ttitle .gray{float:left;}
+.lottery .tcontent{padding:1px 10px 10px;}
+.lottery a.text-cover{width:150px;height:100px;}
+.lottery a.text-cover .ctext{text-align:center;color:#bbb;bottom:0;padding:5px 0 2px;}
+.lottery .tlink{display:block;line-height:18px;height:36px;overflow:hidden;margin-bottom:5px;}
+.lottery dfn{margin-right:5px;}
+.lottery dfn i{font-size:20px;line-height:20px;}
+.lottery .price{color:#bbb;}
+.lottery .btnbox{margin:5px 0 0;}
+.lottery .btnbox .num{float:left;padding-top:16px;color:#bbb;line-height:1;}
+
+/*秒杀及其他活动*/
+.tsidebox .tit{font-size:22px;}
+.tsidebox .ttitle{height:50px;line-height:50px;background:#f6f6f6;padding:0 10px;}
+.tsidebox .thelp{float:right;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+  max 480 767 979
+      768-979
+  min 980 1200 
+  @media (min-width: 768px) and (max-width: 979px) {}
+  @media (min-width: 1200px) {}
+  @media (min-width: 980px) {}
+  @media (max-width: 480px) {}
+  @media (max-width: 767px) {}
+  @media (max-width: 979px) {}
+*/
+
+@media (min-width: 1200px) {
+    
+}
+@media (min-width: 1240px) {
+   .responsive .wrap{ width:1200px;}
+}
+
+
