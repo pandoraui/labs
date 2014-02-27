@@ -37,6 +37,8 @@ hr{margin: 15px 0;border:1px solid #ddd;border-width:0 0 1px;}
 .wrapbox2 .icon-tgx{width:43px;height:38px;background-position:-60px -40px;}
 .wrapbox3 .icon-tgx{width:43px;height:38px;background-position:-60px -80px;}
 .wrapbox4 .icon-tgx{width:43px;height:38px;background-position:-60px -120px;}
+.icon-tgb1{width:55px;height:24px;background-position:-140px 0;}
+
 
 /*工具类*/
 .ul-hor:after,
@@ -60,6 +62,13 @@ a.text-cover .ctext em{color:#fff;}
 .tmain{float:left;width:675px;margin-right:-10px;*zoom:1;margin-left:-35px;}
 .tside{float:right;width:326px;}
 .wrapbox5 .tmain{width:1012px;}
+
+/*loading*/
+.titem dt,
+.tsidebox dt{background:url(//pic.lvmama.com/img/new_v/ui_scrollLoading/loadingGIF46px.gif) center center no-repeat;}
+
+
+
 /*团购列表*/
 .xianshi{}
 .titem{margin:0 0 20px 35px;position:relative;height:360px;float:left;display:inline;width:300px;border:1px solid #dbdbdb;border-top:none; }
@@ -74,17 +83,18 @@ a.text-cover .ctext em{color:#fff;}
 .titem h4 a{color:#333;}
 .titem h4 a:hover{color:#f90;}
 .titem .tdate,
-.titem .btn-orange,
-.titem .ttime{float:right;}
-.titem .ttime{color:#999;}
+.tmu .btn,
+.other .ttime{float:right;}
+.other .ttime{color:#999;}
 .titem .dot-line{margin:6px 0;}
-.titem dfn{font-size:16px;line-height: 30px;height: 30px;}
-.titem dfn i{font-size:30px;}
-.titem .tags{position:relative;top:-4px;}
-.tother .text{color:#999;}
-.tother .text em{color:#666;}
-.titem a.tcom{color:#999;}
-.titem a.tcom:hover{color:#f90;}
+.tprice dfn{font-size:16px;line-height: 30px;height: 30px;}
+.tprice dfn i{font-size:30px;}
+.tprice .tags{position:relative;top:-4px;}
+.other .text{color:#999;}
+.other .text em{color:#666;}
+
+.tmu a.tcom{color:#999;}
+.tmu a.tcom:hover{color:#f90;}
 .titem-hover{border-bottom:2px solid #f90;height:359px;box-shadow:0 0 10px 2px rgba(0,0,0,0.1);}
 
 
@@ -112,19 +122,21 @@ a.text-cover .ctext em{color:#fff;}
 .tsidebox .ttitle{height:50px;line-height:50px;background:#f6f6f6;padding:0 10px;}
 .tsidebox .thelp{float:right;}
 
+.sidebox .dot-line{margin:6px 0;}
+.tsidebox dd{padding:10px 10px 5px;}
+.tsidebox dd .tmu{margin-top:-5px;}
+.tsidebox dd .btn{position:relative;top:10px;}
+.tsidebox dt{position:relative;}
+.tsidebox .icon-tgb1{position:absolute;left:-2px;top:8px;z-index:2;}
+
+.pitem .desc{float:right;font-size:12px;color:#666;}
+.pitem{font-size:14px;padding:0 10px;height:35px;line-height:35px;color:#}
+.pitem a{color:#333;}
+.pitem a:hover{color:#f90;}
 
 
-
-
-
-
-
-
-
-
-
-
-
+/*广告位*/
+.adside{margin-top:10px;overflow:hidden;height:90px;}
 
 /**
   max 480 767 979

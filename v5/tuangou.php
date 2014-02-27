@@ -60,49 +60,48 @@
                 <h4 class="tit">限时秒杀</h4>
             </div>
             <div class="tcontent">
-                
-                <dl class="dl-ver">
-                    <dt><a href="#" class="text-cover"><img src="//placehold.it/326x210/ffd3af" alt="" /><span class="ctext"><i class="icon icon-time"></i><i class="countdown">328234943</i></span></a></dt>
-                    <dd>
-                        <a href="#" class="tlink">上海帝盛酒店超级豪华套餐（浦东新区店）</a>
-                        <p><dfn>&yen;<i>1000</i></dfn><span class="price">市场价：<del>&yen;1240</del></span></p>
-                        <p class="btnbox">
-                            <a href="#" class="btn btn-big btn-orange fr">去看看</a>
-                            <span class="num"><em class="orange">1990</em>人参加</span>
+                <ul class="ul-ver">
+                    <li>
+                        <p class="pitem">
+                            <span class="desc">3天2晚/2天</span>
+                            <b>[线路游]</b>
+                            <a href="#" class="tlink">上海杭州</a>
                         </p>
-                    </dd>
-                </dl>
+                        <?php include("tsideitem.html"); ?>
+                    </li>
+                    <li>
+                        <p class="pitem">
+                            <span class="desc">3天2晚/2天</span>
+                            <b>[线路游]</b>
+                            <a href="#" class="tlink">上海杭州</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="pitem">
+                            <span class="desc">3天2晚/2天</span>
+                            <b>[线路游]</b>
+                            <a href="#" class="tlink">上海杭州</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="pitem">
+                            <span class="desc">3天2晚/2天</span>
+                            <b>[线路游]</b>
+                            <a href="#" class="tlink">上海杭州</a>
+                        </p>
+                    </li>
+                </ul>
             </div>
         </div><!--//.tsidebox-->
         
-        <div class="sidebox tsidebox">
-            <div class="ttitle">
-                <h4 class="tit">周游客</h4>
-                <a href="#" class="thelp">什么是周游客<i class="icon icon-help"></i></a>
-            </div>
-            <div class="tcontent">
-                
-            </div>
-        </div><!--//.tsidebox-->
+        <div class="adside">
+            <a href="#"><img src="//placehold.it/328x90/aad3af" width="328" height="90" alt="" /></a>
+        </div>
         
-        <div class="sidebox tsidebox">
-            <div class="ttitle">
-                <h4 class="tit">微旅游日</h4>
-                <a href="#" class="thelp">什么是微旅游日<i class="icon icon-help"></i></a>
-            </div>
-            <div class="tcontent">
-                
-            </div>
-        </div><!--//.tsidebox-->
+        <div class="adside">
+            <a href="#"><img src="//placehold.it/328x90/aad3af" width="328" height="90" alt="" /></a>
+        </div>
         
-        <div class="sidebox tsidebox">
-            <div class="ttitle">
-                <h4 class="tit">无线专区</h4>
-            </div>
-            <div class="tcontent">
-                
-            </div>
-        </div><!--//.tsidebox-->
     </div><!--//.tside-->
 </div> <!-- //.wrapbox1 -->
 
@@ -118,6 +117,54 @@
         
     </div><!--//.tmain-->
     <div class="tside">
+        <div class="sidebox tsidebox">
+            <div class="ttitle">
+                <h4 class="tit">周游客</h4>
+                <a href="#" class="thelp">什么是周游客<i class="icon icon-help"></i></a>
+            </div>
+            <div class="tcontent">
+                <ul class="ul-ver">
+                    <li>
+                        <p class="pitem">
+                            <span class="desc">3天2晚/2天</span>
+                            <b>[线路游]</b>
+                            <a href="#" class="tlink">上海杭州</a>
+                        </p>
+                        <?php include("tsideitem.html"); ?>
+                    </li>
+                    <li>
+                        <p class="pitem">
+                            <span class="desc">3天2晚/2天</span>
+                            <b>[线路游]</b>
+                            <a href="#" class="tlink">上海杭州</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="pitem">
+                            <span class="desc">3天2晚/2天</span>
+                            <b>[线路游]</b>
+                            <a href="#" class="tlink">上海杭州</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="pitem">
+                            <span class="desc">3天2晚/2天</span>
+                            <b>[线路游]</b>
+                            <a href="#" class="tlink">上海杭州</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div><!--//.tsidebox-->
+        
+        <div class="adside">
+            <a href="#"><img src="//placehold.it/328x90/aad3af" width="328" height="90" alt="" /></a>
+        </div>
+        
+        <div class="adside">
+            <a href="#"><img src="//placehold.it/328x90/aad3af" width="328" height="90" alt="" /></a>
+        </div>
+        
     </div><!--//.tside-->
 </div> <!-- //.wrapbox2 -->
 
@@ -133,6 +180,54 @@
         
     </div><!--//.tmain-->
     <div class="tside">
+        <div class="sidebox tsidebox">
+            <div class="ttitle">
+                <h4 class="tit">微旅游日</h4>
+                <a href="#" class="thelp">什么是微旅游日<i class="icon icon-help"></i></a>
+            </div>
+            <div class="tcontent">
+                <ul class="ul-ver">
+                    <li>
+                        <p class="pitem">
+                            <span class="desc">3天2晚/2天</span>
+                            <b>[线路游]</b>
+                            <a href="#" class="tlink">上海杭州</a>
+                        </p>
+                        <?php include("tsideitem.html"); ?>
+                    </li>
+                    <li>
+                        <p class="pitem">
+                            <span class="desc">3天2晚/2天</span>
+                            <b>[线路游]</b>
+                            <a href="#" class="tlink">上海杭州</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="pitem">
+                            <span class="desc">3天2晚/2天</span>
+                            <b>[线路游]</b>
+                            <a href="#" class="tlink">上海杭州</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="pitem">
+                            <span class="desc">3天2晚/2天</span>
+                            <b>[线路游]</b>
+                            <a href="#" class="tlink">上海杭州</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div><!--//.tsidebox-->
+        
+        <div class="adside">
+            <a href="#"><img src="//placehold.it/328x90/aad3af" width="328" height="90" alt="" /></a>
+        </div>
+        
+        <div class="adside">
+            <a href="#"><img src="//placehold.it/328x90/aad3af" width="328" height="90" alt="" /></a>
+        </div>
+        
     </div><!--//.tside-->
 </div> <!-- //.wrapbox3 -->
 
@@ -148,6 +243,53 @@
         
     </div><!--//.tmain-->
     <div class="tside">
+        <div class="sidebox tsidebox">
+            <div class="ttitle">
+                <h4 class="tit">无线专区</h4>
+            </div>
+            <div class="tcontent">
+                <ul class="ul-ver">
+                    <li>
+                        <p class="pitem">
+                            <span class="desc">3天2晚/2天</span>
+                            <b>[线路游]</b>
+                            <a href="#" class="tlink">上海杭州</a>
+                        </p>
+                        <?php include("tsideitem.html"); ?>
+                    </li>
+                    <li>
+                        <p class="pitem">
+                            <span class="desc">3天2晚/2天</span>
+                            <b>[线路游]</b>
+                            <a href="#" class="tlink">上海杭州</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="pitem">
+                            <span class="desc">3天2晚/2天</span>
+                            <b>[线路游]</b>
+                            <a href="#" class="tlink">上海杭州</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="pitem">
+                            <span class="desc">3天2晚/2天</span>
+                            <b>[线路游]</b>
+                            <a href="#" class="tlink">上海杭州</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div><!--//.tsidebox-->
+        
+        <div class="adside">
+            <a href="#"><img src="//placehold.it/328x90/aad3af" width="328" height="90" alt="" /></a>
+        </div>
+        
+        <div class="adside">
+            <a href="#"><img src="//placehold.it/328x90/aad3af" width="328" height="90" alt="" /></a>
+        </div>
+        
     </div><!--//.tside-->
 </div> <!-- //.wrapbox4 -->
 
