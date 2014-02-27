@@ -42,12 +42,14 @@ $(function(){
     
     $('dl.titem').hover(
     function(){
-        $(this).addClass('titem-hover').find('.tintro').slideDown(200);
+        $(this).addClass('titem-hover').find('.tintro').slideDown();
     },function(){
-        $(this).removeClass('titem-hover').find('.tintro').stop().slideUp(300);
+        $(this).removeClass('titem-hover').find('.tintro').stop().slideUp(200);
     });
     
-    
+    $(".countdown").ui('countdown',{
+        format: 'dd:hh:mm'
+    })
     
     
     

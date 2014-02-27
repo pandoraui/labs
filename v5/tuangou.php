@@ -35,25 +35,74 @@
         
     </div><!--//.tmain-->
     <div class="tside">
-        <div class="sidebox">
+        <div class="sidebox lottery">
             <div class="ttitle">
                 <h4 class="tit">0元抽奖</h4>
                 <span class="gray">每周一上午10：00更新</span>
             </div>
             <div class="tcontent">
                 <dl class="dl-hor">
-                    <dt><a href="#" class="text-cover"><img src="//placehold.it/145x95/ffd3af" alt="" /></a></dt>
+                    <dt><a href="#" class="text-cover"><img src="//placehold.it/150x100/ffd3af" alt="" /><span class="ctext"><i class="icon icon-time"></i><i class="countdown">328234943</i></span></a></dt>
                     <dd>
                         <a href="#" class="tlink">上海帝盛酒店超级豪华套餐（浦东新区店）</a>
                         <p><dfn>&yen;<i>1000</i></dfn><span class="price">市场价：<del>&yen;1240</del></span></p>
-                        <p>
+                        <p class="btnbox">
                             <a href="#" class="btn btn-orange btn-w fr">抽奖</a>
                             <span class="num"><em class="orange">1990</em>人参加</span>
                         </p>
                     </dd>
                 </dl>
             </div>
-        </div>
+        </div><!--//.lottery-->
+        
+        <div class="sidebox tsidebox">
+            <div class="ttitle">
+                <h4 class="tit">限时秒杀</h4>
+            </div>
+            <div class="tcontent">
+                
+                <dl class="dl-ver">
+                    <dt><a href="#" class="text-cover"><img src="//placehold.it/326x210/ffd3af" alt="" /><span class="ctext"><i class="icon icon-time"></i><i class="countdown">328234943</i></span></a></dt>
+                    <dd>
+                        <a href="#" class="tlink">上海帝盛酒店超级豪华套餐（浦东新区店）</a>
+                        <p><dfn>&yen;<i>1000</i></dfn><span class="price">市场价：<del>&yen;1240</del></span></p>
+                        <p class="btnbox">
+                            <a href="#" class="btn btn-big btn-orange fr">去看看</a>
+                            <span class="num"><em class="orange">1990</em>人参加</span>
+                        </p>
+                    </dd>
+                </dl>
+            </div>
+        </div><!--//.tsidebox-->
+        
+        <div class="sidebox tsidebox">
+            <div class="ttitle">
+                <h4 class="tit">周游客</h4>
+                <a href="#" class="thelp">什么是周游客<i class="icon icon-help"></i></a>
+            </div>
+            <div class="tcontent">
+                
+            </div>
+        </div><!--//.tsidebox-->
+        
+        <div class="sidebox tsidebox">
+            <div class="ttitle">
+                <h4 class="tit">微旅游日</h4>
+                <a href="#" class="thelp">什么是微旅游日<i class="icon icon-help"></i></a>
+            </div>
+            <div class="tcontent">
+                
+            </div>
+        </div><!--//.tsidebox-->
+        
+        <div class="sidebox tsidebox">
+            <div class="ttitle">
+                <h4 class="tit">无线专区</h4>
+            </div>
+            <div class="tcontent">
+                
+            </div>
+        </div><!--//.tsidebox-->
     </div><!--//.tside-->
 </div> <!-- //.wrapbox1 -->
 
@@ -102,7 +151,18 @@
     </div><!--//.tside-->
 </div> <!-- //.wrapbox4 -->
 
-
+<div class="wrap wrapbox5">
+    <div class="tmain clearfix">
+    
+        <?php include("titem.html"); ?>
+        <?php include("titem.html"); ?>
+        <?php include("titem.html"); ?>
+        <?php include("titem.html"); ?>
+        <?php include("titem.html"); ?>
+        <?php include("titem.html"); ?>
+        
+    </div><!--//.tmain-->
+</div> <!-- //.wrapbox4 -->
 
 <!--公共底部-->
 <script src="http://pic.lvmama.com/js/v4/copyright.js"></script>
