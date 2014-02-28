@@ -9,6 +9,7 @@
 <!--生产线引用-->
 <link rel="stylesheet" href="http://pic.lvmama.com/min/index.php?f=/styles/v5/base.css,/styles/v5/common.css,/styles/new_v/header-air.css" >
 <link rel="stylesheet" href="http://pic.lvmama.com/min/index.php?f=/styles/v5/modules/form.css,/styles/v5/modules/button.css,/styles/v5/modules/table.css,/styles/v5/modules/tags.css,/styles/v5/modules/tip.css,/styles/v5/modules/paging.css" />
+<!--<link rel="stylesheet" href="//pic.lvmama.com/styles/v5/tuangou.css" />-->
 <link rel="stylesheet" href="css/tuangou.css" />
 
 </head>
@@ -469,11 +470,10 @@
 
 <!-- 频道公用js-->
 <script src="http://pic.lvmama.com/min/index.php?f=/js/new_v/jquery-1.7.2.min.js,/js/ui/lvmamaUI/lvmamaUI.js,/js/new_v/top/header-air_new.js"></script>
+<!--<script src="//pic.lvmama.com/js/v5/tuangou.js"></script>-->
 <script src="js/tuangou.js"></script>
 
-
-
-
-
+<!--统计代码-->
+<script src="//pic.lvmama.com/js/common/losc.js"></script>
 </body>
 </html>
