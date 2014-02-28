@@ -109,12 +109,12 @@
             <div class="seach_box_list">
                 <div class="seach_list_title">团购分类</div>
                 <dl class="seach_list">
-                    <dt><a class="active" href="#">全部<span>（15345）</span></a></dt>
+                    <dt><a href="#">全部<span>（568）</span></a></dt>
                     <dd>
-                        <a href="#">景点门票<span>（15345）</span></a>
-                        <a href="#">景点门票<span>（15345）</span></a>
-                        <a href="#">景点门票<span>（15345）</span></a>
-                        <a href="#">酒店<span>（15345）</span></a>
+                        <a href="#">景点门票<span>（568）</span></a>
+                        <a href="#">景点门票<span>（568）</span></a>
+                        <a href="#">景点门票<span>（568）</span></a>
+                        <a href="#">酒店<span>（568）</span></a>
                         <a class="seach_hot" href="#">温泉<i class="icon icon-05"></i></a>
                     </dd>
                 </dl>
@@ -122,18 +122,18 @@
             <div class="seach_box_list list_first">
                 <div class="seach_list_title">目的地城市</div>
                 <dl class="seach_list">
-                    <dt><a class="active" href="#">全部<span>（155）</span></a></dt>
+                    <dt><a href="#">全部<span>（155）</span></a></dt>
                     <dd>
-                        <a href="#">景点门票<span>（15345）</span></a>
-                        <a href="#">景点门票<span>（15345）</span></a>
-                        <a href="#">景点门票<span>（15345）</span></a>
-                        <a href="#">酒店<span>（15345）</span></a>
-                        <a href="#">酒店<span>（15345）</span></a>
-                        <a href="#">酒店<span>（15345）</span></a>
-                        <a href="#">酒店<span>（15345）</span></a>
-                        <a href="#">酒店<span>（15345）</span></a>
-                        <a href="#">酒店<span>（15345）</span></a>
-                        <a href="#">酒店<span>（15345）</span></a>
+                        <a href="#">景点门票<span>（568）</span></a>
+                        <a href="#">景点门票<span>（568）</span></a>
+                        <a href="#">景点门地<span>（568）</span></a>
+                        <a href="#">酒店<span>（568）</span></a>
+                        <a href="#">酒店<span>（568）</span></a>
+                        <a href="#">酒店<span>（568）</span></a>
+                        <a href="#">酒店<span>（568）</span></a>
+                        <a href="#">酒店<span>（568）</span></a>
+                        <a href="#">酒店<span>（568）</span></a>
+                        <a href="#">酒店<span>（568）</span></a>
                     </dd>
                 </dl>
                 <div class="seach_gd_box">
@@ -176,12 +176,12 @@
             <div class="seach_box_list">
                 <div class="seach_list_title"></div>
                 <dl class="seach_list">
-                    <dt><a class="active" href="#">全部<span>（15345）</span></a></dt>
+                    <dt><a href="#">全部<span>（568）</span></a></dt>
                     <dd>
-                        <a href="#">景点门票<span>（15345）</span></a>
-                        <a href="#">景点门票<span>（15345）</span></a>
-                        <a href="#">景点门票<span>（15345）</span></a>
-                        <a href="#">酒店<span>（15345）</span></a>
+                        <a href="#">景点门票<span>（568）</span></a>
+                        <a href="#">景点门票<span>（568）</span></a>
+                        <a href="#">景点门票<span>（568）</span></a>
+                        <a href="#">酒店<span>（568）</span></a>
                     </dd>
                 </dl>
                 <div class="seach_gd_box">
