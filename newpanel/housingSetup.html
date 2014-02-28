@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+    <title>房态设置</title>
+    <link rel="stylesheet" href="css/ui-common.css" />
+    <link rel="stylesheet" href="css/ui-components.css" />
+    <link rel="stylesheet" href="css/iframe.css" />
+    <link rel="stylesheet" href="css/dialog.css" />
+    <link rel="stylesheet" href="css/xhpanel.css" />
+</head>
+
+<body class="housing">
+    <div class="iframe_header">
+        <i class="icon-home ihome"></i>
+        <ul class="iframe_nav">
+            <li><a href="#">首页</a> ></li>
+            <li><a href="#">维护组件</a> ></li>
+            <li class="active">房态设置</li>
+        </ul>
+    </div>
+    <div class="iframe_content form-inline">
+        <div class="tiptext tip-warning"><span class="tip-icon tip-icon-warning"></span>注：更新方法，选中需要更新字段的前面的复选框，编辑内容后，点击保存，即更新了复选框选中的字段内容。</div>
+        
+        <h2><span class="fnb">酒店名称：</span>[上海-上海]如家酒店浦东店</h2>
+        
+        <h5>已选供应商：[非对接]淘宝供应商</h5>
+        <table class="xtable">
+            <tr>
+                <td><label class="checkbox"><input type="checkbox"> 标准间-特价房[现付]</label></td>
+                <td><label class="checkbox"><input type="checkbox"> 标准间-特价房[现付]</label></td>
+                <td><label class="checkbox"><input type="checkbox"> 标准间-特价房[现付]</label></td>
+                <td><label class="checkbox"><input type="checkbox"> 标准间-特价房[现付]</label></td>
+            </tr>
+            <tr>
+                <td><label class="checkbox"><input type="checkbox"> 豪华大床房[预付]</label></td>
+                <td><label class="checkbox"><input type="checkbox"> 豪华大床房[预付]</label></td>
+                <td><label class="checkbox"><input type="checkbox"> 豪华大床房[预付]</label></td>
+                <td><label class="checkbox"><input type="checkbox"> 豪华大床房[预付]</label></td>
+            </tr>
+        </table>
+        
+        <hr>
+        <h5>设置房态</h5>
+        <table class="xtable">
+            <tr>
+                <td><label class="inline">日期范围：<input type="text" class="input-date w11" /> - <input type="text" class="input-date w11" /></label></td>
+            </tr>
+            <tr>
+                <td>适用日期：
+                <label class="checkbox"><input type="checkbox" /> 全部</label>
+                <label class="checkbox"><input type="checkbox" /> 星期一</label>
+                <label class="checkbox"><input type="checkbox" /> 星期二</label>
+                <label class="checkbox"><input type="checkbox" /> 星期三</label>
+                <label class="checkbox"><input type="checkbox" /> 星期四</label>
+                <label class="checkbox"><input type="checkbox" /> 星期五</label>
+                <label class="checkbox"><input type="checkbox" /> 星期六</label>
+                <label class="checkbox"><input type="checkbox" /> 星期日</label></td>
+            </tr>
+            <tr>
+                <td><label class="checkbox"><input type="checkbox" /> 推荐级别</label>
+                <select class="w8">
+                    <option value="">不限制</option>
+                    <option value="">限制1</option>
+                    <option value="">限制2</option>
+                </select></td>
+            </tr>
+        </table>
+        
+        <hr>
+        <h5>预付</h5>
+        <table class="xtable">
+            <tr>
+                <td><label class="checkbox"><input type="checkbox"> 预付最晚无损取消时间：</label><select class="w7"><option value="1">1</option></select> 天 <select class="w6"><option value="1">1</option></select> 时 <select class="w6"><option value="1">1</option></select> 分</td>
+            </tr>
+            <tr>
+                <td><label class="checkbox"><input type="checkbox"> 预付预授权限制：</label><select>
+                    <option value="">无限制</option>
+                    <option value="">限制1</option>
+                    <option value="">限制2</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label class="checkbox"><input type="checkbox"> 预付扣款类型：</label><select class="w8">
+                    <option value="">否</option>
+                    <option value="">其他</option>
+                </select> <input type="text" /></td>
+            </tr>
+        </table>
+        
+        <hr>
+        <h5>现付</h5>
+        <table class="xtable">
+            <tr>
+                <td><label class="checkbox"><input type="checkbox"> 担保类型：</label><select class="w8">
+                    <option value="">信用卡</option>
+                    <option value="">储蓄卡</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label class="checkbox"><input type="checkbox"> 全额/峰时担保扣款：</label><select class="w8">
+                    <option value="">否</option>
+                    <option value="">是</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label class="checkbox"><input type="checkbox"> 保留时间：</label><select class="w8">
+                    <option value="">01点</option>
+                    <option value="">02点</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label class="checkbox"><input type="checkbox"> 预订限制：</label><select class="w8">
+                    <option value="">无限制</option>
+                    <option value="">限制</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label class="checkbox"><input type="checkbox"> 预订限制_是否房量担保：</label><select class="w8">
+                    <option value="">无限制</option>
+                    <option value="">限制</option>
+                </select>&nbsp;&nbsp;&nbsp;&nbsp;
+                需担保房量<select class="w8">
+                    <option value="">1</option>
+                    <option value="">2</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label class="checkbox"><input type="checkbox"> 担保最晚无损取消时间：</label><select class="w7"><option value="1">1</option></select> 天 <select class="w6"><option value="1">1</option></select> 时 <select class="w6"><option value="1">1</option></select> 分</td>
+            </tr>
+        </table>
+        <hr>
+        <table class="xtable">
+            <tr>
+                <td><label class="checkbox"><input type="checkbox"> 保留房最晚预订时间：</label><select class="w7"><option value="1">1</option></select> 天 <select class="w6"><option value="1">1</option></select> 时 <select class="w6"><option value="1">1</option></select> 分&nbsp;&nbsp;&nbsp;&nbsp;
+                保留房是否可恢复：<select class="w8">
+                    <option value="">可恢复</option>
+                    <option value="">不可恢复</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label class="checkbox"><input type="checkbox"> 房态：</label><select class="w8">
+                    <option value="">良好</option>
+                    <option value="">紧张</option>
+                    <option value="">客满</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label class="checkbox"><input type="checkbox"> 订单最晚预定时间：</label><select class="w7"><option value="1">1</option></select> 天 <select class="w6"><option value="1">1</option></select> 时 <select class="w6"><option value="1">1</option></select> 分</td>
+            </tr>
+            <tr>
+                <td><label class="checkbox"><input type="checkbox"> 房型礼品：</label><select class="w8">
+                    <option value="">无礼品</option>
+                    <option value="">有礼品</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label class="checkbox"><input type="checkbox"> 大床房：</label><select class="w8">
+                    <option value="">有</option>
+                    <option value="">无</option>
+                </select>&nbsp;&nbsp;&nbsp;&nbsp;
+                双人房：
+                <select class="w8">
+                    <option value="">有</option>
+                    <option value="">无</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label class="checkbox"><input type="checkbox"> Freesale：</label><select class="w8">
+                    <option value="">否</option>
+                    <option value="">是</option>
+                </select></td>
+            </tr>
+        </table>
+        
+        <p class="mt20 operate"><a class="btn btn_cc1">保存</a><a class="btn">返回上一级</a></p>
+        
+    </div>
+    
+    
+    
+<script src="http://pic.lvmama.com/min/index.php?f=/js/new_v/jquery-1.7.2.min.js"></script>
+<script src="js/pandora-dialog.js"></script>
+<script src="js/jquery.lvtip.js"></script>
+<script src="js/newpanel.js"></script>
+
+
+<script type="text/javascript">
+
+</script>
+</body>
+</html>

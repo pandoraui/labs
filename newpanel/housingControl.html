@@ -1,0 +1,419 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+    <title>房态控制</title>
+    <link href="css/ui-common.css" rel="stylesheet" />
+    <link href="css/ui-components.css" rel="stylesheet" />
+    <link href="css/iframe.css" rel="stylesheet" />
+    <link href="css/dialog.css" rel="stylesheet" />
+    <link href="/pandora/docs/assets/less/dialog.css" rel="stylesheet" />
+    <link href="css/xhpanel.css" rel="stylesheet" />
+</head>
+
+<body class="housing">
+    <div class="iframe_header">
+        <i class="icon-home ihome"></i>
+        <ul class="iframe_nav">
+            <li><a href="#">首页</a> &gt;</li>
+            <li><a href="#">维护组件</a> &gt;</li>
+            <li class="active">房态控制</li>
+        </ul>
+    </div>
+    <div class="iframe_search">
+        <table class="s_table form-inline">
+            <tr>
+                <td class="w1"></td>
+                <td>
+                    <label><i class="cc1">*</i>起始日期：<input class="w9" type="text" />　</label>
+                    <label><i class="cc1">*</i>结束日期：<input class="w9" type="text" />　</label>
+                    <label><i class="cc1">*</i>行政区划：<input class="w9" type="text" />　</label>
+                    <label><i class="cc1">*</i>供应商：<input class="w110" type="text" />　</label><br>
+                    <label>酒店名称：<input class="w110" type="text" />　</label>
+                    <label>酒店编号：<select><option value="">不限</option><option value="">001</option></select>　</label>
+                </td>
+            </tr>
+        </table>
+        
+        <p class="tc mt10 operate"><a class="btn btn_cc1">查询</a></p>
+    </div>
+    <div class="iframe_content">
+        <div id="xhousing" class="xhousing">
+            <div class="xhousingitem J_itemauto">
+                <div class="xhtitle-outer">
+                    <div class="fixedbox J_fixed">
+                        <div class="xhtitle">
+                            <span class="fr">
+                                <i class="linkitem">[<a href="#">酒店信息</a>]</i>
+                                <i class="linkitem">[<a href="#">确认房态</a>]</i>
+                                <i class="linkitem">[<a href="#">酒店联系方式</a>]</i>
+                                <i class="linkitem">[<a href="#">联系人联系方式</a>]</i>
+                            </span>
+                            <h4><i class="fnb">非对接</i> <a href="#">上海浦东香格里拉大酒店</a> <small>[<a href="#">酒店维护</a>]</small></h4>
+                        </div><!--//.xhtitle-->
+                        <span class="xhprev">&lsaquo;</span>
+                        <span class="xhnext">&rsaquo;</span>
+                        <table class="xhlist table-full">
+                            <thead>
+                                <tr>
+                                    <td class="xboxleft"><div class="xhname"></div></td>
+                                    <td class="xboxright xboxtitle">
+                                        <div class="xbox">
+                                            <ul class="xulist">
+                                                <li>2013-09-18(周五)</li>
+                                                <li>2013-09-19(周六)</li>
+                                                <li>2013-09-20(周日)</li>
+                                                <li>2013-09-21(周一)</li>
+                                                <li>2013-09-22(周二)</li>
+                                                <li>2013-09-23(周三)</li>
+                                                <li>2013-09-24(周四)</li>
+                                                <li>2013-09-25(周五)</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div><!--//.fixedbox-->
+                </div>
+                <div class="xhlistbox">
+                    <div class="xhlistbox-item">
+                        <table class="xhlist table-full">
+                            <tbody>
+                                <tr>
+                                    <td class="xboxleft">
+                                        <div class="xhname">标准房<br>特价房(预付)<br><a href="#">价格</a>　<a href="#">确认房态</a></div>
+                                    </td>
+                                    <td class="xboxright xboxcontent">
+                                        <div class="xbox">
+                                            <ul class="xulist">
+                                                <li>
+                                                    <p>
+                                                    <span class="textitem"><i class="cc3">保留/超卖：</i>4/6</span>
+                                                    <span class="textitem"><i class="cc3">最晚：</i>(09-18 17:30)</span>
+                                                    <span class="textitem"><i class="cc3">预授权限制(<i class="cc6">正常</i>)</i> <a href="#">日志</a></span>
+                                                    <span class="textitem"><i class="cc3">最晚预订：</i>1天17点 可超卖/可恢复</span>
+                                                    <span class="textitem"><i class="cc3">预付取消：</i>3天15点(全)</span>
+                                                    <span class="textitem"><i class="cc3">礼品：</i>无 无大床房/无双人房</span>
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p>
+                                                    <span class="textitem "><i class="cc3">保留/超卖：</i>4/6</span>
+                                                    <span class="textitem"><i class="cc3">最晚：</i>(09-18 17:30)</span>
+                                                    <span class="textitem"><i class="cc3">预授权限制(<i class="cc6">正常</i>)</i> <a href="#">日志</a></span>
+                                                    <span class="textitem"><i class="cc3">最晚预订：</i>1天17点 可超卖/可恢复</span>
+                                                    <span class="textitem"><i class="cc3">预付取消：</i>3天15点(全)</span>
+                                                    <span class="textitem"><i class="cc3">礼品：</i>无 无大床房/无双人房</span>
+                                                    </p>
+                                                </li>
+                                                <li></li>
+                                                <li>
+                                                    <p>
+                                                    <span class="textitem "><i class="cc3">保留/超卖：</i>4/6</span>
+                                                    <span class="textitem"><i class="cc3">最晚：</i>(09-18 17:30)</span>
+                                                    <span class="textitem"><i class="cc3">预授权限制(<i class="cc7">正常</i>)</i> <a href="#">日志</a></span>
+                                                    <span class="textitem"><i class="cc3">最晚预订：</i>1天17点 可超卖/可恢复</span>
+                                                    <span class="textitem"><i class="cc3">预付取消：</i>3天15点(全)</span>
+                                                    <span class="textitem"><i class="cc3">礼品：</i>无 无大床房/无双人房</span>
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p>
+                                                    <span class="textitem"><i class="cc3">保留/超卖：</i>4/6</span>
+                                                    <span class="textitem"><i class="cc3">最晚：</i>(09-18 17:30)</span>
+                                                    <span class="textitem"><i class="cc3">预授权限制(<i class="cc7">紧张</i>)</i> <a href="#">日志</a></span>
+                                                    <span class="textitem"><i class="cc3">最晚预订：</i>1天17点 可超卖/可恢复</span>
+                                                    <span class="textitem"><i class="cc3">预付取消：</i>3天15点(全)</span>
+                                                    <span class="textitem"><i class="cc3">礼品：</i>无 无大床房/无双人房</span>
+                                                    </p>
+                                                </li>
+                                                <li></li>
+                                                <li>
+                                                    <p>
+                                                    <span class="textitem"><i class="cc3">保留/超卖：</i>4/6</span>
+                                                    <span class="textitem"><i class="cc3">最晚：</i>(09-18 17:30)</span>
+                                                    <span class="textitem"><i class="cc3">预授权限制(<i class="cc1">满房</i>)</i> <a href="#">日志</a></span>
+                                                    <span class="textitem"><i class="cc3">最晚预订：</i>1天17点 可超卖/可恢复</span>
+                                                    <span class="textitem"><i class="cc3">预付取消：</i>3天15点(全)</span>
+                                                    <span class="textitem"><i class="cc3">礼品：</i>无 无大床房/无双人房</span>
+                                                    </p>
+                                                </li>
+                                                <li></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="xboxleft">
+                                        <div class="xhname">豪华房<br>特价房(预付)<br><a href="#">价格</a>　<a href="#">确认房态</a></div>
+                                    </td>
+                                    <td class="xboxright xboxcontent">
+                                        <div class="xbox">
+                                            <ul class="xulist">
+                                                <li></li>
+                                                <li></li>
+                                                <li>
+                                                    <p>
+                                                    <span class="textitem "><i class="cc3">保留/超卖：</i>4/6</span>
+                                                    <span class="textitem"><i class="cc3">最晚：</i>(09-18 17:30)</span>
+                                                    <span class="textitem"><i class="cc3">预授权限制(<i class="cc7">正常</i>)</i> <a href="#">日志</a></span>
+                                                    <span class="textitem"><i class="cc3">最晚预订：</i>1天17点 可超卖/可恢复</span>
+                                                    <span class="textitem"><i class="cc3">预付取消：</i>3天15点(全)</span>
+                                                    <span class="textitem"><i class="cc3">礼品：</i>无 无大床房/无双人房</span>
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p>
+                                                    <span class="textitem"><i class="cc3">保留/超卖：</i>4/6</span>
+                                                    <span class="textitem"><i class="cc3">最晚：</i>(09-18 17:30)</span>
+                                                    <span class="textitem"><i class="cc3">预授权限制(<i class="cc1">正常</i>)</i> <a href="#">日志</a></span>
+                                                    <span class="textitem"><i class="cc3">最晚预订：</i>1天17点 可超卖/可恢复</span>
+                                                    <span class="textitem"><i class="cc3">预付取消：</i>3天15点(全)</span>
+                                                    <span class="textitem"><i class="cc3">礼品：</i>无 无大床房/无双人房</span>
+                                                    </p>
+                                                </li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        
+                        
+                    </div>
+                </div>
+            </div><!--//.xhousingitem-->
+            
+            <div class="xhousingitem J_itemauto">
+                <div class="xhtitle-outer">
+                    <div class="fixedbox J_fixed">
+                        <div class="xhtitle">
+                            <span class="fr">
+                                <i class="linkitem">[<a href="#">酒店信息</a>]</i>
+                                <i class="linkitem">[<a href="#">确认房态</a>]</i>
+                                <i class="linkitem">[<a href="#">酒店联系方式</a>]</i>
+                                <i class="linkitem">[<a href="#">联系人联系方式</a>]</i>
+                            </span>
+                            <h4><i class="fnb">非对接</i> <a href="#">上海浦东香格里拉大酒店</a> <small>[<a href="#">酒店维护</a>]</small></h4>
+                        </div><!--//.xhtitle-->
+                        <span class="xhprev">&lsaquo;</span>
+                        <span class="xhnext">&rsaquo;</span>
+                        <table class="xhlist table-full">
+                            <thead>
+                                <tr>
+                                    <td class="xboxleft"><div class="xhname"></div></td>
+                                    <td class="xboxright xboxtitle">
+                                        <div class="xbox">
+                                            <ul class="xulist">
+                                                <li>2013-09-18(周五)</li>
+                                                <li>2013-09-19(周六)</li>
+                                                <li>2013-09-20(周日)</li>
+                                                <li>2013-09-21(周一)</li>
+                                                <li>2013-09-22(周二)</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div><!--//.fixedbox-->
+                </div>
+                <div class="xhlistbox">
+                    <div class="xhlistbox-item">
+                        <table class="xhlist table-full">
+                            <tbody>
+                                <tr>
+                                    <td class="xboxleft">
+                                        <div class="xhname">标准房<br>特价房(预付)<br><a href="#">价格</a>　<a href="#">确认房态</a></div>
+                                    </td>
+                                    <td class="xboxright xboxcontent">
+                                        <div class="xbox">
+                                            <ul class="xulist">
+                                                <li>
+                                                    <p>
+                                                    <span class="textitem"><i class="cc3">保留/超卖：</i>4/6</span>
+                                                    <span class="textitem"><i class="cc3">最晚：</i>(09-18 17:30)</span>
+                                                    <span class="textitem"><i class="cc3">预授权限制(<i class="cc6">正常</i>)</i> <a href="#">日志</a></span>
+                                                    <span class="textitem"><i class="cc3">最晚预订：</i>1天17点 可超卖/可恢复</span>
+                                                    <span class="textitem"><i class="cc3">预付取消：</i>3天15点(全)</span>
+                                                    <span class="textitem"><i class="cc3">礼品：</i>无 无大床房/无双人房</span>
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p>
+                                                    <span class="textitem "><i class="cc3">保留/超卖：</i>4/6</span>
+                                                    <span class="textitem"><i class="cc3">最晚：</i>(09-18 17:30)</span>
+                                                    <span class="textitem"><i class="cc3">预授权限制(<i class="cc6">正常</i>)</i> <a href="#">日志</a></span>
+                                                    <span class="textitem"><i class="cc3">最晚预订：</i>1天17点 可超卖/可恢复</span>
+                                                    <span class="textitem"><i class="cc3">预付取消：</i>3天15点(全)</span>
+                                                    <span class="textitem"><i class="cc3">礼品：</i>无 无大床房/无双人房</span>
+                                                    </p>
+                                                </li>
+                                                <li></li>
+                                                <li>
+                                                    <p>
+                                                    <span class="textitem"><i class="cc3">保留/超卖：</i>4/6</span>
+                                                    <span class="textitem"><i class="cc3">最晚：</i>(09-18 17:30)</span>
+                                                    <span class="textitem"><i class="cc3">预授权限制(<i class="cc1">满房</i>)</i> <a href="#">日志</a></span>
+                                                    <span class="textitem"><i class="cc3">最晚预订：</i>1天17点 可超卖/可恢复</span>
+                                                    <span class="textitem"><i class="cc3">预付取消：</i>3天15点(全)</span>
+                                                    <span class="textitem"><i class="cc3">礼品：</i>无 无大床房/无双人房</span>
+                                                    </p>
+                                                </li>
+                                                <li></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="xboxleft">
+                                        <div class="xhname">豪华房<br>特价房(预付)<br><a href="#">价格</a>　<a href="#">确认房态</a></div>
+                                    </td>
+                                    <td class="xboxright xboxcontent">
+                                        <div class="xbox">
+                                            <ul class="xulist">
+                                                <li></li>
+                                                <li></li>
+                                                <li>
+                                                    <p>
+                                                    <span class="textitem"><i class="cc3">保留/超卖：</i>4/6</span>
+                                                    <span class="textitem"><i class="cc3">最晚：</i>(09-18 17:30)</span>
+                                                    <span class="textitem"><i class="cc3">预授权限制(<i class="cc6">正常</i>)</i> <a href="#">日志</a></span>
+                                                    <span class="textitem"><i class="cc3">最晚预订：</i>1天17点 可超卖/可恢复</span>
+                                                    <span class="textitem"><i class="cc3">预付取消：</i>3天15点(全)</span>
+                                                    <span class="textitem"><i class="cc3">礼品：</i>无 无大床房/无双人房</span>
+                                                    </p>
+                                                </li>
+                                                <li></li>
+                                                <li></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        
+                        
+                    </div>
+                </div>
+            </div><!--//.xhousingitem-->
+            
+        </div>
+        <div class="pages darkstyle">
+            <p class="pages_go">到第 <input type="text" class="w2"> 页 <button type="button" class="btn btn-mini">确定</button></p>
+            <div class="Pages"><p class="page_msg cc3">共 <em class="cc1">460</em> 条记录，每页显示 10 条记录</p><span class="PrevPage"><i class="ui-arrow-left blue-ui-arrow-left"></i>上一页</span><a href="#">1</a><span class="PageSel">2</span><a href="#">3</a><a href="#">4</a><a href="#">5</a><a href="#">6</a><span class="PageMore">...</span><a href="#">20</a><a href="#" class="NextPage">下一页<i class="ui-arrow-right blue-ui-arrow-right"></i></a> </div>
+        </div>
+    </div>
+    
+    
+    
+    <h2>弹窗</h2>
+    <p class="tc mt20 operate"><a class="btn test1">弹窗1</a><a class="btn test2">弹窗2</a><a class="btn test3">loading状态</a></p>
+    
+<div id="dialog1" class="hide">
+    <div class="form-inline">
+        <table class="xtable">
+            <tr>
+                <td><label class="checkbox"><input type="checkbox"> 上海华庭宾馆</label></td>
+                <td><label class="checkbox"><input type="checkbox"> 橘子酒店精选(上海西藏北路店)</label></td>
+            </tr>
+            <tr>
+                <td><label class="checkbox"><input type="checkbox"> 上海五角场华美达大酒店</label></td>
+                <td><label class="checkbox"><input type="checkbox"> 上海金茂君悦大酒店</label></td>
+            </tr>
+            <tr>
+                <td><label class="checkbox"><input type="checkbox"> 上海衡山路十二号豪华精选酒店</label></td>
+                <td><label class="checkbox"><input type="checkbox"> 上海安达仕酒店</label></td>
+            </tr>
+            <tr>
+                <td><label class="checkbox"><input type="checkbox"> 上海恒福新天地酒店</label></td>
+                <td><label class="checkbox"><input type="checkbox"> 星程酒店(上海徐家汇帝景酒店)</label></td>
+            </tr>
+            <tr>
+                <td><label class="checkbox"><input type="checkbox"> 上海滨江欣景大酒店</label></td>
+                <td><label class="checkbox"><input type="checkbox"> 上海国际机场宾馆</label></td>
+            </tr>
+            <tr>
+                <td><label class="checkbox"><input type="checkbox"> 上海名城大酒店</label></td>
+                <td><label class="checkbox"><input type="checkbox"> 上海宜兰贵斯精品酒店</label></td>
+            </tr>
+        </table>
+    </div>
+</div>
+    
+<div id="dialog2" class="hide">
+    <div class="form-inline">
+        <table class="xtable">
+            <tr>
+                <td><label class="checkbox"><input type="checkbox"> 艺龙</label></td>
+                <td><label class="checkbox"><input type="checkbox"> 淘宝</label></td>
+            </tr>
+            <tr>
+                <td><label class="checkbox"><input type="checkbox"> 深圳节律</label></td>
+                <td><label class="checkbox"><input type="checkbox"> 去哪儿</label></td>
+            </tr>
+            <tr>
+                <td><label class="checkbox"><input type="checkbox"> 艺龙</label></td>
+                <td><label class="checkbox"><input type="checkbox"> 淘宝</label></td>
+            </tr>
+            <tr>
+                <td><label class="checkbox"><input type="checkbox"> 深圳节律</label></td>
+                <td><label class="checkbox"><input type="checkbox"> 去哪儿</label></td>
+            </tr>
+            <tr>
+                <td><label class="checkbox"><input type="checkbox"> 艺龙</label></td>
+                <td><label class="checkbox"><input type="checkbox"> 淘宝</label></td>
+            </tr>
+            <tr>
+                <td><label class="checkbox"><input type="checkbox"> 深圳节律</label></td>
+                <td><label class="checkbox"><input type="checkbox"> 去哪儿</label></td>
+            </tr>
+        </table>
+    </div>
+</div>
+    <div style="height:500px;"></div>
+    
+<script src="http://pic.lvmama.com/min/index.php?f=/js/new_v/jquery-1.7.2.min.js"></script>
+<!--<script src="js/pandora-dialog.js"></script>-->
+<script src="/pandora/docs/assets/js/modules/pandora-dialog.js"></script>
+<script src="js/jquery.lvtip.js"></script>
+<script src="js/newpanel.js"></script>
+
+
+<script type="text/javascript">
+$(function(){
+    $(".test1").click(function(){
+        pandora.dialog({
+            width: 480,
+            title: "选择酒店",
+            content:$("#dialog1"),
+            ok:true,
+            cancel:true
+        });
+    })
+    
+    $(".test2").click(function(){
+        pandora.dialog({
+            title: "选择供应商",
+            content:$("#dialog2"),
+            ok:true,
+            cancel:true
+        });
+    })
+    
+    $(".test3").click(function(){
+        pandora.loading("正在保存中...");
+    })
+})
+</script>
+</body>
+</html>

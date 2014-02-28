@@ -1,0 +1,463 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="css/ui-common.css" rel="stylesheet" />
+    <link href="css/ui-components.css" rel="stylesheet" />
+    <link href="css/iframe.css" rel="stylesheet" />
+    <link href="css/dialog.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="iframe_header">
+        <i class="icon-home ihome"></i>
+        <ul class="iframe_nav">
+            <li><a href="#">首页</a> ></li>
+            <li><a href="#">订单管理</a> ></li>
+            <li class="active">新建订单</li>
+        </ul>
+    </div>
+    <div class="iframe_search">
+        <table class="s_table  form-inline">
+            <tbody>
+                <tr>
+                    <td class="w6 s_label">入住日期：</td>
+                    <td class="w8"><input type="text" class="w8" /></td>
+                    <td class="w6 s_label">离店日期：</td>
+                    <td class="w8"><input type="text" class="w8" /></td>
+                    <td class="w6 s_label">入住天数：</td>
+                    <td class="w4"><input type="text" class="w4" /></td>
+                    <td class="w6 s_label">酒店名称：</td>
+                    <td class="w15"><input type="text" class="w15" /></td>
+                    <td class="s_label">
+                        <label class="checkbox mr10"><input type="checkbox" />开业</label>
+                        <label class="checkbox mr10"><input type="checkbox" />装修</label>
+                        <select class="w10">
+                            <option>不限制</option>
+                            <option>不限制</option>
+                            <option>不限制</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="w6 s_label">入住城市：</td>
+                    <td class="w8"><input type="text" class="w8" /></td>
+                    <td class="w6 s_label">产品ID：</td>
+                    <td class="w8"><input type="text" class="w8" /></td>
+                    <td class="w6 s_label">地理位置：</td>
+                    <td class="w17"><input type="text" class="w17" /></td>
+                    <td class="w4 s_label">距离：</td>
+                    <td class="w10">
+                        <select class="w10">
+                            <option>不限制</option>
+                            <option>不限制</option>
+                            <option>不限制</option>
+                        </select>
+                    </td>
+                    <td class="w6 s_label">特色房型：</td>
+                    <td class="w10">
+                        <select class="w10">
+                            <option>不限制</option>
+                            <option>不限制</option>
+                            <option>不限制</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="w6 s_label">酒店星级：</td>
+                    <td>
+                        <label class="checkbox mr10"><input type="checkbox" />五星/豪华</label>
+                        <label class="checkbox mr10"><input type="checkbox" />四星/高档</label>
+                        <label class="checkbox mr10"><input type="checkbox" />三星/商务</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="w6 s_label">价格区间：</td>
+                    <td>
+                        <label class="checkbox mr10"><input type="checkbox" />200以下</label>
+                        <label class="checkbox mr10"><input type="checkbox" />200-400</label>
+                        <label class="checkbox mr10"><input type="checkbox" />400-600</label>
+                        <label class="checkbox mr10"><input type="checkbox" />600-800</label>
+                        <label class="checkbox mr10"><input type="checkbox" />800以上</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="w6 s_label">特色要求：</td>
+                    <td>
+                        <label class="checkbox mr10"><input type="checkbox" />宽带上网</label>
+                        <label class="checkbox mr10"><input type="checkbox" />无需担保</label>
+                        <label class="checkbox mr10"><input type="checkbox" />游泳池</label>
+                        <label class="checkbox mr10"><input type="checkbox" />无烟房</label>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="operate mt20" style="text-align:center"><a class="btn btn_cc1">查询</a></div>
+    </div>
+    <div class="iframe_content mt20">
+        <div class="ui_title f14">
+            <span class="fr f12 cc3">共找到 <span class="cc1">15</span> 家相关酒店</span>
+            <ul class="ui_tab">
+		        <li class="active"><a href="#">全部酒店</a></li>
+                <li><a href="#">特推(5)</a></li>
+                <li><a href="#">可推(4)</a></li>
+                <li><a href="#">可订(2)</a></li>
+                <li><a href="#">不推(1)</a></li>
+                <li><a href="#">不建议(1)</a></li>
+	        </ul>
+         </div>
+        <div style="height:588px; overflow:auto">
+            <div class="p_box">
+                <div class="co_title"><a class="fr" href="#">重要通知</a><strong class="f14 cc8" title="[上海] 上海中航虹桥机场泊悦酒店（中国国际航空公司">[上海] 上海中航虹桥机场泊悦酒店（中国国际航空公司）</strong><span class="ml20">酒店星级：</span><span title="国家旅游局评定为四星级" class="tuan-star mr20"><i style="width:80%"></i></span><span>酒店地址：上海市长宁区虹桥机场出发层2号门(南区）</span></div>
+                <table class="co_p_table">
+                    <tr>
+                        <td>
+                            <table class="co_table">
+                                <thead> 
+                                    <tr class="noborder">
+                                        <th>推荐级别</th>
+                                        <th>房型</th>
+                                        <th>床型</th>
+                                        <th>限住人数</th>
+                                        <th>宽带</th>
+                                        <th>保留房</th>
+                                        <th>房态</th>
+                                        <th>付款方式</th>
+                                        <th>限制</th>
+                                        <th>房间价格</th>
+                                        <th>早餐</th>
+                                        <th class="w3">操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>5</td>
+                                        <td class="co_unline"><a class="J_tip" tip-content="面积：20平米</br>楼层：2楼（共18层）</br>是否无烟：无烟房" href="javascript:;">高级房</a></td>
+                                        <td class="co_unline"><a class="J_tip" tip-content="床宽：1.8米</br>加床：不可加</br>加床价格：50元" href="javascript:;">大床/双床</a></td>
+                                        <td>5</td>
+                                        <td class="co_unline"><a class="J_tip" tip-content="宽带10元/小时</br>每天50元" href="javascript:;">有/收费</a></td>
+                                        <td>10</td>
+                                        <td>正常</td>
+                                        <td>到付</td>
+                                        <td>超时 18：00</td>
+                                        <td class="com_unline"><a class="J_tip cc7" tip-content="2013-01-05</br>1000元/天" href="javascript:;">RMB 1000</a></td>
+                                        <td class="co_unline"><a class="J_tip" tip-content="早餐15元一份" href="javascript:;">无早</a></td>
+                                        <td><input type="checkbox" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td class="co_unline"><a class="J_tip" tip-content="面积：20平米</br>楼层：2楼（共18层）</br>是否无烟：无烟房" href="javascript:;">高级房</a></td>
+                                        <td class="co_unline"><a class="J_tip" tip-content="床宽：1.8米</br>加床：不可加</br>加床价格：50元" href="javascript:;">大床/双床</a></td>
+                                        <td>5</td>
+                                        <td class="co_unline"><a class="J_tip" tip-content="宽带10元/小时</br>每天50元" href="javascript:;">有/收费</a></td>
+                                        <td>10</td>
+                                        <td>正常</td>
+                                        <td>到付</td>
+                                        <td>超时 18：00</td>
+                                        <td class="com_unline"><a class="J_tip cc7" tip-content="2013-01-05</br>1000元/天" href="javascript:;">RMB 1000</a></td>
+                                        <td class="co_unline"><a class="J_tip" tip-content="早餐15元一份" href="javascript:;">无早</a></td>
+                                        <td><input type="checkbox" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td class="co_unline"><a class="J_tip" tip-content="面积：20平米</br>楼层：2楼（共18层）</br>是否无烟：无烟房" href="javascript:;">高级房</a><i tip-content="此房型在预定时段</br>内有不同价格" class="J_tip icon-liwu"></i></td>
+                                        <td class="co_unline"><a class="J_tip" tip-content="床宽：1.8米</br>加床：不可加</br>加床价格：50元" href="javascript:;">大床/双床</a></td>
+                                        <td>5</td>
+                                        <td class="co_unline"><a class="J_tip" tip-content="宽带10元/小时</br>每天50元" href="javascript:;">有/收费</a></td>
+                                        <td>10</td>
+                                        <td>正常</td>
+                                        <td>到付</td>
+                                        <td>超时 18：00</td>
+                                        <td class="com_unline"><a class="J_tip cc7" tip-content="2013-01-05</br>1000元/天" href="javascript:;">RMB 1000</a> <i tip-content="此房型在预定时段</br>内有不同价格" class="J_tip e_icon icon-warn"></i></td>
+                                        <td class="co_unline"><a class="J_tip" tip-content="早餐15元一份" href="javascript:;">无早</a></td>
+                                        <td><input type="checkbox" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="12" style="padding:5px 20px">
+                                           <a href="javascript:;" class="fr p_rel fb J_arrow active">其他房型<i class="ui-arrow-top blue-ui-arrow-top mt8"></i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td class="w15 td_top co_msg">
+                            <ul>
+                                <li>开业/装修：1996/2008</li>
+                                <li>距离虹桥机场：12KM</li>
+                                <li>距离浦东机场：50KM</li>
+                                <li>距离人民广场：10KM</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="p_box">
+                <div class="co_title"><a class="fr" href="#">重要通知</a><strong class="f14 cc8" title="[上海] 上海中航虹桥机场泊悦酒店（中国国际航空公司">[上海] 上海中航虹桥机场泊悦酒店（中国国际航空公司）</strong><span class="ml20">酒店星级：</span><span title="国家旅游局评定为四星级" class="tuan-star mr20"><i style="width:80%"></i></span><span>酒店地址：上海市长宁区虹桥机场出发层2号门(南区）</span></div>
+                <table class="co_p_table">
+                    <tr>
+                        <td>
+                            <table class="co_table">
+                                <thead>
+                                    <tr class="noborder">
+                                        <th>推荐级别</th>
+                                        <th>房型</th>
+                                        <th>床型</th>
+                                        <th>限住人数</th>
+                                        <th>宽带</th>
+                                        <th>保留房</th>
+                                        <th>房态</th>
+                                        <th>付款方式</th>
+                                        <th>限制</th>
+                                        <th>房间价格</th>
+                                        <th>早餐</th>
+                                        <th class="w3">操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>5</td>
+                                        <td class="co_unline"><a class="J_tip" tip-content="面积：20平米</br>楼层：2楼（共18层）</br>是否无烟：无烟房" href="javascript:;">高级房</a></td>
+                                        <td class="co_unline"><a class="J_tip" tip-content="床宽：1.8米</br>加床：不可加</br>加床价格：50元" href="javascript:;">大床/双床</a></td>
+                                        <td>5</td>
+                                        <td class="co_unline"><a class="J_tip" tip-content="宽带10元/小时</br>每天50元" href="javascript:;">有/收费</a></td>
+                                        <td>10</td>
+                                        <td>正常</td>
+                                        <td>到付</td>
+                                        <td>超时 18：00</td>
+                                        <td class="com_unline"><a class="J_tip cc7" tip-content="2013-01-05</br>1000元/天" href="javascript:;">RMB 1000</a></td>
+                                        <td class="co_unline"><a class="J_tip" tip-content="早餐15元一份" href="javascript:;">无早</a></td>
+                                        <td><input type="checkbox" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td class="co_unline"><a class="J_tip" tip-content="面积：20平米</br>楼层：2楼（共18层）</br>是否无烟：无烟房" href="javascript:;">高级房</a></td>
+                                        <td class="co_unline"><a class="J_tip" tip-content="床宽：1.8米</br>加床：不可加</br>加床价格：50元" href="javascript:;">大床/双床</a></td>
+                                        <td>5</td>
+                                        <td class="co_unline"><a class="J_tip" tip-content="宽带10元/小时</br>每天50元" href="javascript:;">有/收费</a></td>
+                                        <td>10</td>
+                                        <td>正常</td>
+                                        <td>到付</td>
+                                        <td>超时 18：00</td>
+                                        <td class="com_unline"><a class="J_tip cc7" tip-content="2013-01-05</br>1000元/天" href="javascript:;">RMB 1000</a></td>
+                                        <td class="co_unline"><a class="J_tip" tip-content="早餐15元一份" href="javascript:;">无早</a></td>
+                                        <td><input type="checkbox" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td class="co_unline"><a class="J_tip" tip-content="面积：20平米</br>楼层：2楼（共18层）</br>是否无烟：无烟房" href="javascript:;">高级房</a><i tip-content="此房型在预定时段</br>内有不同价格" class="J_tip icon-liwu"></i></td>
+                                        <td class="co_unline"><a class="J_tip" tip-content="床宽：1.8米</br>加床：不可加</br>加床价格：50元" href="javascript:;">大床/双床</a></td>
+                                        <td>5</td>
+                                        <td class="co_unline"><a class="J_tip" tip-content="宽带10元/小时</br>每天50元" href="javascript:;">有/收费</a></td>
+                                        <td>10</td>
+                                        <td>正常</td>
+                                        <td>到付</td>
+                                        <td>超时 18：00</td>
+                                        <td class="com_unline"><a class="J_tip cc7" tip-content="2013-01-05</br>1000元/天" href="javascript:;">RMB 1000</a> <i tip-content="此房型在预定时段</br>内有不同价格" class="J_tip e_icon icon-warn"></i></td>
+                                        <td class="co_unline"><a class="J_tip" tip-content="早餐15元一份" href="javascript:;">无早</a></td>
+                                        <td><input type="checkbox" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="12" style="padding:5px 20px">
+                                           <a href="javascript:;" class="fr p_rel fb J_arrow active">其他房型<i class="ui-arrow-top blue-ui-arrow-top mt8"></i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td class="w15 td_top co_msg">
+                            <ul>
+                                <li>开业/装修：1996/2008</li>
+                                <li>距离虹桥机场：12KM</li>
+                                <li>距离浦东机场：50KM</li>
+                                <li>距离人民广场：10KM</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="p_box">
+                <div class="co_title"><a class="fr" href="#">重要通知</a><strong class="f14 cc8" title="[上海] 上海中航虹桥机场泊悦酒店（中国国际航空公司">[上海] 上海中航虹桥机场泊悦酒店（中国国际航空公司）</strong><span class="ml20">酒店星级：</span><span title="国家旅游局评定为四星级" class="tuan-star mr20"><i style="width:80%"></i></span><span>酒店地址：上海市长宁区虹桥机场出发层2号门(南区）</span></div>
+                <table class="co_p_table">
+                <tr>
+                    <td>
+                        <table class="co_table">
+                            <thead>
+                                <tr class="noborder">
+                                    <th>推荐级别</th>
+                                    <th>房型</th>
+                                    <th>床型</th>
+                                    <th>限住人数</th>
+                                    <th>宽带</th>
+                                    <th>保留房</th>
+                                    <th>房态</th>
+                                    <th>付款方式</th>
+                                    <th>限制</th>
+                                    <th>房间价格</th>
+                                    <th>早餐</th>
+                                    <th class="w3">操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>5</td>
+                                    <td class="co_unline"><a class="J_tip" tip-content="面积：20平米</br>楼层：2楼（共18层）</br>是否无烟：无烟房" href="javascript:;">高级房</a></td>
+                                    <td class="co_unline"><a class="J_tip" tip-content="床宽：1.8米</br>加床：不可加</br>加床价格：50元" href="javascript:;">大床/双床</a></td>
+                                    <td>5</td>
+                                    <td class="co_unline"><a class="J_tip" tip-content="宽带10元/小时</br>每天50元" href="javascript:;">有/收费</a></td>
+                                    <td>10</td>
+                                    <td>正常</td>
+                                    <td>到付</td>
+                                    <td>超时 18：00</td>
+                                    <td class="com_unline"><a class="J_tip cc7" tip-content="2013-01-05</br>1000元/天" href="javascript:;">RMB 1000</a></td>
+                                    <td class="co_unline"><a class="J_tip" tip-content="早餐15元一份" href="javascript:;">无早</a></td>
+                                    <td><input type="checkbox" /></td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td class="co_unline"><a class="J_tip" tip-content="面积：20平米</br>楼层：2楼（共18层）</br>是否无烟：无烟房" href="javascript:;">高级房</a></td>
+                                    <td class="co_unline"><a class="J_tip" tip-content="床宽：1.8米</br>加床：不可加</br>加床价格：50元" href="javascript:;">大床/双床</a></td>
+                                    <td>5</td>
+                                    <td class="co_unline"><a class="J_tip" tip-content="宽带10元/小时</br>每天50元" href="javascript:;">有/收费</a></td>
+                                    <td>10</td>
+                                    <td>正常</td>
+                                    <td>到付</td>
+                                    <td>超时 18：00</td>
+                                    <td class="com_unline"><a class="J_tip cc7" tip-content="2013-01-05</br>1000元/天" href="javascript:;">RMB 1000</a></td>
+                                    <td class="co_unline"><a class="J_tip" tip-content="早餐15元一份" href="javascript:;">无早</a></td>
+                                    <td><input type="checkbox" /></td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td class="co_unline"><a class="J_tip" tip-content="面积：20平米</br>楼层：2楼（共18层）</br>是否无烟：无烟房" href="javascript:;">高级房</a></td>
+                                    <td class="co_unline"><a class="J_tip" tip-content="床宽：1.8米</br>加床：不可加</br>加床价格：50元" href="javascript:;">大床/双床</a></td>
+                                    <td>5</td>
+                                    <td class="co_unline"><a class="J_tip" tip-content="宽带10元/小时</br>每天50元" href="javascript:;">有/收费</a></td>
+                                    <td>10</td>
+                                    <td>正常</td>
+                                    <td>到付</td>
+                                    <td>超时 18：00</td>
+                                    <td class="com_unline"><a class="J_tip cc7" tip-content="2013-01-05</br>1000元/天" href="javascript:;">RMB 1000</a></td>
+                                    <td class="co_unline"><a class="J_tip" tip-content="早餐15元一份" href="javascript:;">无早</a></td>
+                                    <td><input type="checkbox" /></td>
+                                </tr>
+                                <tr style="display:none">
+                                    <td>5</td>
+                                    <td class="co_unline"><a class="J_tip" tip-content="面积：20平米</br>楼层：2楼（共18层）</br>是否无烟：无烟房" href="javascript:;">高级房</a></td>
+                                    <td class="co_unline"><a class="J_tip" tip-content="床宽：1.8米</br>加床：不可加</br>加床价格：50元" href="javascript:;">大床/双床</a></td>
+                                    <td>5</td>
+                                    <td class="co_unline"><a class="J_tip" tip-content="宽带10元/小时</br>每天50元" href="javascript:;">有/收费</a></td>
+                                    <td>10</td>
+                                    <td>正常</td>
+                                    <td>到付</td>
+                                    <td>超时 18：00</td>
+                                    <td class="com_unline"><a class="J_tip cc7" tip-content="2013-01-05</br>1000元/天" href="javascript:;">RMB 1000</a></td>
+                                    <td class="co_unline"><a class="J_tip" tip-content="早餐15元一份" href="javascript:;">无早</a></td>
+                                    <td><input type="checkbox" /></td>
+                                </tr>
+                                <tr style="display:none">
+                                    <td>5</td>
+                                    <td class="co_unline"><a class="J_tip" tip-content="面积：20平米</br>楼层：2楼（共18层）</br>是否无烟：无烟房" href="javascript:;">高级房</a><i tip-content="此房型在预定时段</br>内有不同价格" class="J_tip icon-liwu"></i></td>
+                                    <td class="co_unline"><a class="J_tip" tip-content="床宽：1.8米</br>加床：不可加</br>加床价格：50元" href="javascript:;">大床/双床</a></td>
+                                    <td>5</td>
+                                    <td class="co_unline"><a class="J_tip" tip-content="宽带10元/小时</br>每天50元" href="javascript:;">有/收费</a></td>
+                                    <td>10</td>
+                                    <td>正常</td>
+                                    <td>到付</td>
+                                    <td>超时 18：00</td>
+                                    <td class="com_unline"><a class="J_tip cc7" tip-content="2013-01-05</br>1000元/天" href="javascript:;">RMB 1000</a> <i tip-content="此房型在预定时段</br>内有不同价格" class="J_tip e_icon icon-warn"></i></td>
+                                    <td class="co_unline"><a class="J_tip" tip-content="早餐15元一份" href="javascript:;">无早</a></td>
+                                    <td><input type="checkbox" /></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="12" style="padding:5px 20px">
+                                       <a href="javascript:;" class="fr p_rel fb J_arrow active">其他房型<i class="ui-arrow-top blue-ui-arrow-top mt8"></i></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td class="w15 td_top co_msg">
+                        <ul>
+                            <li>开业/装修：1996/2008</li>
+                            <li>距离虹桥机场：12KM</li>
+                            <li>距离浦东机场：50KM</li>
+                            <li>距离人民广场：10KM</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+            </div>
+        </div>
+        <div class="pages darkstyle">	
+			<p class="pages_go">到第 <input type="text" class="w1"/> 页 <button type="button" class="btn btn-mini">确定</button></p>
+			<div class="Pages"><span class="PrevPage"><i class="ui-arrow-left blue-ui-arrow-left"></i>上一页</span><a href="#">1</a><span class="PageSel">2</span><a href="#">3</a><a href="#">4</a><a href="#">5</a><a href="#">6</a><span class="PageMore">...</span><a href="#">20</a><a href="#" class="NextPage">下一页<i class="ui-arrow-right blue-ui-arrow-right"></i></a> </div>
+		</div>
+        <div class="co_line mt10 mb10"></div>
+        <div class="p_box box_info">
+             <div class="title">
+			    <h2 class="f14">填写联系人信息</h2>
+		    </div>
+            <div class="box_content">
+                <table class="e_table form-inline">
+                    <tbody>
+                        <tr>
+                            <td width="100" class="e_label td_top"><i class="cc1">*</i>联系人：</td>
+                            <td><input type="text"  /></td>
+                        </tr>
+                        <tr>
+                            <td class="e_label td_top">通知方式：</td>
+                            <td>
+                                <select>
+                                    <option>手机通信</option>
+                                    <option>手机通信</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="e_label td_top"><i class="cc1">*</i>联系人手机：</td>
+                            <td><input type="text"  /></td>
+                        </tr>
+                        <tr>
+                            <td class="e_label td_top">邮箱地址：</td>
+                            <td><input type="text"  /></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery1.6.1.js"></script>
+    <script src="js/pandora-dialog.js"></script>
+    <script src="js/jquery.lvtip.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('.J_tip').lvtip({
+                templete: 3,
+                place: 'bottom-left',
+                offsetX: 0,
+                events: "live" 
+            });
+
+            $(".J_arrow").click(function () {
+                var $table = $(this).parents("table.co_table");
+
+                if ($(this).hasClass("active")) {
+                    if ($table.find("tr").length > 5) {
+                        $(this).removeClass("active").html('收起<i class="ui-arrow-top blue-ui-arrow-top mt8"></i>');
+                        $table.find("tr").show();
+                    }
+                } else {
+                    $table.find("tr").hide();
+                    $table.find("tr").eq(0).show();
+                    $table.find("tr").eq(1).show();
+                    $table.find("tr").eq(2).show();
+                    $table.find("tr").eq(3).show();
+                    $table.find("tr").last().show();
+                    $(this).addClass("active").html('其他房型<i class="ui-arrow-top blue-ui-arrow-top mt8"></i>');
+                }
+
+            });
+        });
+    </script>
+</body>
+</html>

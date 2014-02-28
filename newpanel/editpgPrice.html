@@ -1,0 +1,643 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>商品维护</title>
+    <link href="css/ui-common.css" rel="stylesheet" />
+    <link href="css/ui-components.css" rel="stylesheet" />
+    <link href="css/iframe.css" rel="stylesheet" />
+    <link href="css/dialog.css" rel="stylesheet" />
+    <link href="css/calendar.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="iframe_header">
+        <ul class="iframe_nav">
+            <li>品类：</li>
+            <li>酒店 ></li>
+            <li>商品维护 ></li>
+            <li><a href="#">销售信息</a> ></li>
+            <li class="active">查看/维护时间价格表</li>
+        </ul>
+    </div>
+    <div class="iframe_content mt10">
+        <div class="tiptext tip-warning cc5"><span class="tip-icon tip-icon-warning"></span>友情提示：
+            <p class="pl15">1.可以查询的供应商为在“供应商合同关联”里面维护的供应商</p>
+            <p class="pl15">2.可查询的商品，为当前产品下，供应商关联的当前规格的所有商品</p>
+            <p class="pl15">3.可设置的为，有效的商品</p>
+        </div>
+        <div class="p_box box_info">
+             <div class="box_content">
+                <table class="e_table form-inline">
+                    <tbody>
+                        <tr>
+                            <td width="150" class="e_label">供应商：</td>
+                            <td>锦江饭店-非对接</td>
+                        </tr>
+                        <tr>
+                            <td class="e_label">维护产品经理：</td>
+                            <td>韩创</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="p_box box_info">
+             <div class="title">
+			    <h2 class="f16">商品销售信息查询</h2>
+             </div>
+            <div class="box_content">
+                <table class="e_table form-inline J_radio">
+                    <tbody>
+                        <tr>
+                            <td><label class="radio"><input type="radio"  name="p_name" />标准间-特价房[现付]</label></td>
+                            <td><label class="radio"><input type="radio"  name="p_name" />大床房-含早[现付]<span class="poptip-mini poptip-mini-warning"><div class="tip-sharp tip-sharp-left"></div>商品无效</span></label></td>
+                            <td><label class="radio"><input type="radio"  name="p_name" />标准间-特价房[现付]</label></td>
+                            <td><label class="radio"><input type="radio"  name="p_name" />标准间-特价房[现付]</label></td>
+                        </tr>
+                        <tr>
+                            <td><label class="radio"><input type="radio"  name="p_name" />标准间-特价房[现付]</label></td>
+                            <td><label class="radio"><input type="radio"  name="p_name" />大床房-含早[现付]</label></td>
+                            <td><label class="radio"><input type="radio"  name="p_name" />标准间-特价房[现付]</label></td>
+                            <td><label class="radio"><input type="radio"  name="p_name" />标准间-特价房[现付]</label></td>
+                        </tr>
+                        <tr>
+                            <td><label class="radio"><input type="radio"  name="p_name" />标准间-特价房[现付]</label></td>
+                            <td><label class="radio"><input type="radio"  name="p_name" />大床房-含早[现付]</label></td>
+                            <td><label class="radio"><input type="radio"  name="p_name" />标准间-特价房[现付]</label></td>
+                            <td><label class="radio"><input type="radio"  name="p_name" />标准间-特价房[现付]</label></td>
+                        </tr>
+                        <tr>
+                            <td><label class="radio"><input type="radio"  name="p_name" />标准间-特价房[现付]</label></td>
+                            <td><label class="radio"><input type="radio"  name="p_name" />大床房-含早[现付]</label></td>
+                            <td><label class="radio"><input type="radio"  name="p_name" />标准间-特价房[现付]</label></td>
+                            <td><label class="radio"><input type="radio"  name="p_name" />标准间-特价房[现付]</label></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="p_box box_info">
+            <div class="title clearfix">
+			    <h2 class="f16 fl">时间价格表</h2><span style=" position:relative; top:8px; left:5px; float:left"><i class="ui-arrow-bottom blue-ui-arrow-bottom"></i></span>
+                <span class="J_tip fr cc3"><i class="icon-remind"></i> 查看说明</span> 
+            </div>
+            <div class="J_timeprice time_price"></div>
+        </div>
+        <div class="p_box box_info">
+            <div class="price_tab">
+                <ul class="J_tab ui_tab">
+		            <li class="active"><a href="javascript:;">设置价格</a></li>
+                    <li><a href="javascript:;">设置库存</a></li>
+                    <li><a href="javascript:;">设置退改扣款机制</a></li>
+	            </ul>
+            </div>
+            <div class="price_content">
+                <div class="J_con active" style="position:relative; padding-bottom:80px">
+                    <div style="margin:-10px 0 0 20px">
+                        <table class="e_table form-inline">
+                                <tbody>
+                                <tr>
+                                    <td><label class="checkbox"><input type="checkbox" name="p_name">标准间-特价房[现付]</label></td>
+                                    <td><label class="checkbox"><input type="checkbox" name="p_name">标准间-特价房[现付]</label></td>
+                                    <td><label class="checkbox"><input type="checkbox" name="p_name">标准间-特价房[现付]</label></td>
+                                    <td><label class="checkbox"><input type="checkbox" name="p_name">标准间-特价房[现付]</label></td>
+                                </tr>                                                                 
+                                <tr>                                                                  
+                                    <td><label class="checkbox"><input type="checkbox" name="p_name">标准间-特价房[现付]</label></td>
+                                    <td><label class="checkbox"><input type="checkbox" name="p_name">标准间-特价房[现付]</label></td>
+                                    <td><label class="checkbox"><input type="checkbox" name="p_name">标准间-特价房[现付]</label></td>
+                                    <td><label class="checkbox"><input type="checkbox" name="p_name">标准间-特价房[现付]</label></td>
+                                </tr>                                                                 
+                                <tr>                                                                  
+                                    <td><label class="checkbox"><input type="checkbox" name="p_name">标准间-特价房[现付]</label></td>
+                                    <td><label class="checkbox"><input type="checkbox" name="p_name">标准间-特价房[现付]</label></td>
+                                    <td><label class="checkbox"><input type="checkbox" name="p_name">标准间-特价房[现付]</label></td>
+                                    <td><label class="checkbox"><input type="checkbox" name="p_name">标准间-特价房[现付]</label></td>
+                                </tr>                                                                 
+                                <tr>                                                                  
+                                    <td><label class="checkbox"><input type="checkbox" name="p_name">标准间-特价房[现付]</label></td>
+                                    <td><label class="checkbox"><input type="checkbox" name="p_name">标准间-特价房[现付]</label></td>
+                                    <td><label class="checkbox"><input type="checkbox" name="p_name">标准间-特价房[现付]</label></td>
+                                    <td><label class="checkbox"><input type="checkbox" name="p_name">标准间-特价房[现付]</label></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="p_date">
+                            <ul class="cal_range">
+                                <li>日期范围:</li>
+                                <li><input type="text" class="calendar"></li>
+                                <li>-</li>
+                                <li><input type="text" class="calendar"></li>
+                                <li class="cc3">仅可操作两年内的时间</li>
+                            </ul>
+                            <ul class="app_week">
+                                <li>适用日期:</li>
+                                <li><label class="checkbox"><input type="checkbox" class="checkbox_top">全部</label></li>
+                                <li><label class="checkbox"><input type="checkbox" class="checkbox_top">星期一</label></li>
+                                <li><label class="checkbox"><input type="checkbox" class="checkbox_top">星期二</label></li>
+                                <li><label class="checkbox"><input type="checkbox" class="checkbox_top">星期三</label></li>
+                                <li><label class="checkbox"><input type="checkbox" class="checkbox_top">星期四</label></li>
+                                <li><label class="checkbox"><input type="checkbox" class="checkbox_top">星期五</label></li>
+                                <li><label class="checkbox"><input type="checkbox" class="checkbox_top">星期六</label></li>
+                                <li><label class="checkbox"><input type="checkbox" class="checkbox_top">星期天</label></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <table class="e_table form-inline">
+                        <tbody>
+                            <tr>
+                                <td width="150" class="e_label">适用人群：</td>
+                                <td>
+                                    <label class="checkbox mr10"><input type="checkbox"  name="p_name" />内宾</label>
+                                    <label class="checkbox mr10"><input type="checkbox"  name="p_name" />港澳台</label>
+                                    <label class="checkbox mr10"><input type="checkbox"  name="p_name" />侨胞</label>
+                                    <label class="checkbox mr10"><input type="checkbox"  name="p_name" />外宾</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="e_label">早餐情况：</td>
+                                <td>
+                                      <select class="w10">
+					                      <option value="">1</option>
+					                      <option value="">2</option>
+					                  </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="e_label">最小连住天数：</td>
+                                <td>
+                                      <select class="w10">
+					                      <option value="">1</option>
+					                      <option value="">2</option>
+					                  </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="e_label">提前预定天数：</td>
+                                <td>提前
+                                      <select class="w10">
+					                      <option value="">1</option>
+					                      <option value="">2</option>
+					                  </select>
+                                    天
+                                      <select class="w10">
+					                      <option value="">1</option>
+					                      <option value="">2</option>
+					                  </select>
+                                    时
+                                      <select class="w10">
+					                      <option value="">1</option>
+					                      <option value="">2</option>
+					                  </select>
+                                    分
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="e_label">结算价：</td>
+                                <td><input type="text" ><div class="e_error"><i class="e_icon icon-error"></i>请输入结算价</div></td>
+                            </tr>
+                            <tr>
+                                <td class="e_label">销售价：</td>
+                                <td><input type="text" ><div class="e_error"><i class="e_icon icon-error"></i>请输入销售价</div></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="price_calculate">
+                        <ul>
+                            <li class="cc3">请根据结算价或销售价进行计算</li>
+                            <li><span>佣金：</span><input type="text" class="w10" /><em class="cc3">-OR-</em><span>佣金率：</span><input type="text" class="w10" />%</li>
+                            <li><span>服务费：</span><input type="text" class="w10" /><em class="cc3">-OR-</em><span>服务费率：</span><input type="text" class="w10" />%</li>
+                            <li class="operate"><a class="btn btn_cc1" style="margin-left:60px">计算</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div  class="J_con">
+                    <div style="margin:-10px 0 0 20px">
+                        <table class="e_table form-inline">
+                                <tbody>
+                                <tr>
+                                    <td><label class="checkbox"><input type="checkbox" name="p_name">标准间-特价房[现付]</label></td>
+                                    <td><label class="checkbox"><input type="checkbox" name="p_name">标准间-特价房[现付]</label></td>
+                                    <td><label class="checkbox"><input type="checkbox" name="p_name">标准间-特价房[现付]</label></td>
+                                    <td><label class="checkbox"><input type="checkbox" name="p_name">标准间-特价房[现付]</label></td>
+                                </tr>                                                                 
+                                <tr>                                                                  
+                                    <td><label class="checkbox"><input type="checkbox" name="p_name">标准间-特价房[现付]</label></td>
+                                    <td><label class="checkbox"><input type="checkbox" name="p_name">标准间-特价房[现付]</label></td>
+                                    <td><label class="checkbox"><input type="checkbox" name="p_name">标准间-特价房[现付]</label></td>
+                                    <td><label class="checkbox"><input type="checkbox" name="p_name">标准间-特价房[现付]</label></td>
+                                </tr>                                                                 
+                                <tr>                                                                  
+                                    <td><label class="checkbox"><input type="checkbox" name="p_name">标准间-特价房[现付]</label></td>
+                                    <td><label class="checkbox"><input type="checkbox" name="p_name">标准间-特价房[现付]</label></td>
+                                    <td><label class="checkbox"><input type="checkbox" name="p_name">标准间-特价房[现付]</label></td>
+                                    <td><label class="checkbox"><input type="checkbox" name="p_name">标准间-特价房[现付]</label></td>
+                                </tr>                                                                 
+                                <tr>                                                                  
+                                    <td><label class="checkbox"><input type="checkbox" name="p_name">标准间-特价房[现付]</label></td>
+                                    <td><label class="checkbox"><input type="checkbox" name="p_name">标准间-特价房[现付]</label></td>
+                                    <td><label class="checkbox"><input type="checkbox" name="p_name">标准间-特价房[现付]</label></td>
+                                    <td><label class="checkbox"><input type="checkbox" name="p_name">标准间-特价房[现付]</label></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="p_date">
+                            <ul class="cal_range">
+                                <li>日期范围:</li>
+                                <li><input type="text" class="calendar"></li>
+                                <li>-</li>
+                                <li><input type="text" class="calendar"></li>
+                                <li class="cc3">仅可操作两年内的时间</li>
+                            </ul>
+                            <ul class="app_week">
+                                <li>适用日期:</li>
+                                <li><label class="checkbox"><input type="checkbox" class="checkbox_top">全部</label></li>
+                                <li><label class="checkbox"><input type="checkbox" class="checkbox_top">星期一</label></li>
+                                <li><label class="checkbox"><input type="checkbox" class="checkbox_top">星期二</label></li>
+                                <li><label class="checkbox"><input type="checkbox" class="checkbox_top">星期三</label></li>
+                                <li><label class="checkbox"><input type="checkbox" class="checkbox_top">星期四</label></li>
+                                <li><label class="checkbox"><input type="checkbox" class="checkbox_top">星期五</label></li>
+                                <li><label class="checkbox"><input type="checkbox" class="checkbox_top">星期六</label></li>
+                                <li><label class="checkbox"><input type="checkbox" class="checkbox_top">星期天</label></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <table class="e_table form-inline">
+                        <tbody>
+                            <tr>
+                                <td width="150" class="e_label">库存类型：</td>
+                                <td>
+                                    <label class="radio mr10"><input type="radio" name="stockType" />非保留房</label>
+                                    <label class="radio"><input type="radio" name="stockType" />保留房</label>
+                                    <select class="w10">
+					                      <option value="">1</option>
+					                      <option value="">2</option>
+					                </select>
+                                </td>
+                            </tr>
+                            <tr><td><h2 class="ml20">保留房设置</h2></td></tr>
+                            <tr>
+                                <td  class="e_label">增减保留房：</td>
+                                <td>
+                                    <label class="radio"><input type="radio" name="stockType" />增加</label>
+                                    <select class="w10 mr10">
+					                      <option value="">1</option>
+					                      <option value="">2</option>
+					                </select>
+                                    <label class="radio"><input type="radio" name="stockType" />减少</label>
+                                    <select class="w10">
+					                      <option value="">1</option>
+					                      <option value="">2</option>
+					                </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="e_label">提前预定天数：</td>
+                                <td>提前
+                                      <select class="w10">
+					                      <option value="">1</option>
+					                      <option value="">2</option>
+					                  </select>
+                                    天
+                                      <select class="w10">
+					                      <option value="">1</option>
+					                      <option value="">2</option>
+					                  </select>
+                                    时
+                                      <select class="w10">
+					                      <option value="">1</option>
+					                      <option value="">2</option>
+					                  </select>
+                                    分
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="e_label">保留房可否恢复：</td>
+                                <td>
+                                     <select>
+					                      <option value="">可恢复</option>
+					                      <option value="">可恢复</option>
+					                  </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="e_label">是否可超卖：</td>
+                                <td>
+                                     <select>
+					                      <option value="">可超卖</option>
+					                      <option value="">可超卖</option>
+					                  </select>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div  class="J_con">
+                    <div style="margin:-10px 0 0 20px">
+                        <table class="e_table form-inline">
+                                <tbody>
+                                <tr>
+                                    <td><label class="checkbox"><input type="checkbox" name="p_name">标准间-特价房[现付]</label></td>
+                                    <td><label class="checkbox"><input type="checkbox" name="p_name">标准间-特价房[现付]</label></td>
+                                    <td><label class="checkbox"><input type="checkbox" name="p_name">标准间-特价房[现付]</label></td>
+                                    <td><label class="checkbox"><input type="checkbox" name="p_name">标准间-特价房[现付]</label></td>
+                                </tr>                                                                 
+                                <tr>                                                                  
+                                    <td><label class="checkbox"><input type="checkbox" name="p_name">标准间-特价房[现付]</label></td>
+                                    <td><label class="checkbox"><input type="checkbox" name="p_name">标准间-特价房[现付]</label></td>
+                                    <td><label class="checkbox"><input type="checkbox" name="p_name">标准间-特价房[现付]</label></td>
+                                    <td><label class="checkbox"><input type="checkbox" name="p_name">标准间-特价房[现付]</label></td>
+                                </tr>                                                                 
+                                <tr>                                                                  
+                                    <td><label class="checkbox"><input type="checkbox" name="p_name">标准间-特价房[现付]</label></td>
+                                    <td><label class="checkbox"><input type="checkbox" name="p_name">标准间-特价房[现付]</label></td>
+                                    <td><label class="checkbox"><input type="checkbox" name="p_name">标准间-特价房[现付]</label></td>
+                                    <td><label class="checkbox"><input type="checkbox" name="p_name">标准间-特价房[现付]</label></td>
+                                </tr>                                                                 
+                                <tr>                                                                  
+                                    <td><label class="checkbox"><input type="checkbox" name="p_name">标准间-特价房[现付]</label></td>
+                                    <td><label class="checkbox"><input type="checkbox" name="p_name">标准间-特价房[现付]</label></td>
+                                    <td><label class="checkbox"><input type="checkbox" name="p_name">标准间-特价房[现付]</label></td>
+                                    <td><label class="checkbox"><input type="checkbox" name="p_name">标准间-特价房[现付]</label></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="p_date">
+                            <ul class="cal_range">
+                                <li>日期范围:</li>
+                                <li><input type="text" class="calendar"></li>
+                                <li>-</li>
+                                <li><input type="text" class="calendar"></li>
+                                <li class="cc3">仅可操作两年内的时间</li>
+                            </ul>
+                            <ul class="app_week">
+                                <li>适用日期:</li>
+                                <li><label class="checkbox"><input type="checkbox" class="checkbox_top">全部</label></li>
+                                <li><label class="checkbox"><input type="checkbox" class="checkbox_top">星期一</label></li>
+                                <li><label class="checkbox"><input type="checkbox" class="checkbox_top">星期二</label></li>
+                                <li><label class="checkbox"><input type="checkbox" class="checkbox_top">星期三</label></li>
+                                <li><label class="checkbox"><input type="checkbox" class="checkbox_top">星期四</label></li>
+                                <li><label class="checkbox"><input type="checkbox" class="checkbox_top">星期五</label></li>
+                                <li><label class="checkbox"><input type="checkbox" class="checkbox_top">星期六</label></li>
+                                <li><label class="checkbox"><input type="checkbox" class="checkbox_top">星期天</label></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <table class="e_table form-inline">
+                        <tbody>
+                            <tr><td><h2 class="ml20">预付内容设置：</h2></td></tr>
+                            <tr>
+                                <td width="150" class="e_label">预付最晚无损取消时间：</td>
+                                <td>提前
+                                      <select class="w10">
+					                      <option value="">1</option>
+					                      <option value="">2</option>
+					                  </select>
+                                    天
+                                      <select class="w10">
+					                      <option value="">1</option>
+					                      <option value="">2</option>
+					                  </select>
+                                    时
+                                      <select class="w10">
+					                      <option value="">1</option>
+					                      <option value="">2</option>
+					                  </select>
+                                    分
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="e_label">预付扣款类型：</td>
+                                <td>
+                                     <select class="w10">
+					                      <option value="">否</option>
+					                      <option value="">否</option>
+					                  </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="e_label">预付预授权限制：</td>
+                                <td>
+                                     <select class="w10">
+					                      <option value="">无限制</option>
+					                      <option value="">无限制</option>
+					                  </select>
+                                </td>
+                            </tr>
+                            <tr><td><h2 class="ml20">现付内容设置</h2></td></tr>
+                            <tr>
+                                <td class="e_label">担保类型：</td>
+                                <td>
+                                     <select class="w10">
+					                      <option value="">信用卡</option>
+					                      <option value="">信用卡</option>
+					                  </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="e_label">全额/峰时担保扣款：</td>
+                                <td>
+                                     <select class="w10">
+					                      <option value="">否</option>
+					                      <option value="">否</option>
+					                  </select>
+                                </td>
+                            </tr> 
+                            <tr>
+                                <td class="e_label">担保最晚无损取消时间：</td>
+                                <td>提前
+                                      <select class="w10">
+					                      <option value="">1</option>
+					                      <option value="">2</option>
+					                  </select>
+                                    天
+                                      <select class="w10">
+					                      <option value="">1</option>
+					                      <option value="">2</option>
+					                  </select>
+                                    时
+                                      <select class="w10">
+					                      <option value="">1</option>
+					                      <option value="">2</option>
+					                  </select>
+                                    分
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="e_label">保留房可否恢复：</td>
+                                <td>
+                                     <select class="w10 mr10">
+					                      <option value="">可恢复</option>
+					                      <option value="">可恢复</option>
+					                 </select>
+                                    保留时间
+                                    <select class="w10 ml10">
+					                      <option value="">01点</option>
+					                      <option value="">01点</option>
+					                 </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="e_label">是否可超卖：</td>
+                                <td>
+                                     <select class="w10">
+					                      <option value="">可超卖</option>
+					                      <option value="">可超卖</option>
+					                  </select>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="p_box box_info clearfix mb20">
+            <div class="fl operate"><a class="btn btn_cc1">保存</a><a class="btn">返回上一步</a></div>
+        </div>
+    </div>
+    <script src="js/jquery1.6.1.js"></script>
+    <script src="js/pandora-calendar.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var template = {
+                warp: '<div class="ui-calendar"></div>',
+                calControl: '<span class="month-prev" {{stylePrev}} title="上一月">‹</span><span class="month-next" {{styleNext}} title="下一月">›</span>',
+                calWarp: '<div class="calwarp clearfix">{{content}}</div>',
+                calMonth: '<div class="calmonth">{{content}}</div>',
+                calTitle: '<div class="caltitle"><span class="mtitle">{{month}}</span></div>',
+                calBody: '<div class="calbox">' +
+                            '<i class="monthbg">{{month}}</i>' +
+                            '<table cellspacing="0" cellpadding="0" border="0" class="caltable">' +
+                                '<thead>' +
+                                    '<tr>' +
+                                        '<th class="sun">日</th>' +
+                                        '<th class="mon">一</th>' +
+                                        '<th class="tue">二</th>' +
+                                        '<th class="wed">三</th>' +
+                                        '<th class="thu">四</th>' +
+                                        '<th class="fri">五</th>' +
+                                        '<th class="sat">六</th>' +
+                                    '</tr>' +
+                                '</thead>' +
+                                '<tbody>' +
+                                    '{{date}}' +
+                                '</tbody>' +
+                            '</table>' +
+                        '</div>',
+                weekWarp: '<tr>{{week}}</tr>',
+                day: '<td {{week}} {{dateMap}} >' +
+                        '<div {{className}}>' +
+                            '<span class="calday">{{day}}</span>' +
+                            '<span class="calinfo"></span>' +
+                            '<div class="fill_data"></div>' +
+                        '</div>' +
+                     '</td>'
+            };
+            
+            // 填充日历数据
+            function fillData() {
+                
+                var that = this,
+                    url = "http://10.2.1.149:8080/super_front/product/timePriceJson.do?productId=2266&branchId=83280&r=0.1082835950001223&callback=?";
+
+                
+                //if (that.options.date.getMonth()) {
+                   
+                //} else {
+
+                //}
+
+                function setData(data) {
+                    
+                    //if (data === undefined) {
+                    //    return;
+                    //}
+
+                    //data.forEach(function (arr) {
+                    //    var $td = that.warp.find("td[date-map=2013-11-13]"),
+                    //        html = "";
+
+                    //    html = '<ul>'+
+                    //                '<li><span class="cc3">售：</span>'+ arr.date +' <span class="cc3">结：</span>350</li>' +
+                    //                '<li class="mb10"><span class="cc3">提前：</span>1天19时29分</li>' +
+                    //                '<li><span class="cc3">保留：</span>4 <span class="cc3">增减：</span>8</li>' +
+                    //                '<li><span class="cc3">最晚：</span>1天19时29分</li>' +
+                    //                '<li class="mb10">可超卖/不可恢复</li>' +
+                    //                '<li><span class="cc3">预售：</span>1天19时29分</li>' +
+                    //                '<li><span class="cc3">无损：</span>1天19时29分</li>' +
+                    //                '<li><span class="cc3">峰值：</span>1天19时29分</li>' +
+                    //            '</ul>';
+
+                    //    $td.find("div.fill_data").html(html);
+                    //});
+
+                    var $td = that.warp.find("td[date-map=2013-11-25]"),
+                           html = "";
+
+                    html = '<ul>' +
+                                '<li><span class="cc3">售：</span>111 <span class="cc3">结：</span>350</li>' +
+                                '<li class="mb10"><span class="cc3">提前：</span>1天19时29分</li>' +
+                                '<li><span class="cc3">保留：</span>4 <span class="cc3">增减：</span>8</li>' +
+                                '<li><span class="cc3">最晚：</span>1天19时29分</li>' +
+                                '<li class="mb10">可超卖/不可恢复</li>' +
+                                '<li><span class="cc3">预售：</span>1天19时29分</li>' +
+                                '<li><span class="cc3">无损：</span>1天19时29分</li>' +
+                                '<li><span class="cc3">峰值：</span>1天19时29分</li>' +
+                            '</ul>';
+
+                    $td.find("span.calinfo").html("紧张").addClass("cal_cc1");
+                    $td.find("div.fill_data").html(html);
+
+                }
+                setData()
+                //$.ajax({
+                //    url: url,
+                //    type: "POST",
+                //    dataType: "jsonp",
+                //    jsonp: 'jsoncallback',
+                //    success: function (json) {
+                //        //setData(json);
+                //    },
+                //    error: function () { }
+                //});
+
+            }
+          
+            //页面加载自动显示日历
+            pandora.calendar({
+                autoRender: true,
+                frequent: true,
+                showNext: false,
+                template: template,
+                target: $(".J_timeprice")
+            });
+
+            $(".J_radio").find("input[type=radio]").click(function () {
+                pandora.calendar({
+                    sourceFn: fillData,
+                    autoRender: true,
+                    frequent: true,
+                    showNext: true,
+                    template: template,
+                    target: $(".J_timeprice")
+                });
+            });
+
+            $(".J_tab").find("li").click(function () {
+                var index = $(this).index(),
+                    $J_con = $(".J_con"),
+                    $li = $(".J_tab").find("li");
+
+                $li.removeClass("active");
+                $li.eq(index).addClass("active");
+                $J_con.removeClass("active");
+                $J_con.eq(index).addClass("active");
+
+                return false;
+            });
+        });
+
+     
+    </script>
+</body>
+</html>

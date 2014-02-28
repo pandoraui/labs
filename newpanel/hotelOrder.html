@@ -1,0 +1,470 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link rel="stylesheet" href="http://pic.lvmama.com/min/index.php?f=/styles/v4/pa-base.css,/styles/v4/modules/arrow.css,/styles/v4/modules/button.css,/styles/v4/modules/forms.css,/styles/v4/modules/selectbox.css,/styles/v4/modules/step.css,/styles/v4/modules/tags.css,/styles/v4/modules/tip.css,/styles/v4/modules/dialog.css,/styles/v4/modules/tables.css" />
+    <link rel="stylesheet" href="http://pic.lvmama.com/min/index.php?f=/styles/v4/modules/dialog.css,/styles/v4/modules/calendar.css,/styles/v4/order-common.css,/styles/v4/order.css" />
+</head>
+<body class="hotel-order">
+    <div class="order-header wrap">
+        <div class="header-inner">
+            <a href="http://www.lvmama.com/" class="logo">自助天下游 就找驴妈妈</a>
+            <p class="welcome">下午好，<b>sh_andy</b> </p>
+            <p class="info">24小时服务热线：<strong>1010-6060</strong></p>
+        </div>
+    </div>
+    <div class="wrap">
+        <!-- 操作步骤 -->
+        <ol class="ui-step ui-step-3">
+            <li class="ui-step1 ui-step-start ui-step-active">
+                <div class="ui-step-arrow">
+                    <i class="arrow_r1"></i>
+                    <i class="arrow_r2"></i>
+                </div>
+                <span class="ui-step-text">1.填写订单信息</span>
+            </li>
+            <li class="ui-step2">
+                <div class="ui-step-arrow">
+                    <i class="arrow_r1"></i>
+                    <i class="arrow_r2"></i>
+                </div>
+                <span class="ui-step-text">2.选择付款方式付款</span>
+            </li>
+            <li class="ui-step3 ui-step-end">
+                <div class="ui-step-arrow">
+                    <i class="arrow_r1"></i>
+                    <i class="arrow_r2"></i>
+                </div>
+                <span class="ui-step-text">3.预订成功</span>
+            </li>
+        </ol>
+        <!-- 操作步骤 -->
+        <div class="hotel-title clearfix"><div class="hotel-help"><i class="tip-icon tip-icon-help"></i><a href="#">预订帮助</a></div><h1>上海外滩（上海北外环）</h1></div>
+        <!-- 填写订单信息 -->
+        <div class="order-main border equalheight-box">
+            <!-- 侧边栏 sidebar -->
+            <div class="sidebar equalheight-item">
+                <div class="sidebox side-setbox">
+                    <div class="side-title">
+                        <h3>订单费用结算</h3>
+                    </div>
+                    <div class="content">
+                        <dl class="pro-setbox">
+                            <dt>产品费用</dt>
+                            <dd>
+                                <span class="num">(<dfn>¥562702</dfn>×<i class="price">220</i></span>
+                                <p>节假日特惠双床复试套房限时抢购)</p>
+                            </dd>
+                        </dl>
+                        <dl class="pro-setbox">
+                            <dt>优惠信息</dt>
+                            <dd>
+                                <span class="num save-price"><dfn>- ¥<b>10</b></dfn></span>
+                                <p>使用优惠劵</p>
+                            </dd>
+                        </dl>
+                    </div> 
+                    <div class="solid_line"></div>
+                    <div class="total-price">
+                        <span class="price-num"><dfn>459080</dfn> 元</span>
+                        <strong>订单金额：</strong>
+                    </div>
+                </div>
+                <div class="solid_line"></div>
+                <div class="sidebox side-setbox">
+                    <dl class="clearfix">
+                        <dd class="hotel-ms">
+                            <img src="http://placehold.it/350x150" width="90" height="60" alt="" />
+                            <div class="hotel-note">
+                                <p><a href="#" target="_blank">桔子水晶酒店（上海北外滩店）</a></p>
+                                <p class="diamond"><i style="width:100%"></i></p>
+                                <p class="star"><i style="width:100%"></i></p>
+                            </div>
+                        </dd>
+                    </dl>
+                    <p class="cc2">地址：上海虹口区东大名路1191号（北外滩地区近霍山路）</p>
+                    <div class="solid_line"></div>
+                    <ul class="room-des">
+                        <li>床型：双床（110cm*200cm）<a class="J_tip" href="#" tip-content='加床费用100'>加床费用</a></li>
+                        <li>早餐：无早 <a class="J_tip" href="#" tip-content='早餐费用15元一份'>早餐费用</a></li>
+                        <li>宽带：宽带收费 <a class="J_tip" href="#" tip-content='20元每小时，100元每天'>宽带费用</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 侧边栏 sidebar -->
+            <div class="main equalheight-item">
+                <form id="order-submit" action="/" method="post">
+                    <div class="order-title">
+                        <h3>预订信息</h3>
+                    </div>
+                    <div class="order-content">
+                        <div class="xdl-hor">
+                            <dl class="xdl">
+                                <dt>房间类型：</dt>
+                                <dd class="B">特惠双床复试套房(限时抢购)</dd>
+                            </dl>
+                            <dl class="xdl">
+                                <dt>入住时间：</dt>
+                                <dd><span class="B">2013-12-1</span><span class="mlf5 cc1">至</span><span class="B">2013-12-2</span><span class="J_num_date mlf5 cc1">1晚</span><a class="J_undate ml10" href="javascript:;">修改时间</a></dd>
+                                <dd style="display:none"><input  class="J_calendar input-text" type="text" autocomplete="off" /><span class="mlf5 cc1">至</span><input  class="J_calendar input-text mr10" type="text" autocomplete="off" /><button class="J_fix_date pbtn pbtn-mini pbtn-blue">确定</button><button class="J_cancel_date pbtn pbtn-mini ml10 mr10">取消</button></dd>
+                            </dl>
+                            <dl class="xdl">
+                                <dt>预定间数：</dt>
+                                <dd>
+                                    <select class="J_roomnum" data-class="selectbox-small" style="display: none;">
+                                        <option value="value1" >1</option>
+                                        <option value="value2" selected="selected">2</option>
+                                        <option value="value3">3</option>
+                                    </select>
+                                    <a class="J_room_rate" href="javascript:;">房费<span class="num"><dfn>¥130</dfn></span></a>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="hr_a"></div>
+                    <div class="order-title">
+                        <h3>入住信息</h3>
+                    </div>
+                    <div class="order-content">
+                        <div class="xdl-hor">
+                            <dl class="xdl">
+                                <dt>入住人姓名：</dt>
+                                <dd class="J_tenant_list">
+                                    <input type="text" placeholder="房客1，客人姓名" autocomplete="off"  class="input-text" />
+                                    <input type="text" placeholder="房客2，客人姓名" autocomplete="off"  class="input-text" />
+                                    <input type="text" placeholder="房客3，客人姓名" autocomplete="off"  class="input-text" />
+                                    <input type="text" placeholder="房客4，客人姓名" autocomplete="off"  class="input-text" />
+                                    <input type="text" placeholder="房客4，客人姓名" autocomplete="off"  class="input-text" />
+                                    <!--<p class="help-block">请填写中文/英文姓名，英文姓名格式为：Lastname/Firstname。</p>-->
+                                    <p class="help-block">请填写真实入住姓名，每间房只填写一位即可。</p>
+                                </dd>
+                            </dl>
+                            <dl class="xdl">
+                                <dt>手机号码：</dt>
+                                <dd>
+                                    <label class="inline">
+                                        <input type="text" id="J_mobile" autocomplete="off" class="input-text" maxlength="11" />
+                                    </label>
+                                    <p class="help-block">订单信息会发送至您的手机，请保持保持手机畅通。</p>
+                                </dd>
+                            </dl>
+                            <dl class="xdl">
+                                <dt>最晚到店时间：</dt>
+                                <dd>
+                                    <select class="J_select" data-class="selectbox-small" style="display: none;">
+                                        <option value="value1">14:00</option>
+                                        <option value="value2">14:00</option>
+                                        <option value="value3">14:00</option>
+                                    </select>
+                                    <span class="help-inline">通常酒店14:00办理入住，早到可能需要稍作等待</span>
+                                </dd>
+                            </dl>
+                            <dl class="xdl">
+                                <dt>其他要求：</dt>
+                                <dd>
+                                    <p><a href="#">补充说明</a></p>
+                                    <textarea style="width:400px; height:100px;"></textarea>
+                                </dd>
+                            </dl>
+                            <dl class="xdl">
+                                <dt>特殊说明：</dt>
+                                <dd><div class="claim">退订政策：提前1天内退订，收取订单总额0%的违约金。</div></dd>
+                            </dl>
+                        </div>
+
+                    </div>
+                    <div class="hr_a"></div>
+                    <div class="order-title">
+                        <h3>优惠信息</h3>
+                    </div>
+                    <div class="order-content xdl-hor form-small"> 
+                        <dl class="xdl">
+                            <dt>可享优惠：</dt>
+                            <dd class="mb10">
+                                <select class="J_select" data-class="selectbox-big" style="display: none;">
+                                    <option value="value1">优惠活动名称 满200减50</option>
+                                    <option value="value2">优惠活动名称 满1000减300</option>
+                                    <option value="value3">使用优惠券</option>
+                                </select>
+                            </dd>
+                            <dd>
+                                <p class="tiptext tip-default">1.可参加优惠活动或使用优惠券；<br>
+                                2.付款时可使用奖金抵扣；<br>
+                                3.选择浦发银行在线付款立减10元。</p>
+                            </dd>
+                        </dl>
+                        <dl class="xdl">
+                            <dt>我的可用优惠劵：</dt>
+                            <dd>
+                                <div class="check-text"><label class="radio inline"><input type="radio" name="coupon" class="input-radio">B195955071997536&#12288;长途自由行/长途跟团游一次性优惠80元</label></div>
+                                <div class="check-text"><label class="radio inline"><input type="radio" name="coupon" class="input-radio">B195951575692046&#12288;长途自由行/长途跟团游一次性优惠50元</label></div>
+                                <div class="check-text"><label class="radio inline"><input type="radio" name="coupon" class="input-radio">B195951575692056&#12288;长途自由行/长途跟团游一次性优惠50元</label></div>
+                                <div class="check-text"><label class="radio inline"><input type="radio" name="coupon" class="input-radio">输入优惠券代码：</label><input type="text" class="input-text"><a class="J_integral" href="javascript:;">使用积分兑换优惠券</a></div>
+                                <div>优惠劵代码无效。</div>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="order-content xdl-hor">
+                        <div class="hr_d"></div>
+                        <dl class="xdl">
+                            <dt class="tl"><a class="vmiddle" href="#">&lt; 返回上一步</a></dt>
+                            <dd><button class="pbtn pbtn-big pbtn-orange" id="form-submit">提交订单</button></dd>
+                        </dl>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="lv-footer" id="order-footer"><!-- 公共底部  --><div class="footer-inner wrap"><p class="lv-copyright">Copyright &copy; 2013 www.lvmama.com. 上海景域文化传播有限公司版权所有&#12288;<a rel="nofollow" target="_blank" href="http://www.miitbeian.gov.cn">沪ICP备13011172号-3</a>&#12288;增值电信业务经营许可证编号：<a target="_blank" href="http://pic.lvmama.com/img/ICP.jpg" rel="nofollow">沪B2-20100030</a></p><div class="lv-safety">    <a href="http://www.shtour.org/tourlist_onlineid4.html" title="上海市旅游行业协会在线分会" rel="nofollow" target="_blank" class="safety1"></a>    <a href="http://www.miibeian.gov.cn/" title="经营性网站备案信息" rel="nofollow" target="_blank" class="safety2"></a>    <a href="http://www.cyberpolice.cn" title="网络110报警服务" rel="nofollow" target="_blank" class="safety3"></a>    <a href="https://www.alipay.com/aip/aip_validate_list.htm?trust_id=AIP0102495" title="支付宝特约商家" rel="nofollow" target="_blank" class="safety4"></a>    <a href="http://www.itrust.org.cn/yz/pjwx.asp?wm=1664396140" title="AAA级信用企业" rel="nofollow" target="_blank" class="safety5"></a>    <a href="http://www.sgs.gov.cn/lz/licenseLink.do?method=licenceView&amp;entyId=20110930103539539" title="上海工商" rel="nofollow" target="_blank" class="safety6"></a>    <a href="https://ss.cnnic.cn/verifyseal.dll?sn=2010101800100002662&amp;ct=df&amp;pa=590007" title="可信网站" rel="nofollow" target="_blank" class="safety7"></a>    <a hidefocus="false" id="___szfw_logo___" href="https://search.szfw.org/cert/l/CX20120921001712001762" title="诚信认证示范企业" rel="nofollow" target="_blank" class="safety8"></a>    <a href="http://www.zx110.org" title="网络社会征信网" rel="nofollow" target="_blank" class="safety9"></a>    <a href="http://webscan.360.cn" title="360网站安全检测" rel="nofollow" target="_blank" class="safety10"></a></div></div><!-- 公共底部结束  --></div>
+    <!-- 房费  -->
+    <div class="J_room room-rate">
+        <table>
+            <thead>
+                <tr>
+                    <td>
+                        <div class="rate-date">
+                            <span>2013-12-01</span>
+                            <span>星期一</span>
+                        </div>
+                        <div class="rate-des">
+                            <span class="num"><dfn>¥130</dfn></span>
+                            <span class="cc1" >双早</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="rate-date">
+                            <span>2013-12-01</span>
+                            <span>星期一</span>
+                        </div>
+                        <div class="rate-des">
+                            <span class="num"><dfn>¥130</dfn></span>
+                            <span class="cc1">双早</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="rate-date">
+                            <span>2013-12-01</span>
+                            <span>星期一</span>
+                        </div>
+                        <div class="rate-des">
+                            <span class="num"><dfn>¥130</dfn></span>
+                            <span class="cc1">双早</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="rate-date">
+                            <span>2013-12-01</span>
+                            <span>星期一</span>
+                        </div>
+                        <div class="rate-des">
+                            <span class="num"><dfn>¥130</dfn></span>
+                            <span class="cc1">双早</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="rate-date">
+                            <span>2013-12-01</span>
+                            <span>星期一</span>
+                        </div>
+                        <div class="rate-des">
+                            <span class="num"><dfn>¥130</dfn></span>
+                            <span class="cc1">双早</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="rate-date">
+                            <span>2013-12-01</span>
+                            <span>星期一</span>
+                        </div>
+                        <div class="rate-des">
+                            <span class="num"><dfn>¥130</dfn></span>
+                            <span class="cc1">双早</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="rate-date">
+                            <span>2013-12-01</span>
+                            <span>星期一</span>
+                        </div>
+                        <div class="rate-des">
+                            <span class="num"><dfn>¥130</dfn></span>
+                            <span class="cc1">双早</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="rate-date">
+                            <span>2013-12-01</span>
+                            <span>星期一</span>
+                        </div>
+                        <div class="rate-des">
+                            <span class="num"><dfn>¥130</dfn></span>
+                            <span class="cc1">双早</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="rate-date">
+                            <span>2013-12-01</span>
+                            <span>星期一</span>
+                        </div>
+                        <div class="rate-des">
+                            <span class="num"><dfn>¥130</dfn></span>
+                            <span class="cc1">双早</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="rate-date">
+                            <span>2013-12-01</span>
+                            <span>星期一</span>
+                        </div>
+                        <div class="rate-des">
+                            <span class="num"><dfn>¥130</dfn></span>
+                            <span class="cc1">双早</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="rate-date">
+                            <span>2013-12-01</span>
+                            <span>星期一</span>
+                        </div>
+                        <div class="rate-des">
+                            <span class="num"><dfn>¥130</dfn></span>
+                            <span class="cc1">双早</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="rate-date">
+                            <span>2013-12-01</span>
+                            <span>星期一</span>
+                        </div>
+                        <div class="rate-des">
+                            <span class="num"><dfn>¥130</dfn></span>
+                            <span class="cc1">双早</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="rate-date">
+                            <span>2013-12-01</span>
+                            <span>星期一</span>
+                        </div>
+                        <div class="rate-des">
+                            <span class="num"><dfn>¥130</dfn></span>
+                            <span class="cc1">双早</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="rate-date">
+                            <span>2013-12-01</span>
+                            <span>星期一</span>
+                        </div>
+                        <div class="rate-des">
+                            <span class="num"><dfn>¥130</dfn></span>
+                            <span class="cc1">双早</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="rate-date">
+                            <span>2013-12-01</span>
+                            <span>星期一</span>
+                        </div>
+                        <div class="rate-des">
+                            <span class="num"><dfn>¥130</dfn></span>
+                            <span class="cc1">双早</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="rate-date">
+                            <span>2013-12-01</span>
+                            <span>星期一</span>
+                        </div>
+                        <div class="rate-des">
+                            <span class="num"><dfn>¥130</dfn></span>
+                            <span class="cc1">双早</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="rate-date">
+                            <span>2013-12-01</span>
+                            <span>星期一</span>
+                        </div>
+                        <div class="rate-des">
+                            <span class="num"><dfn>¥130</dfn></span>
+                            <span class="cc1">双早</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="rate-date">
+                            <span>2013-12-01</span>
+                            <span>星期一</span>
+                        </div>
+                        <div class="rate-des">
+                            <span class="num"><dfn>¥130</dfn></span>
+                            <span class="cc1">双早</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="rate-date">
+                            <span>2013-12-01</span>
+                            <span>星期一</span>
+                        </div>
+                        <div class="rate-des">
+                            <span class="num"><dfn>¥130</dfn></span>
+                            <span class="cc1">双早</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="rate-date">
+                            <span>2013-12-01</span>
+                            <span>星期一</span>
+                        </div>
+                        <div class="rate-des">
+                            <span class="num"><dfn>¥130</dfn></span>
+                            <span class="cc1">双早</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="rate-date">
+                            <span>2013-12-01</span>
+                            <span>星期一</span>
+                        </div>
+                        <div class="rate-des">
+                            <span class="num"><dfn>¥130</dfn></span>
+                            <span class="cc1">双早</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="rate-date">
+                            <span>2013-12-01</span>
+                            <span>星期一</span>
+                        </div>
+                        <div class="rate-des">
+                            <span class="num"><dfn>¥130</dfn></span>
+                            <span class="cc1">双早</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="rate-date">
+                            <span>2013-12-01</span>
+                            <span>星期一</span>
+                        </div>
+                        <div class="rate-des">
+                            <span class="num"><dfn>¥130</dfn></span>
+                            <span class="cc1">双早</span>
+                        </div>
+                    </td>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <script src="http://pic.lvmama.com/min/index.php?f=/js/new_v/jquery-1.7.2.min.js,/js/ui/lvmamaUI/lvmamaUI.js"></script>
+    <script src="http://pic.lvmama.com/js/v4/modules/pandora-dialog.js"></script>
+    <script src="http://pic.lvmama.com/js/v4/modules/pandora-calendar.js"></script>
+    <script src="http://pic.lvmama.com/js/v4/modules/pandora-select.js"></script>
+    <script src="http://pic.lvmama.com/js/v4/hotel-order.js"></script>
+</body>
+</html>

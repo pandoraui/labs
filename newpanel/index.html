@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>后台管理系统</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="stylesheet" href="css/ui-common.css">
+<link rel="stylesheet" href="css/ui-components.css">
+<link rel="stylesheet" href="css/ui-panel.css">
+</head>
+<body>
+<!-- 顶部导航\\ -->
+<div class="topbar">
+	<a class="logo" href="/panel/"><h1>驴妈妈业务系统<small>业务系统</small></h1></a>
+    <p class="top_list">
+    	<a href="#">新增任务</a> |
+    	<a href="#">我的公告</a> |
+        <a href="#">我的任务</a> |
+        <a href="#">我的消息</a>
+    </p>
+	<p>操作员：<span>chenlinjun</span> / <span>陈琳君</span>　[<a class="B" href="">修改密码</a>]　[<a class="B" href="">退出系统</a>]</p>
+</div><!-- //顶部导航 -->
+
+<!-- 边栏\\ -->
+<div id="panel_aside" class="panel_aside">
+	<span id="oper_aside" class="icon-arrow-left"></span>
+    <span id="oper_set" class="icon-set"></span>
+	<div class="aside_box">
+		<ul id="aside_list" class="aside_list ul_oper_list">
+			<!--<li class="oper_item"><a target="iframeMain" href="todo.html"><span class="icon-picture"></span> 产品管理</a>
+				<ul class="ul_oper_list">
+					<li class="oper_item"><span class="icon-arrow"></span> <a>签证系统</a>
+						<ul class="ul_oper_list">
+							<li class="oper_item"><a target="iframeMain" href="visa-list.html">签证销售产品列表</a></li>
+							<li class="oper_item"><a target="iframeMain" href="visa-add.html">新增签证产品</a></li>
+							<li class="oper_item"><a target="iframeMain" href="stuff-list.html">签证所需材料列表</a></li>
+							<li class="oper_item"><a target="iframeMain" href="stuff-add.html">创建新材料</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li class="oper_item"><a target="iframeMain" href="todo.html"><span class="icon-th-list"></span> 订单管理</a>
+				<ul class="ul_oper_list">
+					<li class="oper_item"><span class="icon-arrow"></span> <a target="iframeMain" href="todo.html">计调</a>
+					</li>
+					<li class="oper_item"><span class="icon-arrow"></span> <a>签证系统</a>
+						<ul class="ul_oper_list">
+                            <li class="oper_item"><a target="iframeMain" href="stuff-check.html">材料审核</a></li>
+						</ul>
+					</li>
+					<li class="oper_item"><span class="icon-arrow"></span> <a target="iframeMain" href="todo.html">客服</a></li>
+					<li class="oper_item"><span class="icon-arrow"></span> <a target="iframeMain" href="todo.html">订单监控</a></li>
+				</ul>
+			</li>
+			<li class="oper_item"><a target="iframeMain"  href="todo.html"><span class="icon-sbriefcase"></span> 财务管理</a></li>
+			<li class="oper_item"><a target="iframeMain" href="todo.html"><span class="icon-user"></span> 客户关系</a></li>                   
+			<li class="oper_item"><a target="iframeMain" href="todo.html"><span class="icon-retweet"></span> 运营管理</a></li>
+			<li class="oper_item"><a target="iframeMain" href="todo.html"><span class="icon-tag"></span> 营销管理</a></li>-->
+            <li class="oper_item"><a target="iframeMain" href="list.html"><span class="icon-tag"></span> 列表Demo</a></li>
+            <li class="oper_item"><a target="iframeMain" href="edit.html"><span class="icon-tag"></span> 编辑Demo</a></li>
+            <li class="oper_item"><a target="iframeMain" href="dialog.html"><span class="icon-tag"></span> dialog Demo</a></li>
+            <li class="oper_item"><a target="iframeMain" href="addProduct.html"><span class="icon-tag"></span> 添加产品</a></li>
+            <li class="oper_item"><a target="_blank" href="pg.html"><span class="icon-tag"></span> 编辑产品</a></li>
+            <li class="oper_item"><a target="_blank" href="hotelOrder.html"><span class="icon-tag"></span> 酒店下单页</a></li>
+            <li class="oper_item"><a target="_blank" href="hotelPay.html"><span class="icon-tag"></span> 酒店支付页</a></li>
+            <li class="oper_item"><a target="_blank" href="hotelPrepaid.html"><span class="icon-tag"></span> 预付页</a></li>
+            <li class="oper_item"><a target="_blank" href="paysuccess-hotel.html"><span class="icon-tag"></span> 支付成功页</a></li>
+            <li class="oper_item"><a target="iframeMain" href="orderList.html"><span class="icon-tag"></span> 订单列表</a></li>
+			<li class="oper_item"><a target="iframeMain" href="myTask.html"><span class="icon-tag"></span> 我的任务</a></li>
+			<li class="oper_item"><a target="iframeMain" href="hotelOrderManage.html"><span class="icon-tag"></span> 订单后台管理</a></li>
+            <li class="oper_item"><a target="iframeMain" href="createOrder.html"><span class="icon-tag"></span> 创建订单</a></li>
+            <li class="oper_item"><a target="iframeMain" href="waybill.html"><span class="icon-tag"></span> 分单</a></li>
+            <li class="oper_item"><a target="iframeMain" href="housingControl.html"><span class="icon-tag"></span> 房态控制</a></li>
+		</ul><!-- //ul aside_list -->
+	</div>
+</div><!-- //边栏 -->
+<div id="panel_control" class="panel_control"></div>
+<!-- 工作区\\ -->
+<div id="panel_main" class="panel_main">
+	<iframe id="iframeMain" name="iframeMain" src="list.html" frameborder="0" style=" height:100%; background:#fff"></iframe>
+	<div class="scoll-mask"></div>
+</div><!-- //工作区 -->
+
+
+<!-- 底部\\ -->
+<div class="footer"></div><!-- //底部 -->
+<script src="http://pic.lvmama.com/js/new_v/jquery-1.7.min.js"></script>
+<script src="js/panel-custom.js"></script>
+</body>
+</html>
