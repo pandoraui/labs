@@ -215,22 +215,22 @@
                     <h4>不可错过的体验</h4>
                     <ul class="ul-imgtext">
                         <li>
-                            <img src="//placehold.it/220x128" width="220" height="128" alt="某景点图片" />
+                            <img src="//placehold.it/400x300" width="220" height="128" alt="某景点图片" />
                             <h6>迪士尼贴心服务</h6>
                             <p>殷切贴心的景区服务，特别为您安排了米老鼠早晨传呼、睡前电视播放精彩迪士尼故事等等，让您享受与众不同的假期。</p>
                         </li>
                         <li>
-                            <img src="//placehold.it/220x128" width="220" height="128" alt="某景点图片" />
+                            <img src="//placehold.it/800x508" width="220" height="128" alt="某景点图片" />
                             <h6>迪士尼贴心服务</h6>
                             <p>殷切贴心的景区服务，特别为您安排了米老鼠早晨传呼、睡前电视播放精彩迪士尼故事等等，让您享受与众不同的假期。</p>
                         </li>
                         <li>
-                            <img src="//placehold.it/220x128" width="220" height="128" alt="某景点图片" />
+                            <img src="//placehold.it/2000x608" width="220" height="128" alt="某景点图片" />
                             <h6>迪士尼贴心服务</h6>
                             <p>殷切贴心的景区服务，特别为您安排了米老鼠早晨传呼、睡前电视播放精彩迪士尼故事等等，让您享受与众不同的假期。</p>
                         </li>
                         <li>
-                            <img src="//placehold.it/220x128" width="220" height="128" alt="某景点图片" />
+                            <img src="//placehold.it/500x800" width="220" height="128" alt="某景点图片" />
                             <h6>迪士尼贴心服务</h6>
                             <p>殷切贴心的景区服务，特别为您安排了米老鼠早晨传呼、睡前电视播放精彩迪士尼故事等等，让您享受与众不同的假期。</p>
                         </li>

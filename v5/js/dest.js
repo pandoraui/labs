@@ -106,7 +106,8 @@ $(function(){
     
     
     $('[data-spy="scroll"]').each(function () {
-        var $spy = $(this).scrollspy('refresh')
+        var $spy = $(this).scrollspy('refresh');
+        $spy;
     });
     
     

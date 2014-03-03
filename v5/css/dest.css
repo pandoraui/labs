@@ -62,8 +62,8 @@ del{color:#bababa;}
 .dl-hor dt{float:left;display:inline;*zoom:1;margin-right:10px;}
 .dl-hor dd{overflow:hidden;*zoom:1;}
 .dl-ver dt,.dl-ver dd{display:block;}
-ul.ul{margin-bottom:20px;}
-ul.ul li{padding-left:18px;line-height:24px;background-position:-185px 7px;}
+.introduction ul,ul.ul{margin-bottom:20px;}
+.introduction li,ul.ul li{padding-left:18px;line-height:22px;background-position:-185px 6px;}
 .graybox{margin:20px 0 10px;padding:5px 10px;line-height:22px;background:#fbfbfb;color:#666;}
 .list2row{margin-right:-20px;*zoom:1;}
 .list2row a{float:left;display:inline-blcok;width:45%;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
@@ -202,7 +202,8 @@ tbody.ptbox{border-bottom:1px solid #eee;*zoom:1;}
 .pdetails .xtext{clear:both;margin-bottom:5px;padding-left:70px;}
 .pdetails .xtext h4{width:70px;float: left;display: inline;margin-left:-70px;font-weight:bold;}
 
-
+#dfreetour .ptditem-selected,#dtuangou .ptditem-selected{padding:10px 0;}
+#dfreetour .pdetails,#dtuangou .pdetails{display:none !important;}
 
 /*侧边栏及主内容 */
 .dside{float:right;display:inline;width:260px;margin-left:20px;}
@@ -271,11 +272,12 @@ p.distance{color:#999;}
 .introduction h4{font-family:"Microsoft YaHei",\5FAE\8F6F\96C5\9ED1;}
 .introduction .ul,
 .introduction p{color:#999;margin:10px 0 20px;}
-.introduction .ul li{margin:7px 0;}
+.introduction li{margin:7px 0;}
 .imgbox{margin-right:-10px;*zoom:1;overflow:hidden;}
 .imgbox img{float:left;display:inline;margin-right:10px;}
 .ul-imgtext{overflow:hidden;margin-right:-35px;*zoom:1;}
-.ul-imgtext li{float:left;display:inline;width:220px;height:254px;overflow:hidden;margin:0 30px 20px 0;}
+.ul-imgtext li{float:left;display:inline;width:220px;height:254px;overflow:hidden;margin:0 30px 20px 0;padding:0;background:none;}
+.ul-imgtext li img{display:block;margin:0 auto;width:auto;height:128px;_height:128px;}
 .ul-imgtext h6{margin:15px 0 5px;}
 .ul-imgtext p{margin:5px 0 10px;}
 
