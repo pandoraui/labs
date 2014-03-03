@@ -164,6 +164,7 @@ tbody.ptbox{border-bottom:1px solid #eee;*zoom:1;}
 .ptdlist{padding:10px 0 10px 0;background:#fff;overflow:hidden;}
 .ptdlist-inner{position:relative;top:-50px;padding-top:50px;margin-bottom:-50px;*zoom:1;}
 .ptditem{clear:both;padding:10px 0;overflow:hidden;color:#999;}
+.ptditem:hover{background:#fbfbfb;}
 .ptdlist .link-more{color:#09c;clear:both;display:inline-block;margin-left:10px;padding:5px 0;}
 .ptdlist .link-more:hover{color:#f60;}
 
