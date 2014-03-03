@@ -44,7 +44,7 @@ a:hover{color:#ff6600;}
 /* header */
 .header{padding-top:7px;padding-bottom:7px;height:60px;}
 .logo{float:left;display:inline;width:300px;height:56px;background:url(../images/logo.png) no-repeat;text-indent: -9999px;position:relative;}
-.logo span{position:absolute;left:170px;top:4px;background:#fff;display:inline-block;width:130px;height:24px;overflow:hidden;color:#666;font-size:16px;text-indent:0;font-family:"Microsoft YaHei",\5FAE\8F6F\96C5\9ED1;font-weight:400;}
+.logo span{position:absolute;left:170px;top:4px;background:#fff;display:inline-block;width:380px;height:24px;overflow:hidden;color:#666;font-size:16px;text-indent:0;font-family:"Microsoft YaHei",\5FAE\8F6F\96C5\9ED1;font-weight:400;}
 .topinfo{float:right;padding-top:10px;text-align: right;color:#666;line-height:22px;}
 .topinfo i{display: inline-block;color:#cccccc;font-style:normal;padding:0 3px;}
 
