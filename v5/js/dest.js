@@ -179,19 +179,16 @@ $(function(){
     
     $('.tab-dest').find('a').click(function(){
         xscrollspy($(".J_scrollnav"));
-    })
+    });
     
     $(window).scroll(function() {
-        xscroll();
         xscrollspy($(".J_scrollnav"));
+        xscroll();
     });
     
     $(".xgotop").click(function(){
-        $(document).scrollTop(0);
-        
-        if($(window).scrollTop()==0){
-            $(".J_scrollnav").find("li").eq(0).addClass("active").siblings("li").removeClass("active");
-        };
+        $(document).scrollTop(600);
+        setTimeout(function(){$(document).scrollTop(0)},50)
     })
 })
 $(function(){
