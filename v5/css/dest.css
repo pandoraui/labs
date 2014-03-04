@@ -249,7 +249,7 @@ tbody.ptbox{border-bottom:1px solid #eee;*zoom:1;}
 .textlist dfn{float:right;}
 .dside-near a{white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
 p.distance{color:#999;}
-.dside-near .textlist li{line-height:18px;margin-top:5px;}
+.dside-near .textlist li{line-height:18px;margin-top:8px;}
 
 .dside-theme .dl-hor{margin:15px 0;}
 .dside-theme dfn{position:relative;top:2px;}
