@@ -100,15 +100,12 @@ $(function(){
         }else{
             scrollnav.removeClass("affix");
         }
+        $('[data-spy="scroll"]').each(function () {
+            var $spy = $(this).scrollspy('refresh');
+        });
     }
     
-    xscrollspy($(".J_scrollnav"))
-    
-    
-    $('[data-spy="scroll"]').each(function () {
-        var $spy = $(this).scrollspy('refresh');
-        $spy;
-    });
+    xscrollspy($(".J_scrollnav"));
     
     
     //冒泡提醒
@@ -179,6 +176,10 @@ $(function(){
             $(".xbuynow").slideUp();
         }
     }
+    
+    $('.tab-dest').find('a').click(function(){
+        xscrollspy($(".J_scrollnav"));
+    })
     
     $(window).scroll(function() {
         xscroll();
