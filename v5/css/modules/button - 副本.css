@@ -1,0 +1,393 @@
+
+/** @name      : button 
+  * @explain   : 新类型按钮
+  * @type      : 基类 .pbtn
+  * @expand    : 基类 .pbtn-small -big -mini -white -pink -orange -blue -gray
+  * @dependent : pandora
+  * @author    : CloudYan
+  * @version   : 1.0
+  * @html      : 
+
+***/
+
+button,
+input {
+    line-height: normal;
+	
+    /* IE6/7 内间距宽度一致 */	
+    *overflow: visible; 
+}
+
+.pbtn * {
+    margin: 0;
+    padding: 0;
+}
+
+.pbtn {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    *overflow: visible;
+    margin-bottom: 0;
+    padding: 2px 10px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    text-decoration: none;
+    vertical-align: middle;
+    
+    color: #333;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: normal;
+    text-align: center;
+    background-image: none;
+    cursor: pointer;
+    white-space: nowrap;
+    
+    background-color: #f8f8f8;
+    border: 1px solid #e6e6e6;
+    
+    /* 禁止选中文字 */
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+         -o-user-select: none;
+            user-select: none;
+}
+.pbtn .pbtn-text {
+	background: 0;
+	padding: 0;
+	height: auto;
+	line-height: auto;
+}
+.pbtn:focus {
+    outline: none;
+}
+.pbtn:active {
+    position: relative;
+    top: 1px;
+}
+
+.pbtn:hover,
+.pbtn:focus {
+	text-decoration: none;
+	background-image: none;
+    text-decoration: none;
+}
+.pbtn:hover {
+    color: #333;
+    background-color: #e6e6e6;
+}
+
+input.pbtn-text,
+button.pbtn-text {
+    *vertical-align: top;
+}
+
+.pbtn-link {
+    color: #428bca;
+    font-weight: normal;
+    cursor: pointer;
+    border-radius: 0;
+}
+.pbtn-link,
+.pbtn-link:active,
+.pbtn-link[disabled],
+fieldset[disabled] .pbtn-link {
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.pbtn-link,
+.pbtn-link:hover,
+.pbtn-link:focus,
+.pbtn-link:active {
+    border-color: transparent;
+}
+.pbtn-link:hover,
+.pbtn-link:focus {
+    color: #2a6496;
+    text-decoration: underline;
+    background-color: transparent;
+}
+.pbtn-link[disabled]:hover,
+fieldset[disabled] .pbtn-link:hover,
+.pbtn-link[disabled]:focus,
+fieldset[disabled] .pbtn-link:focus {
+    color: #999999;
+    text-decoration: none;
+}
+
+.pbtn-white {
+    color: #333;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.pbtn-white:hover {
+    color: #333;
+    border: 1px solid #ccc;
+    background-color: #fafafa;
+}
+
+.pbtn-light {
+    color: #333;
+    border: 1px solid #e6e6e6;
+    background-color: #f8f8f8;
+}
+
+.pbtn-light:hover {
+    color: #333;
+    background-color: #e6e6e6;
+}
+.pbtn-pink {
+    color: #fff;
+    border: 1px solid #ee3388;
+    background-color: #ff4499;
+}
+
+.pbtn-pink:hover {
+    color: #fff;
+    border-color: #ee3388;
+    background-color: #ee3388;
+}
+
+.pbtn-buff {
+    color: #333;
+    border: 1px solid #ffdfa9;
+    background-color: #fdefd8;
+}
+
+.pbtn-buff:hover {
+    color: #333;
+    border-color: #ffdfa9;
+    background-color: #ffdfa9;
+}
+
+.pbtn-orange {
+    color: #fff;
+    border: 1px solid #f60;
+    background-color: #f80;
+}
+
+.pbtn-orange:hover {
+    color: #fff;
+    border-color: #f60;
+    background-color: #f60;
+}
+
+.pbtn-blue {
+    color: #fff;
+    border: 1px solid #08c;
+    background-color: #09d;
+}
+.pbtn-blue:hover {
+    color: #fff;
+    border-color: #0088cc;
+    background-color: #0088cc;
+}
+.pbtn-gray            { color: #999999; background-color: #efefef; border-color: #cccccc; }
+.pbtn-gray:hover      { color: #999999; background-color: #efefef; border-color: #cccccc; cursor:default; }
+.pbtn-dark {
+    color: #fff;
+    border: 1px solid #666;
+    background-color: #999;
+}
+.pbtn-dark:hover {
+    color: #fff;
+    border: 1px solid #666;
+    background-color: #999;
+    outline: none;
+}
+
+.disabled:active,
+.pbtn-dark:active,
+.pbtn-disabled:active {
+    position: static;
+    top: 0;
+}
+
+.disabled,
+.pbtn.disabled,
+.disabled .pbtn,
+.pbtn[disabled],
+fieldset[disabled] .pbtn {
+    cursor: default;
+    opacity: 0.65;
+    filter: alpha(opacity=65);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    /*pointer-events: none;*/
+}
+
+.pbtn-disabled {
+    color: #fff;
+    border: 1px solid #666;
+    background-color: #999;
+}
+
+.pbtn-disabled:hover {
+    color: #fff;
+    border-color: #666;
+    background-color: #999;
+    cursor: default;
+    box-shadow: none;
+    /* 按钮闪动 */
+    /* pointer-events: none; */
+}
+
+.pbtn {
+    padding: 4px 12px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.pbtn-middle {
+    padding: 4px 12px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.pbtn-mini {
+    padding: 0 6px;
+    font-size: 12px;
+    font-weight: normal;
+}
+.pbtn-small {
+    padding: 2px 10px;
+    font-size: 12px;
+    font-weight: normal;
+}
+.pbtn-big {
+    padding: 7px 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.pbtn-large {
+    padding: 11px 19px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.pbtn {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.pbtn-small,
+.pbtn-mini {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.pbtn-w,
+.pbtn-wbox .pbtn {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.pbtn-block {
+    display: block;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+.pbtn-block + .pbtn-block {
+    margin-top: 5px;
+}
+input[type="submit"].pbtn-block,
+input[type="reset"].pbtn-block,
+input[type="button"].pbtn-block {
+    width: 100%;
+}
+
+.pbtn-middle,
+.pbtn-mini,
+.pbtn-small,
+.pbtn-big,
+.pbtn-large {
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+/* IE6/7 兼容性样式 */
+.pbtn { 
+    *margin-right: 4px;
+    /*border: none !important;*/
+}
+.pbtn,
+button,
+input[type=submit],
+input[type=reset],
+input[type=button]{
+  *filter:chroma(color=#000000) !imporant;
+}
+
+/* IE6/7的line-height解决方案 */
+.pbtn,
+.pbtn:hover {
+    /* IE6 IE7下聚焦状态会有不可控的黑色边框 */
+    *border: none;
+}
+input.pbtn{
+    /* IE6下使input的按钮和a及button的按钮保持宽度一致 */
+    _width: auto;
+}
+.pbtn{font-family:tahoma,arial,\5b8b\4f53}
+input.pbtn       { height: 30px; }
+input.pbtn-mini  { height: 22px; }
+input.pbtn-small { height: 26px; }
+input.pbtn-big   { height: 38px; }
+input.pbtn-large { height: 44px; }
+
+a.pbtn,
+button.pbtn {
+    *padding-top: 0;
+    *padding-bottom: 0;
+    *height: 30px;
+}
+a.pbtn{ 
+    *line-height: 30px;
+}
+
+a.pbtn-mini {
+    *line-height: 22px;
+}
+a.pbtn-mini,
+button.pbtn-mini,
+input.pbtn-mini {
+    *height: 22px;
+}
+
+a.pbtn-small,
+button.pbtn-small,
+input.pbtn-small {
+    *height: 24px;
+}
+a.pbtn-small {
+    *line-height: 24px;
+}
+
+a.pbtn-small,
+button.pbtn-small {
+    _height: 26px;
+}
+
+a.pbtn-big,
+button.pbtn-big,
+input.pbtn-big { 
+    *height: 34px;
+}
+a.pbtn-big {
+    *line-height: 34px;
+    _height: 36px;
+}
+
+a.pbtn-large,
+button.pbtn-large,
+input.pbtn-large { 
+    *height: 42px;
+}
+a.pbtn-large {
+    *line-height: 42px;
+    _height: 44px;
+}
+

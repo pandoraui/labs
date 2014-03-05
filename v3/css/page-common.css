@@ -1,0 +1,31 @@
+
+/* 
+ @名称: lv-common.css
+ @功能: 驴妈妈网站公共样式提取
+ */
+
+/* 面包屑 */
+.p-crumbs{background:#f0f0f0; height:28px;line-height:28px;padding:1px 0;position:relative;z-index:40;clear:both;}
+.crumbs-nav{ float:left;display:inline;}
+.crumbs-nav span.position{ float:left;display:inline; padding-left:15px;}
+.crumbs-menu{display:inline;}
+.pro-number{float:right;padding-right:10px;}
+.pro-number b{font-weight:bold;color:#c06;}
+.crumbs-menu .crumbs-arrow{position:absolute;right:3px;top:4px;width:11px;height:22px;background-position:-160px 0;}
+.xmenu-sub{display:none;position:absolute;overflow:hidden;z-index:5;top:28px;left:0;width:340px;border:1px solid #bfbfbf;background:#fff;padding:5px 10px;}
+.crumbs-menu li{float:left;display:inline;position:relative;z-index:5;padding-right:18px;}
+.crumbs-menu .menu-link{position:relative;z-index:6;height:26px; line-height:26px; overflow:hidden;display:inline-block;padding:0 15px 0 10px;}
+.crumbs-menu a.menu-link {border:1px solid #f0f0f0; }
+.crumbs-menu li:hover a.menu-link{padding-bottom:2px;border:1px solid #bfbfbf;border-bottom:#fff;background:#fff;}
+.crumbs-menu li i{position:absolute; z-index:15; right:23px; top:13px; width:0; height:0; padding:0px; border-width:4px;border-style:solid; border-color: #666 transparent transparent transparent;  font-size:0; line-height:0; *zoom:1;
+-webkit-transition: -webkit-transform .2s ease-in;
+   -moz-transition: -webkit-transform .2s ease-in;
+     -o-transition: -webkit-transform .2s ease-in;
+        transition: -webkit-transform .2s ease-in;
+}
+.crumbs-menu li:hover i{top:9px; border-width:4px;border-style:solid; border-color:transparent transparent #666 transparent; }
+.crumbs-menu li:hover .xmenu-sub{display:block;}
+
+.oldstyle,.oldstyle a{color:#333;outline:none;}
+.oldstyle a:hover{color:#e38;}
+.xmenu-sub a{display:inline-block;float:left; margin-right:10px;width:36px;height:24px;line-height:24px;overflow: hidden;*zoom: 1;text-overflow: ellipsis;}

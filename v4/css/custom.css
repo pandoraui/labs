@@ -1,0 +1,87 @@
+
+/* 
+ @名称: custom.css
+ @功能: 定制游页面样式
+ */
+img{vertical-align:top;}
+.col-w{ width:780px;}
+.aside{width:200px;}
+.adbox{margin-bottom:10px;}
+
+.border{border:1px solid #ddd;}
+.side-box{margin-bottom:10px;}
+.side-title{background:#f6f6f6;height:30px;line-height:30px;}
+.side-title h4{padding-left:10px;}
+.side-box .content{padding:0 10px;}
+.sidebox1 .content p{margin:10px 0; line-height:20px;}
+.side-box  h5{color:#e38;margin: 8px 0 2px;}
+.sidebox2 .content{padding-bottom:10px;}
+.sidebox3  .content{text-align:center;padding:10px;}
+
+.case{ margin-bottom:10px;overflow: hidden;*zoom:1;}
+.ctitle{background:#f6f6f6;border-bottom:1px solid #ddd;height:30px;line-height:30px;}
+.ctitle h4{float:left;padding:0 20px 0 10px;}
+.tab-nav{overflow:hidden;}
+.tab-nav li{float:left;display:inline;font-size:14px;padding:7px 0;margin-left:0;}
+.tab-nav a{float:left;display:block;color:#333;padding:0 15px 0 16px;height:16px;line-height:16px;border-left:1px solid #bfbfbf;margin-left:-1px;cursor:pointer;}
+.tab-nav a:hover{color:#e38;text-decoration:none;}
+.tab-nav .active a{color:#e38;}
+.tab-nav .active{border-style:solid; border-width:0 1px 1px; border-color:#ddd #ddd #fff; background:#fff;position:relative;z-index:10;overflow:hidden;margin:0;_margin-bottom:-1px;}
+.tab-switch{overflow:hidden;}
+.case-item{float:left;display:inline;margin-left:20px;padding:20px 0;width:360px;height: 310px;position: relative;overflow: hidden;}
+.case-item .text-cover span,.case-item .text-cover i{height:35px;line-height:35px;font-size:14px;text-align:left;font-weight:bold;text-indent:10px;}
+.case-item p{padding-top:5px;}
+.case-item p span{color:#e38;}
+.case-item .btn{position:absolute;right:0;bottom:25px;}
+.case-item .dl-item dd{white-space: nowrap;overflow: hidden;text-overflow: ellipsis;_white-space:pre-wrap;_height:22px;}
+
+.cpro-item{margin-bottom:10px;}
+.cpro-item h3{font-size:14px;color:#e38;border-bottom:2px solid #eee;height:26px;line-height:26px;}
+.cpro-item h3 span{float:left;border-bottom:2px solid #e38;}
+.cpro-clist{font-size:14px;}
+.cpro-clist a{color:#101010;}
+.cpro-clist .link-details{float:right;display:inline;width:90px;font-size:12px;color:#0077cc}
+.cpro-clist a:hover{color:#e38;}
+.cpro-clist span{float:right;display:inline;width:90px;font-size:12px;color:#888;}
+.cpro-clist span i{color:#f60;}
+.cpro-clist .link-details{text-align:right}
+.cpro-clist ul{overflow:hidden;}
+.cpro-clist li{border-top:1px solid #eee;height:38px;line-height:38px;padding:0 10px;}
+
+
+.custom-process{ background:url(http://pic.lvmama.com/img/v3/process.png) no-repeat;width:780px;height:54px;overflow:hidden;margin-bottom:10px;}
+.custom-process a{float:right;height:100%;width:163px;text-indent:-9999px;}
+.custom-process a:hover{background:url(http://pic.lvmama.com/img/v3/process.png) -785px 0 no-repeat;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='png24bge.png');}
+
+.dl-item{padding-top: 5px;}
+.dl-item dt{float:left;color:#e38;}
+.dl-item dd{overflow:hidden;}
+
+
+.dl-hor {
+  *zoom: 1;
+}
+.dl-hor dt {
+  float: left;
+  width: 100px;
+  overflow: hidden;
+  clear: left;
+  text-align: right;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.dl-hor dd {
+  margin-left: 110px;
+}
+.form-inline label.radio,.form-inline label.checkbox {margin-right:15px;}
+
+.custom-start{padding:0 20px 20px;}
+.custom-start dl{margin:8px 0 10px;padding-bottom:10px;border-bottom:1px solid #ddd}
+.custom-start label.radio {margin-right:10px;}
+.custom-start  textarea{width:600px;height:70px;}
+
+
+/* 频道AB测试,老导航条980px
+.aside{width:190px;}
+ */

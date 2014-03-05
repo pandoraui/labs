@@ -1,0 +1,304 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>点评成功页</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="http://s1.lvjs.com.cn/styles/new_v/header-air.css" type="text/css" rel="stylesheet"/>
+<link href="http://s2.lvjs.com.cn/styles/new_v/ob_comment/base.css" rel="stylesheet" />
+<link href="http://s3.lvjs.com.cn/styles/new_v/ob_comment/common.css" rel="stylesheet" />
+</head>
+<body class="lvcomment">
+
+<!--头部开始-->
+<!-- 公共头部开始  -->
+<!-- topbar\\ -->
+<div class="lv-topbar">
+    <div class="tapbar-inner wrap">
+        <ul class="top-link">
+            <li class="dropdown"><a class="lvlink" href="http://www.lvmama.com/myspace/index.do">我的驴妈妈 <i class="icon-barr"></i></a>
+                <div class="top-sub">
+                    <a href="http://www.lvmama.com/myspace/order.do" rel="nofollow">我的订单</a>
+                    <a href="http://www.lvmama.com/myspace/account/points.do" rel="nofollow">我的积分</a>
+                    <a href="http://www.lvmama.com/myspace/account/coupon.do" rel="nofollow">我的优惠券</a>
+                </div>
+            </li>
+            <li class="dropdown"><a class="lvlink" href="http://login.lvmama.com/nsso/onlineApplyMemberCard/index.do">会员卡 <i class="icon-barr"></i></a>
+                <div class="top-sub">
+                    <a href="http://login.lvmama.com/nsso/onlineApplyMemberCard/index.do" rel="nofollow" target="_blank">申请会员卡</a>
+                    <a href="http://www.lvmama.com/login/loginBindCard.do" rel="nofollow" target="_blank">激活会员卡</a>
+                    <a href="http://www.lvmama.com/stored/goStoredSearch.do" rel="nofollow" target="_blank">旅游卡</a>
+                </div>
+            </li>
+            <li><a class="lvlink" href="http://www.lvmama.com/points">积分商城</a></li>
+            <li><a class="lvlink" href="http://www.lvmama.com/public/help">帮助</a></li>
+            <li class="dropdown join-weixin"><a class="lvlink" href="javascript:void(0);" rel="nofollow"><i class="icon-weixin"></i>+微信</a>
+                <div class="top-sub"><span class="wechatcode"></span></div>
+            </li>
+            
+            <li class="sitemap"><a class="lvlink" target="_self" href="javascript:bookmark()">收藏本站</a></li>
+            <li><a class="lvlink" href="http://e.weibo.com/lvmamas" rel="nofollow"><i class="icon-weibo"></i>+微博</a></li>
+            <li class="sitemap"><a href="http://www.lvmama.com/public/site_map">网站地图</a></li>
+            <li class="site-mobile"><a class="lvlink" href="http://shouji.lvmama.com/" rel="nofollow" target="_blank"><i class="icon-mobile"></i>手机版</a></li>
+        </ul>
+        <span id="J_login" class="lv-login"></span>
+    </div>
+</div> <!-- //.topbar -->
+
+<div class="lv-header wrap">
+    <div class="header-inner">
+        <span id="hotline" class="lv-hotline">1010-6060</span>
+        <a class="lv-logo" href="http://www.lvmama.com/">自助天下游 就找驴妈妈</a>
+        <div id="adPro" data-type="ad" class="lv-adPro"></div>
+    </div>
+</div> <!-- //.lv-header -->
+
+<div id="pnav" class="pnav clearfix">
+    <div class="wrap">
+        <ul class="pnav-main">
+            <li id="home"><a href="http://www.lvmama.com">首页</a></li>
+            <li id="ticket"><a href="http://www.lvmama.com/ticket">景点门票</a></li>
+            <li id="freetour"><a href="http://www.lvmama.com/freetour">周边游</a></li>
+            <li id="destroute"><a href="http://www.lvmama.com/destroute">国内游</a></li>
+            <li id="abroad"><a href="http://www.lvmama.com/abroad">出境游</a></li>
+            <li id="holiday"><a href="http://www.lvmama.com/search/hotel.html" rel="nofollow">度假酒店</a><i class="icon-new"></i></li>
+            <li id="globalhotel"><a href="http://hotel.lvmama.com" rel="nofollow">海外酒店</a></li>
+            <li id="train"><a href="http://www.lvmama.com/train">火车票</a><i class="icon-new"></i></li>
+            <li id="flight"><a href="http://flight.lvmama.com">国际机票</a></li>
+            <li id="custom"><a href="http://www.lvmama.com/company" rel="nofollow">定制游</a></li>
+        </ul>
+        <ul class="pnav-small">
+            <li id="lvcomment"><a href="http://www.lvmama.com/comment" rel="nofollow">点评</a></li>
+            <li id="lvguide"><a href="http://www.lvmama.com/guide">攻略</a></li>
+            <li id="lvplace"><a target="_blank" href="http://www.lvmama.com/zt/s/"><span>专题</span></a></li>
+            <li id="lvinfo"><a href="http://www.lvmama.com/info">资讯</a></li>
+            <li id="lvbbs"><a href="http://bbs.lvmama.com" rel="nofollow">社区</a></li>
+        </ul>
+    </div>
+</div> <!-- //div.pnav -->
+<!-- 公共头部结束  -->
+<!--页面主体部分-->
+<div id="content" class="cArea cArea_padd clearfix"> 
+
+  <!--页面侧栏部分开始(点评招募)-->
+  <div class="c_aside fr">
+     <!--点评招募开始-->
+    <div class="aside_box aside_box1 c_shadow">
+      <h4 class="ca_title c_iconbg">
+      		<span class="reflect">点评招募</span><small>(每个景区前十条点评奖励<b>80</b><a href="http://www.lvmama.com/public/help_center_146" target="_blank">积分</a>)</small>
+      </h4>
+      <ul class="list_chot JS_imgmo_menu lh24">
+      		        <li class="selected"><span class="fl title"><i class="front3">·</i>
+		        <a href="http://www.lvmama.com/dest/guilinjingpingshan">净瓶山</a>
+		        	</span><a class="fr" href="/comment/writeComment/fillComment.do?placeId=101439" rel="nofollow">我要点评
+		        </a>
+	            <p class="c_pt_pic"> 
+		            <a class="img_auto" href="http://www.lvmama.com/dest/guilinjingpingshan">
+			           			<img class="scrollLoading" src="/uploads/places/648x297/ff8080811cfb4ab1011d03d565bc0605_648x297.jpg" original="/uploads/places/648x297/ff8080811cfb4ab1011d03d565bc0605_648x297.jpg" title="净瓶山">
+			            <span class="c_t_bg"></span> <em class="c_p_tit f14">净瓶山</em>
+		            </a>
+	            </p>
+	        </li>
+	        <li class="selected"><span class="fl title"><i class="front3">·</i>
+		        <a href="http://www.lvmama.com/dest/nalingdong">纳灵洞</a>
+		        	</span><a class="fr" href="/comment/writeComment/fillComment.do?placeId=101443" rel="nofollow">我要点评
+		        </a>
+	            <p class="c_pt_pic"> 
+		            <a class="img_auto" href="http://www.lvmama.com/dest/nalingdong">
+			           			<img class="scrollLoading"  src="" original="/uploads/pc/place2/101443/1314957506196.jpg" title="纳灵洞">
+			            <span class="c_t_bg"></span> <em class="c_p_tit f14">纳灵洞</em>
+		            </a>
+	            </p>
+	        </li>
+	        <li class="selected"><span class="fl title"><i class="front3">·</i>
+		        <a href="http://www.lvmama.com/dest/gaoshanling">高山岭</a>
+		        	</span><a class="fr" href="/comment/writeComment/fillComment.do?placeId=101811" rel="nofollow">我要点评
+		        </a>
+	            <p class="c_pt_pic"> 
+		            <a class="img_auto" href="http://www.lvmama.com/dest/gaoshanling">
+			           			<img class="scrollLoading"  src="" original="/uploads/places/648x297/ff8080811e169342011e3941440115e7_648x297.jpg" title="高山岭">
+			            <span class="c_t_bg"></span> <em class="c_p_tit f14">高山岭</em>
+		            </a>
+	            </p>
+	        </li>
+	        <li class="selected"><span class="fl title"><i class="front3">·</i>
+		        <a href="http://www.lvmama.com/dest/songtao">松涛水库</a>
+		        	</span><a class="fr" href="/comment/writeComment/fillComment.do?placeId=101637" rel="nofollow">我要点评
+		        </a>
+	            <p class="c_pt_pic"> 
+		            <a class="img_auto" href="http://www.lvmama.com/dest/songtao">
+			           			<img class="scrollLoading"  src="" original="/uploads/places/648x297/ff8080811cfb4ab1011d0a3cd55d16d0_648x297.jpg" title="松涛水库">
+			            <span class="c_t_bg"></span> <em class="c_p_tit f14">松涛水库</em>
+		            </a>
+	            </p>
+	        </li>
+	        <li class="selected"><span class="fl title"><i class="front3">·</i>
+		        <a href="http://www.lvmama.com/dest/zhangyeerlangmiao">张掖二郎庙</a>
+		        	</span><a class="fr" href="/comment/writeComment/fillComment.do?placeId=101636" rel="nofollow">我要点评
+		        </a>
+	            <p class="c_pt_pic"> 
+		            <a class="img_auto" href="http://www.lvmama.com/dest/zhangyeerlangmiao">
+			           			<img class="scrollLoading"  src="" original="/uploads/pc/place2/101636/1312882487907.jpg" title="张掖二郎庙">
+			            <span class="c_t_bg"></span> <em class="c_p_tit f14">张掖二郎庙</em>
+		            </a>
+	            </p>
+	        </li>
+	        <li class="selected"><span class="fl title"><i class="front3">·</i>
+		        <a href="http://www.lvmama.com/dest/qingtaiguan">青苔关</a>
+		        	</span><a class="fr" href="/comment/writeComment/fillComment.do?placeId=101748" rel="nofollow">我要点评
+		        </a>
+	            <p class="c_pt_pic"> 
+		            <a class="img_auto" href="http://www.lvmama.com/dest/qingtaiguan">
+			           			<img class="scrollLoading"  src="" original="/uploads/places/648x297/ff8080811cfb4ab1011d0dfc37041b8f_648x297.jpg" title="青苔关">
+			            <span class="c_t_bg"></span> <em class="c_p_tit f14">青苔关</em>
+		            </a>
+	            </p>
+	        </li>
+	        <li class="selected"><span class="fl title"><i class="front3">·</i>
+		        <a href="http://www.lvmama.com/dest/erlongshitai">二龙什台国家森林公园</a>
+		        	</span><a class="fr" href="/comment/writeComment/fillComment.do?placeId=101905" rel="nofollow">我要点评
+		        </a>
+	            <p class="c_pt_pic"> 
+		            <a class="img_auto" href="http://www.lvmama.com/dest/erlongshitai">
+			           			<img class="scrollLoading"  src="" original="/uploads/pc/place2/101905/1318496771066.jpg" title="二龙什台国家森林公园">
+			            <span class="c_t_bg"></span> <em class="c_p_tit f14">二龙什台国家森林公园</em>
+		            </a>
+	            </p>
+	        </li>
+	        <li class="selected"><span class="fl title"><i class="front3">·</i>
+		        <a href="http://www.lvmama.com/dest/xiaohuangdong">小黄侗寨</a>
+		        	</span><a class="fr" href="/comment/writeComment/fillComment.do?placeId=101632" rel="nofollow">我要点评
+		        </a>
+	            <p class="c_pt_pic"> 
+		            <a class="img_auto" href="http://www.lvmama.com/dest/xiaohuangdong">
+			           			<img class="scrollLoading"  src="" original="/uploads/places/648x297/ff8080811cfb4ab1011d08d4aa211018_648x297.jpg" title="小黄侗寨">
+			            <span class="c_t_bg"></span> <em class="c_p_tit f14">小黄侗寨</em>
+		            </a>
+	            </p>
+	        </li>
+	        <li class="selected"><span class="fl title"><i class="front3">·</i>
+		        <a href="http://www.lvmama.com/dest/longwanxia">龙王峡漂流</a>
+		        	</span><a class="fr" href="/comment/writeComment/fillComment.do?placeId=101489" rel="nofollow">我要点评
+		        </a>
+	            <p class="c_pt_pic"> 
+		            <a class="img_auto" href="http://www.lvmama.com/dest/longwanxia">
+			           			<img class="scrollLoading"  src="" original="/uploads/pc/place2/101489/1315554211651.jpg" title="龙王峡漂流">
+			            <span class="c_t_bg"></span> <em class="c_p_tit f14">龙王峡漂流</em>
+		            </a>
+	            </p>
+	        </li>
+	        <li class="selected"><span class="fl title"><i class="front3">·</i>
+		        <a href="http://www.lvmama.com/dest/zhangyedongshansi">东山寺和西武当</a>
+		        	</span><a class="fr" href="/comment/writeComment/fillComment.do?placeId=101605" rel="nofollow">我要点评
+		        </a>
+	            <p class="c_pt_pic"> 
+		            <a class="img_auto" href="http://www.lvmama.com/dest/zhangyedongshansi">
+			           			<img class="scrollLoading"  src="" original="/uploads/pc/place2/101605/1312882597804.jpg" title="东山寺和西武当">
+			            <span class="c_t_bg"></span> <em class="c_p_tit f14">东山寺和西武当</em>
+		            </a>
+	            </p>
+	        </li>
+      </ul>
+    </div>
+    
+    
+    
+  </div>
+  
+  <!--页面主体部分-->
+  <div class="c_w_com c_shadow">
+          <div class="c_main"> 
+            <div class="reback_box">
+            
+              <h2 class="yahei f24"><span class="cxh_ico5"></span>您的点评已发表成功！</h2>
+              <div class="c_suc_box clearfix"><p class="tc lh24">为了保证内容质量，我们会对点评进行审核，一般会在1个工作日内完成。<br>
+        		您的点评被审核通过后，将会获得<b>50-100</b>积分的奖励，被加为精华将再获得<b>150</b>积分以上的奖励。<br>
+			您可以进入“<a href="http://www.lvmama.com/myspace/share/alreadyComment.do?currentNeedProductCommentPage=1&currentAlreadyCommentPage=1">我的驴妈妈—我的点评</a>”中，查看点评审核状态，积分赠送状态，点评奖金状态。</p>
+        <p class="c_suc_btn">
+	        <a id="xhsharelink" title="上海" href="http://www.lvmama.com/comment/1068031"><span>查看点评</span></a> 
+	        
+	        <a href="http://www.lvmama.com/myspace/share/comment.do"><span>继续点评(0)</span></a>
+	        <a href="/comment"><span>频道首页</span></a>
+        </p>
+        <div class="c_suc_share bc clearfix">
+        <!-- JiaThis Button BEGIN -->
+        <div id="ckepop">
+            <a class="jiathis_button_tsina"></a>
+            <a class="jiathis_button_tqq"></a>
+            <a class="jiathis_button_kaixin001"></a>
+            <a class="jiathis_button_qzone"></a>
+            <a class="jiathis_button_renren"></a>
+            <a class="jiathis_button_douban"></a>
+            <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+            <a class="jiathis_counter_style"></a>
+        </div>
+        
+        <!-- JiaThis Button END --></div>
+        </div>
+       
+       <div class="codeapp_box" style="margin-top:50px;height:150px;padding:1px;background:url(http://s1.lvjs.com.cn/img/v4/codeapp_bg.png) no-repeat;">
+            <span class="codeapp" style="display:inline-block;overflow:hidden;width:130px;height:130px;margin:6px;background:#fafafa;">
+                   <img class="erweima"  src='/callback/generateCodeImage.do?userid=ff8080813726f6e9013736b517a532c6' />
+            </span>
+      </div>
+        
+            </div>
+          </div><!--c_main end-->
+  
+   		 <a href="http://www.lvmama.com/comment/zt/shiyi/" class="c_suc_link" target="_blank">
+		    	<img src="http://s2.lvjs.com.cn/pics/super/2013/09/ff808081411674e6014125c0c7ea0182.jpg" >
+		 </a>
+</div>
+<!--footer>>-->
+
+<div class="buttom clearfix">
+	<div class="buttom_list">
+		<b class="buttom_list_tit1">订购指南</b>
+				   <a rel="nofollow" href="http://www.lvmama.com/public/help_center_2" target="_blank">门票订购流程是怎样的？</a>
+		   <a rel="nofollow" href="http://www.lvmama.com/public/help_center_4" target="_blank">二维码使用时有什么注意事项？</a>
+		   <a rel="nofollow" href="http://www.lvmama.com/public/help_center_5" target="_blank">可以预定多长时间的门票？</a>
+		   <a rel="nofollow" href="http://www.lvmama.com/public/help_center_10" target="_blank">想要修改订单，怎么操作？</a>
+	</div>
+	<div class="buttom_list">
+		<b class="buttom_list_tit2">注册与登录</b>
+		   <a rel="nofollow" href="http://login.lvmama.com/nsso/register/registering.do" target="_blank">怎样才能成为驴妈妈会员？</a>
+		   <a rel="nofollow" href="http://login.lvmama.com/nsso/login" target="_blank">在哪登录会员帐号？</a>
+		   <a rel="nofollow" href="http://www.lvmama.com/public/help_center_149" target="_blank">如何修改我的帐号密码？</a>
+		   <a rel="nofollow" href="http://login.lvmama.com/nsso/findpass/index.do" target="_blank">手机登录密码遗失，应该如何找回？</a>
+	</div>
+	<div class="buttom_list">
+		<b class="buttom_list_tit3">支付与取票</b>
+		   <a rel="nofollow" href="http://www.lvmama.com/public/buy_guide#m_2" target="_blank">付款方式有哪些？</a>
+		   <a rel="nofollow" href="http://www.lvmama.com/public/buy_guide#m_2" target="_blank">在线支付安全吗？</a>
+		   <a rel="nofollow" href="http://www.lvmama.com/public/buy_guide#m_2" target="_blank">为什么支付不成功？</a>
+		   <a rel="nofollow" href="http://www.lvmama.com/public/buy_guide#m_2" target="_blank">想要退款，应该怎么做？</a>
+	</div>
+	<div class="buttom_list" style="border: medium none;">
+		<b class="buttom_list_tit4">沟通与订阅</b>
+		   <a rel="nofollow" href="http://www.lvmama.com/userCenter/user/transItfeedBack.do" target="_blank">我想投诉，应该怎么反映？</a>
+		   <a rel="nofollow" href="http://www.lvmama.com/userCenter/user/transItfeedBack.do" target="_blank">我想咨询门票，应该怎么办？</a>
+		   <a rel="nofollow" href="http://www.lvmama.com/userCenter/user/transItfeedBack.do" target="_blank">我有意见，在哪可以提？</a>
+		   <a rel="nofollow" href="http://www.lvmama.com/public/about_lvmama#m_1" target="_blank">我是景区负责人，怎么联系驴妈妈？</a>
+	</div>
+</div>
+
+<script src="http://s1.lvjs.com.cn/js/common/copyright.js"></script>
+<!--footer<<-->
+
+<script src="http://s2.lvjs.com.cn/min/index.php?g=common" charset="utf-8"></script>
+<script src="http://s3.lvjs.com.cn/js/new_v/ob_comment/x_comment.js"></script>
+<script src="http://v2.jiathis.com/code/jia.js" charset="utf-8"></script>
+<script type="text/javascript" >
+var xhsharelink = document.getElementById('xhsharelink');
+var jiathis_config={
+    url: xhsharelink.href,
+    title: "我在驴妈妈旅游网对" + xhsharelink.title + "进行了点评，",
+    summary: "还送了积分和返现！求围观！#分享真实感受 说说旅行那点事儿#",
+	hideMore: false
+}
+</script>
+<script src="http://s1.lvjs.com.cn/js/common/losc.js"></script>
+</body>
+</html>

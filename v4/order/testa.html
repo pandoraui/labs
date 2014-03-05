@@ -1,0 +1,207 @@
+<!doctype html>
+<html><head>
+<meta charset="utf-8">
+<title>开始使用</title>
+<link rel="shortcut icon" type="image/x-icon" href="http://www.lvmama.com/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="页面关键字">
+<meta name="description" content="页面描述">
+
+<!-- 生产线使用样式
+
+<link rel="stylesheet" href="http://pic.lvmama.com/min/index.php?f=/styles/v4/pa-base.css,/styles/v4/modules/arrow.css,/styles/v4/modules/button.css,/styles/v4/modules/forms.css,/styles/v4/modules/selectbox.css,/styles/v4/modules/step.css,/styles/v4/modules/tags.css,/styles/v4/modules/tip.css,/styles/v4/modules/dialog.css,/styles/v4/modules/tables.css,/styles/v4/modules/bank.css" >
+<link rel="stylesheet" href="http://pic.lvmama.com/min/index.php?f=/styles/v4/order-common.css,/styles/v4/order.css" >
+-->
+
+<!-- demo样式 -->
+<link rel="stylesheet" href="/labs/assets/css/pa-base.css">
+<link rel="stylesheet" href="/labs/v4/css/order-common.css">
+<link rel="stylesheet" href="/labs/assets/css/pa-modules.css">
+<link rel="stylesheet" href="/labs/v4/css/order.css">
+
+<!-- 临时使用的内嵌样式style，不要上线此style -->
+<style>
+
+</style>
+
+<link rel="stylesheet" href="http://pic.lvmama.com/js/ui/lvmamaUI/css/jquery.common.css"><script id="WdatePickerjs" src="http://pic.lvmama.com/js/ui/lvmamaUI/plugin/My97Date/WdatePicker.js"></script><link href="http://pic.lvmama.com/js/ui/lvmamaUI/plugin/My97Date/skin/WdatePicker.css" rel="stylesheet" type="text/css"></head>
+<body>
+<!-- 测试临时使用导航》》 如果定位元素后紧跟position:relative;则IE6、7 下 margin-top:值失效   -->
+<div class="main_nav" style="width:150px;position:fixed;_position: absolute; z-index:50; top:50px;right:20px;white-space:nowrap;border: 1px solid #ccc;padding: 10px;border-radius: 10px;background: #eee;box-shadow:inset 3px 3px 5px rgba(255, 255, 255, 0.8), 3px 3px 5px rgba(160, 160, 160, 0.2);">
+    <ul>
+        <li><span class="B">订单预览引导</span></li>
+        <li style="padding-left:10px;"><a href="./orderFill.php">订单信息填写 模板页</a>
+            <ul style="margin-left:20px;">
+                <li><a href="orderFill-ticket.php">门票下单</a></li>
+                <li><a href="orderFill-travel-freeshort.php">周边下单</a></li>
+                <li><a href="orderFill-travel-freeLong.php">国内下单</a></li>
+                <li><a href="orderFill-travel-freeAround.php">出境下单</a></li>
+                <li><a href="orderFill-hotel.php">酒店下单</a></li>
+                <li><a href="orderFill-train.php">火车票下单</a></li>
+            </ul>
+        </li>
+        <li style="padding-left:10px;"><a href="./contract.php">旅游合同</a></li>
+        <li style="padding-left:10px;"><a href="./pay.php">支付页 旧版</a></li>
+        <li style="padding-left:10px;"><a href="./paynew.php">支付页 新版</a></li>
+        <li style="padding-left:10px;"><a href="./pay-verify.php">预授权支付</a></li>
+        <li class="hide" style="padding-left:10px;"><a href="./userFill.php">用户信息填写</a></li>
+        <li class="hide" style="padding-left:10px;"><a href="./verify.php">资源待审核</a></li>
+        <li class="hide" style="padding-left:10px;"><a href="pay-check.php">资源审核页面</a></li>
+        <li style="padding-left:10px;"><a href="./paysuccess.php">支付成功页 模板页</a>
+            <ul style="margin-left:20px;">
+                <li><a href="paysuccess-ticket.php">门票支付成功</a></li>
+                <li><a href="paysuccess-free.php">自由行支付成功</a></li>
+                <li><a href="paysuccess-needinfo.php">支付成功需要补填信息</a></li>
+                <li><a href="paysuccess-train.php">火车票支付成功</a></li>
+                <li><a href="###">酒店支付成功</a></li>
+            </ul>
+        </li>
+        <li style="padding-left:10px;"><a href="./other.php">其他支付方式</a></li>
+        <li style="padding-left:10px;"><a target="_blank" href="/lvmama/myspace/Fillinback.php">补填信息</a></li>
+        <li style="padding-left:10px;">测试使用PIC-10.3.1.43</li>
+    </ul>
+    <div class="hr_a"></div>
+    <ul>
+        <!-- order-fillinfo.php order-payment.php
+        <li><a id="test_loading" style="cursor:pointer">测试loading效果</a></li>
+        <li><a target="_blank" href="Plugin.php">页面组件</a></li>
+        <li><a target="_blank" href="http://10.3.1.41/labs/lvmama/plugin">页面组件</a></li>
+        -->
+    </ul>
+</div>
+
+
+
+<!-- 《《测试临时使用导航 -->
+
+
+<!-- 
+===============================================
+===============================================
+-------------------- 分割线 --------------------
+===============================================
+===============================================
+-->
+
+<!-- 订单公共头部开始 -->
+<div class="order-header wrap">
+    <div class="header-inner">
+        <a class="logo" href="http://www.lvmama.com/">自助天下游 就找驴妈妈</a>
+        <p class="welcome">下午好，<b>sh_andy</b> </p>
+        <p class="info">24小时服务热线：<strong>1010-6060</strong></p>
+        
+    </div>
+</div> <!-- //.lv-header -->
+<!-- 公共头部结束  -->
+
+<div class="wrap">
+    <!-- 操作步骤 -->
+    <ol class="ui-step ui-step-3">
+        <li class="ui-step1 ui-step-start ui-step-active">
+            <div class="ui-step-arrow">
+                <i class="arrow_r1"></i>
+                <i class="arrow_r2"></i>
+            </div>
+            <span class="ui-step-text">1.填写订单信息</span>
+        </li>
+        <li class="ui-step2">
+            <div class="ui-step-arrow">
+                <i class="arrow_r1"></i>
+                <i class="arrow_r2"></i>
+            </div>
+            <span class="ui-step-text">2.选择付款方式付款</span>
+        </li>
+        <li class="ui-step3 ui-step-end">
+            <div class="ui-step-arrow">
+                <i class="arrow_r1"></i>
+                <i class="arrow_r2"></i>
+            </div>
+            <span class="ui-step-text">3.预订成功</span>
+        </li>
+    </ol> <!-- //操作步骤 -->
+    
+    
+    <div style="padding:10px 0;border: 2px solid red;"><div class="order-main border equalheight-box">
+        <div class="sidebar equalheight-item">
+            <div class="sidebox side-setbox" style="position: absolute; top: 137px;">
+                sidebox
+            </div>
+        </div> <!-- //.sidebar -->
+        
+        <div class="main equalheight-item">
+            <p class="">测试文本，这是一段测试文本12px/22px，用于测试页面的一些布局特性，不属于页面展现的一部分，开发请忽略。这是一段测试文本，具有比较长的文本内容，测试通栏显示效果及行高，通常含有比较变态的文本内容，测试特殊情况下文本对布局的影响，以及如何处理，如折断换行等。qwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnm1234567890qwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnm1234567890</p>
+            
+            <div class="order-title">
+                <h3><span>一些说明文档</span></h3>
+            </div>
+            <div class="content">
+                <div class="hr_a"></div>
+                <p>支付成功页 buy/paysuccess#来源页面参数+产品ID如/paysuccess#hotel-Domestic-76985</p>
+                <p>其他支付方式提醒 buy/other#来源页面参数+产品ID</p>  
+            </div>
+            
+            
+            <div class="order-title">
+                <h3><span>预览路径引导</span></h3>
+            </div>
+            <div class="content">
+                <div class="hr_a"></div>
+                <div class="xdl-hor">
+                    <dl class="xdl">
+                        <dt class="B">填写订单信息：</dt>
+                        <dd>
+                            <a class="B" href="buy.php">buy</a>
+                        </dd>
+                    </dl>
+                    <dl class="xdl">
+                        <dt class="B">选择付款方式：</dt>
+                        <dd>
+                            <a class="B" href="order.php">order</a>
+                        </dd>
+                    </dl>
+                    <dl class="xdl">
+                        <dt class="B">支付成功页面：</dt>
+                        <dd>
+                            <a class="B" href="paysuccess.php">paysuccess</a>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div> <!-- //.main -->
+    
+  </div></div> 
+</div>
+
+
+
+<!-- 订单底部 -->
+<div id="order-footer" class="lv-footer"><!-- 公共底部  --><div class="footer-inner wrap"><p class="lv-copyright">Copyright © 2013 www.lvmama.com. 上海景域文化传播有限公司版权所有　<a href="http://www.miitbeian.gov.cn" target="_blank" rel="nofollow">沪ICP备13011172号-3</a>　增值电信业务经营许可证编号：<a rel="nofollow" href="http://pic.lvmama.com/img/ICP.jpg" target="_blank">沪B2-20100030</a></p><div class="lv-safety">    <a class="safety1" target="_blank" rel="nofollow" title="上海市旅游行业协会在线分会" href="http://www.shtour.org/tourlist_onlineid4.html"></a>    <a class="safety2" target="_blank" rel="nofollow" title="经营性网站备案信息" href="http://www.miibeian.gov.cn/"></a>    <a class="safety3" target="_blank" rel="nofollow" title="网络110报警服务" href="http://www.cyberpolice.cn"></a>    <a class="safety4" target="_blank" rel="nofollow" title="支付宝特约商家" href="https://www.alipay.com/aip/aip_validate_list.htm?trust_id=AIP0102495"></a>    <a class="safety5" target="_blank" rel="nofollow" title="AAA级信用企业" href="http://www.itrust.org.cn/yz/pjwx.asp?wm=1664396140"></a>    <a class="safety6" target="_blank" rel="nofollow" title="上海工商" href="http://www.sgs.gov.cn/lz/licenseLink.do?method=licenceView&amp;entyId=20110930103539539"></a>    <a class="safety7" target="_blank" rel="nofollow" title="可信网站" href="https://ss.cnnic.cn/verifyseal.dll?sn=2010101800100002662&amp;ct=df&amp;pa=590007"></a>    <a class="safety8" target="_blank" rel="nofollow" title="诚信认证示范企业" href="https://search.szfw.org/cert/l/CX20120921001712001762" id="___szfw_logo___" hidefocus="false"></a>    <a class="safety9" target="_blank" rel="nofollow" title="网络社会征信网" href="http://www.zx110.org"></a>    <a class="safety10" target="_blank" rel="nofollow" title="360网站安全检测" href="http://webscan.360.cn"></a></div></div><!-- 公共底部结束  --></div>
+
+
+<!-- 上线引用JS
+
+// jQuery以及通用js
+<script src="http://pic.lvmama.com/min/index.php?f=/js/new_v/jquery-1.7.2.min.js,/js/ui/lvmamaUI/lvmamaUI.js"></script>
+<script src="http://pic.lvmama.com/min/index.php?f=/js/v4/modules/pandora-dialog.js"></script>
+<script src="http://pic.lvmama.com/min/index.php?f=/js/common/footer.js"></script>
+
+//这个js目前放置在开发的js目录下
+<script src="http://pic.lvmama.com/js/v4/order-page.js"></script>
+
+
+// 统计代码 
+<script src="http://pic.lvmama.com/js/common/losc.js"></script>
+ -->
+
+
+<!-- demo js -->
+<script src="/labs/assets/js/jquery-1.7.2.min.js"></script>
+<script src="/labs/assets/common/footer.js"></script>
+<script src="http://pic.lvmama.com/js/ui/lvmamaUI/lvmamaUI.js"></script>
+<script src="/pandora/docs/assets/js/modules/pandora-dialog.js"></script>
+<script src="/labs/v4/js/jquery.selectModel.js"></script>
+<script src="/labs/v4/js/order-page.js"></script>
+
+
+
+</body></html>
