@@ -381,8 +381,9 @@ label.vmiddle {
 }
 .dinput .input-date {
     position: relative;
-    z-index: 4;
+    z-index: 6;
     width: 164px;
+    background: none;
 }
 .dinput .date-info {
     position:absolute;

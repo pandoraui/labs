@@ -18,7 +18,7 @@ a:hover{color:#f60;}
 /*颜色*/
 .gray{color:gray;}
 .orange{color:#f60;}
-.icon,ul.ul li,.score-level,.score-level i,.xfloatbar .xsharebox .icon{background:url(../img/dest.png) 9999px 9999px no-repeat;_background:url(../img/dest8.png) 9999px 9999px no-repeat;}
+.icon,ul.ul li,.introduction li,.score-level,.score-level i,.xfloatbar .xsharebox .icon{background:url(../img/dest.png) 9999px 9999px no-repeat;_background:url(../img/dest8.png) 9999px 9999px no-repeat;}
 .icon{display:inline-block;}
 .dicon-rarr{background-position: 0 0;}
 .dicon-local{width:16px;height:16px;background-position: 0 -30px;}
@@ -129,6 +129,7 @@ a.text-cover .ctext em{color:#fff;text-indent: 5px;display:block;}
 .qstart,.qend{position:absolute;display:inline-block;width:30px;height:30px;color:#ddd;font-size:30px;font-weight:bold;font-family:Arial,sans-serif;}
 .qstart{top:10px;left:50px;}
 .qend{bottom:-10px;right:-10px;}
+.dactive{margin:20px 0 0;}
 
 .xorder .btn-large{height:38px;line-height:38px;padding:0 15px;}
 .xorder .btn-text{font-family:"Microsoft YaHei",\5FAE\8F6F\96C5\9ED1;font-weight:400;}
@@ -249,7 +250,7 @@ tbody.ptbox{border-bottom:1px solid #eee;*zoom:1;}
 .textlist dfn{float:right;}
 .dside-near a{white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
 p.distance{color:#999;}
-.dside-near .textlist li{line-height:18px;margin-top:8px;}
+.dside-near .textlist li{line-height:18px;margin-top:12px;}
 
 .dside-theme .dl-hor{margin:15px 0;}
 .dside-theme dfn{position:relative;top:2px;}
@@ -282,7 +283,7 @@ p.distance{color:#999;}
 .ul-imgtext p{margin:5px 0 10px;}
 
 .traffic p{color:#999;}
-.traffic-map{height:400px;margin:20px 0;}
+.traffic-map{height:300px;margin:20px 0;}
 
 
 /*点评详情列表*/
