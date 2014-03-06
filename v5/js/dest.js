@@ -67,6 +67,7 @@ $(function(){
         $(this).parent().fadeOut(300);
     })
     
+    $("span.countdown").ui('countdown');
     
     $(".dpro-list").delegate("a.ptlink","click",function(){
         var currentItem = $(this).parent().parent();

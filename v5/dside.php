@@ -1,6 +1,6 @@
 
 <div class="sidebox dside-tuan">
-    <p class="tuan-tit"><i class="icon dicon-time"></i>团购剩余时间 <span class="countdown"><i>03</i>天<i>16</i>时<i>30</i>分<i>10</i>秒</span></p>
+    <p class="tuan-tit"><i class="icon dicon-time"></i>团购剩余时间 <span class="countdown">234223423</span></p>
     <div class="scontent">
         <a href="#" class="block">
             <img src="//placehold.it/228x152" width="228" height="152" alt="某某团购图片" />
