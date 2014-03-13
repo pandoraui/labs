@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>Dynamic RSS Feed Widget</title>
+<meta generator="//daqianduan.com/feed" />
+<script src="js/ajax.js"></script>
+</head>
+<body>
+    <h1>Dynamic RSS Feed Widget</h1>
+    <p>Check out my RSS feed:</p>
+    <!-- 这里将插入 RSS feed -->
+    <ol id="feed"></ol>
+<script>
+window.onload = function(){
+    ajax({
+        url : "rss.xml",
+        //type : "xml",
+        onSuccess : function(rss){
+            //console.log(rss);
+            var feed = document.getElementById("feed");
+            
+            var titles = rss.getElementsByTagName("title");
+            
+            for(var i=0; i<titles.length; i++){
+                
+                var li = createElement("li");
+                
+                li.innerHTML = titles[i].firstChild.nodeValue;
+                
+                feed.appendChild(li);
+                
+            }
+            
+        }
+    });
+};
+</script>
+</body>
+</html>

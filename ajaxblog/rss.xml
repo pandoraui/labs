@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>大前端</title>
+	<atom:link href="http://www.daqianduan.com/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.daqianduan.com</link>
+	<description>--关注前端开发和wordpress主题的博客</description>
+	<lastBuildDate>Wed, 12 Mar 2014 01:41:48 +0000</lastBuildDate>
+	<language>zh-CN</language>
+		<sy:updatePeriod>hourly</sy:updatePeriod>
+		<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.8</generator>
+	<item>
+		<title>金山软件-西山居(珠海)招募前端开发工程师、PHP开发工程师</title>
+		<link>http://www.daqianduan.com/5367.html</link>
+		<comments>http://www.daqianduan.com/5367.html#comments</comments>
+		<pubDate>Wed, 12 Mar 2014 01:41:48 +0000</pubDate>
+		<dc:creator><![CDATA[浩子]]></dc:creator>
+				<category><![CDATA[名企招聘]]></category>
+		<category><![CDATA[招聘]]></category>
+		<category><![CDATA[金山]]></category>
+
+		<guid isPermaLink="false">http://www.daqianduan.com/?p=5367</guid>
+		<description><![CDATA[资深前端开发工程师 职位类别：程序类 工作地点：珠海 招聘人数：2 职位描述 负责前端页面和插件的开发和维护  [&#8230;]]]></description>
+				<content:encoded><![CDATA[<h2>资深前端开发工程师</h2>
+<p>职位类别：程序类<br />
+工作地点：珠海<br />
+招聘人数：2</p>
+<h3>职位描述</h3>
+<ul>
+<li>负责前端页面和插件的开发和维护</li>
+<li>持续的优化前端页面和插件的性能和用户体验</li>
+<li>和后台工程师一起研讨技术实现方案，制定服务接口等</li>
+<li>建立并优化前段开发框架和规范</li>
+</ul>
+<h3>工作要求</h3>
+<ul>
+<li>三年以上<a title="京东招聘Web前端开发工程师(中/高/资深) 8-22K" href="http://www.daqianduan.com/5341.html" target="_blank">Web前端开发</a>经验</li>
+<li>相关专业本科以上学历（优秀人才者，专业和学历可适当放宽）；</li>
+<li>对可用性、可访问性等相关知识有深刻的认识和实践经验</li>
+<li>精通<a title="北京网易电商招聘JavaScript工程师" href="http://www.daqianduan.com/4916.html" target="_blank">JavaScript</a>语言，及常用的JS框架如JQuery、YUI等，了解其基本原理</li>
+<li>精通HTML/XHTML、CSS及W3C标准，习惯于手写符合W3C标准、兼容多种浏览器的代码</li>
+<li>熟悉浏览器兼容调试和前端性能优化</li>
+</ul>
+<p><strong>具有以下技能者优先：</strong></p>
+<ul>
+<li>熟悉ActionScript</li>
+<li>熟悉 <a title="避免常见的6种HTML5错误用法" href="http://www.daqianduan.com/3860.html" target="_blank">HTML5</a></li>
+<li>对Web前端技术有浓厚的兴趣，会研究并关注前沿技术</li>
+<li>掌握至少一门非前端开发语言（如PHP/Java/Python/Ruby等）</li>
+<li>有过Web前端团队管理经验</li>
+</ul>
+<h2>
+PHP高级应用开发工程师</h2>
+<p>职位类别：程序类<br />
+工作地点：珠海<br />
+招聘人数：2</p>
+<h3>职位描述</h3>
+<ul>
+<li>平台内产品的研发。</li>
+<li>在LNMPA或LNMP环境下进行互动网站规划。</li>
+<li>与其他部门协同设计和开发数据接口。</li>
+</ul>
+<h3>工作要求</h3>
+<ul>
+<li>五年及以上的互联网行业开发经验，相关专业本科以上学历（优秀人才者，专业和学历可适当放宽）；</li>
+<li>有高负载、高并发类产品的开发经验；</li>
+<li>熟练运用Memcached、redis等工具。</li>
+<li>熟悉MYSQL数据库应用开发，能根据需求进行数据库设计。</li>
+<li>了解linux及相关系统软件配置与优化。</li>
+</ul>
+<p><strong>具有以下技能者优先</strong></p>
+<ul>
+<li>有底层系统架构设计及核心模块实施经验；</li>
+<li>对PHP底层运行机制及WEB安全防范有深入理解，了解各大流行框架特色，熟悉常用设计模式及协同开发流程。</li>
+<li>熟悉HTML5，能够手写HTML/CSS/JAVASCRIPT代码，了解W3C规范和不同浏览器的代码兼容问题，对前端优化有一定的认识。</li>
+<li>热爱互联网事业，关注互联网新技术的发展，具有较强的学习能力和独立解决问题的能力。</li>
+</ul>
+<p><strong>欢迎自荐或推荐，Mail to: <span style="color: #339966;">LuoLili@kingsoft.com</span></strong></p>
+<h2>西山居概况</h2>
+<p>追溯到游戏历史的天空，犹如繁星无数，在东方月夜的星空，看到熟悉的名字。近20年的历程让他散发成熟韵味，但他似乎还很年少，他一直追寻自己心中的梦。创建1995年初夏，在美丽的海滨小城珠海，西山居工作室孕育而生，一群西山居居士们十年如一日尅勊业业的奋斗。</p>
+<p>&#8220;创造快乐，传递快乐！&#8221;一直是西山居居士们的创作宗旨。西山居一领先的技术作为坚实的基础以独特的本土化产品为玩家提供时尚化的服务。在未来，西山居仍以娱乐软件为主导产品，不断进行研发和市场活动，逐步发展成为国内最优秀的集制作、发行于一体的数字化互动娱乐公司。</p>
+<p><strong>西山居：</strong><a href="http://www.xishanju.com" target="_blank">http://www.xishanju.com</a></p>
+<p>转载请注明：<a href="http://www.daqianduan.com">大前端</a> &raquo; <a href="http://www.daqianduan.com/5367.html">金山软件-西山居(珠海)招募前端开发工程师、PHP开发工程师</a></p>]]></content:encoded>
+			<wfw:commentRss>http://www.daqianduan.com/5367.html/feed</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>QCon 2014 全球软件开发大会 北京站 4月25-27日</title>
+		<link>http://www.daqianduan.com/5363.html</link>
+		<comments>http://www.daqianduan.com/5363.html#comments</comments>
+		<pubDate>Sat, 08 Mar 2014 00:00:01 +0000</pubDate>
+		<dc:creator><![CDATA[浩子]]></dc:creator>
+				<category><![CDATA[前端资讯]]></category>
+		<category><![CDATA[QCon]]></category>
+		<category><![CDATA[前端聚会]]></category>
+
+		<guid isPermaLink="false">http://www.daqianduan.com/?p=5363</guid>
+		<description><![CDATA[地点：中国·北京国际会议中心 日期：4月25-27日 QCon是由InfoQ主办的全球顶级技术盛会，每年在伦敦 [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p><img class="size-full wp-image-5365 aligncenter" alt="QCon 2014" src="http://www.daqianduan.com/wp-content/uploads/2014/03/qcon-beijing.jpg" width="" height="" /></p>
+<p><strong>地点：</strong>中国·北京国际会议中心</p>
+<p><strong>日期：</strong>4月25-27日</p>
+<p>QCon是由InfoQ主办的全球顶级技术盛会，每年在伦敦、北京、东京、纽约、圣保罗、上海、旧金山召开。自2007年3月份首次举办以来，已经有包括传统制造、金融、电信、互联网、航空航天等领域的近万名架构师、项目经理、团队领导者和高级开发人员参加过QCon大会。</p>
+<p>秉承&#8221;促进软件开发领域知识与创新的传播&#8221;原则，QCon各项议题专为中高端技术人员设计，内容源于实践并面向社区。演讲嘉宾依据各重点和热点话题，分享技术趋势和最佳实践；作为主办方，InfoQ努力为参会者提供良好的学习和交流环境。</p>
+<h2>嘉宾：</h2>
+<ul>
+<li><strong>Eugene Ciurana：</strong>雅虎资深首席工程师，Summly CTO</li>
+<li><strong>Andrew Betts：</strong>英国金融时报实验室负责人</li>
+<li><strong>Randy Shoup：</strong>KIXEYE CTO、前GAE总监</li>
+<li><strong>Marco Cecconi：</strong>Stack OverFlow核心开发组工程师</li>
+<li><strong>蒋炜航：</strong>网易技术总监</li>
+<li><strong>段念：</strong>豆瓣工程副总裁</li>
+<li><strong>吴甘沙：</strong>英特尔中国研究院首席工程师</li>
+<li><strong>朱鸿：</strong>阿里巴巴资深架构师</li>
+</ul>
+<p>点此报名：<a href="http://www.qconbeijing.com/" target="_blank"><strong>QCon2014报名地址</strong></a></p>
+<p>转载请注明：<a href="http://www.daqianduan.com">大前端</a> &raquo; <a href="http://www.daqianduan.com/5363.html">QCon 2014 全球软件开发大会 北京站 4月25-27日</a></p>]]></content:encoded>
+			<wfw:commentRss>http://www.daqianduan.com/5363.html/feed</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>优安鲜品招Web前端开发工程师(上海)</title>
+		<link>http://www.daqianduan.com/5355.html</link>
+		<comments>http://www.daqianduan.com/5355.html#comments</comments>
+		<pubDate>Fri, 07 Mar 2014 01:51:56 +0000</pubDate>
+		<dc:creator><![CDATA[浩子]]></dc:creator>
+				<category><![CDATA[名企招聘]]></category>
+		<category><![CDATA[招聘]]></category>
+
+		<guid isPermaLink="false">http://www.daqianduan.com/?p=5355</guid>
+		<description><![CDATA[优安鲜品，批发采购进口食品公司，现招募Web前端开发工程师。 地点：上海 职位描述： 负责网站的前端的实现；  [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>优安鲜品，批发采购进口食品公司，现招募Web前端开发工程师。</p>
+<p><strong>地点：</strong>上海</p>
+<img class="size-full wp-image-5356" alt="优安鲜品" src="http://www.daqianduan.com/wp-content/uploads/2014/03/youan.jpg" />
+<h2>职位描述：</h2>
+<ul>
+<li>负责网站的前端的实现；</li>
+<li>利用<a title="携程(上海)框架研发部招开发工程师(偏前端)" href="http://www.daqianduan.com/4977.html" target="_blank">HTML/CSS</a>制作高质量的页面代码；</li>
+<li>提升网站的前端性能，保证前端应用具有<a title="IE11很是生猛：前端们应该关注最近浏览器市场占有率" href="http://www.daqianduan.com/5242.html" target="_blank">跨浏览器</a>和跨平台兼容性及可访问性；</li>
+<li>创建并完善内部所使用的前端工具和框架；</li>
+<li>定义与后端工程师合作的边界、标准化与后端程序的接口。</li>
+</ul>
+<h2>职位要求：</h2>
+<ul>
+<li>熟练掌握<a title="北京网易电商招聘JavaScript工程师" href="http://www.daqianduan.com/4916.html" target="_blank">JavaScript</a>，并有实际应用开发经验，</li>
+<li>掌握AJAX相关技术,熟悉<a title="推荐优秀jQuery图片插件10+" href="http://www.daqianduan.com/3815.html" target="_blank">jQuery</a>,ExtJS等开源框架中的一种或多种；</li>
+<li>有良好的文档书写及编码习惯,有自己实现的JsFramework经验和控件开发经验者优先考虑；</li>
+<li>一年以上前端开发经验，熟练掌握DIV+CSS、HTML等web标准化设计，有UI交互设计经验者优先考虑；</li>
+<li>熟悉各主流浏览器特性，并能处理好主流浏览器兼容性问题；</li>
+<li>熟练掌握前端页面与后台服务的数据交换机制；</li>
+<li>具有良好的团队合作精神，善于沟通交流；</li>
+<li>勇于挑战，能承受一定工作压力；</li>
+<li>富有责任心，热情，积极向上。</li>
+</ul>
+<p><strong>公司网址：</strong><a href="http://www.youanxianpin.net" target="_blank">http://www.youanxianpin.net</a></p>
+<p><strong>联系邮箱：</strong>506516492@qq.com</p>
+<p>转载请注明：<a href="http://www.daqianduan.com">大前端</a> &raquo; <a href="http://www.daqianduan.com/5355.html">优安鲜品招Web前端开发工程师(上海)</a></p>]]></content:encoded>
+			<wfw:commentRss>http://www.daqianduan.com/5355.html/feed</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>京东招聘Web前端开发工程师(中/高/资深) 8-22K</title>
+		<link>http://www.daqianduan.com/5341.html</link>
+		<comments>http://www.daqianduan.com/5341.html#comments</comments>
+		<pubDate>Wed, 05 Mar 2014 01:57:35 +0000</pubDate>
+		<dc:creator><![CDATA[浩子]]></dc:creator>
+				<category><![CDATA[名企招聘]]></category>
+		<category><![CDATA[京东]]></category>
+		<category><![CDATA[前端招聘]]></category>
+
+		<guid isPermaLink="false">http://www.daqianduan.com/?p=5341</guid>
+		<description><![CDATA[京东(北京)诚聘前端开发工程师 职位：Web前端开发工程师(中/高/资深) 工作地点：北京 朝阳（地铁八号线“ [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>京东(北京)诚聘前端开发工程师</p>
+<p>职位：<strong>Web前端开发工程师(中/高/资深)</strong></p>
+<p>工作地点：<strong>北京 朝阳</strong>（地铁八号线“奥林匹克公园站”旁）<br />
+基本薪资：<strong>8-22K</strong></p>
+<p>提示：重构和JS有偏向者亦可；有意者可随时发简历，可推荐至京东其它部门。</p>
+<h2>工作职责：</h2>
+<ul>
+<li>负责前端界面的前端构建，各类交互设计与实现；</li>
+<li>前端样式和脚本的模块设计及优化；</li>
+<li>配合后台开发人员完成项目；</li>
+</ul>
+<h2>职位要求：</h2>
+<ul>
+<li>专科及以上学历，2年以上前端重构与脚本开发经验，计算机或相关专业者优先；</li>
+<li>精通XHTML/XML、CSS，熟悉页面架构和布局，对表现与数据分离、Web语义化等有深刻理解，对HTML5/CSS3等技术有一定了解，熟练使用less或sass进行前端开发、了解nodejs者优先；</li>
+<li>精通JavaScript、Ajax、DOM等前端技术，掌握面向对象编程思想，对js框架应用（如prototype/jQuery/YUI/Ext等）有一定的经验；</li>
+<li>对css/JavaScript性能优化、解决多浏览器兼容性问题有一定的经验；</li>
+<li>对用户体验、交互操作流程、及用户需求有深入理解；</li>
+<li>有强烈的上进心和求知欲，善于学习和运用新知识，善于沟通和逻辑表达，有强烈的团队意识和执行力；</li>
+</ul>
+<p>有意者请将简历发到：fengweiping@jd.com （可附上作品）<br />
+注：面试包含“笔试”或“上机”。</p>
+<p>来源：<a href="http://www.uedup.com" target="_blank">http://www.uedup.com</a></p>
+<p>转载请注明：<a href="http://www.daqianduan.com">大前端</a> &raquo; <a href="http://www.daqianduan.com/5341.html">京东招聘Web前端开发工程师(中/高/资深) 8-22K</a></p>]]></content:encoded>
+			<wfw:commentRss>http://www.daqianduan.com/5341.html/feed</wfw:commentRss>
+		<slash:comments>7</slash:comments>
+		</item>
+		<item>
+		<title>想好了就去做，当你还敢的时候</title>
+		<link>http://www.daqianduan.com/5334.html</link>
+		<comments>http://www.daqianduan.com/5334.html#comments</comments>
+		<pubDate>Mon, 24 Feb 2014 05:34:38 +0000</pubDate>
+		<dc:creator><![CDATA[浩子]]></dc:creator>
+				<category><![CDATA[杂七杂八]]></category>
+		<category><![CDATA[浩子]]></category>
+
+		<guid isPermaLink="false">http://www.daqianduan.com/?p=5334</guid>
+		<description><![CDATA[提交了离职单，近几日将在携程框架研发部前端团队辞职，下家是家。 感谢UED的同事、感谢框架研发的同事、尤其感谢 [&#8230;]]]></description>
+				<content:encoded><![CDATA[<div id="attachment_5335" style="width: 230px" class="wp-caption aligncenter"><img class="size-full wp-image-5335" alt="不要让地球玩你" src="http://www.daqianduan.com/wp-content/uploads/2014/02/man.jpg" width="220" height="150" /><p class="wp-caption-text">不要让地球玩你</p></div>
+<p>提交了离职单，近几日将在携程框架研发部前端团队辞职，下家是家。</p>
+<p>感谢UED的同事、感谢框架研发的同事、尤其感谢前端框架的各位牛牛，不敢忘你们的支持和帮助。</p>
+<p>几年前第一份在苏州的工作开始，历经郑州，再到上海。工作地点不很多，却也积累了不少经验，迄今截止所在的最后团队是我经过的最好的，在此离职，实不忍心。想了想，这些年除了工资涨了，行业内经验涨了，阅历涨了，我还得到什么？这是我想要的吗？我还想得到什么？</p>
+<p>想法不会一瞬间凝结，崇尚自由的我早已不太乐于服务各种企业，就在前几天，想走的念头愈烈爆发，瞬间辞职并准备打包回家。有人问我有没有什么目标，我想了想，没有，但仔细想想，是自由，尽管在人眼中这是逃避。没有想太多，只是想好了要离开，要窝在家里，想干的时候多干，不想干的时候不干，只要不饿着，就还有追寻自由的力气。</p>
+<p>想想自己从前的种种抉择，无不是瞬间的匆忙，过后又是那么的平静。</p>
+<p>为自己干活，很直接的念头，没有顾虑，或许会有些许不安，但那只不过是对未来不确定因素的心理恐慌，经历过，就不再害怕。</p>
+<p>未来，很模糊；现在，追寻着&#8230;</p>
+<p>想好了就去做，当你还敢的时候。</p>
+<p>转载请注明：<a href="http://www.daqianduan.com">大前端</a> &raquo; <a href="http://www.daqianduan.com/5334.html">想好了就去做，当你还敢的时候</a></p>]]></content:encoded>
+			<wfw:commentRss>http://www.daqianduan.com/5334.html/feed</wfw:commentRss>
+		<slash:comments>131</slash:comments>
+		</item>
+		<item>
+		<title>D8主题3.0手机浏览无文章标题修复</title>
+		<link>http://www.daqianduan.com/5327.html</link>
+		<comments>http://www.daqianduan.com/5327.html#comments</comments>
+		<pubDate>Sun, 16 Feb 2014 12:40:36 +0000</pubDate>
+		<dc:creator><![CDATA[浩子]]></dc:creator>
+				<category><![CDATA[Wordpress]]></category>
+		<category><![CDATA[D8主题]]></category>
+		<category><![CDATA[D8主题Bug]]></category>
+		<category><![CDATA[D8主题更新]]></category>
+
+		<guid isPermaLink="false">http://www.daqianduan.com/?p=5327</guid>
+		<description><![CDATA[为了应急，先在这里发布修复该问题，也就是很多人说的微信打开网页只有图片类似的问题。 更改 style.css  [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>为了应急，先在这里发布修复该问题，也就是很多人说的微信打开网页只有图片类似的问题。</p>
+<p>更改 style.css 文件的最后几行为以下内容：</p>
+<pre class="prettyprint linenums">.excerpt .focus{width: 100px;height: 68px;margin-bottom: 0;float:left;display:inline;margin-left:-115px;}
+.excerpt .focus a{width: 100px;height: 68px;}
+.excerpt .focus a img{max-width: 100px;max-height: 68px;}
+.excerpt header h2{font-size: 18px;line-height: 20px;display: block;}
+.excerpt header .label{display: none;}
+.excerpt header{margin-bottom: 5px;margin-right: 0;}
+.excerpt p{display: none;}
+.excerpt p.note{display: block;height: 40px;overflow: hidden;line-height: 20px;}
+.banner{display: none;}
+}
+
+@media (max-width:360px){
+.excerpt header h2{font-size: 16px;}
+.excerpt p.note{display: none;}
+.navbar .menu .btn-group{display: none;}
+}</pre>
+<p>由于其他各种新的需求在进行中，这里说明一下会在两周内增加一些功能和一些问题的修复，如有重要问题会先行发布，感谢大家的支持。</p>
+<p>转载请注明：<a href="http://www.daqianduan.com">大前端</a> &raquo; <a href="http://www.daqianduan.com/5327.html">D8主题3.0手机浏览无文章标题修复</a></p>]]></content:encoded>
+			<wfw:commentRss>http://www.daqianduan.com/5327.html/feed</wfw:commentRss>
+		<slash:comments>46</slash:comments>
+		</item>
+		<item>
+		<title>D8主题3.0版本更新 多项新增和修改</title>
+		<link>http://www.daqianduan.com/5305.html</link>
+		<comments>http://www.daqianduan.com/5305.html#comments</comments>
+		<pubDate>Thu, 16 Jan 2014 12:57:12 +0000</pubDate>
+		<dc:creator><![CDATA[浩子]]></dc:creator>
+				<category><![CDATA[Wordpress]]></category>
+		<category><![CDATA[D8主题]]></category>
+		<category><![CDATA[D8主题更新]]></category>
+
+		<guid isPermaLink="false">http://www.daqianduan.com/?p=5305</guid>
+		<description><![CDATA[D8主题的大更新来了，除修复之前的Bug外，还新增多项用户建议。 D8主题3.0更新内容： 修复 &#8211 [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p><a title="D8主题" href="http://www.daqianduan.com/theme/d8">D8主题</a>的大更新来了，除修复之前的Bug外，还新增多项用户建议。</p>
+<h2>D8主题3.0更新内容：</h2>
+<ul>
+<li>修复 &#8211; 文章列表Ajax只加载一次；</li>
+<li>修复 &#8211; 页面（新版）模版评论头像不显示；</li>
+<li>修复 &#8211; 评论框表情时而显示错位；</li>
+<li><span style="color: #339966;">修改</span> - 分享图标改成大号32px；</li>
+<li><span style="color: #339966;">修改</span> - 移动端文章列表展示更简洁；</li>
+<li><span style="color: #339966;">修改</span> - 页面模版移动端自适应，包含：页面（新版）、友情链接、存档、标签页、投稿、读者墙；</li>
+<li><span style="color: #339966;">修改</span> &#8211; 导航菜单支持3级菜单；</li>
+<li><span style="color: #339966;">修改</span> &#8211; 页面滚动时全站侧栏模块随动；</li>
+<li><span style="color: #339966;">修改</span> &#8211; 自定义广告在移动端不显示；</li>
+<li><span style="color: #ff0000;">新增</span> &#8211; 文章列表缩略图可选显示；</li>
+<li><span style="color: #ff0000;">新增</span> &#8211; 分享在移动端隐藏；</li>
+<li><span style="color: #ff0000;">新增</span> &#8211; 分享是否显示开关；</li>
+<li><span style="color: #ff0000;">新增</span> &#8211; 文章页相关文章显示数目控制，默认：12；</li>
+<li><span style="color: #ff0000;">新增</span> &#8211; 列表中文章属性是否显示开关，包含：访客数、作者、评论数、时间；</li>
+<li><span style="color: #ff0000;">新增</span> &#8211; 文章来源自定义域，名称 from.name 和 from.link ，值自定义，设置任意一个或两个均可在文章末尾添加来源；</li>
+</ul>
+<p>其他小问题就不说了，上面的修改和新增大部分来自用户的反馈，还有少部分的建议在计划中，只要合理，你提的都会满足。</p>
+<p>由于更新较多，建议直接覆盖替换，然后修改你曾经动过的文件，要备份！</p>
+<p>D8主题3.0更新包已发送各位购买者在大前端的邮箱，请查收。</p>
+<p>转载请注明：<a href="http://www.daqianduan.com">大前端</a> &raquo; <a href="http://www.daqianduan.com/5305.html">D8主题3.0版本更新 多项新增和修改</a></p>]]></content:encoded>
+			<wfw:commentRss>http://www.daqianduan.com/5305.html/feed</wfw:commentRss>
+		<slash:comments>176</slash:comments>
+		</item>
+		<item>
+		<title>D8只需188 大前端主题优惠券 2014元旦特卖 最高立减41</title>
+		<link>http://www.daqianduan.com/5288.html</link>
+		<comments>http://www.daqianduan.com/5288.html#comments</comments>
+		<pubDate>Thu, 19 Dec 2013 08:15:35 +0000</pubDate>
+		<dc:creator><![CDATA[浩子]]></dc:creator>
+				<category><![CDATA[Wordpress]]></category>
+		<category><![CDATA[大前端优惠券]]></category>
+
+		<guid isPermaLink="false">http://www.daqianduan.com/?p=5288</guid>
+		<description><![CDATA[大前端送福利了，只需188就能使用正版D8主题，元旦嘛，总要给力点，8折优惠啦~ 为了让需要的人买上合适的主题 [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>大前端送福利了，只需188就能使用正版D8主题，元旦嘛，总要给力点，8折优惠啦~</p>
+<p>为了让需要的人买上合适的主题，请不要自私的乱用优惠码；此次优惠共有两种面额，29和41，好吧，拼RP的时候到了，祝好运！</p>
+<p><strong>用法：</strong>下单后，订单列表有使用优惠券的链接，点击输入优惠券代码即可立减。</p>
+<p><span style="color: #ff0000;">(最新优惠码更新 2014-01-17，<span style="color: #008000;">优惠券结束日期：2014-01-31</span>)</span></p>
+<p><strong>来吧，用以下优惠券<a title="D8主题" href="http://www.daqianduan.com/theme/d8" target="_blank">购买D8主题</a>、<a title="D-Simple主题" href="http://www.daqianduan.com/theme/d-simple" target="_blank">D-Simple主题</a>、<a title="D7主题" href="http://www.daqianduan.com/theme/d7" target="_blank">D7主题</a>：</strong></p>
+<ol>
+<li>5sEfuWcMO3OXznqs</li>
+<li>0ysNsnHqljJgF3NX</li>
+<li>iLDTrC8khV5TfLiM</li>
+<li>IQLOKVr3LOGdqEta</li>
+<li>NOgLjcIUBhWYi09g</li>
+<li>0vNucgBWGKQM2q7f</li>
+<li>2Zhg93OkQAfOxRwp</li>
+<li>W54BrMm1kzKckeme</li>
+<li>iXjVgzxuY4P1hUDb</li>
+<li>mZ0sFjG90CI1YEGo</li>
+<li>XuaZLUKMcPGs60TA</li>
+<li>ahxhIBF1KecTqz3s</li>
+<li>PmvZ37zNxRGRmUe2</li>
+<li>HewXN95E6IRCYrhZ</li>
+<li>JepbMZAVKhH9G8Hb</li>
+<li>5LxINlY3Wm4SJrOY</li>
+<li>SJmyViylAsMkZUs5</li>
+<li>2UZYZpWSZ8wV6NNf</li>
+<li>MfB81uASs0R1En1S</li>
+<li>50HbRIS9zzfxQHGv</li>
+<li>tQxYAJCf5QYEeqMZ</li>
+<li>BGiBo4KJfKafAlWU</li>
+<li>O2Xx96Mst2vkajjN</li>
+<li>I4kH7mA3efG8iciQ</li>
+<li>3qc8qGunartgSIcW</li>
+<li>QGPgM9NvsaLXtXYU</li>
+<li>pDj1viSNUyhXJUzX</li>
+<li>0kiO7GzHEwsXhCsW</li>
+<li>4hy4oUT4peQxSYOB</li>
+<li>JKKkkQfJJ3jSXKxe</li>
+<li>m6VzCKP8UGr6FMXD</li>
+<li>aMxURiB2sJHyO5lm</li>
+</ol>
+<p>如果有什么问题，直接邮箱联系，本文评论将关闭，谢谢支持！</p>
+<p>转载请注明：<a href="http://www.daqianduan.com">大前端</a> &raquo; <a href="http://www.daqianduan.com/5288.html">D8只需188 大前端主题优惠券 2014元旦特卖 最高立减41</a></p>]]></content:encoded>
+			<wfw:commentRss>http://www.daqianduan.com/5288.html/feed</wfw:commentRss>
+		<slash:comments>6</slash:comments>
+		</item>
+		<item>
+		<title>D8主题2.3版本更新 修改移动端菜单展示</title>
+		<link>http://www.daqianduan.com/5284.html</link>
+		<comments>http://www.daqianduan.com/5284.html#comments</comments>
+		<pubDate>Wed, 18 Dec 2013 01:34:49 +0000</pubDate>
+		<dc:creator><![CDATA[浩子]]></dc:creator>
+				<category><![CDATA[Wordpress]]></category>
+		<category><![CDATA[D8主题]]></category>
+		<category><![CDATA[D8主题更新]]></category>
+		<category><![CDATA[大前端主题]]></category>
+
+		<guid isPermaLink="false">http://www.daqianduan.com/?p=5284</guid>
+		<description><![CDATA[距离D8 2.2版本刚一个月，本次D8 2.3版本修复以下主要内容： 修改：移动端导航和搜索，并修复横向滑动  [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>距离<a title="D8主题2.2版本更新：lazyload头像和表情 ajax分页 代码高亮" href="http://www.daqianduan.com/5253.html">D8 2.2版本</a>刚一个月，本次D8 2.3版本修复以下主要内容：</p>
+<ul>
+<li>修改：移动端导航和搜索，并修复横向滑动<br />
+<span style="color: #999999;">style.css  line 1237-1267 1317-1319</span><br />
+<span style="color: #999999;"> js/jquery.js  line 146-147</span></li>
+</ul>
+<ul>
+<li>增加：文章图片+标题样式，并自适应屏幕<br />
+<span style="color: #999999;">style.css  line 920-923</span></li>
+<li>修改：侧栏评论为一条显示%<br />
+<span style="color: #999999;">widgets/wid-postlist.php  line 102</span></li>
+<li>增加：面包屑导航多级菜单<br />
+<span style="color: #999999;">functions.php  line 129</span></li>
+<li>修改：分类描述<br />
+<span style="color: #999999;">functions.php  line 302</span></li>
+<li>增加：案例展示独立页面流量统计<br />
+<span style="color: #999999;">pages/eaample.php  line 43</span></li>
+</ul>
+<p>备注：不少同学问到为什么大前端上有一些更改是主题包里面没有的，很简单，测试之后它们很快就会正式到你的手上。</p>
+<p>主题包已经发送各位买主邮箱，如有疑问请直接邮件回复。</p>
+<p>转载请注明：<a href="http://www.daqianduan.com">大前端</a> &raquo; <a href="http://www.daqianduan.com/5284.html">D8主题2.3版本更新 修改移动端菜单展示</a></p>]]></content:encoded>
+			<wfw:commentRss>http://www.daqianduan.com/5284.html/feed</wfw:commentRss>
+		<slash:comments>132</slash:comments>
+		</item>
+		<item>
+		<title>公告：大前端D8主题等其他主题支持wordpress 3.8版本</title>
+		<link>http://www.daqianduan.com/5280.html</link>
+		<comments>http://www.daqianduan.com/5280.html#comments</comments>
+		<pubDate>Fri, 13 Dec 2013 02:50:42 +0000</pubDate>
+		<dc:creator><![CDATA[浩子]]></dc:creator>
+				<category><![CDATA[网站公告]]></category>
+		<category><![CDATA[D8主题]]></category>
+		<category><![CDATA[wordpress]]></category>
+		<category><![CDATA[wordpress主题]]></category>
+		<category><![CDATA[大前端主题]]></category>
+
+		<guid isPermaLink="false">http://www.daqianduan.com/?p=5280</guid>
+		<description><![CDATA[看道wordpress 3.8版本出来，很激动，特别喜欢平面化的设计风格，但是使用之后，感觉不怎么优秀，风格设 [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>看道<a title="WordPress主题" href="http://www.daqianduan.com/theme">wordpress </a>3.8版本出来，很激动，特别喜欢平面化的设计风格，但是使用之后，感觉不怎么优秀，风格设计的不到位。</p>
+<p>经过多番测试，<a title="D8主题" href="http://www.daqianduan.com/theme/d8">D8主题</a>等其他大前端主题均支持wordpress 3.8版本，大家放心使用吧。建议发布稳定版本后再更新，因为3.8版本没有特别的更新什么，只是改了<a title="我不是一个简单的web UI" href="http://www.daqianduan.com/2276.html">UI设计</a>方面，所以不用着急。如果等不及，直接更新也是可以的，3.7版本的语言包还能正常使用。</p>
+<div id="attachment_5281" style="width: 810px" class="wp-caption aligncenter"><img class="size-full wp-image-5281" alt="wordpress 3.8" src="http://www.daqianduan.com/wp-content/uploads/2013/12/wordpress-3.8.jpg" width="800" height="395" /><p class="wp-caption-text">wordpress 3.8</p></div>
+<p>这段时间在整理很多客户返回的问题和建议，感觉一个人的战斗有些累，为了给主题用户带来更好的体验，大前端决定去个人化，吸纳优秀主题人士共筑美好未来，所以过段时间后各种相关服务均会翻倍升级。在这里还是要向对个别用户服务不到位的情况致歉，我们一直在努力做的更好。当然，如果你觉得可以做些什么，可以加入进来，haozi@daqianduan.com。</p>
+<p>除服务外，大前端决定在主题更新上加快进程，D8主题暂时定为两周一个更新，之前的主题均会逐步更新升级，可能会缓慢，但绝不是放弃，所以如果你还有什么好的建议，尽管提给我们。</p>
+<p><strong>预告：</strong>下周会更新D8主题几个功能和N个小Bug。</p>
+<p>转载请注明：<a href="http://www.daqianduan.com">大前端</a> &raquo; <a href="http://www.daqianduan.com/5280.html">公告：大前端D8主题等其他主题支持wordpress 3.8版本</a></p>]]></content:encoded>
+			<wfw:commentRss>http://www.daqianduan.com/5280.html/feed</wfw:commentRss>
+		<slash:comments>74</slash:comments>
+		</item>
+	</channel>
+</rss>
