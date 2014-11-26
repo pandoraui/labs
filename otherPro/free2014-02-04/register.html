@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>注册页面</title>
+    <meta name="author" content="xiaohan" />
+    <link rel="stylesheet" href="style/base.css" />
+    <link rel="stylesheet" href="style/style.css" />
+</head>
+<body class="register">
+<!--mod_gb_header-->
+<div class="mod_gb_header">
+    <div class="content">
+        <h1><a href=""><img src="images/gb/gb_logo.png" alt=""/></a></h1>
+        <span class="login_info yahei">免费注册</span>
+        <div class="login_bar">
+            
+            <p class="user"><a href="#" class="link-home">自由联盟首页</a><a href="#" class="link-login">登录</a></p>
+            <div class="mini_cart">
+                <a href="" class="num">购物车<strong>5</strong>件</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/mod_gb_header-->
+
+
+<!--regbox-->
+<div class="regbox clearfix">
+    <div class="xstep">
+        <img src="images/register-step1.png" width="900" height="70" alt="" />
+    </div>
+    
+    <div class="xbox regbox1">
+        <ul class="ul-ver">
+            <li>
+                <label class="xlabel">用户昵称<i class="req">*</i></label>
+                <input id="username" type="text" class="input-text" />
+                <p class="xinfo">
+                    <span class="default">请输入4-16个字符，中英文均可，一个中文为2个字符，推荐使用中文名</span>
+                    <span class="warning"><i class="icon icon-warning"></i>请填写正确的邮箱地址</span>
+                    <span class="success"><i class="icon icon-success"></i>输入正确</span>
+                    <span class="error"><i class="icon icon-error"></i>输入错误</span>
+                </p>
+            </li>
+            <li>
+                <label class="xlabel">邮箱地址<i class="req">*</i></label>
+                <input id="email" type="text" class="input-text" />
+                <p class="xinfo">
+                    <span class="default">请填写常用邮箱地址，可作为自由联盟登录帐号</span>
+                    <span class="warning"><i class="icon icon-warning"></i>请填写正确的邮箱地址</span>
+                    <span class="success"><i class="icon icon-success"></i>输入正确</span>
+                    <span class="error"><i class="icon icon-error"></i>输入错误</span>
+                </p>
+            </li>
+            <li>
+                <label class="xlabel">登录密码<i class="req">*</i></label>
+                <input id="password1" type="password" class="input-text" />
+                <p class="xinfo">
+                    <span class="default">6-16个字符，请用英文字母加数字组合</span>
+                    <span class="warning"><i class="icon icon-warning"></i>请填写6-16个密码</span>
+                    <span class="success"><i class="icon icon-success"></i>输入正确</span>
+                    <span class="error"><i class="icon icon-error"></i>输入不符要求</span>
+                </p>
+            </li>
+            <li>
+                <label class="xlabel">确认密码<i class="req">*</i></label>
+                <input id="password2" type="password" class="input-text" />
+                <p class="xinfo">
+                    <span class="default">请再次输入密码</span>
+                    <span class="warning"><i class="icon icon-warning"></i>请填写6-16个密码</span>
+                    <span class="success"><i class="icon icon-success"></i>输入正确</span>
+                    <span class="error"><i class="icon icon-error"></i>输入不符要求</span>
+                </p>
+            </li>
+            <li>
+            <label class="xlabel">验证码<i class="req">*</i></label>
+                <input id="verifycode" type="text" class="input-text" />
+                <p class="xinfo">
+                    <a href="#" class="verifycode"><img src="images/verifycode.jpg" alt="验证码" /></a>　看不清，<a href="#" class="xlink">换一张</a>
+                    <span class="default"></span>
+                </p>
+            </li>
+            <li class="btnbox">
+                <a href="javascript:;" class="xbtn regbtn"><span>已阅读并同意条款</span></a>
+            </li>
+            <li><a href="#" class="xlink">自由联盟平台条款</a></li>
+            <li><textarea readonly class="xtextarea">自由联盟平台服务条款
+自由联盟平台服务条款自由联盟平台服务条款自由联盟平台服务自由联盟平台服务条款自由联盟平台服务条款自由联盟平台服务条款自由联盟平台服务自由联盟平台服务条款自由联盟平台服务条款自由联盟平台服务条款自由联盟平台服务自由联盟平台服务条款自由联盟平台服务条款自由联盟平台服务条款自由联盟平台服务自由联盟平台服务条款自由联盟平台服务条款自由联盟平台服务条款自由联盟平台服务自由联盟平台服务条款自由联盟平台服务条款自由联盟平台服务条款自由联盟平台服务</textarea></li>
+        </ul>
+        
+        <!--操作提醒示例-->
+        <ul>
+            <li><input type="text" class="input-text" /><p class="xinfo"><span class="default">默认：请填写常用邮箱地址，可作为自由联盟登录帐号</span></p></li>
+            <li><input type="text" class="input-text input-warning" /><p class="xinfo"><span class="warning"><i class="icon icon-warning"></i>请填写正确的邮箱地址</span></p></li>
+            <li><input type="text" class="input-text input-success" /><p class="xinfo"><span class="success"><i class="icon icon-success"></i>输入正确</span></p></li>
+            <li><input type="text" class="input-text input-error" /><p class="xinfo"><span class="error"><i class="icon icon-error"></i>输入错误或不能为空</span></p></li>
+        </ul>
+        
+        
+    </div>
+</div>
+<!--//regbox-->
+
+
+
+<!--mod_footer-->
+<div class="mod_footer">
+    <div class="cont">
+        <ul class="list">
+            <li class="sub_li">
+                <h4>关于我们</h4>
+                <ul>
+                    <li><a href="">了解我们</a></li>
+                    <li><a href="">联系我们</a></li>
+                    <li><a href="">全球招商</a></li>
+                </ul>
+                <i class="icon2"></i>
+            </li>
+            <li class="sub_li">
+                <h4>新手上路</h4>
+                <ul>
+                    <li><a href="">免费注册</a></li>
+                    <li><a href="">购物指南</a></li>
+                    <li><a href="">常见问题</a></li>
+                </ul>
+                <i class="icon1"></i>
+            </li>
+            <li class="sub_li">
+                <h4>消费保障</h4>
+                <ul>
+                    <li><a href="">担保交易</a></li>
+                    <li><a href="">消费者保障</a></li>
+                    <li><a href="">自由联盟认证</a></li>
+                </ul>
+                <i class="icon3"></i>
+            </li>
+            <li class="sub_li">
+                <h4>网站条款</h4>
+                <ul>
+                    <li><a href="">用户协议</a></li>
+                    <li><a href="">隐私保护</a></li>
+                    <li><a href="">版权声明</a></li>
+                </ul>
+                <i class="icon4"></i>
+            </li>
+        </ul>
+    </div>
+    <p class="cop">事事旺（中国）版权所有&nbsp;&nbsp;&nbsp;&nbsp;2007-2008&nbsp;&nbsp;SSWOO.COM.All Right Reserved.沪ICP备12013349号</p>
+    <p class="imgbox">
+        <a href="" target="_blank"><img src="images/gb/b3.png" alt=""/></a>
+        <a href="" target="_blank"><img src="images/gb/b4.png" alt=""/></a>
+    </p>
+</div>
+<!--mod_footer-->
+<script src="js/jquery-1.8.3.min.js"></script>
+<script>
+$(function(){
+    function tipinfo(that,tiptype,tipinfo){
+        $(that).attr("class","input-text input-"+tiptype).next("p").find("."+ tiptype).html('<i class="icon icon-'+ tiptype +'"></i>'+tipinfo).show().siblings("span").hide();
+    }
+    
+    //验证用户名
+    $("#username").focus(function(){
+        tipinfo(this,"warning","提示或警告信息");
+    }).blur(function(){
+        if($(this).val() == ""){
+            tipinfo(this,"error","用户名不能为空");
+        }
+        if($(this).val()){
+            tipinfo($("#username"),"success","输入正确");
+        }
+    })
+    
+    //验证邮箱
+    $("#email").focus(function(){
+        
+        tipinfo(this,"warning","提示信息");
+    }).blur(function(){
+        if($(this).val() == ""){
+            tipinfo(this,"error","邮箱不能为空");
+        }
+    })
+    
+    
+    
+
+})
+</script>
+</body>
+</html>

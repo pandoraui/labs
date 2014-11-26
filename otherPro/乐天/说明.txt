@@ -1,0 +1,7 @@
+list页面实现用了两种方法，list-blue和list-b
+
+list-blue ：  <div id="content" class="bc clearfix blue"><!-- 此处使用复合实现五种样式效果，按banner栏目颜色分别是yellow blue green orange purple -->
+
+list-b：右侧头部可自定义文字的，不是使用的背景文字，想过看list-b.html
+
+默认写的不是用的list-b（样式在页面内）

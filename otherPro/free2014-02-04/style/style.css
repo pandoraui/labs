@@ -1,0 +1,457 @@
+
+/* 自由联盟样式表
+ * Create：20140126 by xiaohan
+**/
+
+/*common*/
+body .hide{display:none;}
+.xlink{color:#339;}
+.xlink:hover{color:#c39;text-decoration:underline;}
+img{vertical-align:top;}
+button,
+input {
+    line-height: normal;
+
+    /* IE6/7 内间距宽度一致 */
+    *overflow: visible; 
+}
+.ul-hor:after,
+.ul-ver:after,
+.dl-hor:after,
+.dl-ver:after,
+.clearfix:after,.wrap:after{clear:both;content:' ';display:block;font-size:0;line-height:0;visibility:hidden;width:0;height:0}
+.ul-hor,.ul-ver,.dl-hor,.dl-ver,.clearfix,.wrap{zoom:1}
+.wrap{width:980px;margin-left:auto;margin-right:auto;}
+dl.dl-ver dt,
+dl.dl-ver dd{display:block;font-weight:normal;}
+dl.dl-hor dt{float:left;display:inline;margin-right:10px;}
+dl.dl-hor dd{overflow:hidden;}
+a:active{outline:none;}
+.num,.price,dfn{font-style:normal;font-family:Arial,sans-serif}
+dfn{color:#f60;}
+.pink{color:#c00;}
+.red{color:#f00;}
+
+.icon-edit,.iarr,.subli,.strabox,.strabox i,.input-date{display:inline-block;background:url(../images/sprite.png) 0 -280px no-repeat;height:20px;width:83px;vertical-align: middle;}
+.strabox i{float:left;width:100%;height:100%;background-position:0 -300px;}
+.input-date{background-position:101% -220px;}
+.icon{background:url(../images/tipicon.png) -9999px -9999px no-repeat;}
+.xbtn,.xbtn span{background:url(../images/xbtn.png) no-repeat;color:#fff;}
+.xbtn{display:inline-block;height:32px;line-height:32px;background-position:0 0;cursor:pointer;}
+.xbtn span{display:inline-block;padding-right:10px;margin-left:10px;height:100%;font-weight:bold;text-align:center;background-position:right -32px;}
+.xbtn:hover{color:#fff;text-decoration:none;}
+.btn-blue{background-position:0 0;}
+.btn-blue span{background-position:right -32px;}
+.surebtn{background-position:0 -115px;height:30px;line-height:30px;border:1px solid #434da1;border-width:0 1px;}
+.surebtn span{font-weight:normal;background-position:0 -115px;}
+.btn-orange{height:30px;background-position:0 -64px;border:1px solid #f60;font-size:14px;}
+.btn-orange span{background-position:0 -64px;}
+.btn-light{height:21px;line-height:21px;border:1px solid #ccc;background-position:0 -94px;color:#333;}
+.btn-light span{background-position:0 -94px;color:#333;font-weight:normal;}
+.btn-light:hover{color:#333;}
+i.req{font-style:normal;font-weight:normal;color:#f00;}
+.input-text{border:1px solid #ccc;height:20px;line-height:20px;padding:3px 5px;background-color:#fff;}
+
+.fl,.fr{*display:inline;*zoom:1;}
+.fl{float:left;}
+.fr{float:right;}
+/*登录页面*/
+
+.yahei{font-family:"Microsoft YaHei",\5FAE\8F6F\96C5\9ED1;font-weight:normal;}
+
+.login_info{display:inline-block;position:relative;top:30px;margin:0 20px;padding:0 20px;border-left:2px solid #ccc;font-size:20px;}
+
+/*登录框*/
+.login-area{width:875px;margin:30px auto 30px;}
+.login-pic{float:left;display:inline;width:520px;height:344px;overflow:hidden;}
+.loginbox{float:right;display:inline;border:1px solid #ccc;padding:3px;overflow:hidden;background:#ebebeb;color:#333;}
+.loginbox-inner{width:286px;height:314px;padding:10px 24px;background:#fff;}
+.loginbox .input-text{width:274px;height:22px;padding:3px 5px;border:1px solid #ccc;line-height:22px;}
+.loginbox dt{padding:10px 0;}
+.loginbox .xlink{float:right;display:inline;color:#999;text-decoration:underline;}
+.loginbox .xlink:hover{color:#E04091;}
+.loginbox b{font-weight:bold;}
+.input-checkbox{position:relative;top:2px;}
+.login-btn{display:block;width:286px;height:32px;font-size:14px;}
+.login-btn span{width:266px;}
+.loginbox .login-btn{margin:10px 0;}
+
+.login .mod_footer{margin-top:30px;}
+.login .mod_footer .cop{border:none;}
+.login .cont .list{padding-bottom:5px;}
+
+/*注册页面*/
+.link-home{font-weight:normal;padding-right:5px;}
+.link-login{font-weight:bold;color:#cc3399;}
+
+.regbox{width:1000px;margin:0 auto;color:#333;}
+.xstep{text-align:center;margin:15px 0 10px;}
+.xbox li{margin:10px 0;overflow:hidden;padding-left:150px;line-height: 28px;}
+.regbox1 li{margin:15px 0;}
+.xbox li .xlabel{float:left;display:inline;margin-left:-150px;width:145px;padding-right:5px;text-align:right;height:28px;line-height:26px;}
+.xbox .xlabel .req{display:inline-block;width:16px;text-align:right;font-size:14px;position:relative;top:1px;}
+.xbox .input-text{width:168px;vertical-align:middle;}
+p.xinfo{display:inline-block;*display:inline;*zoom:1;padding-left:10px;line-height:28px;vertical-align:top;vertical-align:middle;}
+.regbtn{width:180px;}
+.regbtn span{width:160px;}
+.regbox .btnbox{margin:20px 0;}
+.xbox .warning,
+.xbox .success,
+.xbox .error{display:none;}
+
+
+.regbox .xtextarea{width:492px;height:86px;border:1px solid #d0d0d0;padding:5px 5px;overflow-x:hidden;overflow-y:scroll;color:#9e9e9e;font-size:12px;line-height: 18px;}
+
+.input-warning{border-color:#f0a307;}
+.input-error{border-color:#f8040c;}
+.regbox .icon{display:inline-block;vertical-align:text-top;width:16px;height:16px;position:relative;top:-2px;margin-right:10px;}
+.icon-warning{background-position:0 0;}
+.icon-success{background-position:0 -20px;}
+.icon-error   {background-position:0 -40px;}
+.tipbox{color:#333;}
+.tipbox .icon{display:inline-block;width:26px;height:26px;float:left;display:inline;margin-left:-40px;margin-top:3px;}
+.tip-warning .icon-warning{background-position:0 -60px;}
+
+/*表格*/
+/* 表格列表 */
+.table-list {
+    width: 100%;
+    line-height: 20px;
+    color:#333;
+    margin:10px 0;
+}
+.table-list th,
+.table-list td {
+    padding: 10px 8px;
+    border: 1px solid #d8dce5;
+    text-align: center;
+}
+.table-list tbody > tr:nth-child(even) > td,
+.table-list tbody > tr:nth-child(even) > th {
+    background-color: #f9f9f9;
+}
+
+/* 颜色主题 */
+.nobd td {
+    border: none;
+    *border:1px solid #d8dce5;
+}
+.table-light tr {
+    border: 1px solid #d8dce5;
+}
+
+.table-light thead tr,
+.table-light thead th {
+    background: #cceef4;
+    border-color: #cceef4;
+    color: #333;
+    font-weight: normal;
+}
+.table-light thead th{height:20px;line-height:20px;}
+.table-list .pname{text-align:left;width:400px;}
+.table-list .pname dl{}
+.table-list .pname dd{} 
+.table-list .pname h5{font-weight:normal;line-height:16px;height:32px;overflow:hidden;margin-bottom:12px;}
+.table-list .pname a:hover{text-decoration:underline;}
+.table-list .pname p{height:16px;line-height:16px;overflow:hidden;color:#434b4d;}
+.table-list p .xdate{float:right;}
+.table-list .num,
+.table-list dfn{font-size:14px;}
+p.xtotal{text-align:right;margin:10px 0;}
+p.xtotal dfn{font-size:24px;font-weight:bold;height:30px;line-height:30px;}
+.xblank tr,.xblank td{border:none;text-align:left;}
+
+.od-details th{text-align:left;}
+.od-details th b{font-size:14px;}
+.od-details td{text-align:left;vertical-align:top;}
+td.seller{width:80px}
+.seller,.buyer{padding:0 10px;margin-bottom:20px;}
+.seller{width:360px;}
+.buyer{width:540px;}
+.od-details h4{margin:10px 0;font-size:14px;}
+.od-details li{height:30px;line-height:30px;}
+.buyer li{float:left;display:inline;width:49%;}
+
+.qqservice {display:inline-block;*margin-top:-8px;*zoom:1;_position:relative;_top:4px;}
+.qqservice img{}
+
+
+/*我的订单*/
+.xorder{width:1200px;margin-top:30px;}
+.aside{width:220px;float:left;display:inline;margin-right:10px;}
+.sidenav{border:1px solid #e0e0e0;*zoom:1;}
+.sidenav ul{overflow:hidden;}
+.sidenav li{width:100%;}
+.navli a{position:relative;height:48px;line-height:48px;margin-top:-1px;border-top:1px solid #e0e0e0;background:url(../images/repeat-x.png) 0 0 repeat-x;color:#434b4d;font-size:14px;overflow:hidden;*zoom:1;}
+.sidenav .active{font-weight:bold;color:#434b4d;}
+.sidenav .navli a{display:block;float:left;width:168px;padding-left:50px;}
+.sidenav .active a,
+.sidenav a:hover{font-weight:bold;color:#434b4d;}
+.iarr{position:absolute;top:20px;left:180px;width:10px;height:10px;background-position:-100px -220px;}
+a:hover .iarr{background-position:-120px -220px;}
+.active .iarr,
+.active a:hover .iarr{background-position:-100px -240px;}
+.subnav{display:none;width:100%;}
+.subli{display: block;height:48px;line-height:48px;background-position:-398px -242px;background-color:#fff;}
+.selected .subnav{display:block;}
+.sidenav .subnav a{font-weight:normal;font-size:12px;padding-left:65px;}
+.sidenav .subnav a:hover{font-weight:bold;}
+.subnav a{background:none;}
+
+.xmain{float:right;width:970px;}
+.xblank{height:30px;line-height:30px;}
+.totalprice dfn{display: inline-block;height: 32px;line-height: 32px;vertical-align: top;font-size: 24px;font-weight: bold;}
+.totalprice{padding-right:10px;}
+.number{display:inline-block;height:32px;line-height:32px;}
+ 
+.graybox{overflow:hidden;border:1px solid #e0e0e0;background:#efefef;padding:6px 10px;}
+.graybox .input-text{height:18px;line-height:18px;margin:0;vertical-align:middle;}
+.input-date{width:140px;}
+.graybox label{display:inline-block;vertical-align:middle;padding:0 5px;}
+.graybox p{margin-top:10px;}
+.graybox .fr{padding-top:1px;}
+
+dl.xbox{border:1px solid #e0e0e0;margin-bottom:10px;}
+dl.xbox dt{height:40px;line-height:40px;font-size:14px;background:#efefef;}
+dl.xbox dd{padding:1px 0;}
+dl.active,dl.selected{border:none;}
+dl.active dt,dl.selected dt{background:#cceef4;border:1px solid #cceef4;border-bottom:none;}
+dl.active dd,dl.selected dd{border:1px solid #e0e0e0;border-top:none;}
+dl.xbox dt h4{float:left;display:inline;padding-left:10px;}
+dl.xbox a.xedit{font-size:12px;float:right;display:inline;padding:0 10px;color:#339;}
+dl.xbox .editbox,
+dl.xbox .infobox{display:none;}
+dl.active .editbox,
+dl.active .infobox,
+dl.selected .editbox,
+dl.selected .infobox{display:block;}
+
+dl.xbox ul{margin:15px 0 30px;}
+.infobox li{margin:0;}
+.icon-edit{margin-left:5px;width:20px;height:20px;background-position:-100px -260px;}
+.active .icon-edit{background-position:-100px -280px;}
+
+dl.xbox .tipbox{padding:10px 10px 10px 137px;margin:20px 0;}
+dl.xbox .tipbox p{margin:10px 0;}
+dl.xbox li{padding-left:215px;}
+dl.xbox li .xlabel{width:210px;margin-left:-215px;}
+
+.xh_dialog{display:none;position:absolute;z-index:1000;border:1px solid #ccc;padding:20px;width:560px;background:#fff;left:50%;margin-left:-300px;color:#333;top:200px;font-size:14px;}
+.xh_dialog p{margin:20px 0;text-align:center;}
+.xh_dialog .xh_close{position:absolute;right:5px;top:5px;cursor:pointer;font-size:16px;font-weight:bold;}
+.xh_dialog .xh_close:hover{color:#f00;}
+
+
+.selectbox,
+.select-group {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    font-size: 12px;
+}
+
+.selectbox {
+    position: relative;
+    z-index: 20;
+}
+.select-info {
+    position: relative;
+    margin: 0;
+    font-size: 12px;
+}
+.select-value {
+    /* 修复此值为空时垂直对齐问题 */
+    padding-right: 5px;
+}
+.selectbox .select-info {
+    margin: 0;
+}
+
+.select-info .select-arrow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 22px;
+    height: 100%;
+    cursor: pointer;
+}
+.select-arrow .ui-arrow-bottom {
+    top: 10px;
+    right: 6px;
+}
+
+/* 模拟输入框
+.like-input {
+    display: inline-block;
+    height: 20px;
+    margin: 0;
+    padding: 4px 6px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #555555;
+    width: 148px;
+    background-color: #ffffff;
+    border: 1px solid #aabbcc;
+    -webkit-box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.075);
+       -moz-box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.075);
+            box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.075);
+}
+.form-small .like-input {
+    height: 16px;
+    line-height: 16px;
+}
+ */
+
+.selectbox-drop {
+    display: none;
+    position: absolute;
+    top: 29px;
+    left: 0;
+    width: 99%;
+    border: 1px solid #ccc;
+    font-size: 12px;
+    line-height: 26px;
+    max-height: 160px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    vertical-align:top;
+    background:#fff;
+    text-align:left;
+}
+.over-y-scroll {
+    overflow-y: scroll;
+}
+
+.selectbox-drop ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.selectbox-drop li {
+    padding-left: 6px;
+    color: #333;
+}
+
+.selectbox-drop:hover li.selected {
+    background: none;
+    color:#333;
+}
+
+.selectbox-drop li:hover,
+.selectbox-drop li.selected,
+.selectbox-drop li.selected:hover {
+    background: #01a8c9;
+    color:#fff;
+}
+
+.selectbox-active {
+    z-index: 25;
+}
+.selectbox-active .selectbox-drop {
+    display: block;
+    background: #fff;
+}
+
+/* selectbox 长度尺寸 */
+.selectbox .like-input {
+    display: block;
+    width: auto;
+}
+
+.selectbox {
+    width: 162px;
+}
+.selectbox-min {
+    width: 42px;
+}
+.selectbox-mini {
+    width: 62px;
+}
+.selectbox-small {
+    width: 92px;
+}
+
+.selectbox-middle {
+    width: 186px;
+}
+
+.selectbox-big,
+.selectbox-large {
+    width: 270px;
+}
+.selectbox-min .selectbox-drop { width: 96%; }
+.selectbox-mini .selectbox-drop { width: 97%; }
+.selectbox-small .selectbox-drop { width: 98%; }
+.selectbox-big .selectbox-drop,
+.selectbox-large .selectbox-drop { width: 99.4%;}
+
+/* small尺寸 */
+.form-small .select-arrow {
+    top: -2px;
+}
+.form-small .selectbox-drop {
+    top: 25px;
+}
+
+.form-inline .selectbox {
+    vertical-align: middle;
+}
+/*在鼠标移动到里li上时，li的背景色发生变化*/
+.select-results .liActive{background-color: #e1e1e1;}
+
+/* css 实现arrow */
+.ui-arrow-top,
+.ui-arrow-right,
+.ui-arrow-bottom,
+.ui-arrow-left,
+.active .ui-arrow-top,
+.active .ui-arrow-right,
+.active .ui-arrow-bottom,
+.active .ui-arrow-left {
+    position: absolute;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+    overflow: hidden;
+    border-width: 3px;
+    
+    /* 边框类型必须使用solid + transparent，否则部分电脑firefox下会有问题 */
+    border-style: solid;
+    _border-style: dashed;
+    border-color: transparent;
+}
+
+
+.ui-arrow-top,
+.active .ui-arrow-bottom {
+    _border-bottom-style: solid;
+    border-top-width: 0;
+}
+.ui-arrow-right,
+.active .ui-arrow-left {
+    _border-left-style: solid;
+    border-right-width: 0;
+}
+.ui-arrow-bottom,
+.active .ui-arrow-top {
+    _border-top-style: solid;
+    border-bottom-width: 0;
+}
+.ui-arrow-left,
+.active .ui-arrow-right {
+    _border-right-style: solid;
+    border-left-width: 0;
+}
+
+.active .dark-ui-arrow-bottom, .dark-ui-arrow-top    { border-bottom-color: #333; }
+.active .dark-ui-arrow-left  , .dark-ui-arrow-right  { border-left-color  : #333; }
+.active .dark-ui-arrow-top   , .dark-ui-arrow-bottom { border-top-color   : #333; }
+.active .dark-ui-arrow-right , .dark-ui-arrow-left   { border-right-color : #333; }
+
+
+.selectbox .like-input{text-align:left;padding-left:6px;}
+.select-info{height:22px;line-height:22px;}
+.select-info{border:1px solid #e0e0e0;background:#fff;}
+.selectbox-drop{top:23px;border-color:#e0e0e0;}
+.selectbox-active .selectbox-drop{border-top:none;}

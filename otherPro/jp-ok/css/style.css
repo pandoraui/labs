@@ -1,0 +1,764 @@
+@charset "utf-8";
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, select, textarea, p, blockquote, th, td, hr, button, figure, menu, object {
+	margin:0;
+	padding:0
+}
+article, aside, details, embed, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+	display:block
+}
+audio, canvas, video {
+	display:inline-block;
+*display:inline;
+ *zoom:1
+}
+command, datalist, keygen, mark, meter, progress, rp, rt, ruby, time, wbr {
+	display:inline
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0
+}
+th {
+	text-align:inherit
+}
+fieldset, img {
+	border:0
+}
+iframe {
+	display:block
+}
+:focus {
+	outline:0
+}
+abbr, acronym {
+	border:0;
+	font-variant:normal
+}
+del {
+	text-decoration:line-through
+}
+address, caption, cite, code, dfn, em, th, var {
+	font-style:normal;
+	font-weight:500
+}
+ol, ul {
+	list-style-type:none
+}
+caption, th {
+	text-align:left
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size:100%;
+	font-weight:500
+}
+button, input, select, textarea {
+	font-size:100%
+}
+q:before, q:after {
+	content:''
+}
+sub, sup {
+	font-size:75%;
+	line-height:0;
+	position:relative;
+	vertical-align:baseline
+}
+sup {
+	top:-0.5em
+}
+sub {
+	bottom:-0.25em
+}
+a:hover {
+	text-decoration:underline
+}
+ins, a {
+	text-decoration:none
+}
+img, object {
+	vertical-align:top
+}
+.hor li {
+	display:inline;
+	float:left;
+*zoom:1
+}
+.hor li a {
+	display:block;
+	float:left
+}
+.clearfix:after, .wrap:after, .cwrap:after {
+	clear:both;
+	content:' ';
+	display:block;
+	font-size:0;
+	line-height:0;
+	visibility:hidden;
+	width:0;
+	height:0
+}
+.clearfix, .wrap, .cwrap {
+	zoom:1
+}
+.clear {
+	clear:both;
+	display:block;
+	overflow:hidden;
+	visibility:hidden;
+	width:0;
+	height:0
+}
+.text-size {
+	-webkit-text-size-adjust:100%;
+	-ms-text-size-adjust:100%;
+}
+.text-justify {
+	text-align:justify;
+	text-justify:inter-ideograph;
+}
+.opacity {
+	opacity:.5;
+	filter:alpha(opacity=50);
+}
+.B {
+	font-weight:bold
+}
+body {
+	background:#0083ff;
+	font-size:12px;
+	line-height:22px;
+	font-family:"ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3"
+}
+a {
+	color:#333;
+}
+a:hover {
+	text-decoration:none
+}
+.wrap {
+	width:950px;
+	margin-left:auto;
+	margin-right:auto
+}
+#header {
+	position:relative
+}
+#flash {
+	margin:0 -168px 0 -168px;
+	position:relative;
+	z-index:10;
+	width:1288px;
+	height:444px;
+	overflow:hidden
+}
+#flash object {
+	margin:-1px 0 0 -1px;
+	float:left;
+}
+#logo, #select_language, .top_info, #main_nav {
+	position:absolute;
+	z-index:20;
+}
+#logo {
+	width:239px;
+	height:120px;
+	background:#fff;
+	left:1px;
+	top:0;
+	z-index:30
+}
+#logo .logo_info {
+	margin:15px 0 10px 15px;
+	color:#666
+}
+#logo .logo {
+	display:block;
+	width:216px;
+	height:61px;
+	margin-left:15px;
+	background:url(../img/logo.jpg) no-repeat;
+	overflow:hidden;
+}
+#select_language {
+	top:5px;
+	right:10px;
+}
+#select_language li {
+	margin:5px 5px;
+	font-weight:bold;
+}
+#select_language a, i.L_line, i.R_line {
+	background:url(../img/language.png) no-repeat;
+}
+#select_language a {
+	height:17px;
+	overflow:hidden;
+	text-indent:-9999px;
+}
+#select_language a.lan_s1 {
+	background-position:0 0;
+	width:48px;
+}
+#select_language a.lan_s2 {
+	background-position:0 -17px;
+	width:64px;
+}
+#select_language a.lan_s3 {
+	background-position:0 -34px;
+	width:64px;
+}
+#select_language a.lan_s4 {
+	background-position:0 -51px;
+	width:48px;
+}
+#select_language a.lan_s5 {
+	background-position:0 -68px;
+	width:48px;
+}
+p.top_info {
+	top:35px;
+	right:1px;
+	width:700px;
+	padding-right:10px;
+	height:22px;
+	line-height:22px;
+	font-weight:bold;
+	text-align:right;
+	background:#5286d5;
+	color:#fff
+}
+i.arrow {
+	border-width:6px;
+	border-color:transparent transparent transparent #fff;
+	border-style:dashed dashed dashed solid;
+	width:0;
+	height:0;
+	line-height:0;
+	font-size:0;
+	overflow:hidden;
+	zoom:1
+}
+#main_nav {
+	top:57px;
+	right:1px;
+}
+.nav_item {
+	font-size:16px;
+	font-weight:bold;
+}
+.nav_item a {
+	width:142px;
+	height:42px;
+	line-height:42px;
+	display:block;
+	overflow:hidden;
+	background:#ffc400;
+	color:#b43a3b;
+	text-align:center
+}
+.nav_item a:hover, .nav_item_selected a {
+	background:#b43a3b;
+	color:#fff;
+	text-decoration:none
+}
+.subnav {
+	display:none
+}
+.nav_item, .nav_item_hover .subnav_item {
+	position:relative
+}
+i.L_line {
+	float:left
+}
+i.R_line {
+	float:right
+}
+i.L_line, i.R_line {
+	background-position:-64px 0;
+	height:42px;
+	width:3px;
+	display:inline;
+}
+.nav_item a:hover i.L_line, .nav_item a:hover i.R_line {
+	background-position:-67px 0;
+}
+.nav_item_hover .subnav {
+	display:block;
+	position:absolute;
+	top:42px;
+	left:0;
+}
+.subnav {
+	width:225px;
+}
+.subnav_item {
+	width:225px;
+	margin-top:1px;
+*margin-top:0px;
+	margin-top:0px\0;
+	zoom:1;
+}
+.subnav_item b {
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:30px;
+	background:#ffc400;
+	opacity:.7;
+	filter:alpha(opacity=70);
+	z-index:10
+}
+.subnav_item_hover b {
+	background:#b43a3b;
+	opacity:1;
+	filter:alpha(opacity=100);
+}
+.subnav_item a {
+	width:200px;
+	height:30px;
+	text-align:left;
+	padding-left:5px;
+	line-height:30px;
+	position:relative;
+	z-index:25;
+	display:block;
+	float:left;
+	background:none;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	color:#b43a3b;
+}
+.subnav_item_hover a {
+	color:#fff;
+}
+.subnav_item a:hover {
+	background:none
+}
+.nav_item i.arrow{ 
+	display:none
+}
+.nav_item_hover a:hover i.arrow {
+	position:absolute;
+	right:-2px;
+	top:15px;
+	z-index:20;
+	display:block
+}
+.subnav_item i.arrow {
+	position:absolute;
+	right:5px;
+	top:10px;
+	z-index:20
+}
+.subnav3 .subnav_item {
+	width:250px;
+}
+.subnav3 .subnav_item a {
+	width:225px;
+}
+.app-icon, a.more {
+	background:url(../img/combo.jpg) no-repeat
+}
+#side_menu {
+	float:left;
+	display:inline;
+	width:240px;
+}
+#side_menu .app-icon {
+	width:55px;
+	height:55px;
+	display:inline;
+	float:left;
+	margin-left:-60px;
+}
+.side_title1, .side_title2 {
+	background:url(../img/side_title.png) no-repeat;
+	width:240px;
+	height:80px;
+}
+.side_title2 {
+	background-position:0 0;
+}
+.side_title2 {
+	background-position:0 -80px;
+}
+.side_nav {
+	background:#c1daff;
+}
+.sidenav_item a {
+	display:block;
+	height:42px;
+	padding:0 15px 0 30px;
+	line-height:42px;
+	font-size:16px;
+	font-weight:bold
+}
+.sidenav_item i.arrow {
+	position:relative;
+	top:15px;
+	float:right;
+	border-color:transparent transparent transparent #b43a3b;
+	display:none
+}
+.sidenav_item, .sidenav_item a {
+	color:#333;
+}
+.sidenav_item_hover, .sidenav_item_selected {
+	background:#fff
+}
+.sidenav_item_hover i.arrow {
+	display:block;
+}
+.side_ad {
+	text-align:center;
+	padding:15px 0;
+	background:#fff;
+}
+.side_ad img {
+	width:180px;
+	height:62px;
+}
+.address {
+	color:#fff;
+	padding:10px 0 12px
+}
+.address h3 {
+	font-size:16px;
+}
+.address p {
+	line-height:20px;
+}
+#main {
+	background:url(../img/main_bg.png) no-repeat;
+	width:710px;
+	height:755px;
+	float:right
+}
+.con_box {
+	float:left;
+	display:inline;
+	margin:20px 0 0 20px;
+	width:325px;
+	line-height:16px;
+}
+.con_box h3 {
+	border-left:5px solid #004586;
+	padding-left:10px;
+	font-weight:bold;
+	font-size:20px;
+	overflow:hidden;
+	zoom:1
+}
+.con_box h3 a {
+	color:#004586;
+	float:left;
+	padding-left:1px;
+}
+.con_box h3 a.more {
+	float:right;
+	display:inline;
+	width:42px;
+	height:20px;
+	text-indent:-9999px;
+	background-position:0 -110px;
+}
+.con_box a:hover {
+	color:#3f99ff
+}
+.con_content {
+	padding:0;
+	margin:10px 0;
+	width:310px;
+	height:250px;
+}
+.text_list, .imgtext_list { /*height:255px;
+	overflow-y:scroll;*/
+}
+.text_list {
+	padding-left:70px;
+	width:240px;
+	padding-right:10px;
+	line-height:18px;
+}
+.text_list .con_date {
+	float:left;
+	display:inline;
+	margin-left:-70px;
+	font-weight:bold
+}
+.new {
+	display:inline-block;
+*display:inline;
+ *zoom:1;
+	background:#F00;
+	font-size:12px;
+	padding:0 2px;
+	color:#fff;
+	margin-right:3px;
+	height:14px;
+	line-height:14px;
+}
+.imgtext_list {
+	padding-left:100px;
+	padding-right:5px;
+}
+.imgtext_list .con_img {
+	float:left;
+	display:inline;
+	margin-left:-100px;
+	border:1px solid #ccc;
+	padding:2px;
+	background:#fff;
+}
+.imgtext_list li {
+	margin-bottom:5px;
+}
+#course {
+	padding:0 28px 0 30px;
+}
+.course_info {
+	color:#004586;
+	padding:25px 0 0 85px;
+	height:80px;
+	border-bottom:5px solid #3f97ff;
+}
+.course_title {
+	background:url(../img/course_title.png) no-repeat;
+	width:652px;
+	height:109px;
+}
+.course_info h2 {
+	font-size:36px;
+	line-height:40px;
+	font-weight:bold;
+}
+.course_info p {
+	line-height:18px;
+}
+.info_img, span.span_num {
+	background:url(../img/icopng24.png) no-repeat;
+}
+.info_img {
+	background-position:0 0;
+	float:left;
+	width:75px;
+	height:100px;
+	display:inline;
+	margin:-15px 0 0 -85px;
+}
+.course_list, .course_list a {
+	background:url(../img/course_item.jpg) no-repeat 0 0;
+}
+.course_list {
+	width:652px;
+	height:295px;
+	overflow:hidden
+}
+.course_list li {
+	width:217px;
+	height:98px;
+	display:block;
+}
+.course_list li a {
+	margin:1px 0 0 1px;
+	display:inline;
+	width:216px;
+	height:97px;
+}
+.course_list a {
+	background-position:9999px 9999px;
+	text-indent:-9999px;
+}
+.course_list_hover a.course_item1 {
+	background-position:0 -295px;
+}
+.course_list_hover a.course_item2 {
+	background-position:-218px -295px;
+}
+.course_list_hover a.course_item3 {
+	background-position:-218px -394px;
+}
+.course_list_hover a.course_item4 {
+	background-position:-435px -394px;
+}
+.course_list_hover a.course_item5 {
+	background-position:0 -492px;
+}
+.course_list_hover a.course_item6 {
+	background-position:-435px -492px;
+}
+#course p {
+	text-align:right;
+	padding-top:5px;
+}
+#course p a {
+	color:#8f8f8f
+}
+#footer {
+	text-align:center;
+	height:70px;
+	line-height:35px;
+	background:#3380ff;
+}
+#footer_nav {
+	background:#63abfd;
+	height:35px;
+	line-height:35px;
+	text-align:center;
+}
+.footer_nav {
+	margin:0 auto;
+	width:700px;
+}
+.footer_nav li {
+	padding:0 20px;
+}
+.footer_nav li a {
+	padding:0 10px;
+}
+.footer_nav a, .footer_nav {
+	color:#fff;
+}
+#footer p, .footer_nav li a {
+	font-weight:bold
+}
+#facebook {
+	width:30px;
+	height:120px;
+	position:fixed;
+	z-index:100;
+	right:0;
+	top:200px;
+	_position:absolute;
+top:expression(eval(document.documentElement.scrollTop)+200);
+}
+#gotop a {
+	float:right
+}
+#gotop a i.arrow {
+	border-width:6px;
+	border-color:transparent transparent #999 transparent;
+	border-style:dashed dashed solid dashed;
+	float:left;
+	position:relative;
+	top:2px;
+}
+/*
+ * CSS Styles that are needed by jScrollPane for it to operate correctly.
+ *
+ * Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane
+ * may not operate correctly without them.
+ */
+
+.jspContainer {
+	overflow: hidden;
+	position: relative;
+}
+.jspPane {
+	position: absolute;
+}
+.jspVerticalBar {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 10px;
+	height: 100%;
+	background: red;
+}
+.jspHorizontalBar {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 10px;
+	background: red;
+}
+.jspVerticalBar *, .jspHorizontalBar * {
+	margin: 0;
+	padding: 0;
+}
+.jspCap {
+	display: none;
+}
+.jspHorizontalBar .jspCap {
+	float: left;
+}
+.jspTrack {
+	position: relative;
+}
+.jspDrag {
+	background: #bbd;
+	position: relative;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+}
+.jspHorizontalBar .jspTrack, .jspHorizontalBar .jspDrag {
+	float: left;
+	height: 100%;
+}
+.jspArrow {
+	background: #50506d;
+	text-indent: -20000px;
+	display: block;
+	cursor: pointer;
+}
+.jspArrow.jspDisabled {
+	cursor: default;
+	background: #80808d;
+}
+.jspVerticalBar .jspArrow {
+	height: 10px;
+}
+.jspHorizontalBar .jspArrow {
+	width: 10px;
+	float: left;
+	height: 100%;
+}
+.jspVerticalBar .jspArrow:focus {
+	outline: none;
+}
+.jspCorner {
+	background: #eeeef4;
+	float: left;
+	height: 100%;
+}
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner {
+	margin: 0 -3px 0 0;
+}
+.jspVerticalBar, .japTrack, .jspDrag, .jspDragTop, .jspDragBottom {
+	background:url(../img/js_sbar.gif) repeat-y;
+}
+.jspVerticalBar, .jspTrack {
+	background-position:-30px 0
+}
+.jspDrag {
+	background-position:-10px 0
+}
+.jspDragTop, .jspDragBottom {
+	position:absolute;
+	width:10px;
+	left:0;
+	height:5px;
+	background-repeat:no-repeat;
+}
+.jspDragTop {
+	background-position:-0px 0;
+	top:0;
+}
+.jspDragBottom {
+	background-position:-20px -15px;
+	bottom:0;
+	_bottom:-7px;
+}
+/* Styles specific to this particular page */
+.scroll-pane {
+	width: 100%; /*height: 200px;*/
+	overflow: auto;
+}
+.horizontal-only {
+	height: auto;
+	max-height: 200px;
+}
