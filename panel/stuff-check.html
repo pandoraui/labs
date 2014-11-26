@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>材料审核</title>
+<link rel="stylesheet" href="css/ui-common.css">
+<link rel="stylesheet" href="css/ui-components.css">
+<link rel="stylesheet" href="css/panel-content.css">
+</head>
+<body>
+<div class="ui_title">
+	<ul class="ui_tab">
+		<li class="active"><a>材料审核</a></li>
+	</ul>
+</div>
+
+<!-- 主要内容显示区域\\ -->
+<div class="iframe-content">
+    
+	<div class="p_box">
+        <table class="p_table form-inline">
+            <tbody>
+                <tr>
+                	<td class="p_label">团号：</td>
+                    <td><input type="text"></td>
+                    <td class="p_label">签证状态：</td>
+                    <td><select>
+                    <option value="">审核中</option>
+                    <option value="">已审核</option>
+                    </select></td>
+					<td class="p_label">游玩日期：</td>
+                    <td><input type="text"> <input type="text"></td>
+                </tr>
+				<tr>
+                	<td class="p_label">订单号：</td>
+                    <td><input type="text"></td>
+                    <td class="p_label">游玩人：</td>
+                    <td><input type="text"></td>
+					<td class="p_label">三方协议银行：</td>
+                    <td><select>
+                    <option value="">浦发银行</option>
+                    <option value="">中国银行</option>
+                    </select></td>
+                </tr>
+				<tr>
+                	<td class="p_label">供应商：</td>
+                    <td><input type="text"></td>
+                    <td class="p_label">签证产品：</td>
+                    <td><input type="text"></td>
+					<td class="tc" colspan="2"><button class="btn btn-small w6" type="button">查询</button></td>
+                </tr>
+                
+            </tbody>
+        </table>
+        <p class="mt20"><button class="btn btn-small w6" type="button">批量寄送材料</button>　<button class="btn btn-small w6" type="button">批量获签</button>　<button class="btn btn-small w6" type="button">批量退换材料</button>　<button class="btn btn-small w6" type="button">批量退还保险金</button></p>
+	</div><!-- div p_box -->
+	
+
+	<!-- 签证列表 -->
+	<div class="p_box">
+        <table class="p_table table-center">
+			<thead>
+                <tr>
+                	<th width="16"><input class="J_select-all" type="checkbox"></th>
+                	<th>团号</th>
+                	<th>订单号</th>
+                	<th>游玩人</th>
+                	<th>签证状态</th>
+                	<th>签证产品</th>
+                	<th>材料最晚递交时间</th>
+                	<th>游玩时间</th>
+                	<th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                	<td><input type="checkbox"></td>
+                	<td>LV-SL-YN-YH-20120821-26908</td>
+                	<td>200093</td>
+                	<td>王逸</td>
+                	<td>待审核</td>
+                	<td>韩国团队旅游签证（上海送签）</td>
+                	<td class="req">2012-01-10</td>
+                	<td>2012-12-20</td>
+                	<td>
+						<a href="#">材料确认</a>
+						<a href="#">材料审核</a>
+						<a href="#">寄送</a>
+						<a href="#">增补</a>
+						<a href="#">获签</a>
+						<a href="#">退还材料</a>
+						<a href="#">退还保证金</a>
+					</td>
+                </tr>
+				<tr>
+                	<td><input type="checkbox"></td>
+                	<td>LV-SL-YN-YH-20120821-26908</td>
+                	<td>200093</td>
+                	<td>王逸</td>
+                	<td>待审核</td>
+                	<td>韩国团队旅游签证（上海送签）</td>
+                	<td>2012-02-10</td>
+                	<td>2012-04-20</td>
+                	<td>
+						<a href="#">材料确认</a>
+						<a href="#">材料审核</a>
+						<a href="#">寄送</a>
+						<a href="#">增补</a>
+						<a href="#">获签</a>
+						<a href="#">退还材料</a>
+						<a href="#">退还保证金</a>
+					</td>
+                </tr>
+				<tr>
+                	<td><input type="checkbox"></td>
+                	<td>LV-SL-YN-YH-20120821-26908</td>
+                	<td>200093</td>
+                	<td>王逸</td>
+                	<td>待审核</td>
+                	<td>韩国团队旅游签证（上海送签）</td>
+                	<td>2012-02-10</td>
+                	<td>2012-04-20</td>
+                	<td>
+						<a href="#">材料确认</a>
+						<a href="#">材料审核</a>
+						<a href="#">寄送</a>
+						<a href="#">增补</a>
+						<a href="#">获签</a>
+						<a href="#">退还材料</a>
+						<a href="#">退还保证金</a>
+					</td>
+                </tr>
+				<tr>
+                	<td><input type="checkbox"></td>
+                	<td>LV-SL-YN-YH-20120821-26908</td>
+                	<td>200093</td>
+                	<td>王逸</td>
+                	<td>待审核</td>
+                	<td>韩国团队旅游签证（上海送签）</td>
+                	<td>2012-02-10</td>
+                	<td>2012-04-20</td>
+                	<td>
+						<a href="#">材料确认</a>
+						<a href="#">材料审核</a>
+						<a href="#">寄送</a>
+						<a href="#">增补</a>
+						<a href="#">获签</a>
+						<a href="#">退还材料</a>
+						<a href="#">退还保证金</a>
+					</td>
+                </tr>
+            </tbody>
+        </table>
+		
+		<!-- pages\\ -->
+		<div class="pages darkstyle">
+			<p class="pages_info">共21条记录，每页10条记录</p>
+			<p class="pages_go">到第 <input type="text" class="w1"> <button class="btn btn-mini" type="button">确定</button></p>
+			<div class="Pages"> <a class="PrevPage" href="#">上一页</a><a href="#">1</a><span class="PageSel">2</span><a href="#">3</a><a href="#">4</a><a href="#">5</a><a href="#">6</a><span class="PageMore">...</span><a href="#">20</a><a class="NextPage" href="#">下一页</a> </div>
+		</div><!-- //pages -->
+		
+	</div><!-- div p_box -->
+	
+
+	<!-- 材料确认 -->
+    <div class="p_modal center-box form-inline">
+        <div class="p_title">
+            <h4>材料确认</h4><button class="close">×</button>
+        </div>
+        <p class="lead">游玩人<span class="req">王五</span>属于哪种人群:</p>
+        <div class="box_content center-item">
+	        <table class="table">
+	            <tbody>
+	                <tr>
+	                    <td width="90"><label class="radio"><input name="type-people" type="radio">在职人员　</label></td>
+						<td width="90"><label class="radio"><input name="type-people" type="radio">家庭主妇　</label></td>
+						<td width="90"><label class="radio"><input name="type-people" type="radio">自由职业者　</label></td>
+	                </tr>
+					<tr>
+	                    <td><label class="radio"><input name="type-people" type="radio">退休人员　</label></td>
+						<td><label class="radio"><input name="type-people" type="radio">学生　</label></td>
+						<td></td>
+	                </tr>
+	            </tbody>
+	        </table>
+    	</div><!-- //div.box_content -->
+
+        <p class="tc mt10"><button class="btn btn-small w3" type="button">保存</button>　　<button class="btn btn-small w3 btn-close" type="button">关闭</button></p>
+    </div><!-- div p_modal -->
+	
+
+
+	<!-- 审核材料 -->
+	<div class="p_modal p_modal_big form-inline">
+        <div class="p_title">
+            <h4>审核材料</h4><button class="close">×</button>
+        </div>
+        <p class="lead"><span class="req">张三</span> 的材料明细：(在职人员)</p>
+        <div class="box_content">
+	        <table class="p_table table_info">
+	            <tbody>
+	                <tr>
+	                    <td width="100" class="p_label">受理范围:</td>
+	                    <td width="340" class="tl">上海、浙江、江苏、安徽、签发的护照。其他地区申请人需在以上四地工作生活或学习并提供半年前办理的有效暂住证或居住证原件。</td>
+	                    <td width="20" class="status-yes"></td>
+	                    <td width="140"></td>
+	                </tr>
+					<tr>
+	                    <td rowspan="2" class="p_label">★个人信息表:</td>
+						<td class="tl">（1）请完整填写个人信息表，并签字。</td>
+						<td class="status-yes">(√)</td>
+						<td class="oper"><a class="J_oper_yes gray" href="#">通过</a> <a class="J_oper_no" href="#">不通过</a> <a class="link-remark" href="#">备注</a></td>
+	                </tr>
+					<tr>
+						<td class="tl">（2）确保信息表中联系电话是准确有效的，并保持畅通便于领馆联系。</td>
+						<td class="status-yes">(√)</td>
+						<td class="oper"><a class="J_oper_yes gray" href="#">通过</a> <a class="J_oper_no" href="#">不通过</a> <a class="link-remark" href="#">备注</a></td>
+	                </tr>
+					<tr>
+	                    <td class="p_label">★签证表:</td>
+						<td class="tl">无需填写，只需在表格的第37项及最后的firma处各签一次中文名（打印申请表时请用A3纸正反面打印）</td>
+						<td class="status-yes">(√)</td>
+						<td class="oper"><a class="J_oper_yes gray" href="#">通过</a> <a class="J_oper_no" href="#">不通过</a> <a class="link-remark" href="#">备注</a></td>
+	                </tr>
+					<tr>
+	                    <td rowspan="3" class="p_label">★因私护照原件:</td>
+						<td class="tl">（1）护照在此次欧洲回国后还有3个月的有效期，护照末页必须有持证人中文签名（不可用铅笔）。护照至  少需要留有2页空白签证页。(申领新护照与延期过期护照一般需要2周时间)</td>
+						<td class="status-yes">(√)</td>
+						<td class="oper"><a class="J_oper_yes gray" href="#">通过</a> <a class="J_oper_no" href="#">不通过</a> <a class="link-remark" href="#">备注</a></td>
+	                </tr>
+					<tr>
+						<td class="tl">（2）如有拒签记录，请写拒签说明。</td>
+						<td class="status-yes">(√)</td>
+						<td class="oper"><a class="J_oper_yes gray" href="#">通过</a> <a class="J_oper_no" href="#">不通过</a> <a class="link-remark" href="#">备注</a></td>
+	                </tr>
+					<tr>
+						<td class="tl">（3）如有旧护照则也需提供。（如旧护照丢失，须派出所或出入境管理处开遗失证明）</td>
+						<td class="status-yes">(√)</td>
+						<td class="oper"><a class="J_oper_yes gray" href="#">通过</a> <a class="J_oper_no" href="#">不通过</a> <a class="link-remark" href="#">备注</a></td>
+	                </tr>
+					<tr>
+	                    <td rowspan="3" class="p_label">★照片</td>
+						<td class="tl">（1）白底彩色免冠、正面近照（三个月内）4张, 照片尺寸要求35mm×45mm</td>
+						<td class="status-yes">(√)</td>
+						<td class="oper"><a class="J_oper_yes gray" href="#">通过</a> <a class="J_oper_no" href="#">不通过</a> <a class="link-remark" href="#">备注</a></td>
+	                </tr>
+					<tr>
+					    <td class="tl">（2）照片不能有污损，不能有阴影，不能是大头照</td>
+						<td class="status-yes">(√)</td>
+						<td class="oper"><a class="J_oper_yes gray" href="#">通过</a> <a class="J_oper_no" href="#">不通过</a> <a class="link-remark" href="#">备注</a></td>
+	                </tr>
+					<tr>
+						<td class="tl">（3）请在照片背面用铅笔写上自己的姓名</td>
+						<td class="status-yes">(√)</td>
+						<td class="oper"><a class="J_oper_yes gray" href="#">通过</a> <a class="J_oper_no" href="#">不通过</a> <a class="link-remark" href="#">备注</a></td>
+	                </tr>
+					<tr>
+	                    <td class="p_label">★身份证</td>
+						<td class="tl">正反面复印件</td>
+						<td class="status-yes">(√)</td>
+						<td class="oper"><a class="J_oper_yes gray" href="#">通过</a> <a class="J_oper_no" href="#">不通过</a> <a class="link-remark" href="#">备注</a></td>
+	                </tr>
+					<tr>
+	                    <td rowspan="6" class="p_label">★户口簿</td>
+						<td class="tl">（1）请从封面页至第一页空白页完整复印，若是续本请把前一本一并提供</td>
+						<td class="status-yes">(√)</td>
+						<td class="oper"><a class="J_oper_yes gray" href="#">通过</a> <a class="J_oper_no" href="#">不通过</a> <a class="link-remark" href="#">备注</a></td>
+	                </tr>
+					<tr>
+						<td class="tl">（2）夫妻、小孩不在同一本上，必须同时提供配偶及小孩的完整户口簿复印件</td>
+						<td class="status-yes">(√)</td>
+						<td class="oper"><a class="J_oper_yes gray" href="#">通过</a> <a class="J_oper_no" href="#">不通过</a> <a class="link-remark" href="#">备注</a></td>
+	                </tr>
+					<tr>
+					    <td class="tl">（3）未婚者、未成年人和父母不在同一户口簿上，须提供父母的完整户口簿复印件</td>
+						<td class="status-yes">(√)</td>
+						<td class="oper"><a class="J_oper_yes gray" href="#">通过</a> <a class="J_oper_no" href="#">不通过</a> <a class="link-remark" href="#">备注</a></td>
+	                </tr>
+					<tr>
+						<td class="tl">（4）申请人的户口本服务处所、职务、文化程度、婚姻状况必须与实际相符（退休人员户口本的服务处所须是退休或者与本人的退休证上单位一致），如不符需去户口所在地更改</td>
+						<td class="status-yes">(√)</td>
+						<td class="oper"><a class="J_oper_yes gray" href="#">通过</a> <a class="J_oper_no" href="#">不通过</a> <a class="link-remark" href="#">备注</a></td>
+	                </tr>
+					<tr>
+						<td class="tl">（5）不能提供有效长住户口的，必须提供户口所在地派处所开具的户籍证明原件或常住人口登记表</td>
+						<td class="status-yes">(√)</td>
+						<td class="oper"><a class="J_oper_yes gray" href="#">通过</a> <a class="J_oper_no" href="#">不通过</a> <a class="link-remark" href="#">备注</a></td>
+	                </tr>
+					<tr>
+						<td class="tl">（6）护照签发地不属于上海领区的，需提供六个月以前办理的上海领区暂住证复印件及暂住证副联（上面显示暂住证有效期）。如暂住证副联遗失，可到办理地补开。</td>
+						<td class="status-yes">(√)</td>
+						<td class="oper"><a class="J_oper_yes gray" href="#">通过</a> <a class="J_oper_no" href="#">不通过</a> <a class="link-remark" href="#">备注</a></td>
+	                </tr>
+					<tr>
+	                    <td rowspan="2" class="p_label">★结婚证或离婚证</td>
+						<td class="tl"><label class="radio"><input name="type-marriage" type="radio">（1）申请人婚姻状况为已婚的，请提供结婚证复印件一份。</label></td>
+						<td class="status-yes">(√)</td>
+						<td class="oper"><a class="J_oper_yes gray" href="#">通过</a> <a class="J_oper_no" href="#">不通过</a> <a class="link-remark" href="#">备注</a></td>
+	                </tr>
+					<tr>
+						<td class="tl"><label class="radio"><input name="type-marriage" type="radio">（2）申请人婚姻状况为离婚的，请提供离婚证复印件一份。</label></td>
+						<td class="status-yes">(√)</td>
+						<td class="oper"><a class="J_oper_yes gray" href="#">通过</a> <a class="J_oper_no" href="#">不通过</a> <a class="link-remark" href="#">备注</a></td>
+	                </tr>
+					<tr>
+	                    <td rowspan="6" class="p_label">★资产证明<br>(如没有本人名下财产证明，可参考自由人材料所需材料来准备，并咨询旅行社)</td>
+						<td class="tl">（1）第三方银行托管开具的已有3个月存入期的至少5万元/人的定期存款证明原件。存款证明必须注明已冻结，冻结期需要冻结到回国后那天起算的一个月之后。（如不是第三方银行托管开具的存款证明，我公司将向您收取5---10万的押金，视材料情况而定）</td>
+						<td class="status-yes">(√)</td>
+						<td class="oper"><a class="J_oper_yes gray" href="#">通过</a> <a class="J_oper_no" href="#">不通过</a> <a class="link-remark" href="#">备注</a></td>
+	                </tr>
+					<tr>
+						<td class="tl">（2）如夫妻同行，存款证明要分开开具</td>
+						<td class="status-yes">(√)</td>
+						<td class="oper"><a class="J_oper_yes gray" href="#">通过</a> <a class="J_oper_no" href="#">不通过</a> <a class="link-remark" href="#">备注</a></td>
+	                </tr>
+					<tr>
+						<td class="tl">（3）近6个月银行借记卡对账单一份（必须提供）余额上万，且不要信用卡对账单</td>
+						<td class="status-yes">(√)</td>
+						<td class="oper"><a class="J_oper_yes gray" href="#">通过</a> <a class="J_oper_no" href="#">不通过</a> <a class="link-remark" href="#">备注</a></td>
+	                </tr>
+					<tr>
+						<td class="tl">（4）必须提供本人或配偶名下的房产证复印件至少一份，如提供配偶名下的房产证则需同时提供结婚证复印件一份</td>
+						<td class="status-yes">(√)</td>
+						<td class="oper"><a class="J_oper_yes gray" href="#">通过</a> <a class="J_oper_no" href="#">不通过</a> <a class="link-remark" href="#">备注</a></td>
+	                </tr>
+					<tr>
+						<td class="tl">（5）●购车证复印件</td>
+						<td class="status-yes">(√)</td>
+						<td class="oper"><a class="J_oper_yes gray" href="#">通过</a> <a class="J_oper_no" href="#">不通过</a> <a class="link-remark" href="#">备注</a></td>
+	                </tr>
+					<tr>
+						<td class="tl">（6）●股票交割单复印件（作为辅助材料帮助提高出签率）</td>
+						<td class="status-yes">(√)</td>
+						<td class="oper"><a class="J_oper_yes gray" href="#">通过</a> <a class="J_oper_no" href="#">不通过</a> <a class="link-remark" href="#">备注</a></td>
+	                </tr>
+					<tr>
+	                    <td rowspan="2" class="p_label">★营业执照或组织机构代码证</td>
+						<td class="tl">（1）所在单位为企业单位的申请者，请提供营业执照副本的清晰复印件，用A4纸复印（不能用单面废纸），有年检记录，并在复印件上加盖单位公章</td>
+						<td class="status-yes"></td>
+						<td class="oper"><a class="J_oper_yes gray" href="#">通过</a> <a class="J_oper_no" href="#">不通过</a> <a class="link-remark" href="#">备注</a></td>
+	                </tr>
+					<tr>
+						<td class="tl">（2）所在单位为事业单位的申请者，请提供组织机构代码证的清晰复印件，用A4纸复印（不能用单面废纸），有年检记录，并在复印件上加盖单位公章</td>
+						<td class="status-yes"></td>
+						<td class="oper"><a class="J_oper_yes" href="#">通过</a> <a class="J_oper_no" href="#">不通过</a> <a class="link-remark" href="#">备注</a></td>
+	                </tr>
+					<tr>
+	                    <td rowspan="2" class="p_label">★在职证明</td>
+						<td class="tl">（1）必须是单位A4正规彩色抬头纸，必须有单位盖章、领导签字，绝对不能是同行人或申请者自签（法人也不行）。统一由英语书写，证明中不能出现（仅供签证使用）字样，除领导签字外其余地方都不能出现手写。</td>
+						<td class="status-yes"></td>
+						<td class="oper"><a class="J_oper_yes" href="#">通过</a> <a class="J_oper_no" href="#">不通过</a> <a class="link-remark" href="#">备注</a></td>
+	                </tr>
+					<tr>
+						<td class="tl">（2）A申请人的姓名和护照号码 B申请人的职位和工作年限 C申请人的月工资 D准假时间、天数 E费用由谁支付F公司同意申请人前往意大利旅游及旅行结束按期回国并保留申请人职位的保证 G公司地址、传真和电话H签字人的职位</td>
+						<td class="status-yes"></td>
+						<td class="oper"><a class="J_oper_yes" href="#">通过</a> <a class="J_oper_no" href="#">不通过</a> <a class="link-remark" href="#">备注</a></td>
+	                </tr>
+					<tr>
+	                    <td rowspan="3" class="p_label">违约担保</td>
+						<td class="tl">（1）可提供第三方银行托管旅游保证金或现金担保</td>
+						<td class="status-yes"></td>
+						<td class="oper"><a class="J_oper_yes" href="#">通过</a> <a class="J_oper_no" href="#">不通过</a> <a class="link-remark" href="#">备注</a></td>
+	                </tr>
+					<tr>
+						<td class="tl">（2）同行的人不可以互相做担保人</td>
+						<td class="status-yes"></td>
+						<td class="oper"><a class="J_oper_yes" href="#">通过</a> <a class="J_oper_no" href="#">不通过</a> <a class="link-remark" href="#">备注</a></td>
+	                </tr>
+					<tr>
+						<td class="tl">（3）担保金为5万/人</td>
+						<td class="status-yes"></td>
+						<td class="oper"><a class="J_oper_yes" href="#">通过</a> <a class="J_oper_no" href="#">不通过</a> <a class="link-remark" href="#">备注</a></td>
+	                </tr>
+					<tr>
+	                    <td class="tc" colspan="6">★为必须提供的材料 ●为根据个人情况酌情提供（资产证明提供良好，有助于提高签证率）</td>
+	                </tr>
+	            </tbody>
+	        </table>
+
+	        <table class="p_table mt20">
+	            <thead>
+	                <tr>
+	                	<th colspan="4">保证金</th>
+	                </tr>
+	            </thead>
+	            <tbody>
+	                <tr>
+	                	<td class="p_label w5">保证金形式</td>
+	                	<td><select>
+	                		<option value="">请选择</option>
+	                		<option value="">选择</option>
+	                	</select></td>
+	                	<td class="p_label w5">开户银行</td>
+	                	<td><select>
+	                		<option value="">请选择</option>
+	                		<option value="">选择</option>
+	                	</select></td>
+	                </tr>
+	            </tbody>
+	        </table>
+    	</div><!-- //div.box_content -->
+
+
+        <p class="tc mt10"><button class="btn btn-small w5" type="button">审核通过</button>　<button class="btn btn-small w5" type="button">审核不通过</button>　<button class="btn btn-small w5 btn-close" type="button">关闭</button>　<a class="btn btn-small btn-link w3" href="#">发工单</a></p>
+    </div><!-- div p_modal -->
+
+
+
+    <!-- 审核材料结果 -->
+	<div class="p_modal p_modal_big form-inline">
+        <div class="p_title">
+            <h4>审核材料结果</h4><button class="close">×</button>
+        </div>
+        <p class="lead"><span class="req">张三</span> 的材料明细：(在职人员)</p>
+        <div class="box_content">
+	        <table class="p_table table_info">
+	            <tbody>
+					<tr>
+	                    <td width="100" rowspan="2" class="p_label">★营业执照或组织机构代码证</td>
+						<td width="360" class="tl">（1）所在单位为企业单位的申请者，请提供营业执照副本的清晰复印件，用A4纸复印（不能用单面废纸），有年检记录，并在复印件上加盖单位公章</td>
+						<td width="20" class="status-no">(×)</td>
+						<td width="120" class="oper"><p class="remark">备注：营业执照副本不符合要求</p></td>
+	                </tr>
+					<tr>
+						<td class="tl">（2）所在单位为事业单位的申请者，请提供组织机构代码证的清晰复印件，用A4纸复印（不能用单面废纸），有年检记录，并在复印件上加盖单位公章</td>
+						<td class="status-no">(×)</td>
+						<td class="oper"><p class="remark">备注：营业执照副本不符合要求</p></td>
+	                </tr>
+					<tr>
+	                    <td rowspan="2" class="p_label">★在职证明</td>
+						<td class="tl">（1）必须是单位A4正规彩色抬头纸，必须有单位盖章、领导签字，绝对不能是同行人或申请者自签（法人也不行）。统一由英语书写，证明中不能出现（仅供签证使用）字样，除领导签字外其余地方都不能出现手写。</td>
+						<td class="status-no">(×)</td>
+						<td class="oper"><p class="remark">备注：营业执照副本不符合要求</p></td>
+	                </tr>
+					<tr>
+						<td class="tl">（2）A申请人的姓名和护照号码 B申请人的职位和工作年限 C申请人的月工资 D准假时间、天数 E费用由谁支付F公司同意申请人前往意大利旅游及旅行结束按期回国并保留申请人职位的保证 G公司地址、传真和电话H签字人的职位</td>
+						<td class="status-no">(×)</td>
+						<td class="oper"><p class="remark">备注：营业执照副本不符合要求</p></td>
+	                </tr>
+					<tr>
+	                    <td rowspan="3" class="p_label">违约担保</td>
+						<td class="tl">（1）可提供第三方银行托管旅游保证金或现金担保</td>
+						<td class="status-no">(×)</td>
+						<td class="oper"><p class="remark">备注：营业执照副本不符合要求</p></td>
+	                </tr>
+					<tr>
+						<td class="tl">（2）同行的人不可以互相做担保人</td>
+						<td class="status-no">(×)</td>
+						<td class="oper"><p class="remark">备注：营业执照副本不符合要求</p></td>
+	                </tr>
+					<tr>
+						<td class="tl">（3）担保金为5万/人</td>
+						<td class="status-no">(×)</td>
+						<td class="oper"><p class="remark">备注：营业执照副本不符合要求</p></td>
+	                </tr>
+					<tr>
+	                    <td class="tc" colspan="4">★为必须提供的材料 ●为根据个人情况酌情提供（资产证明提供良好，有助于提高签证率）</td>
+	                </tr>
+	            </tbody>
+	        </table>
+
+	        <table class="p_table mt20">
+	            <thead>
+	                <tr>
+	                	<th colspan="4">保证金</th>
+	                </tr>
+	            </thead>
+	            <tbody>
+	                <tr>
+	                	<td class="p_label w5">保证金形式</td>
+	                	<td>三方协议</td>
+	                	<td class="p_label w5">开户银行</td>
+	                	<td>交通银行</td>
+	                </tr>
+	            </tbody>
+	        </table>
+    	</div><!-- //div.box_content -->
+
+        <p class="tc mt10"><button class="btn btn-small w5 btn-close" type="button">关闭</button></p>
+    </div><!-- div p_modal -->
+
+
+    <!-- 材料寄送 -->
+    <div class="p_modal center-box form-inline">
+        <div class="p_title">
+            <h4>材料寄送</h4><button class="close">×</button>
+        </div>
+        <p class="lead">游玩人<span class="req">王五</span>签证材料寄送:</p>
+        <div class="box_content center-item">
+	        <table class="p_table J_additem_box">
+	            <tbody>
+	                <tr>
+	                    <td width="90" class="p_label"><span class="req">*</span>快递单号：</td>
+						<td><input type="file" placeholder="上传快递单扫描件"></td>
+	                </tr>
+	                <tr>
+	                    <td width="90" class="p_label">备注：</td>
+						<td><textarea style="width: 90%"></textarea></td>
+	                </tr>
+	            </tbody>
+	            <tbody class="J_additem_info">
+	                <tr>
+	                    <td width="90" class="p_label"><span class="req">*</span>快递单号：</td>
+						<td><button class="close">×</button><input type="file" placeholder="上传快递单扫描件"></td>
+	                </tr>
+	                <tr>
+	                    <td width="90" class="p_label">备注：</td>
+						<td><textarea style="width: 90%"></textarea></td>
+	                </tr>
+	            </tbody>
+	            <tfoot>
+	                <tr>
+	                    <td colspan="2"><button class="btn btn-small J_btn_additem" type="button">增加快递单号</button></td>
+	                </tr>
+	            </tfoot>
+	        </table>
+        </div><!-- //div.box_content -->
+
+        <p class="tc mt10"><button class="btn btn-small w3" type="button">保存</button>　　<button class="btn btn-small w3 btn-close" type="button">关闭</button></p>
+    </div><!-- div p_modal -->
+
+
+
+    <!-- 获签 -->
+    <div class="p_modal center-box form-inline">
+        <div class="p_title">
+            <h4>获签</h4><button class="close">×</button>
+        </div>
+        <p class="lead">游玩人<span class="req">王五</span>签证材料寄送:</p>
+        <div class="box_content center-item">
+	        <table class="table" style="width:240px;">
+	        	<tbody>
+	                <tr>
+	                    <td><label class="radio"><input name="type-status" type="radio">出签</label></td>
+	                    <td><label class="radio"><input name="type-status" type="radio">面签</label></td>
+	                    <td><label class="radio"><input name="type-status" type="radio">拒签</label></td>
+	                </tr>
+	                <tr>
+						<td><label class="radio"><input name="type-status" type="radio">代销签</label></td>
+	                    <td><label class="radio"><input name="type-status" type="radio">面销</label></td>
+						<td></td>
+	                </tr>
+	            </tbody>
+	        </table>
+        </div><!-- //div.box_content -->
+
+        <p class="tc mt20"><button class="btn btn-small w3" type="button">保存</button>　　<button class="btn btn-small w3 btn-close" type="button">关闭</button></p>
+    </div><!-- div p_modal -->
+
+
+
+    <!-- 退还材料 -->
+    <div class="p_modal center-box form-inline">
+        <div class="p_title">
+            <h4>退还材料</h4><button class="close">×</button>
+        </div>
+        <p class="lead">材料是否可退还游客<span class="req">王五</span>:</p>
+        <div class="box_content center-item">
+        	<p class="tc">
+        		<label class="radio"><input name="type-yesno" type="radio">是</label>　　 
+                <label class="radio"><input name="type-yesno" type="radio">否</label>
+            </p>
+        </div><!-- //div.box_content -->
+
+        <p class="tc mt20"><button class="btn btn-small w3" type="button">保存</button>　　<button class="btn btn-small w3 btn-close" type="button">关闭</button></p>
+    </div><!-- div p_modal -->
+
+    <!-- 退还保证金 -->
+    <div class="p_modal center-box form-inline">
+        <div class="p_title">
+            <h4>退还保证金</h4><button class="close">×</button>
+        </div>
+        <p class="lead">保证金是否可退还游客<span class="req">王五</span>:</p>
+        <div class="box_content center-item">
+        	<p class="tc">
+        		<label class="radio"><input name="type-yesno" type="radio">是</label>　　 
+                <label class="radio"><input name="type-yesno" type="radio">否</label>
+            </p>
+    	</div><!-- //div.box_content -->
+
+        <p class="tc mt20"><button class="btn btn-small w3" type="button">保存</button>　　<button class="btn btn-small w3 btn-close" type="button">关闭</button></p>
+    </div><!-- div p_modal -->
+
+
+
+    <!-- 材料问题 -->
+    <div class="p_modal p_modal_big center-box form-inline">
+        <div class="p_title">
+            <h4>材料问题</h4><button class="close">×</button>
+        </div>
+        <div class="box_content center-item">
+	        <table class="p_table table_info">
+	        	<tr>
+                    <td width="50">操作时间</td>
+                    <td width="50">操作人</td>
+                    <td>材料问题</td>
+                </tr>
+	            <tbody>
+	                <tr>
+	                    <td>2012.03.01 09：00</td>
+	                    <td>lv1230</td>
+	                    <td> 1.房产证原件（>100万的房产，必须户主是本人）2.结婚证的时间必须要在2012年以后 请寄到上海是普陀区大渡河路133号圣诺亚大厦B栋签证中心收，最晚递交时间<span class="req">2012.03.33</span></td>
+	                </tr>
+					<tr>
+	                    <td>2012.03.01 09：00</td>
+	                    <td>lv1230</td>
+						<td>房产证原件（>100万的房产，必须户主是本人）</td>
+	                </tr>
+            	</tbody>
+        	</table>
+        </div><!-- //div.box_content -->
+
+        <p class="tc mt20"><button class="btn btn-small w5" type="button">新增材料</button>　<button class="btn btn-small w5 btn-close" type="button">关闭</button>　<a class="btn btn-small btn-link w3" href="#">发工单</a></p>
+    </div><!-- div p_modal -->
+
+
+
+    <!-- 增补材料 -->
+    <div class="p_modal center-box form-inline">
+        <div class="p_title">
+            <h4>增补材料</h4><button class="close">×</button>
+        </div>
+        <p class="lead">请填写增补材料内容：<span class="gray">（包含寄送地址和最晚时间）</span></p>
+        <div class="box_content center-item">
+        	<textarea style="width:300px; height:100px"></textarea>
+        </div><!-- //div.box_content -->
+
+        <p class="tc mt20"><button class="btn btn-small w3" type="button">保存</button>　　<button class="btn btn-small w3 btn-close" type="button">关闭</button></p>
+    </div><!-- div p_modal -->
+
+
+</div><!-- div iframe-content -->
+
+<script src="http://pic.lvmama.com/js/new_v/jquery-1.7.min.js"></script>
+<script src="js/iframe-custom.js"></script>
+<script>
+$(function(){
+
+});
+</script>
+</body>
+</html>

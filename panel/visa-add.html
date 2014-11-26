@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>新增签证产品</title>
+<link rel="stylesheet" href="css/ui-common.css">
+<link rel="stylesheet" href="css/ui-components.css">
+<link rel="stylesheet" href="css/panel-content.css">
+</head>
+<body>
+<div class="ui_title">
+	<ul class="ui_tab">
+		<li class="active"><a href="visa-add.html">新增签证产品</a></li>
+	</ul>
+</div>
+
+<!-- 主要内容显示区域\\ -->
+<div class="iframe-content">
+	<div class="p_box box_info">
+		<div class="title">
+			<h4>基本信息</h4>
+		</div>
+		<div class="box_content">
+		<table class="p_table form-inline">
+			<tbody>
+				<tr>
+					<td class="p_label" width="150"><i class="req">*</i>产品名称：</td>
+					<td width="350"><input type="text" placeholder="日本团队旅游(上海送签)" class="w15"></td>
+					<td class="p_label" width="150">产品ID：</td>
+					<td width="350">lv123456</td>
+				</tr>
+				<tr>
+					<td class="p_label"><i class="req">*</i>签证有效期：</td>
+					<td><input type="text" placeholder="根据行程，以使馆签发为准" class="w15"></td>
+					<td class="p_label"><i class="req">*</i>送签类型：</td>
+					<td>
+						<label class="radio"><input type="radio">团队旅游签证</label>
+					</td>
+				</tr>
+				<tr>
+					<td class="p_label"><i class="req">*</i>销售价：</td>
+					<td><input type="text" class="w3"></td>
+					<td class="p_label">是否附加：</td>
+					<td>
+						<label class="radio"><input name="yesno" type="radio">是</label>　　
+						<label class="radio"><input name="yesno" type="radio">否</label>
+					</td>
+				</tr>
+				<tr>
+					<td class="p_label"><i class="req">*</i>结算价：</td>
+					<td><input type="text" class="w3"></td>
+					<td class="p_label">产品编号：</td>
+					<td>
+						<input type="text">
+					</td>
+				</tr>
+				<tr>
+					<td class="p_label">市场价：</td>
+					<td><input type="text" class="w3"></td>
+					<td class="p_label">材料截止收取提前：</td>
+					<td>
+						<input type="text" class="w2" placeholder="5">
+					</td>
+				</tr>
+				<tr>
+					<td class="p_label">币种：</td>
+					<td><input type="text" placeholder="人民币"></td>
+					<td class="p_label">所属公司：</td>
+					<td><select>
+					<option value="">亚洲</option>
+					<option value="">美洲</option>
+					</select>
+					</td>
+				</tr>
+				<tr>
+					<td class="p_label">关联供应商：</td>
+					<td><input type="text" class="search" placeholder="上航假班"></td>
+					<td class="p_label">产品经理：</td>
+					<td><input type="text" class="search"></td>
+				</tr>
+				<tr>
+					<td class="p_label">结算对象：</td>
+					<td colspan="3"><input type="text" class="search" placeholder="上航假班"></td>
+				</tr>
+				<tr>
+					<td class="p_label">预订须知：</td>
+					<td class="form-inline" colspan="3">
+						<textarea class="p-textarea">
+2011-09-01至2020-12-31 :使用说明: 提交材料后，我司可能会根据您材料情况要求增补其他签证材料、担保金或者予以劝退，请积极配合。
+2011-12-01至2021-12-31 :使用说明: 办理签证期间，领馆可能会联系您核对材料准确性并要求增补其他签证材料，请积极配合查询，有助于顺利出签！
+2012-12-19至2013-05-16 :预订限制: 日本领馆将于2012年12月31日-2013年01月03日、01月05日、01月06日、02月11日-02月15日闭馆。</textarea>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		</div>
+	</div><!-- div p_box -->
+
+
+
+	<div class="p_box">
+		<div class="title">
+			<h4>关联所需材料</h4>
+		</div>
+		<div class="p_line form-inline">
+			<label class="label">国家：<input type="text" class="search w7" placeholder="日本"></label>
+			<label class="label">签证类型：
+				<select class="w7">
+					<option value="">团队旅游签证</option>
+					<option value="">个人旅游签证</option>
+					<option value="">商务签证</option>
+					<option value="">探亲访友</option>
+					<option value="">留学签证</option>
+				</select>
+			</label>
+			<label class="label">人群：
+				<select class="w7">
+					<option value="">在职人员</option>
+					<option value="">退休人员</option>
+					<option value="">自由职业者</option>
+					<option value="">在校学生</option>
+					<option value="">学龄前儿童</option>
+				</select>
+			</label>
+			<a class="btn btn-small btn-warning" href="stuff-add.html">新增材料</a> 
+			<a class="btn btn-small btn-link" href="">查看日志</a>
+		</div>
+		<div class="hr_a"></div>
+		<table class="p_table table_center">
+			<thead>
+				<tr>
+					<th>材料产品</th>
+					<th>国家</th>
+					<th>签证类型</th>
+					<th>状态</th>
+					<th>操作</th>
+					<th>排序</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>在职人员</td>
+					<td>日本</td>
+					<td>团队旅游</td>
+					<td>上线</td>
+					<td><a href="">关联材料</a>　<a href="">删除</a>　<a href="">下线</a>　<a href="">上线</a></td>
+					<td><a class="icon-sort-up" href="#"></a> <a class="icon-sort-down" href="#"></a></td>
+				</tr>
+				<tr>
+					<td>退休人员</td>
+					<td>日本</td>
+					<td>团队旅游</td>
+					<td>上线</td>
+					<td><a href="">关联材料</a>　<a href="">删除</a>　<a href="">下线</a>　<a href="">上线</a></td>
+					<td><a class="icon-sort-up" href="#"></a> <a class="icon-sort-down" href="#"></a></td>
+				</tr>
+				<tr>
+					<td>自由职业者</td>
+					<td>日本</td>
+					<td>团队旅游</td>
+					<td>上线</td>
+					<td><a href="">关联材料</a>　<a href="">删除</a>　<a href="">下线</a>　<a href="">上线</a></td>
+					<td><a class="icon-sort-up" href="#"></a> <a class="icon-sort-down" href="#"></a></td>
+				</tr>
+				<tr>
+					<td>在校学生</td>
+					<td>日本</td>
+					<td>团队旅游</td>
+					<td>上线</td>
+					<td><a href="">关联材料</a>　<a href="">删除</a>　<a href="">下线</a>　<a href="">上线</a></td>
+					<td><a class="icon-sort-up" href="#"></a> <a class="icon-sort-down" href="#"></a></td>
+				</tr>
+				<tr>
+					<td>学龄前儿童</td>
+					<td>日本</td>
+					<td>团队旅游</td>
+					<td>上线</td>
+					<td><a href="">关联材料</a>　<a href="">删除</a>　<a href="">下线</a>　<a href="">上线</a></td>
+					<td><a class="icon-sort-up" href="#"></a> <a class="icon-sort-down" href="#"></a></td>
+				</tr>
+			</tbody>
+		</table>
+		
+	</div><!-- div p_box -->
+
+</div><!-- //主要内容显示区域 -->
+
+<script src="http://pic.lvmama.com/js/new_v/jquery-1.7.min.js"></script>
+<script src="js/iframe-custom.js"></script>
+</body>
+</html>
