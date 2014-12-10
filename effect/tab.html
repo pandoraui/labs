@@ -1,0 +1,239 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>类似网易排行榜tab选项卡特别版 -懒人建站 - http://www.51xuediannao.com</title>
+<style>
+HTML, BODY {
+	margin:30px;
+	padding:0;
+	border:none;
+	font-size:14px
+}
+.wrap {
+	width:300px;
+	BORDER: #b7c5d9 1px solid;
+	BACKGROUND: #f0f6f9
+}
+.a10 {
+	FONT-WEIGHT: bold;
+	COLOR: #0099cc;
+	TEXT-DECORATION: none;
+}
+.a10:hover {
+	COLOR: #bb2233;
+	TEXT-DECORATION: underline
+}
+.md-head {
+	PADDING-LEFT: 0px;
+	LINE-HEIGHT: 26px;
+	HEIGHT: 26px
+}
+.md-head A {
+	BORDER-TOP-WIDTH: 0px;
+	BORDER-LEFT-WIDTH: 1px;
+	FLOAT: left;
+	BORDER-BOTTOM-WIDTH: 1px;
+	MARGIN-LEFT: -1px;
+	WIDTH: 76px;
+	BACKGROUND-COLOR: #fff;
+	TEXT-ALIGN: center;
+	BORDER-RIGHT-WIDTH: 0px
+}
+.md-head A.wid {
+	WIDTH: 148px
+}
+.md-head A.cur {
+	BORDER-BOTTOM-WIDTH: 0px;
+	COLOR: #000;
+	BACKGROUND-COLOR: #f0f6f9;
+	TEXT-DECORATION: none
+}
+.md-body {
+	padding:15px;
+	ZOOM: 1
+}
+a, area {
+blr:e-xpression(this.onFocus=this.blur())
+}
+:focus {
+	-moz-outline-style: none;
+}
+</style>
+
+<!-- include the Tools -->
+<script src="http://cdn.jquerytools.org/1.2.6/full/jquery.tools.min.js"></script>
+<!--<script src="http://cdn.jquerytools.org/1.2.6/full/jquery.tools.min.js"></script>-->
+<!-- standalone page styling (can be removed) -->
+<!--<link rel="stylesheet" type="text/css" href="http://static.flowplayer.org/tools/css/standalone.css"/>	-->
+<!-- tab styling -->
+<!--<link rel="stylesheet" type="text/css" href="http://static.flowplayer.org/tools/css/tabs.css" />-->
+<!-- tab pane styling -->
+<style>
+
+body {
+	padding:50px 80px;
+	font-family:"Lucida Grande","bitstream vera sans","trebuchet ms",sans-serif,verdana;
+}
+
+/* get rid of those system borders being generated for A tags */
+a:active {
+  outline:none;
+}
+
+:focus {
+  -moz-outline-style:none;
+}
+
+/* root element for tabs  */
+ul.tabs { 
+	list-style:none; 
+	margin:0 !important; 
+	padding:0;	
+	border-bottom:1px solid #666;	
+	height:30px;
+}
+
+/* single tab */
+ul.tabs li { 
+	float:left;	 
+	text-indent:0;
+	padding:0;
+	margin:0 !important;
+	list-style-image:none !important; 
+}
+
+/* link inside the tab. uses a background image */
+ul.tabs a { 
+	background: url(/tools/img/tabs/blue.png) no-repeat -420px 0;
+	font-size:11px;
+	display:block;
+	height: 30px;  
+	line-height:30px;
+	width: 134px;
+	text-align:center;	
+	text-decoration:none;
+	color:#333;
+	padding:0px;
+	margin:0px;	
+	position:relative;
+	top:1px;
+}
+
+ul.tabs a:active {
+	outline:none;		
+}
+
+/* when mouse enters the tab move the background image */
+ul.tabs a:hover {
+	background-position: -420px -31px;	
+	color:#fff;	
+}
+
+/* active tab uses a class name "current". its highlight is also done by moving the background image. */
+ul.tabs a.current, ul.tabs a.current:hover, ul.tabs li.current a {
+	background-position: -420px -62px;		
+	cursor:default !important; 
+	color:#000 !important;
+}
+
+/* Different widths for tabs: use a class name: s, l, xl */
+
+
+/* width 1 */
+ul.tabs a.s 			{ background-position: -553px 0; width:81px; }
+ul.tabs a.s:hover 	{ background-position: -553px -31px; }
+ul.tabs a.s.current  { background-position: -553px -62px; }
+
+/* width 2 */
+ul.tabs a.l 			{ background-position: -247px -0px; width:174px; }
+ul.tabs a.l:hover 	{ background-position: -247px -31px; }
+ul.tabs a.l.current  { background-position: -247px -62px; }
+
+
+/* width 3 */
+ul.tabs a.xl 			{ background-position: 0 -0px; width:248px; }
+ul.tabs a.xl:hover 	{ background-position: 0 -31px; }
+ul.tabs a.xl.current { background-position: 0 -62px; }
+
+
+/* initially all panes are hidden */ 
+.panes .pane {
+	display:none;		
+}
+
+
+/* tab pane styling */
+.panes div {
+	display:none;		
+	padding:15px 10px;
+	border:1px solid #999;
+	border-top:0;
+	height:100px;
+	font-size:14px;
+	background-color:#fff;
+}
+</style>
+</head>
+
+<body>
+<DIV class="wrap" id=divspacerank>
+    <DIV class=md-head id=blogs_spacerank> <A class="a10 wrap cur wid" id=blogs_spacerank_tab_0 hideFocus onClick="blogs_spacerank_ck(0);return false;" href="javascript:;">今日空间排行</A> <A class="a10 wrap" id=blogs_spacerank_tab_1 hideFocus onClick="blogs_spacerank_ck(1);return false;" href="javascript:;">72小时</A> <A class="a10 wrap" id=blogs_spacerank_tab_2 hideFocus onClick="blogs_spacerank_ck(2);return false;" href="javascript:;">一周</A> <BR class=clear>
+    </DIV>
+    <DIV class=md-body>
+        <DIV id=blogs_spacerank_0> 今日空间排行内容 </DIV>
+        <DIV id=blogs_spacerank_1 style="DISPLAY: none"> 72小时空间排行内容 </DIV>
+        <DIV id=blogs_spacerank_2 style="DISPLAY: none"> 一周空间排行内容 </DIV>
+    </DIV>
+</DIV>
+
+
+
+<!-- the tabs -->
+<ul class="tabs">
+	<li><a href="#">Tab 1</a></li>
+	<li><a href="#">Tab 2</a></li>
+	<li><a href="#">Tab 3</a></li>
+</ul>
+
+<!-- tab "panes" -->
+<div class="panes">
+	<div>First tab content. Tab contents are called "panes"</div>
+	<div>Second tab content</div>
+	<div>Third tab content</div>
+</div>
+<!-- This JavaScript snippet activates those tabs -->
+<script>
+
+// perform JavaScript after the document is scriptable.
+$(function() {
+	// setup ul.tabs to work as tabs for each div directly under div.panes
+	$("ul.tabs").tabs("div.panes > div");
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<SCRIPT>
+  var blogs_spacerank_index = 0,blogs_spacerank_class = 'a10 wrap ';
+  var blogs_spacerank_list = document.getElementById('blogs_spacerank').getElementsByTagName('a');
+  function blogs_spacerank_ck(_idx){
+  blogs_spacerank_list[blogs_spacerank_index].className = blogs_spacerank_class;
+  blogs_spacerank_list[_idx].className = blogs_spacerank_class + ' cur wid';
+  document.getElementById('blogs_spacerank_'+blogs_spacerank_index).style.display = 'none';
+  document.getElementById('blogs_spacerank_tab_'+blogs_spacerank_index).innerHTML = document.getElementById('blogs_spacerank_tab_'+blogs_spacerank_index).innerHTML.replace("空间排行","");
+  document.getElementById('blogs_spacerank_'+_idx).style.display = 'block';
+  document.getElementById('blogs_spacerank_tab_'+_idx).innerHTML = document.getElementById('blogs_spacerank_tab_'+_idx).innerHTML+"空间排行";
+  blogs_spacerank_index = _idx;
+  }             
+</SCRIPT>
+</body>
+</html>

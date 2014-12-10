@@ -1,0 +1,58 @@
+@charset "gb2312";
+/* RESET */
+*{margin:0;padding:0;border:0;}img{ vertical-align:top}iframe,object{ display:block;}
+ol,ul{list-style-type:none}table{border-collapse:collapse;border-spacing:0;}.tc{text-align:center}.disa a{display:block;width:100%;height:100%;background:url(about:blank);text-indent:-9999px;}.nobg{background:none !important;}
+/* change the settings to suit your needs */
+h1,h2,h3,h5,.fb,.B{font-weight:bold}h1{font-size:18px}h2{font-size:16px},h3,h4{font-size:14px}h5,h6{font-size:12px}
+a{text-decoration:none;color:#666}a:hover,a:active {color:#f00;text-decoration:underline;}
+.red,a.red,.red a,.red a:hover,.blank a:hover,a.blank:hover{color:#f00;}
+.blue,.blue a,a.blue,.blue a:hover,a.blue:hover { color:#0295e0;}
+.blank a,a.blank { color:#000;}
+.orange,.orange a,.orange a:hover,a.orange,a:hover.orange { color:#f60;}
+.orange a:hover { text-decoration:underline;}
+.nrcon li { background:url(../images/dian.gif) no-repeat left center;}
+.mb { border:1px #ccc solid;}
+font { font-size:12px;}
+
+/* = 清除浮动元素= */
+.clr {clear:both;}.clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}
+.fl{float:left !important;}.fr{float:right !important;}.tc{text-align:center}
+.clearfix:after{content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+.clearfix{display: inline-block;}
+* html .clearfix,s
+* html{height: 1%;}
+.clearfix{display: block;}
+
+/* = Auxiliary Styles (辅助样式) = */
+.hr_a,.hr_b{font-size:1px;line-height:1px;clear:both;overflow:hidden}.hr_a{height:10px}.hr_b{height:6px}
+body {font:12px/22px \5b8b\4f53,Arial, Helvetica, sans-serif;color:#666;}
+/* nav导航及列表/切换/滚动辅助样式 */
+.hor li{white-space:nowrap;display:inline;float:left;overflow:hidden}
+.tab_nav li{ cursor:pointer}
+.tab_switch .tabcon { display:none}.tab_switch .tabcon.selected{ display:block}
+.scoll_switch .tabcon{ width:0; height:0; overflow:hidden; visibility:hidden}.scoll_switch .tabcon.selected{ visibility:visible}
+/*滚动按钮控制*/
+.scoll_box{ position:relative}
+.scoll_box span.prev,.scoll_box span.next {width:20px;height:100px;top:60px;background:url(../images/scoll_btn.png) no-repeat;cursor:pointer;position:absolute;display:block;}
+.scoll_box span.prev {left:0px;background-position:left center !important;}
+.scoll_box span.next {right:0px;background-position:right center !important;}
+
+/* = Header And Footer Styles =*/
+.w980,#content { width:980px; margin:0 auto;}
+.mininav { background:url(../images/mininavbg.gif) repeat-x; height:38px; line-height:38px;}
+.mininav a { padding:0 5px;}
+.banner .b1 { background:url(../images/banner_1.jpg) no-repeat top center; height:168px;}
+.banner .b2 { background:url(../images/banner_2.jpg) no-repeat top center; height:151px;}
+.nav { background:url(../images/navbg.jpg) repeat-x; height:41px; line-height:41px;}
+.nav ul li { float:left; background:url(../images/navline.gif) no-repeat right top; width:108px; font-size:14px; font-weight:bold;}
+.nav ul li a { display:block; color:#fff;}
+.nav ul li.hover,.nav ul li a:hover { background:url(../images/navhover.jpg) repeat-x; color:#fff; text-decoration:none;}
+.search { background:url(../images/searchbg.gif) repeat-x; height:54px; line-height:54px;}
+.search ul li {float:left; margin-left:15px; display:inline;}
+.search ul li a { float:left; color:#035e8d; background:url(../images/bg.gif) no-repeat right 26px; display:block; padding-right:15px;}
+.search ul li a:hover {background:url(../images/bg.gif) no-repeat right -7px; color:#f00;}
+.search .bd { margin-top:13px;}
+.search .input { float:left; background:url(../images/bg.gif) no-repeat left -56px;  width:262px; height:29px; line-height:29px; padding-left:33px;}
+.search .btn { float:left; margin:0 2px 0 6px; display:inline; background:url(../images/bg.gif) no-repeat -308px -56px; width:74px; height:29px;}
+#foot { line-height:28px; font-size:13px;}
+#foot a { padding:0 10px;}

@@ -1,0 +1,101 @@
+
+
+<!DOCTYPE html>
+<html>
+<!--
+  Created using jsbin.com
+  Source can be edited via http://jsbin.com/efirip/5/edit
+-->
+  <head>
+    <title>Accidental layer creation</title>
+  
+<style id="jsbin-css">
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+html {
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.to-spin {
+  width: 100px;
+  height: 100px;
+  background: green;
+  position: relative;
+}
+
+.to-spin:focus {
+  -webkit-animation: spin 5s infinite linear;
+  animation: spin 5s infinite linear;
+  outline: none;
+}
+
+.pad {
+  height: 10px;
+}
+
+h1, p {
+  position: relative;
+}
+</style>
+</head>
+  <body>
+    <div class="container">
+      <div class="to-spin" tabindex="0"></div>
+      <div class="pad"></div>
+      <h1>Accidental layer creation</h1>
+
+      <p>
+        Click the box above, it spins, woo! Click somewhere else, it stops, boo!
+      </p>
+      
+      <p>
+        Take a close look at this text when you start and stop the box spinning, it changes ever so slightly, you may have to zoom in to see it. It's losing <a href="http://en.wikipedia.org/wiki/Subpixel_rendering">subpixel antialiasing</a>. This is a symptom of text getting its own texture layer on the GPU.
+      </p>
+      
+      <p>
+        Fire up this page in <a href="https://www.google.co.uk/intl/en/chrome/browser/canary.html">Chrome Canary</a>, and turn on "Show composited layer borders" in devtools settings. You'll see the text getting an orange border when the box is spinning, confirming its getting its own texture-backed layer.
+      </p>
+      
+      <p>
+        Aside from the minor text rendering change, this isn't a big deal on desktop, creating textures and uploading to the GPU is pretty cheap. However, mobile devices often don't have such a friendly relationship with the GPU, and texture creation isn't as cheap.
+      </p>
+      
+      <h2>Why is this happening?</h2>
+      
+      <p>
+        The box has <code>position: relative</code>, but so do the headings and paragraphs. This means the headings and paragraphs are layered above the box. When the box get its own texture-backed layer, by starting a transform-based animation, anything that could appear on top of it must also get a texture-backed layer, as layers without one cannot be rendered on top.
+      </p>
+      
+      <h2>How do I fix it?</h2>
+      
+      <p>
+        Simple! Just make sure elements that are likely to get a texture-backed layer appear on top of ones that won't. In this case, pop into devtools and give the box <code>z-index: 1</code>. Now the font rendering remains the same whether the box is animating or not, and the text doesn't need its own layer on the GPU.
+      </p>
+      
+      <h2>I want to know more!</h2>
+      <p>this if from <a href="http://jsbin.com/efirip/5/quiet">http://jsbin.com/efirip/5/quiet</a></p>
+      <p>
+  I'm giving a talk on aspects of browser rendering like this, <a href="http://lanyrd.com/profile/jaffathecake/future/">pop along to one of them</a>!
+      </p>
+    </div>
+  <script>
+
+</script>
+</body>
+</html>
