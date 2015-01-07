@@ -1,0 +1,327 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+    <title>分单</title>
+    <link href="css/ui-common.css" rel="stylesheet" />
+    <link href="css/ui-components.css" rel="stylesheet" />
+    <link href="css/iframe.css" rel="stylesheet" />
+    <link href="css/dialog.css" rel="stylesheet" />
+    <link href="css/xhpanel.css" rel="stylesheet" />
+</head>
+<body class="waybill">
+    <div class="iframe_header">
+        <i class="icon-home ihome"></i>
+        <ul class="iframe_nav">
+            <li><a href="#">首页</a> ></li>
+            <li><a href="#">订单管理</a> ></li>
+            <li class="active">人工分单</li>
+        </ul>
+    </div>
+    <div class="iframe_search">
+        <div class="xbox-form form-inline">
+            <label>一级部门：<select><option value="">呼叫中心</option><option value="">001</option></select>　</label>
+            <label>二级部门：<select><option value="">请选择</option><option value="">001</option></select>　</label>
+            <label>选择组：<select><option value="">请选择</option><option value="">001</option></select>　</label>
+            <label>员工工号：<input class="w9" type="text" />　</label><br>
+            <label>下单时间：<input class="w9" type="text" /> — <input class="w9" type="text" />　</label>
+            <label>游玩时间：<input class="w9" type="text" /> — <input class="w9" type="text" />　</label>
+            <label>分单时间：<input class="w9" type="text" /> — <input class="w9" type="text" />　</label><br>
+            <label>活动列表：<select><option value="">请选择</option><option value="">001</option></select>　</label>
+            <label>活动细分：<select><option value="">全部</option><option value="">001</option></select>　</label>
+        </div>
+        <p class="tc mt20 operate"><a class="btn btn_cc1">查询</a></p>
+    </div>
+    <div class="iframe_content">
+        <table class="p_table table_center">
+            <thead>
+                <tr>
+                    <th class="w1"></th>
+                    <th class="w3">订单来源</th>
+                    <th class="w3">订单号</th>
+                    <th class="w8">产品名称</th>
+                    <th class="w2">订购数量</th>
+                    <th class="w3">下单日期</th>
+                    <th class="w3">入住日期</th>
+                    <th class="w3">联系人</th>
+                    <th class="w8">当前状态</th>
+                    <th class="w3">当前活动</th>
+                    <th class="w1">操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>驴妈妈前台</td>
+                    <td><a href="#">1234011</a></td>
+                    <td class="tl"><a href="#">上海玛雅酒店大床房上海玛雅酒店豪华套房</a></td>
+                    <td>2</td>
+                    <td>2013-12-03 11:18</td>
+                    <td>2013-12-03～2013-12-04</td>
+                    <td>孔夫子</td>
+                    <td><a class="cc6" href="#">提交</a> | <a class="cc1" href="#">未审核/未确认</a> | <a class="cc1" href="#">未支付</a></td>
+                    <td>资源审核</td>
+                    <td><a href="#">分单</a></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>浙江旅游局</td>
+                    <td><a href="#">1234011</a></td>
+                    <td class="tl"><a href="#">上海玛雅酒店大床房上海玛雅酒店豪华套房</a></td>
+                    <td>2</td>
+                    <td>2013-12-03 11:18</td>
+                    <td>2013-12-03～2013-12-04</td>
+                    <td>孔夫子</td>
+                    <td><a class="cc6" href="#">提交</a> | <a class="cc1" href="#">未审核/未确认</a> | <a class="cc1" href="#">未支付</a></td>
+                    <td>凭证确认</td>
+                    <td><a href="#">分单</a></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>手机客户端</td>
+                    <td><a href="#">1234011</a></td>
+                    <td class="tl"><a href="#">上海玛雅酒店大床房上海玛雅酒店豪华套房</a></td>
+                    <td>2</td>
+                    <td>2013-12-03 11:18</td>
+                    <td>2013-12-03～2013-12-04</td>
+                    <td>孔夫子</td>
+                    <td><a class="cc6" href="#">提交</a> | <a class="cc6" href="#">审核通过/已确认</a> | <a class="cc6" href="#">已支付</a></td>
+                    <td>催支付</td>
+                    <td><a href="#">分单</a></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>淘宝分销</td>
+                    <td><a href="#">1234011</a></td>
+                    <td class="tl"><a href="#">上海玛雅酒店大床房上海玛雅酒店豪华套房</a></td>
+                    <td>2</td>
+                    <td>2013-12-03 11:18</td>
+                    <td>2013-12-03～2013-12-04</td>
+                    <td>孔夫子</td>
+                    <td><a class="cc1" href="#">取消</a> | <a class="cc1"  href="#">审核不通过/未确认</a> | <a class="cc1"  href="#">未支付</a></td>
+                    <td>资源审核</td>
+                    <td><a href="#">分单</a></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="pages darkstyle">   
+            <div class="fl operate"><a class="btn btn_cc1">全选</a><a class="btn btn_cc1">批量分单</a></div>
+            <p class="pages_go">到第 <input type="text" class="w2"> 页 <button type="button" class="btn btn-mini">确定</button></p>
+            <div class="Pages"><p class="page_msg cc3">共 <em class="cc1">460</em> 条记录，每页显示 10 条记录</p><span class="PrevPage"><i class="ui-arrow-left blue-ui-arrow-left"></i>上一页</span><a href="#">1</a><span class="PageSel">2</span><a href="#">3</a><a href="#">4</a><a href="#">5</a><a href="#">6</a><span class="PageMore">...</span><a href="#">20</a><a href="#" class="NextPage">下一页<i class="ui-arrow-right blue-ui-arrow-right"></i></a> </div>
+        </div>
+    </div>
+    
+    
+    <p class="mt20 tc"><a href="javascript:;" class="btn test1">弹窗1</a><a href="javascript:;" class="btn test2">弹窗2</a></p>
+    
+<div id="dialog1" class="hide">
+    <label>一级部门：<select><option value="">呼叫中心</option><option value="">001</option></select>　</label>
+    <label>二级部门：<select><option value="">请选择</option><option value="">001</option></select>　</label>
+    <label>选择组　：<select><option value="">请选择</option><option value="">001</option></select>　</label>
+    <label>选择组员：<select><option value="">请选择</option><option value="">001</option></select>　</label>
+</div>
+
+    <!--------------
+    
+    
+        分单状态
+    
+    
+    ---------------->
+    <h2>这里是分单状态</h2>
+    <div class="iframe_search">
+        <div class="xbox-form form-inline">
+            <label>一级部门：<select><option value="">呼叫中心</option><option value="">001</option></select>　</label>
+            <label>二级部门：<select><option value="">请选择</option><option value="">001</option></select>　</label>
+            <label>选择组：<select><option value="">请选择</option><option value="">001</option></select>　</label>
+            <label>选择组员：<input class="w9" type="text" />　</label>
+            <label>在线状态：<select><option value="">请选择</option><option value="">001</option></select>　</label>
+            
+        </div>
+        <p class="tc mt20 operate"><a class="btn btn_cc1">查询</a></p>
+    </div>
+    <div class="iframe_content">
+        <p class="tr cc3">共查询到 在线人员：<b class="cc7">50</b>人 忙碌人员：<b class="cc7">20</b>人 离线人员：<b class="cc7">15</b>人</p>
+        <table class="p_table table_center">
+            <thead>
+                <tr>
+                    <th>工号</th>
+                    <th>姓名</th>
+                    <th>一级部门</th>
+                    <th>二级部门</th>
+                    <th>三级组</th>
+                    <th>在线状态</th>
+                    <th>已处理活动</th>
+                    <th>已处理订单</th>
+                    <th>未处理活动</th>
+                    <th>未处理订单</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>cs0813</td>
+                    <td>欧阳无敌</td>
+                    <td>呼叫中心</td>
+                    <td>预订部</td>
+                    <td>400一组</td>
+                    <td>在线</td>
+                    <td>100</td>
+                    <td>50</td>
+                    <td>30</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>cs0813</td>
+                    <td>欧阳无敌</td>
+                    <td>呼叫中心</td>
+                    <td>热线部</td>
+                    <td>热线4组</td>
+                    <td>在线</td>
+                    <td>100</td>
+                    <td>50</td>
+                    <td>30</td>
+                    <td>20</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="pages darkstyle">
+            <p class="pages_go">到第 <input type="text" class="w2"> 页 <button type="button" class="btn btn-mini">确定</button></p>
+            <div class="Pages"><p class="page_msg cc3">共 <em class="cc1">460</em> 条记录，每页显示 10 条记录</p><span class="PrevPage"><i class="ui-arrow-left blue-ui-arrow-left"></i>上一页</span><a href="#">1</a><span class="PageSel">2</span><a href="#">3</a><a href="#">4</a><a href="#">5</a><a href="#">6</a><span class="PageMore">...</span><a href="#">20</a><a href="#" class="NextPage">下一页<i class="ui-arrow-right blue-ui-arrow-right"></i></a> </div>
+        </div>
+    </div>
+    
+    <!--------------
+    
+    
+        活动组管理
+    
+    
+    ---------------->
+    <h2>这里是活动组管理</h2>
+    <div class="iframe_search">
+        <div class="xbox-form form-inline">
+            <label>一级部门：<select><option value="">呼叫中心</option><option value="">001</option></select>　</label>
+            <label>二级部门：<select><option value="">请选择</option><option value="">001</option></select>　</label>
+            <label>选择组：<select><option value="">请选择</option><option value="">001</option></select>　</label>
+            <label>选择组员：<input class="w9" type="text" />　</label>
+        </div>
+        <p class="tc mt20 operate"><a class="btn btn_cc1">查询</a></p>
+    </div>
+    <div class="iframe_content">
+        <table class="p_table table_center">
+            <thead>
+                <tr>
+                    <th class="w1"></th>
+                    <th>员工编号</th>
+                    <th>员工姓名</th>
+                    <th>现有被分单权限</th>
+                    <th>调整被分单权限</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>cs0813</td>
+                    <td>欧阳无敌</td>
+                    <td><a href="#">查看</a></td>
+                    <td><a href="#">修改</a></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>cs0813</td>
+                    <td>欧阳无敌</td>
+                    <td><a href="#">查看</a></td>
+                    <td><a href="#">修改</a></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>cs0813</td>
+                    <td>欧阳无敌</td>
+                    <td><a href="#">查看</a></td>
+                    <td><a href="#">修改</a></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="pages darkstyle">
+            <div class="fl operate"><a class="btn btn_cc1">全选</a><a class="btn btn_cc1">批量修改</a></div>
+            <p class="pages_go">到第 <input type="text" class="w2"> 页 <button type="button" class="btn btn-mini">确定</button></p>
+            <div class="Pages"><p class="page_msg cc3">共 <em class="cc1">460</em> 条记录，每页显示 10 条记录</p><span class="PrevPage"><i class="ui-arrow-left blue-ui-arrow-left"></i>上一页</span><a href="#">1</a><span class="PageSel">2</span><a href="#">3</a><a href="#">4</a><a href="#">5</a><a href="#">6</a><span class="PageMore">...</span><a href="#">20</a><a href="#" class="NextPage">下一页<i class="ui-arrow-right blue-ui-arrow-right"></i></a> </div>
+        </div>
+        
+    </div>
+
+    <p class="mt20 tc"><a href="javascript:;" class="btn test3">弹窗3</a><a href="javascript:;" class="btn test4">弹窗4</a></p>
+
+<div id="dialog3" class="hide form-inline xhform">
+    <label class="checkbox"><input type="checkbox" />信息审核：<input class="w3" type="text" />　</label>
+    <label class="checkbox"><input type="checkbox" />资源审核：<input class="w3" type="text" />　</label>
+    <label class="checkbox"><input type="checkbox" />凭证确认：<input class="w3" type="text" />　</label>
+    <label class="checkbox"><input type="checkbox" />订单通知：<input class="w3" type="text" />　</label>
+    <label class="checkbox"><input type="checkbox" />售后：<input class="w3" type="text" />　</label>
+    <label class="checkbox"><input type="checkbox" />取消订单确认：<input class="w3" type="text" />　</label>
+    <label class="checkbox"><input type="checkbox" />催支付：<input class="w3" type="text" />　</label>
+</div>
+
+<div id="dialog4" class="hide form-inline xhform">
+    <label class="checkbox"><input checked disabled type="checkbox" />信息审核：<input disabled value="20" class="w3" type="text" />　</label>
+    <label class="checkbox"><input checked disabled type="checkbox" />资源审核：<input disabled value="20" class="w3" type="text" />　</label>
+    <label class="checkbox"><input checked disabled type="checkbox" />凭证确认：<input disabled value="20" class="w3" type="text" />　</label>
+    <label class="checkbox"><input checked disabled type="checkbox" />订单通知：<input disabled value="20" class="w3" type="text" />　</label>
+    <label class="checkbox"><input checked disabled type="checkbox" />售后：<input disabled value="20" class="w3" type="text" />　</label>
+    <label class="checkbox"><input checked disabled type="checkbox" />取消订单确认：<input disabled value="20" class="w3" type="text" />　</label>
+    <label class="checkbox"><input checked disabled type="checkbox" />催支付：<input disabled value="20" class="w3" type="text" />　</label>
+</div>
+
+<script src="js/jquery1.6.1.js"></script>
+<script src="js/pandora-dialog.js"></script>
+<script src="js/jquery.lvtip.js"></script>
+<script src="js/newpanel.js"></script>
+
+<script type="text/javascript">
+    $(function(){
+        $(".test1").click(function(){
+            pandora.dialog({
+                title: "分单对象选择",
+                content:$("#dialog1"),
+                ok:true,
+                cancel:true
+            });
+        })
+        
+        $(".test2").click(function(){
+            pandora.dialog({
+                title: "提示",
+                content:"选择5条活动进行分单，4条成功，1条失败"
+            });
+        })
+        
+        
+        $(".test3").click(function(){
+            pandora.dialog({
+                title: "权限修改",
+                content:$("#dialog3"),
+                ok:true,
+                cancel:true
+            });
+        })
+        
+        
+        $(".test4").click(function(){
+            pandora.dialog({
+                title: "权限查看",
+                content:$("#dialog4"),
+                cancelValue: "关闭",
+                cancel:true
+            });
+        })
+        
+        
+        
+        
+        
+    })
+    
+
+</script>
+</body>
+</html>

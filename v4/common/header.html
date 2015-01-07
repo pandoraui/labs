@@ -1,0 +1,215 @@
+<!-- 测试临时使用导航》》 如果定位元素后紧跟position:relative;则IE6、7 下 margin-top:值失效   -->
+<div class="main_nav" style="width:150px;position:fixed;_position: absolute; z-index:50; top:70px;left:50%;margin-left:520px;white-space:nowrap;border: 1px solid #ccc;padding: 10px;border-radius: 10px;background: #eee;box-shadow:inset 3px 3px 5px rgba(255, 255, 255, 0.8), 3px 3px 5px rgba(160, 160, 160, 0.2);">
+    <ul>
+        <li><a class="B" href="./index.php">首页</a> <a target="_blank" href="./common/remote.html">新头部</a>　公共 <a target="_blank" href="./common/g-header.html">头部</a>　<a target="_blank" href="./common/g-footer.html">底部</a></li>
+        <li><a class="B" href="./custom.php">定制游</a>
+            <ul style="margin-left:20px;">
+                <li><a href="./custom-page.php">定制单页面</a></li>
+            </ul>
+        </li>
+        <li><a class="B" href="./points.php">积分商城</a>
+            <ul style="margin-left:20px;">
+                <li><a href="./points.php">首页</a></li>
+                <li><a href="./points-list.php">列表页</a></li>
+                <li><a href="./points-details.php">详情页</a></li>
+                <li><a href="./brand-list.php">品牌活动列表页</a></li>
+            </ul>
+        </li>
+        <li><a class="B" href="./viewpoint-details.php">景点详情页</a></li>
+        <li><a class="B" href="###">页面模块</a></li>
+        <li>
+            <ul style="margin-left:20px;">
+                <li><a href="./module.php">tags标签集</a></li>
+                <li><a href="./lazy-autoimg.php">延迟加载+等比缩放</a></li>
+                <li><a target="_blank" href="http://pic.lvmama.com/js/ui/lvmamaUI/plugin/readme.txt">现有lvmamaUI插件的说明</a></li>
+            </ul>
+        </li>
+        
+        <li>测试使用PIC-10.3.1.43</li>
+    </ul>
+    <div class="hr_a"></div>
+    <ul>
+        <!--
+        <li><a id="test_loading" style="cursor:pointer">测试loading效果</a></li>
+        <li><a target="_blank" href="Plugin.php">页面组件</a></li>
+        <li><a target="_blank" href="http://10.3.1.41/labs/lvmama/plugin">页面组件</a></li>
+        -->
+    </ul>
+</div>
+
+
+
+<!-- 《《测试临时使用导航 -->
+
+
+<!-- 
+===============================================
+===============================================
+-------------------- 分割线 --------------------
+===============================================
+===============================================
+-->
+
+
+
+<!-- 公共头部开始  -->
+<!-- topbar\\ -->
+<div class="lv-topbar">
+    <div class="tapbar-inner wrap">
+        <ul class="top-link">
+            <li class="dropdown"><a class="lvlink" href="http://www.lvmama.com/myspace/index.do">我的驴妈妈 <i class="icon-barr"></i></a>
+                <div class="top-sub">
+                    <a href="http://www.lvmama.com/myspace/order.do" rel="nofollow">我的订单</a>
+                    <a href="http://www.lvmama.com/myspace/account/points.do" rel="nofollow">我的积分</a>
+                    <a href="http://www.lvmama.com/myspace/account/coupon.do" rel="nofollow">我的优惠券</a>
+                </div>
+            </li>
+            <li class="dropdown"><a class="lvlink" href="http://login.lvmama.com/nsso/onlineApplyMemberCard/index.do">会员卡 <i class="icon-barr"></i></a>
+                <div class="top-sub">
+                    <a href="http://login.lvmama.com/nsso/onlineApplyMemberCard/index.do" rel="nofollow" target="_blank">申请会员卡</a>
+                    <a href="http://www.lvmama.com/login/loginBindCard.do" rel="nofollow" target="_blank">激活会员卡</a>
+                    <a href="http://www.lvmama.com/stored/goStoredSearch.do" rel="nofollow" target="_blank">旅游卡</a>
+                </div>
+            </li>
+            <li><a class="lvlink" href="http://www.lvmama.com/points">积分商城</a></li>
+            <li><a class="lvlink" href="http://www.lvmama.com/public/help">帮助</a></li>
+            <li class="dropdown join-weixin"><a class="lvlink" href="javascript:void(0);" rel="nofollow"><i class="icon-weixin"></i>+微信</a>
+                <div class="top-sub"><span class="wechatcode"></span></div>
+            </li>
+            
+            <li class="sitemap"><a class="lvlink" target="_self" href="javascript:bookmark()">收藏本站</a></li>
+            <li><a class="lvlink" href="http://e.weibo.com/lvmamas" rel="nofollow"><i class="icon-weibo"></i>+微博</a></li>
+            <li class="sitemap"><a href="http://www.lvmama.com/public/site_map">网站地图</a></li>
+            <li class="site-mobile"><a class="lvlink" href="http://shouji.lvmama.com/" rel="nofollow" target="_blank"><i class="icon-mobile"></i>手机版</a></li>
+        </ul>
+        <span id="J_login" class="lv-login"></span>
+    </div>
+</div> <!-- //.topbar -->
+
+<div class="lv-header wrap">
+    <div class="header-inner">
+        <span id="hotline" class="lv-hotline">1010-6060</span>
+        <a class="lv-logo" href="http://www.lvmama.com/">自助天下游 就找驴妈妈</a>
+        <div id="adPro" class="lv-adPro"></div>
+    </div>
+</div> <!-- //.lv-header -->
+
+
+
+
+
+
+<div class="hh_shortcut_box hide">
+  <div class="hh_shortcut clearfix">
+	<ul class="hh_shortcut_nav clearfix">
+		<li class="hh_link">
+			<a href="http://www.lvmama.com/myspace/index.do" class="hh_mylvmama" rel="nofollow">我的驴妈妈<i class="hh_icon_triangleB"></i></a>
+			<div class="hh_lvmama_sub">
+				<a href="http://www.lvmama.com/myspace/order.do" rel="nofollow">我的订单</a>
+				<a href="http://www.lvmama.com/myspace/account/points.do" rel="nofollow">我的积分</a>
+				<a href="http://www.lvmama.com/myspace/account/coupon.do" rel="nofollow">我的优惠券</a>
+			</div>
+		</li>
+		<li class="hh_link">
+			<a href="http://login.lvmama.com/nsso/onlineApplyMemberCard/index.do" class="hh_mylvmama" rel="nofollow" target="_blank">会员卡<i class="hh_icon_triangleB"></i></a>
+			<div class="hh_lvmama_sub">
+				<a href="http://login.lvmama.com/nsso/onlineApplyMemberCard/index.do" rel="nofollow" target="_blank">申请会员卡</a>
+				<a href="http://www.lvmama.com/login/loginBindCard.do" rel="nofollow" target="_blank">激活会员卡</a>
+				<a href="http://www.lvmama.com/stored/goStoredSearch.do" rel="nofollow" target="_blank">旅游卡</a>
+			</div>
+		</li>
+		<li><a href="http://www.lvmama.com/points" rel="nofollow">积分商城</a></li>
+		<li><a href="http://www.lvmama.com/public/help" rel="nofollow">帮助</a></li>
+		<li class="hh_link join_weixin"><a class="hh_mylvmama" href="javascript:void(0);" rel="nofollow"><i class="icon-weixin"></i>+微信</a>
+			<div class="hh_lvmama_sub" style="text-align:center;">
+				<img src="http://pic.lvmama.com/img/v3/weixin.png" width="80" height="80">
+			</div>
+		</li>
+		<li><a href="http://e.weibo.com/lvmamas" rel="nofollow"><i class="icon-weibo"></i>+微博</a></li>
+		<li class="sitemap"><a href="http://www.lvmama.com/public/site_map">网站地图</a></li>
+		<li class="hh_icon_phone"><a href="http://shouji.lvmama.com/" rel="nofollow" target="_blank">手机版</a></li>
+	</ul>
+	<span class="hh_loginSpanArea" id="hh_loginSpanArea"></span>
+  </div>
+</div> <!-- //div.hh_shortcut_box -->
+
+<div class="hh_header clearfix hide">
+	<span class="hh_hotline">1010-6060</span>
+	<a class="hh_logo" href="http://www.lvmama.com/">驴妈妈旅游网:中国自助游领军品牌</a>
+	<div class="hh_adPro"></div>
+</div> <!--header end-->
+
+
+<div id="pnav" class="pnav clearfix">
+    <div class="wrap">
+        <ul class="pnav-main">
+            <li id="home"><a href="index.php">首页</a></li>
+            <li id="ticket"><a href="ticket.php">景点门票</a></li>
+            <li id="freetour"><a href="freetour.php">周边游</a></li>
+            <li id="destroute"><a href="destroute.php">国内游</a></li>
+            <li id="abroad"><a href="abroad.php">出境游</a></li>
+            <li id="hotel"><a href="hotel.php">酒店</a></li>
+            <li id="globalhotel"><a href="http://hotel.lvmama.com">海外酒店</a></li>
+            <li id="flight"><a href="http://flight.lvmama.com">国际机票</a><i class="icon-new"></i></li>
+            <li id="train"><a href="train.php">火车票</a><i class="icon-new"></i></li>
+            <li id="custom"><a href="custom.php">定制游</a></li>
+        </ul>
+        <ul class="pnav-small">
+            <li id="comment"><a href="###">点评</a></li>
+            <li id="guide"><a href="###">攻略</a></li>
+            <li id="place"><a target="_blank" href="http://www.lvmama.com/zt/s/"><span>专题</span></a></li>
+            <li id="info"><a href="###">资讯</a></li>
+            <li id="bbs"><a href="###">社区</a></li>
+        </ul>
+    </div>
+</div>
+
+
+<div id="pnav" class="pnav clearfix hide">
+    <div class="wrap">
+        <ul class="pnav-main">
+            <li id="home"><a href="index.php">首页</a></li>
+            <li id="ticket"><a href="ticket.php">景点门票</a></li>
+            <li id="freetour"><a href="freetour.php">周边游</a></li>
+            <li id="destroute"><a href="destroute.php">国内游</a></li>
+            <li id="abroad"><a href="abroad.php">出境游</a></li>
+            <li id="hotel"><a href="hotel.php">酒店</a></li>
+            <li id="globalhotel"><a href="http://hotel.lvmama.com">海外酒店</a></li>
+            <li id="flight"><a href="http://flight.lvmama.com">国际机票</a><i class="icon-new"></i></li>
+            <li id="train"><a href="train.php">火车票</a><i class="icon-new"></i></li>
+            <li id="custom"><a href="custom.php">定制游</a></li>
+        </ul>
+        <ul class="pnav-small">
+            <li id="lvcomment"><a href="###">点评</a></li>
+            <li id="lvguide"><a href="###">攻略</a></li>
+            <li id="lvplace"><a target="_blank" href="http://www.lvmama.com/zt/s/"><span>专题</span></a></li>
+            <li id="lvinfo"><a href="###">资讯</a></li>
+            <li id="lvbbs"><a href="###">社区</a></li>
+        </ul>
+    </div>
+</div> <!-- //div.pnav -->
+
+<div id="pnav" class="pnav clearfix hide">
+    <div class="wrap">
+        <ul class="pnav-main">
+            <li id="home"><a href="http://www.lvmama.com">首页</a></li>
+            <li id="ticket"><a href="http://www.lvmama.com/ticket">景点门票</a></li>
+            <li id="freetour"><a href="http://www.lvmama.com/freetour">周边游</a></li>
+            <li id="destroute"><a href="http://www.lvmama.com/destroute">国内游</a></li>
+            <li id="abroad"><a href="http://www.lvmama.com/abroad">出境游</a></li>
+            <li id="hotel"><a href="http://www.lvmama.com/hotel" rel="nofollow">酒店</a></li>
+            <li id="globalhotel"><a href="http://hotel.lvmama.com" rel="nofollow">海外酒店</a></li>
+            <li id="flight"><a href="http://flight.lvmama.com">国际机票</a><i class="icon-new"></i></li>
+            <li id="train"><a href="http://www.lvmama.com/train">火车票</a><i class="icon-new"></i></li>
+            <li id="custom"><a href="http://www.lvmama.com/company" rel="nofollow">定制游</a></li>
+        </ul>
+        <ul class="pnav-small">
+            <li id="lvcomment"><a href="http://www.lvmama.com/comment" rel="nofollow">点评</a></li>
+            <li id="lvguide"><a href="http://www.lvmama.com/guide">攻略</a></li>
+            <li id="lvplace"><a target="_blank" href="http://www.lvmama.com/zt/s/"><span>专题</span></a></li>
+            <li id="lvinfo"><a href="http://www.lvmama.com/info">资讯</a></li>
+            <li id="lvbbs"><a href="http://bbs.lvmama.com" rel="nofollow">社区</a></li>
+        </ul>
+    </div>
+</div> <!-- //div.pnav -->
+<!-- 公共头部结束  -->

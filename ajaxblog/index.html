@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>Nerver-ending Blog</title>
+<meta generator="//daqianduan.com/feed" />
+<script src="js/ajax.js"></script>
+</head>
+<body>
+    <div id="page">
+        <div id="header">
+            Nerver-ending Blog
+        </div>
+        <div id="content">
+            <div class="post">
+                <h2><a href="#">标题</a></h2>
+                <div class="entry">
+                    文章的内容
+                </div>
+                <p class="postmetadata">
+                    <a href="#">Comments</a>
+                </p>
+            </div>
+        </div>
+    </div>
+<script>
+ajax({
+    url : "feed.xml"
+})
+</script>
+</body>
+</html>

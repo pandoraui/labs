@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>创建新材料</title>
+<link rel="stylesheet" href="css/ui-common.css">
+<link rel="stylesheet" href="css/ui-components.css">
+<link rel="stylesheet" href="css/panel-content.css">
+</head>
+<body>
+<div class="ui_title">
+	<ul class="ui_tab">
+		<li class="active"><a href="#">创建新材料</a></li>
+	</ul>
+</div>
+
+<!-- 主要内容显示区域\\ -->
+<div class="iframe-content">    
+	<div class="p_box stuff_box">
+        <div class="box_content">
+        <table class="p_table">
+            <tbody>
+                <tr>
+                	<td class="p_label">国家名称：</td>
+                    <td><input type="text"></td>
+                    <td class="p_label">所属洲：</td>
+                    <td><select>
+                    <option value="">亚洲</option>
+                    <option value="">美洲</option>
+                    </select></td>
+                </tr>
+                <tr>
+                	<td class="p_label">签证类型：</td>
+                    <td class="form-inline" colspan="3">
+                    	<label class="radio"><input name="type-visa" type="radio">团队旅游签证</label>　
+                        <label class="radio"><input name="type-visa" type="radio">个人旅游签证</label>　
+                        <label class="radio"><input name="type-visa" type="radio">商务签证</label>　
+                        <label class="radio"><input name="type-visa" type="radio">探亲访友</label>　
+                        <label class="radio"><input name="type-visa" type="radio">留学签证</label>　
+                    </td>
+                </tr>
+                <tr>
+                	<td class="p_label">签送城市：</td>
+                    <td colspan="3"><select>
+                    <option value="">亚洲</option>
+                    <option value="">美洲</option>
+                    </select></td>
+                </tr>
+                <tr>
+                	<td class="p_label">人群：</td>
+                    <td colspan="3"><select>
+                    <option value="">亚洲</option>
+                    <option value="">美洲</option>
+                    </select></td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="tc mt20"><button class="btn btn-small w4 add_stuff" type="button">下一步</button>　<button class="btn btn-small w4" type="button">取消</button></p>
+        </div>
+	</div><!-- div p_box -->
+    
+
+    <!-- 创建新材料 -->
+    <div class="p_box stuff_box">
+        <table class="p_table J_additem_box">
+            <thead>
+                <tr>
+                	<th colspan="2"><h4>在职人员所需材料</h4><p>国家：法国　　送签城市：上海送签　　签证类型：团队旅游签证</p></th>
+                </tr>
+            </thead>
+            <tbody class="item">
+                <tr>
+                    <td>材料名称</td><td><button class="close">×</button><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>材料要求</td><td><textarea class="p-textarea"></textarea></td>
+                </tr>
+            </tbody>
+            <tbody class="item">
+                <tr>
+                    <td>材料名称</td><td><button class="close">×</button><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>材料要求</td><td><textarea class="p-textarea"></textarea></td>
+                </tr>
+            </tbody>
+			<tbody class="item J_additem_info">
+                <tr>
+                    <td>材料名称</td><td><button class="close">×</button><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>材料要求</td><td><textarea class="p-textarea"></textarea></td>
+                </tr>
+            </tbody>
+			<!-- 上面这个是新材料信息模板，勿删 -->
+            <tfoot>
+                <tr>
+                    <td colspan="2"><button class="btn btn-small J_btn_additem" type="button">新增材料要素</button></td></td>
+                </tr>
+            </tfoot>
+        </table>
+        
+        <p class="tc mt20"><button class="btn btn-small w5" type="button">修改并保存</button>　<button class="btn btn-small w5" type="button">取消</button></p>
+	</div><!-- div p_box -->
+    
+
+    
+</div><!-- //主要内容显示区域 -->
+
+<script src="http://pic.lvmama.com/js/new_v/jquery-1.7.min.js"></script>
+<script src="js/iframe-custom.js"></script>
+</body>
+</html>

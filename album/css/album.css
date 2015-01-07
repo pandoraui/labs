@@ -1,0 +1,71 @@
+
+/* 电子相册样式 */
+
+body{
+    font-family: verdana, arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: 0.75em;
+    text-align: center;
+    color: #656565;
+}
+
+p{margin:0}
+img{border:none;}
+a{text-decoration:none;}
+ul,ol,dl,dt,dd,li{margin:0;padding:0;list-style:none;}
+
+/* 下面的样式代码实现页面布局
+主要包括：基本结构布局、标题栏样式、导航布局、图片框和灯箱样式
+*/
+
+/* 基本框架
+----------------------------------------*/
+
+#wrap{width:880px;margin:0 auto;text-align:left;}
+#logo{height:60px;border-top:6px solid;}
+#nav{height:38px;border-bottom:6px solid;clear:both;}
+#main{overflow:auto;brder:6px solid;border-top:0;background:(../img/bg.gif) #ddd repeat-y center;min-height:438px;zoom:1;}
+
+html>body #main{border-width:6px;border-style:solid;}
+* html #main{height:438px;}
+
+/* 网页标题
+----------------------------------------*/
+#logo h1{font-size:300%;padding:4px 0 0 20px;float:left;filter:alpha(opacity=40);opacity:0.4;margin:0;}
+#links{margin:0 9px 0 0;font-size:90%;text-align:right;padding:20px 10px 0 0;text-transform:uppercase;font-weight:normal;}
+#links a,#links a:hover{padding:0 0 2px 0;}
+
+/* 页面导航栏目
+----------------------------------------*/
+#nav li{float:left;}
+#nav li a{display:block;float:left;height:32px;line-height:32px;text-decoration:none;padding:6px 16px 0 16px;border-right:1px solid;font-weight:bold;}
+#colors{text-align:right;padding:16px 16px 0 0;}
+
+/* 左侧分类
+----------------------------------------*/
+#side_menu{padding:22px 12px 12px 12px;float:left;width:170px;margin-top:2em;text-align:right;}
+#side_menu div{padding:4px;margin:2px autp;float:left;position:relative;}
+#side_menu a{float:left;border:2px solid #bbb;}
+#side_menu a:hover{border-color:#efefef;}
+#side_menu img{border:3px solid #efefef;}
+#side_menu span{position:absolute;right:12px;bottom:10px;padding:2px 4px;color:#eee;filter:alpha(opacity=60);opacity:0.6;}
+#side_menu p{cursor:pointer;dispay:inline;}
+
+/* 右侧图像浏览区域
+----------------------------------------*/
+#content{float:left;padding:12px 8px 6px 8px;}
+html > body #content{float:right;width:648px;}
+#content h3{font-weight:nornal;padding:6px;margin:0 0 6px 0;border-bottom:1px solid;font-size:180%;}
+.sub{font-size:12px;padding-left:12px;}
+#gallery{position:relative;padding-top:8px;width:100%;}
+#thumbs{width:205px;float:right;margin:1px 0 3px 10px;width:50px;height:50px;border:2px solid #fff;position:relative;}
+#thumbs a img{width:50px;height:50px;}
+#thumbs a:hover img {width:56px;height:56px;position:absolute;left:-5px;top:-5px;border:2px solid #fff;}
+.big_pic{position:absolute;right:196px;top:8px;}
+.big_pic img{width:450px;height:320px;padding:2px;}
+.big_title{position:absolute;right:400px;top:348px;}
+#lightbox{display:none;}
+.hidden{display:none;}
+
+

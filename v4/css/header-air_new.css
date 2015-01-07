@@ -1,0 +1,268 @@
+
+/* reset */
+audio,canvas,video{display:inline;zoom:1;}
+command,datalist,keygen,mark,meter,progress,rp,rt,ruby,time,wbr{display:inline;}
+[hidden]{display:none;}
+html{color:#333;background:#fff;font-family:Tahoma,Arial,\5b8b\4f53;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
+body,div,dl,dt,dd,ol,ul,li,h1,h2,h3,h4,h5,h6,p,blockquote,pre,code,tr,th,td,hr,menu{margin:0;padding:0;}
+ol,ul{list-style-type:none;}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+b,strong{font-weight:700;}
+blockquote,pre{white-space:pre-wrap;word-wrap:break-word;}
+q{quotes:\201C \201D \2018 \2019;}
+q:before,q:after{content:'';}
+small{font-size:80%;font-weight:normal;}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}
+sup{top:-0.5em;}
+sub{bottom:-0.25em;}
+ins,a{text-decoration:none;}
+a:hover{text-decoration:underline;}
+fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}
+button,input,select,textarea{font-family:Tahoma,Arial,\5b8b\4f53;margin:0;}
+button,input{line-height:normal;overflow:visible;}
+button,select{text-transform:none;}
+button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}
+button[disabled],html input[disabled]{cursor:default;}
+input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}
+textarea{overflow:auto;vertical-align:top;}
+table{border-collapse:collapse;border-spacing:0;}
+th{text-align:inherit;}
+abbr,acronym{border:0;font-variant:normal;}
+del{text-decoration:line-through;}
+address,caption,cite,dfn,em,i,var{font-style:normal;font-weight:500;}
+caption,th{text-align:left;}
+
+article,aside,details,embed,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,iframe{display:block;}
+img,fieldset,img{border:0;}
+legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+
+/* 全站的一些公共样式 */
+body{margin:0;background:#fff;}
+
+.wrap{width:1000px !important;}
+.padbox{text-align:center;margin:10px 0;}
+.xhcopyinfo{margin:10px auto 12px;clear:both;text-align:center;}
+.padbox img,.xhcopyinfo img{vertical-align:middle;}
+
+/* 清除浮动 */
+.clearfix:after,.wrap:after{clear:both;content:' ';display:block;font-size:0;line-height:0;visibility:hidden;width:0;height:0;}
+.clearfix,.wrap{*zoom:1;}
+.clear{clear:both;display:block;height:0;overflow:hidden;visibility:hidden;}
+.wrap{margin-left:auto !important;margin-right:auto !important;}
+
+/* header && footer 结构优化版2012-11-07 */
+.lv-topbar,.lv_header,.hh_footer {font:12px/22px Tahoma,Arial,\5b8b\4f53;color:#333;background:#fff;}
+.lv-topbar *{margin:0;padding:0;}
+.lv-topbar{position:relative;z-index:50;}
+.lv-topbar a{text-decoration: none;font-weight:normal;}
+.lv-topbar a:hover{text-decoration: underline;color:#e08;}
+
+.lv-topbar{padding-bottom:1px;border-bottom:1px solid #ddd;height:26px; line-height:26px; font-size:12px;}
+.top-link{ float:right; display:inline;*zoom:1;}
+.top-link li{ float:left; display:inline;border-right:1px solid #a6a6a6; height:14px;margin:6px 0;*zoom:1;}
+.top-link li.site-mobile{border:none;}
+.top-link a.lvlink{margin:-6px 0; height:18px;}
+
+.top-sub{display:none;position: absolute;z-index: 9;top: 18px;left: -1px;width: 90px;border: 1px solid #ddd;overflow: hidden;padding: 6px 0 4px;clear: both;}
+.top-sub a{float:left;display:block;height:18px;line-height:18px;}
+.top-link a{float:left; display:inline; *zoom:1; padding:0 10px;color:#333; }
+
+.top-link .dropdown{position:relative;}
+.top-link .dropdown a.lvlink{ padding:0 20px 0 9px;border-color:#fff; border-style:solid; border-width:1px 0 0 1px;}
+.top-link .current a.lvlink,.top-link .dropdown:hover a.lvlink{background: #fff;position: relative;z-index: 10;padding-left: 10px;margin-left: -1px;margin-right: -1px;border-color: #ddd;border-style: solid;border-width: 1px 1px 0 1px;height:24px;}
+.top-link .dropdown:hover .top-sub,.top-link li.current .top-sub{display:block;background:#fff;}
+
+i.icon-barr{position:absolute;z-index:10; display:inline-block;width:0;height:0; line-height:0; font-size:0; overflow:hidden; border-width:4px; *zoom:1; border-style:solid dashed dashed dashed; border-color:#737373 transparent transparent transparent;}
+.top-link .dropdown i.icon-barr {top:7px; right:9px;}
+.top-link .current i.icon-barr,.top-link .dropdown:hover i.icon-barr{ top:7px;border-style:dashed dashed solid dashed; border-color:transparent transparent #737373 transparent;}
+
+.lv-login{display:inline-block;padding:5px 0 0;height:14px; line-height:15px;color:#555;font-family: \5b8b\4f53,Tahoma,Arial,sans-serif;}
+.lv-login a{color:#06c;height:100%; display:inline-block;*zoom:1; padding:0 6px;cursor:pointer;}
+.lv-login .link-register {border-left:1px solid #bfbfbf;}
+
+/* header */
+.wechatcode,.lv-hotline,.lv-safety,#goTopBtn,#Feedback{background:url(http://pic.lvmama.com/img/v3/imghf8.png) no-repeat;display:inline-block;}
+.lv-header{margin:10px auto;height:60px;position:relative;}
+.header-inner{padding:0 10px;*zoom:1;}
+.lv-logo{float:left;display:inline;width:380px;height:60px; background: url(http://pic.lvmama.com/img/v3/logo.png) no-repeat left center;_background: url(http://pic.lvmama.com/img/v3/logo8.png) no-repeat left center;text-indent:-9999px;outline:none}
+.lv-adPro{position: absolute;z-index:9;display: block;left:460px;top:0;width:300px;height:60px;overflow:hidden;}
+.lv-adPro img{width:300px;height:60px;}
+.lv-hotline{width: 156px;background-position:50px -35px;position:relative;top:6px;float:right;display:block;padding-right:70px;overflow:hidden;padding-top:15px; font:500 20px/34px 'Microsoft YaHei';text-align:right;overflow:hidden; color:#d38;}
+.sarrow,i.icon-mobile,i.icon-weixin, i.icon-weibo, .icon-new, .icon-caibei {
+    background: url(http://pic.lvmama.com/img/v3/combo.png) no-repeat;
+    _background: url(http://pic.lvmama.com/img/v3/combo8.png) no-repeat;
+    background: url(../img/combo.png) no-repeat;
+    background-position:-9999px -9999px;
+    display:inline-block;
+}
+i.icon-mobile{width:10px;height:14px;background-position:0 -217px;position: relative;top:2px;_top: 2px;_float: left;margin-right:3px;}
+i.icon-weixin,i.icon-weibo{width: 16px;height: 16px;position:relative;top:5px;*top:2px;_top:5px;_float:left;vertical-align:top;*vertical-align:middle;margin-right:3px;}
+i.icon-weixin{ background-position: 0 -144px;}
+i.icon-weibo{ background-position: 0 -168px;}
+.join-weixin a{ padding-right:10px !important;}
+.join-weixin .top-sub{text-align:center;}
+.wechatcode{background-position:-180px -35px;display:inline-block;width:80px;height:80px;vertical-align: middle;}
+.sitemap{position:absolute !important;clip: rect(1px 1px 1px 1px);}
+.xhcopyinfo{margin:10px auto;clear:both;}
+.icon-new{background-position:-25px 0; width:18px; height:18px; }
+.pnav .icon-new{position:absolute; top:-8px;right:0;z-index:4;}
+
+#goTopBtn,#Feedback{width:32px;height:32px;position:fixed;z-index:100;left:50%;margin-left:520px;cursor:pointer;}
+#goTopBtn{background-position:-270px -35px;bottom:60px;}
+#Feedback{background-position:-302px -35px;bottom:20px;}
+#goTopBtn:hover{background-position:-270px -67px;}
+#Feedback:hover{background-position:-302px -67px;}
+/* 小提醒 */
+.stips{position:absolute;z-index:1000;display:inline-block;padding:3px 30px 3px 10px;border:1px solid #fc6;color:#e60;font-size:12px;background:#fffae4;left:50%;margin-left:-386px;top:18px;line-height:20px;display:none;}
+.stips .sclose{font-family:Tahoma;color:#e60;font-size:14px;width:20px;text-align:center;height:20px;line-height:20px;font-weight:bold;position:absolute;right:3px;top:3px;cursor:pointer;}
+.stips .sarrow{display:inline-block;width:12px;height:12px;background-position: -60px 0; position:absolute;left:-12px;top:-1px;}
+
+.padbox{text-align:center;margin:10px 0;}
+.xhcopyinfo{margin:10px auto 12px;clear:both;text-align:center;}
+.padbox img,.xhcopyinfo img{vertical-align:middle;}
+
+/*QQ caibei*/
+.icon-caibei{width:22px;height:20px;background-position:-22px -20px;float:left;margin-right:5px;}
+.caibei-wrap{position:relative;background:#fff3e3;height:24px;font-size:12px;line-height:24px;border-bottom:1px solid #fce6bf;color:#333;}
+.caibei-wrap a{color:#06c;}
+.caibei-info{float:left;height:20px;}
+.caibei-info strong{font-weight:bold; color:#333;}
+.caibei-info em{font-weight:bold;color:#FF0000;font-style:normal;}
+.caibei-user{float:right;padding-right:8px;text-align:right;}
+.caibei-close{position:absolute;right:10px;top:0;width:20px;height:20px;overflow:hidden;color:#FF7A17;font-weight:bold;line-height:20px;text-align:center;font-style:normal;cursor:pointer;}
+
+/* footer */
+.lv-footer *{margin:0;padding:0;}
+.lv-footer {margin:0 auto;padding:10px 0;border-top:2px solid #dd1177;font-family: Arial,\5b8b\4f53;font-size:12px;clear:both;text-align:center;}
+.footer-link,.lv-copyright {line-height:22px;clear:both;color:#888;}
+.footer-link{color:#ccc;}
+.footer-link a,.lv-copyright a{text-decoration: none;font-weight: normal !important;color:#888;}
+.footer-link a{padding:0 10px;}
+.lv-safety{display: block;margin: 5px auto 0;width:620px;height:35px;background-position:0 0;}
+.lv-safety a{display:inline-block;float:left;height:100%;width:52px;}
+.lv-safety a.safety4{width:75px;}
+.lv-safety a.safety7{width:90px;}
+.lv-safety a.safety8{width:90px;}
+
+/* friend link */
+.hh_cooperate{overflow:hidden; zoom:1;margin:0 auto; padding:10px;width:980px;font-size:12px;line-height:22px;border-top:1px solid #ddd;}
+.hh_cooperate strong,.hh_cooperate b{color:#888;float:left;font-weight:blod;}
+.hh_cooperate span{float:left;display:block;width:910px;text-align:left;}
+.hh_cooperate a{margin-right:4px;color:#888;}
+.hh_cooperate a:hover{color:#dd3388;}
+
+/* 新导航 */
+.pnav {
+    height: 37px;
+    padding-top: 3px;
+    line-height: 37px;
+    background: #de1178;
+}
+.pnav * {
+    margin:0; 
+    padding:0;
+}
+.pnav .wrap{
+    margin: 0 auto;
+}
+.pnav li {
+    float: left;
+    display: inline;
+    margin: 0 2px 0 0;
+    position: relative;
+    z-index: 1;
+}
+.pnav a {
+    display: block;
+    float: left;
+    height: 37px;
+    padding: 0 10px;
+    line-height: 37px;
+    color: #fff;
+    font-weight: bold;
+    outline: none;
+    text-decoration: none;
+}
+.pnav a:hover {
+    text-decoration: none;
+    background: #f33399;
+    color: #fff;
+}
+.pnav .active a {
+    background: #fff;
+    color: #000;
+}
+.pnav-main {
+    float: left;
+}
+.pnav-main li {
+    font-size: 16px;
+}
+
+.pnav-small {
+    float: right;
+    font-size: 12px;
+}
+.pnav-small li {
+    margin: 0 0 0 2px !important;
+    width: auto !important;
+    height: auto !important;
+    padding: 0 !important;
+    border: none !important;
+}
+.pnav-small a {
+    padding: 0 9px;
+}
+
+/* 临时导航使用 */
+.pnav-main li{font-size:16px;}
+.pnav-main a{padding: 0 8px;}
+.pnav-small a{padding: 0 7px;}
+
+#train{display:none;}
+
+/* 主频道当前栏目标识 */
+.pnav a.selected,
+.home #home a,
+.ticket #ticket a,
+.freetour #freetour a,
+.around #around a,
+.tuangou #tuangou a,
+.globalhotel #globalhotel a,
+.destroute #destroute a,
+.abroad #abroad a,
+.hotel #hotel a,
+.custom #custom a,
+.flight #flight a,
+.train #train a{
+    background: #fff;
+    color: #000;
+}
+
+#train{ display:none;}
+#pnav #around,
+#pnav #tuangou{display:none;}
+
+/* version 2 2012-07-02 by pp*/
+.buttom{width:960px; padding:0 0 10px 10px ;margin: 10px auto 0;overflow:hidden;zoom:1;clear:both;}
+.buttom_list{margin:0 20px 0 20px;_margin:0 15px 0 15px;display:inline;line-height:22px;width:200px;float:left; overflow:hidden;}
+.buttom_list b{display:block;font-size:12px;margin-bottom:3px;}
+.buttom_list a{display:block;padding-left:28px; white-space:nowrap;color:#888;text-overflow:ellipsis; overflow:hidden}
+.buttom_list a:hover{color:#dd3388;}
+
+.buttom_list_tit1,.buttom_list_tit2,.buttom_list_tit3,.buttom_list_tit4{background:url(http://pic.lvmama.com/img/new_v/ob_main/icon.gif) no-repeat;}
+.buttom_list b{padding:0 0 4px 30px;font-weight:bold;border-bottom:1px solid #ddd;}
+.buttom_list_tit1{ background-position:8px 3px;}
+.buttom_list_tit2{ background-position:8px -38px;}
+.buttom_list_tit3{ background-position:8px -78px;}
+.buttom_list_tit4{ background-position:8px -117px;}
+
+
+/* 右侧浮动 */
+.sj_pop{position:fixed; z-index:999; bottom: 100px; left:50%;margin-left:520px;width: 118px; height:306px;padding: 0 20px 0 0;text-align: center; line-height:16px; background:url(http://pic.lvmama.com/img/v3/shoujiQRbg.png) no-repeat 0 0;_position:absolute;_top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight)-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0));
+}
+.shoujiQRimg{margin:160px 0 0;}
+.shoujiQRlink{color:#333;text-decoration:none;font:12px/1.5 "宋体"; display:block; text-align:center;}
+.shoujiQRclose{width:18px;height:17px; position:absolute;top:140px;right:20px; display:block;}
+

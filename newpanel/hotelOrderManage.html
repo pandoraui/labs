@@ -1,0 +1,291 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>酒店下单后台管理</title>
+    <link href="css/ui-common.css" rel="stylesheet" />
+    <link href="css/ui-components.css" rel="stylesheet" />
+    <link href="css/iframe.css" rel="stylesheet" />
+    <link href="css/dialog.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="iframe_header">
+        <i class="icon-home ihome"></i>
+        <ul class="iframe_nav">
+            <li><a href="#">首页</a>：</li>
+            <li><a href="#">订单管理</a> ></li>
+            <li class="active">订单处理</li>
+        </ul>
+    </div>
+    <div class="order_main iframe_content mt10">
+        <div class="order_msg clearfix">
+            <div class="order_seach">查询订单号：<input type="text" /><a class="btn ml10">取消</a> </div>
+            <span class="f16 fl">订单号：<strong>100231</strong></span>
+            <a class="ml20" href="#">上一个关联订单</a> |
+            <a href="#">下一个关联订单</a>
+        </div>
+        <div class="solid_border"></div>
+        <div class="sidebar equalheight_item">
+            <div class="side_setbox sidebox">
+                <table class="sidebar_table" >
+                    <thead>
+                        <tr>
+                            <th>订单状态名称</th>
+                            <th>状态</th>
+                            <th>相关操作</th>
+                        </tr>    
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>信息审核</td>
+                            <td><input type="radio" /></td>
+                            <td><a href="#">[其他订单]</a></td>
+                        </tr>
+                        <tr>
+                            <td>资源审核</td>
+                            <td><input type="radio" /></td>
+                        </tr>
+                        <tr>
+                            <td>凭证确认</td>
+                            <td><input type="radio" /></td>
+                            <td><a href="#">[查回传]</a></td>
+                        </tr>
+                        <tr>
+                            <td>客人入住</td>
+                            <td><input type="radio" /></td>
+                        </tr>
+                        <tr>
+                            <td>订单取消已确认</td>
+                            <td><input type="radio" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="solid_line"></div>
+            <div class="side_setbox sidebox">
+                <h4>支付状态<span>(预授权支付)</span></h4>
+                <table class="sidebar_table" >
+                    <tbody>
+                        <tr>
+                            <td>付款情况：</td>
+                            <td>部分支付</td>
+                            <td><a href="#">[支付]</a></td>
+                        </tr>
+                        <tr>
+                            <td>应收款：</td>
+                            <td>RMB 2000元</td>
+                        </tr>
+                        <tr>
+                            <td>已收款：</td>
+                            <td>RMB 2000元</td>
+                            <td><a href="#">[查看记录]</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="solid_line"></div>
+            <div class="side_setbox sidebox">
+                <h4>订单取消<span>(结算中无法取消)</span></h4>
+                <table class="sidebar_table" >
+                    <tbody>
+                        <tr>
+                            <td><label class="radio"><input type="radio" name="order" />资源不确定</label></td>
+                            <td><label class="radio"><input type="radio" name="order" />客服通知取消</label></td>
+                        </tr>
+                        <tr>
+                            <td><label class="radio"><input type="radio" name="order" />信息不通过</label></td>
+                            <td><label class="radio"><input type="radio" name="order" />废单重下</label></td>
+                        </tr>
+                        <tr>
+                            <td><label class="radio"><input type="radio" name="order" />其他取消</label></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div>
+                    <span>取消原因：</span>
+                    <select>
+                        <option value="0">-选择原因-</option>
+                        <option value="1">-选择原因-</option>
+                        <option value="2">-选择原因-</option>
+                        <option value="3">-选择原因-</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="main equalheight_item">
+            <div class="main_con clearfix">
+                <div class="main_order_msg">
+                    <div>
+                        <a class="fr" href="#">附近(1)</a>
+                        订单备注记录：
+                    </div>
+                    <textarea style="width:285px; height:120px;">
+
+                    </textarea>
+                    <span class="fr">0/50字</span>
+                    <div class="operate mt10"><a class="btn btn_cc1">确认修改</a></div>
+                    <div class="mt20">
+                        <p>供应商：</p>
+                        <ul class="supplier_list">
+                            <li>发送传真</li>
+                            <li>记录查询</li>
+                            <li>售后服务</li>
+                            <li>复制订单</li>
+                            <li>预定通知</li>
+                            <li>上传附件</li>
+                            <li>资金转移</li>
+                            <li>查看日志</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main_order_info">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td class="e_label w10">下单时间：</td>
+                                <td>2013-05-12 21:58</td>
+                            </tr>
+                            <tr>
+                                <td class="e_label">订单来源：</td>
+                                <td>后台下单 [CS5108]</td>
+                            </tr>
+                            <tr>
+                                <td class="e_label">付款方式：</td>
+                                <td>前台现付</td>
+                            </tr>
+                            <tr>
+                                <td class="e_label">无损取消时间：</td>
+                                <td><span class="lineae_line">2013-05-13 23:58 前无损取消</span></td>
+                            </tr>
+                            <tr>
+                                <td class="e_label">所属公司：</td>
+                                <td>上海公司</td>
+                            </tr>
+                            <tr>
+                                <td class="e_label">所属产品经理：</td>
+                                <td>朱海杰</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="solid_line mt10 mb10"></div>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td class="e_label w10">酒店名称：</td>
+                                <td>[上海] <a href="#" title="点击打开前台页面">[上海华庭宾馆上海华庭宾馆上海华庭]</a></td>
+                            </tr>
+                            <tr>
+                                <td class="e_label">联系电话：</td>
+                                <td><a class="fb f16" href="#" title="点击号码外呼">[021-56268542]</a></td>
+                            </tr>
+                            <tr>
+                                <td class="e_label">联系人：</td>
+                                <td>王小军</td>
+                            </tr>
+                            <tr>
+                                <td class="e_label">客人姓名：</td>
+                                <td><strong>[3人]</strong> 王小军  王小军  王小军</td>
+                            </tr>
+                            <tr>
+                                <td class="e_label">入住天数：</td>
+                                <td><strong>[2天]</strong> 2013-05-31 至 2013-06-31</td>
+                            </tr>
+                            <tr>
+                                <td class="e_label td_top">房型：</td>
+                                <td>
+                                    <strong>[1间]</strong>  [高级房（内宾）] [房型] <a  class="J_tip order_tip" tip-content="礼包包含：" href="#">礼包</a> <a class="J_tip order_tip" tip-content="宽带10元/小时" href="#">宽带</a> 
+                                    <p><span class="cc6">[房型保留]</span> <a href="#">[满房通知]</a></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="e_label">到店时间：</td>
+                                <td>最晚 23：59</td>
+                            </tr>
+                            <tr>
+                                <td class="e_label">特殊要求：</td>
+                                <td>请安排大床房</td>
+                            </tr>
+                            <tr>
+                                <td class="e_label">确认方式：</td>
+                                <td>短信确认</td>
+                            </tr>
+                            <tr>
+                                <td class="e_label">相关订单：</td>
+                                <td><span class="cc6">另有订单</span> <a href="#">[同用户订单]</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <table class="p_table table_center mt20">
+                <thead>
+                    <tr>
+                        <th>房型</th>
+                        <th>起始日期</th>
+                        <th>截止日期</th>
+                        <th>房价</th>
+                        <th>早餐</th>
+                        <th>担保时间</th>
+                        <th>最晚预定</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>大床房</td>
+                        <td>2013-05-31</td>
+                        <td>2013-06-02</td>
+                        <td>RMB 1000</td>
+                        <td>无</td>
+                        <td>18:00</td>
+                        <td>18:00</td>
+                    </tr>
+                    <tr>
+                        <td>大床房</td>
+                        <td>2013-05-31</td>
+                        <td>2013-06-02</td>
+                        <td>RMB 1000</td>
+                        <td>无</td>
+                        <td>18:00</td>
+                        <td>18:00</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="mt20 e_table form-inline" style="width:400px;">
+                <tbody>
+                    <tr>
+                        <td class="e_label">登录用户：</td>
+                        <td>1001210011</td>
+                    </tr>
+                    <tr>
+                        <td class="e_label">联系人：</td>
+                        <td>张小姐</td>
+                        <td><a href="#">[修改]</a></td>
+                    </tr>
+                    <tr>
+                        <td class="e_label">联系人：</td>
+                        <td><a href="#" title="点击号码外呼">158****262</a></td>
+                        <td><a href="#">[发送短信]</a> <a>[自动呼叫]</a></td>
+                    </tr>
+                    <tr>
+                        <td class="e_label">电子邮件：</td>
+                        <td>张小姐</td>
+                        <td><a href="#">[邮件列表]</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="js/jquery1.6.1.js"></script>
+    <script src="js/jquery.lvtip.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('.J_tip').lvtip({
+                templete: 2,
+                place: 'bottom-left',
+                offsetX: 0,
+                events: "live"  
+            });
+        });
+    </script>
+</body>
+</html>

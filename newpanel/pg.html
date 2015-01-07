@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>添加/产品维护基本信息</title>
+    <link rel="stylesheet" href="css/ui-common.css" />
+    <link rel="stylesheet" href="css/ui-components.css" />
+    <link rel="stylesheet" href="css/ui-panel.css" />
+</head>
+<body class="pg_body">
+    <!-- 顶部导航\\ -->
+    <div class="pg_topbar">
+        <h1 class="pg_title">添加产品</h1>
+    </div>
+    <!-- 边栏\\ -->
+    <div class="pg_aside">
+        <div class="aside_box">
+            <h2 class="f16">产品维护</h2>
+            <ul class="pg_list J_list">
+                <li class="active"><a target="iframeMain" href="pginfo.html">基本信息</a><i class="fr icon-edit"></i></li>
+                <li><a target="iframeMain" href="pgformat.html">规格</a><i class="fr icon-allfilled"></i></li>
+            </ul>
+            <h2 class="pg_line f16">商品维护</h2>
+            <ul class="pg_list J_list">
+                <li><a target="iframeMain" href="pgsellinfo.html">销售信息</a></li>
+                <li class="cc1">库存共用<i class="fr icon-unwritable"></i></li>
+                <li class="cc1">设置主次规格关联<i class="fr icon-unwritable"></i></li>
+                <li class="cc1">营销<i class="fr icon-unwritable"></i></li>
+            </ul>
+            <h2 class="pg_line f16">订单管理</h2>
+            <ul class="pg_list J_list">
+                <li><a target="iframeMain" href="myTask.html">我的任务</a></li>
+                <li><a target="iframeMain" href="hotelOrderManage.html">订单详情页</a></li>
+            </ul>
+            <div class="edit_ex">
+                <ul>
+                    <li class="ex_title">编辑状态说明</li>
+                    <li><i class="icon-nofilled"></i>未填写</li>
+                    <li><i class="icon-edit"></i>编辑中</li>
+                    <li><i class="icon-allfilled"></i>已填写</li>
+                    <li><i class="icon-unwritable"></i>暂时不可填写</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- //工作区 -->
+    <div class="pg_main">
+        <iframe id="iframeMain" name="iframeMain" src="pginfo.html" frameborder="0" style=" height:100%; background:#fff"></iframe>
+    </div>
+    <script src="js/jquery1.6.1.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var $LI = $(".J_list").find("li");
+
+            $LI.click(function () {
+                $LI.removeClass("active");
+                $(this).addClass("active");
+            });
+        });
+    </script>
+</body>
+</html>

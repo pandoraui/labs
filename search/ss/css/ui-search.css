@@ -1,0 +1,427 @@
+h3{font-size:14px;}h4{font-size:12px}
+a{color:#06c}a:hover{color:#D38}.view_more i{color:#08c;font-size:11px;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
+
+/* 驴妈妈UI设计 */
+.link-more{ display:inline-block;*display:inline;*zoom:1; margin-left:3px;}
+.link-more i{color:#08c;}.view_more{ cursor: pointer;}
+/* 字体颜色控制 */
+.lv-c1{color:#f60}
+.lv-ca{color:#333}
+.lv-cb{color:#555}
+.lv-cc{color:#888}
+.lv-cw{color:red}
+/* 面包屑导航 */
+.lv-crumbs{ height:24px; line-height:24px; padding:5px 0}
+.lv-crumbs p{color:#888;}
+.lv-crumbs b{ font-weight:normal;color:#333}
+
+/* ------------------------------------------------------------
+  Pro name:search;
+------------------------------------------------------------ */
+
+.ui-content{background:#fff; overflow: hidden;}
+/* 按钮btn */
+.btn,.btn-block{display:inline-block;*display:inline;*zoom:1; cursor:pointer}.btn:hover{ text-decoration:none;}
+.btn-block{ background:#e08; padding:3px 8px; font-weight:bold; color:#fff; }
+a.btn-block:hover{color:#fff; text-decoration:none}
+/* 评论分数及星星 */
+.score-total{ float:left; display:inline; width:95px; text-align:center;margin-right:6px;}
+.score-total dfn { color:#e53c8d; height:31px; line-height:30px;}
+.score-total dfn i{ font-size:30px;}
+.score-item{overflow:hidden}
+.score-item{ line-height:24px; *margin-right:-10px;}
+/* 图标combo.gif */
+.lv-icon,.ico-order,.icon-close{ background:url(../img/combo.gif) 1000px 1000px no-repeat; display:inline-block; *display:inline;*zoom:1;}
+.search-aside .lv-icon{ width:16px; height:16px;float:left; display:inline; margin:5px 5px 0 0}
+.icon-lv16-001{ background-position:0 0;}
+.icon-lv16-002{ background-position:0 -16px;}
+.icon-lv16-003{ background-position:0 -32px;}
+.icon-lv16-004{ background-position:0 -48px;}
+
+.info-item-selected .icon-lv16-001,.info-item-hover .icon-lv16-001{ background-position:-16px 0;}
+.info-item-selected .icon-lv16-002,.info-item-hover .icon-lv16-002{ background-position:-16px -16px;}
+.info-item-selected .icon-lv16-003,.info-item-hover .icon-lv16-003{ background-position:-16px -32px;}
+.info-item-selected .icon-lv16-004{ background-position:-16px -48px;}
+.icon-close{ background-position:-16px -96px; width:13px; height:13px; cursor:pointer}
+
+/* 搜索页面主体内容 
+ * 边栏盒模型aside-box 单独定义盒子请附加具体的盒子名称，样式在自定义class名下定义
+ * 如有边框添加class="lv-bd"
+ * 尽量保持结构设计上的统一，保持页面中的注释风格，示例如下：
+ * 注释开始 <!-- 盒子功能名称\\ -->
+ * 注释结束 <!-- //盒子功能名称 -->
+ */
+.search-aside{ width:190px; float:left;}
+.search-main{ width:780px; float:right;}
+.lv-bd{ border:1px solid #ddd}
+/* 边栏盒模型 */
+.aside-box{ margin-bottom:10px;} 
+.side-title{ font-size:14px; height:24px; line-height:24px; padding:5px 0 5px; }
+.side-title small{font-size:12px; font-weight:normal; padding-left:3px;}
+/* 边栏搜索相关 */
+.side-info{ background:#f9f9f9}
+.side-info .side-title{padding-left:5px;}
+.side-info-list{ overflow:hidden;}
+.info-item{ border-top:1px solid #d7d7df; margin-top:-1px; overflow:hidden; line-height:30px; padding-left:10px; overflow:hidden}
+.info-item a,.info-item .sub-info-list a{color:#000; float:left; display: inline;*zoom:1; font-weight:normal}
+.info-item a{ width:100%;_width:auto}
+.info-item a:hover,.info-item-hover a{ text-decoration:none;color:#e08; cursor:pointer}
+.info-num{ color:#888; font-family:Arial, Helvetica, sans-serif}
+.info-item-selected a{color:#e08; font-weight:bold;}
+.info-item-selected .info-num,.info-item-hover .info-num{ color:#e08;}
+.sub-info-list .info-item-selected a,.sub-info-list .info-item a:hover,.sub-info-list .info-item-hover a,
+.sub-info-list .info-item-selected .info-num,.sub-info-list .info-item-hover .info-num{color:#e08; font-weight:normal}
+.sub-info-list .info-num{ color:#888}
+.sub-info-item{ border:none}
+.sub-info-list a{color:#000; float:left; display: inline;*zoom:1; font-weight:normal}
+.sub-info-list{ padding-left:34px;clear: both;}
+
+/* 边栏团购 */
+.side-stuan{ padding:0 10px 8px;}
+.side-stuan .link-more{ float:right; margin-top:-5px;}
+.side-stuan .btn-block{ float:right;margin-top:2px;}
+.stuan-list,.stuan-item,.stuan-item p.img{*zoom:1}
+.stuan-item{ margin:0 0 15px; overflow:hidden;}
+.tuan-title{ margin-bottom:3px;}
+.stuan-item p.img{ position:relative; overflow:hidden;}
+.stuan-item p.img .tran-bg,.stuan-item p.img .stuan-time{ position:absolute; left:0; bottom:0;display:inline-block; *display:inline;*zoom:1; width:120px; height:22px; line-height:22px;}
+.stuan-item p.img .tran-bg{background:rgba(0, 0, 0, .4); background:#000\9!important; filter:alpha(opacity=40);}
+.stuan-item p.img .stuan-time{ text-align:center; color:#fff; font-weight:bold;}
+.stuan-item del,.stuan-item dfn{ display:block}
+.stuan-item del{ height:14px; line-height:14px;}
+.stuan-item dfn{ height:18px; line-height:18px;}
+.stuan-item dfn i{ font-size:18px;}
+/* 旅游推荐首页 */
+.travel-index{padding:0 10px 8px;}
+.travel-index p{color:#888; margin-top:5px;}
+/* 边栏点评 */
+.side-reviews{ padding:0 10px 8px;}
+.side-reviews .score-total{ padding-top:10px;}
+/* 边栏攻略 */
+.side-guide{ padding:0 10px 2px;}
+.side-guide .img{ float:left; display:inline; margin-right:10px; }
+.side-guide .btn-block{ margin-top:6px;}
+.side-guide p{ line-height:18px; }
+.guide-list{ line-height:18px; margin-top:10px; clear:both}
+.guide-item{ margin-bottom:6px;}
+.guide-item a{ display:block; width:100%; overflow:hidden;white-space:nowrap;text-overflow:ellipsis; color:#333;}
+.guide-item a:hover{color:#D38}
+.guide-item-info{ color:#888}
+
+/* 主显示区search-main */
+.sl-linear{background:-webkit-gradient(linear,left top,left bottom,from(#fffffe),to(#f3f3f3));background:-moz-linear-gradient(top,#fffffe,#f3f3f3);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffffe',endColorstr='#f3f3f3');background:-o-linear-gradient(top,#fffffe,#f3f3f3);background:linear-gradient(top,#fffffe,#f3f3f3)}
+.ui-box{ margin-bottom:10px;}
+.ui-box-title{ border-bottom:1px solid #ddd; height:30px; line-height:30px; padding:0 10px;}
+.ui-box-title h4{ font-size:14px;}
+
+/* 更多产品 */
+.plist-pic-list{ padding-bottom:10px; overflow:hidden}
+.plist-pic-list li{float:left; display:inline; width:47%; margin:10px 10px 2px;}
+.plist-pic-list p{ line-height:18px;}
+.plist-pic-list img{ float:left; display:inline; margin-right:10px;}
+.plist-pic-list a+p{ margin-bottom:3px;}
+.plist-pic-list dfn i{ font-size:18px;}
+/* 热门景点 */
+.hot-pic-list{ padding-top:10px;}
+.hot-pic-list li{ float:left; display:inline; margin:0 12px 6px; text-align:center}
+
+/* 搜索框search-box */
+.search-box{ margin-bottom:10px; padding:10px;}
+.search-box .form-search{ float:left; display:inline; margin-right:10px;}
+.search-box .hot-travel{height:30px; line-height:30px;}
+.form-search input{ display:inline-block;*display:inline;*zoom:1; vertical-align: middle;color:#333;border:1px solid #B7BCC1;height:22px;padding:2px;line-height:22px; /*box-shadow:inset 0 3px 3px 0 rgba(102,102,102,0.2);*/}
+.s_inp{background:#fffbe7;}
+.btn-buttom{ display:inline-block;*display:inline;*zoom:1; background:#e08; border:1px solid #d9006a; padding:5px 15px; *padding:4px 10px; color:#fff; vertical-align:middle; font-size:14px; font-weight:bold; cursor:pointer}
+.input-departure{ background:url(../img/arrow.gif) no-repeat -1000px -1000px #fff;}
+.input-departure { width:135px; background-position:125px 11px;}
+.input-dest{ width:135px;}
+.input-price{ width:39px; height:22px; padding:0 3px; line-height:22px; border:1px solid #ddd;color:#888; vertical-align:top}
+.input-checkbox{ position:relative;top:2px; margin-right:4px;}
+.input-city{ width: 190px;}
+.search-box-hotel{ position:relative; height:63px;}
+.search-box-hotel .label-city{ margin-right:45px;}
+.search-box-hotel .input-text{ width:120px;}
+.search-box-hotel .input-hotel{ width:200px;}
+.search-box-hotel .span-select{ display:inline-block;*display:inline;*zoom:1; padding-top:10px;}
+.search-box-hotel .select-range{ padding:2px; width:80px;}
+.search-box-hotel .label-hotel,.search-box-hotel .btn-buttom{ position:absolute; right:10px;}
+.search-box-hotel .label-hotel{ top:10px;}
+.search-box-hotel .btn-buttom{ bottom:10px;}
+
+/*!
+ * 线路搜索结果页 
+ **/
+
+/* 搜索结果页tab切换 */
+.search-nav{ overflow: hidden; clear: both;}
+.search-nav-item{height: 27px; line-height: 27px; border-style:solid;border-color:#c6c6c6; border-width:1px 1px 0 0; padding: 1px;}
+.item-all{border-left: 1px solid #c6c6c6}
+.search-nav-item a{color: #333; padding: 0 12px; background: #f3f3f3 }
+.search-nav-item a:hover{ text-decoration: none;}
+.search-nav-item b{ font-size: 14px;}
+.search-nav-item-selected{ background: #e08; padding-left: 13px; margin-left: -1px; height: 30px; line-height: 30px; padding: 0; border: none}
+.search-nav-item-selected a{color: #fff; background: none;}
+
+/* 筛选排序 */
+.filter-order{ background:#fafafa; height: 24px; padding:6px 10px; border:1px solid #ddd; margin-bottom:10px;}
+.search-line-list .filter-order{ margin-bottom:0;}
+.filter-order label{ cursor:pointer; vertical-align:middle}
+.search-line .filter-order{ background:#fafafa url(../img/btn-block.gif) 0 -66px repeat-x; height: 57px;}
+.viewpoint-box .filter-order{ background:#fff;}
+.filter-order label{ vertical-align:middle; *vertical-align:top}
+.lv-order,.comment-order,.feedback-order,.price-order,.button,.current-order{ background: url(../img/btn-block.gif) repeat-x; display: inline-block;*display:inline;*zoom:1;border:1px solid #cbcbcb;height:16px; line-height:16px; padding:3px 5px; text-align: center; cursor: pointer; overflow: hidden; position:relative}
+.lv-order,.comment-order,.feedback-order,.price-order,.priceform{ vertical-align: top;}
+.lv-order,.comment-order,.feedback-order,.price-order{ background-position: 0 -22px;}
+.comment-order,.feedback-order,.price-order{ padding-right:15px; padding-left:6px}
+/* .filter-default .lv-order,
+.filter-comment .comment-order,
+.filter-feedback .feedback-order,
+.filter-price .price-order, */
+.current-order
+{ background-position: 0 0; border-color: #ffb8db;color:#df1a7a;}
+.ico-order{ background-position: 0 -64px; width: 16px; height: 16px; position:absolute; right:1px; top:3px;_top:2px;}
+/* .filter-default .lv-order .ico-order,
+.filter-comment .comment-order .ico-order,
+.filter-feedback .feedback-order .ico-order,
+.filter-price .price-order .ico-order, */
+.current-order .ico-order
+{background-position: 0 -48px;}
+.order-desc .ico-order{ background-position:-16px -48px;}
+input.button{ display:inline-block;*display:inline;*zoom:1; background-position:0 -44px; width:47px;height:24px; line-height:22px; *outline:none; padding:0;}
+input.button:foucs{ outline:none;}
+.priceform{ margin-left:4px; padding:0 10px;display: inline-block;*display:inline;*zoom:1; width:112px; height:30px; margin-right:10px; position:relative; z-index:103}
+.priceform .button{ display:none}
+.expand{ border:1px solid #ddd; padding:6px 3px 5px 10px; position:absolute; top:-7px; left:0; background:#fff; overflow:hidden; width:117px;}
+.expand .button{ display:inline-block;*display:inline;*zoom:1; margin:5px 5px 0 0; float:right}
+.result-search{clear:both; padding-top:4px;}
+.result-search .input-text{ width:112px; height:22px; line-height:22px; margin-right:5px; padding:0 3px; background:#fff; border:1px solid #ddd;}
+.input-text{color:#888;}
+.input-focus{color:#000 !important}
+.input-result-search{}
+.result-search .button{ margin-right:10px;}
+.empty{ background:none; border:none;color:#888; height:24px; line-height:24px; vertical-align:top; position:relative; *top:6px;}
+.reset-empty{cursor:pointer; color:#06c}
+.form-result-search input{ vertical-align:top;}
+
+.filter-order .pageoper{ float:right; display:inline}
+.result-info{ float:left; padding-right:20px; zoom:1}
+.filter-tags{ clear:both}
+.your-choices{ padding-left:65px; overflow:hidden; zoom:1}
+.your-choices dt,.your-choices dd{ display:inline; float:left}
+.your-choices dt{ margin-left:-65px;}
+.your-choices dd{ margin:0 3px 3px 0;}
+.your-choices a{color:#e08; border:1px solid #d1d1d1; background:#fff; height:19px; line-height:19px; padding:0 3px 0 5px; float:left;white-space:nowrap;_height:17px;_padding:3px 3px 0 5px;}
+.tags-empty a{color:#06C}
+.your-choices a:hover{color:#e08; text-decoration:none; border-color:#818181}
+.your-choices h6{color:#333; font-weight:normal; display:inline}
+.your-choices .icon-close{ position:relative;top:3px; margin-left:3px;*top:0; *left:3px;}
+.tags-empty a{ border:none; height:22px; background:none; line-height:22px;}
+/* 搜索筛选 */
+.search-filter{border:1px solid #dbdbdb; border-top:2px solid #E08;color:#555; margin-bottom:10px;}
+.filter-info{ border-bottom: 1px solid #ededed;line-height: 22px; padding:8px 10px 4px; background:#f8f8f8}
+.result-info i{ font-style:normal;color:#f60}
+.filter-tags{ overflow: hidden; padding:0 10px 5px 10px; color:#000}
+.filter-tags li{ border-top:1px dashed #ddd; margin-top:-1px; height:20px; line-height:20px; padding:8px 0;*zoom:1}
+.filter-tags .s-tag{ display:inline-block;*display:inline;*zoom:1; padding:0 6px; vertical-align:baseline; margin-right:16px; height:20px; line-height:20px;}
+.filter-tags .selected{ background:#e08; font-weight:bold; color:#fff;}
+.filter-tags a:hover{ background:#e08;color:#fff; text-decoration:none}
+.filter-tags label{ margin-right:15px;*zoom:1; cursor:pointer}
+.filter-tags input{ margin-right:3px; vertical-align:top; *vertical-align:baseline; margin-top:3px;}
+/* 促销 */
+.promotions{color: #f60; height:20px; line-height:18px;}
+.pro-type{ display:inline-block;*display:inline;*zoom:1;height:16px; line-height:16px; width:52px; overflow:hidden;-webkit-text-size-adjust: none; font-size:11px; margin-right:3px; vertical-align:top; *position:relative;*top:-2px;}
+.pro-type{ background:url(../img/combo.gif) no-repeat;}
+.tickets-info .pro-type{ background-position:-122px -144px;}
+.viewpoint-info .pro-type{ background-position:-122px -128px;}
+/* 搜索结果列表 */
+.search-result-box{ clear:both}
+.msg-warn{ margin-bottom:10px;}
+.search-result-box .msg-warn{ margin:10px 0}
+.slist-item{ background:url(../img/bg-x.gif) 0 0 repeat-x; border-style:solid; border-color:#E08 #ddd #ddd; border-width:2px 1px 1px;padding:0 0 10px; margin-bottom: 10px;}
+.search-line-list .slist-item{ border:none; background:none}
+.search-result-item{ padding:15px 10px 0; border-bottom: none;}
+.line-info{ border-bottom: 1px solid #eee; padding-bottom:10px;}
+.line-info:hover{ background:#fafafa}
+.search-result-item .img{ float: left; display: inline; margin-right:20px; width:170px; overflow: hidden;}
+.search-result-item .img img{border: 1px solid #dedede;}
+.search-result-item .info{ float: right; width: 90px;text-align: right; overflow: hidden; line-height:20px}
+.s-price{ margin-bottom:3px;}
+.s-price i{font-size: 20px;}
+.cashback {border: 1px solid #ff9614; display: inline-block; *display: inline;*zoom:1; margin-top:2px;width:40px; height: 14px; line-height: 14px; overflow: hidden; padding:0 0 0 14px; text-align: center;color:#ff9614; text-indent: 0; margin-left: 4px; vertical-align:top; *vertical-align:middle; cursor:default}
+a.cashback:hover{color:#ff9614; text-decoration:none}
+.cashback i{ float: left; display: inline; width:14px; margin-left: -14px; height: 100%; background: #ff9614;color: #fff;}
+.product-name a{ *vertical-align: baseline;}
+.info .cashback{clear: both; margin-top:-2px;}
+.info .booking{color:#f60;clear:both; display: block}
+.search-result-item .intro{ overflow: hidden; word-wrap: break-word;*zoom:1; padding-right:90px;}
+.intro h5,.short-intro h5{font-size: 14px; line-height: 20px; margin-bottom: 3px;}
+.intro h5 small{ font-weight: normal; padding-right: 3px;font-size: 12px;color:#000}
+.intro h5 small.star{color:#e08;padding-left:10px;}
+.short-intro small{font-size: 12px; font-weight: normal;}
+.route{line-height: 20px; margin-top: 3px;}
+.line-info .route{color:#555;}
+.route b{ font-weight:normal; padding-right:10px;}
+.short-splist{ margin-top: 10px;}
+.short-splist dfn{  width: 80px; display: inline-block;*display: inline; *zoom:1;}
+/* 酒店项更多介绍展开与收起 */
+.intro-text {color:#888; line-height:18px; margin-bottom:10px;}
+.intro-text span{overflow:hidden;text-overflow:ellipsis;white-space: nowrap; display:block; *zoom:1; height:18px;_width:320px}
+.intro-text .view-more{ float:right; display:inline; margin:-2px -20px 0 1em;}
+.text-detail span{white-space: normal; height:auto}
+
+/* 产品服务 */
+.item-service{ padding:0 10px;}
+.item-service dl{clear:both;}
+dl.title,.package-title{ background:#f6f6f6; border-bottom:1px solid #ddd;overflow: hidden; height: 25px; line-height: 26px; clear: both;}
+dl.title{color:#555}
+.package-title h6{color:#000}
+dl.plist-item{clear:both; border-bottom: 1px solid #eee; padding:2px 0;}
+dt.product-name,dd.market-price,dd.lv-price,dd.pay-type,dd.remark,dd.re-price,dd.net,dd.bed-type{ float: left; display: inline; padding:2px 0}
+.item-service del{text-decoration:line-through}
+.lv-price i{font-size: 14px; font-weight: bold;}
+.re-price i{font-size: 14px;}
+.product-name{width:360px; text-indent:5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.plist-item .product-name{ cursor:pointer}
+.plist-title,.plist-info{ text-indent: 5px;}
+.plist-title{ font-size: 12px; font-weight: bold; padding-top: 10px;color:#000}
+.plist-info{color:#555;}
+.market-price,.lv-price,.pay-type,.bed-type{width:65px;text-align: center;}
+.re-price{ width:65px; text-align:right}
+dd.net{ width:45px;text-align:right;}
+.bed-type{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.remark{width:80px; text-align:right}
+.remark a.btn{ display:inline-block; *display: inline;*zoom:1;padding: 0 10px; height: 20px; line-height: 20px; color: #fff; cursor: pointer; position:relative; z-index:15;}
+.more-list{ margin:5px 10px 10px; clear:both; overflow:hidden; float:right; display:inline; text-align: right;}
+
+.search-tickets-list .product-name{ width:405px;/*text-indent:8px*/}
+.search-tickets-list .plist-item .product-name{/*text-indent:8px*/}
+.search-tickets-list .market-price,.search-tickets-list .lv-price,.search-tickets-list .pay-type,.search-tickets-list .bed-type{width:80px;}
+.search-tickets-list .remark{width:100px;}
+
+
+
+/* 套餐推荐 */
+.package-title{padding:0 10px;}
+.package-list{ overflow: hidden;}
+.package-item{ float: left; display: inline; width:49.5%; }
+.package-item i{ font-size: 18px; font-weight: bold;}
+.package-item dfn{ float: right; width: 90px; display: inline; text-align: center; padding-top: 10px;}
+.package-item p{ overflow: hidden; padding:10px 10px 0;}
+
+/* 产品详情信息 */
+.item-detail,.item-calendar{ clear: both; border:1px solid #dedede; background:#f3f3f3; margin:10px 0 0 0; top:4px; padding:10px 10px 10px 20px; line-height:20px;*zoom:1; _margin-top:0;}
+.item-service .item-detail,.item-service .item-calendar{float:none; position:relative; display:none}
+.item-service .item-calendar{text-align:center; padding: 20px 10px 20px 20px;}
+.item-detail,.item-calenda,.plist-item,.slist-item{*zoom:1;clear:both;}
+.item-detail:after,.item-calenda:after,.plist-item:after,.slist-item:after{clear:both;content:' ';display:block;font-size:0;line-height:0;visibility:hidden;width:0;height:0}
+.item-detail-hide,.item-calendar-hide{ float:right; clear:both;}
+.item-calendar-hide{ position:relative; margin-top:-25px;}
+.item-detail .arrow-top,.item-calendar .arrow-top{left:50px;}
+/*.item-calendar .arrow-top{right:25px;}*/
+.item-detail p{white-space:pre-wrap;*white-space:pre;word-break:break-word;width:595px;}
+.item-detail p.imgtext{ padding-left:140px; width:425px;}
+.item-detail p.imgtext img{ float:left; display:inline; margin-left:-140px; background:#fff; padding:3px; border:1px solid #dedede;}
+
+/* 背景箭头 */
+.arrow-top,.arrow-top i{position:absolute;top:0;width:0;height:0;line-height:0;font-size:0;border-width:8px;border-style:dashed dashed solid dashed;}
+.arrow-top{top:-16px;border-color:transparent transparent #dedede transparent; z-index:10;}
+.arrow-top i{border-color:transparent transparent #f3f3f3 transparent; top:-7px; left:-8px; z-index:11;}
+.sub-service .plist-item .product-name{ line-height:16px; padding:3px 0 0 5px; margin-right:-5px;white-space:normal; word-break:break-all;height:35px; overflow:hidden}
+
+.sub-service dl.plist-item{ line-height:36px; padding:0;}
+/* M-简约/详细切换 */
+.per_type{ float:right; display:inline}
+.per_type li{ float:left; display:inline; border:1px solid #ccc; margin-left:5px;padding:3px 5px; height:14px; line-height:14px; overflow:hidden; background:#fff; cursor:pointer; background:url(../img/btn-block.gif) 0 -22px repeat-x; position:relative}
+.per_type li a{ padding-left:14px;}
+.per_type i{ background:url(../img/ico_s_result.gif) no-repeat; width:12px; height:12px;display:inline-block; padding:0; overflow:hidden; position:absolute; left:5px; top:4px;}
+.type_detail i{ background-position:0 0px;}
+.type_simple i{ background-position:-12px 0px;}
+.type_simple_result .type_detail i{ background-position:0 0px;}
+.type_detail_result .type_simple i{ background-position:-12px 0px;}
+.type_detail_result .type_detail i{background-position:0 -16px;}
+.type_simple_result .type_simple i{background-position:-12px -16px;}
+.per_type li a,.per_type li a:hover{ text-decoration:none}
+.type_detail_result .type_simple a,.type_simple_result .type_detail a,.type_detail_result .type_simple a:hover,.type_simple_result .type_detail a:hover{color:#333}
+.type_detail_result .type_detail,.type_simple_result .type_simple,.type_detail_result .type_detail a,.type_simple_result .type_simple a,.type_detail_result .type_detail a:hover,.type_simple_result .type_simple a:hover{color:#d38;}
+
+.show_service{
+	color:#fff; font-weight:bold; width:70px; height:24px; line-height:24px; text-align:center;
+	background-color: #ff7112;
+	*background-color: #ff7112;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ff7b23), to(#ff6702));
+	background-image: -webkit-linear-gradient(top, #ff7b23, #ff6702);
+	background-image: -o-linear-gradient(top, #ff7b23, #ff6702);
+	background-image: linear-gradient(to bottom, #ff7b23, #ff6702);
+	background-image: -moz-linear-gradient(top, #ee5f5b, #ff6702);
+	background-repeat: repeat-x;
+/*	border-color: #bd362f #bd362f #802420;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);*/
+	border:1px solid #f36100;
+	filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffff7b23', endColorstr='#ffff6702', GradientType=0);
+	filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+}
+a.show_service:hover{ text-decoration:none;color:#fff;}
+.type_simple_result .more-list,.type_simple_result .item-service dl{ display:none}
+.slist-item{ position:relative; overflow:hidden}
+.type_detail_result .all_service{ display:none}
+.type_simple_result .all_service{ display:inline; float:right; clear:right; margin:3px 20px 10px 0}
+.type_simple_result .show_service{ float:right; display:inline; margin:-35px 10px 0 0;}
+
+/* 景点列表viewpoint-box */
+.viewpoint-box .slist-item{ padding-bottom:0;}
+
+/*日历控制*/
+.item-calendar .search_pp_calendar_box{ margin:0px auto;border:2px solid #ccc;}
+/*.calendar_box .h_link{ margin-top:-25px;}*/
+.item-calendar .search_pp_calendar_d_box{ background:#fff}
+.item-calendar .search_pp_calendar_t li{ height:26px; line-height:26px;}
+.item-calendar .search_pp_calendar_tit{ border-top:none;color:#888; font-size:14px; text-align:left; background:#e6e6e6; height:30px; line-height:28px; padding-left:10px; font-weight:500}
+.remark a.btn,.show_service{
+	background-color: #ff7112;
+	*background-color: #ff7112;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ff7b23), to(#ff6702));
+	background-image: -webkit-linear-gradient(top, #ff7b23, #ff6702);
+	background-image: -o-linear-gradient(top, #ff7b23, #ff6702);
+	background-image: linear-gradient(to bottom, #ff7b23, #ff6702);
+	background-image: -moz-linear-gradient(top, #ee5f5b, #ff6702);
+	background-repeat: repeat-x;
+/*	border-color: #bd362f #bd362f #802420;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);*/
+	border:1px solid #f36100;
+	filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffff7b23', endColorstr='#ffff6702', GradientType=0);
+	filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+}
+.remark a.btn:hover,.show_service:hover{
+	border-color: #d35603;background: #ff6d0c;
+	box-shadow: 1px 1px 2px #d35603 inside;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fd7113), to(#f06000));
+	background-image: -webkit-linear-gradient(top, #fd7113, #f06000);
+	background-image: -o-linear-gradient(top, #fd7113, #f06000);
+	background-image: linear-gradient(to bottom, #fd7113, #f06000);
+	background-image: -moz-linear-gradient(top, #fd7113, #f06000);
+	background-repeat: repeat-x;
+	filter: progid:dximagetransform.microsoft.gradient(startColorstr='#fffd7113', endColorstr='#fff06000', GradientType=0);
+	filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+}
+.show_service{color:#fff; font-weight:bold; width:70px; height:24px; line-height:24px; text-align:center;}
+
+
+
+/* xh弹窗 */
+.xh_overlay,.xh_dialog{display:none}
+.xh_overlay{ background:#000;filter:alpha(opacity=20); opacity:.2; width:100%; height:100%; position:absolute; overflow:hidden; left:0;top:0; z-index:2000; }
+iframe.xh_overlay{ display:none;}
+.xh_dialog{ position:fixed;_position:absolute; left:50%;top:220px; width:294px; height:130px; overflow:hidden; padding:3px; margin-left:-150px;z-index:2005}
+.xh_dialog-bg{ position: absolute; left:0; top:0; width:100%;  height:150px; background:#000;filter:alpha(opacity=20); opacity:.2;}
+.xh_dialog-box{width:252px;_width:246px; height:84px; padding:20px 20px 24px; overflow:hidden; background:#fff; border:1px solid #808080; position: absolute;left:3px; top:3px;}
+.xh_btn-ok,.xh_btn-cancel{width:65px; height:27px; line-height:27px; text-align:center; font-weight:bold; padding:0; overflow:hidden; display:inline-block; zoom:1;*display:inline; margin-right:20px; cursor:pointer}
+.xh_btn-ok:hover,.xh_btn-cancel:hover{ text-decoration:none;}
+.xh_btn-ok{ background-position:0 -332px;color:#fff;}a.xh_btn-ok:hover{color:#fff}
+.xh_btn-cancel{ background-position:0 -359px;color:#444}a.xh_btn-cancel:hover{color:#444}
+.xh_dialog-box h4{ margin-bottom:10px;}
+.xh_dialog-box p{ margin:10px 0;color:#555}
+span.close-this{float: right; display: inline; width: 22px; height: 18px; font:16px/18px Tahoma; border: 1px solid #ccc; background: #fff;color:#999;margin-top:-13px; margin-right: -13px; cursor: pointer; text-align: center;}
+span.close-this:hover{color:#333;border-color:#999;}
+
+
+

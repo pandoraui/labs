@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+</head>
+<body>
+    能看的见到图片：<img src="http://at-img4.tdimg.com/board/2010/5/tylc-115X55.jpg"/>
+     
+    <div id="lazyBox" style="margin-top:100px;">
+     一开始看不到的图片：
+     <img width="120" height="90" style="border:1px solid blue;" class="lazyImg" alt="http://i01.img.tudou.com/data/imgs/i/051/720/095/p.jpg" src="http://css.tudouui.com/skin/__g/img/sprite.gif" coords="_DAA"/>
+     <img width="120" height="90" style="border:1px solid blue;" class="lazyImg" alt="http://i01.img.tudou.com/data/imgs/i/051/871/396/m20.jpg" src="http://css.tudouui.com/skin/__g/img/sprite.gif" coords="_DBA"/>
+  </div>
+    <div style="height:1000px;">
+          
+  </div> 
+<script type="text/javascript">
+    var hasShow = false;
+    $(window).bind("scroll",function(){
+        if(hasShow==true){
+            $(window).unbind("scroll");
+            return;
+        }
+        var t = $(document).scrollTop();
+        if(t>50){
+            // 滚动高度超过50，加载图片
+            hasShow = true;
+            $("#lazyBox .lazyImg").each(function(){
+                $(this).attr("src",$(this).attr("alt"));
+            });
+        }
+    });
+  </script>      
+</body>
+</html>    

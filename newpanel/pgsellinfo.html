@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="css/ui-common.css" rel="stylesheet" />
+    <link href="css/ui-components.css" rel="stylesheet" />
+    <link href="css/iframe.css" rel="stylesheet" />
+    <link href="css/dialog.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="iframe_header">
+        <ul class="iframe_nav">
+            <li>品类：</li>
+            <li>酒店 ></li>
+            <li>商品维护 ></li>
+            <li>销售信息</li>
+        </ul>
+    </div>
+    <div class="iframe_content mt10">
+        <div class="tiptext tip-warning cc5"><span class="tip-icon tip-icon-warning"></span>友情提示：
+            <p class="pl15">1.可以查询的供应商为在“供应商合同关联”里面维护的供应商</p>
+            <p class="pl15">2.可查询的商品，为当前产品下，供应商关联的当前规格的所有商品</p>
+            <p class="pl15">3.可设置的为，有效的商品</p>
+        </div>
+        <div class="p_box box_info">
+            <table class="e_table form-inline">
+                <tbody>
+                    <tr>
+                        <td width="150" class="e_label td_top"><i class="cc1">*</i>选择供应商：</td>
+                        <td><input type="text" placeholder="请输入供应商名称" class="w35 search" /><div class="e_error"><i class="e_icon icon-error"></i>错误提示</div>
+                            <div class="cc3"> 注：下面的内容维护人员、商品默认合同，添加新商品时均为默认值。 </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="e_label td_top">内容维护人员：</td>
+                        <td>
+                            <input type="text" placeholder="请输入维护人员名称" class="w35 search" />
+                            <div class="cc3"> 注：后续会对其内容质量进行考核。 </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="e_label">商品默认合同：</td>
+                        <td>[华侨城酒店合同-韩创]<a href="#">[更改]</a></td>
+                    </tr>
+                    <tr>
+                        <td class="e_label">所属规格：</td>
+                        <td>
+                            <select>
+					            <option value="">规格1</option>
+					            <option value="">规格2</option>
+					        </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="e_label"></td>
+                        <td><div class="fl operate"><a class="btn btn_cc1">添加新商品</a><a class="btn">查询供应商商品</a></div><span class="cc3">(仅针对供应商进行查询)</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="p_box box_info">
+            <div class="f16 mb10"><h2 class="fl">房型</h2>(主规格)<a target="iframeMain" href="editpgPrice.html" class="f12 fb">[查看/维护时间价格表]</a></div>
+            <table class="p_table table_center">
+                <thead>
+                    <tr>
+                        <th>规格名</th>
+                        <th>商品名称</th>
+                        <th>商品编号</th>
+                        <th>是否有效</th>
+                        <th>支付对象</th>
+                        <th>销售渠道</th>
+                        <th>产品经理</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>大床房</td>
+                        <td>特技优惠</td>
+                        <td>321321</td>
+                        <td>有效</td>
+                        <td>预付[驴妈妈]</td>
+                        <td>驴妈妈[分销]</td>
+                        <td>韩城</td>
+                        <td class="oper">
+                            <a href="#">编辑基本信息</a>
+                            <a href="#">设为前台可见</a>
+                            <a href="#">查看/更换合同</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>大床房</td>
+                        <td>特技优惠</td>
+                        <td>321321</td>
+                        <td>有效</td>
+                        <td>预付[驴妈妈]</td>
+                        <td>驴妈妈[分销]</td>
+                        <td>韩城</td>
+                        <td class="oper">
+                            <a href="#">编辑基本信息</a>
+                            <a href="#">设为前台可见</a>
+                            <a href="#">查看/更换合同</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="p_box box_info">
+            <div class="f16 mb10"><h2 class="fl">服务</h2>(次规格)<a target="iframeMain" href="editpgPrice.html" class="f12 fb">[查看/维护时间价格表]</a></div>
+            <table class="p_table table_center">
+                <thead>
+                    <tr>
+                        <th>规格名</th>
+                        <th>商品名称</th>
+                        <th>商品编号</th>
+                        <th>是否有效</th>
+                        <th>支付对象</th>
+                        <th>销售渠道</th>
+                        <th>产品经理</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>spa</td>
+                        <td>特价优惠</td>
+                        <td>4654654</td>
+                        <td>有效</td>
+                        <td>预付[驴妈妈]</td>
+                        <td>驴妈妈[分销]</td>
+                        <td>韩城</td>
+                        <td class="oper">
+                            <a href="#">编辑</a>
+                            <a href="#">设为无效</a>
+                            <a href="#">查看/更换合同</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>spa</td>
+                        <td>特价优惠</td>
+                        <td>4654654</td>
+                        <td>有效</td>
+                        <td>预付[驴妈妈]</td>
+                        <td>驴妈妈[分销]</td>
+                        <td>韩城</td>
+                        <td class="oper">
+                            <a href="#">编辑</a>
+                            <a href="#">设为无效</a>
+                            <a href="#">查看/更换合同</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

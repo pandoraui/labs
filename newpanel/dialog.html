@@ -1,0 +1,835 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+     <link href="css/ui-common.css" rel="stylesheet" />
+    <link href="css/ui-components.css" rel="stylesheet" />
+    <link href="css/iframe.css" rel="stylesheet" />
+    <link href="css/dialog.css" rel="stylesheet" />
+    <style type="text/css">
+        .operate a{margin-bottom:10px;}
+    </style>
+</head>
+<body>
+    <div class="iframe_content mt20">
+        <div class="fl operate">
+            <a id="demo0" class="btn btn_cc1">系统消息</a>
+            <a id="demo2" class="btn btn_cc1">编辑</a>
+            <a id="demo3" class="btn btn_cc1">操作日志</a>
+            <a id="demo4" class="btn btn_cc1">更改合同</a>
+            <a id="demo5" class="btn btn_cc1">选择供应商传真</a>
+            <a id="demo6" class="btn btn_cc1">选择通关点</a>
+            <a id="demo7" class="btn btn_cc1">产品规格编辑</a>
+            <a id="demo8" class="btn btn_cc1">编辑基本信息</a>
+            <a id="demo9" class="btn btn_cc1">订单操作</a>
+            <a id="demo10" class="btn btn_cc1">重要通知</a>
+            <a id="demo11" class="btn btn_cc1">核对订单</a>
+            <a id="demo12" class="btn btn_cc1">填写入住信息</a>
+        </div>
+        
+        <div style="display:none" id="demo0H">
+            <ul class="msg_list">
+                <li><a href="#">不在提醒</a><span>订单134214已经付款成功，134214已经付款成功团号[werweqruo]</span></li>
+                <li><a href="#">不在提醒</a><span>订单134214已经付款成功，团号[werweqruo]</span></li>
+                <li><a href="#">不在提醒</a><span>订单134214已经付款成功，团号[werweqruo]</span></li>
+                <li><a href="#">不在提醒</a><span>订单134214已经付款成功，团号[werweqruo]</span></li>
+                <li><a href="#">不在提醒</a><span>订单134214已经付款成功，团号[werweqruo]</span></li>
+                <li><a href="#">不在提醒</a><span>订单134214已经付款成功，团号[werweqruo]</span></li>
+                <li><a href="#">不在提醒</a><span>订单134214已经付款成功，团号[werweqruo]</span></li>
+            </ul>
+        </div>
+
+        <div style="display:none;" id="demo2H">
+                <div class="p_box box_info">
+                    <div class="title">
+			            <h4>基本信息</h4>
+		            </div>
+                    <div class="box_content">
+                        <table class="e_table form-inline">
+                            <tbody>
+                                <tr>
+                                    <td class="e_label"><i class="cc1">*</i>产品名称：</td>
+                                    <td><input type="text" placeholder="日本团队旅游(上海送签)" class="w35"><div class="e_error"><i class="e_icon icon-error"></i>错误提示</div></td>
+                                </tr>
+                                <tr>
+                                    <td class="e_label"><i class="cc1">*</i>销售价：</td>
+                                    <td><input type="text" placeholder="日本团队旅游(上海送签)"><div class="e_error"><i class="e_icon icon-succeed"></i>错误提示</div></td>
+                                </tr>
+                                <tr>
+                                    <td class="e_label"><i class="cc1">*</i>销售价：</td>
+                                    <td><input class="search" type="text" placeholder="日本团队旅游(上海送签)"><div class="e_error"><i class="e_icon icon-warn"></i>错误提示</div></td>
+                                </tr>
+                                <tr>
+                                    <td class="e_label">产品ID：</td>
+                                    <td>lv123456</td>
+                                </tr>
+                                <tr>
+                                    <td class="e_label">送签类型：</td>
+                                    <td><label class="radio"><input type="radio">团队旅游签证</label></td>
+                                </tr>
+                                <tr>
+                                    <td class="e_label">是否附加：</td>
+                                    <td>
+						                <label class="radio"><input type="radio" name="yesno">是</label>&#12288;&#12288;
+						                <label class="radio"><input type="radio" name="yesno">否</label>
+					                </td>
+                                </tr>
+                                <tr>
+                                    <td class="e_label">所属公司：</td>
+                                    <td>
+                                        <select>
+					                        <option value="">亚洲</option>
+					                        <option value="">美洲</option>
+					                    </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="e_label">材料截止收取提前：</td>
+                                    <td><input type="text" placeholder="5" class="w2"></td>
+                                </tr>
+                                <tr>
+                                    <td class="e_label">预订须知：</td>
+                                    <td colspan="3" class="form-inline">
+						                <textarea class="e_textarea">2011-09-01至2020-12-31 :使用说明: 提交材料后，我司可能会根据您材料情况要求增补其他签证材料、担保金或者予以劝退，请积极配合。
+                                        2011-12-01至2021-12-31 :使用说明: 办理签证期间，领馆可能会联系您核对材料准确性并要求增补其他签证材料，请积极配合查询，有助于顺利出签！
+                                        2012-12-19至2013-05-16 :预订限制: 日本领馆将于2012年12月31日-2013年01月03日、01月05日、01月06日、02月11日-02月15日闭馆。</textarea>
+					                </td>
+                                </tr>
+                                <tr>
+                                    <td class="e_label"></td>
+                                    <td><div class="fl operate"><a class="btn btn_cc1">确认提交</a><a class="btn">取消</a></div></td>
+                                </tr>
+                            </tbody>
+                        </table>
+               
+                    </div>
+                </div>
+        </div>
+
+        <div style="display:none" id="demo1H">
+               <div class="tipbox tip-success tip-nowrap">
+                    <span class="tip-icon-big tip-icon-big-success"></span>
+                    <div class="tip-content">
+                        <h3 class="tip-title">无边框信息提醒！！！</h3>
+                        <p class="tip-explain">您现在可以去畅游网络了。</p>
+                        <p class="tip-explain"><a href="###">查看详情</a> | <a href="###">返回首页</a></p>
+                    </div>
+                </div>
+            </div>
+
+        <div id="demo3H" style="display:none">
+            <div class="iframe_content pd0">
+                <div class="p_box" style="margin-bottom:0px;">
+                    <table class="log_table table_center">
+                        <thead>
+                            <tr>
+                                <th>创建时间</th>
+                                <th>操作人</th>
+                                <th>操作内容</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>09:28:23 2013-10-22</td>
+                                <td><strong>LV1098</strong> - 更新销售产品</td>
+                                <td>创建了 [凭证对象] ,新值为 驴妈妈供应商070718 凭证对象05 关系绑定;</td>
+                            </tr>
+                            <tr>
+                                <td>09:28:23 2013-10-22</td>
+                                <td><strong>LV1098</strong> - 更新销售产品</td>
+                                <td>创建了 [凭证对象] ,新值为 驴妈妈供应商070718 凭证对象05 关系绑定;</td>
+                            </tr>
+                            <tr>
+                                <td>09:28:23 2013-10-22</td>
+                                <td><strong>LV1098</strong> - 更新销售产品</td>
+                                <td>创建了 [凭证对象] ,新值为 驴妈妈供应商070718 凭证对象05 关系绑定;</td>
+                            </tr>
+                            <tr>
+                                <td>09:28:23 2013-10-22</td>
+                                <td><strong>LV1098</strong> - 更新销售产品</td>
+                                <td>创建了 [凭证对象] ,新值为 驴妈妈供应商070718 凭证对象05 关系绑定;</td>
+                            </tr>
+                            <tr>
+                                <td>09:28:23 2013-10-22</td>
+                                <td><strong>LV1098</strong> - 更新销售产品</td>
+                                <td>创建了 [凭证对象] ,新值为 驴妈妈供应商070718 凭证对象05 关系绑定;</td>
+                            </tr>
+                            <tr>
+                                <td>09:28:23 2013-10-22</td>
+                                <td><strong>LV1098</strong> - 更新销售产品</td>
+                                <td>创建了 [凭证对象] ,新值为 驴妈妈供应商070718 凭证对象05 关系绑定;</td>
+                            </tr>
+                            <tr>
+                                <td>09:28:23 2013-10-22</td>
+                                <td><strong>LV1098</strong> - 更新销售产品</td>
+                                <td>创建了 [凭证对象] ,新值为 驴妈妈供应商070718 凭证对象05 关系绑定;</td>
+                            </tr>
+                            <tr>
+                                <td>09:28:23 2013-10-22</td>
+                                <td><strong>LV1098</strong> - 更新销售产品</td>
+                                <td>创建了 [凭证对象] ,新值为 驴妈妈供应商070718 凭证对象05 关系绑定;</td>
+                            </tr>
+                            <tr>
+                                <td>09:28:23 2013-10-22</td>
+                                <td><strong>LV1098</strong> - 更新销售产品</td>
+                                <td>创建了 [凭证对象] ,新值为 驴妈妈供应商070718 凭证对象05 关系绑定;</td>
+                            </tr>
+                            <tr>
+                                <td>09:28:23 2013-10-22</td>
+                                <td><strong>LV1098</strong> - 更新销售产品</td>
+                                <td>创建了 [凭证对象] ,新值为 驴妈妈供应商070718 凭证对象05 关系绑定;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="pages darkstyle">	
+			            <p class="pages_go">到第 <input type="text" class="w1"> 页 <button type="button" class="btn btn-mini">确定</button></p>
+			            <div class="Pages"><p class="page_msg cc3">共 <em class="cc1">460</em> 条记录，每页显示 10 条记录</p><span class="PrevPage"><i class="ui-arrow-left blue-ui-arrow-left"></i>上一页</span><a href="#">1</a><span class="PageSel">2</span><a href="#">3</a><a href="#">4</a><a href="#">5</a><a href="#">6</a><span class="PageMore">...</span><a href="#">20</a><a href="#" class="NextPage">下一页<i class="ui-arrow-right blue-ui-arrow-right"></i></a> </div>
+		            </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="demo4H" style="display:none">
+            <div class="iframe_content pd0">
+                <div class="f14">供应商名字：上海锦江</div>
+                <div class="mb10 f14">现关联合同：<strong>华侨城合同协议</strong></div>
+                <table class="pg_d_table table_center">
+                    <thead>
+                        <tr>
+                            <th>序号</th>
+                            <th>合同名称</th>
+                            <th>合同编号</th>
+                            <th>经办人</th>
+                            <th>产品经理</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>120365</td>
+                            <td>华侨城合同协议</td>
+                            <td>12534-23423-23423</td>
+                            <td>张一</td>
+                            <td>唐振豪</td>
+                            <td>已选择</td>
+                        </tr>
+                        <tr>
+                            <td>120365</td>
+                            <td>华侨城合同协议</td>
+                            <td>12534-23423-23423</td>
+                            <td>张一</td>
+                            <td>唐振豪</td>
+                            <td>选择</td>
+                        </tr>
+                        <tr>
+                            <td>120365</td>
+                            <td>华侨城合同协议</td>
+                            <td>12534-23423-23423</td>
+                            <td>张一</td>
+                            <td>唐振豪</td>
+                            <td>选择</td>
+                        </tr>
+                        <tr>
+                            <td>120365</td>
+                            <td>华侨城合同协议</td>
+                            <td>12534-23423-23423</td>
+                            <td>张一</td>
+                            <td>唐振豪</td>
+                            <td>选择</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="demo5H" style="display:none">
+            <div class="iframe_content pd0">
+                <div class="mb10 f14">已选择传真：<strong>欢乐谷供应商传真001</strong></div>
+                <table class="pg_d_table table_center">
+                    <thead>
+                        <tr>
+                            <th>编号</th>
+                            <th>名称</th>
+                            <th>传真号码</th>
+                            <th>发送时间</th>
+                            <th>是否体现结算价</th>
+                            <th>备注</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>12306</td>
+                            <td>欢乐供应商传真001</td>
+                            <td>654546</td>
+                            <td>履行当天8点</td>
+                            <td>是</td>
+                            <td>必须执行</td>
+                            <td>已选择</td>
+                        </tr>
+                        <tr>
+                            <td>12306</td>
+                            <td>欢乐供应商传真001</td>
+                            <td>654546</td>
+                            <td>履行当天8点</td>
+                            <td>是</td>
+                            <td>必须执行</td>
+                            <td>选择</td>
+                        </tr>
+                        <tr>
+                            <td>12306</td>
+                            <td>欢乐供应商传真001</td>
+                            <td>654546</td>
+                            <td>履行当天8点</td>
+                            <td>是</td>
+                            <td>必须执行</td>
+                            <td>已选择</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="demo6H" style="display:none">
+            <div class="iframe_content pd0">
+                <div class="mb10 f14">已选择通关点：<strong>欢乐谷</strong></div>
+                <table class="pg_d_table table_center">
+                    <thead>
+                        <tr>
+                            <th>名称</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>欢乐供应商传真001</td>
+                            <td>已选择</td>
+                        </tr>
+                        <tr>
+                            <td>欢乐供应商传真001</td>
+                            <td>选择</td>
+                        </tr>
+                        <tr>
+                            <td>欢乐供应商传真001</td>
+                            <td>已选择</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="demo7H" style="display:none">
+            <div class="p_box box_info p_line">
+                <div class="box_content ">
+                    <table class="e_table form-inline ">
+                        <tbody>
+                            <tr>
+                                <td style="width:100px;" class="e_label">所属品类：</td>
+                                <td>酒店</td>
+                            </tr>
+                            <tr>
+                                <td class="e_label">产品ID：</td>
+                                <td>123456</td>
+                            </tr>
+                            <tr>
+                                <td class="e_label"><i class="cc1">*</i>产品名称：</td>
+                                <td><input type="text" placeholder="请输入1-100个字的产品名称" class="w35"/><div class="e_error"><i class="e_icon icon-error"></i>错误提示</div></td>
+                            </tr>
+                            <tr>
+                                <td class="e_label"><i class="cc1">*</i>是否前台可见：</td>
+                                <td>
+                                    <select>
+					                    <option value="">前台可见</option>
+					                    <option value="">前台可见</option>
+					                </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="e_label"><i class="cc1">*</i>推荐级别：</td>
+                                <td>
+                                    <select>
+					                    <option value="">5</option>
+					                    <option value="">4</option>
+					                </select>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="p_box box_info">
+                <div class="box_content ">
+                    <table class="e_table form-inline ">
+                        <tbody>
+                            <tr>
+                                <td  style="width:100px;" class="e_label td_top">所属品类：</td>
+                                <td><textarea class="w35"></textarea><div class="e_error"><i class="e_icon icon-error"></i>错误提示</div>
+                                    <div class="cc3">建议填写，当前产品的突出特点，产品的优惠活动等抓人眼球信息 </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="e_label"></td>
+                                <td><div class="fl operate"><a class="btn btn_cc1">保存</a><a class="btn">取消</a></div></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div id="demo8H" style="display:none">
+            <div class="p_box box_info p_line">
+                <div class="box_content">
+                    <table class="e_table form-inline ">
+                        <tbody>
+                            <tr>
+                                <td style="width:150px;" class="e_label">所属规格：</td>
+                                <td>房型</td>
+                            </tr>
+                            <tr>
+                                <td class="e_label td_top"><i class="cc1">*</i>商品名称：</td>
+                                <td>
+                                    <input type="text" placeholder="请输入1-100个字的产品名称" class="w35"/><div class="e_error"><i class="e_icon icon-error"></i>错误提示</div>
+                                    <div class="cc3">建议填写，当前产品的突出特点，产品的优惠活动等抓人眼球信息 </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="e_label"><i class="cc1">*</i>内容维护人员：</td>
+                                <td><input type="text" placeholder="请输入内容维护人员名称" class="search" /><div class="e_error"><i class="e_icon icon-error"></i>错误提示</div></td>
+                            </tr>
+                            <tr>
+                                <td class="e_label"><i class="cc1">*</i>商品默认合同：</td>
+                                <td>[华侨城酒店合同-韩创]<a href="#">[更改]</a></td>
+                            </tr>
+                            <tr>
+                                <td class="e_label"><i class="cc1">*</i>支付对象：</td>
+                                <td>
+                                    <select>
+					                    <option value="">预付[驴妈妈]</option>
+					                    <option value="">预付[驴妈妈]</option>
+					                </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="e_label"><i class="cc1">*</i>销售渠道：</td>
+                                <td>
+                                    <label class="checkbox mr10"><input type="checkbox" />驴妈妈</label>
+                                    <label class="checkbox"><input type="checkbox" />分销</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="e_label"><i class="cc1">*</i>是否仅组合销售：</td>
+                                <td>
+                                    <label class="radio mr10"><input type="radio" name="yn" />是</label>
+                                    <label class="radio"><input type="radio" name="yn" />否</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="e_label td_top"><i class="cc1">*</i>是否使用传真：</td>
+                                <td>
+                                    <label class="radio mr10"><input type="radio" name="yn" />是</label>
+                                    <label class="radio"><input type="radio" name="yn" />否</label>
+                                    <div class="e_error"><i class="e_icon icon-error"></i>错误提示</div>
+                                    <div class="sell_eidt operate">
+                                        <a class="btn">选择供应商传真</a>
+                                    </div>
+                                    <div class="sell_info">
+                                        <table class="pg_d_table table_center">
+                                            <thead>
+                                                <tr>
+                                                    <th>编号</th>
+                                                    <th>名称</th>
+                                                    <th>传真号码</th>
+                                                    <th>发送时间</th>
+                                                    <th>是否体现结算价</th>
+                                                    <th>备注</th>
+                                                    <th>操作</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>12306</td>
+                                                    <td>欢乐谷供应商传真1</td>
+                                                    <td>56+46498</td>
+                                                    <td>履行当天8点</td>
+                                                    <td>是</td>
+                                                    <td>必须执行</td>
+                                                    <td class="oper"><a href="#">更改</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="p_box box_info">
+                <div class="box_content">
+                    <table class="e_table form-inline ">
+                        <tbody>
+                            <tr>
+                                <td style="width:150px;" class="e_label">代理号码：</td>
+                                <td><input placeholder="请输入代理编码" type="text" /><div class="e_error"><i class="e_icon icon-error"></i>错误提示</div></td>
+                            </tr>
+                            <tr>
+                                <td class="e_label">代理内容：</td>
+                                <td><input placeholder="请输入代理内容" type="text" /><div class="e_error"><i class="e_icon icon-error"></i>错误提示</div></td>
+                            </tr>
+                            <tr>
+                                <td class="e_label"><i class="cc1">*</i>商品包含：</td>
+                                <td>成人数
+                                    <select class="mr10 w10">
+                                        <option>1</option>
+                                        <option>2</option>
+                                    </select>
+                                    儿童数
+                                    <select class="w10">
+                                        <option>1</option>
+                                        <option>2</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="e_label td_top"><i class="cc1">*</i>商品类型：</td>
+                                <td><label class="radio"><input type="radio" />实体商品</label>
+                                    <div class="mb10">寄件方
+                                        <select class="w10">
+                                            <option>驴妈妈</option>
+                                            <option>驴妈妈</option>
+                                        </select>
+                                    </div>
+                                    <label class="radio"><input type="radio" />虚拟商品</label>
+                                    <div class="mb10">通知方式
+                                        <select class="w10">
+                                            <option>二维码</option>
+                                            <option>二维码</option>
+                                        </select>
+                                    </div>
+                                    <div class="sell_eidt operate">
+                                        <a class="btn">选择通关点</a>
+                                    </div>
+                                    <div class="sell_info mb10">
+                                        <table class="pg_d_table table_center">
+                                            <thead>
+                                                <tr>
+                                                    <th>通关点名称</th>
+                                                    <th>名称</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>欢乐谷供应商传真01</td>
+                                                    <td class="oper"><a href="#">更改</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <span>电子通关码有效天数</span> 
+                                    <select class="w10">
+                                        <option >1</option>
+                                        <option >2</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="e_label"></td>
+                                <td><div class="fl operate"><a class="btn btn_cc1">保存</a><a class="btn">取消</a></div></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div id="demo11H" style="display:none">
+            <p><strong>罗先生，</strong>我再和您核对一下</p>
+            <p>您预订了<span class="cc6 f14"> 5月1日（星期三）</span>入住</p>
+            <p><span class="cc6 f14">上海 华亭宾馆 高级房 1</span>间 住 <span>2</span>晚</p>
+            <p>酒店地址：<strong>徐汇区漕溪北路1280号  </strong>电话：<strong>021-12345678</strong></p>
+            <p>您的联系手机是 <span class="cc7 f14">13816228824</span></p>
+            <p>感谢您的预订，房间确认后给您发短信！</p>
+            <p>请问还有什么可以帮您？感谢您的来电，祝您旅途愉快！</p>
+        </div>
+
+        <div style="display:none" id="demo12H">
+            <div class="iframe_content pd0">
+                <div style="margin-bottom:0px;" class="p_box">
+                    <div class="co_title"><a class="fr" href="#">重要通知</a><strong class="f14" title="[上海] 上海中航虹桥机场泊悦酒店（中国国际航空公司">[上海] 上海中航虹桥机场泊悦酒店（中国国际航空公司）</strong></div>
+                    <div><span>酒店星级：</span><span title="国家旅游局评定为四星级" class="tuan-star"><i style="width:80%"></i></span></div>
+                    <table class="pg_d_table table_center co">
+                        <thead>
+                            <tr>
+                                <th colspan="7">豪华套房</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <span class="co_info_line dis">周日</span>
+                                    <span>05-05</span><br />
+                                    <span>（5）</span><br />
+                                    <span>含早</span><br />
+                                    <span class="cc7">1200元</span>
+                                </td>
+                                <td>
+                                    <span class="co_info_line dis">周一</span>
+                                    <span>05-05</span><br />
+                                    <span>（5）</span><br />
+                                    <span>含早</span><br />
+                                    <span class="cc7">1200元</span>
+                                </td>
+                                <td>
+                                    <span class="co_info_line dis">周二</span>
+                                    <span>05-05</span><br />
+                                    <span>（5）</span><br />
+                                    <span>含早</span><br />
+                                    <span class="cc7">1200元</span>
+                                </td>
+                                <td>
+                                    <span class="co_info_line dis">周三</span>
+                                    <span>05-05</span><br />
+                                    <span>（5）</span><br />
+                                    <span>含早</span><br />
+                                    <span class="cc7">1200元</span>
+                                </td>
+                                <td>
+                                    <span class="co_info_line dis">周四</span>
+                                    <span>05-05</span><br />
+                                    <span>（5）</span><br />
+                                    <span>含早</span><br />
+                                    <span class="cc7">1200元</span>
+                                </td>
+                                <td>
+                                    <span class="co_info_line dis">周五</span>
+                                    <span>05-05</span><br />
+                                    <span>（5）</span><br />
+                                    <span>含早</span><br />
+                                    <span class="cc7">1200元</span>
+                                </td>
+                                <td>
+                                    <span class="co_info_line dis">周六</span>
+                                    <span>05-05</span><br />
+                                    <span>（5）</span><br />
+                                    <span>含早</span><br />
+                                    <span class="cc7">1200元</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="7">
+                                    <ul class="co_info cc9">
+                                        <li>早餐价格：不可加早</li>
+                                        <li>房型楼层：5F-18F</li>
+                                        <li>宽带上网：全部收费</li>
+                                        <li>无烟房：无烟处理</li>
+                                        <li>加床价格：不可加床</li>
+                                        <li>房间面积：30m2</li>
+                                        <li>房型：普通标准房</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="e_table form-inline mt10">
+                        <tbody>
+                            <tr>
+                                <td class="w6 e_label">房间数量：</td>
+                                <td>
+                                    <select class="w8">
+                                        <option>1</option>
+                                        <option>1</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="e_label">入住人数：</td>
+                                <td>
+                                    <select class="w8">
+                                        <option>1</option>
+                                        <option>1</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="e_label">常用游客：</td>
+                                <td>
+                                    <label class="checkbox mr10"><input type="checkbox" />王力宏</label>
+                                    <label class="checkbox mr10"><input type="checkbox" />王菲</label>
+                                    <label class="checkbox mr10"><input type="checkbox" />王志文</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="e_label td_top">客人姓名：</td>
+                                <td>
+                                    <input class="w6" type="text" />
+                                    <input class="w6" type="text" />
+                                    <input class="w6" type="text" />
+                                    <input class="w6" type="text" />
+                                    <input class="w6" type="text" />
+                                    <div><i class="e_icon icon-error"></i>请填写中文/英文姓名，英文姓名格式为：Lastname/Firstname。</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="e_label">到店时间：</td>
+                                <td>
+                                    <select class="w10">
+                                        <option>12:00</option>
+                                    </select>
+                                    <div class="e_error"><i class="e_icon icon-warn"></i>12:00前入住需加收半天房费。</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="e_label">退改规则：</td>
+                                <td>修改取消时间为2013-6-25 12:00，若未按时通知或未入住将收取首日房款作为违约金。</td>
+                            </tr>
+                            <tr>
+                                <td class="e_label">优惠券：</td>
+                                <td>
+                                    <input class="w10" type="text" /><a class="btn btn_cc1 btn_blue ml10">验证</a><div class="e_error"><i class="e_icon icon-succeed"></i>该优惠券码可以使用。<i class="e_icon icon-error"></i>输入正确的邮箱格式。</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="e_label">特殊要求：</td>
+                                <td>
+                                    <textarea class="w47"></textarea>
+                                    <div class="cc3 tr" ><span class="cc1">0</span>/50字</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="e_label"></td>
+                                <td><div class="fl operate"><a class="btn btn_cc1">保存</a><a class="btn">取消</a></div></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery1.6.1.js"></script>
+    <script src="js/pandora-dialog.js"></script>
+    <script type="text/javascript">
+        // 全局配置
+        (function (d) {
+            d["skin"] = "dialog-blue";
+            d["mask"] = false;
+            d["okClassName"] = "btn-ok";
+            d["drag"] = true;
+            d["cancelClassName"] = "btn-cancel";
+        }(pandora.dialog.defaults));
+
+        $("#demo0").click(function () {
+            $.dialog({
+                title: "系统提示消息",
+                
+                content: $("#demo0H").html()
+            });
+        });
+        //$("#demo1").click(function () {
+        //    $.dialog({
+        //        title: "系统提示消息",
+        //        content: $("#demo1H").html(),
+        //        ok: true,
+        //        cancel: true
+        //    });
+        //});
+        $("#demo2").click(function () {
+            $.dialog({
+                width: 650,
+                title: "系统提示消息",
+                content: $("#demo2H").html()
+            });
+        });
+
+        $("#demo3").click(function () {
+            $.dialog({
+                width: 800,
+                title: "操作日志",
+                content: $("#demo3H").html()
+            });
+        });
+
+        $("#demo4").click(function () {
+            $.dialog({
+                width: 720,
+                title: "更改合同",
+                content: $("#demo4H").html()
+            });
+        });
+
+        $("#demo5").click(function () {
+            $.dialog({
+                width: 720,
+                title: "选择供应商传真",
+                content: $("#demo5H").html()
+            });
+        });
+
+        $("#demo6").click(function () {
+            $.dialog({
+                width: 720,
+                title: "选择通关点",
+                content: $("#demo6H").html()
+            });
+        });
+
+        $("#demo7").click(function () {
+            $.dialog({
+                width: 650,
+                title: "产品规格设计",
+                content: $("#demo7H").html()
+            });
+        });
+
+        $("#demo8").click(function () {
+            $.dialog({
+                width: 850,
+                title: "编辑基本信息",
+                content: $("#demo8H").html()
+            });
+        });
+
+        $("#demo9").click(function () {
+            $.dialog({
+                width: 400,
+                title: "订单操作",
+                content: "您可以对该笔订单进行如下相关操作。",
+                okValue: "取消该笔订单",
+                ok: true,
+                cancel: true,
+                cancelValue:"重新修改订单"
+            });
+        });
+
+        $("#demo10").click(function () {
+            $.dialog({
+                width: 300,
+                title: "重要通知",
+                content: "此期间酒店不接受修改姓名。</br>此期间酒店最早入住日期为下午15:00。"
+            });
+        });
+
+        $("#demo11").click(function () {
+            $.dialog({
+                width: 450,
+                title: "核对订单",
+                content: $("#demo11H").html(),
+                ok: true,
+                cancel: true,
+                okValue: "确认提交订单",
+                cancelValue: "返回修改"
+            });
+        });
+
+        $("#demo12").click(function () {
+            $.dialog({
+                width: 590,
+                title: "填写入住信息",
+                content: $("#demo12H").html()
+            });
+        });
+    </script>
+</body>
+</html>

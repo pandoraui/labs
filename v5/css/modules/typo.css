@@ -1,0 +1,298 @@
+/**
+ * typo.css 排版阅读样式
+ * 修改自 typo.css@sofish
+ *
+ * 外层盒子使用 class="lv-article" 控制文本左右边距padding:1px 20px;暂不设置
+ * 对需排版的样式外层添加 class="typo" 控制排版
+ * 详情参看pandora项目排版布局
+ *
+ */
+
+.typo * {
+    margin: 0;
+    padding: 0;
+}
+
+.typo {
+    /* 使用宋体，中文阅读标点符号显示更佳 */
+    font:12px/22px \5b8b\4f53,Tahoma,Arial,\5b8b\4f53,sans-serif;
+    color: #333;
+}
+
+.typo p { 
+    margin: 0.6em 0 1.45em;
+    text-indent: 0;
+}
+
+
+/* p有上边距，在table中导致td的下边框未合并？ */
+.typo table p { 
+    margin-top: 0;
+}
+
+/* 紧凑段落布局 */
+p.dense {
+    margin: 0;
+    line-height: 1.6em;
+}
+
+
+/* 标题应该更贴紧内容，并与其他块区分，margin 值要相应做优化 
+ * 这里相对于14px字体设置
+ */
+.typo h1, .typo h2, .typo h3, .typo h4, .typo h5, .typo h6,
+.typo-h1, .typo-h2, .typo-h3, .typo-h4, .typo-h5, .typo-h6 {
+    margin: 0;
+    margin: 1em 0 0.4em;
+    font-weight: bold;
+}
+.typo h1, 
+.typo-h1 {
+    font-size: 30px;
+    font-size: 2em;
+}
+.typo h2, 
+.typo-h2 {
+    font-size: 22px;
+    font-size: 1.5em;
+}
+.typo h3, 
+.typo-h3 {
+    font-size: 16px;
+    font-size: 1.3em;
+}
+.typo h4, 
+.typo-h4 {
+    font-size: 14px;
+    font-size: 1.15em;
+}
+.typo h5, 
+.typo-h5,
+.typo h6, 
+.typo-h6 {
+    font-size: 1em;
+}
+
+
+/* 列表标签
+ * 在文章中，还原 ul 和 ol 的样式，布局更便捷迅速 
+ */
+
+.typo ul, 
+.typo-ul,
+.typo ol, 
+.typo-ol {
+    padding: 0;
+    margin: 10px 0 10px 25px;
+    margin: 10px 0 10px 2em;
+}
+
+.typo ul, 
+.typo-ul {
+    list-style: disc;
+}
+.typo ol, .typo-ol {
+    list-style: decimal;
+}
+
+.typo li ul,
+.typo li ol,
+.typo-ul ul, 
+.typo-ul ol, 
+.typo-ol ul, 
+.typo-ol ol {
+    margin-bottom: 0;
+    margin-bottom: 0;
+    margin-left: 2em;
+}
+
+.typo li ul, 
+.typo-ul ul, 
+.typo-ol ul {
+    list-style: circle;
+}
+
+ul.unstyled,
+ol.unstyled {
+    margin-left: 0;
+    list-style: none;
+}
+
+ul.inline,
+ol.inline {
+    margin-left: 0;
+    list-style: none;
+}
+
+ul.inline > li,
+ol.inline > li {
+    display: inline-block;
+    /* IE7 inline-block hack */
+  
+    *display: inline;
+    padding-right: 5px;
+    padding-left: 5px;
+    *zoom: 1;
+}
+
+
+/*
+ * <li>&bull; <a href=""></a></li>
+ * 字体为宋体时 &bull; 能良好的表示 ul 列表项中的点
+ */
+
+ul.ul, 
+ol.ol {
+    font-family: \5b8b\4f53, sans-serif;
+}
+
+
+/*
+ * 同 ul/ol，在文章中应具备 table 基本格式 
+ * 此处仅设置 .typo table 样式（同.table-info）
+ * 出于统一的目的，更多表格设置请参看 tables.css
+ */
+
+.typo table th, 
+.typo table td, 
+.typo-table th, 
+.typo-table td .typo table caption{
+    border: 1px solid #ddd;
+    padding: 4px 8px;
+}
+.typo table th, 
+.typo-table th {
+    background: #fbfbfb;
+}
+.typo table thead th, 
+.typo-table thead th {
+    background: #f1f1f1;
+}
+.typo table .caption {
+    border-bottom:none;
+}
+
+/* 图片 */
+.typo p.pimg {
+    text-align: center;
+    text-indent: 0;
+}
+
+/* 图片缩放遇到问题
+ * 在使用max-height，引起大图片的缩放不正常问题，有个320px高度的数据
+ */
+
+.typo img{
+    max-width: 100%;
+    height: auto;
+    
+}
+
+hr {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #ffffff;
+}
+
+abbr[title],
+abbr[data-original-title] {
+    cursor: help;
+    border-bottom: 1px dotted #999999;
+}
+
+abbr.initialism {
+    font-size: 90%;
+    text-transform: uppercase;
+}
+
+.typo blockquote {
+    padding: 0 15px;
+    margin: 15px 0;
+    border-left: 5px solid #ddd;
+    color: #555;
+}
+
+.typo blockquote p {
+    margin: 0.6em 0 0.4em;
+    line-height: 1.5;
+}
+
+.typo blockquote small {
+    display: block;
+    line-height: 20px;
+    color: #999;
+}
+
+.typo blockquote small:before {
+    content: '\2014 \00A0';
+}
+.typo blockquote em {
+    margin-left: 1em;
+    color: green;
+}
+.typo blockquote blockquote {
+    margin-left: 2em;
+    padding: 0 15px;
+}
+
+.typo blockquote.pull-right {
+    float: right;
+    float: none;
+    padding-right: 15px;
+    padding-left: 0;
+    border-right: 5px solid #ddd;
+    border-left: 0;
+}
+
+.typo blockquote.pull-right p,
+.typo blockquote.pull-right small {
+    text-align: right;
+}
+
+.typo blockquote.pull-right small:before {
+    content: '';
+}
+
+.typo blockquote.pull-right small:after {
+    content: '\00A0 \2014';
+}
+
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+  content: "";
+}
+
+
+/* 代码片断 详请参见 code.css */
+.typo pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+.typo code {
+    display: inline-block;
+}
+
+/* TODO: 供着重号使用 */
+.typo-em, .typo em, legend, caption {
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+/* 重设无样式状态 */
+.typo ul.none {
+    list-style-type: none !important;
+}
+.notypo * { 
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+
+
+
+

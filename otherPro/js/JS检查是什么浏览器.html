@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>JS检查是什么浏览器</title>
+<script language="JavaScript" type="text/javascript">
+function checkFirefoxOrIE(){
+userAgent=window.navigator.userAgent.toLowerCase();
+if(userAgent.indexOf("firefox")>=1){
+Findex=userAgent.indexOf("firefox/");
+versionName=userAgent.substr(Findex+"Firefox/".length,3);
+document.write("你用的是火狐浏览器！版本是：Firefox/"+versionName+"<br>");
+}
+else {
+    var name=navigator.appName;
+    if(name=="Microsoft Internet Explorer"){document.write("你用的是IE浏览器！");}
+    }
+}
+</script>
+</head>
+<body onload="checkFirefoxOrIE();">
+</body>
+</html>

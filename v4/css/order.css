@@ -1,0 +1,436 @@
+
+/* 
+ @名称: order.css
+ @功能: 订单样式
+ */
+
+.wrap{ width:1000px !important;}
+body{font:12px/22px Tahoma,Arial,\5b8b\4f53,sans-serif;color:#333;}
+.border{border:1px solid #ccc;*zoom:1;}
+a{color:#08c;text-decoration: none;}
+a:hover{color:#e38;text-decoration: underline;}
+.main_nav a[href="###"]{color:#888;cursor:default;}
+.text-gray{color:#888;}
+.pink{color:#e38;}
+.dfn{color:#f60;}
+.orange{color:#f60;}
+a.graylink{color:#666;}
+a.graylink:hover{color:#e38;}
+
+.oicon{display:inline-block;background:url(../img/oicon.png) no-repeat;}
+.oicon-plus{width:16px;height:16px;margin-right:5px;background-position:0 0;vertical-align:text-top;}
+.gray-info{background:#f8f8f8;padding: 3px 10px;margin: 10px 0;}
+
+/* 公共组件 */
+small{font-size:12px;color:#888;}
+.order h3{font-size:16px;}
+.order h4{font-size:14px;}
+.order h5{font-size:12px;}
+.fixed { position: fixed; _position:absolute;}
+
+/* 虚线 */
+.dot_line,.solid_line{display:block;margin:10px 0;clear:both;height:0;overflow:hidden;text-indent:-9999px;}
+.dot_line{border-bottom:1px dashed #ddd; }
+.solid_line{border-bottom:1px solid #ddd; }
+a.dot_line{margin:0 3px;height:auto;line-height:1.5;display:inline-block;text-indent:0;border-bottom:1px dashed #08b;cursor:pointer;}
+/* 横向两列经典排版 */
+.xdl {
+    line-height: 28px;
+    padding-left: 115px;
+}
+.xdl dt {
+    float: left;
+    display: inline;
+    width: 110px;
+    margin-left: -115px;
+    text-align: right;
+    margin-bottom: 0;
+    text-align: right;
+}
+
+.xdl-hor .xdl {
+    margin-bottom: 10px;
+    clear: both;
+}
+.xdl-hor input,
+.xdl-hor select {
+    margin-bottom: 0;
+}
+.xdl-hor label.inline {
+    padding-top: 0;
+}
+
+.xdl .tl {
+    text-align: left;
+}
+
+.input-text{ width:110px;}
+.input-mini{ width:66px;}
+.input-small{ width:90px;}
+.input-middle{ width:140px;}
+.input-big{ width:270px;}
+/*
+.order-train .xdl {
+    line-height: 28px;
+    padding-left: 100px;
+}
+.order-train .xdl dt {
+    width: 95px;
+    margin-left: -100px;
+}
+.order-train .input-text{margin-right:1px;}
+*/
+
+
+.like-input, input,.selectbox{margin-right:5px;}
+
+/* 订单公共头部 */
+.order-header{margin:10px auto;height:60px;position:relative;z-index:5;}
+.header-inner{padding:1px 0;}
+.order-header .logo{float:left;display:inline;width:380px;height:60px; background: url(http://pic.lvmama.com/img/v3/logo.png) no-repeat left center;_background: url(http://pic.lvmama.com/img/v3/logo8.png) no-repeat left center;text-indent:-9999px;outline:none}
+
+.order-header p{ text-align:right;color:#555;}
+.order-header p.welcome{ padding:10px 3px 0 0;}
+.order-header p.info strong{color:#e38;}
+.order-header p b,.order-header p strong{font-family:arial;}
+
+/* footer */
+.lv-footer {margin:0 auto;padding:10px 0;font-family: Arial,\5b8b\4f53;font-size:12px;clear:both;text-align:center;}
+.footer-link,.lv-copyright {line-height:22px;clear:both;color:#888;}
+.footer-link{color:#ccc;}
+.footer-link a,.lv-copyright a{text-decoration: none;font-weight: normal !important;color:#888;}
+.footer-link a{padding:0 10px;}
+.lv-safety{background:url(http://pic.lvmama.com/img/v3/imghf8.png) no-repeat;display:inline-block;}
+.lv-safety{display: block;margin: 5px auto 0;width:620px;height:35px;background-position:0 0;}
+.lv-safety a{display:inline-block;float:left;height:100%;width:52px;}
+.lv-safety a.safety4{width:75px;}
+.lv-safety a.safety7{width:90px;}
+.lv-safety a.safety8{width:90px;}
+
+
+/* 订单样式正文 */
+.order-main{overflow:hidden;}
+.order-main .sidebar,
+.order-main .main{word-wrap:break-word; word-break:break-all;}
+.order-main label.inline{*vertical-align:bottom;*margin:4px 0;}
+
+.sidebar{float:right;width:260px;*zoom:1;background:#f6f6f6;border-left:1px solid #ccc;box-shadow:2px 0 3px #ddd inset;}
+.order-main .main{padding:10px 20px;overflow:hidden;*zoom:1;}
+.order-title,
+.contract-title{font-family: Microsoft YaHei,\5FAE\8F6F\96C5\9ED1;font-weight:500;}
+.order-main .order-title{margin:10px 0 15px;}
+.order-title h3{font-size:22px;font-weight:500;color:#e38;}
+.order-content{margin-bottom:15px;}
+.order-error{border-color:#ff9999}
+.order-ei{width:16px; height:16px; background-position:0 -18px; position:absolute; top:8px; margin-left: -26px; }
+/*
+.order-title{border-bottom:2px solid #ddd;height:30px;line-height:30px;}
+.order-title h3{float:left;font-size:16px;color:#e38;}
+.order-title h3 span{display:inline-block;border-bottom:2px solid #d17;}
+*/
+.check-radio-box .radio,
+.check-radio-box .checkbox {margin-right:0;}
+.check-radio-item{display: inline-block;*zoom:1;color:#08c;padding-right:30px;position:relative;cursor:pointer;}
+.no-check{color:#333;}
+.check-radio-item .ui-arrow-bottom{top:12px;right:12px;}
+
+.check-radio-box .selectbox{margin-left:20px;}
+
+/* 支付方式 */
+.c-title {overflow:hidden;}
+.c-title h3,.c-title h4{float:left;font-size:14px;}
+.c-title h4{line-height:2;}
+.c-title .total-price{float:right;}
+
+/* 订单侧边栏 */
+.sidebox{padding:10px 20px;}
+.side-setbox{ width: 220px;}
+.side-setbox .content{overflow:hidden;}
+.pro-setbox{padding-top:8px;margin-top:-1px;margin-bottom:10px;border-top:1px dashed #ddd;}
+.pro-setbox dt{font-weight:bold;}
+.pro-setbox dd{margin-top:5px;line-height:20px;color:#666;}
+.pro-setbox .num,.total-price .price-num{float:right;width:85px;text-align:right;}
+.total-price strong{font-size:14px;}
+.total-price .price-num{width:auto;}
+.total-price dfn{font-size:20px;}
+
+.save-price,.save-price dfn{color:#0b0;}
+
+/* 订单可编辑区域 暂未使用 */
+.edit-box{padding-bottom:10px;margin-bottom:10px;}
+.edit-box,.choose-info{background:#f0f6fc}
+.edit-box .edit-title{
+    padding:0 10px;
+    height:34px;
+    line-height:34px;
+    background:#cde;
+}
+.edit-title h4{font-size:12px;}
+.choose-info{
+    margin-bottom:10px;
+    padding:5px 0 6px;
+}
+.edit-box .choose-info{
+    border-bottom:1px solid #cde;
+}
+.choose-info .xdl{margin-bottom:0;}
+
+/* 驴妈妈预订条款/合同等 */
+.lv-agree {
+    padding:10px 10px 2px;
+    overflow-y:scroll;
+    margin-top:20px;
+    height:127px;
+    border:1px solid #ccc;
+}
+
+.lv-agree h3 {
+    font-size: 14px;
+    margin-bottom:5px;
+}
+.lv-agree h4 {
+    font-size: 12px;
+    margin-bottom:5px;
+}
+.lv-agree p {
+    margin-bottom: 10px;
+}
+
+/* 合同contract */
+.lightbox{background:#f8f8f8;padding:20px 30px;position:relative;z-index:3;}
+.contract{}
+.contract-title{font-size:24px;text-align:center;height:40px;line-height:40px;color:#ee3388;}
+.order-btn{text-align:center;margin:30px 0 10px;}
+.contract .lv-agree{height:400px;border:1px solid #9bd;background:#fff;}
+.order-main .contract{ border-top:1px solid #ccc;}
+
+/* 支付方式 */
+.paybox{border-top:3px solid #9bd;margin-top:-40px;color:#000;}
+.paybox .timebox b{font-size:14px;}
+.paybox h3{margin-bottom:5px;}
+
+.slidedown-orderlist{
+    float:right;
+    position:relative;
+    z-index:50;
+    display:inline-block;
+    background:#9bd;
+    padding:0 22px 0 10px;
+    height:28px;
+    line-height:28px;
+    color:#fff;
+    
+}
+.slidedown-orderlist .ui-arrow-bottom{top:12px;right:8px;}
+.paytips{}
+
+
+/* 支付方式列表 */
+.payment-list{padding:20px;background:#fff;border:1px solid #9bd;border-top-width:3px;}
+.bank-list li{float:left;display:inline;*zoom:1;margin:0px 4px 12px;position:relative;}
+.bank-list .bank{display:inline-block;width:130px;height:36px;border:1px solid #ddd;vertical-align:middle;}
+.bank-list .bank:hover{border-color:#ff9600;}
+.pay-title h4{float:left;line-height:38px;font-size:14px;}
+.payment{position:relative;margin-top:30px;}
+.payment input{outline:none;}
+.bank-list .poptip-mini{position:absolute;top:-8px;right:0;}
+.pay-title{height:40px;}
+
+.order-tabnav{position: absolute;top: -2px;width: 750px;left:180px;}
+.order-tabnav li{position:relative;border:2px solid #cde;border-bottom: 0 none;float: left;font-size: 14px;font-weight: bold;height: 40px;line-height: 38px;margin-left: 3px;text-align: center;}
+.order-tabnav .selected{border-color: #e6e6e6;overflow: visible;}
+.order-tabnav li a {float:left;padding:0 28px;background-color: #fff;border: #fff solid 2px;border-bottom: 0 none;display: block;height: 38px;text-decoration: none;}
+.order-tabnav .selected a {background-color: #fff;border-color: #9bd;color: #000;height: 41px;outline:none;}
+.order-tabnav li a:hover {text-decoration: none;}
+.order-tabnav .selected a:hover{cursor:default;}
+
+.order-tabnav li.paylink a{position:relative;padding-right:30px;}
+.paylink .ui-arrow-right{top:15px;right:18px;}
+.paylink a:hover .ui-arrow-right{border-left-color:#e38;}
+
+.J_num{*zoom:1;}
+
+/* 组件个性化 */
+.order-content .tiptext{color:#666;margin:5px 0;}
+.tip-line .pbtn {position: relative;top: -1px;*top:1px;_top:2px;}
+
+.order-content .tip-warning{
+    border: 1px solid #fc6;
+    background: #fff9d9;
+}
+.order-content .tip-info{
+    border: 1px solid #cde;
+    background: #f3f9ff;
+}
+.check-radio-box label.inline{line-height:26px;}
+
+.JS_check .check-content{display:none;}
+.JS_check .selected .check-content{display:block;}
+
+
+
+/*!
+ * misc.css v1.0
+ * Author Pandora
+**/
+
+/* 数字加减操作 */
+.oper-numbox * {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    *zoom: 1;
+}
+.oper-numbox {
+    display: inline-block;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    overflow: hidden;
+    *zoom: 1;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    
+    /* 禁止选中文字 */
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+         -o-user-select: none;
+            user-select: none;
+}
+
+.op-reduce,
+.op-increase {
+    font-style: normal;
+    width: 20px;
+    color: #666;
+    cursor: pointer;
+    font-family: \5b8b\4f53,sans-serif;
+    font-size: 16px;
+    text-align: center;
+    vertical-align: top;
+    background-color: #f8f8f8;
+}
+
+.op-reduce   { border-right: 1px solid #ededed;}
+.op-increase { border-left : 1px solid #ededed;}
+.op-reduce:hover,
+.op-increase:hover {
+    background-color: #fff;
+    text-decoration: none;
+    color: #f80;
+}
+
+.op-disable-reduce,
+.op-disable-reduce:hover,
+.op-disable-increase,
+.op-disable-increase:hover {
+    cursor: default;
+    background-color: #f8f8f8;
+    color: #ccc;
+}
+
+.oper-numbox input.op-number {
+    border: none;
+    outline: none;
+    background-color: #fff;
+    position: relative;
+    width: 40px;
+    vertical-align: top;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    *height: 20px;
+    *line-height: 20px;
+    *vertical-align: middle;
+    ime-mode: disabled;
+}
+.oper-numbox input.op-number:focus {
+    -webkit-box-shadow: none;
+       -moz-box-shadow: none;
+            box-shadow: none;
+}
+
+
+/* 日期选择框 */
+.dinput .input-date{ width: 154px;}
+
+/* 火车票 .order-train */
+.return-btn,
+.return-btn:hover{color:#0088cc;}
+
+.sp1,.sp2,.sp3,.sp4 { display:inline-block;padding:0 6px;color:#666;}
+.train-number{font-size:24px;font-weight:bold;}
+.train-city{font-size:14px;padding:0 15px;color:#666;}
+.train-city b{font-weight:bold;color:#000;}
+
+/* 支付成功页面 */
+.pay-feedback{ padding:0 20px;color:#333;}
+
+.pay-feedback .gray{color:#666;}
+.pay-backinfo p{ line-height: 1.5; margin-bottom: 10px;}
+.pay-backinfo .dot_line,
+.pay-backinfo  .solid_line{margin:20px 0;}
+.backinfo-item{margin:10px 0 20px;}
+.pay-backinfo h5{margin:10px 0 5px;}
+
+.codeapp-box{background:url(http://pic.lvmama.com/img/v3/codeapp_newbg.png) no-repeat;background:url(http://10.3.1.43/img/v3/codeapp_newbg.png) no-repeat; height:145px;overflow:hiden;margin-top:100px;}
+.codeapp-box .codeapp{display:inline-block;overflow:hidden;width:130px;height:130px;margin:6px;background:#fafafa;}
+
+/* 其他支付方式 */
+.pay-other{padding:0 120px;}
+.pay-other-item{margin-bottom:20px;}
+.pay-other h4{margin-bottom:5px;}
+.pay-other p{margin-bottom:10px;line-height:24px;}
+
+/* 驴妈妈后台补填信息 */
+.lv-order-box{padding:10px 0;}
+
+/*修复老版支付样式*/
+.onlinepay-detail{width:auto;} 
+.pay_tagcontent3 .add_order_list{width:auto;} 
+.pay_tagcontent3 .add_order,.pay_tagcontent3 .add_order1{width:730px;} 
+.price{position:static;font-weight:normal;} 
+.btn-submit, .func-btn input, .fenqi_list li .next{*text-indent:0;*line-height:300px;width: 130px; height: 36px; overflow:hidden;}
+
+/**/
+.booking-policy dd{max-height:140px;_height:140px;overflow-y:auto;}
+
+
+/*支付方式页面改版 2014-01-08 by xiaohan */
+.tab-switch .tabcon{display:none;}
+.tab-switch .selected{display:block;}
+.paynew,
+.paynew .main{overflow:visible;}
+.paynew .main{position:relative;z-index:20;background:#F0F5FC;border-bottom:3px solid #BCCCEE;}
+.paynew .order-btn{margin:0; text-align:left;padding:20px 30px;border-top:1px solid #BCCCEE;background:#F0F5FC;}
+.paynewbox{padding:0 20px;margin: 20px 0;}
+.pay-price dfn i{font-weight:bold;}
+.pay-title .pay-type{color:#666;padding:0 20px;}
+.paynew .order-tabnav{left:100px;}
+.paynew .order-buy th,.paynew .order-buy td{padding: 2px 8px;}
+.paynew .payment-list{border-width:3px;padding:0;}
+.payment-list .xhcontent{padding:20px 27px;}
+.list-block li{display:block;float:none;}
+.paynew .bank-list{*zoom:1;margin-right:-20px;}
+.paynew .bank-list li{margin:0px 20px 12px 4px;min-width: 150px;}
+.paynew .slidedown-orderlist{position:absolute;right:20px;bottom:-30px;}
+.paynew .order-details{position:absolute;width:100%;border-bottom:3px solid #BCCCEE; left:0;top:45px;background:#F0F5FC;}
+.paynew .order-list{padding:0 20px 20px;}
+
+.gray{color:#999;}
+.paynew .payment{color:#666;margin-top:20px;}
+.paynew .payment p{margin:5px 0;}
+.paynew .payment p.typetit{padding:5px 10px;background:#F6F6F6;margin:20px 0;}
+.paynew .payment p.text{padding:5px 10px;color:#666;}
+.xtable-data{margin-bottom:10px;}
+.xtable-data tr,.xtable-data td{border:1px solid #ddd;}
+.xtable-data th{border:none;background:#f6f6f6;}
+.xtable-data td.phase{padding-left:30px;text-align:left;width:150px;}
+
+/*在线预授权*/
+.link-verify {position:relative;display:inline-block;padding-right:20px;}
+.link-verify .ui-arrow-bottom{position:absolute;right:4px;top:10px;}
+
+

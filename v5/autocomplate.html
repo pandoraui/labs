@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>新酒店频道</title>
+<meta name="keywords" content=""/>
+<meta name="description" content="">
+<link rel="stylesheet" href="http://pic.lvmama.com/min/index.php?f=/styles/v5/base.css,/styles/v5/common.css" >
+<link rel="stylesheet" href="http://pic.lvmama.com/min/index.php?f=/styles/v5/modules/form.css,/styles/v5/modules/table.css" />
+<link rel="stylesheet" href="css/newhotel.css" />
+<style>
+.qcity .hotcity{
+    background:#fff;
+    border:1px solid #ccc
+}
+.qcity .hotcity .hint{
+    padding:5px;
+    font-size:12px
+}
+.qcity .hint .closeImg{
+    display:block;
+    float:right;
+    width:14px;
+    height:14px;
+    cursor:pointer
+}
+.qcity .hint hr{
+    clear:both;
+    border:0;
+    border-bottom:1px dotted #bbb;
+    color:#fff
+}
+.qcity .hint ul{
+    margin:0;
+    padding:0;
+    height:1%
+}
+.qcity .hint ul:after{
+    clear:both;
+    display:block;
+    height:0;
+    visibility:hidden;
+    content:""
+}
+.qcity .hint ul li{
+    float:left;
+    width:20%!important;
+    text-align:center;
+    height:25px;
+    line-height:25px;
+    overflow:hidden
+}
+.qcity .hint ul li a{
+    color:#333;
+    !important
+}
+.qcity .hint ul li a:hover{
+    text-decoration:none;
+    color:#555
+}
+.qcity .hint .inter ul li{
+    width:24%!important
+}
+.qcity .hint .b_hct_tit{
+    padding:3px 0 5px
+}
+.qcity .hint .b_hct_nav{
+    border-bottom:1px solid #ddd;
+    zoom:1;
+    margin-bottom:3px
+}
+.qcity .hint .b_hct_nav:after{
+    clear:both;
+    display:block;
+    height:0;
+    visibility:hidden;
+    content:"."
+}
+.qcity .hint .b_hct_nav span{
+    position:relative;
+    bottom:-1px;
+    float:left;
+    display:inline;
+    margin-right:8px;
+    padding:0 8px;
+    height:20px;
+    font-size:12px;
+    line-height:20px;
+    text-align:center;
+    cursor:pointer;
+    color:#0069CA
+}
+.qcity .hint .b_hct_nav span.active{
+    background:#fff;
+    border:1px solid #ccc;
+    border-bottom:1px solid #fff;
+    color:#333
+}
+.qcity .hint .b_hct_lst{
+    padding-left:9px
+}
+.qcity .hint .e_hct_lst{
+    margin:0;
+    padding:0;
+    height:1%
+}
+.qcity .hint .e_hct_lst:after{
+    clear:both;
+    display:block;
+    height:0;
+    visibility:hidden;
+    content:""
+}
+.qcity .hint .e_hct_lst dt{
+    float:left;
+    display:block;
+    width:16px;
+    color:#0069CA;
+    height:25px;
+    line-height:25px;
+    padding-top:1px;
+    *padding-top:0;
+    padding-top:0
+}
+.qcity .hint .e_hct_lst dd{
+    margin-left:20px;
+    zoom:1;
+    _margin-left:0
+}
+.qcity .hotelhint{
+    font-size:12px;
+    box-shadow:0 8px 7px #aaa;
+    -moz-box-shadow:0 8px 7px #aaa;
+    -webkit-box-shadow:0 8px 7px #aaa
+}
+.qcity .hotelhint .closeImg{
+    cursor:pointer;
+    display:block;
+    float:right;
+    height:14px;
+    width:14px;
+    margin-right:7px;
+    margin-top:7px
+}
+.qcity .hotelhint ul{
+    height:1%;
+    margin:0;
+    padding:0;
+    margin-left:10px
+}
+.qcity .hotelhint ul:after{
+    clear:both;
+    content:" ";
+    display:block;
+    height:0;
+    visibility:hidden
+}
+.qcity .hotelhint ul li{
+    float:left;
+    height:24px;
+    vertical-align:middle;
+    line-height:24px;
+    overflow:hidden;
+    text-align:left;
+    width:20%
+}
+.qcity .hotelhint ul li a{
+    color:#333;
+    font-size:12px
+}
+.qcity .hotelhint ul li a:hover{
+    color:#0084bb;
+    text-decoration:none;
+    font-weight:700
+}
+.qcity .hotelhint .b_hct_tit{
+    font-size:12px;
+    line-height:12px;
+    padding:10px 10px;
+    padding-bottom:8px;
+    color:#999
+}
+.qcity .hotelhint .b_hct_nav{
+    border-bottom:1px solid #e8e8e8;
+    padding-left:10px;
+    zoom:1
+}
+.qcity .hotelhint .b_hct_nav:after{
+    clear:both;
+    content:".";
+    display:block;
+    height:0;
+    visibility:hidden
+}
+.qcity .hotelhint .b_hct_nav span{
+    position:relative;
+    bottom:-1px;
+    float:left;
+    display:inline;
+    margin-right:25px;
+    color:#0084bb;
+    cursor:pointer;
+    font-size:12px;
+    height:32px;
+    line-height:32px;
+    text-align:center
+}
+.qcity .hotelhint .b_hct_nav span.active{
+    border-bottom:1px solid #0084bb;
+    font-weight:bold
+}
+.qcity .hotelhint .b_hct_lst{
+    padding:9px 0 0 10px
+}
+.qcity .hotelhint .e_hct_lst{
+    height:1%;
+    margin:0;
+    padding:0
+}
+.qcity .hotelhint .e_hct_lst:after{
+    clear:both;
+    content:" ";
+    display:block;
+    height:0;
+    visibility:hidden
+}
+.qcity .hotelhint .e_hct_lst dt{
+    color:#0084bb;
+    display:block;
+    float:left;
+    height:24px;
+    line-height:24px;
+    text-align:left;
+    width:10px;
+    font-weight:bold;
+    vertical-align:middle
+}
+.qcity .hotelhint .e_hct_lst dd{
+    display:block;
+    line-height:24px;
+    margin-left:10px;
+    _margin-left:0
+}
+.qcity .hotelhint .b_hct_tip{
+    color:#999;
+    text-align:right;
+    padding:8px 15px 15px 0
+}
+</style>
+</head>
+<body class="hotel">
+
+<!-- wrap\\ 1 -->
+<div class="wrap">
+    
+    
+    <div class="qcbox qcity" style="z-index: 30;">
+        <div class="qunar-qcbox"><div class="qcbox-placeholder" style="width: 175px; left: 16px; padding-left: 4px; height: 18px; line-height: 18px; display: none;">目的地</div><div class="qcbox-prefix">到</div><div class="qcbox-info"><b></b></div><input type="text" value="" name="toCity" class="cinput textbox" data-qcbox-placeholder="目的地" data-qcbox-prefix="到" data-qcbox-suggest="flight-tocity" data-qcbox-hotcity="flight" autocomplete="off" x-webkit-speech="x-webkit-speech" style="margin-left: 16px;" data-detect-oninput="2"><div class="qcbox-fixed"><div class="hotcity"><div></div><div class="hint" style="width:360px" data-hotcity-nogo="true">
+    <img class="closeImg js_close_flight_hotcity" src="http://source.qunar.com/site/images/new_main/Button_Hotcity_Close.gif"><div id="js_t-domesticto-flight-hotcity-to" class="b_hct_tit">热门城市(可直接输入中文名/拼音/英文名/三字码)</div>
+    <div class="b_hct_nav">
+        <span data-key="domesticto" data-tab="domesticto-flight-hotcity-to" data-tab-id="dfh-热门" class="active">热门</span>
+        <span data-key="ABCDE" data-tab="domesticto-flight-hotcity-to" data-tab-id="dfh-ABCDE">ABCDE</span>
+        <span data-key="FGHJ" data-tab="domesticto-flight-hotcity-to" data-tab-id="dfh-FGHJ">FGHJ</span>
+        <span data-key="KLMNP" data-tab="domesticto-flight-hotcity-to" data-tab-id="dfh-KLMNP">KLMNP</span>
+        <span data-key="QRSTW" data-tab="domesticto-flight-hotcity-to" data-tab-id="dfh-QRSTW">QRSTW</span>
+        <span data-key="XYZ" data-tab="domesticto-flight-hotcity-to" data-tab-id="dfh-XYZ">XYZ</span>
+    </div>
+    <div data-panel="domesticto-flight-hotcity-to" data-panel-id="dfh-热门" class="b_hct_lst js-transition-before js-transition-after" style="display: block;">
+<ul>
+	<li><a class="js-hotcitylist" data-country="中国" href="#">上海</a></li>
+	<li><a class="js-hotcitylist" data-country="中国" href="#">北京</a></li>
+	<li><a class="js-hotcitylist" data-country="中国" href="#">广州</a></li>
+	<li><a class="js-hotcitylist" data-country="中国" href="#">昆明</a></li>
+	<li><a class="js-hotcitylist" data-country="中国" href="#">西安</a></li>
+	<li><a class="js-hotcitylist" data-country="中国" href="#">成都</a></li>
+	<li><a class="js-hotcitylist" data-country="中国" href="#">深圳</a></li>
+	<li><a class="js-hotcitylist" data-country="中国" href="#">厦门</a></li>
+	<li><a class="js-hotcitylist" data-country="中国" href="#">乌鲁木齐</a></li>
+	<li><a class="js-hotcitylist" data-country="中国" href="#">南京</a></li>
+	<li><a class="js-hotcitylist" data-country="中国" href="#">重庆</a></li>
+	<li><a class="js-hotcitylist" data-country="中国" href="#">杭州</a></li>
+	<li><a class="js-hotcitylist" data-country="中国" href="#">大连</a></li>
+	<li><a class="js-hotcitylist" data-country="中国" href="#">长沙</a></li>
+	<li><a class="js-hotcitylist" data-country="中国" href="#">海口</a></li>
+	<li><a class="js-hotcitylist" data-country="中国" href="#">哈尔滨</a></li>
+	<li><a class="js-hotcitylist" data-country="中国" href="#">青岛</a></li>
+	<li><a class="js-hotcitylist" data-country="中国" href="#">沈阳</a></li>
+	<li><a class="js-hotcitylist" data-country="中国" href="#">三亚</a></li>
+	<li><a class="js-hotcitylist" data-country="中国" href="#">济南</a></li>
+	<li><a class="js-hotcitylist" data-country="中国" href="#">武汉</a></li>
+	<li><a class="js-hotcitylist" data-country="中国" href="#">郑州  </a></li>
+	<li><a class="js-hotcitylist" data-country="中国" href="#">贵阳</a></li>
+	<li><a class="js-hotcitylist" data-country="中国" href="#">南宁</a></li>
+	<li><a class="js-hotcitylist" data-country="中国" href="#">福州</a></li>
+	<li><a class="js-hotcitylist" data-country="中国" href="#">天津</a></li>
+	<li><a class="js-hotcitylist" data-country="中国" href="#">南昌</a></li>
+	<li><a class="js-hotcitylist" data-country="中国" href="#">丽江</a></li>
+	<li><a class="js-hotcitylist" data-country="中国" href="#">香港</a></li>
+	<li><a class="js-hotcitylist" data-country="中国" href="#">台北</a></li>
+</ul>
+</div>
+    <div data-panel="domesticto-flight-hotcity-to" data-panel-id="dfh-ABCDE" class="b_hct_lst" style="display: none;"></div>
+    <div data-panel="domesticto-flight-hotcity-to" data-panel-id="dfh-FGHJ" class="b_hct_lst" style="display: none;"></div>
+    <div data-panel="domesticto-flight-hotcity-to" data-panel-id="dfh-KLMNP" class="b_hct_lst" style="display: none;"></div>
+    <div data-panel="domesticto-flight-hotcity-to" data-panel-id="dfh-QRSTW" class="b_hct_lst" style="display: none;"></div>
+    <div data-panel="domesticto-flight-hotcity-to" data-panel-id="dfh-XYZ" class="b_hct_lst" style="display: none;"></div>
+</div></div></div></div>
+                            <div class="qsuggest-contaier js-suggestcontainer"><div class="q-suggest" style="display: none; z-index: 500;"></div></div>
+                        </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    <img class="closeImg js_close_flight_hotcity" src="http://source.qunar.com/site/images/new_main/Button_Hotcity_Close.gif"><div id="js_t-domesticfrom-flight-hotcity-from" class="b_hct_tit">热门城市(可直接输入中文名/拼音/英文名/三字码)</div>
+    <div class="b_hct_nav">
+        <span data-key="domesticfrom" data-tab="domesticfrom-flight-hotcity-from" data-tab-id="dfh-热门" class="active">热门</span>
+        <span data-key="ABCDE" data-tab="domesticfrom-flight-hotcity-from" data-tab-id="dfh-ABCDE" class="">ABCDE</span>
+        <span data-key="FGHJ" data-tab="domesticfrom-flight-hotcity-from" data-tab-id="dfh-FGHJ" class="">FGHJ</span>
+        <span data-key="KLMNP" data-tab="domesticfrom-flight-hotcity-from" data-tab-id="dfh-KLMNP" class="">KLMNP</span>
+        <span data-key="QRSTW" data-tab="domesticfrom-flight-hotcity-from" data-tab-id="dfh-QRSTW">QRSTW</span>
+        <span data-key="XYZ" data-tab="domesticfrom-flight-hotcity-from" data-tab-id="dfh-XYZ">XYZ</span>
+    </div>
+    <div data-panel="domesticfrom-flight-hotcity-from" data-panel-id="dfh-热门" class="b_hct_lst js-transition-before js-transition-after" style="display: block;">
+<ul>
+    <li><a class="js-hotcitylist" data-country="中国" href="#">上海</a></li>
+    <li><a class="js-hotcitylist" data-country="中国" href="#">北京</a></li>
+    <li><a class="js-hotcitylist" data-country="中国" href="#">广州</a></li>
+    <li><a class="js-hotcitylist" data-country="中国" href="#">昆明</a></li>
+    <li><a class="js-hotcitylist" data-country="中国" href="#">西安</a></li>
+    <li><a class="js-hotcitylist" data-country="中国" href="#">成都</a></li>
+    <li><a class="js-hotcitylist" data-country="中国" href="#">深圳</a></li>
+    <li><a class="js-hotcitylist" data-country="中国" href="#">厦门</a></li>
+    <li><a class="js-hotcitylist" data-country="中国" href="#">乌鲁木齐</a></li>
+    <li><a class="js-hotcitylist" data-country="中国" href="#">南京</a></li>
+    <li><a class="js-hotcitylist" data-country="中国" href="#">重庆</a></li>
+    <li><a class="js-hotcitylist" data-country="中国" href="#">杭州</a></li>
+    <li><a class="js-hotcitylist" data-country="中国" href="#">大连</a></li>
+    <li><a class="js-hotcitylist" data-country="中国" href="#">长沙</a></li>
+    <li><a class="js-hotcitylist" data-country="中国" href="#">海口</a></li>
+    <li><a class="js-hotcitylist" data-country="中国" href="#">哈尔滨</a></li>
+    <li><a class="js-hotcitylist" data-country="中国" href="#">青岛</a></li>
+    <li><a class="js-hotcitylist" data-country="中国" href="#">沈阳</a></li>
+    <li><a class="js-hotcitylist" data-country="中国" href="#">三亚</a></li>
+    <li><a class="js-hotcitylist" data-country="中国" href="#">济南</a></li>
+    <li><a class="js-hotcitylist" data-country="中国" href="#">武汉</a></li>
+    <li><a class="js-hotcitylist" data-country="中国" href="#">郑州  </a></li>
+    <li><a class="js-hotcitylist" data-country="中国" href="#">贵阳</a></li>
+    <li><a class="js-hotcitylist" data-country="中国" href="#">南宁</a></li>
+    <li><a class="js-hotcitylist" data-country="中国" href="#">福州</a></li>
+    <li><a class="js-hotcitylist" data-country="中国" href="#">天津</a></li>
+    <li><a class="js-hotcitylist" data-country="中国" href="#">长春</a></li>
+    <li><a class="js-hotcitylist" data-country="中国" href="#">太原</a></li>
+    <li><a class="js-hotcitylist" data-country="中国" href="#">南昌</a></li>
+    <li><a class="js-hotcitylist" data-country="中国" href="#">丽江</a></li>
+</ul>
+</div>
+    <div data-panel="domesticfrom-flight-hotcity-from" data-panel-id="dfh-ABCDE" class="b_hct_lst" style="display: none;"><dl class="e_hct_lst">
+    <dt>A</dt>
+    <dd>
+        <ul>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">阿里</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">阿尔山</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">安庆</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">阿勒泰</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">安康</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">鞍山</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">安顺</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">阿克苏</a></li>
+        </ul>
+    </dd>
+</dl>
+<dl class="e_hct_lst">
+    <dt>B</dt>
+    <dd>
+        <ul>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">包头</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">北海</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">北京</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">百色</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">保山</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">博乐</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">毕节</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">巴彦淖尔</a></li>
+        </ul>
+    </dd>
+</dl>
+<dl class="e_hct_lst">
+    <dt>C</dt>
+    <dd>
+        <ul>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">长治</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">池州</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">长春</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">常州</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">昌都</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">朝阳</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">常德</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">长白山</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">成都</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">重庆</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">长沙</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">赤峰</a></li>
+        </ul>
+    </dd>
+</dl>
+<dl class="e_hct_lst">
+    <dt>D</dt>
+    <dd>
+        <ul>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">大同</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">大连</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">东营</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">大庆</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">丹东</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">大理</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">敦煌</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">达州</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">稻城</a></li>
+        </ul>
+    </dd>
+</dl>
+<dl class="e_hct_lst">
+    <dt>E</dt>
+    <dd>
+        <ul>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">恩施</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">鄂尔多斯</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">二连浩特</a></li>
+        </ul>
+    </dd>
+</dl>
+
+</div>
+    <div data-panel="domesticfrom-flight-hotcity-from" data-panel-id="dfh-FGHJ" class="b_hct_lst" style="display: none;"><dl class="e_hct_lst">
+    <dt>F</dt>
+    <dd>
+        <ul>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">佛山</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">福州</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">阜阳</a></li>
+        </ul>
+    </dd>
+</dl>
+<dl class="e_hct_lst">
+    <dt>G</dt>
+    <dd>
+        <ul>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">贵阳</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">桂林</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">广州</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">广元</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">格尔木</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">赣州</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">固原</a></li>
+        </ul>
+    </dd>
+</dl>
+<dl class="e_hct_lst">
+    <dt>H</dt>
+    <dd>
+        <ul>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">哈密</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">呼和浩特</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">黑河</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">海拉尔</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">哈尔滨</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">海口</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">黄山</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">杭州</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">邯郸</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">合肥</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">黄龙</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">汉中</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">和田</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">淮安</a></li>
+        </ul>
+    </dd>
+</dl>
+<dl class="e_hct_lst">
+    <dt>J</dt>
+    <dd>
+        <ul>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">鸡西</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">晋江</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">锦州</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">景德镇</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">嘉峪关</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">井冈山</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">济宁</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">九江</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">佳木斯</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">济南</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">加格达奇</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">金昌</a></li>
+        </ul>
+    </dd>
+</dl>
+
+</div>
+    <div data-panel="domesticfrom-flight-hotcity-from" data-panel-id="dfh-KLMNP" class="b_hct_lst" style="display: none;"><dl class="e_hct_lst">
+    <dt>K</dt>
+    <dd>
+        <ul>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">喀什</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">昆明</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">康定</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">克拉玛依</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">库尔勒</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">库车</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">喀纳斯</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">凯里</a></li>
+        </ul>
+    </dd>
+</dl>
+<dl class="e_hct_lst">
+    <dt>L</dt>
+    <dd>
+        <ul>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">兰州</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">洛阳</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">丽江</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">荔波</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">林芝</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">柳州</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">泸州</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">连云港</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">黎平</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">连城</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">拉萨</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">临沧</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">临沂</a></li>
+        </ul>
+    </dd>
+</dl>
+<dl class="e_hct_lst">
+    <dt>M</dt>
+    <dd>
+        <ul>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">芒市</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">牡丹江</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">满洲里</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">绵阳</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">梅县</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">漠河</a></li>
+        </ul>
+    </dd>
+</dl>
+<dl class="e_hct_lst">
+    <dt>N</dt>
+    <dd>
+        <ul>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">南京</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">南充</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">南宁</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">南阳</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">南通</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">南昌</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">那拉提</a></li>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">宁波</a></li>
+        </ul>
+    </dd>
+</dl>
+<dl class="e_hct_lst">
+    <dt>P</dt>
+    <dd>
+        <ul>
+            <li><a class="js-hotcitylist" data-country="中国" href="#">攀枝花</a></li>
+        </ul>
+    </dd>
+</dl>
+
+</div>
+    <div data-panel="domesticfrom-flight-hotcity-from" data-panel-id="dfh-QRSTW" class="b_hct_lst" style="display: none;"></div>
+    <div data-panel="domesticfrom-flight-hotcity-from" data-panel-id="dfh-XYZ" class="b_hct_lst" style="display: none;"></div>
+</div></div></div>
+</div> <!-- //.wrap 1 -->
+
+<!-- 频道公用js--> 
+<script src="http://pic.lvmama.com/min/index.php?f=/js/new_v/jquery-1.7.2.min.js,/js/ui/lvmamaUI/lvmamaUI.js,/js/new_v/top/header-air_new.js"></script> 
+<script src="http://pic.lvmama.com/min/index.php?f=/js/v3/plugins.js,/js/v3/app.js"></script>
+<script src="js/newhotel.js"></script>
+
+</body>
+</html>

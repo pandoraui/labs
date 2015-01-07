@@ -1,0 +1,63 @@
+/*--------------------index-----------------------------*/
+.hm1left { float:left; width:300px;}
+.hdp { border:1px #d9dbda solid; height:350px;}
+.hm1box1{ border:1px #b5d5e5 solid; background:url(../images/hm1box1bg.gif) repeat-x; height:99px; font-size:13px;}
+.hm1box1 span { float:left; text-align:center; padding:5px 17px 0;}
+.hm1mid { float:left; width:394px; overflow:hidden; margin-left:10px; display:inline; border:1px #b5d5e5 solid;background:url(../images/hm1box1bg.gif) repeat-x; padding:7px 7px 0; height:454px; overflow:hidden;}
+.hm1mid h4 { font:22px/27px \microsoft YaHei; height:36px;}
+.hm1mid .line { border-bottom:1px #ccc dashed;}
+.hm1mid ol { height:64px; overflow:hidden;}
+.hm1mid ol li { font-size:15px; line-height:27px; padding:0 2px; color:#333;}
+.hm1mid ol li a {color:#333;}
+.hm1mid .blue a:hover,.hzfw .blue a:hover { text-decoration:none;}
+.hm1mid ol li a:hover {color:#f00;}
+.hm1mid h5 { font-size:14px; background:url(../images/bg.gif) no-repeat left -88px; height:21px; padding-left:10px; margin:10px 0 10px 3px;}
+.hm1mid ul { padding:0 0 10px 3px;}
+.hm1mid ul li { line-height:20px; padding-left:10px;}
+.hm1right { float:right; width:250px;}
+.jsbox { border:1px #b5d5e5 solid; background:url(../images/hm1box1bg.gif) repeat-x; padding:6px 4px 0;}
+.jsbox .font { line-height:18px; padding:9px 5px 7px; color:#333; border-bottom:1px #ccc dashed; margin-bottom:9px; text-indent:15px;}
+.jsbox dl { height:67px;}
+.jsbox dt { float:left; margin-left:6px; display:inline;}
+.jsbox dd span { float:left; width:53px; height:23px; line-height:23px; text-align:center; background:url(../images/bg.gif) no-repeat left -112px; margin:0 0 8px 6px;} 
+.hzfw { border:1px #b5d5e5 solid;}
+.hzfw h4 { background:url(../images/hzfwbg1.gif) repeat-x; height:32px; line-height:32px; padding-left:10px; font-size:16px; font-weight:bold;}
+.hzfw .nr { background:url(../images/hzfwbg2.gif) repeat-x; height:148px; overflow:hidden; padding:10px 15px;}
+.hzfw ul li { padding-left:15px; float:left; width:94px; line-height:20px; font-size:13px;}
+.zjzx { border:1px #b5d5e5 solid; padding-bottom:8px;}
+.zjzx h4 { background:url(../images/zjzxbg1.gif) repeat-x; height:36px; line-height:36px; font-size:14px; padding-left:10px; font-weight:normal; }
+.zjzx h4 b { font-size:16px;}
+.zjmz { float:left; display:inline; margin:12px 10px 0 8px; width:324px; height:255px; background:url(../images/bg.gif) no-repeat left -178px; padding:10px 12px 0 8px;}
+.zjzx h5 { font-size:16px; padding-right:8px;}
+.zjlb { border:1px #9d9d9d dashed; margin:6px 0 0 0;}
+.zjlb .nr { padding:5px 0 0; }
+.zjlb .title { background:#f2f2f2; height:30px; line-height:30px;}
+.zjlb .title li { float:left; display:block; padding:0 10px;}
+.zjlb .title li.selected { background:#fff;}
+.zjlb .tm { padding:0 10px;}
+.zjlb .time li { float:left; display:block; margin-right:3px; display:inline; padding:0 5px; height:18px; line-height:18px;}
+.zjlb .time li.selected { background:#0295e0; color:#fff;}
+.zjlb .timebh { line-height:18px; position:absolute; left:84px; top:-18px;}
+.zjlb .zj { padding:10px; position:relative;}
+.zjlb .zj dl { float:left; width:150px;}
+.zjlb .zj dt { float:left; margin-right:10px; display:inline;}
+.zjlb .zj .btn { color:#fff; background:#0295e0; text-align:center; margin-top:4px;}
+.zjlb .zj .btn a { color:#fff;}
+.zjlb .zj dd { float:left; width:76px; padding-top:15px;}
+.zjlb .date { background:#f2f2f2; border-top:1px #d4d4d4 solid; height:32px; line-height:32px; font-size:14px;}
+.zjlb .date span { float:left; background:url(../images/date.jpg) no-repeat; width:28px; height:24px; text-align:center; color:#000; margin:2px 8px 0 7px;}
+.jhwt { float:left; width:316px; margin:12px 12px 0 0; display:inline;}
+.jhwt h4 { width:126px; height:39px; line-height:39px; font-size:16px; color:#fff; font-weight:bold; background:url(../images/bg.gif) no-repeat -350px -177px; margin-bottom:10px;}
+.jhbt { font-size:15px; line-height:26px; padding-left:26px; line-height:26px; background:url(../images/bg.gif) no-repeat left -145px; font-weight:bold;}
+.jhbt a { color:#ef5e00;}
+.jhbt a:hover { color:#f00;}
+.jhwt ul { border-bottom:1px #ccc dashed; padding-bottom:5px; margin:3px 0 8px;} 
+.jhwt ul li { line-height:24px; padding-left:10px;}
+.zxys .btn { float:left; width:74px; height:23px; text-align:center; background: url(../images/bg.gif) no-repeat left -650px;}
+.zxys span { float:left; margin-left:8px; display:inline;}
+.zxbox { width:280px; float:left;}
+.zxbtn img { float:left; margin:11px 0 0;}
+.hzzx { border:1px #d2d1d1 solid; padding:1px; margin-top:12px;}
+.hzzx h5 { height:30px; line-height:30px; padding-left:10px; color:#333; background:#f1f1f1; font-size:13px; font-weight:normal;}
+.hzzx ul { padding:5px 10px 5px 15px;}
+.hzzx ul li { padding-left:8px;}

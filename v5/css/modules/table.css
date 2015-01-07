@@ -1,0 +1,138 @@
+
+/* 
+ @名称: tables.css
+ @功能: 表格
+ */
+
+/* ------------------------------------------------------------
+  @名称: tables.css
+  @功能: 表格
+  Create: 2013-12-10
+  Update: 2013-12-11
+------------------------------------------------------------ */
+
+table {
+    max-width: 100%;
+    background-color: transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+td.label {
+    text-align: right;
+    min-width: 60px;
+}
+.table-full {
+    width: 100%;
+}
+
+.table-center th,
+.table-center td {
+    text-align: center;
+}
+
+/* 表格列表 */
+.table-list {
+    width: 100%;
+    line-height: 20px;
+}
+.table-list th,
+.table-list td {
+    padding: 6px 8px;
+    border: 1px solid #d8dce5;
+    text-align: center;
+}
+.table-list tbody > tr:nth-child(even) > td,
+.table-list tbody > tr:nth-child(even) > th {
+    background-color: #f9f9f9;
+}
+
+/* 颜色主题 */
+.table-blue tr,
+.table-blue td {
+    border: 1px solid #d8dce5;
+}
+.table-blue thead tr,
+.table-blue thead th {
+    background: #7bb7f2;
+    border-color: #7bb7f2;
+    color: #fff;
+    font-weight: normal;
+}
+
+.table-light thead tr,
+.table-light thead th {
+    background: #e8eef7;
+    border-color: #e8eef7;
+    color: #797f98;
+    font-weight: normal;
+}
+
+.table-vtop td {
+    vertical-align: top;
+}
+
+/* 信息表格
+.table-info th, 
+.table-info td, 
+.table-info td table caption{
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+}
+.table-info th {
+    background: #fbfbfb;
+}
+.table-info td {
+    background: #fff;
+}
+.table-info th {
+    background: #f1f1f1;
+}
+.table-info table .caption {
+    border-bottom:none;
+}
+ */
+/*
+table.darktable { 
+    border: 1px solid #888;
+    border-collapse: collapse;
+    margin-bottom: 1em
+}
+table.darktable pre {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    background-color: transparent;
+}
+table.darktable th,
+table.darktable td {
+    padding: 5px 10px;
+    text-align: left;
+}
+table.darktable th {
+    background-color: #ccc;
+    border: 1px solid #888;
+    vertical-align: baseline;
+}
+table.darktable td {
+    background-color: #efefef;
+    border: 1px solid #aaa;
+    vertical-align: text-top;
+}
+table.darktable p {
+    margin: 0 0 2px;
+}
+table.darktable ul,
+table.table-info li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+table.darktable td em {
+    color: #00F;
+    font-weight: normal;
+}
+table.darktable .table_value {
+    color: #0F93D2;
+}
+
+*/

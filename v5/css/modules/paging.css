@@ -1,0 +1,240 @@
+
+/*!
+ * paging.css 分页样式
+ * Author Pandora
+**/
+
+/** @name      : 分页样式
+  * @explain   : 实现页码
+  * @type      : 基类 .paging .pagebox
+  * @dependent : pandora
+  * @author    : CloudYan
+  * @version   : 1.0
+  * @other     : 针对按钮实现做如下规划：
+  
+详细参见：pandora前端项目/pandora/docs/modules/paging.html
+
+***/
+.paging {
+    /* 使用此字体设置(宋体、arial字体)，垂直居中效果比较好 */
+    font-family: \5b8b\4f53,Arial,sans-serif;
+}
+
+.paging {
+    clear: both;
+    margin: 10px 0;
+    height: 26px;
+    overflow: hidden;
+    text-align: right;
+    line-height: 26px;
+    font-size: 12px;
+}
+.gopage {
+    float: right;
+    display: inline;
+    padding-left: 6px;
+    line-height: 26px;
+}
+
+.paging .input-text{
+    width: 22px;
+    margin: 0 3px;
+    padding: 2px 3px;
+    *padding: 1px 3px;
+}
+.gopage .input-text,
+.gopage .btn {
+    vertical-align: top;
+    *vertical-align: middle;
+    margin-right: 0;
+}
+
+/* 页码部分 */
+.pagebox .num {
+    color: #f90;
+}
+.pagebox {
+    text-align: right;
+}
+.pagebox a,
+.pagebox span {
+    display: inline-block;
+    margin-left: 5px;
+    padding: 0 10px;
+    height: 24px;
+    line-height: 24px;
+    border: 1px solid #ddd;
+    font-size: 12px;
+    vertical-align: top;
+    background: #fff;
+    color: #666;
+}
+.pagebox span.pagesel{
+    border-color: transparent;
+}
+.pagebox a:hover {
+    text-decoration: none;
+    border-color: #aaa;
+    background: #e3e3e3;
+    color: #333;
+}
+.pagebox .pageinfo,
+.pagebox .pagemore {
+    border: none;
+    padding: 0 6px;
+}
+.pagebox .prevpage,
+.pagebox .nextpage {
+    position: relative;
+    
+    /*修复IE7-下内部右浮动的bug*/
+    *zoom:1;
+    overflow: hidden;
+}
+.pagebox .prevpage {
+    text-align: right;
+    padding: 0 8px 0 10px;
+}
+.pagebox .nextpage {
+    text-align: left;
+    padding: 0 10px 0 8px;
+}
+.pagebox span.prevpage,
+.pagebox span.nextpage {
+    color: #ccc;
+    border: 1px solid #ddd;
+    cursor: default;
+}
+
+.pagebox .prevpage .larr,
+.pagebox .nextpage .rarr {
+    display: inline-block;
+    position: relative;
+    top: 7px;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+    overflow: hidden;
+    border-width: 5px;
+    border-style: solid;
+    _border-style: dashed;
+    border-color: transparent;
+}
+.pagebox .prevpage .larr {
+    float: left;
+    margin-right: 4px;
+    _border-right-style: solid;
+    border-left-width: 0;
+    border-right-color: #999;
+}
+.pagebox .nextpage .rarr {
+    float: right;
+    margin-left: 4px;
+    _border-left-style: solid;
+    border-right-width: 0;
+    border-left-color: #999;
+}
+/* 修复IE7- 下内部元素float:right引起的bug */
+.pagebox .nextpage {
+    *padding:0 17px 0 10px;
+}
+.pagebox .nextpage .rarr {
+    *margin-left: 0;
+    *float: none;
+    *position: absolute;
+    *right: 10px;
+}
+
+.pagebox a.prevpage:hover .larr {
+    border-right-color: #666;
+}
+.pagebox a.nextpage:hover .rarr {
+    border-left-color: #666;
+}
+.pagebox span.prevpage .larr {
+    border-right-color: #cccccc;
+}
+.pagebox span.nextpage .rarr {
+    border-left-color: #cccccc;
+}
+
+/* 尺寸 */
+.paging-big {
+    height: 30px;
+    line-height: 30px;
+}
+.paging-big .input-text{
+    width: 24px;
+    margin: 0 2px;
+    padding: 4px 6px;
+}
+.paging-big .pagebox a,
+.paging-big .pagebox span {
+    padding: 0 12px;
+    height: 28px;
+    line-height: 28px;
+}
+.paging-big .prevpage .larr,
+.paging-big .nextpage .rarr {
+    top: 9px;
+}
+
+/* 蓝色 */
+.bluestyle .pagesel {
+    font-weight: bold;
+    color: #333;
+}
+.bluestyle a {
+    color: #666;
+}
+.bluestyle a:hover { 
+    border-color: #7FB4F5;
+    background: #fff;
+    color: #245DC1;
+}
+.bluestyle a.prevpage:hover .larr {
+    border-right-color: #538ED7;
+}
+.bluestyle a.nextpage:hover .rarr {
+    border-left-color: #538ED7;
+}
+
+/* 橙黄色  */
+.orangestyle .pagesel {
+    font-weight: bold;
+    color: #fff;
+    border: 1px solid #f80;
+    background: #f80;
+}
+.orangestyle a:hover { 
+    border-color: #f80;
+    background: #fff;
+    color: #f80;
+}
+.orangestyle a.prevpage:hover .larr {
+    border-right-color: #f80;
+}
+.orangestyle a.nextpage:hover .rarr {
+    border-left-color: #f80;
+}
+
+/* 玫红色 */
+.pinkstyle .pagesel {
+    font-weight: bold;
+    border: 1px solid #df1a7a;
+    color: #fff;
+    background: #df1a7a;
+}
+.pinkstyle a:hover { 
+    border-color: #df1a7a;
+    background: #fff;
+    color: #df1a7a;
+}
+.pinkstyle a.prevpage:hover .larr {
+    border-right-color: #DF1A7A;
+}
+.pinkstyle a.nextpage:hover .rarr {
+    border-left-color: #DF1A7A;
+}
+

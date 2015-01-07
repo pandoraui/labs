@@ -1,0 +1,82 @@
+
+/* ------------------------------------------------------------
+  Pro: xhPanel
+  Create: 2013-12-02
+  Update: 2013-12-02
+------------------------------------------------------------ */
+
+/* common */
+.table-full{width:100%;}
+body .hide{display:none;}
+
+/* 颜色变量 */
+.cc1{color:red }    /*红  */
+.cc2{color:blue}    /*蓝  */
+.cc3{color:#999}    /*浅灰*/
+.cc4{color:#8499B7} /*灰蓝*/
+.cc5{color:#000}    /*黑  */
+.cc6{color:#390}    /*绿  */
+.cc7{color:#F60}    /*橙色*/
+.cc8{color:#528CD7} /*浅蓝*/
+.cc9{color:#666}    /*灰  */
+
+body{min-width:1000px;}
+
+
+.xbox-form{background:#f9fafb;border:1px solid #dbe7ef; padding:15px 15px 5px;}
+.xbox-form label{margin-bottom:10px;}
+.xhform label.checkbox,.xhform label.radio{margin-bottom:10px;}
+
+.xhtitle{background:#4e8ad4;color:#fff;height:40px;line-height:40px;border:1px solid #407fcc;padding: 0 10px;}
+.xhtitle-outer{height:40px;}
+.xhtitle a{color:#fff;}
+.xhtitle a:hover{color:#fff;}
+.xhtitle h4{font-size:14px;fong-weight:bold;display:inline-block;display:*inline;*zoom:1;}
+.linkitem{display:inline-block;margin-left:10px;}
+.xhtitle h4 small{display:inline-block;margin-left:10px;font-size:12px;font-weight:normal;}
+
+.xhlistbox{}
+.xhlistbox-item{position:relative;}
+.xhlist tr,.xhlist td{border:1px solid #ccd1dd;}
+.xhlist thead td{background:#f9fafb;text-align:center;font-weight:bold;padding:2px 10px;border:none;}
+.xhlist tbody td{padding:5px 10px;}
+.xhlist tbody .lefttitle{padding:0;background:#dce6f3;width: 4%;}
+.xhlist tbody .xhname{padding:5px 0;width: 100px;text-align:center;}
+
+.xtable{width:100%;margin-left:-1px;}
+.xtable tr,.xtable td{border:none;}
+.xtable td{padding:5px 10px;width:25%;border-left:1px solid #ccd1dd;}
+
+.xhprev,
+.xhnext {
+    position: absolute;
+    z-index: 10;
+    top: 4px;
+    width: 20px;
+    height: 20px;
+    background: #538ed7;
+    text-align: center;
+    font-size: 24px;
+    line-height: 18px;
+    color: #fff;
+    font-family:Tahoma;
+    cursor: pointer;
+}
+.xhprev { left: 108px;}
+.xhnext { right: 8px;}
+
+.xhlist .xbox{width:100%;overflow:hidden;}
+.xhlist .xtable td{width:200px;}
+.xtable{overflow:hidden;margin-left:-1px;}
+.xtable li{width:23%;padding:0 10px;padding-bottom:1000px;margin-bottom:-990px;border-right:1px solid #ccd1dd;float:left;*display:inline;*zoom:1;}
+
+
+
+
+
+
+
+.xhsitem{width:22%;}
+.textitem{white-space: nowrap;}
+
+

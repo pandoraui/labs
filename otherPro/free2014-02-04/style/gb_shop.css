@@ -1,0 +1,73 @@
+/*头部*/
+.icon_jing{display: block;width: 23px; height: 28px; background:   url("../images/shop/shop_sprite.png") -36px -36px no-repeat;}
+.icon_bao{display: block;width: 23px; height: 28px; background:   url("../images/shop/shop_sprite.png") 0px -36px no-repeat;}
+.icon_zi{display: block;width: 23px; height: 28px; background:   url("../images/shop/shop_sprite.png") -72px -36px no-repeat;}
+.mod_shop_header{width: 1200px; margin: 0 auto; position: relative; z-index: 2;}
+.mod_shop_header .cont_box{ zoom:1;}
+.mod_shop_header .cont_box:after{ clear: both;display: block;  height: 0; content: '';visibility: hidden;}
+.mod_shop_header .cont_box h1{float: left; height: 88px; margin-left: 45px; display: inline; margin-top: 5px;}
+.mod_shop_header .cont_box h1 img{width: 250px; height: 88px;}
+.mod_shop_header .cont_box .tel_box{float: left; margin-left: 15px; line-height: 1.5em; color: #666; margin-top: 20px;}
+.mod_shop_header .cont_box .tel_box strong{font-weight: bold; font-size: 14px;}
+.mod_shop_header .search_box{float: left;width: 495px; margin-left: 80px; display: inline; margin-top: 30px;}
+.mod_shop_header .search_box input{width: 400px; height: 32px; line-height: 32px; text-indent: 5px;font-size: 14px; border: 1px solid #CCC; float: left;}
+.mod_shop_header .search_box button{width: 90px; height: 36px; background: #364492; color: #FFF; text-align: center; font-size: 14px; line-height: 34px; font-weight: bold; border: 0 none; cursor: pointer; float: left;}
+.mod_shop_header .shop_icon{float: left; margin-left: 5px; display: inline;}
+.mod_shop_header .shop_icon i{float: left; margin-left: 15px; display: inline; text-indent: -9999px; overflow: hidden; margin-top: 35px;}
+.mod_shop_header .menu_bar{height: 40px; background: #364492; zoom:1; margin-top: 5px;}
+.mod_shop_header .menu_bar .li1,
+.mod_shop_header .menu_bar .f_li{float: left; height: 40px; border-right: 1px solid #6666CC;}
+.mod_shop_header .menu_bar .li1 a,
+.mod_shop_header .menu_bar .f_li h3{display: block; height: 40px; border-right: 1px solid #333366;color: #FFF; font-family:Microsoft YaHei; font-weight: bold; line-height: 40px;}
+.mod_shop_header .menu_bar .li1 a:hover,
+.mod_shop_header .menu_bar .cur a{background: #E04091;}
+.mod_shop_header .menu_bar .li1 a{ padding: 0 35px;font-size: 16px; *display: inline; *zoom:1; }
+.mod_shop_header .menu_bar .f_li h3{font-size: 16px; padding-left: 22px; background:url("../images/shop/shop_sprite.png") 218px -198px no-repeat; cursor: pointer;}
+.mod_shop_header .menu_bar .f_li{width: 250px; position: relative;}
+.mod_shop_header .menu_bar .f_li .slide_up{background:   url("../images/shop/shop_sprite.png") 218px -162px no-repeat;}
+.mod_shop_header .menu_bar .f_li .sub_list{ width: 250px; border: 1px solid #CCC; background: #FFF; position: absolute; left: 0; top: 41px; display: none; border-top: 0;}
+.mod_shop_header .menu_bar .f_li .sub_list h4{float: left; height: 38px; overflow: hidden;}
+.mod_shop_header .menu_bar .f_li .sub_list h4 a{display: block; width: 250px; height: 38px; font-size: 14px; line-height: 38px; text-indent: 20px; overflow: hidden; white-space: nowrap; position: relative;}
+.mod_shop_header .menu_bar .f_li .sub_list h4 a i{display: block; width:4px; height: 7px; position: absolute; right: 20px; top: 15px; z-index: 1; background:url("../images/shop/shop_sprite.png") -360px -36px no-repeat;}
+.mod_shop_header .menu_bar .f_li .sub_list .sub_li{border-top: 1px solid #CCC; height: 38px; float: left; width: 250px; position: relative; margin-top: -1px;}
+.mod_shop_header .menu_bar .f_li .sub_list .cur a{ background: #CDD8EA;}
+.mod_shop_header .menu_bar .f_li .sub_list .cur h4 a{}
+.mod_shop_header .menu_bar .f_li .sub_list .cur h4 a:hover i{background: url("../images/shop/shop_sprite.png") -324px -36px no-repeat;}
+.mod_shop_header .menu_bar .f_li .sub_list .list_2{width: 250px; border: 1px solid #CCC; background: #FFF; position: absolute; left: 250px; top: -1px; display: none; z-index: 1}
+.mod_shop_header .menu_bar .f_li .sub_list .list_2 li{ height: 38px; border-top: 1px solid #CCC; margin-top: -1px;}
+.mod_shop_header .menu_bar .f_li .sub_list .list_2 a{display: block; width: 250px; height: 38px; background: #FFF; font-size: 14px; line-height: 38px; text-indent: 20px; overflow: hidden; white-space: nowrap; position: relative;}
+.mod_shop_header .menu_bar .f_li .sub_list .list_2 a:hover{background: #CDD8EA;}
+
+
+
+.mod_shop_info{ margin-top: 10px;}
+.mod_shop_info h3{ height: 40px; line-height: 40px; font-size: 16px; font-weight: bold; color: #FFF;font-family: Microsoft YaHei,Tahoma,Simsun; background: #364492; text-align: center;}
+.mod_shop_info li{height: 42px; line-height: 42px; border-bottom: 1px dashed #CCC;}
+.mod_shop_info li i{float: left;  overflow: hidden; margin-top: 8px; margin-left: 20px; margin-right: 20px; display: inline;}
+.mod_shop_info .content{border: 1px solid #CCC; margin-top: 0; padding-bottom: 10px;}
+.mod_shop_info h4{margin-left: 20px; font-size: 14px; font-weight: bold; color: #333; line-height: 40px;}
+.mod_shop_info table{margin-left: 20px; margin-top: -5px;}
+.mod_shop_info table th{text-align: left;}
+.mod_shop_info table td,
+.mod_shop_info table th{line-height: 20px; color: #333;}
+.talk_online{display: block; width: 142px; height: 36px; line-height: 36px;background:   url("../images/shop/shop_sprite.png") -144px 0px no-repeat; text-indent: 54px; margin-left: 45px; margin-top: 10px;}
+
+.mod_pro_kind{ margin-top: 10px;}
+.mod_pro_kind h3{ height: 40px; line-height: 40px; font-size: 16px; font-weight: bold; color: #FFF;font-family: Microsoft YaHei,Tahoma,Simsun; background: #364492; text-align: center;}
+.mod_pro_kind h4{ height: 38px; line-height: 38px; font-weight: bold;color: #333; text-indent: 20px; background: #E5E5E5; border-bottom: 1px solid #CCC; position: relative; cursor: pointer; font-size: 14px;}
+.mod_pro_kind h4 i{ position: absolute; right: 20px; top: 13px; z-index: 1;}
+.mod_pro_kind .sub_list{}
+.mod_pro_kind .sub_list li{ height: 40px;text-indent: 20px; line-height: 40px;}
+.mod_pro_kind .sub_list li a{font-size: 14px;}
+.mod_pro_kind .sub_list li a:hover{color: #333399; text-decoration: underline;}
+.mod_pro_kind .content{border: 1px solid #CCC; margin-top: 0; }
+
+.mod_all_pro{ margin-top: 10px;}
+.mod_all_pro h3{ height: 40px; line-height: 40px; font-size: 16px; font-weight: bold; color: #FFF;font-family: Microsoft YaHei,Tahoma,Simsun; background: #364492; text-align: center;}
+.mod_all_pro ul{zoom:1; padding: 10px 0;}
+.mod_all_pro ul:after{ clear: both; height: 0; content: ''; display: block; visibility: hidden;}
+.mod_all_pro li{float: left; margin: 0 10px; *line-height: 1.2em;}
+.mod_all_pro .content{border: 1px solid #CCC; margin-top: 0; }
+
+.icon_slide_down{display: block; width: 13px; height: 13px;background:   url("../images/shop/shop_sprite.png") -360px 0px no-repeat;}
+.icon_slide_up{display: block; width: 13px; height: 13px;background:   url("../images/shop/shop_sprite.png") -324px 0px no-repeat;}

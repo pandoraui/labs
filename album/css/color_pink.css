@@ -1,0 +1,14 @@
+
+/* 粉红色主题 */
+
+#main{border:#df368f;}
+#nav li a{color:#eee;border-colr:a8a8a8;}
+#logo{background:transparent;border:#df368f;}
+#logo h1{color:#df368f;}
+#content h3{background:transparent;color:#8a8a8a;border-color:#df368f;}
+#links a,#content a{background:transparent;color:#df368f;}
+#nav{background:#be7b9e;color:#eee;border-color:#df368f;}
+#nav li a:hover,#nav li a.selected,#nav li a.selected:hover{background:#df368f;color:#fff;border-color:#a8a8a8;}
+.title{color:#df368f;}
+
+

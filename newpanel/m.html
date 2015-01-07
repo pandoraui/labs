@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>这是新后台页面模板</title>
+<link rel="stylesheet" href="css/ui-common.css">
+<link rel="stylesheet" href="css/ui-components.css">
+<link rel="stylesheet" href="css/panel-content.css">
+</head>
+<body>
+<div class="ui_title">
+	<ul class="ui_tab">
+		<li class="active"><a href="#">待审核订单<span>(<i>10</i>/<i>21</i>)</span></a></li>
+		<li><a href="#">资源审核任务<span>(<i>11</i>/<i>29</i>)</span></a></li>
+	</ul>
+</div>
+
+<!-- 主要内容显示区域\\ -->
+<div class="iframe-content">
+	<div class="p_box">
+        <div class="p_title">
+        	<h4>结构模板</h4>
+        </div>
+        <div class="box_content">
+        <table class="p_table">
+            <thead>
+                <tr>
+                	<th>表格标题</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                	<td>表格内容</td>
+                </tr>
+            </tbody>
+        </table>
+    	</div>
+	</div>
+    
+    <div class="p_modal center-box">
+        <div class="p_title">
+            <h4>复制提醒</h4><button class="close">×</button>
+        </div>
+        <p class="lead">简单描述</p>
+        <div class="box_content center-item">
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td colspan="2"><strong>复制：</strong>法国团队签证上海送签在职人员材料</td>
+                    </tr>
+                    <tr>
+                        <td class="label">目的地国家：</td><td><input type="text" placeholder="法国"></td>
+                    </tr>
+                    <tr>
+                        <td class="label">签证类型：</td><td><select>
+                        <option value="">团队旅游签证</option>
+                        <option value="">个人旅游签证</option>
+                        <option value="">商务签证</option>
+                        <option value="">探亲访友</option>
+                        <option value="">留学签证</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td class="label">签送城市：</td><td><select>
+                        <option value="">亚洲</option>
+                        <option value="">美洲</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td class="label">材料类别：</td><td><select>
+                        <option value="">亚洲</option>
+                        <option value="">美洲</option>
+                        </select></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div><!-- //div.box_content -->
+
+        <p class="tc mt10"><button class="btn btn-small w3" type="button">确定</button></p>
+    </div><!-- div p_modal -->
+    
+    
+	<div class="p_box stuff_box">
+        <div class="p_title">
+        	<h4>创建新材料</h4><button class="close">×</button>
+        </div>
+        <table class="p_table">
+            <tbody>
+                <tr>
+                	<td class="p_label">国家名称：</td>
+                    <td><input type="text"></td>
+                    <td class="p_label">所属洲：</td>
+                    <td><select>
+                    <option value="">亚洲</option>
+                    <option value="">美洲</option>
+                    </select></td>
+                </tr>
+                <tr>
+                	<td class="p_label">签证类型：</td>
+                    <td class="form-inline" colspan="3">
+                    	<label class="radio"><input name="type-visa" type="radio">团队旅游签证</label>　
+                        <label class="radio"><input name="type-visa" type="radio">个人旅游签证</label>　
+                        <label class="radio"><input name="type-visa" type="radio">商务签证</label>　
+                        <label class="radio"><input name="type-visa" type="radio">探亲访友</label>　
+                        <label class="radio"><input name="type-visa" type="radio">留学签证</label>　
+                    </td>
+                </tr>
+                <tr>
+                	<td class="p_label">签送城市：</td>
+                    <td colspan="3"><select>
+                    <option value="">亚洲</option>
+                    <option value="">美洲</option>
+                    </select></td>
+                </tr>
+                <tr>
+                	<td class="p_label">人群：</td>
+                    <td colspan="3"><select>
+                    <option value="">亚洲</option>
+                    <option value="">美洲</option>
+                    </select></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p class="tc mt20"><button class="btn btn-small w4 add_stuff" type="button">下一步</button>　<button class="btn btn-small w4" type="button">取消</button></p>
+	</div><!-- div p_box -->
+ 
+    
+</div><!-- div iframe-content -->
+
+<script src="http://pic.lvmama.com/js/new_v/jquery-1.7.min.js"></script>
+<script src="js/iframe-custom.js"></script>
+<script>
+$(function(){
+
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+
+/* 
+ @名称: tables.css
+ @功能: 表格
+ */
+
+table {
+    max-width: 100%;
+    background-color: transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.table {
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.table-border th,
+.table-border td {
+    padding: 8px;
+    line-height: 20px;
+    text-align: left;
+    vertical-align: top;
+    border-top: 1px solid #dddddd;
+}
+
+.table-border th {
+    font-weight: bold;
+}
+
+.table-border thead th {
+    vertical-align: bottom;
+}
+
+/* 表格扩展 尺寸及对齐 */
+table th,
+table td {
+    padding:4px 8px;
+    line-height: 20px;
+}
+
+table th {
+    font-weight: bold;
+}
+table td {
+    text-align: left;
+}
+
+.table-full {
+    width: 100%;
+}
+
+.table-minw th,
+.table-minw td {
+    min-width: 100px;
+}
+
+
+.table-center th,
+.table-center td,
+.table-thcenter th,
+.table-tdcenter td {
+    text-align: center;
+}
+
+.table-border th,
+.table-border td{
+    border:1px solid #ccc;
+}
+.table-vtop td {
+    vertical-align: top;
+}
+
+.table-none {
+    width: auto;
+    border: none;
+}
+.table-none tr,
+.table-none td {
+    border: none;
+    padding-left: 0;
+    padding-right: 20px;
+    line-height: 18px;
+}
+
+/* 信息表格 */
+.table-info th,
+.table-info td {
+    border: 1px solid #ddd;
+}
+.table-info thead th,
+.table-info thead td {
+    background: #eee;
+}
+
+/* 一些table定制 */
+.order-buy thead th {
+    font-weight: normal;
+    background: #f6f6f6;
+    color: #999;
+}
+.order-buy td {
+    color: #666;
+}
+.order-buy th,
+.order-buy td {
+    padding:4px 8px;
+}
+
+
